@@ -1,7 +1,5 @@
-title: Raihnforge
-description: Personal notes site
-theme: minima
-
-# Tell Jekyll to include our custom notes folder
-include:
-  - notes
+defaults:
+  - scope:
+      path: "notes"
+    values:
+      permalink: /notes/:basename/
