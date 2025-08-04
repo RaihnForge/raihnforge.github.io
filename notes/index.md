@@ -1,3 +1,8 @@
+---
+layout: default
+title: index
+---
+
 <ul>
 {% for note in site.pages %}
   {% if note.path contains 'notes' and note.name != 'index.md' %}
