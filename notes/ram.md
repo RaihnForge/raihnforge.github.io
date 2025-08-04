@@ -5,19 +5,19 @@ layout: default
 title: RAM Notes
 ---
 
-###To Do Shortlist
+### To Do Shortlist
 
 - [ ] Learn to donate PLASMA
 - [ ] Another task
 - [ ] Follow up with XYZ
 
-##PaladinForge
+## PaladinForge
 * Update Cal
 Update Log
 Kristin mail
 Jazz - Sat
 
-##RaihnForge
+## RaihnForge
 Mark logo
 Fantasy football winner
 Sim Ellensburg
@@ -29,7 +29,7 @@ Prat rap pixel
 Music tape plus video Humble’s tracks
 Sketches
 
-##HomeForge
+## HomeForge
 * Mikey Wash
 * Mikey Cut
 * Bedding Wash
@@ -43,7 +43,7 @@ Sketches
 * run fall run
 * 
 
-##UnchosenForge
+## UnchosenForge
 * UE09
 * Fiverr
 * Rover
@@ -75,7 +75,7 @@ Note pad
 
 
 
-##Graduation Cards
+## Graduation Cards
 
 Give
 Marcus Jan
