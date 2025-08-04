@@ -6,9 +6,10 @@ title: Notes
 # Notes
 
 <ul>
-{% for note in site.static_files %}
-  {% if note.path contains '/notes/' and note.extname == '.html' %}
-    <li><a href="{{ note.path | relative_url }}">{{ note.name | replace: '.html', '' }}</a></li>
-  {% endif %}
+{% assign notes_pages = site.pages | where_exp: "page", "page.path contains 'notes/'" %}
+{% for note in notes_pages %}
+  {% unless note.name == "index.md" %}
+    <li><a href="{{ note.url | relative_url }}">{{ note.title | default: note.name | replace: '.md', '' }}</a></li>
+  {% endunless %}
 {% endfor %}
 </ul>
