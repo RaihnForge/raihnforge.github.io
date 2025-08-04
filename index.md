@@ -8,3 +8,5 @@ title: Home
 I'm hosted with GitHub Pages.  PLASMA
 
 [Go to Test Page](test.html)
+[Go to notes](notes/ram)
+[Go to notes](notes/ram)
