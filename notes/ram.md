@@ -1,6 +1,9 @@
 
 
-
+---
+layout: default
+title: RAM Notes
+---
 
 ###To Do Shortlist
 
