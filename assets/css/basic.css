@@ -1,0 +1,165 @@
+/* ===== Base ===== */
+:root{
+  --bg:#1e1e1e; --text:#e6e6e6; --muted:#b9c0cc;
+  --panel:#22252b; --line:#3a3f47; --accent:#66c2ff;
+  --shadow:0 4px 22px rgba(0,0,0,.35);
+}
+
+html,body{
+  margin:0; padding:0;
+  background:var(--bg); color:var(--text);
+  font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+}
+
+/* Centered content area */
+main{
+  max-width: 900px;
+  margin: 0 auto;           /* centers the main block */
+  padding: 32px 40px;       /* nice side margins */
+}
+
+/* ===== Header ===== */
+header{
+  border-bottom:1px solid var(--line);
+  background:#17181c;
+  padding: 16px 20px 20px;
+}
+header h1{
+  margin:0 0 12px 0;
+  font-size: 24px;
+  text-align: center;       /* center the site title */
+}
+
+/* ===== Nav (your .nav div) ===== */
+.nav{
+  display:flex;
+  justify-content:center;   /* centers the links */
+  align-items:center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.nav a{
+  display:inline-block;
+  padding:8px 16px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:8px;
+  color:var(--text);
+  text-decoration:none;
+  transition: background .2s, transform .2s, box-shadow .2s;
+}
+.nav a:hover{
+  background:#2a2f36;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* ===== Typography ===== */
+h1,h2,h3{ text-align:center; }
+h1{ font-size:2rem; margin:0 0 12px; }
+h2{ font-size:1.25rem; margin:28px 0 12px; }
+h3{ font-size:1.05rem; margin:20px 0 10px; }
+p{ color:var(--muted); }
+
+/* ===== Tables ===== */
+table{
+  width:auto;               /* shrink to content and center */
+  margin:12px auto 24px;
+  border-collapse:collapse;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:8px; overflow:hidden;
+  box-shadow:var(--shadow);
+}
+th,td{ padding:10px 14px; border-bottom:1px solid var(--line); text-align:left; }
+th{ background:#2a2f36; color:#fff; font-weight:700; }
+tr:last-child td{ border-bottom:0; }
+tbody tr:nth-child(odd) td{ background:#252a31; }
+
+/* ===== Images ===== */
+img{
+  max-width:100%; height:auto;
+  display:block; margin:0 auto;
+  border-radius:6px; box-shadow:var(--shadow);
+}
+
+/* ===== Footer ===== */
+.site-footer{
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  text-align:center;
+  padding:18px 0;
+  margin-top:40px;
+}
+.site-footer .container{
+  max-width:900px; margin:0 auto; padding:0 40px;
+}
+
+/* Optional small screens tweak */
+@media (max-width:600px){
+  main, .site-footer .container{ padding:24px; }
+  
+  /* Style normal links like subtle buttons */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+a:hover {
+  background: var(--panel);
+  color: #fff;
+}
+
+/* Optional: if you want certain links to look like big buttons */
+a.button, .btn {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+a.button:hover, .btn:hover {
+  background: #2a2f36;
+  transform: translateY(-1px);
+}
+
+}
+/* Verify CSS is loading (temporary) */
+body { outline: 2px solid rgba(255,0,0,.2); } /* remove after you see it */
+
+/* Unified link styles (override defaults and visited) */
+main a,
+main a:visited {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid var(--line);
+  display: inline-block;
+  transition: background .2s, color .2s, transform .15s, box-shadow .2s;
+}
+
+main a:hover {
+  background: #2a2f36;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+/* Make paragraphs with only links not look cramped */
+main p a { margin-right: 8px; }
+
+/* Keep top nav buttons as-is (explicit so they aren’t affected by :visited) */
+.nav a,
+.nav a:visited {
+  color: var(--text) !important;
+  text-decoration: none !important;
+}

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Interactive SQL Visualizer Concept
+---
+
 # Interactive SQL Visualizer Concept
 
 This concept transforms SQL queries into visual events in a top-down RPG-style town visualizer. Every SQL command becomes a building, villager, or infrastructure change, creating a living, evolving data town.
