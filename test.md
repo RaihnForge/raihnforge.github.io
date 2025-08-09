@@ -3,5 +3,4 @@ layout: default
 title: Home
 ---
 
-# Hello, World
-This is my test page!
+# This is an old test pages

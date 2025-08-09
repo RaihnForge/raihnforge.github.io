@@ -6,6 +6,6 @@ for /f "tokens=1" %%i in ('docker ps -q --filter "publish=4000"') do docker stop
 
 REM Run Jekyll in Docker with correct path
 powershell -NoProfile -ExecutionPolicy Bypass -Command ^
- "docker run --rm -v \"$(Get-Location):/srv/jekyll\" -p 4000:4000 jekyll/jekyll:4 sh -c 'gem install webrick && jekyll serve --host 0.0.0.0'"
+ "docker run --rm -v \"$(Get-Location):/srv/jekyll\" -p 4000:4000 jekyll/jekyll:4 sh -c 'gem install webrick && jekyll serve --host 0.0.0.0 --livereload --force_polling'"
 
 pause

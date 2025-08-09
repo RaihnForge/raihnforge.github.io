@@ -2,9 +2,9 @@
 layout: default
 title: RAM Notes
 ---
-TEST12345
+# RAM Notes
 
-### To Do Shortlist
+## To Do Shortlist
 
 - [ ] Learn to donate PLASMA
 - [ ] Another task
@@ -57,9 +57,6 @@ Sketches
 * Va loan
 * WWP 
 
-Note pad
-
-
 ## Groceries
 * Exact blade
 * Gas x
@@ -71,8 +68,6 @@ Note pad
 * Heart app
 * Therapy
 * Haircut
-
-
 
 ## Graduation Cards
 
