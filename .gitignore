@@ -1,3 +1,6 @@
 # Ignore Jekyll build output
 _site/
 .jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+vendor/

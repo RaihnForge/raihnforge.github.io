@@ -1,0 +1,48 @@
+/* Amber Monitor CRT Style */
+body {
+  background-color: #000000;
+  color: #ffb000;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  padding: 2rem;
+}
+
+a {
+  color: #ffcc33;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header, footer {
+  border-top: 2px solid #ffb000;
+  border-bottom: 2px solid #ffb000;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Optional CRT scanline effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,176,0,0.03) 0px,
+    rgba(255,176,0,0.03) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
