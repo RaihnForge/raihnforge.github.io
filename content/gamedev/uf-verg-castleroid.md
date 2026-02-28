@@ -4,7 +4,9 @@ date: 2016-01-21
 description: "A viability exercise in retro graphics — recreating and extending the tile-based visual language of classic Castlevania."
 status: "In Progress"
 engine: "Custom"
-image: ""
+role: "Artist & Designer"
+timeline: "2016–Present"
+image: "/images/gamedev/uf-verg-castleroid.gif"
 draft: false
 ---
 

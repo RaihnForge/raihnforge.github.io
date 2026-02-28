@@ -4,7 +4,7 @@ date: 2017-11-17
 description: "Custom rendered avatar based on my Destiny PlayStation Network character."
 medium: "Digital"
 year: 2017
-image: ""
+image: "/images/art/destiny-avatar-e4-keyez.png"
 draft: false
 ---
 

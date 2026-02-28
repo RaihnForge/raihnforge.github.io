@@ -4,7 +4,10 @@ date: 2013-03-02
 description: "A side-scrolling Metroidvania with a dark mechanical-fantasy aesthetic. In development since 2013 under Unchosen Paths."
 status: "In Progress"
 engine: "Custom"
-image: ""
+role: "Producer, Artist & Game Director"
+timeline: "2013–Present"
+featured: true
+image: "/images/gamedev/mecromage.gif"
 draft: false
 ---
 

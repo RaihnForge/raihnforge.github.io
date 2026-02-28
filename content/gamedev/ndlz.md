@@ -4,7 +4,10 @@ date: 2022-09-13
 description: "A collaborative JS13K Games 2022 entry built under the 13-kilobyte constraint. Developed to sharpen skills, deepen understanding, and strengthen friendship."
 status: "Released"
 engine: "Vanilla JS"
-image: ""
+role: "Developer & Designer"
+timeline: "2022"
+featured: true
+image: "/images/gamedev/ndlz.png"
 draft: false
 ---
 

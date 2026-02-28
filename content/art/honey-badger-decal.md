@@ -4,7 +4,7 @@ date: 2018-10-12
 description: "Original character design featuring the motto \"Never Quit!\", adapted into a decal and desktop wallpaper."
 medium: "Digital"
 year: 2018
-image: ""
+image: "/images/art/honey-badger-decal.png"
 draft: false
 ---
 

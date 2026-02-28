@@ -4,7 +4,7 @@ date: 2019-06-01
 description: "A collection of pencil and digital illustrations inspired by StarCraft 2 gameplay and lore."
 medium: "Digital & Pencil"
 year: 2019
-image: ""
+image: "/images/art/starcraft2-fan-art.png"
 draft: false
 ---
 

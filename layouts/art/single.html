@@ -4,11 +4,19 @@
     {{ with .Params.image }}
     <img src="{{ . }}" alt="{{ $.Title }}" />
     {{ else }}
-    <div class="artwork-placeholder">No image available</div>
+    <div class="artwork-placeholder" aria-label="Image not available"></div>
     {{ end }}
   </div>
 
   <div class="artwork-info">
+    <nav class="artwork-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/art/">Visual Design</a>
+      <span aria-hidden="true">/</span>
+      {{ .Title }}
+    </nav>
+
     <h1>{{ .Title }}</h1>
 
     <dl class="artwork-meta">
@@ -30,7 +38,7 @@
     <div class="artwork-content">{{ . }}</div>
     {{ end }}
 
-    <a href="/art/" class="back-link">&larr; All Art</a>
+    <a href="/art/" class="back-link">&larr; All Visual Design</a>
   </div>
 </article>
 {{ end }}

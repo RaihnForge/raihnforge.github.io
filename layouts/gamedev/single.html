@@ -7,9 +7,25 @@
   {{ end }}
 
   <div class="project-detail-info">
+    <nav class="project-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/gamedev/">Products</a>
+      <span aria-hidden="true">/</span>
+      {{ .Title }}
+    </nav>
+
     <h1>{{ .Title }}</h1>
 
     <dl class="project-meta-list">
+      {{ with .Params.role }}
+      <dt>Role</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
+      {{ with .Params.timeline }}
+      <dt>Timeline</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
       {{ with .Params.engine }}
       <dt>Engine</dt>
       <dd>{{ . }}</dd>
@@ -28,7 +44,7 @@
     <div class="project-content">{{ . }}</div>
     {{ end }}
 
-    <a href="/gamedev/" class="back-link">&larr; All Projects</a>
+    <a href="/gamedev/" class="back-link">&larr; All Products</a>
   </div>
 </article>
 {{ end }}

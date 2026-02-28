@@ -4,7 +4,8 @@ date: 2022-12-01
 description: "Key art created for Spellbringers, a published strategy mod for Warcraft 3."
 medium: "Digital"
 year: 2022
-image: ""
+featured: true
+image: "/images/art/commission-spellbringers-key-art.png"
 draft: false
 ---
 

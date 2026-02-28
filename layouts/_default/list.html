@@ -4,15 +4,13 @@
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
-<div class="post-list">
+<div class="journal-list">
   {{ range .Pages }}
-  <article class="post-card">
-    <a href="{{ .RelPermalink }}">
-      <h2>{{ .Title }}</h2>
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-      {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    </a>
-  </article>
+  <a href="{{ .RelPermalink }}" class="journal-item">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    <h2>{{ .Title }}</h2>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </a>
   {{ end }}
 </div>
 {{ end }}

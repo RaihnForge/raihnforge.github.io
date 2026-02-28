@@ -1,25 +1,23 @@
 {{ define "main" }}
 <div class="page-header">
-  <h1>{{ .Title }}</h1>
+  <h1>Journal</h1>
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
-<div class="post-list">
+<div class="journal-list">
   {{ range .Pages }}
-  <article class="post-card">
-    <a href="{{ .RelPermalink }}">
-      <div class="post-card-meta">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-        {{ with .Params.tags }}
-        <div class="post-tags">
-          {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
-        </div>
-        {{ end }}
+  <a href="{{ .RelPermalink }}" class="journal-item">
+    <div class="journal-item-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
       </div>
-      <h2>{{ .Title }}</h2>
-      {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    </a>
-  </article>
+      {{ end }}
+    </div>
+    <h2>{{ .Title }}</h2>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </a>
   {{ end }}
 </div>
 {{ end }}

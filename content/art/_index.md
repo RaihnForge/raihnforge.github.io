@@ -1,4 +1,4 @@
 ---
 title: "Art"
-description: "Digital illustration, character design, commissions, pixel art, and fan art."
+description: "Two decades of digital illustration, character design, branding, and commissioned work — from esports organizations to indie game studios."
 ---

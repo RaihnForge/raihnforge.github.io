@@ -4,7 +4,8 @@ date: 2023-01-20
 description: "Custom avatar designs created for the W3Champions and Back2Warcraft esports community for Season 22 of competitive Warcraft 3."
 medium: "Digital"
 year: 2023
-image: ""
+featured: true
+image: "/images/art/ash-keepers-season-22.gif"
 draft: false
 ---
 

@@ -4,7 +4,7 @@ date: 2018-03-01
 description: "A Destiny-inspired illustration exploring light, shadow, and Guardian lore."
 medium: "Digital"
 year: 2018
-image: ""
+image: "/images/art/bring-the-light.jpg"
 draft: false
 ---
 

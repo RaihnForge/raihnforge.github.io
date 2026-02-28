@@ -5,23 +5,27 @@ title = "RaihnForge"
 
 [params]
   author = "Joshua Keyes"
-  description = "Digital art, game development, and design — Raise your hammer to the storm!"
+  description = "Product-minded creator building from vision to release — digital design, game development, and human-centric product thinking."
   subtitle = "Raise your hammer to the storm!"
+  role = "Product Owner & Creative Producer"
+  email = "Joshua.Keyes@gmail.com"
+
+  [params.social]
+    instagram = "https://instagram.com/raihnforge"
+    youtube = "https://youtube.com/@raihnforge"
+    facebook = "https://facebook.com/raihnforge"
+    twitter = "https://twitter.com/RaihnForge"
 
 [menu]
   [[menu.main]]
-    name = "Art"
+    name = "Work"
     url = "/art/"
     weight = 1
   [[menu.main]]
-    name = "Blog"
+    name = "Journal"
     url = "/blog/"
     weight = 2
   [[menu.main]]
-    name = "Game Dev"
-    url = "/gamedev/"
-    weight = 3
-  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 4
+    weight = 3

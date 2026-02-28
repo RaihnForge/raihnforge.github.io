@@ -4,7 +4,9 @@ date: 2009-01-01
 description: "Indie game studio co-founded in 2009. Home of Mecromage and multiple unreleased projects spanning nearly a decade of development."
 status: "In Progress"
 engine: "Various"
-image: ""
+role: "Co-Founder, Producer & Art Director"
+timeline: "2009–2018"
+image: "/images/gamedev/unchosen-paths.png"
 draft: false
 ---
 

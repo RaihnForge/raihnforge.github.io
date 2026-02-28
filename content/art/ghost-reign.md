@@ -4,7 +4,7 @@ date: 2017-07-15
 description: "Submission to the StarCraft Remastered portrait contest."
 medium: "Digital"
 year: 2017
-image: ""
+image: "/images/art/ghost-reign.png"
 draft: false
 ---
 

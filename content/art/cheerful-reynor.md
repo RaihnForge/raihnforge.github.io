@@ -4,7 +4,7 @@ date: 2020-03-01
 description: "Tribute portrait of StarCraft 2 professional player Reynor, celebrating his competitive achievements."
 medium: "Digital"
 year: 2020
-image: ""
+image: "/images/art/cheerful-reynor.png"
 draft: false
 ---
 

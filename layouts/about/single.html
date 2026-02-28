@@ -1,0 +1,41 @@
+{{ define "main" }}
+<article>
+  {{/* === Header === */}}
+  <div class="about-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.role }}<p class="about-role">{{ . }}</p>{{ end }}
+    {{ with .Params.summary }}<p class="about-summary">{{ . }}</p>{{ end }}
+  </div>
+
+  {{/* === Competencies Grid === */}}
+  {{ with .Params.competencies }}
+  <section class="competencies" aria-label="Core competencies">
+    <h2>Core Competencies</h2>
+    <div class="competencies-grid">
+      {{ range . }}
+      <div class="competency">
+        <h3>{{ .title }}</h3>
+        <p>{{ .detail }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* === Background prose (markdown body) === */}}
+  {{ with .Content }}
+  <div class="about-content">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  {{/* === Contact === */}}
+  {{ with $.Site.Params.email }}
+  <div class="about-contact">
+    <h2>Get in Touch</h2>
+    <p>I'm open to Product Owner, product leadership, and cross-functional team opportunities.</p>
+    <a href="mailto:{{ . }}" class="btn-primary">Let's Talk</a>
+  </div>
+  {{ end }}
+</article>
+{{ end }}

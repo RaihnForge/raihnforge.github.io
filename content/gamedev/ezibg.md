@@ -4,7 +4,9 @@ date: 2019-02-01
 description: "A curated collection of eye-friendly desktop wallpapers designed to reduce digital eye strain, with warm tones and gentle contrast."
 status: "Released"
 engine: "N/A"
-image: ""
+role: "Creator & Designer"
+timeline: "2019"
+image: "/images/gamedev/ezibg.png"
 draft: false
 ---
 

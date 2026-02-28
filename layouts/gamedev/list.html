@@ -1,8 +1,14 @@
 {{ define "main" }}
 <div class="page-header">
-  <h1>{{ .Title }}</h1>
+  <p class="page-eyebrow">Work</p>
+  <h1>Products</h1>
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
+
+<nav class="section-subnav" aria-label="Work sections">
+  <a href="/art/">Visual Design</a>
+  <a href="/gamedev/" class="subnav-active">Products</a>
+</nav>
 
 <div class="project-grid">
   {{ range .Pages }}
@@ -10,7 +16,7 @@
     {{ with .Params.image }}
     <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
     {{ else }}
-    <div class="project-placeholder"></div>
+    <div class="project-placeholder" aria-hidden="true"></div>
     {{ end }}
     <div class="project-info">
       <h2>{{ .Title }}</h2>

@@ -4,7 +4,7 @@ date: 2020-09-30
 description: "Social media notification graphics created for Mercer Creek Church."
 medium: "Digital"
 year: 2020
-image: ""
+image: "/images/art/sms-church-graphics.png"
 draft: false
 ---
 

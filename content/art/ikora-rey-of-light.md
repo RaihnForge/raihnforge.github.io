@@ -4,7 +4,7 @@ date: 2018-06-01
 description: "Portrait of Ikora Rey from Destiny, rendered in a painterly digital style."
 medium: "Digital"
 year: 2018
-image: ""
+image: "/images/art/ikora-rey-of-light.jpg"
 draft: false
 ---
 

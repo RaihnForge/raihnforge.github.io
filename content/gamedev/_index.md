@@ -1,4 +1,4 @@
 ---
 title: "Game Dev"
-description: "Indie game projects — from early pixel art exercises to full game concepts and competition entries."
+description: "Products shipped and in progress — from a nine-year indie studio to JS13K competition entries and design tools."
 ---

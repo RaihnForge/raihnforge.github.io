@@ -1,6 +1,22 @@
 ---
 title: "About"
-description: "Joshua Keyes — freelance artist, designer, and game developer behind RaihnForge."
+layout: "single"
+description: "Joshua Keyes — product-minded creator, USMC veteran, and indie studio co-founder."
+role: "Product Owner & Creative Producer"
+summary: "I'm a product-minded creator with two decades of experience shipping design, games, and digital products. I've led cross-functional teams, defined product vision, managed development roadmaps, and delivered shipped work — from esports graphics seen by thousands to a nine-year indie game studio. I bring the same rigor to product ownership that the Marine Corps taught me about leadership: clarity of mission, bias toward action, and care for the people doing the work."
+competencies:
+  - title: "Product Strategy"
+    detail: "Defining product vision, scoping features, building roadmaps, and making trade-off decisions that balance user needs with technical constraints and business goals."
+  - title: "Cross-Functional Leadership"
+    detail: "Leading teams across design, development, and stakeholder groups. Nine years co-running an indie studio taught me that shipping requires alignment, not authority."
+  - title: "User-Centered Design"
+    detail: "Designing for real people — from esports communities to church congregations. Every project starts with understanding who it's for and what they actually need."
+  - title: "Agile Delivery"
+    detail: "Iterative development, sprint planning, backlog management, and continuous delivery. Practiced through years of game development cycles and client-facing creative work."
+  - title: "Visual Design"
+    detail: "Professional illustration, branding, UI design, and art direction. Design isn't decoration — it's communication, and I've been fluent in it for twenty years."
+  - title: "Technical Fluency"
+    detail: "Comfortable with HTML/CSS, JavaScript, game engines, and development toolchains. I speak developer fluently enough to bridge the gap between design intent and implementation."
 ---
 
 I'm Joshua Keyes — a freelance artist working in digital illustration, animation, logo design, game design, and web design. I grew up in Washington State and served in the United States Marine Corps, completing two deployments to Iraq as an infantryman.
@@ -25,9 +41,3 @@ Feature artist, graphics staff, and writing coordinator for one of the premier W
 
 **DIP Enterprises Inc.** (2006–2009)
 Started as a graphics artist, promoted to lead art designer. Worked on board game development, board design, packaging, and website assets.
-
-## Contact
-
-Email: [Joshua.Keyes@gmail.com](mailto:Joshua.Keyes@gmail.com)
-
-Find me on [Instagram](https://instagram.com/raihnforge), [YouTube](https://youtube.com/@raihnforge), [Facebook](https://facebook.com/raihnforge), and [Twitter](https://twitter.com/RaihnForge).

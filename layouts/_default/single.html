@@ -1,6 +1,13 @@
 {{ define "main" }}
 <article class="single-post">
   <header class="post-header">
+    <nav class="post-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+      <span aria-hidden="true">/</span>
+      {{ .Title }}
+    </nav>
     <h1>{{ .Title }}</h1>
     <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
     {{ with .Description }}<p class="post-description">{{ . }}</p>{{ end }}
@@ -11,7 +18,7 @@
   </div>
 
   <footer class="post-footer">
-    <a href="{{ .Parent.RelPermalink }}">&larr; Back</a>
+    <a href="{{ .Parent.RelPermalink }}" class="back-link">&larr; Back to {{ .Parent.Title }}</a>
   </footer>
 </article>
 {{ end }}

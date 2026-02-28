@@ -3,32 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.role }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
 </head>
 <body>
-  <header class="site-header">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header" role="banner">
     <div class="container">
       <a href="/" class="site-title">{{ .Site.Title }}</a>
-      <nav class="site-nav">
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
         {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
+        <a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        {{ with .Site.Params.email }}
+        <a href="mailto:{{ . }}" class="nav-cta">Let's Talk</a>
         {{ end }}
       </nav>
     </div>
   </header>
 
-  <main class="site-main">
+  <main id="main-content" class="site-main" role="main">
     <div class="container">
       {{ block "main" . }}{{ end }}
     </div>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>&copy; {{ now.Year }} {{ .Site.Params.author }}</p>
+      <div class="footer-inner">
+        <div class="footer-left">
+          <p>&copy; {{ now.Year }} {{ .Site.Params.author }}</p>
+          <p class="footer-tagline">{{ .Site.Params.subtitle }}</p>
+        </div>
+        {{ with .Site.Params.social }}
+        <nav class="footer-social" aria-label="Social links">
+          {{ with .instagram }}<a href="{{ . }}">Instagram</a>{{ end }}
+          {{ with .youtube }}<a href="{{ . }}">YouTube</a>{{ end }}
+          {{ with .twitter }}<a href="{{ . }}">Twitter</a>{{ end }}
+          {{ with .facebook }}<a href="{{ . }}">Facebook</a>{{ end }}
+        </nav>
+        {{ end }}
+      </div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
 </body>
 </html>
