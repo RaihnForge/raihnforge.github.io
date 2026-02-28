@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
+</div>
+
+<div class="project-grid">
+  {{ range .Pages }}
+  <a href="{{ .RelPermalink }}" class="project-card">
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+    {{ else }}
+    <div class="project-placeholder"></div>
+    {{ end }}
+    <div class="project-info">
+      <h2>{{ .Title }}</h2>
+      <div class="project-meta">
+        {{ with .Params.engine }}<span class="project-engine">{{ . }}</span>{{ end }}
+        {{ with .Params.status }}
+        <span class="project-status status-{{ . | lower | replaceRE " " "-" }}">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </a>
+  {{ end }}
+</div>
+{{ end }}

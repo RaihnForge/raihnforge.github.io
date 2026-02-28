@@ -1,0 +1,27 @@
+# For deployment, override via: hugo --baseURL "https://yourdomain.com/"
+baseURL = "/"
+languageCode = "en-us"
+title = "RaihnForge"
+
+[params]
+  author = "Joshua Keyes"
+  description = "Digital art, game development, and design — Raise your hammer to the storm!"
+  subtitle = "Raise your hammer to the storm!"
+
+[menu]
+  [[menu.main]]
+    name = "Art"
+    url = "/art/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "Game Dev"
+    url = "/gamedev/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4

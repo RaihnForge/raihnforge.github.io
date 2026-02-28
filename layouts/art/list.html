@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
+</div>
+
+<div class="gallery-grid">
+  {{ range .Pages }}
+  <a href="{{ .RelPermalink }}" class="gallery-item">
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+    {{ else }}
+    <div class="gallery-placeholder"></div>
+    {{ end }}
+    <div class="gallery-caption">
+      <span class="gallery-title">{{ .Title }}</span>
+      {{ with .Params.medium }}<span class="gallery-medium">{{ . }}</span>{{ end }}
+      {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}
+    </div>
+  </a>
+  {{ end }}
+</div>
+{{ end }}

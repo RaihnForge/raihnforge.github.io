@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="hero">
+  <h1 class="hero-title">RaihnForge</h1>
+  <p class="hero-subtitle">{{ .Site.Params.subtitle }}</p>
+</section>
+
+<section class="home-sections">
+  <a href="/art/" class="home-card">
+    <h2>Art</h2>
+    <p>Digital illustration, character design, commissions, and fan art spanning two decades of creative work.</p>
+  </a>
+  <a href="/blog/" class="home-card">
+    <h2>Blog</h2>
+    <p>Project breakdowns, process notes, and behind-the-scenes looks at design and creative work.</p>
+  </a>
+  <a href="/gamedev/" class="home-card">
+    <h2>Game Dev</h2>
+    <p>Indie game projects — from pixel art exercises and JS13K entries to a long-running Metroidvania.</p>
+  </a>
+</section>
+{{ end }}

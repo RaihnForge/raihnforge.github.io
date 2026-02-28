@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article class="artwork-detail">
+  <div class="artwork-image">
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" />
+    {{ else }}
+    <div class="artwork-placeholder">No image available</div>
+    {{ end }}
+  </div>
+
+  <div class="artwork-info">
+    <h1>{{ .Title }}</h1>
+
+    <dl class="artwork-meta">
+      {{ with .Params.medium }}
+      <dt>Medium</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
+      {{ with .Params.year }}
+      <dt>Year</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
+    </dl>
+
+    {{ with .Description }}
+    <p class="artwork-description">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Content }}
+    <div class="artwork-content">{{ . }}</div>
+    {{ end }}
+
+    <a href="/art/" class="back-link">&larr; All Art</a>
+  </div>
+</article>
+{{ end }}

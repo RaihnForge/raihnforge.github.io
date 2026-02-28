@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo version:*)",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(hugo server:*)",
+      "WebFetch(domain:raihnforge.com)",
+      "WebSearch",
+      "Bash(gh auth:*)",
+      "Bash(git:*)"
+    ]
+  }
+}

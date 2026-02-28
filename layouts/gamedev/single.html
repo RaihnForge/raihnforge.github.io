@@ -1,0 +1,34 @@
+{{ define "main" }}
+<article class="project-detail">
+  {{ with .Params.image }}
+  <div class="project-hero-image">
+    <img src="{{ . }}" alt="{{ $.Title }}" />
+  </div>
+  {{ end }}
+
+  <div class="project-detail-info">
+    <h1>{{ .Title }}</h1>
+
+    <dl class="project-meta-list">
+      {{ with .Params.engine }}
+      <dt>Engine</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
+      {{ with .Params.status }}
+      <dt>Status</dt>
+      <dd><span class="project-status status-{{ . | lower | replaceRE " " "-" }}">{{ . }}</span></dd>
+      {{ end }}
+    </dl>
+
+    {{ with .Description }}
+    <p class="project-description">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Content }}
+    <div class="project-content">{{ . }}</div>
+    {{ end }}
+
+    <a href="/gamedev/" class="back-link">&larr; All Projects</a>
+  </div>
+</article>
+{{ end }}
