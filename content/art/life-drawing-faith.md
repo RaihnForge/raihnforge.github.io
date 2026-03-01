@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing-Faith"
 date: 2007-11-05
-description: ""
+description: "Life drawing — Faith, an expressive figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]
 draft: false
 medium: "Pencil"

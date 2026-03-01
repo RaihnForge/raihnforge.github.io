@@ -13,7 +13,7 @@ recovered: true
 
 These assets were used for a Casino as a way to update some of the look and feel of their promotions and table print outs.  The project was far and away from what I usually work on.  In the end, though the project was very fun and I was able to learn many more interesting techniques in creating fun designs for print of online assets.
 
-[![wildgoose_coupon copy copy](http://www.joshuakeyes.us/wordpress/raihn/images/a965d3aa5f34_F61C/wildgoose_coupon-copy-copy_thumb.png "wildgoose_coupon copy copy")](http://www.joshuakeyes.us/wordpress/raihn/images/a965d3aa5f34_F61C/wildgoose_coupon-copy-copy.png)   
+[![wildgoose_coupon copy copy](http://www.joshuakeyes.us/wordpress/raihn/images/a965d3aa5f34_F61C/wildgoose_coupon-copy-copy_thumb.png "wildgoose_coupon copy copy")](http://www.joshuakeyes.us/wordpress/raihn/images/a965d3aa5f34_F61C/wildgoose_coupon-copy-copy.png) 
 Don’t forget your triple 7 winners card!
 
 The follow were table game rules and information that I helped to update.  The information sat in trays so that players could have easy reference to the game of their choice.  The most difficult and interesting aspect of these were the revamping and in some cases creating a logo that would work for the table, since I was given no assets from the Casio management to work with.

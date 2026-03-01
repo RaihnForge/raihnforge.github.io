@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing, Woman"
 date: 2007-03-09
-description: ""
+description: "Life drawing — female figure study."
 tags: ["Art", "Life Drawing", "Sketchbook Pencil", "sketches"]
 draft: false
 medium: "Pencil"

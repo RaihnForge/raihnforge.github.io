@@ -1,7 +1,7 @@
 ---
 title: "King of the Hill Avatars for WCreplays.com"
 date: 2008-07-19
-description: "What is this?"
+description: "King of the Kill avatar series created for WCReplays.com."
 tags: ["Art", "Digital Painting", "Joshua", "Keyes", "Speed Painting", "WCR", "Web Assets Design", "crown", "fallen king", "human", "nightelf", "orc", "paint", "replays", "speed paint", "undead", "warcraft"]
 draft: false
 medium: "Digital"
@@ -21,28 +21,22 @@ Recently I was asked to create custom Avatars for weekly king of the hill (KotH)
 
 ## Larger versions:
 
-[}}" target="\_blank">![](http://www.joshuakeyes.us/wcreplays/images/wcr_avatar_fallen_king_m.jpg)]({{< youtube "Watch me paint it!" >}}
-
+[}}" target="_blank">![](http://www.joshuakeyes.us/wcreplays/images/wcr_avatar_fallen_king_m.jpg)]({{< youtube "Watch me paint it!" >}}
 
 
 [}}">![](http://www.joshuakeyes.us/wcreplays/images/wcr_avatar_ud_king_m3.jpg)](
 
 
-
 [}}">![](http://www.joshuakeyes.us/wcreplays/images/wcr_or_king_250_1.jpg)](
-
 
 
 [}}">![](http://www.joshuakeyes.us/raihn/images/wcr_avatar_king_hu_m.jpg)](
 
 
-
 [}}">![](http://www.joshuakeyes.us/raihn/images/wcr_avatar_king_ne_m.jpg)](
 
 
-
-[}}&feature=channel\_page">![](http://www.joshuakeyes.us/raihn/images/wcr_avatar_king_rd_m.jpg)](
-
+[}}&feature=channel_page">![](http://www.joshuakeyes.us/raihn/images/wcr_avatar_king_rd_m.jpg)](
 
 
 all images © Joshua Keyes 2008 all rights reserved

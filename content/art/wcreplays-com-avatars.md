@@ -23,4 +23,4 @@ Some Starcraft II beta avatars utilizing in game assets to match up with the sam
 
 ![](http://www.joshuakeyes.us/wcreplays/images/wcr_sc2avatars_stalker.jpg) ![](http://www.joshuakeyes.us/wcreplays/images/wcr_sc2avatars_tadvisor.jpg) ![](http://www.joshuakeyes.us/wcreplays/images/wcr_sc2avatars_viking.jpg) ![](http://www.joshuakeyes.us/wcreplays/images/wcr_sc2avatars_voidray.jpg) ![](http://www.joshuakeyes.us/wcreplays/images/wcr_sc2avatars_zadvisor.jpg)
 
-![](http://www.joshuakeyes.us/wcreplays/images/wcr_sc2avatars_zealot.jpg) ![](http://www.joshuakeyes.us/wcreplays/images/wcr_sc2avatars_zergling.jpg)
+![](http://www.joshuakeyes.us/wcreplays/images/wcr_sc2avatars_zea lot.jpg) ![](http://www.joshuakeyes.us/wcreplays/images/wcr_sc2avatars_zergling.jpg)

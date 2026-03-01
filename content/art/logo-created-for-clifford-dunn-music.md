@@ -1,7 +1,7 @@
 ---
 title: "Logo Created for Clifford Dunn Music"
 date: 2008-06-09
-description: ""
+description: "Logo design created for Clifford Dunn Music."
 tags: ["Clifford Dunn", "Joshua Keyes", "Logo Designs", "Raihn", "logo design"]
 draft: false
 medium: "Digital"

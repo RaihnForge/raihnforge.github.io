@@ -11,7 +11,7 @@ recovered: true
 ---
 
 **Disclaimer**
-Any views or opinion represented in the assets of Politically Correct the Game belong solely to DIP’s Politically Correct the Game and do not represent my personal views, opinions, position or attitude.        
+Any views or opinion represented in the assets of Politically Correct the Game belong solely to DIP’s Politically Correct the Game and do not represent my personal views, opinions, position or attitude.
 ![Bill play money](http://www.joshuakeyes.us/raihn/images/dip_money_bill.jpg)
 
 ![Rush play money](http://www.joshuakeyes.us/raihn/images/dip_money_rush.jpg)

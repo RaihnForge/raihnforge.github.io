@@ -11,7 +11,7 @@ recovered: true
 
 [![Motorcylce poster for my now famous Dad](http://www.joshuakeyes.us/raihn/images/ducati_poster_dad_sm.jpg)](http://www.joshuakeyes.us/raihn/images/ducati_poster_dad.jpg)
 
-##### 
+#####
 
 The original design was from a poster brought from my Dad's trip to Moto GP a couple of weeks ago. The poster concept and design belongs to Yamaha. The photograph was taken of my Dad riding his Ducati during his Zoom Zoom track day at Reno-Fernley Raceway.
 

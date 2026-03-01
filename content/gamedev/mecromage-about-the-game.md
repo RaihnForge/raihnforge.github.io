@@ -12,13 +12,13 @@ recovered: true
 
 [![Untitled-4](http://www.joshuakeyes.us/wordpress/raihn/images/3690bf728b3b_E3BF/Untitled-4_thumb_3.png "Untitled-4")](http://www.joshuakeyes.us/wordpress/raihn/images/3690bf728b3b_E3BF/Untitled-4_3.png)
 
-**Title: Mecromage  
-Genre: Action, Adventure, Role-Playing, Platformer   
-Developer: Unchosen Paths LLC  
-Release Date: No official - Shooting for Winter 2013 but we could be years off..  
+**Title: Mecromage
+Genre: Action, Adventure, Role-Playing, Platformer
+developr: Unchosen Paths LLC
+Release Date: No official - Shooting for Winter 2013 but we could be years off..
 Languages: English**
 
-**About the Game** 
+**About the Game**
 
 Mecromage is a role-playing platformer that focuses gameplay on meaningful combat, rewarding exploration, and immersive atmosphere. In a realm where Manacrafting has long ago beaten back technological titans and orbital invasions, an era of imbalance has settled, tainting the region and perverting its natural laws. Many secrets, artifacts, and tactics will need to be unveiled if one wishes to bring balance to the fantastic yet fragmented realm.
 
@@ -36,7 +36,7 @@ Power alone will not topple the might of the Mecromage, but in that you shall no
 
 **[![gamess1](http://www.joshuakeyes.us/wordpress/raihn/images/3690bf728b3b_E3BF/gamess1_thumb_3.png "gamess1")](http://www.joshuakeyes.us/wordpress/raihn/images/3690bf728b3b_E3BF/gamess1_3.png)**
 
-**Exploration** 
+**Exploration**
 
 Choose your path wisely as you traverse the regions occupied by the Mecromage’s patrols. Uncover ruined temples, mysterious caves, sacred grounds, and regional clans. Explore carefully and thoroughly, uncovering artifacts, hidden passages, and interesting characters. Be wary of unexpected encounters as you search to find the keys to the truly restore balance to the land.
 
@@ -48,7 +48,7 @@ To obtain your full potential you must take note and learn from your surrounding
 
 [![chat-demo_screen_01](http://www.joshuakeyes.us/wordpress/raihn/images/3690bf728b3b_E3BF/chat-demo_screen_01_thumb.png "chat-demo_screen_01")](http://www.joshuakeyes.us/wordpress/raihn/images/3690bf728b3b_E3BF/chat-demo_screen_01.png)
 
-***MAYBE Voice Talent Narrative****Might have voice narrative* 
+***MAYBE Voice Talent Narrative****Might have voice narrative*
 
 **Music**
 

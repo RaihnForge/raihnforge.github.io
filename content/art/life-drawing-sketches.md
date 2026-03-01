@@ -1,7 +1,7 @@
 ---
 title: "Some Life Drawing Sketches"
 date: 2007-03-08
-description: ""
+description: "Life drawing session — early gesture sketches and warmups."
 tags: ["Art", "Life Drawing", "Sketchbook Digital", "Sketchbook Pencil", "sketches"]
 draft: false
 medium: "Pencil"

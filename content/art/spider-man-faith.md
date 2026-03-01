@@ -17,10 +17,10 @@ Heroes may be cornerstones in our collective conscious but I believe they inspir
 
 {{< youtube "d8kMBMef8qw" >}}
 
-Peace,  
+Peace,
 Raihn
 
-PS What fictional heroes inspire you and challenge your values?  Have they inspired you or helped to shape your own values?  Here are some of mine that I can think of:  
+PS What fictional heroes inspire you and challenge your values?  Have they inspired you or helped to shape your own values?  Here are some of mine that I can think of:
  **Captain America:**  Reminds me that service to a greater cause is important, and that the ideal of that cause can be tainted if you are not ever-vigilant and active in keeping it pure.
 
 **Spider Man:**   Use the gifts and abilities that you do have to the greatest effect, no matter what they are.  Mine seem to be related to art and that I am very interested in helping others if I have the opportunity to do so, but more on a personal level.  One of the continuously interesting aspects about Spider-Man is his struggle to fulfill his obligation to the larger community's security while fulfilling his moral obligation to be a responsible friend and family member.

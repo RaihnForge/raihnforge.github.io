@@ -17,8 +17,8 @@ This overlay is designed to carry over the clean and functional style that is th
 
 {{< youtube "MGd8FCME8zI" >}}
 
-Design Sample Video  
-  
+Design Sample Video
+
 **Design aspects, challenges, and goals:**
 
 - **Have as little a foot print on the game as possible while maximizing the brand impact.**
@@ -35,7 +35,7 @@ Design Sample Video
               - Choosing to make the overlay graphic conform to the timer early game is the best case situation.  It allows the timer to have the best look during the time in the game that it is most useful.
               - Additionally the seconds digit become less important the longer the game moves on, so having those be cut off is the best case scenario when information will be restricted.
 
-[![](http://www.joshuakeyes.us/wordpress/raihn/images/1bcc74f942ae_9706/dropbox_archive.png)](https://www.dropbox.com/sh/yemofth3ovac3j1/dJRmprferY#f:TeamLiquidOverlay_Gen1_00.png)  
+[![](http://www.joshuakeyes.us/wordpress/raihn/images/1bcc74f942ae_9706/dropbox_archive.png)](https://www.dropbox.com/sh/yemofth3ovac3j1/dJRmprferY#f:TeamLiquidOverlay_Gen1_00.png)
 **[Check out TL overlay progress comps Gallery!](https://www.dropbox.com/sh/yemofth3ovac3j1/dJRmprferY#f:TeamLiquidOverlay_Gen1_00.png)**
 
 Thanks for reading over my design-nerd commentary.  Feel free to submit feed back on what design choices you would make!

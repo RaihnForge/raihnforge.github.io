@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing Study"
 date: 2007-03-09
-description: ""
+description: "Life drawing — extended figure study."
 tags: ["Art", "Life Drawing", "Sketchbook Digital", "sketches"]
 draft: false
 medium: "Digital"

@@ -1,7 +1,7 @@
 ---
 title: "Running with Fusion can be Dangerous&hellip;"
 date: 2010-12-16
-description: "[youtube={{< youtube \"hz-FkeqklmI\" }}&w=448&h=252&hd=1]"
+description: "Exploring game development with Multimedia Fusion — early prototyping experiments."
 tags: ["Indie Game Blog"]
 image: "/images/wp-imports/gamedev/fusion_run4export.gif"
 draft: false
@@ -17,7 +17,7 @@ The best reference literature for animating is, “The Animator’s Survival Kit
 
 [![The Animator's Survival Kit, Expanded Edition: A Manual of Methods, Principles and Formulas for Classical, Computer, Games, Stop Motion and Internet Animators](http://ecx.images-amazon.com/images/I/51dLT%2BUNshL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg)](http://ecx.images-amazon.com/images/I/51dLT%2BUNshL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU01_.jpg)
 
-# 
+#
 
 ## Fusion Run
 
@@ -25,17 +25,17 @@ This particular study focused on a 10 frame run cycle very much like the one use
 
 ![Image hosted by Photobucket.com](http://i10.photobucket.com/albums/a135/samusaran99/Fusion-Samus-Running.gif)
 
-Normal Run   
+Normal Run
 1. Contact - 2. Low - 3. Pass - 4. High - 5. Contact - 6. Low - 7. Pass - 8. High
 
-Fusion Run works like this   
+Fusion Run works like this
 1. Contact - 2. Low - 3. Pass - 4. High -  5. Momentum - 6. Contact - 7. Low - 8. Pass - 9. High - 10. Momentum
 
 I labeled the extra frame as "extreme" initially because the legs are stretched to their extent.  It is important to note that the frame could easily be called the "pre-contact" frame, as it so closely precedes the contact frame.
 
 Not quite satisfied with those initial observations, I thought better of the naming. Since it is clear that character at this point has stopped exerting energy to push forward he is letting the momentum follow through, thus it is more appropriate to name the extra frame as as such.
 
-# 
+#
 
 ## Smart Objects
 

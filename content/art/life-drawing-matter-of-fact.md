@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing-Matter of Fact"
 date: 2007-11-05
-description: ""
+description: "Life drawing — Matter of Fact, a composed figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]
 draft: false
 medium: "Pencil"

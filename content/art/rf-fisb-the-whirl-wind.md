@@ -37,7 +37,7 @@ Replays are thrown around via messengers so those of us at work or taking care o
 
 Indeed it is, Tbone, indeed it is.
 
-gln1 (good luck next one)!  
+gln1 (good luck next one)!
  -Raihn
 
 Pub: [TeamLiquid](https://tl.net/blogs/547794-sketch-reap-the-whirl-wind), [DA](https://www.deviantart.com/raihnazure/art/Reap-The-Whirl-Wind-797698331)

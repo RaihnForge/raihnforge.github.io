@@ -7,7 +7,7 @@ image: "/images/wp-imports/blog/scary3.gif"
 draft: false
 ---
 
-## 
+##
 
 As the ladder fires burn once again for the **W3Champions Season 22 Finals**, four champions rise — not of flesh, but of ember and will. These are the **Ash Keepers**.
 
@@ -32,7 +32,7 @@ This series honors the legendary heroes of Warcraft III while reimagining them t
 
 ### The Lore of the Ash Keepers
 
-The Ash Keepers are not spirits of vengeance but echoes of remembrance—embers that rise when the fires of war have burned too long.  
+The Ash Keepers are not spirits of vengeance but echoes of remembrance—embers that rise when the fires of war have burned too long.
 Each was once a champion who learned too late that the divine flame was never meant to conquer, only to live, to warm, and to fade in its time.
 
 Now they walk the ashen places between life and death, silent sentinels of the true fire. Where necromancers, priests, and demons twist the breath of the sun for their own design, the Keepers return it to its rightful course—one act, one spark at a time.
@@ -65,22 +65,22 @@ Once lord of the wilds, now commander of the ashen hunt. His beasts are spectral
 
 ASIDE: The *Awoken Ember -* - Short Story
 
-The air trembled with what was left of the chant.  
+The air trembled with what was left of the chant.
 A prayer, or a curse — the Pit Lord no longer knew the difference.
 
 He stood amid the ruin of a battlefield that had forgotten its armies. What remained was motion without meaning: banners fluttering with no sigil to claim, blades cooling in hands that no longer clutched them. The ground breathed heat in slow, uneven pulses, like a dying heart that refused to stop.
 
-He sank one claw into the soil. Warm still.  
-Beneath it, he felt the hum of life that once had flowed — not gone, only displaced.  
+He sank one claw into the soil. Warm still.
+Beneath it, he felt the hum of life that once had flowed — not gone, only displaced.
 They had twisted it again.
 
-The necromancers. The priests. The summoners who called to flame and shadow with no reverence, no patience for the rhythm that birthed all things. They had caged the fire, forced it to serve, to kill, to persist beyond its will.  
+The necromancers. The priests. The summoners who called to flame and shadow with no reverence, no patience for the rhythm that birthed all things. They had caged the fire, forced it to serve, to kill, to persist beyond its will.
 And the earth had grown weary of them.
 
 He lifted his gaze. The sky was bruised purple, torn open where the divine light should have been. Threads of gold still lingered there — the remnants of the sun, caught in smoke. Once, that light had been a promise. Now it fell as ash.
 
-He closed his eyes. The memories pressed hard against him — cities in ruin, faces lit by his fire, then gone. All that power, all that fury, and never once had he seen what the flame truly meant.  
-It had not been made to burn.  
+He closed his eyes. The memories pressed hard against him — cities in ruin, faces lit by his fire, then gone. All that power, all that fury, and never once had he seen what the flame truly meant.
+It had not been made to burn.
 It had been made to live.
 
 The glaive in his hand shifted, metal whispering against the wind. He turned it and laid the flat of the blade to the ground, a gesture of submission. Sparks crawled along the edges, seeping into the soil like veins of molten gold. The ground shuddered, cracked, and sighed.
@@ -89,25 +89,25 @@ From beneath it, something stirred.
 
 Figures began to rise — not summoned, but released. The **Warden** stepped through the haze, her form etched in pale fire, her mask reflecting the faint light of the fallen sun. Behind her, the **Paladin** emerged, silent but steadfast, the glow of his hammer faint as if remembering what it once was. The **Beastmaster** followed, spectral beasts coiling from the mist like smoke returning to breath.
 
-The Pit Lord said nothing. He did not command them.  
+The Pit Lord said nothing. He did not command them.
 He only watched, the heat from his glaive fading to a low ember.
 
-They understood without words. They always had.  
+They understood without words. They always had.
 They, too, had been stolen from their rest — their essence bound and spent by those who sought dominion over life’s flame.
 
 Now, the flame itself called for restitution.
 
 The Pit Lord spread his wings — not the leathery veils of the abyss, but plumes of light and cinder. Each feather fell with the quiet hiss of rain on coals. He stepped forward, feeling the ash give way beneath his talons, and for a moment, he thought he could hear the world exhale.
 
-There would be no sermons, no armies, no grand decrees.  
-Only fire returned to its rightful course.  
+There would be no sermons, no armies, no grand decrees.
+Only fire returned to its rightful course.
 Only life and death restored to their covenant.
 
-And for those who had broken it —  
-the ones who had stolen the divine spark to make war eternal —  
+And for those who had broken it —
+the ones who had stolen the divine spark to make war eternal —
 the Keepers would come.
 
-### 
+###
 
 ---
 

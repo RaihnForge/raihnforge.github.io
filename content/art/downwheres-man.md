@@ -21,9 +21,9 @@ Manshizzle Time Lapse Youtube background design by Joshua Keyes
 
 I couldn’t help spending some time today drawing up my version of Manshizzle. To make the endeavor worthwhile, and to send thanks to Downwhere for his hours of entertainment, I presented Manshizzle as a youtube background for his channel.
 
-Wallpapers:  
-[16:9](http://joshuakeyes.us/raihn/images/manshizzle_wallpaper_16-9.jpg)  
-[16:10](http://joshuakeyes.us/raihn/images/manshizzle_wallpaper_16-10.jpg)  
+Wallpapers:
+[16:9](http://joshuakeyes.us/raihn/images/manshizzle_wallpaper_16-9.jpg)
+[16:10](http://joshuakeyes.us/raihn/images/manshizzle_wallpaper_16-10.jpg)
 [4:3](http://joshuakeyes.us/raihn/images/manshizzle_wallpaper_4-3.jpg)
 
 Beware:  ‘Manshizzle will break you!’’

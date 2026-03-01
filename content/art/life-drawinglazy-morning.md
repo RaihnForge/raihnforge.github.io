@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing&ndash;Lazy Morning"
 date: 2007-11-05
-description: ""
+description: "Life drawing — Lazy Morning, a relaxed figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]
 draft: false
 medium: "Pencil"

@@ -13,5 +13,5 @@ recovered: true
 
 Its was a while ago that I illustrated this on an envelope and sent it out to my wife while she was away for a on a challenging trip.  I ran across it and thought it might be fun to share.  I’m currently in a life transition, moving across country. This image reminds me that no matter where I step next in life, I better make it a point to step up to the challenge, and ROFL STOMP THAT SHIZZZ!
 
-Peace be with you!  
+Peace be with you!
 Raihn

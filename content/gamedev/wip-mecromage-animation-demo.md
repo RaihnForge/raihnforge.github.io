@@ -1,7 +1,7 @@
 ---
 title: "WIP - Mecromage Animation Demo"
 date: 2018-10-12
-description: "{{< youtube \"ZXUX9TNHaRY\" }}"
+description: "Work-in-progress animation demo for the Mecromage project."
 tags: ["Game Graphics", "Indie Game Art", "Unchosen Paths"]
 image: "/images/wp-imports/gamedev/woodbeetle_look1.gif"
 draft: false

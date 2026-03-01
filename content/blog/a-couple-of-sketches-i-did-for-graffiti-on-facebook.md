@@ -1,7 +1,7 @@
 ---
 title: "A couple of sketches I did for Graffiti on Facebook"
 date: 2010-05-27
-description: "The Knight"
+description: "Quick sketches created for the Graffiti app on Facebook."
 image: "/images/wp-imports/blog/image.png"
 draft: false
 ---

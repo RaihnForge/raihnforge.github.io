@@ -45,7 +45,7 @@ Applying Value Band Concept
 
 #### Sprites
 
-I've begun working with Aesprite in order to better learn the subtleties of pixel animation. My process was first to add in-between frames for Link's retro sprite maintaining his original frames. Next, I developed an original sprite in the same style. I examined my efficiency of structure by creating a second 'skin'my breakdown of layers.
+I've begun working with Aesprite in order to better learn the subtleties of pixel animation. My process was first to add in-between frames for Link's retro sprite maintaining his original frames. Next, I developd an original sprite in the same style. I examined my efficiency of structure by creating a second 'skin'my breakdown of layers.
 
 ![](/images/wp-imports/gamedev/walk4_pro.gif)
 
@@ -59,7 +59,7 @@ Original Musing
 
 Efficiency Test
 
-For more practice I've developed an enemy sprite skeleton. This one is more difficult because it lacks clothing or armor variation in order to provide broad indicators of proportion to the viewer.
+For more practice I've developd an enemy sprite skeleton. This one is more difficult because it lacks clothing or armor variation in order to provide broad indicators of proportion to the viewer.
 
 ![](/images/wp-imports/gamedev/sprite-0002-1.gif)
 

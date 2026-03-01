@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing, Man"
 date: 2007-03-09
-description: ""
+description: "Life drawing — male figure study."
 tags: ["Art", "Life Drawing", "Sketchbook Pencil", "sketches"]
 draft: false
 medium: "Pencil"

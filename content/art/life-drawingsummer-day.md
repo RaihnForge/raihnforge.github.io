@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing&ndash;Summer Day"
 date: 2007-11-05
-description: ""
+description: "Life drawing — Summer Day, a warm figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]
 draft: false
 medium: "Pencil"

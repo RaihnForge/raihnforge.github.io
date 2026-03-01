@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing More Female Study and Sketches"
 date: 2007-03-09
-description: ""
+description: "Life drawing session — additional female figure studies."
 tags: ["Art", "Life Drawing", "Sketchbook Digital", "Sketchbook Pencil", "sketches"]
 draft: false
 medium: "Pencil"

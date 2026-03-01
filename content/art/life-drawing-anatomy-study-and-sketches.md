@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing, Anatomy Study and Sketches"
 date: 2007-03-09
-description: ""
+description: "Life drawing session — anatomy study and gesture sketches."
 tags: ["Art", "Life Drawing", "Sketchbook Pencil", "sketches"]
 draft: false
 medium: "Pencil"

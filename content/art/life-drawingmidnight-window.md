@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing&ndash;Midnight Window"
 date: 2007-11-05
-description: ""
+description: "Life drawing — Midnight Window, a shadowed figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]
 draft: false
 medium: "Pencil"

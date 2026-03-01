@@ -11,7 +11,7 @@ recovered: true
 
 [![collectible_supplies_discount_04](http://www.joshuakeyes.us/wordpress/raihn/images/Collectable-Supplies-Coupon_9CF1/collectible_supplies_discount_04_thumb.jpg "collectible_supplies_discount_04")](http://www.joshuakeyes.us/wordpress/raihn/images/Collectable-Supplies-Coupon_9CF1/collectible_supplies_discount_04.jpg)I’ve been privileges enough to do some work for Collectible Supplies from time to time.  This was a very fun and challenging coupon to design, but I feel like in the end the work paid off!  Still, I feel like I could have done a better job with the message text.
 
-###### 
+######
 
 ###### *- Oct 2012 design*
 

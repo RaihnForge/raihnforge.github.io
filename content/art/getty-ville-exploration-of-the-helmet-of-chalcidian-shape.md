@@ -56,7 +56,7 @@ Britannica Online. 01 May. 2008 <<http://www.britannica.com/EBchecked/topic/1046
 
 Diffendale, Dan. ”Attic” and “Chalcidian” Helmets. 29 Apr. 2008
 
-<http://www.freewebtown.com/italica/italic\_military/general\_italic/armor/helmets/newattic.html>.
+<http://www.freewebtown.com/italica/italic_military/general_italic/armor/helmets/newattic.html>.
 
 Kaplan, Tobi Levenberg, ed. The J. Paul Getty Museum Handbook of the
 

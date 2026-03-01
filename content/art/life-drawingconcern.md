@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing&ndash;Concern"
 date: 2007-12-05
-description: ""
+description: "Life drawing — Concern, an emotive figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]
 draft: false
 medium: "Pencil"

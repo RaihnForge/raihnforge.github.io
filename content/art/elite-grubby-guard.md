@@ -12,10 +12,10 @@ year: 2012
 recovered: true
 ---
 
-[![Grubby Elite Stalker](http://www.joshuakeyes.us/wordpress/raihn/images/88b44ab7645e_FF2/Grubby-Elite-Stalker_thumb.jpg "Grubby Elite Stalker")](http://www.joshuakeyes.us/wordpress/raihn/images/88b44ab7645e_FF2/Grubby-Elite-Stalker.jpg)  
-CHEER FOR GRUBBY AT MLG!  
-[(Click to download 16:10 desktop wallpaper)](http://dl.dropbox.com/u/2967552/grub/grubby_stalker_desktop2.jpg)   
-  
+[![Grubby Elite Stalker](http://www.joshuakeyes.us/wordpress/raihn/images/88b44ab7645e_FF2/Grubby-Elite-Stalker_thumb.jpg "Grubby Elite Stalker")](http://www.joshuakeyes.us/wordpress/raihn/images/88b44ab7645e_FF2/Grubby-Elite-Stalker.jpg)
+CHEER FOR GRUBBY AT MLG!
+[(Click to download 16:10 desktop wallpaper)](http://dl.dropbox.com/u/2967552/grub/grubby_stalker_desktop2.jpg) 
+
 The Elite Grubby Guard took a lot of perseverance, but after loosing the master file two times, and recovering from compressed demo images, I was able to finally complete a working version.  This is an overlay image for the ‘out of game’ segments I created for twitch.tv streamer Grubby.
 
 The illustration itself went through some serious overhauls, but eventually coming to a point when I needed to hit a deadline I stopped refining and started finishing.   What I like most about the project was my stronger line work, and my first time use of Photoshop CS 5’s (3d?) paint brush tools.  I can’t stand the preview window that pops up, but love the tools.

@@ -1,7 +1,7 @@
 ---
 title: "Sprite In Progress"
 date: 2017-03-04
-description: "<p>Some concept work I put in today for enemy creatures of Indie game I&#8217;m working on.  These enemies belong to the same &#8216;culture&#8217; so should feel somewhat related.</p>"
+description: "<p>Some concept work I put in today for enemy creatures of Indie game I'm working on.  These enemies belong to the same 'culture' so should feel somewhat related.</p>"
 tags: ["Character Concept", "Design", "Game Design", "Indie Game Art", "Indie Game Blog", "Indie game Concept Art", "Unchosen Paths"]
 image: "/images/wp-imports/gamedev/sketchpad_turnaround.png"
 draft: false

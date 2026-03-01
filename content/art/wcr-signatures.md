@@ -1,7 +1,7 @@
 ---
 title: "WCR: Signatures"
 date: 2008-08-15
-description: ""
+description: "Forum signature collection designed for WCReplays.com users."
 tags: ["Signatures", "Web Assets Design"]
 draft: false
 medium: "Digital"

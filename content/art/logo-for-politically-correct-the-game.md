@@ -1,7 +1,7 @@
 ---
 title: "Logo for DIP - The company behind Politically Correct the Game"
 date: 2007-04-12
-description: ""
+description: "Logo design for Politically Correct the Game board game."
 tags: ["Logo Designs"]
 draft: false
 medium: "Digital"

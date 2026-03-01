@@ -23,7 +23,7 @@ Some sketches I created while conceptualizing a ‘Hidra/Grekanlisk’  Too muc
 
 EDIT:  I won an EG art contest with this image!  Thanks so much to EG and SteelSeries!
 
-[![200476_1823419236060_1557606569_31837848_6013678_n](http://www.joshuakeyes.us/wordpress/raihn/images/Grekan-vs-Gorilla_2B5E/200476_1823419236060_1557606569_31837848_6013678_n_thumb.jpg "200476_1823419236060_1557606569_31837848_6013678_n")](http://www.joshuakeyes.us/wordpress/raihn/images/Grekan-vs-Gorilla_2B5E/200476_1823419236060_1557606569_31837848_6013678_n.jpg)  
+[![200476_1823419236060_1557606569_31837848_6013678_n](http://www.joshuakeyes.us/wordpress/raihn/images/Grekan-vs-Gorilla_2B5E/200476_1823419236060_1557606569_31837848_6013678_n_thumb.jpg "200476_1823419236060_1557606569_31837848_6013678_n")](http://www.joshuakeyes.us/wordpress/raihn/images/Grekan-vs-Gorilla_2B5E/200476_1823419236060_1557606569_31837848_6013678_n.jpg)
 Can’t say I never win anything anymore! ![Open-mouthed smile](http://www.joshuakeyes.us/wordpress/raihn/images/Grekan-vs-Gorilla_2B5E/wlEmoticon-openmouthedsmile.png)
 
 > Congratulations on winning our "IdrA vs. Jinro" fan art contest! You'll be receiving a brand new SteelSeries gear pack including a 7H Headset (USB), SX Mousepad, EG Mousepad, Xai Laser Mouse, and a Bigfoot Networks Killer 2100 gaming network card.

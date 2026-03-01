@@ -11,7 +11,7 @@ recovered: true
 
 [![versionflutetm](http://www.joshuakeyes.us/wordpress/raihn/images/Dunn-for-Now-Music_6144/versionflutetm_thumb.jpg "versionflutetm")](http://www.joshuakeyes.us/wordpress/raihn/images/Dunn-for-Now-Music_6144/versionflutetm.jpg)
 
-This is a Business Card that I developed for a friend of mine.  He composes music, as well as music lessons.  Below are a couple of drafts.
+This is a Business Card that I developd for a friend of mine.  He composes music, as well as music lessons.  Below are a couple of drafts.
 
 [![version02bw](http://www.joshuakeyes.us/wordpress/raihn/images/Dunn-for-Now-Music_6144/version02bw_thumb.jpg "version02bw")](http://www.joshuakeyes.us/wordpress/raihn/images/Dunn-for-Now-Music_6144/version02bw.jpg)
 

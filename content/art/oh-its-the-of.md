@@ -9,7 +9,7 @@ year: 2011
 recovered: true
 ---
 
-[![theofcover](http://www.joshuakeyes.us/wordpress/raihn/images/Oh-its-the-Of_C981/theofcover_thumb.jpg "theofcover")](http://www.joshuakeyes.us/wordpress/raihn/images/Oh-its-the-Of_C981/theofcover.jpg)  
+[![theofcover](http://www.joshuakeyes.us/wordpress/raihn/images/Oh-its-the-Of_C981/theofcover_thumb.jpg "theofcover")](http://www.joshuakeyes.us/wordpress/raihn/images/Oh-its-the-Of_C981/theofcover.jpg)
 Oh it’s the Of – Cover album artwork © 2011 Joshua Keyes
 
 A band called ‘Oh it’s the Of’ contacted me and requested that I create in image for their album cover, the project sounded interesting (literally – their music sounds interesting) and thus I agreed.

@@ -13,7 +13,7 @@ Foundational assets in Mecromage are the blueprint building blocks that indicate
 
 ###### 2017-06-13 13.39.21.jpg Breakdown of wall assets
 
-Deciding what and how these Foundational Assets would be, and importantly how they would be organized and maintained, has been no easy feat.  Clear communication of the needs of designers, artists, and programmers is essential.
+Deciding what and how these Foundational Assets would be, and importantly how they would be organized and maintained, has been no easy feat.  Clear communication of the needs of designers, artists, and programmars is essential.
 
 ###### DemoScene 'Structure' Foundational Assets
 

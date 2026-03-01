@@ -1,7 +1,7 @@
 ---
 title: "What makes the grass grow?"
 date: 2008-09-16
-description: ""
+description: "A USMC-inspired illustration with military spirit."
 tags: ["Digital Painting", "Sketchbook Digital"]
 draft: false
 medium: "Digital"

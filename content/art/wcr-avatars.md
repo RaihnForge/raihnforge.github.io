@@ -1,7 +1,7 @@
 ---
 title: "WCR: Avatars"
 date: 2008-08-15
-description: ""
+description: "Custom avatar collection created for WCReplays.com community."
 tags: ["Avatars", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "WarCraft 3", "Web Assets Design"]
 draft: false
 medium: "Digital"

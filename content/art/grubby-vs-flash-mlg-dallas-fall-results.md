@@ -1,7 +1,7 @@
 ---
 title: "Grubby vs Flash MLG Dallas Fall Results"
 date: 2012-11-03
-description: "The results are in…"
+description: "Art celebrating the Grubby vs Flash showdown at MLG Dallas."
 tags: ["Cartooning", "Comic", "Flash", "Illustration", "Joshua Keyes", "MLG", "Raihn", "Sketchbook", "Sketchbook Digital", "Speed Painting", "eMUSE", "grubby"]
 draft: false
 medium: "Digital"

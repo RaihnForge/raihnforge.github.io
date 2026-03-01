@@ -9,7 +9,7 @@ year: 2007
 recovered: true
 ---
 
-**Disclaimer** Any views or opinion represented in the assets of Politically Correct the Game belong solely to DIP's Politically Correct the Game and do not represent my personal views, opinions, position or attitude.      
+**Disclaimer** Any views or opinion represented in the assets of Politically Correct the Game belong solely to DIP's Politically Correct the Game and do not represent my personal views, opinions, position or attitude.
 
 ![Louisiana Congressman](http://www.joshuakeyes.us/raihn/images/dip_game_card_red_16)
 :   Louisiana Congressman

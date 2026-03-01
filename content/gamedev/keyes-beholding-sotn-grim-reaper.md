@@ -1,7 +1,7 @@
 ---
 title: "Keyes Beholding &ndash; SotN Grim Reaper"
 date: 2012-02-09
-description: "[youtube={{< youtube \"HciGXZhHY1U\" }}&w=448&h=277&hd=1]"
+description: "Speed painting video of the Grim Reaper from Castlevania: Symphony of the Night."
 tags: ["2d sprite", "Art Study", "Castlevania", "Death", "Digital Painting", "Grim", "Illustration", "Indie Game Blog", "Joshua Keyes", "Muse", "Raihn", "Reaper", "SotN", "Speed Painting", "Symphony of the Night", "photoshop"]
 draft: false
 recovered: true

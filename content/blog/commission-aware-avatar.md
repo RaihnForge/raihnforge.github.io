@@ -1,7 +1,7 @@
 ---
 title: "Commission: Gentle Avatar"
 date: 2024-08-25
-description: "---"
+description: "Custom avatar commission — Aware design."
 image: "/images/wp-imports/blog/aware_export_512.png"
 draft: false
 ---
@@ -20,7 +20,7 @@ We traded thoughts and references, but one thing was clear: this dwarf wasn’t 
 
 ### **Why the Mountain King?**
 
-The MK has always been one of my favorite heroes in Warcraft III. So many nights have ended with me yelling:  
+The MK has always been one of my favorite heroes in Warcraft III. So many nights have ended with me yelling:
 **"That’s right! STORMBOLT to the FACE!"** Nothing like lightning and a hammer to the skull to keep the gaming sessions lively.
 
 Getting to channel that same energy into a close-up portrait for someone who mains the MK? That’s the kind of collaboration I live for—where fandom and art meet at the anvil.
@@ -31,7 +31,7 @@ Once the digital piece was complete, I animated a looping .GIF to capture the MK
 
 [![](https://raihn.wordpress.com/wp-content/uploads/2024/08/mkavatar.gif?w=326)](https://raihn.wordpress.com/wp-content/uploads/2024/08/mkavatar.gif)
 
-I also forged a **lenticular print**—a physical version that shifts between two images depending on the viewing angle. The result? A real-world illusion of the Mountain King’s eyes glowing with storm-charged intensity.  
+I also forged a **lenticular print**—a physical version that shifts between two images depending on the viewing angle. The result? A real-world illusion of the Mountain King’s eyes glowing with storm-charged intensity.
 It’s got that tactile magic I love—like holding a sliver of the storm in your hands.
 
 ### **From the Forge**
@@ -51,7 +51,7 @@ The final avatar stands as a tribute to both Muradin and the fierce-hearted play
 - Youtube speedpaint: [RaihnForge QuickDraw – Aware Avatar](https://chatgpt.com/c/67f51a21-2e20-8007-8489-4d3972f55b1c#)
 - Twitch: [twitch.tv/GentleWC3](https://twitch.tv/GentleWC3)
 
-Big thanks to Gentle and his partner for the trust, the vision, and the shared creative spark.  
+Big thanks to Gentle and his partner for the trust, the vision, and the shared creative spark.
 May your next Stormbolt find its mark. 💙
 
 ---

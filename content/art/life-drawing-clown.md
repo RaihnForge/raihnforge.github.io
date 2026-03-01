@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing: Clown"
 date: 2007-03-09
-description: ""
+description: "Life drawing session — expressive clown character study."
 tags: ["Art", "Life Drawing", "Sketchbook Pencil", "sketches"]
 draft: false
 medium: "Pencil"

@@ -10,7 +10,7 @@ recovered: true
 ---
 
 ![Select your hero](http://www.joshuakeyes.us/raihn/images/wc_icon_versus.jpg "Icon Versus")
-Created 24 face illustrations to be used as icons for the 24 heroes in Warcraft 3.  These icons are used at WCrepalys.com as part of their replay generator, developed by Dahnjin.
+Created 24 face illustrations to be used as icons for the 24 heroes in Warcraft 3.  These icons are used at WCrepalys.com as part of their replay generator, developd by Dahnjin.
 **Human**
 
 - ![](http://www.joshuakeyes.us/wcreplays/images/heroicon_mage.jpg)AM

@@ -9,7 +9,7 @@ year: 2008
 recovered: true
 ---
 
-##### 
+#####
 
 ##### [*- Click to enlarge image to 1440x900 view -*](http://www.joshuakeyes.us/raihn/images/badass_tasteless_probe_1440x900.jpg)
 

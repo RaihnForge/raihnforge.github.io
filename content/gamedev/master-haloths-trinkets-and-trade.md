@@ -15,8 +15,8 @@ Shards, Prisms, Crystals, and Orbs all contain some magic.  Some more powerful 
 
 [![shards](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/shards_thumb.png "shards")](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/shards.png)[![prisim](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/prisim_thumb.png "prisim")](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/prisim.png)
 
-[![crystal](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/crystal_thumb.png "crystal")](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/crystal.png)[![orb](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb_thumb.png "orb")](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb.png)  
-  
+[![crystal](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/crystal_thumb.png "crystal")](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/crystal.png)[![orb](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb_thumb.png "orb")](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb.png)
+
 Some special Orbs have been been greedy about absorbing Elemental Mana.  But for what mischievous machinations could such a mana magnet be formed?
 
 [![orb_earth](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb_earth_thumb.png "orb_earth")](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb_earth.png)[![orb_fire](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb_fire_thumb.png "orb_fire")](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb_fire.png)[![orb_storm](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb_storm_thumb.png "orb_storm")](http://www.joshuakeyes.us/wordpress/raihn/images/Nothing-as-magical-as-art_13895/orb_storm.png)

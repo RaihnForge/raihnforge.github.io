@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing Sketches"
 date: 2007-03-09
-description: ""
+description: "Life drawing session — gesture sketches and figure studies."
 tags: ["Art", "Life Drawing", "Sketchbook Digital", "sketches"]
 draft: false
 medium: "Digital"

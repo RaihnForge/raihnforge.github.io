@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing-Reflection"
 date: 2007-11-05
-description: ""
+description: "Life drawing — Reflection, a contemplative figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]
 draft: false
 medium: "Pencil"

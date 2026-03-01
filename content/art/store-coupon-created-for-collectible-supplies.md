@@ -1,7 +1,7 @@
 ---
 title: "Store Coupon Created for Collectible Supplies"
 date: 2008-02-10
-description: ""
+description: "Promotional coupon design for Collectible Supplies."
 tags: ["Advertisements", "Collectible Supplies", "Joshua Keyes", "Raihn", "advertisement", "coupon"]
 draft: false
 year: 2008

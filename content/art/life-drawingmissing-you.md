@@ -1,7 +1,7 @@
 ---
 title: "Life Drawing&ndash;Missing You"
 date: 2007-11-05
-description: ""
+description: "Life drawing — Missing You, an emotional figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]
 draft: false
 medium: "Pencil"

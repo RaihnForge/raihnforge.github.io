@@ -18,4 +18,4 @@ draft: false
 [![](/images/wp-imports/gamedev/guard_leader.png)](/images/wp-imports/gamedev/guard_leader.png)
 [![](/images/wp-imports/gamedev/rockbiter.png)](/images/wp-imports/gamedev/rockbiter.png)
 
-Some concept work on group of enemies called the Elgon, for Indie game Mecromage. I developed this group as evolved (or devolved) elves returned to a more lizard/dragon state due to the turmoil that effected their world, Neoblon.
+Some concept work on group of enemies called the Elgon, for Indie game Mecromage. I developd this group as evolved (or devolved) elves returned to a more lizard/dragon state due to the turmoil that effected their world, Neoblon.

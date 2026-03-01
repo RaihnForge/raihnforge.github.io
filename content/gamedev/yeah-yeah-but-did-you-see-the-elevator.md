@@ -39,15 +39,15 @@ What you’ve all been waiting for:
 
 I plan to do continuous updates on the process of making the game.  Let me know what you’d be interested in learning more about?  Here are some topics I’m considering:
 
-- Our process in casting the right hero   
-- The three core gameplay aspects   
-- Scaling a game to a motivated tiny team   
-- Setting a tone and atmosphere   
-- Weighty plot points and artistic statements   
-- Techniques in crafting the look of a modern role-playing platformer  
+- Our process in casting the right hero
+- The three core gameplay aspects
+- Scaling a game to a motivated tiny team
+- Setting a tone and atmosphere
+- Weighty plot points and artistic statements
+- Techniques in crafting the look of a modern role-playing platformer
 - My experience in re-envisioning Level 1 of ‘Castlevania 3: Dracula’s Curse’
 
-Until we meet again,  
+Until we meet again,
 Keyes aka Raihn
 
 *♪ ♫ Just keep swimming, just keep swimming, swimming, swimming - HA HAHA HA… ♫ ♪* – A Very Wise Fish
