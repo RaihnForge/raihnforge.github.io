@@ -1,13 +1,13 @@
 ---
 title: "What if.. Starcraft 2's Cyclone was the Cyclops"
 date: 2015-04-30
-description: "What if... the Cyclone was the Cyclops? This is my super ridiculously serious breakdown on why I believe this swap needs to happen. I mean, I spent..."
+description: What if... the Cyclone was the Cyclops? This is my super ridiculously serious breakdown on why I believe this swap needs to happen. I mean, I spent
 image: "/images/wp-imports/blog/cyclopes.png"
 related_sections:
   - "illustration"
+tags: []
 draft: false
 ---
-
 [![cyclopes](/images/wp-imports/blog/cyclopes2.png)](/images/wp-imports/blog/cyclopes2.png)What if... the Cyclone was the Cyclops? This is my super ridiculously serious breakdown on why I believe this swap needs to happen. I mean, I spent like four hours thinking about this, it must be right.
 **Lets Put the Terrans Back In Terran!**
 The faction identity of the Terrans have focused less and less on actual Terrans.  Pretty soon the drop down will read, "Androbots" instead.  I love the transforming, I love the sieging, but I also know that what made me fall in love with this sci fi culture was the concept of human ingenuity.

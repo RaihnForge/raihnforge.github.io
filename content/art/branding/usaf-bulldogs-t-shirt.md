@@ -2,7 +2,7 @@
 title: "USAF Bulldogs T-Shirt"
 image: "/images/recovered/bulldogs_tshirt.jpg"
 date: 2011-07-18
-description: "T-shirt design is for an Air Force BMT Flight, and dedicated to my wife .  Training Instructor and bulldog transformer characters prepare to ROLL OUT..."
+description: T-shirt design is for an Air Force BMT Flight, and dedicated to my wife .  Training Instructor and bulldog transformer characters prepare to ROLL OUT
 tags: ["Air Force", "BMT", "Bulldogs", "Design", "Illustration", "Nighthawk", "T-Shirt", "TI", "Traingng Instructor", "Transformers", "USAF"]
 aliases:
   - "/art/usaf-bulldogs-t-shirt/"

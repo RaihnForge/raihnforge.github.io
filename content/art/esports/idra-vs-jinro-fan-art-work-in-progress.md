@@ -2,7 +2,7 @@
 title: "Grekan vs Gorilla"
 image: "/images/recovered/Grakan-vs-Gorilla.jpg"
 date: 2011-01-19
-description: "This is a little fan art piece I created in honor of the Idra vs Jinro Starcraft 2 GSL battle.  I enjoy the player’s personas, and so sparked this..."
+description: This is a little fan art piece I created in honor of the Idra vs Jinro Starcraft 2 GSL battle.  I enjoy the player’s personas, and so sparked this
 tags: ["Contest", "Digital Painting", "EG", "Idra", "Illustration", "Jinro", "Joshua Keyes", "Raihn", "SteelSeries", "Teamliquid", "Win", "fanart", "gomtv", "gorilla", "grek", "grekan", "microposer", "starcraft", "terran", "zerg"]
 aliases:
   - "/art/idra-vs-jinro-fan-art-work-in-progress/"

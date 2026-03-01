@@ -1,12 +1,12 @@
 ---
 title: "Keyes Possibilities"
 date: 2014-06-24
-description: "This Spring, 2014 a few family member of mine dedicated themselves to be apart of a triathlon.  They decided to make motivational family Keyes..."
+description: This Spring, 2014 a few family member of mine dedicated themselves to be apart of a triathlon.  They decided to make motivational family Keyes
 tags: ["Concept Keyes", "Design", "Digital Painting", "Family", "Illustration", "Indie Game Blog", "Joshua Keyes", "Product Design", "T-Shirt", "Unchosen Paths"]
 aliases:
   - "/gamedev/keyes-possibilities/"
 draft: false
-recovered: false
+
 ---
 This Spring, 2014 a few family member of mine dedicated themselves to be apart of a triathlon.  They decided to make motivational family Keyes Jerseys.  I was called into action in effort to make this a reality.
 

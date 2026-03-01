@@ -2,14 +2,14 @@
 title: "Talk Radio Comic"
 image: "/images/recovered/raihn_wordpress_rich_marotta.jpg"
 date: 2007-05-28
-description: "I often times listen to talk radio while I work on my various graphic projects.  One of my favorite shows is the ‘Bill Handel’ show.  Rich Marotta is..."
+description: I often times listen to talk radio while I work on my various graphic projects.  One of my favorite shows is the ‘Bill Handel’ show.  Rich Marotta is
 tags: ["Adventures", "Art", "Cartooning", "Illustration", "Indie", "Joshua", "KFI", "Keyes", "Radio", "Rich Marotta", "Talk", "cartoon"]
 aliases:
   - "/art/talk-radio-comic/"
 draft: false
 medium: "Digital"
 year: 2007
-recovered: false
+
 ---
 [![](/images/recovered/raihn_wordpress_rich_marotta.jpg)](/images/recovered/raihn_wordpress_rich_marotta.jpg)
 

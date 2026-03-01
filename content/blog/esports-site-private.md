@@ -4,9 +4,9 @@ date: 2015-03-10
 description: "NOTE: Must remove branding for public use - as requested by client."
 related_sections:
   - "esports"
+tags: []
 draft: false
 ---
-
 NOTE: Must remove branding for public use - as requested by client.
 
 - ![](/images/wp-imports/blog/weblayout_grubby_00_original.jpg)

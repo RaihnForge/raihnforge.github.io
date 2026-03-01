@@ -2,7 +2,7 @@
 title: "Prince Charmings: Riot Comic Contest Entry"
 image: "/images/recovered/comic_with_text.jpg"
 date: 2012-09-07
-description: "I entered a League of Legends comic contest held by riot games.  It was very entertaining and a fun way to flex some creative muscle.  Interestingly..."
+description: I entered a League of Legends comic contest held by riot games.  It was very entertaining and a fun way to flex some creative muscle.  Interestingly
 tags: ["Art", "Cartooning", "Comic", "Contest", "Design", "Fan Art", "Illustration", "Jayce", "Joshua Keyes", "League of Ledgends", "League of Legends", "LoL", "Raihn", "Riot", "Sequential Art", "Taric", "cartoon"]
 aliases:
   - "/art/prince-charmings-riot-comic-contest-entry/"

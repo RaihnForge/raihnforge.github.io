@@ -1,7 +1,7 @@
 ---
 title: "Draft Concept- Map Screen"
 date: 2016-04-21
-description: "This is a map screen I've been drafting up for a 2d platforming game.  There are a lot of constraints to ensure the process is efficient to quickly..."
+description: This is a map screen I've been drafting up for a 2d platforming game.  There are a lot of constraints to ensure the process is efficient to quickly
 tags: ["Design", "Game Design", "Illustration", "Indie Game Art", "Indie gaming", "Map Screen", "Mecromage", "Unchosen Paths"]
 image: "/images/wp-imports/gamedev/plate.png"
 aliases:

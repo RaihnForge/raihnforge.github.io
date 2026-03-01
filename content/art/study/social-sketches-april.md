@@ -1,7 +1,7 @@
 ---
 title: "Social Sketches - April"
 date: 2016-04-29
-description: "Social media can be fickle.  Often times it is wrought with shallow political slander, blasted opinions, cat videos, 'clever memes', and lifestyle..."
+description: Social media can be fickle.  Often times it is wrought with shallow political slander, blasted opinions, cat videos, 'clever memes', and lifestyle
 tags: ["Cartooning", "Destiny", "Fan Art", "Illustration", "Logan", "Metal Gear", "Sketchbook Pencil", "Solid Snake", "Titan", "Weapon X", "Wolverine"]
 image: "/images/wp-imports/art/joshsketch.png"
 aliases:

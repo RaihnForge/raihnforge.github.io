@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Painseeker"
 image: "/images/recovered/wcr_art_feature_10.jpg"
 date: 2006-07-30
-description: "Welcome to yet another Art of War from good ol’ WCreplays and yours truly, Raihn. Lots of life changing stuff happened to me since my last feature,..."
+description: Welcome to yet another Art of War from good ol’ WCreplays and yours truly, Raihn. Lots of life changing stuff happened to me since my last feature,
 tags: ["Art feature", "Blizzard", "Digital Painting", "Joshua Keyes", "Raihn", "Red XIII", "WCR", "WCReplays.com", "big teeth", "drool", "gnoll", "warcraft", "werewolf"]
 aliases:
   - "/art/wcr-art-feature-painseeker/"
 draft: false
 medium: "Digital"
 year: 2006
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_10.jpg)
 Welcome to yet another Art of War from good ol’ WCreplays and yours truly, Raihn. Lots of life changing stuff happened to me since my last feature, and all of it seems to be turning out for the best. Praise the Lord for all the blessings I have received, amen. This feature comes at you much quicker because, for one, it wasn’t going to be a feature, and two, I am off from school for about two months, (one left). I hope you all enjoy, and love chilling at WCreplays just as much as I do

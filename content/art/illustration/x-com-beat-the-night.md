@@ -2,7 +2,7 @@
 title: "X-Com – Beat the Night"
 image: "/images/recovered/step03finalize_thumb.jpg"
 date: 2014-08-06
-description: "For all those who’ve played the classic X-COM UFO DEFENCE game, you’ll know that one of the most important skills to learn is how to stall for Day..."
+description: For all those who’ve played the classic X-COM UFO DEFENCE game, you’ll know that one of the most important skills to learn is how to stall for Day
 tags: ["Cartooning", "Fan Art", "Illustration", "Sequential Art", "Street Level"]
 aliases:
   - "/art/x-com-beat-the-night/"

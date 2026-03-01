@@ -7,7 +7,7 @@ image: "/images/wp-imports/gamedev/wip00.png"
 aliases:
   - "/gamedev/study-castlevania-legends/"
 draft: false
-recovered: false
+
 ---
 ###### Art by Joshua Keyes - Characters and scene inspired by Castlevania, owned by Konami.
 

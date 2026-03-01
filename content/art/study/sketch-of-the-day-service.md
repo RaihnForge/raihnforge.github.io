@@ -9,7 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2009
-recovered: false
+
 ---
 ![](/images/recovered/sketch_20090121_service_small.jpg)
 

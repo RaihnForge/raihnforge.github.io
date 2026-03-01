@@ -2,14 +2,14 @@
 title: "Team Liquid Overlay–In Game"
 image: "/images/recovered/TL_Overlay5_hydracooled_sample54.jpg"
 date: 2012-11-04
-description: "I am very proud to present one of my latest ventures in live game streaming graphics.  I was given the important task of creating Team Liquid Pro’s..."
+description: I am very proud to present one of my latest ventures in live game streaming graphics.  I was given the important task of creating Team Liquid Pro’s
 tags: ["Design", "Justin tv", "Overlay", "Streaming", "Team Liquid", "twitch tv"]
 aliases:
   - "/art/team-liquid-overlayin-game/"
 draft: false
 medium: "Digital"
 year: 2012
-recovered: false
+
 ---
 [![TL_Overlay5_hydracooled_sample54](/images/recovered/TL_Overlay5_hydracooled_sample54.jpg "TL_Overlay5_hydracooled_sample54")](/images/recovered/TL_Overlay5_hydracooled_sample54.jpg)
 

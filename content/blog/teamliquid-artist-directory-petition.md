@@ -1,10 +1,11 @@
 ---
 title: "TeamLiquid Artist Directory Submission"
 date: 2013-09-16
-description: "One of the most influential aspects of my artistic growth has come from being apart of a global community, as a consumer and contributor, through the..."
+description: One of the most influential aspects of my artistic growth has come from being apart of a global community, as a consumer and contributor, through the
 related_sections:
   - "esports"
 archived: true
+tags: []
 draft: false
 recovered: true
 ---

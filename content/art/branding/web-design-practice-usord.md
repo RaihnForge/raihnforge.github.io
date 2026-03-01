@@ -1,7 +1,7 @@
 ---
 title: "Web Design Practice - usord"
 date: 2008-07-01
-description: "Inspired by the Business card I created, I decided to do a practice web redesign of US Ordnance Inc.'s website. Feel free to check it out. Click to..."
+description: Inspired by the Business card I created, I decided to do a practice web redesign of US Ordnance Inc.'s website. Feel free to check it out. Click to
 tags: ["Web Page Designs"]
 aliases:
   - "/art/web-design-practice-usord/"

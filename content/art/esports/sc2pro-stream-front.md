@@ -1,7 +1,7 @@
 ---
 title: "SC2Pro Stream Front"
 date: 2012-10-30
-description: "I was commissioned to do a budget web splash page.  The purpose -to have a stream front that fans can navigate to and see multiple streams..."
+description: I was commissioned to do a budget web splash page.  The purpose -to have a stream front that fans can navigate to and see multiple streams
 tags: ["ATN", "Design", "Joshua Keyes", "TakeTV", "Web Assets Design", "Web Layout", "eSports", "sc2 Pro Streams"]
 aliases:
   - "/art/sc2pro-stream-front/"

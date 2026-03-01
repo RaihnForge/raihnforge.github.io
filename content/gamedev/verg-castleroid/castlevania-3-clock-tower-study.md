@@ -1,7 +1,7 @@
 ---
 title: "Castlevania 3 - Clock Tower Study"
 date: 2015-02-19
-description: "Nostalgia is not only a powerful source of motivation, but it incentives us to explore contemporary concepts from the past and carry forward that..."
+description: Nostalgia is not only a powerful source of motivation, but it incentives us to explore contemporary concepts from the past and carry forward that
 tags: ["2d game", "Castlevania 3", "Classic", "Fan Art", "Game Graphics", "HDremix", "NES", "Redux", "retro"]
 image: "/images/wp-imports/gamedev/clocktowerstudy01.png"
 aliases:

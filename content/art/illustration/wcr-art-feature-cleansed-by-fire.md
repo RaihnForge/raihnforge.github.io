@@ -1,7 +1,7 @@
 ---
 title: "WCR Art Feature: Cleansed By Fire"
 date: 2008-08-15
-description: "Hey guys! Sorry that the art features are few and far between. Among other things, I have been busy with some freelance artwork that I have been..."
+description: "Hey guys! Sorry that the art features are few and far between. Among other things, I have been busy with some freelance artwork that I have been"
 tags: ["Art feature", "Digital Painting"]
 aliases:
   - "/art/wcr-art-feature-cleansed-by-fire/"

@@ -1,7 +1,7 @@
 ---
 title: "Lil Susie &lt;3 Reaver"
 date: 2008-09-25
-description: "Inspired while I was watching GomTV Season 2.  I was watching the cast and Lil Susie was getting extremely excited about Reaver harassment. ..."
+description: Inspired while I was watching GomTV Season 2.  I was watching the cast and Lil Susie was getting extremely excited about Reaver harassment. 
 tags: ["&lt;3", "Cheerful", "Digital Painting", "Fan Art", "Reaver", "Shoutcaster", "Starcraft", "cartoon", "confused", "gomtv", "lil Susie", "lolz", "protoss", "starcraft"]
 aliases:
   - "/art/lil-susie-3-reaver/"

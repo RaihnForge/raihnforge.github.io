@@ -2,14 +2,14 @@
 title: "Sketchbook Therapy - Father's Day Treasure"
 image: "/images/recovered/ST_FathersDayAdventure05.png"
 date: 2015-06-22
-description: "I have a lot of father figures in my life that I like to honor on Father's Day.  Fathers that are friends of mine that I think do an amazing job, my..."
+description: I have a lot of father figures in my life that I like to honor on Father's Day.  Fathers that are friends of mine that I think do an amazing job, my
 tags: ["Cartooning", "Illustration", "Joshua B. Keyes", "Sketchbook Therapy"]
 aliases:
   - "/art/sketchbook-therapy-fathers-day-treasure/"
 draft: false
 medium: "Digital"
 year: 2015
-recovered: false
+
 ---
 [![](/images/recovered/ST_FathersDayAdventure05.png)](/images/recovered/ST_FathersDayAdventure05.png)
 

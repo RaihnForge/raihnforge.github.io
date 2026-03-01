@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Tremble Before Me"
 image: "/images/recovered/wcr_art_feature_08.jpg"
 date: 2005-11-09
-description: "Well guys, here is a left over treat from Halloween. I hope you all enjoy the work put into the feature. College has definitely been a help. I have..."
+description: Well guys, here is a left over treat from Halloween. I hope you all enjoy the work put into the feature. College has definitely been a help. I have
 tags: ["Art feature", "Blizzard", "Digital Painting", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft"]
 aliases:
   - "/art/wcr-art-feature-tremble-before-me/"
 draft: false
 medium: "Digital"
 year: 2005
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_08.jpg)
 

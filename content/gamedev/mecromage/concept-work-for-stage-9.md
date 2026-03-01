@@ -1,12 +1,12 @@
 ---
 title: "Concept work for Stage 9"
 date: 2013-12-10
-description: "I’ve been trying to finish up the basic thumb sketches for each of our now decided on 9 stages for the game.  I was the areas to be recognizable much..."
+description: I’ve been trying to finish up the basic thumb sketches for each of our now decided on 9 stages for the game.  I was the areas to be recognizable much
 tags: ["Design", "Digital Painting", "Game Design", "Illustration", "Indie Game Blog", "Indie game Concept Art", "Speed Painting", "Unchosen Paths"]
 aliases:
   - "/gamedev/concept-work-for-stage-9/"
 draft: false
-recovered: false
+
 ---
 [![stage-demo](/images/recovered/stagedemo_thumb.png "stage-demo")](/images/recovered/stagedemo.png)
 

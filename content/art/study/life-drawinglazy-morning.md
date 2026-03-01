@@ -9,6 +9,6 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2007
-recovered: false
+
 ---
 [![lifedraw_lazy-morning](/images/recovered/lifedraw_lazy-morning.jpg "lifedraw_lazy-morning")](/images/recovered/lifedraw_lazy-morning.jpg)

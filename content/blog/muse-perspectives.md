@@ -2,9 +2,9 @@
 title: "MUSE: Perspectives"
 date: 2019-05-15
 description: "Place for me to put my philosophies etc."
+tags: []
 draft: false
 ---
-
 *Place for me to put my philosophies etc.*
 
 ## Gaming, Good or Bad?

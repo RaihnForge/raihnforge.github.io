@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Ready to Track"
 image: "/images/recovered/wcr_art_feature_05"
 date: 2005-08-01
-description: "Been a long time guys, but I hope the feature was worth the wait. There’s a lot of great stuff going on at the site since my last feature. We had CPL..."
+description: Been a long time guys, but I hope the feature was worth the wait. There’s a lot of great stuff going on at the site since my last feature. We had CPL
 tags: ["Art feature", "Digital Painting", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft"]
 aliases:
   - "/art/wcr-art-feature-ready-to-track/"
 draft: false
 medium: "Digital"
 year: 2005
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_05)
 Been a long time guys, but I hope the feature was worth the wait. There’s a lot of great stuff going on at the site since my last feature. We had CPL where my favorite HU player took the win with style, we got WC3L going on strong, some amazing new columnists shaking up the community, and last but not least, the Pimp is back in the house. It’s good to be here at WCReplays.com. All around, it’s good to be a WarCraft fan. Shoutcasts, Waaagh!TV and sweet programs like EverCraft are just a few things that we fans get to enjoy for with no extra charge. Shout out to all those people who make WarCraft way more than just another computer game. Give’em some love.

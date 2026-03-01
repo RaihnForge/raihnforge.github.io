@@ -2,7 +2,7 @@
 title: "Envelope Art"
 image: "/images/recovered/fb_envelop_art_01.jpg"
 date: 2011-08-04
-description: "While my wife was at BMT I attempted to write her every day.  I included an image to hopefully inspire a little joy in the challenging times.  Here..."
+description: While my wife was at BMT I attempted to write her every day.  I included an image to hopefully inspire a little joy in the challenging times.  Here
 tags: ["Airforce", "Android", "Art", "BMT", "Boom Boom Pow", "Captain America", "Cartooning", "Envelope Art", "Fan Art", "Helicopter", "Illustration", "Irish Death", "Maurder", "Optimus Prime", "Raihn", "Sketchbook", "Sketchbook Mixed Medium", "Soldier Bear", "Starcraft", "Training", "US AF", "cartoon", "viking"]
 aliases:
   - "/art/envelope-art/"

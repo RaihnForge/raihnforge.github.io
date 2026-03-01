@@ -9,7 +9,7 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2011
-recovered: false
+
 ---
 > This is a pencil sketch I did while I was at work.  I just started by sketching some fun curves, and let it lead me to something interesting.
 

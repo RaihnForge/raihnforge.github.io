@@ -2,7 +2,7 @@
 title: "Christmas Card"
 image: "/images/recovered/replays_button_download.png"
 date: 2012-10-31
-description: "I found this Christmas Card I designed. My wife and I sent these out a couple of years ago. I love Christmas time and it was really great to pass out..."
+description: I found this Christmas Card I designed. My wife and I sent these out a couple of years ago. I love Christmas time and it was really great to pass out
 tags: ["Cartooning", "Christmas Card", "Design", "Gift Card", "Illustration", "Joshua Keyes", "Product Design", "Raihn", "Snowman", "White Christmas"]
 aliases:
   - "/art/christmas-card/"

@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Sketches of War"
 image: "/images/recovered/wcr_art_feature_07_sow01.jpg"
 date: 2005-10-20
-description: "NO! I’m not dead! But I should be shot! BlizzCon is thirty minutes from me and I failed to get a ticket. Last time I rely on my art skills for..."
+description: "NO! I’m not dead! But I should be shot! BlizzCon is thirty minutes from me and I failed to get a ticket. Last time I rely on my art skills for"
 tags: ["Art feature", "Blizzard", "Joshua Keyes", "Raihn", "Sketchbook Ink", "WCR", "WCReplays.com", "warcraft"]
 aliases:
   - "/art/wcr-art-feature-sketches-of-war/"
 draft: false
 medium: "Ink"
 year: 2005
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_07_sow01.jpg)
 

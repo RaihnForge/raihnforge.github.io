@@ -1,7 +1,7 @@
 ---
 title: "Motorcycle poster for my now famous Dad - A learning project"
 date: 2008-07-27
-description: "The original design was from a poster brought from my Dad's trip to Moto GP a couple of weeks ago. The poster concept and design belongs to Yamaha...."
+description: The original design was from a poster brought from my Dad's trip to Moto GP a couple of weeks ago. The poster concept and design belongs to Yamaha
 tags: ["Joshua Keyes", "Posters", "Reno-Fernley Raceway", "Ted Keyes", "ducati", "monster", "moto gp", "motorcylce", "poster"]
 aliases:
   - "/art/motorcycle-poster-for-my-now-famous-dad-a-learning-project/"

@@ -2,7 +2,7 @@
 title: "Grubby Shop Coming Soon"
 image: "/images/recovered/shop_coming_soon.png"
 date: 2011-08-31
-description: "While in the process of designing Grubby’s first run website, we decided the Shop would need a place holder as we were to release before it was..."
+description: While in the process of designing Grubby’s first run website, we decided the Shop would need a place holder as we were to release before it was
 tags: ["Cartooning", "Design", "Digital Painting", "Fan Art", "Fun", "Grubby", "Illustration", "Joshua Keyes", "Raihn", "Starcraft", "Web Assets Design", "Web Design", "Web Page Designs", "grubby"]
 aliases:
   - "/art/grubby-shop-coming-soon/"

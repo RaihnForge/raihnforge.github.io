@@ -1,7 +1,7 @@
 ---
 title: "WIld Goose Casio Print Designs"
 date: 2011-03-22
-description: "These assets were used for a Casino as a way to update some of the look and feel of their promotions and table print outs.  The project was far and..."
+description: These assets were used for a Casino as a way to update some of the look and feel of their promotions and table print outs.  The project was far and
 tags: ["Advertisements", "Casio", "Design", "Flyers", "Joshua Keyes", "Raihn", "Stationary", "Texas Hold'em", "Web Assets Design", "Web Page Designs", "black jack", "design", "graphics", "information", "lucky 7"]
 aliases:
   - "/art/wild-goose-casio-print-designs/"

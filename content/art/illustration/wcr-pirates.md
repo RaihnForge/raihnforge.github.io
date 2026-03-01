@@ -9,7 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2005
-recovered: false
+
 ---
 These are the images I created for 7Smurfs article from WCreplays.com. [Click here to view the original article](http://www.wcreplays.com/articles.php?get=295).
 ![](/images/recovered/raihn_pirate08.gif)

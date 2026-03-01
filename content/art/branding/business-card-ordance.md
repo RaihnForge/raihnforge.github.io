@@ -1,7 +1,7 @@
 ---
 title: "Business Card Ordance"
 date: 2008-06-29
-description: "The first art project I did today was a business card.  It is fun to do little business cards because they are micro designs, but the designs could..."
+description: The first art project I did today was a business card.  It is fun to do little business cards because they are micro designs, but the designs could
 tags: ["Business Cards"]
 aliases:
   - "/art/business-card-ordance/"

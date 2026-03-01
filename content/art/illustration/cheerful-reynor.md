@@ -8,6 +8,7 @@ image: "/images/art/cheerful-reynor.png"
 featured: true
 aliases:
   - "/art/cheerful-reynor/"
+tags: []
 draft: false
 ---
 A tribute piece for Reynor (Riccardo Romiti), the Italian StarCraft 2 professional player and world champion. Created to celebrate his rise in the competitive scene.

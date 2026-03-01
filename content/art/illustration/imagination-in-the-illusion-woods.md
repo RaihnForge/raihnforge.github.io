@@ -2,14 +2,14 @@
 title: "Imagination in the Illusion Woods"
 image: "/images/recovered/Parker01_thumb.png"
 date: 2014-08-17
-description: "Imagination in the Illusion Woods is an illustration I rendered for one of my best friends’ son, Parker.  His 4th Birthday was coming up and though I..."
+description: Imagination in the Illusion Woods is an illustration I rendered for one of my best friends’ son, Parker.  His 4th Birthday was coming up and though I
 tags: ["Cartooning", "Design", "Digital Painting", "Illustration", "Posters"]
 aliases:
   - "/art/imagination-in-the-illusion-woods/"
 draft: false
 medium: "Digital"
 year: 2014
-recovered: false
+
 ---
 ![Imagination in the Illusion Woods](/images/recovered/Parker01_thumb.png "Imagination in the Illusion Woods")
 Imagination in the Illusion Woods is an illustration I rendered for one of my best friends’ son, Parker.  His 4th Birthday was coming up and though I haven’t had the chance to visit with him often, since I live on the other side of the country, I suppose I made an impression on him.  His awesome and dedicated mother, Katie asked if I would be interested in sketching up something for his birthday.  Normally I quite enjoy giving the gift of art, but it hadn't occurred to me to draw something for someone so young before, even though I recall staring for hours at a painting in our living room since I was about three or four years old myself.  So the answer of course, was a resounding yes.

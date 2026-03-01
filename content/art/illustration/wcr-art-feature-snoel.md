@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Snoel"
 image: "/images/recovered/wcr_art_feature_11.jpg"
 date: 2006-12-30
-description: "Hello all! Merry Christmas, and happy holidays! Wow, what great times we are living in! The Warcraft scene continues to grow and grow. Watching the..."
+description: "Hello all! Merry Christmas, and happy holidays! Wow, what great times we are living in! The Warcraft scene continues to grow and grow. Watching the"
 tags: ["Art feature", "Blizzard", "Christmas", "Digital Painting", "Gaming", "Jaina Proudmoore", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft", "water elemental"]
 aliases:
   - "/art/wcr-art-feature-snoel/"
 draft: false
 medium: "Digital"
 year: 2006
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_11.jpg)
 Hello all! Merry Christmas, and happy holidays! Wow, what great times we are living in! The Warcraft scene continues to grow and grow. Watching the Season IV live feeds was a real treat. As usual, bunny did a great job casting, and everything looked really awesome! It’s great to see the community grow, and the friendly competition generate such good times and awesome entertainment. I look forward to the day I can turn on the TV (here in the states) and watch Warcraft tournaments on the weekends. It will happen, I know it!

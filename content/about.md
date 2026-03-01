@@ -17,8 +17,8 @@ competencies:
     detail: "Professional illustration, branding, UI design, and art direction. Design isn't decoration — it's communication, and I've been fluent in it for twenty years."
   - title: "Technical Fluency"
     detail: "Comfortable with HTML/CSS, JavaScript, game engines, and development toolchains. I speak developer fluently enough to bridge the gap between design intent and implementation."
+tags: []
 ---
-
 I'm Joshua Keyes — a freelance artist working in digital illustration, animation, logo design, game design, and web design. I grew up in Washington State and served in the United States Marine Corps, completing two deployments to Iraq as an infantryman.
 
 After the Corps, I studied animation and transfer studies at Mount San Antonio College in California, then built a career at the intersection of visual design and the gaming community.

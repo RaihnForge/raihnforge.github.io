@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Stompin' Grounds"
 image: "/images/recovered/wcr_art_feature_04"
 date: 2005-07-04
-description: "The Night Elf obsessed have seen the Demon Hunter get down with the Cygnus. The prestigious of the Human alliance have been honored. The Undead know..."
+description: The Night Elf obsessed have seen the Demon Hunter get down with the Cygnus. The prestigious of the Human alliance have been honored. The Undead know
 tags: ["Art feature", "Digital Painting", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft"]
 aliases:
   - "/art/wcr-art-feature-stompin-grounds/"
 draft: false
 medium: "Digital"
 year: 2005
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_04)
 The Night Elf obsessed have seen the Demon Hunter get down with the Cygnus. The prestigious of the Human alliance have been honored. The Undead know just what keeps the pretty hate machine going. Now ladies and gents, I am pleased to welcome you to the Orc allied Tauren’s, stompin’ grounds! Be sure to check out the amazingly awesome T-Rider’s audio as well as his sweet replay pack dedicated to the solo TC!!

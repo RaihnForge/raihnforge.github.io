@@ -4,6 +4,7 @@ date: 2010-07-29
 description: "Added a printable mini portfolio to my contact information :)
  - mini digipen portfolio - right click and 'save link as'"
 archived: true
+tags: []
 draft: false
 recovered: true
 ---

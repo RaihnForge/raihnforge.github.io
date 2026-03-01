@@ -2,7 +2,7 @@
 title: "IdrA Logo Reflection"
 image: "/images/recovered/IdrAlogoMascot.png"
 date: 2014-06-11
-description: "About a year ago I had the pleasure of working with Greg ‘IrdA’ Fields on his solo brand logo.  He was one of the most responsive and engaging..."
+description: About a year ago I had the pleasure of working with Greg ‘IrdA’ Fields on his solo brand logo.  He was one of the most responsive and engaging
 tags: ["Cartooning", "Design", "Idra", "Illustration", "Joshua Keyes", "Logo Designs", "Starcraft", "eSports"]
 aliases:
   - "/art/idra-logo-reflection-2/"

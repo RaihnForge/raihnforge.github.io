@@ -2,7 +2,7 @@
 title: "Envelope Art–Step Up"
 image: "/images/recovered/fb_envelop_art_07_thumb.jpg"
 date: 2013-04-13
-description: "Its was a while ago that I illustrated this on an envelope and sent it out to my wife while she was away for a on a challenging trip.  I ran across..."
+description: Its was a while ago that I illustrated this on an envelope and sent it out to my wife while she was away for a on a challenging trip.  I ran across
 tags: ["Fan Art", "Joshua Keyes", "Sketchbook", "Sketchbook Mixed Medium", "Starcraft"]
 aliases:
   - "/art/envelope-artstep-up/"

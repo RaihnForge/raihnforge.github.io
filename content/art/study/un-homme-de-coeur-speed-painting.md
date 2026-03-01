@@ -2,7 +2,7 @@
 title: "The Heart of a Man"
 image: "/images/recovered/the-Heart-of-a-Man_thumb.jpg"
 date: 2010-12-29
-description: "This was another practice of listening to a specific song on repeat the entire time that I work on a piece.  The track is then used for the..."
+description: This was another practice of listening to a specific song on repeat the entire time that I work on a piece.  The track is then used for the
 tags: ["Art", "Concept", "Digital Painting", "Illustration", "Joshua Keyes", "Shim", "Speed Painting", "Timelapse", "battle", "speed paint"]
 aliases:
   - "/art/un-homme-de-coeur-speed-painting/"

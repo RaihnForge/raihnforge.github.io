@@ -2,7 +2,7 @@
 title: "Coggy for Dahnjin's WCReplays Clockwerk Gobbo Rating Widget"
 image: "/images/recovered/wcr_coggy_md"
 date: 2009-04-18
-description: "Dahnjin is implementing a rating system for the downloadable replays on WCreplays.com. And thus Coggy was born.  The miniature clockwork of cuteness..."
+description: Dahnjin is implementing a rating system for the downloadable replays on WCreplays.com. And thus Coggy was born.  The miniature clockwork of cuteness
 tags: ["Digital Painting", "Web Assets Design"]
 aliases:
   - "/art/coggy-for-dahnjins-wcreplays-clockwerk-gobbo-rating-widget/"

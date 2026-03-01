@@ -1,12 +1,12 @@
 ---
 title: "Forging Links"
 date: 2013-02-22
-description: "Neoblon’s culture and peoples should be well thought out, but the realm will always be rich with mystery.  Using the most simple of medium reminds me..."
+description: Neoblon’s culture and peoples should be well thought out, but the realm will always be rich with mystery.  Using the most simple of medium reminds me
 tags: ["Art Study", "Design", "Game Design", "Game Dev", "Illustration", "Indie Game Blog", "Indie game Concept Art", "Joshua Keyes", "Mecromage", "Muse", "Neoblon", "Sketchbook", "Sketchbook Pencil", "Unchosen Paths"]
 aliases:
   - "/gamedev/forging-links/"
 draft: false
-recovered: false
+
 ---
 [![207167841587](/images/recovered/207167841587.jpg "207167841587")](/images/recovered/207167841587.jpg)
 

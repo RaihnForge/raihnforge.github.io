@@ -1,7 +1,7 @@
 ---
 title: "nShadowsong's Dragon"
 date: 2008-06-30
-description: "My wife and I like to play a game where she will make some lines on a paper and then I will create what I see out of the curves and sketched lines..."
+description: My wife and I like to play a game where she will make some lines on a paper and then I will create what I see out of the curves and sketched lines
 tags: ["Art", "Digital Painting", "Joshua Keyes", "Raihn", "Red dragon", "Speed Painting", "dragon", "dragon force", "nshadowsong", "photoshop", "speed paint", "warcraft"]
 image: "/images/wp-imports/art/nshadowsong_dragon_350.jpg"
 aliases:

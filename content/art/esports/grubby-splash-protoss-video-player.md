@@ -9,7 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2012
-recovered: false
+
 ---
 [![splash_page_demo_04](/images/recovered/splash_page_demo_04.jpg "splash_page_demo_04")](/images/recovered/splash_page_demo_04.jpg)
 

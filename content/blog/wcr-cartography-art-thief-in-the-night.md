@@ -1,13 +1,13 @@
 ---
 title: "WCR Cartography Art: Thief in the Night"
 date: 2010-09-09
-description: "Today I am pleased to present an exciting installment of an Ogre Bob custom Campaign. This, the first five of of a ten chapter Campaign, is meant to..."
+description: Today I am pleased to present an exciting installment of an Ogre Bob custom Campaign. This, the first five of of a ten chapter Campaign, is meant to
 related_sections:
   - "illustration"
   - "esports"
+tags: []
 draft: false
 ---
-
 ![](/images/recovered/wcr_map_theif_01.png "Raihn's Art of War")
 
 ![](/images/recovered/subtitle_ccc.png)

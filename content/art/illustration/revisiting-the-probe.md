@@ -2,7 +2,7 @@
 title: "Revisiting the Probe"
 image: "/images/recovered/tasteless_probe_master4.jpg"
 date: 2012-02-24
-description: "I first created this image back in 2008 after watching a GomTV match featuring Nick ‘Tasteless’ Plott as the commentator of the eSports battle.  It..."
+description: I first created this image back in 2008 after watching a GomTV match featuring Nick ‘Tasteless’ Plott as the commentator of the eSports battle.  It
 tags: ["Classic", "Digital Painting", "Fan Art", "Illustration", "Intel", "Joshua Keyes", "Nick", "Plott", "Raihn", "Season 2", "That Probe Probably has Tattoos and peircings he's so baddass", "badass", "gomtv", "probe", "protoss", "starcraft", "tasteless", "wallpaper"]
 aliases:
   - "/art/revisiting-the-probe/"

@@ -1,7 +1,7 @@
 ---
 title: "Stolen Flower"
 date: 2008-06-24
-description: "This is my first full fledged painting.  It is of a still-life utilizing a limited pallet.  Unfortunately someone liked it so much they stole it out..."
+description: This is my first full fledged painting.  It is of a still-life utilizing a limited pallet.  Unfortunately someone liked it so much they stole it out
 tags: ["Acrylic Painting", "Art", "Bottle", "Flower", "Joshua", "Joshua B. Keyes", "Keyes", "Life", "Painting", "Still", "Wine"]
 aliases:
   - "/art/stolen-flower/"

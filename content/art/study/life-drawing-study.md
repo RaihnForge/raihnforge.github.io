@@ -9,7 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2007
-recovered: false
+
 ---
 ![](/images/recovered/life_drawing_33.jpg)
 ![](/images/recovered/life_drawing_34.jpg)

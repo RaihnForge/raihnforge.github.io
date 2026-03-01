@@ -9,7 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2010
-recovered: false
+
 ---
 Here are some avatars that I was commissioned to create for [TopReplays.com](http://www.topreplays.com) The site is awesome!
 

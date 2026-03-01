@@ -2,7 +2,7 @@
 title: "BaseTradeTV Reflection"
 image: "/images/recovered/BaseTradeVs_thumb.png"
 date: 2014-06-26
-description: "Though I am mired in my current work, I find that it can be a good thing to take small breaks from the grind to reignite my passion for artistic work..."
+description: Though I am mired in my current work, I find that it can be a good thing to take small breaks from the grind to reignite my passion for artistic work
 tags: ["Art", "Art Study", "Avatars", "Banners", "BaseTradeTV", "Cartooning", "Design", "Fan Art", "Gaming", "Illustration", "Joshua Keyes", "Muse", "Overlays", "Raihn", "Starcraft", "Web Assets Design", "cartoon", "design", "eSports", "starcraft"]
 aliases:
   - "/art/basetradetv-reflection/"

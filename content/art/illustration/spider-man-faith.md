@@ -2,14 +2,14 @@
 title: "Spider-Man Hero Inspiration"
 image: "/images/recovered/spiderdude_thumb.png"
 date: 2013-05-21
-description: "This Spider-Man image was inspired by a good friend’s son who’s favorite comic hero is Spider-Man. As an active duty Marine my friend often finds..."
+description: This Spider-Man image was inspired by a good friend’s son who’s favorite comic hero is Spider-Man. As an active duty Marine my friend often finds
 tags: ["Fan Art", "Hero", "Illustration", "Joshua Keyes", "Sketchbook", "Sketchbook Digital", "Spider-Man", "Spiderman"]
 aliases:
   - "/art/spider-man-faith/"
 draft: false
 medium: "Digital"
 year: 2013
-recovered: false
+
 ---
 [![spiderdude](/images/recovered/spiderdude_thumb.png "spiderdude")](/images/recovered/spiderdude.png)This Spider-Man image was inspired by a good friend’s son who’s favorite comic hero is Spider-Man. As an active duty Marine my friend often finds himself on deployments around the world for months at a time. I thought it might be nice to illustrate a poster to boost his little one’s morale a bit.
 

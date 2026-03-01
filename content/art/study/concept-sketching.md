@@ -1,7 +1,7 @@
 ---
 title: "SC Concept Sketching"
 date: 2010-09-14
-description: "I have been working on some sketches over the last week.  They are inspired by watching some Starcraft 2 games on GOMtv.  The concepts are for..."
+description: I have been working on some sketches over the last week.  They are inspired by watching some Starcraft 2 games on GOMtv.  The concepts are for
 tags: ["Art", "Cartooning", "Illustration", "Joshua Keyes", "Pencils", "Sketchbook", "Sketchbook Pencil", "Thors", "starcraft"]
 image: "/images/wp-imports/art/i_mass_thors.jpg"
 aliases:

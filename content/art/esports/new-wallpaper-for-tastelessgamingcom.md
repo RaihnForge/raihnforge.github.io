@@ -1,7 +1,7 @@
 ---
 title: "Last Generation Terran"
 date: 2008-09-25
-description: "Flash is one of the most dominating Starcraft pro-gamers ever to grasp the mouse.  The inspiration of this image came from his amazing control over..."
+description: Flash is one of the most dominating Starcraft pro-gamers ever to grasp the mouse.  The inspiration of this image came from his amazing control over
 tags: ["Adjacent", "Cheerful", "Digital Painting", "Fan Art", "Flash", "Joshua Keyes", "Last Generatation Terran", "Raihn", "Starcraft", "fanart", "pro gaming", "starcraf"]
 aliases:
   - "/art/new-wallpaper-for-tastelessgamingcom/"

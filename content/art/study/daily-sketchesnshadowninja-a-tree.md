@@ -6,7 +6,7 @@ tags: ["Art", "Illustration", "Indie Game Blog", "Indie game Concept Art", "Josh
 aliases:
   - "/gamedev/daily-sketchesnshadowninja-a-tree/"
 draft: false
-recovered: false
+
 ---
 [![2010_nshadowsong](/images/recovered/2010_nshadowsong.jpg "2010_nshadowsong")](/images/recovered/2010_nshadowsong.jpg)
 

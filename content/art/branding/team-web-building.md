@@ -1,7 +1,7 @@
 ---
 title: "Team Web Building"
 date: 2011-07-01
-description: "Most of the websites I’ve ever worked on have been with Teams across the Globe.  The client in Europe must have his intent fulfilled.  The Web coder..."
+description: Most of the websites I’ve ever worked on have been with Teams across the Globe.  The client in Europe must have his intent fulfilled.  The Web coder
 tags: ["Commentary", "Design", "Grubby", "Grubby website", "Joshua Keyes", "Raihn", "Web Assets Design", "Web Design", "Web Page Designs"]
 aliases:
   - "/art/team-web-building/"

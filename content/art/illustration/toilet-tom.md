@@ -1,7 +1,7 @@
 ---
 title: "Toilet Tom"
 date: 2009-02-25
-description: "This is a really fun concept I created for a Story book project.  The children’s book authored by Gene Benny featured lively house hold item..."
+description: This is a really fun concept I created for a Story book project.  The children’s book authored by Gene Benny featured lively house hold item
 tags: ["Cartooning", "Character concepts", "Childrens book", "Family", "Gene Benny", "Illustration", "Joshua Keyes", "Raihn", "Toilet", "Tom", "cartoon"]
 aliases:
   - "/art/toilet-tom/"

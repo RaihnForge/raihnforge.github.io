@@ -1,7 +1,7 @@
 ---
 title: "Overlay for X-Com Stream"
 date: 2012-08-24
-description: "A couple of weeks ago a friend of mine 'Kayfix’ and I decided to play a run through of X-Com with ‘Field Expedient Muliplayer’.  The idea is that we..."
+description: A couple of weeks ago a friend of mine 'Kayfix’ and I decided to play a run through of X-Com with ‘Field Expedient Muliplayer’.  The idea is that we
 tags: ["Art", "Design", "Guile", "Kayfix", "Product Design", "Raihn", "Speed Painting", "Street Level", "Street Level Gaming", "avatar", "operative", "photoshop", "ufo defence", "xcom"]
 aliases:
   - "/art/overlay-for-x-com-stream/"

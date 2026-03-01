@@ -1,11 +1,10 @@
 ---
 title: "Bipolar Disorder"
 date: 2005-12-02
-description: "Three percent of the general population in this country (CME) will wake up not knowing if they will spend the day in a euphoric blissful state, a..."
+description: Three percent of the general population in this country (CME) will wake up not knowing if they will spend the day in a euphoric blissful state, a
 tags: ["Muse", "Psychology", "bipolar", "bipolar disorder"]
 draft: false
 ---
-
 Three percent of the general population in this country (CME) will wake up not knowing if they will spend the day in a euphoric blissful state, a balanced reasonable emotional state, or if they will face crippling depression rendering them barely able to get out of bed. Bipolar Disorder has various severe symptoms and causes that if treated properly can be minimized, allowing for a productive life style. To reach this goal it is important to recognize the symptoms, find the causes, and produce effective treatments.
 Symptoms of bipolar disorder can be, at times illusive, deceiving and at other times promenade and unmistakable. Bipolar disorder is a common, recurrent, severe psychiatric illness that affects an individual's mood, behavior and ability to think clearly (CME). This disorder typically develops in late adolescence or early adulthood, but it is not uncommon for children to have the illness as well. The condition has a high rate of recurrence and if left untreated, there is approximately a fifteen percent risk of death by suicide. (Neurochemistry pg 273)
 The proper diagnosis of Bipolar I and Bipolar II is important to elicit proper treatment. A person with Bipolar I disorder experiences euphoric highs, and crippling emotional lows. At times these two distinct states can happen at once, causing what is known as a mixed state. In a mixed state the patience will experience both the highs and lows at the same time. Racing negative thoughts, increase agitation, and insomnia become prevalent (NIHMI).

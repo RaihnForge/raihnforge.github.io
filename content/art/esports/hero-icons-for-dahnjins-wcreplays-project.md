@@ -1,7 +1,7 @@
 ---
 title: "Hero Icons for Dahnjin's WCreplays Project."
 date: 2009-04-20
-description: "Created 24 face illustrations to be used as icons for the 24 heroes in Warcraft 3.  These icons are used at WCrepalys.com as part of their replay..."
+description: Created 24 face illustrations to be used as icons for the 24 heroes in Warcraft 3.  These icons are used at WCrepalys.com as part of their replay
 tags: ["Web Assets Design"]
 aliases:
   - "/art/hero-icons-for-dahnjins-wcreplays-project/"

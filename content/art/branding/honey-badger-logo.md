@@ -2,14 +2,14 @@
 title: "Honey Badger Logo"
 image: "/images/recovered/honeybadger_02.png"
 date: 2012-04-10
-description: "I tacked a fun logo project for the ‘PBR STREETGANG’, TEAM HONEY BADGER.  The group requested a Honey Badger as their logo with a military theme. ..."
+description: I tacked a fun logo project for the ‘PBR STREETGANG’, TEAM HONEY BADGER.  The group requested a Honey Badger as their logo with a military theme. 
 tags: ["Art", "Bike art", "Cartooning", "Design", "Emblem", "Honey Badger", "Illustration", "Keyes", "Logo Designs", "PBR Street gang", "Raihn", "Rambo Rodent", "Stationary", "T-Shirt", "TEAM HONEY BADGER", "logo"]
 aliases:
   - "/art/honey-badger-logo/"
 draft: false
 medium: "Digital"
 year: 2012
-recovered: false
+
 ---
 [![honeybadger_02](/images/recovered/honeybadger_02.png "honeybadger_02")](/images/recovered/honeybadger_02.png)
 

@@ -7,6 +7,7 @@ year: 2018
 image: "/images/art/ikora-rey-of-light.jpg"
 aliases:
   - "/art/ikora-rey-of-light/"
+tags: []
 draft: false
 ---
 A portrait study of Ikora Rey, the Warlock Vanguard from Destiny. Focused on capturing her strength and composure through warm lighting and a painterly finish.

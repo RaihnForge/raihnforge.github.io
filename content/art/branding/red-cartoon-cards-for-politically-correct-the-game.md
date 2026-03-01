@@ -1,7 +1,7 @@
 ---
 title: "Red Cartoon Cards for Politically Correct the Game"
 date: 2007-04-12
-description: "Disclaimer Any views or opinion represented in the assets of Politically Correct the Game belong solely to DIP's Politically Correct the Game and do..."
+description: Disclaimer Any views or opinion represented in the assets of Politically Correct the Game belong solely to DIP's Politically Correct the Game and do
 tags: ["Cartooning", "Product Design"]
 aliases:
   - "/art/red-cartoon-cards-for-politically-correct-the-game/"

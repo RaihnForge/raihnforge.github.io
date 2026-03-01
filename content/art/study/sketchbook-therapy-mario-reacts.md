@@ -6,6 +6,7 @@ There is a lot of misuse of the word 'hero' these days.  Sometimes..."
 image: "/images/wp-imports/blog/sketchbook-therapy-marioreaction.png"
 aliases:
   - "/art/sketchbook-therapy-mario-reacts/"
+tags: []
 draft: false
 medium: "Digital"
 year: 2015

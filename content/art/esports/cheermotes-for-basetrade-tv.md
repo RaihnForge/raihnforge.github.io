@@ -1,7 +1,7 @@
 ---
 title: "Cheermotes for BaseTrade TV"
 date: 2017-05-24
-description: "It was my first time making Cheermotes, and this is the result!  Rifkin of BaseTrade, Starcraft commentator fame desired a very retro pixel style...."
+description: "It was my first time making Cheermotes, and this is the result!  Rifkin of BaseTrade, Starcraft commentator fame desired a very retro pixel style"
 tags: ["BaseTradeTV", "Design", "Raihn", "RaihnForge", "Twitch Cheermotes", "Twitch Emoticons", "graphics", "starcraft", "twitch tv"]
 image: "/images/wp-imports/art/bttvcm_sword_112px1.gif"
 aliases:

@@ -8,6 +8,7 @@ featured: true
 image: "/images/art/commission-spellbringers-key-art.png"
 aliases:
   - "/art/commission-spellbringers-key-art/"
+tags: []
 draft: false
 ---
 Spellbringers is a published Warcraft 3 mod in the strategy genre with an active player base. The commission was for key art — the kind of image that represents the game as a whole, used for promotion, cover imagery, and community presence.

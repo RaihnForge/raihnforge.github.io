@@ -2,14 +2,14 @@
 title: "WCR Art Feature: I Am Not Afraid"
 image: "/images/recovered/wcr_art_feature_06"
 date: 2005-08-16
-description: "Whew! Seems like forever since my last Art of War Feature, but at last it has arrived! This month’s feature was a lot more work than the past..."
+description: "Whew! Seems like forever since my last Art of War Feature, but at last it has arrived! This month’s feature was a lot more work than the past"
 tags: ["Art feature", "Blizzard", "Digital Painting", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft"]
 aliases:
   - "/art/wcr-art-feature-i-am-not-afraid/"
 draft: false
 medium: "Digital"
 year: 2005
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_06)
 Whew! Seems like forever since my last Art of War Feature, but at last it has arrived! This month’s feature was a lot more work than the past features, and I hope that it shows. Not only is this for all you WCReplays fans, I also submitted it into Blizzard’s BlizzCon Fan Art Contest. Unfortunately, no word back from them. I don’t know when they are suppose to announce the winners, but I do know the contest has been over for about a week or so. Oh well GG, Raihn = owned. There are whispers my job title is going to change to “Staff Noob Artist” from “Staff Feature Artist.” Though, I suppose I shouldn’t give up hope until they annouce the winners. I hope that at least some of you out there will like it.

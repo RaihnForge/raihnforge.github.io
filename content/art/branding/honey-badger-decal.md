@@ -7,6 +7,7 @@ year: 2018
 image: "/images/art/honey-badger-decal.png"
 aliases:
   - "/art/honey-badger-decal/"
+tags: []
 draft: false
 ---
 An original honey badger character design built around the motto "NEVER QUIT!" — produced as a decal and later adapted into a desktop wallpaper.

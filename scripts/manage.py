@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Content management CLI for the RaihnForge portfolio.
 
-Provides commands for listing, archiving, deduplicating, and bulk-editing
-Hugo content files.  Standard library only — no pip dependencies.
+Provides commands for listing, archiving, deduplicating, validating,
+merging, duplicating, and bulk-editing Hugo content files.
+Standard library only — no pip dependencies.
 
 Usage:
     python3 scripts/manage.py status
@@ -12,6 +13,9 @@ Usage:
     python3 scripts/manage.py duplicates [--threshold T]
     python3 scripts/manage.py set --field KEY --value VAL [--section S] [--file F] [--dry-run] [--yes]
     python3 scripts/manage.py move SRC DEST [--dry-run] [--yes]
+    python3 scripts/manage.py validate [--section S] [--file F] [--fix] [--dry-run]
+    python3 scripts/manage.py merge SOURCE DEST [--dry-run] [--yes]
+    python3 scripts/manage.py duplicate SOURCE [--dest DIR] [--title T] [--dry-run]
     python3 scripts/manage.py report
 """
 
@@ -809,6 +813,375 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
+# ── Validate command ──────────────────────────────────────────────────────
+
+STATIC_DIR = Path(__file__).resolve().parent.parent / "static"
+
+
+def cmd_validate(args):
+    """Validate content files against schema rules."""
+    items = scan_content()
+    items = filter_items(items, args)
+
+    issues = []  # list of (path_rel, code, level, message)
+    fixable = []  # list of (path, fix_type, detail)
+
+    for item in items:
+        rel = item["rel"]
+        path = item["path"]
+        fm_str = item["fm_str"]
+        body = item["body"]
+        section_top = item["section"].split("/")[0]
+
+        # E001: Missing or empty title
+        title = get_field(fm_str, "title")
+        if not title or not title.strip():
+            issues.append((rel, "E001", "Error", "Missing or empty title"))
+
+        # E002: Missing or unparseable date
+        date_str = get_field(fm_str, "date")
+        if not date_str:
+            issues.append((rel, "E002", "Error", "Missing date"))
+        else:
+            try:
+                # Accept YYYY-MM-DD or YYYY-MM-DDTHH:MM:SS...
+                datetime.strptime(date_str[:10], "%Y-%m-%d")
+            except ValueError:
+                issues.append((rel, "E002", "Error", f"Unparseable date: {date_str}"))
+
+        # W001: Missing description
+        desc = item["description"]
+        if not desc:
+            issues.append((rel, "W001", "Warn", "Missing description"))
+
+        # W002: Description appears truncated
+        if desc and desc.rstrip().endswith("..."):
+            issues.append((rel, "W002", "Warn", "Description appears truncated (ends with \"...\")"))
+            fixable.append((path, "trim_ellipsis", desc))
+
+        # W003: Missing image on art content
+        if section_top == "art" and not item["image"]:
+            issues.append((rel, "W003", "Warn", "Missing image on art content"))
+
+        # W004: Image path doesn't exist in static/
+        if item["image"] and not item["image"].startswith("http"):
+            # Image paths are like /images/foo.jpg → static/images/foo.jpg
+            img_path = STATIC_DIR / item["image"].lstrip("/")
+            if not img_path.exists():
+                issues.append((rel, "W004", "Warn", f"Image file not found: {item['image']}"))
+
+        # W005: Body content < 20 words
+        if item["word_count"] < 20:
+            issues.append((rel, "W005", "Warn", f"Body content is thin ({item['word_count']} words)"))
+
+        # W006: Missing medium on art content
+        if section_top == "art" and not item["medium"]:
+            issues.append((rel, "W006", "Warn", "Missing medium on art content"))
+
+        # W007: Missing year on art content
+        if section_top == "art":
+            year_field = get_field(fm_str, "year")
+            if not year_field:
+                issues.append((rel, "W007", "Warn", "Missing year on art content"))
+
+        # W008: Missing tags field
+        tags_raw = get_field(fm_str, "tags")
+        has_tags_field = "tags:" in fm_str if fm_str else False
+        if not has_tags_field:
+            issues.append((rel, "W008", "Warn", "Missing tags field"))
+            fixable.append((path, "add_tags", None))
+
+        # W009: Image references external URL
+        if item["image"] and item["image"].startswith("http"):
+            issues.append((rel, "W009", "Warn", f"Image references external URL: {item['image']}"))
+
+        # I001: recovered: true but has working local image
+        if item["recovered"] and item["image"] and not item["image"].startswith("http"):
+            img_path = STATIC_DIR / item["image"].lstrip("/")
+            if img_path.exists():
+                issues.append((rel, "I001", "Info", "recovered: true but has working local image"))
+
+        # Check for recovered: false (fixable — remove it)
+        recovered_val = get_field(fm_str, "recovered")
+        if recovered_val is not None and recovered_val.lower() == "false":
+            fixable.append((path, "remove_recovered_false", None))
+
+    # Count by level
+    errors = sum(1 for _, _, lvl, _ in issues if lvl == "Error")
+    warns = sum(1 for _, _, lvl, _ in issues if lvl == "Warn")
+    infos = sum(1 for _, _, lvl, _ in issues if lvl == "Info")
+    active_items = [i for i in items if not i["archived"]]
+    # "Publishable" = active items with no errors and no warnings
+    items_with_issues = set()
+    for rel, code, lvl, msg in issues:
+        if lvl in ("Error", "Warn"):
+            items_with_issues.add(rel)
+    publishable = sum(1 for i in active_items if i["rel"] not in items_with_issues)
+
+    # Print summary
+    print(f"\n  Content Validation")
+    print(f"  {'='*60}")
+    print(f"  Scanned: {len(items)}   Errors: {errors}   Warnings: {warns}   Publishable: {publishable}/{len(active_items)} active")
+    print(f"  {'='*60}\n")
+
+    # Print issues grouped by file
+    if issues:
+        current_file = None
+        for rel, code, lvl, msg in issues:
+            if rel != current_file:
+                current_file = rel
+                print(f"  {rel}")
+            prefix = {"Error": "ERR ", "Warn": "WARN", "Info": "INFO"}[lvl]
+            print(f"    [{code}] {msg}")
+        print()
+
+    if not issues:
+        print("  No issues found.\n")
+
+    # Handle --fix
+    if args.fix and fixable:
+        unique_fixes = {}
+        for path, fix_type, detail in fixable:
+            key = (str(path), fix_type)
+            if key not in unique_fixes:
+                unique_fixes[key] = (path, fix_type, detail)
+
+        print(f"  Auto-fixable issues: {len(unique_fixes)}")
+        for (_, fix_type), (path, _, detail) in unique_fixes.items():
+            rel = path.relative_to(CONTENT_DIR)
+            if fix_type == "add_tags":
+                print(f"    {rel}: add tags: []")
+            elif fix_type == "trim_ellipsis":
+                print(f"    {rel}: trim trailing \"...\" from description")
+            elif fix_type == "remove_recovered_false":
+                print(f"    {rel}: remove recovered: false")
+
+        if args.dry_run:
+            print("\n  (dry run — no changes made)\n")
+            return
+
+        if not confirm(f"\nApply {len(unique_fixes)} fixes?"):
+            print("Cancelled.")
+            return
+
+        applied = 0
+        for (_, fix_type), (path, _, detail) in unique_fixes.items():
+            fm_str, body, raw = parse_file(path)
+            if fm_str is None:
+                continue
+
+            if fix_type == "add_tags":
+                # Add tags: [] before draft: if present
+                if "tags:" not in fm_str:
+                    if "\ndraft:" in fm_str:
+                        fm_str = fm_str.replace("\ndraft:", "\ntags: []\ndraft:")
+                    else:
+                        fm_str += "\ntags: []"
+                    applied += 1
+
+            elif fix_type == "trim_ellipsis":
+                desc = get_field(fm_str, "description")
+                if desc and desc.rstrip().endswith("..."):
+                    new_desc = desc.rstrip().rstrip(".")
+                    fm_str = set_field(fm_str, "description", new_desc)
+                    applied += 1
+
+            elif fix_type == "remove_recovered_false":
+                fm_str = remove_field(fm_str, "recovered")
+                applied += 1
+
+            path.write_text(reconstruct(fm_str, body), encoding="utf-8")
+
+        print(f"\n  Applied {applied} fixes.\n")
+
+    elif args.fix and not fixable:
+        print("  No auto-fixable issues found.\n")
+
+
+# ── Merge command ─────────────────────────────────────────────────────────
+
+def cmd_merge(args):
+    """Merge SOURCE content into DEST, archiving SOURCE."""
+    src = Path(args.source)
+    if not src.is_absolute():
+        src = CONTENT_DIR.parent / src
+
+    dest = Path(args.dest)
+    if not dest.is_absolute():
+        dest = CONTENT_DIR.parent / dest
+
+    if not src.exists():
+        print(f"Error: source file {src} not found", file=sys.stderr)
+        sys.exit(1)
+
+    if not dest.exists():
+        print(f"Error: destination file {dest} not found", file=sys.stderr)
+        sys.exit(1)
+
+    src_fm, src_body, _ = parse_file(src)
+    dest_fm, dest_body, _ = parse_file(dest)
+
+    if src_fm is None or dest_fm is None:
+        print("Error: could not parse front matter from source or destination", file=sys.stderr)
+        sys.exit(1)
+
+    src_title = get_field(src_fm, "title") or src.stem
+    dest_title = get_field(dest_fm, "title") or dest.stem
+
+    # Merge tags (union)
+    src_tags = get_list(src_fm, "tags")
+    dest_tags = get_list(dest_fm, "tags")
+    merged_tags = list(dict.fromkeys(dest_tags + src_tags))  # preserve order, dedupe
+
+    # Image: keep dest, fall back to source
+    dest_image = get_field(dest_fm, "image")
+    src_image = get_field(src_fm, "image")
+    final_image = dest_image or src_image or ""
+
+    # Date: keep earlier
+    src_date = get_field(src_fm, "date") or ""
+    dest_date = get_field(dest_fm, "date") or ""
+    if src_date and dest_date:
+        final_date = min(src_date[:10], dest_date[:10])
+    else:
+        final_date = dest_date or src_date
+
+    # Source URL for alias
+    src_rel = src.relative_to(CONTENT_DIR)
+    src_url = "/" + str(src_rel).replace(".md", "/")
+
+    # Merged body
+    merged_body = dest_body.rstrip("\n") + f"\n\n---\n\n*Merged from: {src_title}*\n\n" + src_body
+
+    print(f"\n  Merge Preview")
+    print(f"  {'='*60}")
+    print(f"  Source:  {src.relative_to(CONTENT_DIR.parent)} — \"{src_title}\"")
+    print(f"  Dest:    {dest.relative_to(CONTENT_DIR.parent)} — \"{dest_title}\"")
+    print(f"  {'─'*60}")
+    print(f"  Date:    {final_date} (earlier of {src_date[:10]}, {dest_date[:10]})")
+    print(f"  Image:   {final_image or '(none)'}")
+    print(f"  Tags:    {', '.join(merged_tags) if merged_tags else '(none)'}")
+    print(f"  Alias:   {src_url}")
+    print(f"  Source body appended ({word_count(src_body)} words)")
+    print(f"  Source will be archived after merge")
+
+    if args.dry_run:
+        print(f"\n  (dry run — no changes made)\n")
+        return
+
+    warn_uncommitted()
+    if not confirm(f"\nMerge \"{src_title}\" into \"{dest_title}\"?", args.yes):
+        print("Cancelled.")
+        return
+
+    # Apply to dest
+    if final_date:
+        dest_fm = set_field(dest_fm, "date", final_date)
+    if final_image:
+        dest_fm = set_field(dest_fm, "image", final_image)
+
+    # Update tags
+    if merged_tags:
+        # Remove existing tags field and add merged
+        dest_fm = remove_field(dest_fm, "tags")
+        tags_yaml = "[" + ", ".join(f'"{t}"' for t in merged_tags) + "]"
+        if "\ndescription:" in dest_fm:
+            dest_fm = dest_fm.replace("\ndescription:", f"\n__TAGS_PLACEHOLDER__\ndescription:")
+            dest_fm = dest_fm.replace("__TAGS_PLACEHOLDER__", f"tags: {tags_yaml}")
+        elif "\ndraft:" in dest_fm:
+            dest_fm = dest_fm.replace("\ndraft:", f"\ntags: {tags_yaml}\ndraft:")
+        else:
+            dest_fm += f"\ntags: {tags_yaml}"
+
+    # Add alias
+    dest_fm = add_alias(dest_fm, src_url)
+
+    # Write dest
+    dest.write_text(reconstruct(dest_fm, merged_body), encoding="utf-8")
+
+    # Archive source
+    src_fm = set_field(src_fm, "archived", True)
+    src.write_text(reconstruct(src_fm, src_body), encoding="utf-8")
+
+    print(f"\n  Merged \"{src_title}\" into \"{dest_title}\".")
+    print(f"  Source archived: {src.relative_to(CONTENT_DIR.parent)}\n")
+
+
+# ── Duplicate command ─────────────────────────────────────────────────────
+
+def cmd_duplicate(args):
+    """Duplicate a content file with fresh metadata."""
+    src = Path(args.source)
+    if not src.is_absolute():
+        src = CONTENT_DIR.parent / src
+
+    if not src.exists():
+        print(f"Error: source file {src} not found", file=sys.stderr)
+        sys.exit(1)
+
+    src_fm, src_body, _ = parse_file(src)
+    if src_fm is None:
+        print("Error: could not parse front matter", file=sys.stderr)
+        sys.exit(1)
+
+    src_title = get_field(src_fm, "title") or src.stem
+
+    # Determine destination
+    new_title = args.title if args.title else f"{src_title} (copy)"
+    slug = re.sub(r'[^a-z0-9]+', '-', new_title.lower()).strip('-')
+
+    if args.dest:
+        dest_dir = Path(args.dest)
+        if not dest_dir.is_absolute():
+            dest_dir = CONTENT_DIR.parent / dest_dir
+    else:
+        dest_dir = src.parent
+
+    dest = dest_dir / f"{slug}.md"
+
+    # Build new front matter
+    new_fm = src_fm
+    new_fm = set_field(new_fm, "title", new_title)
+    new_fm = set_field(new_fm, "date", datetime.now().strftime("%Y-%m-%d"))
+    new_fm = set_field(new_fm, "draft", True)
+
+    # Clear featured
+    if get_bool(new_fm, "featured") is not None:
+        new_fm = set_field(new_fm, "featured", False)
+
+    # Remove aliases (they belong to the original)
+    if "aliases:" in new_fm:
+        # Remove multi-line aliases block
+        new_fm = re.sub(r'\naliases:\s*\n(?:\s+-\s+.+\n?)*', '\n', new_fm)
+        # Remove inline aliases
+        new_fm = re.sub(r'\naliases:\s*\[[^\]]*\]\n?', '\n', new_fm)
+
+    print(f"\n  Duplicate Preview")
+    print(f"  {'='*60}")
+    print(f"  Source:    {src.relative_to(CONTENT_DIR.parent)} — \"{src_title}\"")
+    print(f"  New file:  {dest.relative_to(CONTENT_DIR.parent)}")
+    print(f"  Title:     \"{new_title}\"")
+    print(f"  Date:      {datetime.now().strftime('%Y-%m-%d')}")
+    print(f"  Draft:     true")
+    print(f"  Featured:  false")
+    print(f"  Aliases:   cleared")
+
+    if args.dry_run:
+        print(f"\n  (dry run — no changes made)\n")
+        return
+
+    if dest.exists():
+        print(f"\n  Error: destination file already exists: {dest}", file=sys.stderr)
+        sys.exit(1)
+
+    if not dest_dir.exists():
+        print(f"\n  Error: destination directory does not exist: {dest_dir}", file=sys.stderr)
+        sys.exit(1)
+
+    dest.write_text(reconstruct(new_fm, src_body), encoding="utf-8")
+    print(f"\n  Created: {dest.relative_to(CONTENT_DIR.parent)}\n")
+
+
 # ── CLI entry point ──────────────────────────────────────────────────────
 
 def main():
@@ -865,6 +1238,27 @@ def main():
     p_move.add_argument("--dry-run", action="store_true")
     p_move.add_argument("--yes", "-y", action="store_true")
 
+    # validate
+    p_val = sub.add_parser("validate", help="Validate content against schema")
+    p_val.add_argument("--section", help="Section path")
+    p_val.add_argument("--file", help="Single file path")
+    p_val.add_argument("--fix", action="store_true", help="Auto-fix safe issues")
+    p_val.add_argument("--dry-run", action="store_true", help="Preview fixes without applying")
+
+    # merge
+    p_merge = sub.add_parser("merge", help="Merge source into destination")
+    p_merge.add_argument("source", help="Source file path")
+    p_merge.add_argument("dest", help="Destination file path")
+    p_merge.add_argument("--dry-run", action="store_true")
+    p_merge.add_argument("--yes", "-y", action="store_true")
+
+    # duplicate
+    p_dupl = sub.add_parser("duplicate", help="Duplicate a content file")
+    p_dupl.add_argument("source", help="Source file path")
+    p_dupl.add_argument("--dest", help="Destination directory (default: same as source)")
+    p_dupl.add_argument("--title", help="Title for the new file")
+    p_dupl.add_argument("--dry-run", action="store_true")
+
     # report
     sub.add_parser("report", help="Generate HTML dashboard")
 
@@ -878,6 +1272,9 @@ def main():
         "duplicates": cmd_duplicates,
         "set": cmd_set,
         "move": cmd_move,
+        "validate": cmd_validate,
+        "merge": cmd_merge,
+        "duplicate": cmd_duplicate,
         "report": cmd_report,
     }
 

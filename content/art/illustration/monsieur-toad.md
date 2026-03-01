@@ -1,7 +1,7 @@
 ---
 title: "Monsieur Toad"
 date: 2012-01-13
-description: "All for one, and one for all!  A fun little sketch I did today for a friend who’s online nick is Monsieur Toad.  Despite his colorful appearance and..."
+description: "All for one, and one for all!  A fun little sketch I did today for a friend who’s online nick is Monsieur Toad.  Despite his colorful appearance and"
 tags: ["Cartooning", "Digital Painting", "Illustration", "Joshua Keyes", "Raihn", "Sketchbook", "Sketchbook Digital", "Speed Painting", "monsieur", "musketeer", "speed paint", "toad"]
 image: "/images/wp-imports/art/monsieur_toad.jpg"
 aliases:

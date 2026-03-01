@@ -5,9 +5,9 @@ description: "Welcome to my personal Index of just a few things currently on my 
 related_sections:
   - "mecromage"
   - "verg-castleroid"
+tags: []
 draft: false
 ---
-
 *Welcome to my personal Index of just a few things currently on my mind.*
 
 ---

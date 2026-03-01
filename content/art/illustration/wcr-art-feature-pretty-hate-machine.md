@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Pretty Hate Machine"
 image: "/images/recovered/wcr_art_feature_03"
 date: 2005-06-20
-description: "Nothing shuts the Human army down quite like the Undead Dark Ranger. After so little attention in the past months, Human got a huge dose in the last..."
+description: Nothing shuts the Human army down quite like the Undead Dark Ranger. After so little attention in the past months, Human got a huge dose in the last
 tags: ["Art feature", "Digital Painting", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft"]
 aliases:
   - "/art/wcr-art-feature-pretty-hate-machine/"
 draft: false
 medium: "Digital"
 year: 2005
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_03)
 Nothing shuts the Human army down quite like the Undead Dark Ranger. After so little attention in the past months, Human got a huge dose in the last couple weeks, and to that I say IMBA. Indeed friends, I heard the requests of a death coiling Death Knight, but alas I was uninspired. So for you my Undead legions, I give the Dark Ranger. She is a nightmare that some would daydream about, and she has style to burn. I never met a Dark Ranger replay I didn’t like, except when it’s me on the receiving end of that unholy bow. You can never be sure what will happen in a game that includes this chaotic hero.

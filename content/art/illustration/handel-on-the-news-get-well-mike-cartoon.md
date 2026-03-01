@@ -2,14 +2,14 @@
 title: "Handel on the News get well Mike cartoon"
 image: "/images/recovered/get_well_mike_color_02.png"
 date: 2012-08-01
-description: "Mike Nolan, KFI traffic reporter and contributor to the KFI Handel morning show was involved in a plane crash.  Nolan is a former Marine, and..."
+description: Mike Nolan, KFI traffic reporter and contributor to the KFI Handel morning show was involved in a plane crash.  Nolan is a former Marine, and
 tags: ["AM640", "Bill Handel", "Cartooning", "Gary Hoffmann", "Illustration", "Janice Ungaro", "Jodi Becker", "KFI", "Lara Hermanson", "Michelle Kube", "Mike Nolan", "Morning Show", "News", "Rich Marotta", "Todd Wilson", "cartoon"]
 aliases:
   - "/art/handel-on-the-news-get-well-mike-cartoon/"
 draft: false
 medium: "Digital"
 year: 2012
-recovered: false
+
 ---
 [![get_well_mike_color_02](/images/recovered/get_well_mike_color_02.png "get_well_mike_color_02")](/images/recovered/get_well_mike_color_02.png)
 

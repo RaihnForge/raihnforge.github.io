@@ -1,13 +1,13 @@
 ---
 title: "Side Scrolling Study"
 date: 2015-09-18
-description: "On my Long Journey learning about creating side scrolling game assets and development I've done many an intensive study.  Today I thought I would..."
+description: On my Long Journey learning about creating side scrolling game assets and development I've done many an intensive study.  Today I thought I would
 tags: ["2d", "Castlevania", "Indie Game Art", "Inspiration", "Mecromage", "Study", "reimagination", "retro", "sidescroll"]
 image: "/images/wp-imports/blog/forest.png"
 aliases:
   - "/gamedev/side-scrolling-study/"
 draft: false
-recovered: false
+
 ---
 On my Long Journey learning about creating side scrolling game assets and development I've done many an intensive study.  Today I thought I would share a few of my older study images I generated along the way.
 

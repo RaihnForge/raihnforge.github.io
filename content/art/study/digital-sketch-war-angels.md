@@ -1,7 +1,7 @@
 ---
 title: "Digital Sketch - War Angels"
 date: 2013-07-17
-description: "A friend requested a quick picture depicting angels descending upon tainted militants.  This was the result.  This was also my first time really..."
+description: A friend requested a quick picture depicting angels descending upon tainted militants.  This was the result.  This was also my first time really
 tags: ["Illustration", "Manga Studio", "Sketchbook Digital", "War angel"]
 image: "/images/wp-imports/art/joebattle04.png"
 aliases:

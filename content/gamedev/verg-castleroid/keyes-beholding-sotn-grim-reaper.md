@@ -6,7 +6,7 @@ tags: ["2d sprite", "Art Study", "Castlevania", "Death", "Digital Painting", "Gr
 aliases:
   - "/gamedev/keyes-beholding-sotn-grim-reaper/"
 draft: false
-recovered: false
+
 ---
 {{< youtube "HciGXZhHY1U" >}}
 

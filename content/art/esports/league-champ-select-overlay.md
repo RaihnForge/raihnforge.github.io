@@ -2,7 +2,7 @@
 title: "League Champ Select Overlay"
 image: "/images/recovered/VGOverlayDemo02_thumb_3.png"
 date: 2014-06-26
-description: "A friend of mine, Eryn is an up and coming League of Legends caster.  He has been working daily to bring some eSports action to scene with his heated..."
+description: A friend of mine, Eryn is an up and coming League of Legends caster.  He has been working daily to bring some eSports action to scene with his heated
 tags: ["Design", "eSports"]
 aliases:
   - "/art/league-champ-select-overlay/"

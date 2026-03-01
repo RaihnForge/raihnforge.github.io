@@ -1,11 +1,11 @@
 ---
 title: "Cheerful: Mannerlisk"
 date: 2013-10-23
-description: "I was watching WCS Europe today and decided to part take in the PizzaGame!  I decided on the Thorzain and Dimaga match, they are both cool guys and..."
+description: "I was watching WCS Europe today and decided to part take in the PizzaGame!  I decided on the Thorzain and Dimaga match, they are both cool guys and"
 aliases:
   - "/art/cheerful-mannerlisk/"
+tags: []
 draft: false
-recovered: false
 medium: "Digital"
 year: 2013
 image: "/images/recovered/MannerLiskJoshuaKeyes_thumb.png"

@@ -1,7 +1,7 @@
 ---
 title: "Frost Mage - Lady of Ice"
 date: 2008-11-05
-description: "The Frost Mage was a commission piece for a wow character.  It was fun trying to incorporate the misc. WoW gear and tabard.  I would love to have..."
+description: The Frost Mage was a commission piece for a wow character.  It was fun trying to incorporate the misc. WoW gear and tabard.  I would love to have
 tags: ["Alliance", "Art Commission", "Character", "Chick", "Digital Painting", "Dranei", "Eisei", "Frost Mage", "Joshua Keyes", "Raihn", "Warcraft Character", "WoW", "wallpaper"]
 aliases:
   - "/art/eisei-the-lady-of-ice/"

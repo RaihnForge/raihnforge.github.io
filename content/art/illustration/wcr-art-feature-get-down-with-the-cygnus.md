@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Get Down With the Cygnus"
 image: "/images/recovered/wcr_art_feature_01.jpg"
 date: 2005-05-24
-description: "I am pleased to present to you all, the first ever, Raihn’s Art of War piece. A feature brought to you by none other than WCreplays.com. Lacking the..."
+description: I am pleased to present to you all, the first ever, Raihn’s Art of War piece. A feature brought to you by none other than WCreplays.com. Lacking the
 tags: ["Art feature", "Digital Painting", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft"]
 aliases:
   - "/art/wcr-art-feature-get-down-with-the-cygnus/"
 draft: false
 medium: "Digital"
 year: 2005
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_01.jpg)
 

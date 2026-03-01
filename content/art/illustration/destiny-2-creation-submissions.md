@@ -1,7 +1,7 @@
 ---
 title: "Destiny 2 - Creation Submissions"
 date: 2019-01-31
-description: "This is a collection of pencil illustrations I worked on and contributed to the Destiny Fan Contributions sites. I hope you enjoy them as much as I..."
+description: This is a collection of pencil illustrations I worked on and contributed to the Destiny Fan Contributions sites. I hope you enjoy them as much as I
 tags: ["Cartooning", "Destiny", "Fan Art", "Illustration", "Sketchbook", "Sketchbook Pencil"]
 image: "/images/wp-imports/art/bringthelight_joshuakeyes.jpg"
 aliases:

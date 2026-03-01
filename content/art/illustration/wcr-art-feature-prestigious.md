@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Prestigious"
 image: "/images/recovered/wcr_art_feature_02"
 date: 2005-06-06
-description: "Welcome to the second Art of War piece! Today we have a treat for the Human faithful, since we haven’t received any buffs in recent patches, we need..."
+description: "Welcome to the second Art of War piece! Today we have a treat for the Human faithful, since we haven’t received any buffs in recent patches, we need"
 tags: ["Art", "Art feature", "Digital Painting", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft"]
 aliases:
   - "/art/wcr-art-feature-prestigious/"
 draft: false
 medium: "Digital"
 year: 2005
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_02)
 Welcome to the second Art of War piece! Today we have a treat for the Human faithful, since we haven’t received any buffs in recent patches, we need something right? I truly hope that you enjoy the work. I told you all I wanted to give a little bit back to the community that has given me so much enjoyment the best way I know how. Despite some accusations, the work here is not to inflate my ego, or to pawn off mediocre works as masterpieces. I want to share and help the Warcraft community continue to be a leader in PC gaming excellence.

@@ -1,7 +1,7 @@
 ---
 title: "Stephanie's Dragon Wallpaper"
 date: 2007-06-30
-description: "This is a dragon I drew off a sketch I did with my girlfriend. She started off making some lines, and then I finished the sketch. Later, it was..."
+description: This is a dragon I drew off a sketch I did with my girlfriend. She started off making some lines, and then I finished the sketch. Later, it was
 tags: ["Digital Painting"]
 aliases:
   - "/art/stephanies-dragon-wallpaper/"

@@ -9,7 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2009
-recovered: false
+
 ---
 [![Dahnjin](/images/recovered/dahnjin_pic7.jpg "Dahnjin")](/images/recovered/dahnjin_pic7.jpg)
 Image created for friend of mine.  Thanks buddy, hope you enjoy! :D

@@ -2,14 +2,14 @@
 title: "Twitch Icon - Arbiter"
 image: "/images/recovered/Resize.png"
 date: 2014-08-23
-description: "I tackled what I thought was going to be a much more simple task.  Taking a Starcraft 1 arbiter and making a Twitch icon out of it for a well known..."
+description: I tackled what I thought was going to be a much more simple task.  Taking a Starcraft 1 arbiter and making a Twitch icon out of it for a well known
 tags: ["Web Page Designs", "eSports"]
 aliases:
   - "/art/twitch-icon-arbiter/"
 draft: false
 medium: "Digital"
 year: 2014
-recovered: false
+
 ---
 [![Resize](/images/recovered/Resize.png "Resize")](/images/recovered/Resize.png)     [![Redrawn](/images/recovered/Redrawn.png "Redrawn")](/images/recovered/Redrawn.png)    [![Chibi](/images/recovered/Chibi.png "Chibi")](/images/recovered/Chibi.png)
 

@@ -1,13 +1,13 @@
 ---
 title: "Team Eve Gaming Logo"
 date: 2012-05-31
-description: "Creating Team Eve’s logo was a rewarding experience, and a test of the process of achieving a shared vision with a client.  Below I discuss the..."
+description: Creating Team Eve’s logo was a rewarding experience, and a test of the process of achieving a shared vision with a client.  Below I discuss the
 tags: ["Advertisements", "Art", "Clients", "Custom Branding", "Design", "Game Design", "Joshua Keyes", "Logo Designs", "Overlays", "Process", "Raihn", "T-Shirt", "Team Eve", "Twitch background", "Web Assets Design", "Web Page Designs", "design", "eSports", "freelance"]
 image: "/images/wp-imports/gamedev/1.png"
 aliases:
   - "/gamedev/team-eve-gaming-logo/"
 draft: false
-recovered: false
+
 ---
 [![eve_logo_large](/images/recovered/eve_logo_large.png "eve_logo_large")](/images/recovered/eve_logo_large.png)
 

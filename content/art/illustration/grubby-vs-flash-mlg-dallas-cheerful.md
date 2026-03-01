@@ -2,7 +2,7 @@
 title: "Grubby vs Flash MLG Dallas Cheerful"
 image: "/images/recovered/20121101grubby_vs_flash_raihn_big_thumb.jpg"
 date: 2012-11-01
-description: "[[HD 1280x720]](http://www.joshuakeyes.us/raihn/images/GrubbyvsFlashSketchJoshuaRaihnKeyes720.jpg) [[HD +..."
+description: "[[HD 1280x720]](http://www.joshuakeyes.us/raihn/images/GrubbyvsFlashSketchJoshuaRaihnKeyes720.jpg) [[HD +"
 tags: ["Art", "Blizzard", "FollowGrubby", "Grubby", "Hows the weather", "Illustration", "Joshua Keyes", "King of Orcs", "Pro gamer", "Raihn", "Sketchbook", "Sketchbook Digital", "Speed Painting", "Speed Sketching", "Unchosen Paths", "eSports", "fanart", "grubby", "sc2", "starcraft"]
 aliases:
   - "/art/grubby-vs-flash-mlg-dallas-cheerful/"

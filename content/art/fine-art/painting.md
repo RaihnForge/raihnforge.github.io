@@ -1,7 +1,7 @@
 ---
 title: "A Funny Flood"
 date: 2008-07-07
-description: "My second serious acrylic painting attempt from my beginning painting class.  We had a still life reference that included a stuffed bunny, some..."
+description: My second serious acrylic painting attempt from my beginning painting class.  We had a still life reference that included a stuffed bunny, some
 tags: ["Acrylic", "Acrylic Painting", "Bunny", "Flood", "Fun", "Imagination", "Joshua Keyes", "Painting", "Raihn", "Rubber Ducky", "representational", "still life", "story", "toys"]
 aliases:
   - "/art/painting/"

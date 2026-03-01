@@ -2,14 +2,14 @@
 title: "Semper Filly"
 image: "/images/recovered/ponySizedDown.png"
 date: 2013-05-21
-description: "My good friend, and fellow Marine is still active and being deployed around the world.  He has a fantastic family and two wonderful kids.  I thought..."
+description: My good friend, and fellow Marine is still active and being deployed around the world.  He has a fantastic family and two wonderful kids.  I thought
 tags: ["Brony", "Cartooning", "Design", "EGA", "Family", "Fan Art", "Illustration", "Joshua Keyes", "Marines", "Military", "My Little Pony", "Pony", "Posters", "Semper Filly", "USMC"]
 aliases:
   - "/art/semper-filly/"
 draft: false
 medium: "Digital"
 year: 2013
-recovered: false
+
 ---
 [![ponySizedDown](/images/recovered/ponySizedDown.png "ponySizedDown")](/images/recovered/ponySizedDown.png)
 

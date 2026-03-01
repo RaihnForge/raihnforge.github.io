@@ -1,11 +1,10 @@
 ---
 title: "Homelessness in America"
 date: 2005-04-19
-description: "Everyone has seen her. Unreserved, she claws though your trash when you arrive home after a night out. Standing on the side of the road, she holds a..."
+description: Everyone has seen her. Unreserved, she claws though your trash when you arrive home after a night out. Standing on the side of the road, she holds a
 tags: ["America", "English", "Muse", "Psychology", "homelessness"]
 draft: false
 ---
-
 Everyone has seen her. Unreserved, she claws though your trash when you arrive home after a night out. Standing on the side of the road, she holds a sign requesting the scraps someone is uninterested in, maybe she will be able to feed all four of her children today. She cleaned up the best she could when she snuck into the local gas station's restroom. Now when she asks for change, some might not be too uncomfortable to hand any over. Her name is Rochelle, she left her abusive husband, along with her last home, over two years ago. Her children give her hope. (Clarke) Homelessness has crept into every part of American society. The homeless can be found in suburbs and rural communities as easily as big cities. (Clarke)
 The social dilemma of homelessness is caused by a variety of factors that are complex, multiple, and not completely understood. The majority homelessness is caused by alcohol/drug addictions, mental illnesses, and economic problems; the government must conduct more extensive research, and vigorously pursue educated reform to efficiently address the stated causes. These factors are interlinked in a way that they can profoundly affect one another. The predicament of homelessness is a rout in life that is very difficult to emerge from, many never do. Finding a solution to this dilemma is perhaps more difficult and complex than the factors that cause it.
 The numbers of people that are homeless in the United States are very difficult to estimate. Many sources have shown conflicting figures due to the difficulty involved in gathering this data. Most solid data that exists comes solely from shelters, yet many homeless individuals live on the streets. Further, the definition of homelessness is not clear and consistent.( Lewit and Schuurmann) The U.S. Department of Housing and Urban Development has estimated that the total number of homeless people in the United States is approximately 350,000 (Torrey). This number is likely to continue to grow if immediate and necessary precautions are ignored, or misapplied.

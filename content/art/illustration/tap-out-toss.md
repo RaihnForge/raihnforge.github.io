@@ -1,11 +1,11 @@
 ---
 title: "Sketch - Tap Out Toss"
 date: 2013-06-16
-description: "Another fun eSports sketch inspired by ToD and his choke-out victory over Stephano.  I quite enjoyed watching the match, but was quite frustrated at..."
+description: Another fun eSports sketch inspired by ToD and his choke-out victory over Stephano.  I quite enjoyed watching the match, but was quite frustrated at
 aliases:
   - "/art/tap-out-toss/"
+tags: []
 draft: false
-recovered: false
 medium: "Digital"
 year: 2013
 image: "/images/recovered/TapOutToss.jpg"

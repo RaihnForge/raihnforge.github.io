@@ -1,7 +1,7 @@
 ---
 title: "Roll20 Rogue Token"
 date: 2015-05-01
-description: "I really enjoy doing artwork of all kinds.  Often I believe I spread myself too thin creating so many types of graphics across so vast a spectrum...."
+description: I really enjoy doing artwork of all kinds.  Often I believe I spread myself too thin creating so many types of graphics across so vast a spectrum
 tags: ["Cartooning", "D&amp;D", "Game Graphics", "Illustration", "Rogue", "Roll20", "Token"]
 image: "/images/wp-imports/gamedev/halflingassassin.png"
 aliases:

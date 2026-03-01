@@ -1,7 +1,7 @@
 ---
 title: "Team Aegis"
 date: 2014-07-31
-description: "Inspired by the original X-Com game and their alloy armor, I decided to spent a bit of time imaging my team of badass alien brawlers.  I didn’t..."
+description: Inspired by the original X-Com game and their alloy armor, I decided to spent a bit of time imaging my team of badass alien brawlers.  I didn’t
 tags: ["Cartooning", "Digital Painting", "Illustration", "Imagine", "Indie Game Blog", "Indie Game Design", "Joshua Keyes", "Sketchbook", "Sketchbook Digital", "Unchosen Paths", "avatars", "cartoon", "xcom"]
 image: "/images/wp-imports/gamedev/faces_lg.png"
 aliases:

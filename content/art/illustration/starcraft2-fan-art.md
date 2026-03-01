@@ -7,6 +7,7 @@ year: 2019
 image: "/images/art/starcraft2-fan-art.png"
 aliases:
   - "/art/starcraft2-fan-art/"
+tags: []
 draft: false
 ---
 Fan art born out of late-night sessions playing StarCraft 2 with friends. The pieces range from quick pencil sketches to more finished digital illustrations inspired by the game's races and lore.

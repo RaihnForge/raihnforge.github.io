@@ -1,10 +1,11 @@
 ---
 title: "Nostalgic Avatars for Blizzard Gamers"
 date: 2008-03-19
-description: "These are my artistically questionable masterpieces for avatars I whipped up for community websites dedicated largely to Blizzard games and the..."
+description: These are my artistically questionable masterpieces for avatars I whipped up for community websites dedicated largely to Blizzard games and the
 image: "/images/wp-imports/blog/wc_hu_am-1.jpg"
 aliases:
   - "/art/nostalgic-avatars-for-blizzard-gamers/"
+tags: []
 draft: false
 medium: "Digital"
 year: 2008

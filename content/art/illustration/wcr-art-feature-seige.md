@@ -2,14 +2,14 @@
 title: "WCR Art Feature: Seige"
 image: "/images/recovered/wcr_art_feature_09.jpg"
 date: 2006-05-18
-description: "Holy crap it’s been a long time since I have put out a feature! I can only repent and ask forgiveness. Indeed, I was put out of commission all of..."
+description: "Holy crap it’s been a long time since I have put out a feature! I can only repent and ask forgiveness. Indeed, I was put out of commission all of"
 tags: ["Art feature", "Blizzard", "Digital Painting", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft"]
 aliases:
   - "/art/wcr-art-feature-seige/"
 draft: false
 medium: "Digital"
 year: 2006
-recovered: false
+
 ---
 ![](/images/recovered/wcr_art_feature_09.jpg)
 Holy crap it’s been a long time since I have put out a feature! I can only repent and ask forgiveness. Indeed, I was put out of commission all of last semester, I erred in the ways of selecting classes. Word to the wise, don’t take the three toughest and most time consuming art classes at your college at the same time!

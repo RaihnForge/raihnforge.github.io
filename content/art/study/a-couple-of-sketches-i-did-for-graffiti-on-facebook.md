@@ -5,6 +5,7 @@ description: "Quick sketches created for the Graffiti app on Facebook."
 image: "/images/wp-imports/blog/image.png"
 aliases:
   - "/art/a-couple-of-sketches-i-did-for-graffiti-on-facebook/"
+tags: []
 draft: false
 medium: "Digital"
 year: 2010

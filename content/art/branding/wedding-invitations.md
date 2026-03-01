@@ -2,7 +2,7 @@
 title: "Wedding Invitations"
 image: "/images/recovered/invite_back_blogpost.jpg"
 date: 2011-04-21
-description: "I created these invites for my best friend’s wedding.  Working with the bride to be we designed some fun invitations to send out.  The original color..."
+description: I created these invites for my best friend’s wedding.  Working with the bride to be we designed some fun invitations to send out.  The original color
 tags: ["Design", "Joshua Keyes", "Sketchbook", "Stationary", "design", "filigree", "invitation", "rsvp", "stationary", "wedding"]
 aliases:
   - "/art/wedding-invitations/"
