@@ -2,8 +2,7 @@ backend:
   name: github
   repo: RaihnForge/raihnforge-www
   branch: main
-
-publish_mode: editorial_workflow
+  base_url: https://sveltia-cms-auth.YOURSUBDOMAIN.workers.dev
 media_folder: static/images
 public_folder: /images
 
