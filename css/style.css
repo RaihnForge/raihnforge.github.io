@@ -1357,6 +1357,23 @@ a:hover {
 }
 
 /* ============================================================
+   Archived Content Notice
+   ============================================================ */
+.archived-notice {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-hover);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.archived-notice p {
+  font-size: var(--text-sm);
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ============================================================
    Back link (shared)
    ============================================================ */
 .back-link {

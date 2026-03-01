@@ -25,6 +25,7 @@ collections:
       - { label: "Year", name: year, widget: number, required: false }
       - { label: "Featured", name: featured, widget: boolean, default: false, required: false }
       - { label: "Draft", name: draft, widget: boolean, default: false }
+      - { label: "Archived", name: archived, widget: boolean, default: false, required: false }
       - { label: "Recovered", name: recovered, widget: hidden, required: false }
       - { label: "Body", name: body, widget: markdown }
 
@@ -75,6 +76,7 @@ collections:
       - { label: "Image", name: image, widget: image, required: false }
       - { label: "Related Sections", name: related_sections, widget: list, required: false, hint: "Slugs of related Design/Products sections (e.g. esports, mecromage)" }
       - { label: "Draft", name: draft, widget: boolean, default: false }
+      - { label: "Archived", name: archived, widget: boolean, default: false, required: false }
       - { label: "Recovered", name: recovered, widget: hidden, required: false }
       - { label: "Body", name: body, widget: markdown }
 
@@ -97,6 +99,7 @@ collections:
       - { label: "Timeline", name: timeline, widget: string, required: false, hint: "e.g. 2009-2018" }
       - { label: "Featured", name: featured, widget: boolean, default: false, required: false }
       - { label: "Draft", name: draft, widget: boolean, default: false }
+      - { label: "Archived", name: archived, widget: boolean, default: false, required: false }
       - { label: "Recovered", name: recovered, widget: hidden, required: false }
       - { label: "Body", name: body, widget: markdown }
 
