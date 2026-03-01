@@ -1,17 +1,15 @@
 {{ define "main" }}
+{{ if .Parent.IsHome }}
+{{/* ═══════════════════════════════════════════════════════════
+     TOP-LEVEL: /gamedev/ — Show product cards
+     ═══════════════════════════════════════════════════════════ */}}
 <div class="page-header">
-  <p class="page-eyebrow">Work</p>
   <h1>Products</h1>
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
-<nav class="section-subnav" aria-label="Work sections">
-  <a href="/art/">Visual Design</a>
-  <a href="/gamedev/" class="subnav-active">Products</a>
-</nav>
-
 <div class="project-grid">
-  {{ range .Pages }}
+  {{ range .Sections }}
   <a href="{{ .RelPermalink }}" class="project-card">
     {{ with .Params.image }}
     <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
@@ -25,10 +23,115 @@
         {{ with .Params.status }}
         <span class="project-status status-{{ . | lower | replaceRE " " "-" }}">{{ . }}</span>
         {{ end }}
+        {{ $count := len .RegularPagesRecursive }}
+        {{ if gt $count 0 }}
+        <span class="project-card-count">{{ $count }} {{ if eq $count 1 }}entry{{ else }}entries{{ end }}</span>
+        {{ end }}
       </div>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
     </div>
   </a>
   {{ end }}
 </div>
+
+{{ else }}
+{{/* ═══════════════════════════════════════════════════════════
+     SUB-SECTION: /gamedev/mecromage/ — Product detail + devlog
+     ═══════════════════════════════════════════════════════════ */}}
+<div class="project-detail">
+  {{ with .Params.image }}
+  <div class="project-hero-image">
+    <img src="{{ . }}" alt="{{ $.Title }}" />
+  </div>
+  {{ end }}
+
+  <div class="project-detail-info">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/gamedev/">Products</a>
+      <span aria-hidden="true">/</span>
+      {{ .Title }}
+    </nav>
+
+    <h1>{{ .Title }}</h1>
+
+    <dl class="project-meta-list">
+      {{ with .Params.role }}
+      <dt>Role</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
+      {{ with .Params.timeline }}
+      <dt>Timeline</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
+      {{ with .Params.engine }}
+      <dt>Engine</dt>
+      <dd>{{ . }}</dd>
+      {{ end }}
+      {{ with .Params.status }}
+      <dt>Status</dt>
+      <dd><span class="project-status status-{{ . | lower | replaceRE " " "-" }}">{{ . }}</span></dd>
+      {{ end }}
+    </dl>
+
+    {{ with .Description }}
+    <p class="project-description">{{ . }}</p>
+    {{ end }}
+
+    {{ if .Params.recovered }}
+    <aside class="recovered-notice" role="note">
+      <p>This piece is from my earlier portfolio. The original hosted images may no longer be available.</p>
+    </aside>
+    {{ end }}
+
+    {{ with .Content }}
+    <div class="project-content">{{ . }}</div>
+    {{ end }}
+  </div>
+</div>
+
+{{/* Development Log — child posts */}}
+{{ $posts := .RegularPages }}
+{{ if $posts }}
+<section class="devlog-section" aria-label="Development log">
+  <h2>Development Log</h2>
+  <div class="devlog-list">
+    {{ range $posts }}
+    <a href="{{ .RelPermalink }}" class="devlog-item">
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="devlog-thumb" loading="lazy" />
+      {{ end }}
+      <div class="devlog-info">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . | truncate 120 }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* Cross-referenced journal entries */}}
+{{ $sectionSlug := path.Base (strings.TrimRight "/" .File.Dir) }}
+{{ $related := where (where .Site.RegularPages "Section" "blog") "Params.related_sections" "intersect" (slice $sectionSlug) }}
+{{ if $related }}
+<section class="related-journal" aria-label="Related journal entries">
+  <h2>From the Journal</h2>
+  <div class="journal-preview-list">
+    {{ range $related }}
+    <a href="{{ .RelPermalink }}" class="journal-preview">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <div class="journal-preview-body">
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . | truncate 120 }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ end }}
 {{ end }}

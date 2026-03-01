@@ -1,0 +1,18 @@
+---
+title: "Grubby Business Card"
+image: "/images/recovered/grubby_businesscard-front.jpg"
+date: 2011-07-12
+description: "I had the pleasure of creating some Grubby stationary gear.  Included in these was a Business card design!"
+tags: ["Business Cards", "Design", "Grubby", "Joshua Keyes", "Raihn", "business card", "grubby"]
+aliases:
+  - "/art/grubby-business-card/"
+draft: false
+medium: "Digital"
+year: 2011
+recovered: true
+---
+I had the pleasure of creating some Grubby stationary gear.  Included in these was a Business card design! ![Open-mouthed smile](http://www.joshuakeyes.us/wordpress/raihn/images/Grubby-Business-Card_8F00/wlEmoticon-openmouthedsmile.png)
+
+[![grubby_businesscard front](/images/recovered/grubby_businesscard-front.jpg "grubby_businesscard front")](/images/recovered/grubby_businesscard-front.jpg)
+
+[![grubby_businesscard back](/images/recovered/grubby_businesscard-back.jpg "grubby_businesscard back")](/images/recovered/grubby_businesscard-back.jpg)

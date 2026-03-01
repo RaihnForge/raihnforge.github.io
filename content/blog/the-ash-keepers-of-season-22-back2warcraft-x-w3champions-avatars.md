@@ -4,6 +4,9 @@ date: 2025-10-09
 description: "The Ash Keepers arise — new Season 22 Avatars for W3Champions. Support the Back2Warcraft finals and claim your place among the living flame."
 tags: ["Fantasy", "ashbringer", "avatars", "back2warcraft", "books", "fiction", "profile-pictures", "w3c", "warcraft3", "writing"]
 image: "/images/wp-imports/blog/scary3.gif"
+related_sections:
+  - "esports"
+  - "illustration"
 draft: false
 ---
 

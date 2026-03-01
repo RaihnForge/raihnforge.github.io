@@ -2,6 +2,8 @@
 title: "Esports Site - Private"
 date: 2015-03-10
 description: "NOTE: Must remove branding for public use - as requested by client."
+related_sections:
+  - "esports"
 draft: false
 ---
 

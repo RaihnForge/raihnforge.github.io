@@ -3,6 +3,8 @@ title: "Ghost Reign — StarCraft Remastered Portrait Contest"
 date: 2017-07-15
 description: "My submission to the official StarCraft Remastered portrait contest."
 tags: ["Illustration", "Fan Art", "StarCraft", "Contest"]
+related_sections:
+  - "illustration"
 draft: false
 ---
 

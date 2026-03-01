@@ -2,6 +2,9 @@
 title: "WORKSHOP"
 date: 2019-02-01
 description: "Welcome to my personal Index of just a few things currently on my mind."
+related_sections:
+  - "mecromage"
+  - "verg-castleroid"
 draft: false
 ---
 

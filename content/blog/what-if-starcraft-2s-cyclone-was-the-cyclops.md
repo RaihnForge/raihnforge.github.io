@@ -3,6 +3,8 @@ title: "What if.. Starcraft 2's Cyclone was the Cyclops"
 date: 2015-04-30
 description: "What if... the Cyclone was the Cyclops? This is my super ridiculously serious breakdown on why I believe this swap needs to happen. I mean, I spent..."
 image: "/images/wp-imports/blog/cyclopes.png"
+related_sections:
+  - "illustration"
 draft: false
 ---
 

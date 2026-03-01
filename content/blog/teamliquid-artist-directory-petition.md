@@ -2,6 +2,8 @@
 title: "TeamLiquid Artist Directory Submission"
 date: 2013-09-16
 description: "One of the most influential aspects of my artistic growth has come from being apart of a global community, as a consumer and contributor, through the..."
+related_sections:
+  - "esports"
 draft: false
 recovered: true
 ---
@@ -10,7 +12,7 @@ One of the most influential aspects of my artistic growth has come from being ap
 
 [TeamLiquid](http://TeamLiquid.net) has been a community that I consider myself affiliated with for a good while now.  Recently [wo1fwood](http://www.teamliquid.net/forum/profile.php?user=wo1fwood) has posted a resource that focuses on the very growth and talent aspect of the online contributing artist group.  If you have any artistic interest or appreciation I’d urge you to check out:
 
-[![v4do3nJ](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/v4do3nJ.png "v4do3nJ")](http://www.teamliquid.net/forum/viewmessage.php?topic_id=424377)
+[![v4do3nJ](/images/recovered/v4do3nJ.png "v4do3nJ")](http://www.teamliquid.net/forum/viewmessage.php?topic_id=424377)
 
 You will find resources, guides, and a listing of contributors as well as aspiring artists that donate their time, passion, and aspirations to the global community that resides under the umbrella of TeamLiquid and the enjoyment of eSports.
 
@@ -20,24 +22,24 @@ Hello TeamLiquid!  I’m Joshua ‘Raihn’ Keyes, I’ve been around eSports f
 
 **Feature 1:**  Grubby, IdrA, and Team Eve eSports Logos
 
-[![Logos](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/Logos_thumb.png "Logos")](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/Logos.png)
+[![Logos](/images/recovered/Logos.png "Logos")](/images/recovered/Logos.png)
 
 **Feature 2:** TeamLiquid Starcraft 2 Stream overlay + Ads
 
-[![TL_Overlay5_hydracooled_sample54](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/TL_Overlay5_hydracooled_sample54_thumb.jpg "TL_Overlay5_hydracooled_sample54")](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/TL_Overlay5_hydracooled_sample54.jpg)
+[![TL_Overlay5_hydracooled_sample54](/images/recovered/TL_Overlay5_hydracooled_sample54.jpg "TL_Overlay5_hydracooled_sample54")](/images/recovered/TL_Overlay5_hydracooled_sample54.jpg)
 
 **Feature 3:** TeamLiquid DotA 2 Stream Overlay + Ads
 
-[![DotaDraft_17b](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/DotaDraft_17b_thumb.png "DotaDraft_17b")](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/DotaDraft_17b.png)
+[![DotaDraft_17b](/images/recovered/DotaDraft_17b.png "DotaDraft_17b")](/images/recovered/DotaDraft_17b.png)
 
 **Feature 4:** Grubby’s Elite Guard – Wallpaper and Stream Background
 
-[![Grubby-Elite-Stalker](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/GrubbyEliteStalker_thumb.jpg "Grubby-Elite-Stalker")](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/GrubbyEliteStalker.jpg)
+[![Grubby-Elite-Stalker](/images/recovered/GrubbyEliteStalker_thumb.jpg "Grubby-Elite-Stalker")](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/GrubbyEliteStalker.jpg)
 
 **Feature 3:** TeamLiquid Twitter Back-ground Images
 
-[![image](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/image_thumb.png "image")](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/image.png)
+[![image](/images/recovered/image.png "image")](/images/recovered/image.png)
 
-**Feature 6:** Indie Game – Animation, Illustration, Game Design, Interface, Creative Dev[![circleSelect_01](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/circleSelect_01_thumb.png "circleSelect_01")](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/circleSelect_01.png)
+**Feature 6:** Indie Game – Animation, Illustration, Game Design, Interface, Creative Dev[![circleSelect_01](/images/recovered/circleSelect_01.png "circleSelect_01")](/images/recovered/circleSelect_01.png)
 
 [www.Raihn.wordpress.com](http://www.Raihn.wordpress.com)

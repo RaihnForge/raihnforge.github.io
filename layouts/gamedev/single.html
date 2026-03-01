@@ -7,10 +7,12 @@
   {{ end }}
 
   <div class="project-detail-info">
-    <nav class="project-breadcrumb" aria-label="Breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span aria-hidden="true">/</span>
       <a href="/gamedev/">Products</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
       <span aria-hidden="true">/</span>
       {{ .Title }}
     </nav>
@@ -42,7 +44,7 @@
 
     {{ if .Params.recovered }}
     <aside class="recovered-notice" role="note">
-      <p><em>Some media from this post was originally hosted externally and could not be recovered. Text content has been preserved and restored.</em></p>
+      <p>This piece is from my earlier portfolio. The original hosted images may no longer be available.</p>
     </aside>
     {{ end }}
 
@@ -50,7 +52,15 @@
     <div class="project-content">{{ . }}</div>
     {{ end }}
 
-    <a href="/gamedev/" class="back-link">&larr; All Products</a>
+    {{/* Next/Prev navigation scoped to sub-section siblings */}}
+    <nav class="post-nav" aria-label="Post navigation">
+      {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" class="post-nav-prev">&larr; {{ .Title }}</a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}" class="post-nav-next">{{ .Title }} &rarr;</a>
+      {{ end }}
+    </nav>
   </div>
 </article>
 {{ end }}

@@ -9,10 +9,12 @@
   </div>
 
   <div class="artwork-info">
-    <nav class="artwork-breadcrumb" aria-label="Breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span aria-hidden="true">/</span>
-      <a href="/art/">Visual Design</a>
+      <a href="/art/">Design</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
       <span aria-hidden="true">/</span>
       {{ .Title }}
     </nav>
@@ -22,7 +24,7 @@
     <dl class="artwork-meta">
       {{ with .Params.medium }}
       <dt>Medium</dt>
-      <dd>{{ . }}</dd>
+      <dd><a href="{{ "/medium/" | relURL }}{{ . | urlize }}/">{{ . }}</a></dd>
       {{ end }}
       {{ with .Params.year }}
       <dt>Year</dt>
@@ -36,7 +38,7 @@
 
     {{ if .Params.recovered }}
     <aside class="recovered-notice" role="note">
-      <p><em>Some media from this post was originally hosted externally and could not be recovered. Text content has been preserved and restored.</em></p>
+      <p>This piece is from my earlier portfolio. The original hosted images may no longer be available.</p>
     </aside>
     {{ end }}
 
@@ -44,7 +46,40 @@
     <div class="artwork-content">{{ . }}</div>
     {{ end }}
 
-    <a href="/art/" class="back-link">&larr; All Visual Design</a>
+    {{/* Next/Prev navigation scoped to sub-section siblings */}}
+    <nav class="post-nav" aria-label="Post navigation">
+      {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" class="post-nav-prev">&larr; {{ .Title }}</a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}" class="post-nav-next">{{ .Title }} &rarr;</a>
+      {{ end }}
+    </nav>
   </div>
 </article>
+
+{{/* Related works from same sub-section */}}
+{{ $siblings := .Parent.RegularPages }}
+{{ $related := $siblings | complement (slice .) }}
+{{ $related = first 3 $related }}
+{{ if $related }}
+<section class="related-works" aria-label="Related works">
+  <h2>More {{ .Parent.Title }}</h2>
+  <div class="related-grid">
+    {{ range $related }}
+    <a href="{{ .RelPermalink }}" class="gallery-item">
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+      {{ else }}
+      <div class="gallery-placeholder" aria-hidden="true"></div>
+      {{ end }}
+      <div class="gallery-caption">
+        <span class="gallery-title">{{ .Title }}</span>
+        {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
 {{ end }}

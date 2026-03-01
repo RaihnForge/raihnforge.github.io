@@ -1,29 +1,132 @@
 {{ define "main" }}
+{{ if .Parent.IsHome }}
+{{/* ═══════════════════════════════════════════════════════════
+     TOP-LEVEL: /art/ — Show 5 category cards
+     ═══════════════════════════════════════════════════════════ */}}
 <div class="page-header">
-  <p class="page-eyebrow">Work</p>
-  <h1>Visual Design</h1>
+  <h1>Design</h1>
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
-<nav class="section-subnav" aria-label="Work sections">
-  <a href="/art/" class="subnav-active">Visual Design</a>
-  <a href="/gamedev/">Products</a>
-</nav>
-
-<div class="gallery-grid">
-  {{ range .Pages }}
-  <a href="{{ .RelPermalink }}" class="gallery-item">
+<div class="category-grid">
+  {{ range .Sections }}
+  <a href="{{ .RelPermalink }}" class="category-card">
     {{ with .Params.image }}
-    <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+    <img src="{{ . }}" alt="{{ $.Title }}" class="category-card-image" loading="lazy" />
     {{ else }}
-    <div class="gallery-placeholder" aria-hidden="true"></div>
+    <div class="category-card-placeholder" aria-hidden="true"></div>
     {{ end }}
-    <div class="gallery-caption">
-      <span class="gallery-title">{{ .Title }}</span>
-      {{ with .Params.medium }}<span class="gallery-medium">{{ . }}</span>{{ end }}
-      {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}
+    <div class="category-card-body">
+      <h2>{{ .Title }}</h2>
+      <span class="category-card-count">{{ len .RegularPagesRecursive }} {{ if eq (len .RegularPagesRecursive) 1 }}piece{{ else }}pieces{{ end }}</span>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
     </div>
   </a>
   {{ end }}
 </div>
+
+{{ else }}
+{{/* ═══════════════════════════════════════════════════════════
+     SUB-SECTION: /art/illustration/ — Show post grid
+     ═══════════════════════════════════════════════════════════ */}}
+<div class="page-header">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/art/">Design</a>
+    <span aria-hidden="true">/</span>
+    {{ .Title }}
+  </nav>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
+</div>
+
+{{/* Sibling category pill links */}}
+<nav class="gallery-filters" aria-label="Browse categories">
+  <a href="/art/">All</a>
+  {{ range .Parent.Sections }}
+  <a href="{{ .RelPermalink }}" {{ if eq .RelPermalink $.RelPermalink }}class="filter-active"{{ end }}>{{ .Title }}</a>
+  {{ end }}
+</nav>
+
+{{/* Split pages into showcase (has image) and archive (no image) */}}
+{{ $showcase := where .RegularPages "Params.image" "ne" "" }}
+{{ $archive := where .RegularPages "Params.image" "" }}
+
+{{/* Showcase tier — visual gallery grid */}}
+{{ if $showcase }}
+<section class="gallery-section" aria-label="Visual gallery">
+  <div class="gallery-grid">
+    {{ range $showcase }}
+    <a href="{{ .RelPermalink }}" class="gallery-item">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" />
+      <div class="gallery-caption">
+        <span class="gallery-title">{{ .Title }}</span>
+        {{ with .Params.medium }}<span class="gallery-medium">{{ . }}</span>{{ end }}
+        {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* Archive tier — compact text list grouped by year */}}
+{{ if $archive }}
+<section class="gallery-archive" aria-label="Archive">
+  <h2 class="archive-heading">Archive</h2>
+  {{ $byYear := $archive.GroupByParam "year" }}
+  {{ if $byYear }}
+    {{ range $byYear }}
+    <div class="archive-year-group">
+      <h3 class="archive-year">{{ .Key }}</h3>
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="archive-item">
+        <span class="archive-title">{{ .Title }}</span>
+        {{ with .Params.medium }}<span class="archive-medium">{{ . }}</span>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  {{ end }}
+  {{/* Items with no year */}}
+  {{ $noYear := where $archive "Params.year" nil }}
+  {{ if $noYear }}
+  <div class="archive-year-group">
+    <h3 class="archive-year">Undated</h3>
+    {{ range $noYear }}
+    <a href="{{ .RelPermalink }}" class="archive-item">
+      <span class="archive-title">{{ .Title }}</span>
+      {{ with .Params.medium }}<span class="archive-medium">{{ . }}</span>{{ end }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+</section>
+{{ end }}
+
+{{/* Cross-referenced journal entries */}}
+{{ $sectionSlug := .File.ContentBaseName }}
+{{ if eq $sectionSlug "_index" }}
+  {{ $sectionSlug = path.Base .File.Dir }}
+{{ end }}
+{{ $related := where (where .Site.RegularPages "Section" "blog") "Params.related_sections" "intersect" (slice $sectionSlug) }}
+{{ if $related }}
+<section class="related-journal" aria-label="Related journal entries">
+  <h2>From the Journal</h2>
+  <div class="journal-preview-list">
+    {{ range $related }}
+    <a href="{{ .RelPermalink }}" class="journal-preview">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <div class="journal-preview-body">
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . | truncate 120 }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ end }}
 {{ end }}
