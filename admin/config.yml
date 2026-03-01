@@ -1,0 +1,162 @@
+backend:
+  name: github
+  repo: RaihnForge/raihnforge-www
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: static/images
+public_folder: /images
+
+collections:
+  # ── Design Sub-sections ──────────────────────────────────────
+  - name: art-illustration
+    label: "Design > Illustration"
+    folder: content/art/illustration
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: &art_fields
+      - { label: "Title", name: title, widget: string }
+      - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: "Description", name: description, widget: text, required: false }
+      - { label: "Tags", name: tags, widget: list, required: false }
+      - { label: "Image", name: image, widget: image, required: false }
+      - { label: "Medium", name: medium, widget: string, required: false, hint: "e.g. Digital, Pencil, Acrylic, Mixed Media" }
+      - { label: "Year", name: year, widget: number, required: false }
+      - { label: "Featured", name: featured, widget: boolean, default: false, required: false }
+      - { label: "Draft", name: draft, widget: boolean, default: false }
+      - { label: "Recovered", name: recovered, widget: hidden, required: false }
+      - { label: "Body", name: body, widget: markdown }
+
+  - name: art-esports
+    label: "Design > Esports & Community"
+    folder: content/art/esports
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *art_fields
+
+  - name: art-branding
+    label: "Design > Branding & Commercial"
+    folder: content/art/branding
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *art_fields
+
+  - name: art-study
+    label: "Design > Study & Sketchbook"
+    folder: content/art/study
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *art_fields
+
+  - name: art-fine-art
+    label: "Design > Fine Art"
+    folder: content/art/fine-art
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *art_fields
+
+  # ── Journal ──────────────────────────────────────────────────
+  - name: blog
+    label: "Journal"
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: "Description", name: description, widget: text, required: false }
+      - { label: "Tags", name: tags, widget: list, required: false }
+      - { label: "Image", name: image, widget: image, required: false }
+      - { label: "Related Sections", name: related_sections, widget: list, required: false, hint: "Slugs of related Design/Products sections (e.g. esports, mecromage)" }
+      - { label: "Draft", name: draft, widget: boolean, default: false }
+      - { label: "Recovered", name: recovered, widget: hidden, required: false }
+      - { label: "Body", name: body, widget: markdown }
+
+  # ── Products Sub-sections ────────────────────────────────────
+  - name: gamedev-mecromage
+    label: "Products > Mecromage"
+    folder: content/gamedev/mecromage
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: &gamedev_fields
+      - { label: "Title", name: title, widget: string }
+      - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: "Description", name: description, widget: text, required: false }
+      - { label: "Tags", name: tags, widget: list, required: false }
+      - { label: "Image", name: image, widget: image, required: false }
+      - { label: "Status", name: status, widget: select, options: ["Released", "In Progress", "Concept"], required: false }
+      - { label: "Engine", name: engine, widget: string, required: false }
+      - { label: "Role", name: role, widget: string, required: false, hint: "Your role on the project" }
+      - { label: "Timeline", name: timeline, widget: string, required: false, hint: "e.g. 2009-2018" }
+      - { label: "Featured", name: featured, widget: boolean, default: false, required: false }
+      - { label: "Draft", name: draft, widget: boolean, default: false }
+      - { label: "Recovered", name: recovered, widget: hidden, required: false }
+      - { label: "Body", name: body, widget: markdown }
+
+  - name: gamedev-verg
+    label: "Products > UF: VERG"
+    folder: content/gamedev/verg-castleroid
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *gamedev_fields
+
+  - name: gamedev-indie-dev
+    label: "Products > Indie Dev Dues"
+    folder: content/gamedev/indie-dev-dues
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *gamedev_fields
+
+  - name: gamedev-ezibg
+    label: "Products > EZi BackGrounds"
+    folder: content/gamedev/ezibg
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *gamedev_fields
+
+  - name: gamedev-ndlz
+    label: "Products > NDLZ"
+    folder: content/gamedev/ndlz
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *gamedev_fields
+
+  - name: gamedev-unchosen
+    label: "Products > Unchosen Paths"
+    folder: content/gamedev/unchosen-paths
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *gamedev_fields
+
+  # ── Pages ────────────────────────────────────────────────────
+  - name: pages
+    label: "Pages"
+    files:
+      - label: "About"
+        name: about
+        file: content/about.md
+        fields:
+          - { label: "Title", name: title, widget: string }
+          - { label: "Layout", name: layout, widget: hidden, default: "single" }
+          - { label: "Role", name: role, widget: string, required: false }
+          - { label: "Summary", name: summary, widget: text, required: false }
+          - label: "Competencies"
+            name: competencies
+            widget: list
+            required: false
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Detail", name: detail, widget: text }
+          - { label: "Body", name: body, widget: markdown }
