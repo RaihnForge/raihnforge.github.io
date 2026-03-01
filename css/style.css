@@ -328,6 +328,22 @@ a:hover {
   color: var(--accent);
 }
 
+.footer-admin {
+  margin-top: 0.5rem;
+}
+
+.footer-admin a {
+  color: var(--text-light);
+  font-size: 0.75rem;
+  opacity: 0.5;
+  transition: opacity var(--transition);
+}
+
+.footer-admin a:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+
 /* ============================================================
    Homepage — Hero / Statement
    ============================================================ */
