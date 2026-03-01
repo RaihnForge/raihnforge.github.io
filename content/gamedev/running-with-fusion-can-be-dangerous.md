@@ -1,5 +1,5 @@
 ---
-title: "Running with Fusion can be Dangerous&hellip;"
+title: "Running with Fusion can be Dangerous…"
 date: 2010-12-16
 description: "Exploring game development with Multimedia Fusion — early prototyping experiments."
 tags: ["Indie Game Blog"]

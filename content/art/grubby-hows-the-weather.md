@@ -1,5 +1,5 @@
 ---
-title: "Grubby &ndash; How&rsquo;s the Weather?"
+title: "Grubby – How’s the Weather?"
 date: 2012-06-06
 description: "How’s the Weather Wallpaper - Full size link"
 tags: ["2", "Art", "Blizzard", "Caster", "Design", "Digital Painting", "DnD", "Fan Art", "Fantasy", "Grubby", "High", "Hows the weather", "Hurricane", "Illistration", "Illustration", "Joshua", "Keyes", "Lightening", "LotR", "Mage", "Manuel Schenkhuizen", "Product Design", "Raihn", "Speed Painting", "Starcraft", "Storm", "T-Shirt", "Templar", "Thunder", "Tshirt", "Wallpaper", "armor", "eSports", "grubby", "starcraft", "wizard"]

@@ -1,5 +1,5 @@
 ---
-title: "KFI Moring Show Cartoon&ndash; The B-Team"
+title: "KFI Moring Show Cartoon– The B-Team"
 date: 2013-01-25
 description: "Bill Carroll often fills in at the Bill Handel Show.  Bill noted that they didn’t have a cartoon, so I felt I should oblige."
 tags: ["Bill Carroll", "Cartooning", "Illustration", "KFI", "Mike", "Shannon", "Todd Wilson"]

@@ -1,5 +1,5 @@
 ---
-title: "Life Drawing&ndash;Midnight Window"
+title: "Life Drawing–Midnight Window"
 date: 2007-11-05
 description: "Life drawing — Midnight Window, a shadowed figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]

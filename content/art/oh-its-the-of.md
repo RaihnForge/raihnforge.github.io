@@ -1,5 +1,5 @@
 ---
-title: "Oh, it&rsquo;s the Of.."
+title: "Oh, it’s the Of.."
 date: 2011-09-22
 description: "Oh it’s the Of – Cover album artwork © 2011 Joshua Keyes"
 tags: ["Cartooning", "Design", "Digital Painting", "Illustration", "Joshua Keyes", "Product Design", "Raihn", "Speed Painting", "crab", "crab attack", "oh its the of", "wierd art"]

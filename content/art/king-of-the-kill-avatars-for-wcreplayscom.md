@@ -36,7 +36,7 @@ Recently I was asked to create custom Avatars for weekly king of the hill (KotH)
 [}}">![](http://www.joshuakeyes.us/raihn/images/wcr_avatar_king_ne_m.jpg)](
 
 
-[}}&feature=channel_page">![](http://www.joshuakeyes.us/raihn/images/wcr_avatar_king_rd_m.jpg)](
+[
 
 
 all images © Joshua Keyes 2008 all rights reserved

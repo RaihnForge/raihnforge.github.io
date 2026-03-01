@@ -1,5 +1,5 @@
 ---
-title: "Daily Sketches&ndash;nShadowninja &amp; A Tree"
+title: "Daily Sketches–nShadowninja &amp; A Tree"
 date: 2010-11-01
 description: "This sketch was of a aggressive ninja ready for an attack!"
 tags: ["Art", "Illustration", "Indie Game Blog", "Indie game Concept Art", "Josh Keyes", "Pencils", "Sketch", "Sketchbook", "Sketchbook Pencil", "enviroment", "girl", "ninja", "nshadow", "tree"]

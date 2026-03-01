@@ -1,5 +1,5 @@
 ---
-title: "Master Haloth&rsquo;s Trinkets and Trade"
+title: "Master Haloth’s Trinkets and Trade"
 date: 2013-02-04
 description: "What wealth of junk or gem holds within this wizard’s collection of rare mana vessels and vintage kitten care contraptions?"
 tags: ["Art", "Cartooning", "Concepts", "Design", "Game Design", "Game design", "Illustration", "Indie Game Blog", "Indie Game Design", "Indie game Concept Art", "Joshua Keyes", "Mecromage", "Unchosen Paths"]

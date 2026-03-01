@@ -1,5 +1,5 @@
 ---
-title: "Life Drawing&ndash;Civic Burden"
+title: "Life Drawing–Civic Burden"
 date: 2007-11-05
 description: "Life drawing — Civic Burden, a weighted figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]

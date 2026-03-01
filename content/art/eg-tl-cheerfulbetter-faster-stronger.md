@@ -1,5 +1,5 @@
 ---
-title: "Cheerful: EGTL&ndash;Better, Faster, Stronger"
+title: "Cheerful: EGTL–Better, Faster, Stronger"
 date: 2013-04-13
 description: "Update:  EGTL Cheerful Turned into a wallpaper.  Click for 1920x1280 version."
 tags: ["Fan Art", "Illustration", "Joshua Keyes", "Raihn", "Sketchbook", "Team Liquid"]

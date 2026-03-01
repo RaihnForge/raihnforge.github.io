@@ -1,5 +1,5 @@
 ---
-title: "Cheerful&ndash;Grubby Melting Face"
+title: "Cheerful–Grubby Melting Face"
 date: 2013-04-26
 description: "Though I still am quite the nomad currently, I’m very happy to be able to take a moment of respite from time to time.  Today I’m thankful for my..."
 tags: ["Digital Painting", "Fan Art", "Grubby", "Illustration", "Joshua Keyes", "Sketchbook", "Sketchbook Digital", "Starcraft", "Team Liquid", "eMUSE", "eSports"]

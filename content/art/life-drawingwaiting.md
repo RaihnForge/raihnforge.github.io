@@ -1,5 +1,5 @@
 ---
-title: "Life Drawing&ndash;Waiting"
+title: "Life Drawing–Waiting"
 date: 2007-11-05
 description: "Life drawing — Waiting, a patient figure study."
 tags: ["Illustration", "Joshua Keyes", "Life Drawing", "Raihn"]

@@ -1,5 +1,5 @@
 ---
-title: "Downwhere&rsquo;s Man"
+title: "Downwhere’s Man"
 date: 2011-10-19
 description: "A friend of mine from the WCR community has been hard at work on creating a series of hilarious videos where he takes games that allow you to make..."
 tags: ["Cartooning", "Design", "Digital Painting", "Downwhere", "Dragon age", "Fallout", "Illustration", "Joshua Keyes", "Manshizzle", "Mass Effect", "Raihn", "Speed Painting", "Timelapse", "Web Assets Design", "badass", "cartoon", "photoshop", "speed paint"]

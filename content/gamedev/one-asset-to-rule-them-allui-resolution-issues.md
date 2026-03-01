@@ -1,5 +1,5 @@
 ---
-title: "One Asset to Rule Them All&ndash;UI Resolution Issues"
+title: "One Asset to Rule Them All–UI Resolution Issues"
 date: 2013-02-06
 description: "© Unchosen Paths LLC"
 tags: ["Design", "Game Design", "Indie Game Blog", "Indie Game Design", "Indie game Concept Art", "Joshua Keyes", "Unchosen Paths"]

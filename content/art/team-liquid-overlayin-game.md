@@ -1,5 +1,5 @@
 ---
-title: "Team Liquid Overlay&ndash;In Game"
+title: "Team Liquid Overlay–In Game"
 date: 2012-11-04
 description: "I am very proud to present one of my latest ventures in live game streaming graphics.  I was given the important task of creating Team Liquid Pro’s..."
 tags: ["Design", "Justin tv", "Overlay", "Streaming", "Team Liquid", "twitch tv"]

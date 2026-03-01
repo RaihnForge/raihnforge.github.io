@@ -11,9 +11,7 @@ recovered: true
 ###### Art by Joshua Keyes - Characters and scene inspired by Castlevania, owned by Konami.
 
 [![wip06](/images/wp-imports/gamedev/wip06.png)](/images/wp-imports/gamedev/wip06.png)
-I decided it might be fun to submit a piece for [Jazza's Contest of the Month: New Resolution](https://jazzastudios.com/2016/01/06/january-2016-challenge-of-the-month/). The goal was to take a scene from a game that was made for a 1990 or prior machine and redraw it in a higher resolution. **}}&feature=youtu.be&t=9m14s" target="_blank">\*placed 2nd - Runner up in open category\***
-
-##
+I decided it might be fun to submit a piece for [Jazza's Contest of the Month: New Resolution](https://jazzastudios.com/2016/01/06/january-2016-challenge-of-the-month/). The goal was to take a scene from a game that was made for a 1990 or prior machine and redraw it in a higher resolution. **Placed 2nd — Runner up in the open category.**
 
 ![sonia](/images/wp-imports/gamedev/sonia.png)![dracula1](/images/wp-imports/gamedev/dracula1.png)
 
@@ -45,4 +43,4 @@ Thanks you for taking the time to check out my work!  Feel free to contact me w
 
 ##### Publish Links:
 
-##### [TeamLiquid](http://www.teamliquid.net/blogs/502684-study-castlevania-legends) [Deviant Art](http://raihnazure.deviantart.com/art/Study-of-Castlevania-Legends-586052806) [Newgrounds](http://www.newgrounds.com/art/view/raihn/study-castlevania-legends?context=interval:yesterday.ratings:etm.scouted:.unscouted:1.allow_banned:1.offset:36) [Twitter](https://twitter.com/RaihnForge/status/690359304151523328)[Facebook](https://www.facebook.com/media/set/?set=a.518605668307059.1073741831.420640514770242&type=3)[Tiled Forum](http://forum.mapeditor.org/t/art-study-castlevania-legends/1070)*}}?t=10m11s" target="_blank">Youtube - Jazza's Contest Showcase* *}}&feature=youtu.be&t=9m14s" target="_blank">Youtube - Jazza's Contest Results*
+##### [TeamLiquid](http://www.teamliquid.net/blogs/502684-study-castlevania-legends) [Deviant Art](http://raihnazure.deviantart.com/art/Study-of-Castlevania-Legends-586052806) [Newgrounds](http://www.newgrounds.com/art/view/raihn/study-castlevania-legends?context=interval:yesterday.ratings:etm.scouted:.unscouted:1.allow_banned:1.offset:36) [Twitter](https://twitter.com/RaihnForge/status/690359304151523328)[Facebook](https://www.facebook.com/media/set/?set=a.518605668307059.1073741831.420640514770242&type=3)[Tiled Forum](http://forum.mapeditor.org/t/art-study-castlevania-legends/1070)

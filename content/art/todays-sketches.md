@@ -1,5 +1,5 @@
 ---
-title: "Today&rsquo;s Sketches"
+title: "Today’s Sketches"
 date: 2010-09-06
 description: "Drawing is fun!  today I decided to make a couple of cartoon like characters inspired by RTS gaming.  The first is a nerdy kid trying to be a..."
 tags: ["Cartooning", "Illustration", "Sketchbook", "Sketchbook Digital"]

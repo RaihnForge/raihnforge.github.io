@@ -45,4 +45,4 @@ Right away things get interesting as a fellow theif is competing for some loot.
 ![](http://www.wcreplays.com/features/raihn/banner_raihn_replay.png)
 ![](http://www.wcreplays.com/features/raihn/bar.png)
 
-[youtube={{< youtube "pJO7Z0LrFbc" >}}?fs=1&hl=en_US&color1=0x3a3a3a&color2=0x999999]
+{{< youtube "pJO7Z0LrFbc" >}}

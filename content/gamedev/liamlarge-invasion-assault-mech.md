@@ -1,5 +1,5 @@
 ---
-title: "LIAM&ndash;Large Invasion Assault Mech"
+title: "LIAM–Large Invasion Assault Mech"
 date: 2013-02-25
 description: "NEOBLON LOREPLEX:  Large Invasion Assault Mech was part of great Invasion on Eblon untold years ago.  The technologically powered race invaded the..."
 tags: ["Design", "Game Design", "Illustration", "Indie Game Blog", "Indie game Concept Art", "Joshua Keyes", "Sketchbook", "Sketchbook Pencil", "Unchosen Paths"]

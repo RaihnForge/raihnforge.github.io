@@ -1,5 +1,5 @@
 ---
-title: "X-Com &ndash; Beat the Night"
+title: "X-Com – Beat the Night"
 date: 2014-08-06
 description: "For all those who’ve played the classic X-COM UFO DEFENCE game, you’ll know that one of the most important skills to learn is how to stall for Day..."
 tags: ["Cartooning", "Fan Art", "Illustration", "Sequential Art", "Street Level"]
