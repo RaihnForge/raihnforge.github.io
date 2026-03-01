@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2007
-recovered: true
+
 ---
 [![](http://www.joshuakeyes.us/raihn/art/design/pctg_frontpage_demo_th.jpg)](http://www.joshuakeyes.us/raihn/art/design/pctg_frontpage_demo.jpg)[![](http://www.joshuakeyes.us/raihn/art/design/pctg_contactpage_demo_tm.jpg)](http://www.joshuakeyes.us/raihn/art/design/pctg_contactpage_demo.jpg)[![](http://www.joshuakeyes.us/raihn/art/design/pctg_gamepage_demo_th.jpg)](http://www.joshuakeyes.us/raihn/art/design/pctg_gamepage_demo.jpg)
 

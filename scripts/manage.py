@@ -900,6 +900,7 @@ def cmd_validate(args):
             img_path = STATIC_DIR / item["image"].lstrip("/")
             if img_path.exists():
                 issues.append((rel, "I001", "Info", "recovered: true but has working local image"))
+                fixable.append((path, "clear_recovered", None))
 
         # Check for recovered: false (fixable — remove it)
         recovered_val = get_field(fm_str, "recovered")
@@ -955,6 +956,8 @@ def cmd_validate(args):
                 print(f"    {rel}: trim trailing \"...\" from description")
             elif fix_type == "remove_recovered_false":
                 print(f"    {rel}: remove recovered: false")
+            elif fix_type == "clear_recovered":
+                print(f"    {rel}: clear recovered (local image exists)")
 
         if args.dry_run:
             print("\n  (dry run — no changes made)\n")
@@ -987,6 +990,10 @@ def cmd_validate(args):
                     applied += 1
 
             elif fix_type == "remove_recovered_false":
+                fm_str = remove_field(fm_str, "recovered")
+                applied += 1
+
+            elif fix_type == "clear_recovered":
                 fm_str = remove_field(fm_str, "recovered")
                 applied += 1
 

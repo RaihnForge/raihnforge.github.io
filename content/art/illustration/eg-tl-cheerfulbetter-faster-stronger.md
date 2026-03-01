@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2013
-recovered: true
+
 ---
 [![EGTL4](/images/recovered/EGTL4_thumb.png "EGTL4")](/images/recovered/EGTL_BG.jpg)
 

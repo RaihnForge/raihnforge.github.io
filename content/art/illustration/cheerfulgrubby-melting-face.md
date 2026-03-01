@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2013
-recovered: true
+
 ---
 [![facemelt](/images/recovered/facemelt_thumb.png "facemelt")](http://www.joshuakeyes.us/wordpress/raihn/images/Cheerful---Melting-Face_FAA6/facemelt.png)
 

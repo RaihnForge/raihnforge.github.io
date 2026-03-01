@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Mixed Media"
 year: 2013
-recovered: true
+
 ---
 [![fb_envelop_art_07](/images/recovered/fb_envelop_art_07_thumb.jpg "fb_envelop_art_07")](http://www.joshuakeyes.us/wordpress/raihn/images/cec0c1640bfc_1033D/fb_envelop_art_07.jpg)
 

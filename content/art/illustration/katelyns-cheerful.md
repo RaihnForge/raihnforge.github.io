@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2011
-recovered: true
+
 ---
 [![kt_vb_16x10](/images/recovered/kt_vb_16x10.jpg "kt_vb_16x10")](/images/recovered/kt_vb_16x10.jpg)
 Cheerful I made to Cheer Katelyn! I wanted to print it and mail it with a letter, but my printer isn’t working very well. I put together a fun video of it as well, so Katelyn can watch. I hope you enjoy! Miss you Katelyn!

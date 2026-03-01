@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2010
-recovered: true
+
 ---
 Some Starcraft II beta avatars utilizing in game assets to match up with the same style WCR has for their other forum avatars. :p
 

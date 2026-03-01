@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2014
-recovered: true
+
 ---
 Though I am mired in my current work, I find that it can be a good thing to take small breaks from the grind to reignite my passion for artistic work by tackling smaller more focused projects.  I enjoy doing overlay and eSports work for many reasons, but one of the them is that it utilizes a generally very simple concepts that can be deeply explored through creative problem solving and intelligent design.  This allows me to push aside a lot of the extra considerations that can weigh down exploration of design while I’m working on such a complicated project as my Indie game Mecromage.
 

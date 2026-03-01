@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2011
-recovered: true
+
 ---
 [![wedding_invite_blog post](http://www.joshuakeyes.us/wordpress/raihn/images/Wedding-Invitations_D253/wedding_invite_blog-post_thumb.jpg "wedding_invite_blog post")](http://www.joshuakeyes.us/wordpress/raihn/images/Wedding-Invitations_D253/wedding_invite_blog-post.jpg)
 

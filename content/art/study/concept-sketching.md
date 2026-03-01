@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Pencil"
 year: 2010
-recovered: true
+
 ---
 [![Mass Thors](http://www.joshuakeyes.us/wordpress/raihn/images/SC-Concept-Sketching_205C/Mass-Thors_thumb.png "Mass Thors")](http://www.joshuakeyes.us/wordpress/raihn/images/SC-Concept-Sketching_205C/Mass-Thors.png)
 

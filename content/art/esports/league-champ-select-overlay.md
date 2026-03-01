@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2014
-recovered: true
+
 ---
 A friend of mine, Eryn is an up and coming League of Legends caster.  He has been working daily to bring some eSports action to scene with his heated play by plays and intuitive analysis.  His casting chops far outweigh the production quality of the overlay he was using, so I decided I’d lend a hand in hopes of giving his casts the unique flavor they deserve.
 

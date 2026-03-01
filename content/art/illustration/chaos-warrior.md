@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2009
-recovered: true
+
 ---
 [![](http://www.joshuakeyes.us/raihn/art/design/felgaurd_hero_md.jpg)](/images/recovered/felgaurd_hero.jpg)
 

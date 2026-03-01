@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2008
-recovered: true
+
 ---
 [![Steph's Dragon](http://www.joshuakeyes.us/wordpress/raihn/images/nShadowsongs-Dragon-Speed-Painting_3023/Stephs-Dragon_thumb.jpg "Steph's Dragon")](http://www.joshuakeyes.us/wordpress/raihn/images/nShadowsongs-Dragon-Speed-Painting_3023/Stephs-Dragon.jpg)
 

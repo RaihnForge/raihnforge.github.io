@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2009
-recovered: true
+
 ---
 Here are a couple more banners I created for WCReplays.com today:
 

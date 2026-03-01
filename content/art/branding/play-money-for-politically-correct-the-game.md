@@ -11,7 +11,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2007
-recovered: true
+
 ---
 **Disclaimer**
 Any views or opinion represented in the assets of Politically Correct the Game belong solely to DIP’s Politically Correct the Game and do not represent my personal views, opinions, position or attitude.

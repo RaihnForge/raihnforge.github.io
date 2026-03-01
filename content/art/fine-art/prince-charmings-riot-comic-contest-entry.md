@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Sequential"
 year: 2012
-recovered: true
+
 ---
 [![comic_with_text](/images/recovered/comic_with_text.jpg "comic_with_text")](/images/recovered/comic_with_text.jpg)
 

@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2012
-recovered: true
+
 ---
 [![tasteless_probe_master4](/images/recovered/tasteless_probe_master4.jpg "tasteless_probe_master4")](/images/recovered/tasteless_probe_master4.jpg)
 

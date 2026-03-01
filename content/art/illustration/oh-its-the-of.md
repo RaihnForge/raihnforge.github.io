@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2011
-recovered: true
+
 ---
 [![theofcover](http://www.joshuakeyes.us/wordpress/raihn/images/Oh-its-the-Of_C981/theofcover_thumb.jpg "theofcover")](http://www.joshuakeyes.us/wordpress/raihn/images/Oh-its-the-Of_C981/theofcover.jpg)
 Oh it’s the Of – Cover album artwork © 2011 Joshua Keyes

@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2011
-recovered: true
+
 ---
 I had the pleasure of creating some Grubby stationary gear.  Included in these was a Business card design! ![Open-mouthed smile](http://www.joshuakeyes.us/wordpress/raihn/images/Grubby-Business-Card_8F00/wlEmoticon-openmouthedsmile.png)
 

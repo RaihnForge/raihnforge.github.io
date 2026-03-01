@@ -5,8 +5,10 @@ description: I drew as a fun riff off of the old fable of little red riding hood
 tags: ["Art", "Fable", "Illustration", "Indie Game Blog", "Indie game Concept Art", "Josh Keyes", "Little Red Riding Hood", "Pencils", "Sketch", "Sketchbook", "Sketchbook Pencil", "Wolf", "monster", "warrior"]
 aliases:
   - "/gamedev/revenge-of-lil-red-riding-hood/"
+image: "/images/recovered/2007_revenge-of-red-riding-hood.jpg"
+medium: "Pencil"
+year: 2007
 draft: false
-
 ---
 [![2007_revenge of red riding hood](/images/recovered/2007_revenge-of-red-riding-hood.jpg "2007_revenge of red riding hood")](/images/recovered/2007_revenge-of-red-riding-hood.jpg)
 

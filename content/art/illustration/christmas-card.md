@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2012
-recovered: true
+
 ---
 [![holiday-greeting-card](http://www.joshuakeyes.us/wordpress/raihn/images/Christmas-Card_7A9C/holiday-greeting-card_thumb.png "holiday-greeting-card")](http://www.joshuakeyes.us/wordpress/raihn/images/Christmas-Card_7A9C/holiday-greeting-card.png)
 

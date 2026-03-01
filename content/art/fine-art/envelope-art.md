@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Mixed Media"
 year: 2011
-recovered: true
+
 ---
 While my wife was at BMT I attempted to write her every day.  I included an image to hopefully inspire a little joy in the challenging times.  Here are a few of them:
 

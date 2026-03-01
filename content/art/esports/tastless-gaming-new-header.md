@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2009
-recovered: true
+
 ---
 Click on the following banners for larger views.
 

@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2010
-recovered: true
+
 ---
 [![the Heart of a Man](/images/recovered/the-Heart-of-a-Man_thumb.jpg "the Heart of a Man")](http://www.joshuakeyes.us/wordpress/raihn/images/Un-Homme-de-Coeur-Speed-Painting_28DE/the-Heart-of-a-Man.jpg)
 

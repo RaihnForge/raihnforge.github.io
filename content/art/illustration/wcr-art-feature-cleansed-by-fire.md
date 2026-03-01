@@ -5,13 +5,14 @@ description: "Hey guys! Sorry that the art features are few and far between. Amo
 tags: ["Art feature", "Digital Painting"]
 aliases:
   - "/art/wcr-art-feature-cleansed-by-fire/"
+image: "/images/recovered/wcr_art_feature_07_sow06.jpg"
 archived: true
 draft: false
 medium: "Digital"
 year: 2008
 recovered: true
 ---
-[![Fire Emperor](http://www.joshuakeyes.us/wordpress/raihn/images/WCR-Art-Feature-Cleansed-By-Fire_2738/Fire-Emperor_thumb.jpg "Fire Emperor")](http://www.joshuakeyes.us/wordpress/raihn/images/WCR-Art-Feature-Cleansed-By-Fire_2738/Fire-Emperor.jpg)
+![Fire Emperor](/images/recovered/wcr_art_feature_07_sow06.jpg "Fire Emperor")
 Hey guys! Sorry that the art features are few and far between. Among other things, I have been busy with some freelance artwork that I have been doing, as well as trying to get through school and set up a website to compile my works. If you are interested you can check it out at raihn.wordpress.com.
 Has there ever been a more exciting time for gaming!? We have amazing games coming out everywhere! eSports community has been growing like crazy! Personally I have been keeping up to date with some StarCraft tournaments now that I can count on Tasteless to cast it up over in Korea with GOMtv gaming madness going on! Also things are getting exciting with the good ol' WC3L, as well as BlizzCon coming up and just after Blizzard WWI too!
 As far as art for gaming goes, it has exploded. When I first started working for WCR there were only a handful of WarCraft images for us fans to drool over. Now there are literally hundreds of images to check out from the realm of Blizzard's own concept work to their fan art program. I hope though you can still take the time to enjoy some good ol' Raihn Art of War features!

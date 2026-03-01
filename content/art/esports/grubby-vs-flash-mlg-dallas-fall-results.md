@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2012
-recovered: true
+
 ---
 The results are in…
 

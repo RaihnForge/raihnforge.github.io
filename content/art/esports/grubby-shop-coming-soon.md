@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2011
-recovered: true
+
 ---
 While in the process of designing Grubby’s first run website, we decided the Shop would need a place holder as we were to release before it was ready.  I took the opportunity to have a little fun ![Open-mouthed smile](http://www.joshuakeyes.us/wordpress/raihn/images/Grubby-Shop-Coming-Soon_9031/wlEmoticon-openmouthedsmile.png)
 

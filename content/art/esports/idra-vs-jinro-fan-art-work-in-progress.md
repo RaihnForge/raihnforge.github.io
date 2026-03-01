@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2011
-recovered: true
+
 ---
 [![Grakan vs Gorilla](/images/recovered/Grakan-vs-Gorilla.jpg "Grakan vs Gorilla")](/images/recovered/Grakan-vs-Gorilla.jpg)
 

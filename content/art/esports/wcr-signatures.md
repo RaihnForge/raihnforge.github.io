@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2008
-recovered: true
+
 ---
 ![](http://www.joshuakeyes.us/raihn/images/wcr_sig_priestforever.jpg)
 

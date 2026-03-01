@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2011
-recovered: true
+
 ---
 [![bulldogs_tshirt](/images/recovered/bulldogs_tshirt.jpg "bulldogs_tshirt")](/images/recovered/bulldogs_tshirt.jpg)
 

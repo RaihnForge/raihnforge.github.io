@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2012
-recovered: true
+
 ---
 [![monsieur_toad.jpg](http://www.joshuakeyes.us/wordpress/raihn/images/14ea74d76792_146E4/monsieur_toad.jpg_thumb.jpg "monsieur_toad.jpg")](http://www.joshuakeyes.us/wordpress/raihn/images/14ea74d76792_146E4/monsieur_toad.jpg.jpg)
  All for one, and one for all!  A fun little sketch I did today for a friend who’s online nick is Monsieur Toad.  Despite his colorful appearance and confident smirk, this little guy is not to be taken lightly!  He is bound by honor!

@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2009
-recovered: true
+
 ---
 The following are some assets that I created for www.WCreplays.com
 

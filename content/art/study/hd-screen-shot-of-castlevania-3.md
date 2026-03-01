@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2009
-recovered: true
+
 ---
 One of my favorite games of all time.  This is inspired by Goat at www.Powergoat.com  Check out his Unchosen Paths Project.
 [![Castlevania 3 - Stage 1 - Original Screenshot](http://www.joshuakeyes.us/raihn/images/Beginning.gif "Castlevania 3 - Stage 1 - Original Screenshot")](http://www.joshuakeyes.us/raihn/images/Beginning.gif)

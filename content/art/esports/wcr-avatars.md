@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2008
-recovered: true
+
 ---
 ![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_kage.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_foh.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_fury2.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_lockon.jpg)
 

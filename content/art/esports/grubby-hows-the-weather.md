@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2012
-recovered: true
+
 ---
 [![grubby_wallpaper_02](/images/recovered/grubby_wallpaper_02_thumb_3.png "grubby_wallpaper_02")](/images/recovered/grubby_wallpaper_02.jpg)
 How’s the Weather Wallpaper - [Full size link](/images/recovered/grubby_wallpaper_02.jpg)

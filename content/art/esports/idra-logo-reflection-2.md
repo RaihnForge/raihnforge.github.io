@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2014
-recovered: true
+
 ---
 [![IdrAlogoMascot](/images/recovered/IdrAlogoMascot.png "IdrAlogoMascot")](/images/recovered/IdrAlogoMascot.png) About a year ago I had the pleasure of working with Greg ‘IrdA’ Fields on his solo brand logo.  He was one of the most responsive and engaging clients I’ve had the pleasure of working with.  The logo processes went smoothly. Though a bit on the long side, we both ensured IrdA was getting a logo that would hit all his key branding goals.
 [![IdrAlogo](/images/recovered/IdrAlogo.png "IdrAlogo")](/images/recovered/IdrAlogo.png)We started out by getting the right look and feel for is name.  We veered away from using symbols or abstractions to convey his Brand, after all IdrA was IdrA.  The name had a cool symmetrical and simple look, so we pursued that line of thinking when developing the core Logo.

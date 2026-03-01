@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2009
-recovered: true
+
 ---
 Dahnjin is implementing a rating system for the downloadable replays on WCreplays.com. And thus Coggy was born.  The miniature clockwork of cuteness is dedicated to my fiancee Stephanie.
 

@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2011
-recovered: true
+
 ---
 [![Untitled-1](/images/recovered/Untitled-1.jpg "Untitled-1")](/images/recovered/Untitled-1.jpg)
 

@@ -10,7 +10,7 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2012
-recovered: true
+
 ---
 [![20121101grubby_vs_flash_raihn_big](/images/recovered/20121101grubby_vs_flash_raihn_big_thumb.jpg "20121101grubby_vs_flash_raihn_big")](http://www.joshuakeyes.us/wordpress/raihn/images/Grubby-vs-Flash-MLG-Dallas-Cheerful_D351/20121101grubby_vs_flash_raihn_big.jpg)
 [[HD 1280x720]](http://www.joshuakeyes.us/raihn/images/Grubby_vs_Flash_Sketch_JoshuaRaihnKeyes_720.jpg) [[HD + 1920x1050]](http://www.joshuakeyes.us/raihn/images/Grubby_vs_Flash_Sketch_JoshuaRaihnKeyes_1080.jpg)
