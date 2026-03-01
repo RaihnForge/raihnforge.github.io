@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="single-post">
   <header class="post-header">
-    <nav class="post-breadcrumb" aria-label="Breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span aria-hidden="true">/</span>
       <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
@@ -13,9 +13,15 @@
     {{ with .Description }}<p class="post-description">{{ . }}</p>{{ end }}
   </header>
 
+  {{ if .Params.archived }}
+  <aside class="archived-notice" role="note">
+    <p>This piece has been moved to the archive.</p>
+  </aside>
+  {{ end }}
+
   {{ if .Params.recovered }}
   <aside class="recovered-notice" role="note">
-    <p><em>Some media from this post was originally hosted externally and could not be recovered. Text content has been preserved and restored.</em></p>
+    <p>This piece is from my earlier portfolio. The original hosted images may no longer be available.</p>
   </aside>
   {{ end }}
 
@@ -24,7 +30,14 @@
   </div>
 
   <footer class="post-footer">
-    <a href="{{ .Parent.RelPermalink }}" class="back-link">&larr; Back to {{ .Parent.Title }}</a>
+    <nav class="post-nav" aria-label="Post navigation">
+      {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" class="post-nav-prev">&larr; {{ .Title }}</a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}" class="post-nav-next">{{ .Title }} &rarr;</a>
+      {{ end }}
+    </nav>
   </footer>
 </article>
 {{ end }}

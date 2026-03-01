@@ -36,6 +36,12 @@
     <p class="artwork-description">{{ . }}</p>
     {{ end }}
 
+    {{ if .Params.archived }}
+    <aside class="archived-notice" role="note">
+      <p>This piece has been moved to the archive.</p>
+    </aside>
+    {{ end }}
+
     {{ if .Params.recovered }}
     <aside class="recovered-notice" role="note">
       <p>This piece is from my earlier portfolio. The original hosted images may no longer be available.</p>
@@ -58,8 +64,8 @@
   </div>
 </article>
 
-{{/* Related works from same sub-section */}}
-{{ $siblings := .Parent.RegularPages }}
+{{/* Related works from same sub-section (exclude archived) */}}
+{{ $siblings := where .Parent.RegularPages "Params.archived" "ne" true }}
 {{ $related := $siblings | complement (slice .) }}
 {{ $related = first 3 $related }}
 {{ if $related }}

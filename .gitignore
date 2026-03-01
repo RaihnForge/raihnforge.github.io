@@ -3,3 +3,7 @@ resources/_gen/
 .hugo_build.lock
 .DS_Store
 .tempdocs/
+reports/
+content/.obsidian/workspace*.json
+content/.obsidian/graph.json
+content/.obsidian/hotkeys.json

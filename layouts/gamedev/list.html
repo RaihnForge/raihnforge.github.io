@@ -23,7 +23,7 @@
         {{ with .Params.status }}
         <span class="project-status status-{{ . | lower | replaceRE " " "-" }}">{{ . }}</span>
         {{ end }}
-        {{ $count := len .RegularPagesRecursive }}
+        {{ $count := len (where .RegularPagesRecursive "Params.archived" "ne" true) }}
         {{ if gt $count 0 }}
         <span class="project-card-count">{{ $count }} {{ if eq $count 1 }}entry{{ else }}entries{{ end }}</span>
         {{ end }}
@@ -91,8 +91,8 @@
   </div>
 </div>
 
-{{/* Development Log — child posts */}}
-{{ $posts := .RegularPages }}
+{{/* Development Log — child posts (exclude archived) */}}
+{{ $posts := where .RegularPages "Params.archived" "ne" true }}
 {{ if $posts }}
 <section class="devlog-section" aria-label="Development log">
   <h2>Development Log</h2>

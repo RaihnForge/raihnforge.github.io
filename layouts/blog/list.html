@@ -5,7 +5,7 @@
 </div>
 
 <div class="journal-list">
-  {{ range .Pages }}
+  {{ range where .Pages "Params.archived" "ne" true }}
   <a href="{{ .RelPermalink }}" class="journal-item">
     <div class="journal-item-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>

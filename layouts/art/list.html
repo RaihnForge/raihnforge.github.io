@@ -18,7 +18,8 @@
     {{ end }}
     <div class="category-card-body">
       <h2>{{ .Title }}</h2>
-      <span class="category-card-count">{{ len .RegularPagesRecursive }} {{ if eq (len .RegularPagesRecursive) 1 }}piece{{ else }}pieces{{ end }}</span>
+      {{ $activeCount := len (where .RegularPagesRecursive "Params.archived" "ne" true) }}
+      <span class="category-card-count">{{ $activeCount }} {{ if eq $activeCount 1 }}piece{{ else }}pieces{{ end }}</span>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
     </div>
   </a>
@@ -49,9 +50,10 @@
   {{ end }}
 </nav>
 
-{{/* Split pages into showcase (has image) and archive (no image) */}}
-{{ $showcase := where .RegularPages "Params.image" "ne" "" }}
-{{ $archive := where .RegularPages "Params.image" "" }}
+{{/* Filter out archived content, then split into showcase (has image) and archive (no image) */}}
+{{ $active := where .RegularPages "Params.archived" "ne" true }}
+{{ $showcase := where $active "Params.image" "ne" "" }}
+{{ $archive := where $active "Params.image" "" }}
 
 {{/* Showcase tier — visual gallery grid */}}
 {{ if $showcase }}

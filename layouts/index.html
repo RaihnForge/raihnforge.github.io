@@ -32,12 +32,15 @@
 </section>
 
 {{/* === Featured Work === */}}
-{{ $featured := where (where .Site.RegularPages "Params.featured" true) "Draft" false }}
+{{ $featured := where (where (where .Site.RegularPages "Params.featured" true) "Draft" false) "Params.archived" "ne" true }}
 {{ if $featured }}
 <section class="featured-section" aria-label="Selected work">
   <div class="section-header">
     <h2>Selected Work</h2>
-    <a href="/art/">View all &rarr;</a>
+    <div class="section-header-links">
+      <a href="/art/">Design &rarr;</a>
+      <a href="/gamedev/">Products &rarr;</a>
+    </div>
   </div>
   <div class="featured-grid">
     {{ range $featured }}
@@ -51,6 +54,28 @@
         <p class="featured-card-type">{{ .Section | humanize }}</p>
         <h3>{{ .Title }}</h3>
         {{ with .Description }}<p>{{ . | truncate 100 }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* === From the Journal === */}}
+{{ $posts := first 3 (where (where .Site.RegularPages "Section" "blog") "Params.archived" "ne" true) }}
+{{ if $posts }}
+<section class="journal-preview-section" aria-label="Recent journal entries">
+  <div class="section-header">
+    <h2>From the Journal</h2>
+    <a href="/blog/">Read all &rarr;</a>
+  </div>
+  <div class="journal-preview-list">
+    {{ range $posts }}
+    <a href="{{ .RelPermalink }}" class="journal-preview">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <div class="journal-preview-body">
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . | truncate 120 }}</p>{{ end }}
       </div>
     </a>
     {{ end }}
