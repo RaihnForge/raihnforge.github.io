@@ -1,0 +1,27 @@
+---
+title: "What if.. Starcraft 2's Cyclone was the Cyclops"
+date: 2015-04-30
+description: "What if... the Cyclone was the Cyclops? This is my super ridiculously serious breakdown on why I believe this swap needs to happen. I mean, I spent..."
+image: "/images/wp-imports/blog/cyclopes.png"
+draft: false
+---
+
+[![cyclopes](/images/wp-imports/blog/cyclopes2.png)](/images/wp-imports/blog/cyclopes2.png)What if... the Cyclone was the Cyclops? This is my super ridiculously serious breakdown on why I believe this swap needs to happen. I mean, I spent like four hours thinking about this, it must be right.
+**Lets Put the Terrans Back In Terran!**
+The faction identity of the Terrans have focused less and less on actual Terrans.  Pretty soon the drop down will read, "Androbots" instead.  I love the transforming, I love the sieging, but I also know that what made me fall in love with this sci fi culture was the concept of human ingenuity.
+I realize that remote drones and such are the next evolution, but they quite literally remove the human element.  I want to see more heart on the line, more soul.  I want to feel more connected to the well being of my army, courageous warriors putting it all on the line for.. whatever it is they believe in.  I want to know that my zerg stomping squad is as hyped up on adrenaline as I am. Terrans make the game's universe more personal and relatable, robots just remind us we're twiddling RC polygons.
+So the first corner stone of our design is to make sure that there is breathing badass piloting our pilferer of punishment.  We'll know she is smart and cunning by the great voice actor we'll hire.  She's loyal and perhaps a little over honest.  Just because she's tough doesn't mean she can't sweet talk the armor plating off any Marine with her brutal battle stories.  Some might call her a day dreamer, but those dreams consist of rending the enemy of their mortal coils.
+**Gimme a Leg Up, Will Ya!**
+Wheels?  I know its a tried and true design, but this is the future, friends.  We have hover bikes and heavy metal treads in stock.  Let the hellions do the wheelies and roll out with their Auto-robot friends.  I want me some gams.  I know, I know.  The Thor's rockin' a heavy duty pair, and our friend the Goliath's chicken legs have carried the Terrans forward in plenty of victories (See Flash verse AnyTime Gom Star Invitational game 2).  But this isn't a tired technology, this is practical precedence.
+If there is anything that the battle of Hoth taught our generation, its that vehicles with legs can cover any terrain. Any terrain in style.  For the purposes of this post we'll disregard the failure on Endor.  Seriously?  Teddy bears...
+Our design replaces the lackluster skateboard chassis with an all-terrain-balance-n- angle-flexible frame.  This biped can maintain level lock on the steepest of mounds, as well as avoid the dangerous and splintered grounds of a recent lurker trap.  Shredded, baneling busted, zerg chewed tires need not warrant a wait for road side assistance. Let's be honest, an SCV HOVERING you a spare while your waylaid monster-toaster misses out on all the action at the front is just embarrassing.
+With the Cyclops you'll be running so fast Nike will want to slap a sponsor on you.  Laugh all the way to the Hive as you kick banelings like beach-balls back to the stinking spawning pool where they belong.  Plus, If we throw in a cliff jumping kit all the forum kids will be singing you a sweet rondo of OpOpie in endless concert.
+**Tunnel Vision**
+The Cyclops rocks only one target painter because that's all you'll need.  This high-range-weapons-lock assembly can send a Reaper back to his maker (awkward) before his jet pack even warms up.  Worry not, you'll be able to keep your lock with the 360 degree rotational-weapons-platform and so you may continuously pew-pew to your hearts content, or until the inevitable nerf hammer smashes you back to 'reality'.
+**Rocketeer**
+Mounted up are twin rocket salvos.  Recently salvaged from the Cyclone, these babies only sport a moderate amount of beta-test bruising. Easily retractable when not popping pesky probes, these shoulder pads will cause WoW veterans to nerdgasm on sight.  When deployed, no alien in the verse will dare to lock your gaze. (*sick punz brah!* -No1ever)
+As a bonus, while back at your spawn rally you can give all your friends a shady sanctuary.  The solar shield utility doubles this unit's potential role to include support.  Your comrades will most certainly benefit from avoiding an untimely end due to the evils of skin cancer.  Solar panels ensure your preferred mobile device stays charged and ready to unabashedly blare Monster Cat tracks till the end of sound.
+**What's Inna Name?**
+Finally, the Cyclops benefits from nomenclature acclimation.  Vikings, Thors, Banshees oh my!  Notice a theme here?  Our friend the Cyclone was donated to the Jawa because it was an obvious Protoss spy.  Storms, Tempests and CYCLONES are the given names of our sworn enemies, my brothers!  We have the blood of marauders and Marines rushing through our metal reinforced core! By the gods, we shall carry forth the memory of our long displaced fore bearers by bestowing names bequest this legacy!
+Thanks for reviewing my What If.. design. Four hours well spent. :D
+PS. Blizzard employers feel free to PM me.  Though I'm obviously ridiculously talented I could use a good job.  And.. you're welcome.

@@ -34,6 +34,12 @@
     <p class="artwork-description">{{ . }}</p>
     {{ end }}
 
+    {{ if .Params.recovered }}
+    <aside class="recovered-notice" role="note">
+      <p><em>Some media from this post was originally hosted externally and could not be recovered. Text content has been preserved and restored.</em></p>
+    </aside>
+    {{ end }}
+
     {{ with .Content }}
     <div class="artwork-content">{{ . }}</div>
     {{ end }}

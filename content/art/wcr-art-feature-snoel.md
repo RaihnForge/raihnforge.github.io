@@ -1,0 +1,25 @@
+---
+title: "WCR Art Feature: Snoel"
+date: 2006-12-30
+description: "Hello all! Merry Christmas, and happy holidays! Wow, what great times we are living in! The Warcraft scene continues to grow and grow. Watching the..."
+tags: ["Art feature", "Blizzard", "Christmas", "Digital Painting", "Gaming", "Jaina Proudmoore", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "warcraft", "water elemental"]
+draft: false
+medium: "Digital"
+year: 2006
+recovered: true
+---
+
+![](http://www.joshuakeyes.us/raihn/images/wcr_art_feature_11.jpg)
+Hello all! Merry Christmas, and happy holidays! Wow, what great times we are living in! The Warcraft scene continues to grow and grow. Watching the Season IV live feeds was a real treat. As usual, bunny did a great job casting, and everything looked really awesome! It’s great to see the community grow, and the friendly competition generate such good times and awesome entertainment. I look forward to the day I can turn on the TV (here in the states) and watch Warcraft tournaments on the weekends. It will happen, I know it!
+Things, of course have been pretty crazy for me. Moving, school, getting sick, working two jobs, etc.. etc. I am please to say that I got my first art commission. I am working to help create illustrations for a board game that is in development. Getting paid to do something that you love is pretty fulfilling. It has been the dream of mine ever since I was in middle school to go to college and one day become talented enough that some one would actually be willing to pay for my work. It seems that through all the obstacles of life, I have begun to realize my dreams. In the end all the challenges that are thrown our way in life help us grow and become stronger and better people. So life, come at me!
+I wish you all a happy New Years! It of course is the time to make resolutions and such. Mine is to produce more art features for you all, just so long as you enjoy them. I’m looking forward to what is in store for us in the community! Gaming is getting bigger and bigger everyday and the great staff here at WCreplays.com keep bringing us all the up to date action and coverage! Big thanks to all the staff members who keep this place running, I love coming here and watching audios, reading interviews, catching up on the news, and of course watching the great selection of replays.
+**Subject:** Winter has come to battle torn, yet somehow still vibrate lands of Lordaeron, and with it comes that wonder and magic of a land covered in freshly fallen snow. This time can indeed bring a cold that bites as fiercely as Frostmorne but, with it also comes the great love and warmth of kind hearts.
+It is in this time the stout dwarves celebrate in their mountain homes. Keeping close to the forge they share great tails of adventure and victory, as well sharing, of course, more than a mug or two of their powerful brew. Indeed, on the occasion that a Pandaren Brewmaster is among them, the celebrations raise in level to that of great festivals!
+Amongst those enjoying the winter season, Jaina finds especially fun the construction of her renowned snow elementals. Since she was but a lass, the famed archmage has constructed the most amusing snowmen in all of Azeroth. Using some recently dealt with treant, Jaina polishes off this year’s exceptional snow elemental appropriately christening him Snoel.
+The Nightelves, as well as the Blood elves, though school as they are in the way of magic, are still unable to pin the exact source of the unquestionable enchantment this time brings. They know, as do we all, that it has to do with the untaintable magic of love.
+**Reason:** Celebration.
+**Name:** Snoel, should quite obviously is a combination between snow and noel. My girlfriend named the Snow Element Snoel, and I thought it was quite cute and appropriate to name the whole piece as such. Thank you sweety!
+Thanks again go out to nShadowsong for being so awesome and supportive. My features have greatly improved with your talented eye for improvement, you rock! Thanks again to all the staff that keep my favorite website alive and well! And to those of you who trust in my ability to be successful! Oh and after being staff for a long time, I finally created a [staff profile](http://www.wcreplays.com/forums/showthread.php?t=68402&page=1&pp=5) , if anyone is interested in checking it out. I will keep do my best to keep it updated with links to all the work I do here at WCreplays.
+-God bless, Raihn
+© 2006 Joshua Keyes
+[Click here to view original WCReplays.com Art Feature!](http://www.wcreplays.com/articles.php?get=506)

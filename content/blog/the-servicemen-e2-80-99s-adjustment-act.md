@@ -1,0 +1,45 @@
+---
+title: "The Servicemen’s Adjustment Act"
+date: 2007-07-24
+description: "Analyzing the Development of Legislator That Changed a Nation"
+tags: ["GI Bill", "Muse", "Political Science", "Servicemen’s Adjustment Act"]
+draft: false
+---
+
+### Analyzing the Development of Legislator That Changed a Nation
+
+They were hungry, they were poor, and they needed help. Just as a nation called on them to secure it, they needed a nation that would help secure them. The 1920s saw the return of war torn veterans from overseas searching for a way to reestablish themselves and their families, and the government did little to nothing for those heroes. The following employs Greenberg's analytical frame work to examine the political process involved in the implementation of a life and nation changing legislature, The Servicemen's Readjustment Act. This act would attempt to set right the wrongs committed to the nation's defenders.
+Structural Level: The failures of veteran reintegration
+ 
+Following World War One, there was great unrest amongst returning veterans. They had left everything behind when they crossed the oceans to defend the nation, and when they returned they retained nothing. The nation did very little to assimilate its defenders back into the civilian sector. Unfortunately, the men and women of the armed forces were at a disadvantage in acquiring jobs in comparison to the average civilian.
+The service members' skills over the last few years were in accordance to the mechanics of war and combat, vice the mechanics of industry and business. Additionally, the returning fighters were turned away from relatively low skilled work due to employers who where unsure of their mental stability (Buckley).
+As a contributing factor to the Great Depression, unemployed Veterans attributed to a drop in economic activity. Such a high percent of the nation's population came back from the war poor and unequipped for civilian life (Buckley). This meant that there was a greater number of the population that had little monetary means, and thus could do little to stimulate the slowing economy. It was apparent that the nation had mishandled their soldiers on their return, but they were unsure how to remedy the situation.
+Political linkages: Congresses' failure turns the public eye to the obvious neglect of service members
+ 
+Congress attempted to alleviate some of the problems the veterans were facing by passing the World War Adjusted Act of 1924, widely referred to as The Bonus Act. Accord to the United States Department of Veterans Affairs, the number of days served would stipulate the amount of the veteran's bonus. Though the normative ideal seemed well placed, the empirical situation proved quite different. Most veterans would not collect any of their allotted bonuses for a period of twenty years.
+Outraged at the situation veterans formed what is called The Bonus Army, and marched in Washington D.C. in 1932. President Hoover's administration ignored the protest, and after police shot and killed two protestors Hoover ordered the removal of the Bonus Army ("Bonus Army"). Chief of staff Douglas McAurthor, General Dwight D. Eisenhower, and Major George S. Patton lead the troops against the Bonus Army. The crowd of veterans that included women and children were gassed with tear gas and forced away by troops with fixed bayonets. The day after, The New York Times head line read "A Calvary Major Evicts Veteran Who Saved His Life in Battle" (Z).
+The year after, during the second march of the bonus army, President Roosevelt had his wife Eleanor meet and talk with veterans. The First Lady petitioned the veterans to work on various government projects. The projects were dubbed Veterans rehabilitation projects ("Bonus Army").
+The event that captured the public's eye swept in on September 2, 1935 when a hurricane killed 259 veterans that were involved in one of the rehabilitation projects Wilkinson). The storm made clear to the public how inefficiently the government was handling the return of those who had defended the nation.
+ 
+ 
+Government Level: Harry W. Colmery drafts the Servicemen's Readjustment Act of 1944
+ 
+World War Two erupted across the world, and gripped the nation. But the war was not the only issue in question; also in consideration was how the troops would return home, this time. Congress feared another subsequent depression and became determined to avoid the homecoming of the preceding veterans. Thus began the draft of what is commonly referred to as the GI bill, The Servicemen's Readjustment Act of 1944 ("GI Bill").
+According to the United States Department of Veterans Affairs, the Bill was first introduced in the House by Harry W. Colmery, but found its way to the Senate the very next day. Colmery, who was the commander of the American Legion, had drafted a bill that included three parts to ensure proper treatment of returning veterans. These sections included home loan assistance, education assistance, and unemployment assistance.
+Government Action: Roosevelt signs bill promoting the growth of a nation.
+ 
+Both the Senate and the House passed deferent versions of the bill. The controversial portion of the bill lay in its third section, unemployment. The two chambers could not decide on an amount until a tie breaking vote came in from Representative John Gibson.
+On June 22, 1944 President Franklin D. Roosevelt signed the bill into law. This bill set a standard of assistance that veterans utilize to reintegrate into civilian life to this day. The benefits of education, housing, and unemployment have also allowed for an abundance of growth in the nation, as well as the individual.
+Some of the most notable growth has been from the middle class, as veterans returned home they took up college more and more. Previously seen as a rich sect of society, the college population became 49% veteran. Interestingly, less than 20% of the returning veterans took advantage of the most controversial portion of the bill, the unemployment benefits ("Born of Controversy").
+The fight for veteran benefits continues today, however. The normative condition has been set before us by the approval of the GI Bill, and the preceding expansion of benefits made by Gillespie V. "Sonny" Montgomery in 1984 ("GI Bill"). But the empirical situation does not conform to the nominative.
+Two current events are the focus of these failures of the normative standard; the veteran's Hospital care and the dispersion of the veteran's disability benefits. These are issues that continually need focus to ensure that the empirical adheres more often than not to the normative.
+© Joshua Keyes 2007
+
+### Works Cited
+
+"Bonus Army." Wikipedia. The Free Encyclopedia, 2007. Wikipedia.com 21 Jul. 2007 <http://en.wikipedia.org/wiki/The\_Bonus\_Army>.
+Buckley, Mary Fran. "A Magic Carpet to the Middle Class." Officer, The. 01 Sep. 2004. 24. eLibrary. Proquest CSA. MT SAN ANTONIO COLLEGE. 21 Jul 2007. <http://elibrary.bigchalk.com>.
+"GI BILL." Encyclopedia of Education. The Gale Group, INC, 2002. Answers.com 21 Jul. 2007 <http://www.answers.com/topic/gi-bill>.
+"Born of Controversy: The GI Bill of Rights." GI-Bill History, 2007. United States Department of Veteran Affairs. 21 Jul. 2007 <http://www.gibill.va.gov/GI\_Bill\_Info/history.htm>.
+William L. O'Neill. "GI Bill of Rights." World War II: A Student Companion. n.p. Oxford University Press. 1999. n.pag. eLibrary. Proquest CSA. MT SAN ANTONIO COLLEGE. 21 Jul 2007. <http://elibrary.bigchalk.com>.
+Z., Mickey. "The Bonus Army." 2005. Dissident Voice. 21 Jul. 2007. <http://www.dissidentvoice.org/Aug05/MickeyZ0831.htm>.

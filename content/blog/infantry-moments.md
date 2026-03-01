@@ -1,0 +1,21 @@
+---
+title: "Infantry Moments"
+date: 2014-06-22
+description: "Images scanned from my time in the Marine Corps.  Often Sketching during down time in the field."
+tags: ["Renaissance Man Reflections"]
+image: "/images/wp-imports/blog/550199_10152243093860161_389548260_n.jpg"
+draft: false
+---
+
+##### Images scanned from my time in the Marine Corps.  Often Sketching during down time in the field.
+
+After 10 years of being out of a combat environment, I still have what I like to call 'infantry moments'.
+It was early in the morning, couldn't sleep most of the night again but as the wife woke up and was getting ready for work I was finally able to. In my world, she has taken over guard duty, now it's okay to sleep.
+Before she left she came over to give me a kiss good bye, at the same time something outside startled the dog, and he gave his alert bark. My eyelids cracked open to see camo pants and boots walking toward me. My fists snapped up on guard, adrenalin pounded, I was ready for a mortal struggle with the terrorist ambushing me before the cloud of sleep lifted.
+Thankfully discipline was also there to impress that I needed to fully identify my target before attacking. Unfortunately I still remember the terrified look on my wife's face as she gazed for a moment into the eyes of a man ready to kill to protect his family. But I chose my wife wisely, these things roll off her fair shoulders as easily as the spring rain.
+I'm not looking for any sort of sympathy here. I truly dont believe that PTSD is any more a disease than sitting at a computer all day stressing about debt and how to climb the corporate ladder. I just live in a culture where the latter is the norm. These symptoms I have are apart of my survival instinct and bolster my 'warrior's edge'. My dog reacts just the same as I do, and would agree with me. He doesn't have much interest in facebook, so you wont see is Like below, you'll just have to take my word for it.
+I dont live in a world where I fully trust obtuse factions, groups, and theories to protect me. The painted lines on the road dont magically make people not drive into you, laws dont stop people from stealing or attacking others. I live knowing and having seen all manner of order be broken, and even now stare at the brokenness of the people involved. Good people keep bad people from doing bad things.
+What I hope for is a measure of understanding and patience for those like me. The American culture I see today is not fully mine. Mine is mixed with that of the Marine Corps Infantryman. It's burned in my soul. A world where I'd chance freezing to death in order to keep my brother next to me from freezing, starving if I could keep him from starving. Bleeding out if I could make sure he's doesn't have to. And more often than not he'd do the same for me.
+Today's culture feels as if it is skewing toward that which celebrates a constant flow of entertainment over noble acts and careful ethics. Drama and sensationalism over substance and standards. Taking advantage over taking responsibility. Celebrity over solidarity.
+Daily I'm a bit of foreigner in my own country, trying to relate, knowing that when in Rome, you must do as the Romans; to a degree.
+If you know a vet that can be a total jackass, or has blown some steam your way, give him or her a second chance. Likely they'll collect themselves and come back to apologize after they realize they'd forgotten the culture they exist in now, still reacting to the one they live in their hearts. Put up with a little bit of fluster and show them you'll not be scared off by harsh language and rough edges and you might make a friend that'd be willing to save your life even if it means theirs.
