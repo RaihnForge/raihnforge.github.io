@@ -6,6 +6,7 @@ description: "About a year ago I had the pleasure of working with Greg â€˜IrdAâ€
 tags: ["Cartooning", "Design", "Idra", "Illustration", "Joshua Keyes", "Logo Designs", "Starcraft", "eSports"]
 aliases:
   - "/art/idra-logo-reflection-2/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2014

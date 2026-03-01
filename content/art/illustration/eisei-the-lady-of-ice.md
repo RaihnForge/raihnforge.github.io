@@ -5,6 +5,7 @@ description: "The Frost Mage was a commission piece for a wow character.  It wa
 tags: ["Alliance", "Art Commission", "Character", "Chick", "Digital Painting", "Dranei", "Eisei", "Frost Mage", "Joshua Keyes", "Raihn", "Warcraft Character", "WoW", "wallpaper"]
 aliases:
   - "/art/eisei-the-lady-of-ice/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

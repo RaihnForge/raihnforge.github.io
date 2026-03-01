@@ -4,10 +4,10 @@ date: 2013-09-16
 description: "One of the most influential aspects of my artistic growth has come from being apart of a global community, as a consumer and contributor, through the..."
 related_sections:
   - "esports"
+archived: true
 draft: false
 recovered: true
 ---
-
 One of the most influential aspects of my artistic growth has come from being apart of a global community, as a consumer and contributor, through the power of the internet.  My hobby and past time has been, for the last ten years, the myriad of aspects erupting from eSports.  Ever since I began consuming the content provided by community members and the grass roots effort to bring the phenomenon to the masses, I’ve been contributing as well. 
 
 [TeamLiquid](http://TeamLiquid.net) has been a community that I consider myself affiliated with for a good while now.  Recently [wo1fwood](http://www.teamliquid.net/forum/profile.php?user=wo1fwood) has posted a resource that focuses on the very growth and talent aspect of the online contributing artist group.  If you have any artistic interest or appreciation I’d urge you to check out:

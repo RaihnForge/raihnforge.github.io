@@ -5,6 +5,7 @@ description: "This is the packaging I created for DIP Enterprise's BJ Clinton bo
 tags: ["DIP Enterprise INC", "Design", "Joshua Keyes", "PC the Game", "Politically Correct the Game", "Product Design", "Raihn", "board game"]
 aliases:
   - "/art/product-box-for-bj-clinton-bobble-head/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

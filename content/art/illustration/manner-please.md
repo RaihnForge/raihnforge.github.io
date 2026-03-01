@@ -5,6 +5,7 @@ description: "This is a cartoon I created for Amnesty's article, \"Manner Wars,\
 tags: ["Amnesty", "Cartooning", "Digital Painting", "Gaming", "Joshua Keyes", "Raihn", "WCReplays.com", "WoW", "WoW manners", "World of Warcraft", "cartoon", "feature article", "game manners", "gaming culture", "internet manners", "keeper of the grove", "paladin", "warcraft"]
 aliases:
   - "/art/manner-please/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

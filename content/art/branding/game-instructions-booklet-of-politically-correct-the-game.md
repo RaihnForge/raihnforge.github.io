@@ -5,6 +5,7 @@ description: "This is the instructions booklet I created for DIP Enterprise's bo
 tags: ["DIP Enterprise INC", "Game Instructions", "Joshua Keyes", "PC the Game", "Politically Correct the Game", "Product Design", "Raihn"]
 aliases:
   - "/art/game-instructions-booklet-of-politically-correct-the-game/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

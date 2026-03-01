@@ -5,6 +5,7 @@ description: "These are the web assets created for WCreplays.com Race Wars. Clic
 tags: ["Banners", "Joshua Keyes", "Race Wars", "Raihn", "WCReplays.com", "Web Assets Design", "icons", "warcraft"]
 aliases:
   - "/art/wcr-race-wars/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2005

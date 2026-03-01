@@ -5,6 +5,7 @@ description: "Disclaimer Any views or opinion represented in the assets of Polit
 tags: ["Cartooning", "Product Design"]
 aliases:
   - "/art/red-cartoon-cards-for-politically-correct-the-game/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

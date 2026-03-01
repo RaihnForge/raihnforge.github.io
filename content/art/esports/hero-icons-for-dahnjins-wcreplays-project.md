@@ -5,6 +5,7 @@ description: "Created 24 face illustrations to be used as icons for the 24 heroe
 tags: ["Web Assets Design"]
 aliases:
   - "/art/hero-icons-for-dahnjins-wcreplays-project/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

@@ -6,6 +6,7 @@ Any views or opinion represented in the assets of Politically Correct the Game b
 tags: ["Cartooning", "Product Design"]
 aliases:
   - "/art/game-cover-and-packaging-for-politically-correct-the-game/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

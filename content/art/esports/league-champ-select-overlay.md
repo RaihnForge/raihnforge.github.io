@@ -6,6 +6,7 @@ description: "A friend of mine, Eryn is an up and coming League of Legends caste
 tags: ["Design", "eSports"]
 aliases:
   - "/art/league-champ-select-overlay/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2014

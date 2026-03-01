@@ -6,6 +6,7 @@ tags: ["Art", "Cartooning", "Illustration", "Joshua Keyes", "Pencils", "Sketchbo
 image: "/images/wp-imports/art/i_mass_thors.jpg"
 aliases:
   - "/art/concept-sketching/"
+archived: true
 draft: false
 medium: "Pencil"
 year: 2010

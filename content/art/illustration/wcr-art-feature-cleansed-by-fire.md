@@ -5,6 +5,7 @@ description: "Hey guys! Sorry that the art features are few and far between. Amo
 tags: ["Art feature", "Digital Painting"]
 aliases:
   - "/art/wcr-art-feature-cleansed-by-fire/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

@@ -6,6 +6,7 @@ tags: ["Cartooning", "Digital Painting", "Illustration", "Joshua Keyes", "Raihn"
 image: "/images/wp-imports/art/monsieur_toad.jpg"
 aliases:
   - "/art/monsieur-toad/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2012

@@ -5,6 +5,7 @@ description: "Good Times at the Track"
 tags: ["Art", "Sketch", "Sketchbook Mixed Medium", "car", "color", "fernley", "race", "race track", "racecar", "reno"]
 aliases:
   - "/art/good-times-at-the-track/"
+archived: true
 draft: false
 medium: "Mixed Media"
 year: 2008

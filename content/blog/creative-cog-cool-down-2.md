@@ -4,10 +4,10 @@ date: 2013-10-17
 description: "Yesterday we hit a pretty big milestone for the game development. I’d been putting in average of 12 hours days for about a month and only took a..."
 related_sections:
   - "mecromage"
+archived: true
 draft: false
 recovered: true
 ---
-
 [![MecroBossBattle](/images/recovered/MecroBossBattle.png "MecroBossBattle")](/images/recovered/MecroBossBattle.png)
 
 Yesterday we hit a pretty big milestone for the game development. I’d been putting in average of 12 hours days for about a month and only took a couple days off, I was pretty exhausted.  After, I wanted to rest but couldn’t seem to shift into relax gear no matter what.  So I decided I’d force myself out of my office allowing only a pencil, sharpener, and clipboard for the rest of the evening.

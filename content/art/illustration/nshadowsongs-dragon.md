@@ -6,6 +6,7 @@ tags: ["Art", "Digital Painting", "Joshua Keyes", "Raihn", "Red dragon", "Speed 
 image: "/images/wp-imports/art/nshadowsong_dragon_350.jpg"
 aliases:
   - "/art/nshadowsongs-dragon/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

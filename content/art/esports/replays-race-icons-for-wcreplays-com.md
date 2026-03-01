@@ -9,6 +9,7 @@ WCR..."
 tags: ["Joshua Keyes", "Raihn", "WC3", "WCR", "WCReplays.com", "WarCraft 3", "Web Assets Design", "replays", "warcraft"]
 aliases:
   - "/art/replays-race-icons-for-wcreplays-com/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

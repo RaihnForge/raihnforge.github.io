@@ -4,10 +4,10 @@ date: 2012-12-09
 description: "I’ve been working on the DotA 2 overlays and I now have the pleasure of sharing them with you.  This project was quite the challenge, but it was that..."
 related_sections:
   - "esports"
+archived: true
 draft: false
 recovered: true
 ---
-
 I’ve been working on the DotA 2 overlays and I now have the pleasure of sharing them with you.  This project was quite the challenge, but it was that kind of challenge that gets you excited.  The following are some of my thoughts.
 
 **BRING IT ON!**

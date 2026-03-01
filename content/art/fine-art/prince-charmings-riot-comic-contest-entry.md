@@ -6,6 +6,7 @@ description: "I entered a League of Legends comic contest held by riot games.  
 tags: ["Art", "Cartooning", "Comic", "Contest", "Design", "Fan Art", "Illustration", "Jayce", "Joshua Keyes", "League of Ledgends", "League of Legends", "LoL", "Raihn", "Riot", "Sequential Art", "Taric", "cartoon"]
 aliases:
   - "/art/prince-charmings-riot-comic-contest-entry/"
+archived: true
 draft: false
 medium: "Sequential"
 year: 2012

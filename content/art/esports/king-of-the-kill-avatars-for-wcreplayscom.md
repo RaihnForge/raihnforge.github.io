@@ -6,6 +6,7 @@ description: "King of the Kill avatar series created for WCReplays.com."
 tags: ["Art", "Digital Painting", "Joshua", "Keyes", "Speed Painting", "WCR", "Web Assets Design", "crown", "fallen king", "human", "nightelf", "orc", "paint", "replays", "speed paint", "undead", "warcraft"]
 aliases:
   - "/art/king-of-the-kill-avatars-for-wcreplayscom/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

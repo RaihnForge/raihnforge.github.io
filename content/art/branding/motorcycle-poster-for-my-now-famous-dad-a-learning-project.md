@@ -5,6 +5,7 @@ description: "The original design was from a poster brought from my Dad's trip t
 tags: ["Joshua Keyes", "Posters", "Reno-Fernley Raceway", "Ted Keyes", "ducati", "monster", "moto gp", "motorcylce", "poster"]
 aliases:
   - "/art/motorcycle-poster-for-my-now-famous-dad-a-learning-project/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

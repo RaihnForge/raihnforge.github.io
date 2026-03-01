@@ -6,6 +6,7 @@ description: "Custom 404 error page design with personality."
 tags: ["404", "Art", "BM", "Blademaster", "DT", "Design", "Digital Painting", "Illustration", "Joshua Keyes", "Keyes", "Speed Painting", "Web Assets Design", "Web Page Designs", "crit", "critical strike", "darktemplar", "error", "grubby", "josh", "orc", "photoshop", "speed paint", "starcraft", "warcraft", "warrior", "windwalk"]
 aliases:
   - "/art/four-oh-four-screen/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2011

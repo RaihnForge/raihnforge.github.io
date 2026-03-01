@@ -6,6 +6,7 @@ description: "I had the pleasure of creating some Grubby stationary gear.  Incl
 tags: ["Business Cards", "Design", "Grubby", "Joshua Keyes", "Raihn", "business card", "grubby"]
 aliases:
   - "/art/grubby-business-card/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2011

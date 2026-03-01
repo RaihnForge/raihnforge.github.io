@@ -6,6 +6,7 @@ description: "Here are a couple more banners I created for WCReplays.com today:"
 tags: ["Banners", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "Web Assets Design"]
 aliases:
   - "/art/article-banners-for-wcr/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

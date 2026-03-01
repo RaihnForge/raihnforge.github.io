@@ -6,6 +6,7 @@ description: "The following is an illustration I created for a compact disc cove
 tags: ["Digital Painting", "Product Design", "album art", "album cover", "cd cover", "clockwork", "clockwork ultraviolence", "daily grind", "desktop", "time zombie", "ultraviolence", "undead", "wallpaper", "zombie"]
 aliases:
   - "/art/cd-cover-clockwork-ultraviolence/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

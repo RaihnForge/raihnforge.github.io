@@ -5,6 +5,7 @@ description: "A fun digital sketch exercise ran away from me as my mind raced as
 tags: ["1a2a3a", "Art", "Cyber Reaper", "Death", "Digital Painting", "Grim Reaper", "Joshua Keyes", "Raihn", "Sketchbook", "Sketchbook Digital", "Wallpaper", "frag fester", "key", "key master and gate keeper of Death", "keyboard", "nub nuker", "rage writher", "respawn reaver", "wallpaper"]
 aliases:
   - "/art/cyber-reaper/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

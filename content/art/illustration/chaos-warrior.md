@@ -6,6 +6,7 @@ description: "Created for WCreplays.com header image."
 tags: ["Digital Painting"]
 aliases:
   - "/art/chaos-warrior/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

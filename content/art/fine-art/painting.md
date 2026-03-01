@@ -5,6 +5,7 @@ description: "My second serious acrylic painting attempt from my beginning paint
 tags: ["Acrylic", "Acrylic Painting", "Bunny", "Flood", "Fun", "Imagination", "Joshua Keyes", "Painting", "Raihn", "Rubber Ducky", "representational", "still life", "story", "toys"]
 aliases:
   - "/art/painting/"
+archived: true
 draft: false
 medium: "Acrylic"
 year: 2008

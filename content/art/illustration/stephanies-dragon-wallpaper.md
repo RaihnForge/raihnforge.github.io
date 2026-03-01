@@ -5,6 +5,7 @@ description: "This is a dragon I drew off a sketch I did with my girlfriend. She
 tags: ["Digital Painting"]
 aliases:
   - "/art/stephanies-dragon-wallpaper/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

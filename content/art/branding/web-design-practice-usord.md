@@ -5,6 +5,7 @@ description: "Inspired by the Business card I created, I decided to do a practic
 tags: ["Web Page Designs"]
 aliases:
   - "/art/web-design-practice-usord/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

@@ -6,6 +6,7 @@ description: "Update:  EGTL Cheerful Turned into a wallpaper.  Click for 1920x
 tags: ["Fan Art", "Illustration", "Joshua Keyes", "Raihn", "Sketchbook", "Team Liquid"]
 aliases:
   - "/art/eg-tl-cheerfulbetter-faster-stronger/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2013

@@ -6,6 +6,7 @@ description: "Dahnjin is implementing a rating system for the downloadable repla
 tags: ["Digital Painting", "Web Assets Design"]
 aliases:
   - "/art/coggy-for-dahnjins-wcreplays-clockwerk-gobbo-rating-widget/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

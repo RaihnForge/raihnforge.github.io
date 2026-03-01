@@ -5,6 +5,7 @@ description: "Logo design for Politically Correct the Game board game."
 tags: ["Logo Designs"]
 aliases:
   - "/art/logo-for-politically-correct-the-game/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

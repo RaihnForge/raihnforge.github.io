@@ -6,6 +6,7 @@ description: "One of my favorite games of all time.  This is inspired by Goat a
 tags: ["Castlevania 3", "Digital Painting", "Joshua Keyes", "Power Goat", "Raihn", "Speed Painting"]
 aliases:
   - "/art/hd-screen-shot-of-castlevania-3/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

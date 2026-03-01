@@ -5,6 +5,7 @@ description: "These are backgrounds for the WCReplays.com replay generator."
 tags: ["Digital Painting", "Joshua Keyes", "Raihn", "WC3", "WCR", "WCReplays.com", "WarCraft 3", "Web Assets Design"]
 aliases:
   - "/art/backgrounds-for-wcr-replay-generator/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

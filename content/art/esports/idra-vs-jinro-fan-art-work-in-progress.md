@@ -6,6 +6,7 @@ description: "This is a little fan art piece I created in honor of the Idra vs J
 tags: ["Contest", "Digital Painting", "EG", "Idra", "Illustration", "Jinro", "Joshua Keyes", "Raihn", "SteelSeries", "Teamliquid", "Win", "fanart", "gomtv", "gorilla", "grek", "grekan", "microposer", "starcraft", "terran", "zerg"]
 aliases:
   - "/art/idra-vs-jinro-fan-art-work-in-progress/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2011

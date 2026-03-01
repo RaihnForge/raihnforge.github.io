@@ -5,6 +5,7 @@ description: "Essay completed for Art History Stone Age to Medieval."
 tags: ["Art History", "Essay", "History", "Joshua Keyes", "Muse", "Raihn", "head of an addadian ruler"]
 aliases:
   - "/art/head-of-an-akkadian-ruler/"
+archived: true
 draft: false
 year: 2008
 recovered: true

@@ -5,6 +5,7 @@ description: "What wealth of junk or gem holds within this wizard’s collection
 tags: ["Art", "Cartooning", "Concepts", "Design", "Game Design", "Game design", "Illustration", "Indie Game Blog", "Indie Game Design", "Indie game Concept Art", "Joshua Keyes", "Mecromage", "Unchosen Paths"]
 aliases:
   - "/gamedev/master-haloths-trinkets-and-trade/"
+archived: true
 draft: false
 recovered: true
 ---

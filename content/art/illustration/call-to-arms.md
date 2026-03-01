@@ -5,6 +5,7 @@ description: "Here's the speedpainting to a web asset created for WCReplays.com.
 tags: ["Art", "Digital Painting", "Joshua Keyes", "Raihn", "Speed Painting", "WCR", "WCReplays.com", "WarCraft 3"]
 aliases:
   - "/art/call-to-arms/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

@@ -6,6 +6,7 @@ description: "I first created this image back in 2008 after watching a GomTV mat
 tags: ["Classic", "Digital Painting", "Fan Art", "Illustration", "Intel", "Joshua Keyes", "Nick", "Plott", "Raihn", "Season 2", "That Probe Probably has Tattoos and peircings he's so baddass", "badass", "gomtv", "probe", "protoss", "starcraft", "tasteless", "wallpaper"]
 aliases:
   - "/art/revisiting-the-probe/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2012

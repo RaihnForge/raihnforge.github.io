@@ -6,6 +6,7 @@ description: "Forum signature collection designed for WCReplays.com users."
 tags: ["Signatures", "Web Assets Design"]
 aliases:
   - "/art/wcr-signatures/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

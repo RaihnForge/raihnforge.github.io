@@ -7,6 +7,7 @@ Any views or opinion represented in the assets of Politically Correct the Game b
 tags: ["Advertisements", "Web Assets Design"]
 aliases:
   - "/art/web-print-advertisements-for-politically-correct-the-game/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

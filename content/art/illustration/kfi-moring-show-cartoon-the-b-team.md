@@ -5,6 +5,7 @@ description: "Bill Carroll often fills in at the Bill Handel Show.  Bill noted 
 tags: ["Bill Carroll", "Cartooning", "Illustration", "KFI", "Mike", "Shannon", "Todd Wilson"]
 aliases:
   - "/art/kfi-moring-show-cartoon-the-b-team/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2013

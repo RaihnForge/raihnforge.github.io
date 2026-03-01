@@ -6,6 +6,7 @@ description: "The following are some assets that I created for www.WCreplays.com
 tags: ["Digital Painting", "Logo Designs", "Web Assets Design", "Web Page Designs"]
 aliases:
   - "/art/wcr-front-page-design/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

@@ -5,6 +5,7 @@ description: "This is a really fun concept I created for a Story book project. 
 tags: ["Cartooning", "Character concepts", "Childrens book", "Family", "Gene Benny", "Illustration", "Joshua Keyes", "Raihn", "Toilet", "Tom", "cartoon"]
 aliases:
   - "/art/toilet-tom/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

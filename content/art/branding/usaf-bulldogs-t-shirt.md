@@ -6,6 +6,7 @@ description: "T-shirt design is for an Air Force BMT Flight, and dedicated to my
 tags: ["Air Force", "BMT", "Bulldogs", "Design", "Illustration", "Nighthawk", "T-Shirt", "TI", "Traingng Instructor", "Transformers", "USAF"]
 aliases:
   - "/art/usaf-bulldogs-t-shirt/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2011

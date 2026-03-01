@@ -5,6 +5,7 @@ description: "Today I finished a custom signature image for PriesTforever.  He 
 tags: ["Digital Painting", "Signatures"]
 aliases:
   - "/art/new-signature-image-for-priestforever/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

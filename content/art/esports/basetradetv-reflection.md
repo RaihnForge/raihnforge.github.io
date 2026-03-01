@@ -6,6 +6,7 @@ description: "Though I am mired in my current work, I find that it can be a good
 tags: ["Art", "Art Study", "Avatars", "Banners", "BaseTradeTV", "Cartooning", "Design", "Fan Art", "Gaming", "Illustration", "Joshua Keyes", "Muse", "Overlays", "Raihn", "Starcraft", "Web Assets Design", "cartoon", "design", "eSports", "starcraft"]
 aliases:
   - "/art/basetradetv-reflection/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2014

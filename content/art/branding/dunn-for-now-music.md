@@ -5,6 +5,7 @@ description: "This is a Business Card that I developed for a friend of mine.  H
 tags: ["Art", "Business Cards", "Design", "Joshua Keyes", "Logo Designs", "business card", "design", "dunn for now music", "logo", "music business"]
 aliases:
   - "/art/dunn-for-now-music/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2004

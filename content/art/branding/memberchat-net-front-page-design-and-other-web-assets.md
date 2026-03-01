@@ -5,6 +5,7 @@ description: "Please click to view larger versions of the following images."
 tags: ["Logo Designs", "Web Assets Design", "Web Page Designs"]
 aliases:
   - "/art/memberchat-net-front-page-design-and-other-web-assets/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

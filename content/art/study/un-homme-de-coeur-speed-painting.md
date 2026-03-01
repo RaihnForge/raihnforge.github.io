@@ -6,6 +6,7 @@ description: "This was another practice of listening to a specific song on repea
 tags: ["Art", "Concept", "Digital Painting", "Illustration", "Joshua Keyes", "Shim", "Speed Painting", "Timelapse", "battle", "speed paint"]
 aliases:
   - "/art/un-homme-de-coeur-speed-painting/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2010

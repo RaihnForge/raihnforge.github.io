@@ -5,6 +5,7 @@ description: "Flash is one of the most dominating Starcraft pro-gamers ever to g
 tags: ["Adjacent", "Cheerful", "Digital Painting", "Fan Art", "Flash", "Joshua Keyes", "Last Generatation Terran", "Raihn", "Starcraft", "fanart", "pro gaming", "starcraf"]
 aliases:
   - "/art/new-wallpaper-for-tastelessgamingcom/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

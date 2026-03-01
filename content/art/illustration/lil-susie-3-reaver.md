@@ -5,6 +5,7 @@ description: "Inspired while I was watching GomTV Season 2.  I was watching th
 tags: ["&lt;3", "Cheerful", "Digital Painting", "Fan Art", "Reaver", "Shoutcaster", "Starcraft", "cartoon", "confused", "gomtv", "lil Susie", "lolz", "protoss", "starcraft"]
 aliases:
   - "/art/lil-susie-3-reaver/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

@@ -6,6 +6,7 @@ description: "Web Assets for PCtheGame.com"
 tags: ["Cartooning", "DIP Enterprise INC", "Digital Painting", "Joshua Keyes", "Politically Correct the Game", "Raihn", "Web Assets Design", "Web Page Designs", "pcthegame"]
 aliases:
   - "/art/politically-correct-the-game-website-design/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

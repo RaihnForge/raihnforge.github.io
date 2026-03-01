@@ -6,6 +6,7 @@ description: "While my wife was at BMT I attempted to write her every day.  I i
 tags: ["Airforce", "Android", "Art", "BMT", "Boom Boom Pow", "Captain America", "Cartooning", "Envelope Art", "Fan Art", "Helicopter", "Illustration", "Irish Death", "Maurder", "Optimus Prime", "Raihn", "Sketchbook", "Sketchbook Mixed Medium", "Soldier Bear", "Starcraft", "Training", "US AF", "cartoon", "viking"]
 aliases:
   - "/art/envelope-art/"
+archived: true
 draft: false
 medium: "Mixed Media"
 year: 2011

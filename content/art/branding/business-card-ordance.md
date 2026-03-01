@@ -5,6 +5,7 @@ description: "The first art project I did today was a business card.  It is fun
 tags: ["Business Cards"]
 aliases:
   - "/art/business-card-ordance/"
+archived: true
 draft: false
 year: 2008
 recovered: true

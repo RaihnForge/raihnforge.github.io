@@ -5,6 +5,7 @@ description: "This is my first full fledged painting.  It is of a still-life ut
 tags: ["Acrylic Painting", "Art", "Bottle", "Flower", "Joshua", "Joshua B. Keyes", "Keyes", "Life", "Painting", "Still", "Wine"]
 aliases:
   - "/art/stolen-flower/"
+archived: true
 draft: false
 medium: "Acrylic"
 year: 2008

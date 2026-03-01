@@ -5,6 +5,7 @@ description: "© Unchosen Paths LLC"
 tags: ["Design", "Game Design", "Indie Game Blog", "Indie Game Design", "Indie game Concept Art", "Joshua Keyes", "Unchosen Paths"]
 aliases:
   - "/gamedev/one-asset-to-rule-them-allui-resolution-issues/"
+archived: true
 draft: false
 recovered: true
 ---

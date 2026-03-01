@@ -5,6 +5,7 @@ description: "The following banners have been resized to fit this page. To view 
 tags: ["Banners", "Raihn", "WCR", "WCReplays.com", "WarCraft 3", "Web Assets Design"]
 aliases:
   - "/art/wcr-banners/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

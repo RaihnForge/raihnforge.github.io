@@ -6,6 +6,7 @@ description: "Click to see larger versions of each graphic."
 tags: ["Clifford Dunn Music", "Joshua Keyes", "Raihn", "Web Design", "Web Page Designs"]
 aliases:
   - "/art/web-layout-concept-for-clifford-dunn-music/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2008

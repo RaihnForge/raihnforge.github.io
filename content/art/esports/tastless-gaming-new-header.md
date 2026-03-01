@@ -6,6 +6,7 @@ description: "Click on the following banners for larger views."
 tags: ["Banners", "Web Assets Design"]
 aliases:
   - "/art/tastless-gaming-new-header/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

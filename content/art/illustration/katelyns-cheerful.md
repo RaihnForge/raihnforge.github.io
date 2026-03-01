@@ -6,6 +6,7 @@ tags: ["Bear", "Cartooning", "Cheer", "Cheerful", "Cute", "Design", "Digital Pai
 image: "/images/wp-imports/art/kt_vb_16x10_thumb.jpg"
 aliases:
   - "/art/katelyns-cheerful/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2011

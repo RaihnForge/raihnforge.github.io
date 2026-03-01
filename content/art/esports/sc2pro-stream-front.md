@@ -5,6 +5,7 @@ description: "I was commissioned to do a budget web splash page.  The purpose -
 tags: ["ATN", "Design", "Joshua Keyes", "TakeTV", "Web Assets Design", "Web Layout", "eSports", "sc2 Pro Streams"]
 aliases:
   - "/art/sc2pro-stream-front/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2012

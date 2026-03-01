@@ -6,6 +6,7 @@ Any views or opinion represented in the assets of Politically Correct the Game b
 tags: ["Product Design"]
 aliases:
   - "/art/game-board-of-politically-correct-the-game/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2007

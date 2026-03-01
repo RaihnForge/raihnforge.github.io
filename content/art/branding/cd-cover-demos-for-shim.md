@@ -5,6 +5,7 @@ description: "The following are demo covers for the band SHIM."
 tags: ["Product Design"]
 aliases:
   - "/art/cd-cover-demos-for-shim/"
+archived: true
 draft: false
 medium: "Digital"
 year: 2009

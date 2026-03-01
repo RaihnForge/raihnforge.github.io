@@ -5,6 +5,7 @@ description: "The Titan Ruins are a small group of shattered land masses that ev
 tags: ["Design", "Game Design", "Illustration", "Indie Game Blog", "Sketchbook", "Sketchbook Digital", "Unchosen Paths"]
 aliases:
   - "/gamedev/neoblon-titan-ruins/"
+archived: true
 draft: false
 recovered: true
 ---

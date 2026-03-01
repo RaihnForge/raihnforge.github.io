@@ -6,6 +6,7 @@ description: "Its was a while ago that I illustrated this on an envelope and sen
 tags: ["Fan Art", "Joshua Keyes", "Sketchbook", "Sketchbook Mixed Medium", "Starcraft"]
 aliases:
   - "/art/envelope-artstep-up/"
+archived: true
 draft: false
 medium: "Mixed Media"
 year: 2013
