@@ -155,3 +155,9 @@ Imported from WordPress.com WXR export (Feb 2026):
 - 180 posts flagged as recovered (joshuakeyes.us media lost)
 - 27 pre-existing hand-crafted posts preserved (skipped during import)
 - Import script: `scripts/import-wordpress.py`
+
+## Workflow Rules
+
+- Complete ALL tiers/phases of a plan before moving on. Do not skip ahead or start new phases prematurely.
+- Always update KPSP-Shard.md and ARCHITECTURE.md after implementing features or completing plans. Proactively prune completed items.
+- Verify you are editing files in the CORRECT project directory before making changes. Check ownership boundaries.

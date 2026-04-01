@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="page-header">
+  <p class="page-eyebrow">Medium</p>
+  <h1>{{ .Title }}</h1>
+</div>
+
+<nav class="gallery-filters" aria-label="Filter by medium">
+  <a href="/art/">All</a>
+  {{ range .Site.Taxonomies.medium }}
+  {{ $term := .Page }}
+  <a href="{{ $term.RelPermalink }}" {{ if eq $term.Title $.Title }}class="filter-active"{{ end }}>{{ $term.Title }}</a>
+  {{ end }}
+</nav>
+
+<div class="gallery-grid">
+  {{ range .Pages }}
+  <a href="{{ .RelPermalink }}" class="gallery-item">
+    {{ with .Params.image }}
+    <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+    {{ else }}
+    <div class="gallery-placeholder" aria-hidden="true"></div>
+    {{ end }}
+    <div class="gallery-caption">
+      <span class="gallery-title">{{ .Title }}</span>
+      {{ with .Params.medium }}<span class="gallery-medium">{{ . }}</span>{{ end }}
+      {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}
+    </div>
+  </a>
+  {{ end }}
+</div>
+{{ end }}

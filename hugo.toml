@@ -16,16 +16,24 @@ title = "RaihnForge"
     facebook = "https://facebook.com/raihnforge"
     twitter = "https://twitter.com/RaihnForge"
 
+[taxonomies]
+  tag = "tags"
+  medium = "medium"
+
 [menu]
   [[menu.main]]
-    name = "Work"
+    name = "Design"
     url = "/art/"
     weight = 1
   [[menu.main]]
+    name = "Products"
+    url = "/gamedev/"
+    weight = 2
+  [[menu.main]]
     name = "Journal"
     url = "/blog/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 4
