@@ -2,17 +2,19 @@
 
 ## Current Status
 
-**Hugo static site** — 255+ content files, zero build errors, Decap CMS configured.
-Migrated from WordPress.com (232 posts, 7 pages, 683 media files).
+**Hugo static site** — 257 content `.md` files across nested sections, Sveltia CMS configured.
+Originally imported from WordPress.com (232 posts, 7 pages, 683 media files) in Feb 2026, then restructured into nested Hugo sections on 2026-03-01 with category/product navigation.
 
-| Section | Content Files | Nav Label |
-|---------|---------------|-----------|
-| `content/art/` | 180 (+ _index.md) | "Visual Design" / "Design" |
-| `content/blog/` | 37 (+ _index.md) | "Journal" |
-| `content/gamedev/` | 38 (+ _index.md) | "Products" |
-| `content/about.md` | 1 | "About" |
+| Section | Nav Label | Structure |
+|---------|-----------|-----------|
+| `content/art/` | "Design" | 5 subcategories: `branding` (36), `esports` (36), `fine-art` (3), `illustration` (79), `study` (41) — counts incl. `_index.md` |
+| `content/gamedev/` | "Products" | 7 product folders, each with `_index.md` + devlog child posts (e.g. `mecromage/` has 16) |
+| `content/blog/` | "Journal" | 19 flat posts |
+| `content/about.md` | "About" | Single page |
 
-**Build:** `hugo` — builds in ~400ms, 1463 pages, 165 static files.
+**Build:** `hugo` — builds in ~330ms, 1470 pages, 512 static files.
+
+**Archived content:** 99 pre-2016 recovered posts carry `archived: true`. Pages remain reachable at direct URLs with an archive notice, but are hidden from section listings, category counts, and homepage features (archived 2026-03-01, commit `4c52908`).
 
 ---
 
@@ -20,8 +22,8 @@ Migrated from WordPress.com (232 posts, 7 pages, 683 media files).
 
 - **Hugo** static site generator (v0.157.0 local, v0.147.0 in CI)
 - **No external theme** — custom layouts in `layouts/`
-- **No JavaScript** — pure CSS, except Decap CMS admin panel
-- **Decap CMS** at `/admin/` for content management (GitHub backend)
+- **No JavaScript** — pure CSS, except Sveltia CMS admin panel
+- **Sveltia CMS** at `/admin/` for content management (GitHub backend; migrated from Decap on 2026-03-01)
 - **Deploy:** GitHub Actions → gh-pages branch
 
 ### Key Directories
@@ -47,7 +49,7 @@ scripts/          # Import tools (import-wordpress.py)
 
 ## Content Types & Front Matter
 
-### Art (`content/art/*.md`)
+### Art (`content/art/<category>/*.md`)
 ```yaml
 title: ""
 date: YYYY-MM-DD
@@ -58,6 +60,7 @@ medium: ""        # Digital, Pencil, Acrylic, Mixed Media, etc.
 year: 2007
 featured: false   # Show on homepage
 recovered: false  # Lost external media
+archived: false   # Hide from listings; URL stays live
 draft: false
 ```
 
@@ -69,24 +72,28 @@ description: ""
 tags: []
 image: ""
 recovered: false
+archived: false
 draft: false
 ```
 
-### Game Dev (`content/gamedev/*.md`)
+### Game Dev / Products (`content/gamedev/<product>/_index.md` + child posts)
 ```yaml
 title: ""
 date: YYYY-MM-DD
 description: ""
 tags: []
 image: ""
-status: ""        # Released, In Progress, Concept
-engine: ""
+status: ""        # Released, In Progress, In Development, Concept
+engine: ""        # Optional — for software products
 role: ""          # Joshua's role
-timeline: ""      # e.g. "2009-2018"
+timeline: ""      # e.g. "2009-2018" or "2024–Present"
 featured: false
 recovered: false
+archived: false
 draft: false
 ```
+
+Products are folders, not flat files — each one has an `_index.md` for the product overview, with child `.md` files as devlog entries.
 
 ---
 
@@ -110,6 +117,8 @@ URLs stay as `/art/`, `/blog/`, `/gamedev/`. Nav labels are reframed:
 > *Some media from this post was originally hosted externally and could not be recovered.*
 
 Styled via `.recovered-notice` in style.css.
+
+Of these 180 recovered posts, the 99 dated pre-2016 additionally carry `archived: true` — see the Archived content note in Current Status.
 
 ---
 
@@ -140,10 +149,10 @@ hugo --gc               # Build + garbage collect
 
 ## CMS
 
-Decap CMS at `/admin/`:
+Sveltia CMS at `/admin/` (migrated from Decap on 2026-03-01, commit `2ec087c`):
 - GitHub backend: `RaihnForge/raihnforge-www` / `main`
-- Editorial workflow enabled (draft → review → publish)
 - Collections: art, blog, gamedev, pages (about)
+- Custom dashboard extension at `/admin/dashboard/` for content management (reorder, validate, merge, duplicate)
 
 ---
 
