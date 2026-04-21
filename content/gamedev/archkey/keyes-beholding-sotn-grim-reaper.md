@@ -5,6 +5,7 @@ description: "Speed painting video of the Grim Reaper from Castlevania: Symphony
 tags: ["2d sprite", "Art Study", "Castlevania", "Death", "Digital Painting", "Grim", "Illustration", "Indie Game Blog", "Joshua Keyes", "Muse", "Raihn", "Reaper", "SotN", "Speed Painting", "Symphony of the Night", "photoshop"]
 aliases:
   - "/gamedev/keyes-beholding-sotn-grim-reaper/"
+  - "/gamedev/verg-castleroid/keyes-beholding-sotn-grim-reaper/"
 draft: false
 
 ---

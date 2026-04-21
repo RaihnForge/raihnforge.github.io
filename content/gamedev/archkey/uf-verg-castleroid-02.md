@@ -6,6 +6,7 @@ tags: ["Castlevania", "Game Dev", "Joshua B. Keyes", "pixelart"]
 image: "/images/wp-imports/blog/cv11_scenescreen_demo_01.gif"
 aliases:
   - "/gamedev/uf-verg-castleroid-02/"
+  - "/gamedev/verg-castleroid/uf-verg-castleroid-02/"
 draft: false
 ---
 ![](/images/wp-imports/blog/cv11_scenescreen_demo_02.gif)

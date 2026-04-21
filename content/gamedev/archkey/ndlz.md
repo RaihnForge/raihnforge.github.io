@@ -8,6 +8,8 @@ role: "Developer & Designer"
 timeline: "2022"
 featured: true
 image: "/images/gamedev/ndlz.png"
+aliases:
+  - "/gamedev/ndlz/"
 draft: false
 ---
 NDLZ – The Sixth Prime is a game built for JS13K Games 2022, a competition where the entire game — code, assets, and all — must fit within 13 kilobytes.

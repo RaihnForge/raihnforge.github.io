@@ -8,9 +8,32 @@ Originally imported from WordPress.com (232 posts, 7 pages, 683 media files) in 
 | Section | Nav Label | Structure |
 |---------|-----------|-----------|
 | `content/art/` | "Design" | 5 subcategories: `branding` (36), `esports` (36), `fine-art` (3), `illustration` (79), `study` (41) — counts incl. `_index.md` |
-| `content/gamedev/` | "Products" | 7 product folders, each with `_index.md` + devlog child posts (e.g. `mecromage/` has 16) |
+| `content/gamedev/` | "Products" | 6 active product buckets + 1 archived (`ezibg`). Active: `archkey`, `forge-framework`, `mecromage`, `mellon-os`, `my-drink`, `ttrpg` |
 | `content/blog/` | "Journal" | 19 flat posts |
 | `content/about.md` | "About" | Single page |
+
+### Products structure (2026-04-20 restructure)
+
+The Products section was consolidated on 2026-04-20 around what Joshua is actively building. Each bucket has an `_index.md` overview and optional devlog children.
+
+**Narrative architecture:** Mecromage holds the long creative arc (Unchosen Paths era → postmortem → rebuild), and Archkey Studio is the new vehicle — an AI-assisted game dev studio that finishes the work the old studio couldn't. The two pages cross-reference each other.
+
+| Bucket | Status | Role | Content |
+|--------|--------|------|---------|
+| `archkey/` | In Development | Developer, Artist & Director | AI-assisted game dev studio. Holds former `verg-castleroid/` (8 U2DTS posts) + NDLZ as a child. 9 devlog children. |
+| `forge-framework/` | In Development | Creator & Author | Organizational management theory |
+| `mecromage/` | In Progress | Producer, Artist & Game Director | The through-line project. `_index.md` contains full UP postmortem + Archkey redemption arc. 23 devlog children (15 original + 2 UP daily diaries + 6 process posts from former `indie-dev-dues/`); 9 are `archived: true` (pre-2016 recovered). |
+| `mellon-os/` | In Development | Architect & Developer | Windowed desktop environment shell |
+| `my-drink/` | In Development | Creator & Developer | PWA drink-order builder |
+| `ttrpg/` | Released | Creator & Developer | FASERIP character generator |
+| `ezibg/` | Archived | — | 2019 wallpaper product. `archived: true`, hidden from listings but URL live |
+
+Deprecated sections (`verg-castleroid`, `indie-dev-dues`, `ndlz`, `unchosen-paths`) redirect to their new homes via Hugo `aliases` frontmatter.
+
+- `indie-dev-dues/` → `/gamedev/mecromage/` (all 8 posts moved there)
+- `unchosen-paths/` → `/gamedev/mecromage/`
+- `verg-castleroid/` → `/gamedev/archkey/`
+- `ndlz/` → `/gamedev/archkey/ndlz/`
 
 **Build:** `hugo` — builds in ~330ms, 1470 pages, 512 static files.
 

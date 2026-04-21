@@ -1051,6 +1051,50 @@ a:hover {
   object-fit: cover;
 }
 
+.project-icon-banner {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  --banner-tint: var(--bg-hover);
+  background:
+    radial-gradient(ellipse at 50% 115%, var(--banner-tint) 0%, transparent 72%),
+    linear-gradient(180deg, var(--bg-hover) 0%, var(--bg-surface) 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.project-icon-banner .project-icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 22%;
+  box-shadow:
+    0 1px 2px rgba(10, 15, 30, 0.08),
+    0 8px 20px rgba(10, 15, 30, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+[data-theme="dark"] .project-icon-banner {
+  background:
+    radial-gradient(ellipse at 50% 115%, color-mix(in srgb, var(--banner-tint) 40%, #0E1118) 0%, transparent 72%),
+    linear-gradient(180deg, #12151C 0%, var(--bg-surface) 100%);
+}
+
+[data-theme="dark"] .project-icon-banner .project-icon {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.45),
+    0 10px 22px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+@media (min-width: 700px) {
+  .project-icon-banner .project-icon {
+    width: 84px;
+    height: 84px;
+  }
+}
+
 .project-placeholder {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -1832,6 +1876,13 @@ a:hover {
   padding: 0.15rem 0.6rem;
   border-radius: 100px;
   font-weight: 600;
+}
+
+.project-active {
+  font-size: var(--text-xs);
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 /* ============================================================

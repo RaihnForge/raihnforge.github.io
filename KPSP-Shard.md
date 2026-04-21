@@ -62,6 +62,41 @@ Unscoped ideas and future work. Not prioritized, not committed.
 - [ ] Set up custom domain if not already configured
 - [ ] Add OpenGraph and social sharing meta tags per section
 
+## Session Notes — 2026-04-20 (Products Relaunch)
+
+**Context:** Live GitHub Pages URL `raihnforge.github.io` was serving a stale placeholder from a different repo (`RaihnForge/raihnforge.github.io`) — the Hugo site at localhost was mature but not publicly visible. Also, Products section groupings were tied to old studio-era identifiers that no longer matched what Joshua is actively building.
+
+**Products restructure — new 6-bucket structure under `content/gamedev/`:**
+
+The narrative spine: Mecromage is the through-line creative project. Archkey Studio is the new vehicle — AI-assisted game dev — that redeems the Unchosen Paths era and finishes what the old studio couldn't.
+
+1. **Archkey Studio** (new) — AI-assisted game dev studio. Forward-looking research home. Holds all 8 former `verg-castleroid/` posts (U2DTS study) and NDLZ as a child showcase.
+2. **Forge Framework** — kept as-is.
+3. **Mecromage** — `_index.md` rewritten as a three-chapter arc: the original Unchosen Paths studio (2009–2018), the honest postmortem, and the Archkey-era rebuild. Absorbs all of Unchosen Paths' history plus all 8 `indie-dev-dues/` posts as legacy devlogs.
+4. **mellonOS** (new) — desktop environment shell, seeded overview.
+5. **My Drink** (new) — PWA drink-order builder, seeded overview.
+6. **TTRPG Character Generator** (new) — FASERIP char gen, seeded overview, marked Released.
+
+**Deprecated & archived:**
+- `verg-castleroid/`, `indie-dev-dues/`, `ndlz/`, `unchosen-paths/` — folders removed, content redistributed.
+- `ezibg/` — marked `archived: true`. URL still live but filtered from listings.
+- 20 Hugo `aliases` added on moved pages and deprecated section roots for URL continuity.
+
+**Layout polish:**
+- Homepage hero eyebrow now surfaces `role` param ("Product Owner & Creative Producer") instead of author name.
+- Products list page (`layouts/gamedev/list.html`) now filters archived sections and displays an "● Actively updated" micro-label (accent color) on cards whose _index.md or newest child post date is within 90 days.
+- New `.project-active` CSS class added.
+
+**Pillar docs synced:**
+- `ARCHITECTURE.md` — updated gamedev tree, added URL aliasing section, fixed Sveltia CMS naming, updated build stats.
+- `CLAUDE.md` — updated Products table to 6-bucket structure, documented absorption mappings.
+- `MEMORY.md` — breadcrumbed the relaunch milestone.
+
+**Deploy cutover (user action pending):**
+- Rename `RaihnForge/raihnforge-www` → `RaihnForge/raihnforge.github.io` (after deleting existing placeholder repo) so this Hugo site takes the org-root URL.
+- Local git remote needs `git remote set-url origin https://github.com/RaihnForge/raihnforge.github.io.git` after rename.
+- Workflow may need `publish_branch` adjustment — GitHub Pages org/user pages can still serve from `gh-pages` branch under current settings, but verify after rename.
+
 ## Session Notes — 2026-03-30 (Demo Polish Pass)
 
 **Completed improvements:**

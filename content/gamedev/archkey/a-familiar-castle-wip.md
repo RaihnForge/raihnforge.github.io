@@ -6,6 +6,7 @@ tags: ["Art Study", "Castlevania", "Fan Art", "Game Graphics", "Indie Game Art",
 image: "/images/wp-imports/gamedev/cropped-cv1-1b_000-copy.png"
 aliases:
   - "/gamedev/a-familiar-castle-wip/"
+  - "/gamedev/verg-castleroid/a-familiar-castle-wip/"
 draft: false
 ---
 ![](/images/wp-imports/gamedev/cv1-1b_000-copy.png)

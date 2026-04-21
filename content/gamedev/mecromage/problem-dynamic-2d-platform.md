@@ -5,6 +5,7 @@ description: ".. what am I really illustrating?"
 tags: ["Design", "Game Design", "Indie Game Blog", "Indie Game Design", "Muse"]
 aliases:
   - "/gamedev/problem-dynamic-2d-platform/"
+  - "/gamedev/indie-dev-dues/problem-dynamic-2d-platform/"
 archived: true
 draft: false
 recovered: true

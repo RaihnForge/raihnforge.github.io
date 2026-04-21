@@ -5,6 +5,7 @@ description: "2011.10.25 - Goal: Generate a screen shot of a game more rooted in
 tags: ["Design", "E2D", "Game Design", "Indie Game Art", "Indie Game Blog", "Indie Game Design", "Indie Game development", "Indie game Concept Art", "Joshua Keyes", "Raihn", "Speed Painting", "Unchosen Paths", "daily grind", "photoshop"]
 aliases:
   - "/gamedev/daily-diary/"
+  - "/gamedev/indie-dev-dues/daily-diary/"
 archived: true
 draft: false
 recovered: true

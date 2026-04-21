@@ -5,6 +5,7 @@ description: My first mini project using the Tiled application was an enjoyable 
 tags: ["C5", "Game Graphics", "Indie Game Art", "Tiled", "Topdown Shooter", "Videogame Art", "Videogame Graphics", "graphics"]
 aliases:
   - "/gamedev/tiled-shooter-game-reskin/"
+  - "/gamedev/indie-dev-dues/tiled-shooter-game-reskin/"
 draft: false
 
 ---

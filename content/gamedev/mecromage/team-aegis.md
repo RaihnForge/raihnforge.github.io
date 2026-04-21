@@ -6,6 +6,7 @@ tags: ["Cartooning", "Digital Painting", "Illustration", "Imagine", "Indie Game 
 image: "/images/wp-imports/gamedev/faces_lg.png"
 aliases:
   - "/gamedev/team-aegis/"
+  - "/gamedev/indie-dev-dues/team-aegis/"
 draft: false
 ---
 ![faces_lg](/images/wp-imports/gamedev/faces_lg.png)

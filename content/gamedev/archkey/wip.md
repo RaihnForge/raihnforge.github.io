@@ -6,6 +6,7 @@ tags: ["Game Graphics", "Indie Game Design", "Pixel Art"]
 image: "/images/wp-imports/gamedev/colortheory01.png"
 aliases:
   - "/gamedev/wip/"
+  - "/gamedev/verg-castleroid/wip/"
 draft: false
 ---
 ![](/images/wp-imports/gamedev/colortheory01.png)

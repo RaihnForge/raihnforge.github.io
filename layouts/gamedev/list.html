@@ -9,10 +9,16 @@
 </div>
 
 <div class="project-grid">
-  {{ range .Sections }}
-  <a href="{{ .RelPermalink }}" class="project-card">
-    {{ with .Params.image }}
-    <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+  {{ $activeThreshold := now.AddDate 0 0 -90 }}
+  {{ range where .Sections "Params.archived" "ne" true }}
+  <a href="{{ .RelPermalink }}" class="project-card{{ if .Params.icon }} has-icon{{ end }}">
+    {{ $src := .Params.icon | default .Params.image }}
+    {{ if .Params.icon }}
+    <div class="project-icon-banner" aria-hidden="true"{{ with .Params.banner_tint }} style="--banner-tint: {{ . }};"{{ end }}>
+      <img src="{{ $src }}" alt="{{ .Title }}" loading="lazy" class="project-icon" />
+    </div>
+    {{ else if $src }}
+    <img src="{{ $src }}" alt="{{ .Title }}" loading="lazy" class="project-image" />
     {{ else }}
     <div class="project-placeholder" aria-hidden="true"></div>
     {{ end }}
@@ -23,9 +29,17 @@
         {{ with .Params.status }}
         <span class="project-status status-{{ . | lower | replaceRE " " "-" }}">{{ . }}</span>
         {{ end }}
-        {{ $count := len (where .RegularPagesRecursive "Params.archived" "ne" true) }}
+        {{ $posts := where .RegularPagesRecursive "Params.archived" "ne" true }}
+        {{ $count := len $posts }}
         {{ if gt $count 0 }}
         <span class="project-card-count">{{ $count }} {{ if eq $count 1 }}entry{{ else }}entries{{ end }}</span>
+        {{ end }}
+        {{ $latestDate := .Date }}
+        {{ with (index (sort $posts "Date" "desc") 0) }}
+          {{ if gt .Date $latestDate }}{{ $latestDate = .Date }}{{ end }}
+        {{ end }}
+        {{ if gt $latestDate $activeThreshold }}
+        <span class="project-active" title="Updated within the last 90 days">● Actively updated</span>
         {{ end }}
       </div>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}

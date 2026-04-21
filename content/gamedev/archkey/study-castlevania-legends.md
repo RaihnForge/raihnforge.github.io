@@ -6,6 +6,7 @@ tags: ["Castlevania", "Design", "Dracula", "Game Art", "Game Design", "Game Grap
 image: "/images/wp-imports/gamedev/wip00.png"
 aliases:
   - "/gamedev/study-castlevania-legends/"
+  - "/gamedev/verg-castleroid/study-castlevania-legends/"
 draft: false
 
 ---

@@ -5,6 +5,7 @@ description: A new series of speed painting videos called, \"Pixel Interpretatio
 tags: ["Art", "Belmont", "Castle", "Castlevania 3", "Digital Painting", "Dracula", "Gaming Art", "Illustration", "Indie Game Blog", "Interpretations", "Introduction", "Joshua Keyes", "NES", "Nintendo", "Old School Gaming", "Painting", "Pixel", "Redux", "Remix", "Speed Painting", "Timelapse", "Trevor", "photoshop"]
 aliases:
   - "/gamedev/pixel-interpretations-castlevania-3-intro-scene-trevor/"
+  - "/gamedev/verg-castleroid/pixel-interpretations-castlevania-3-intro-scene-trevor/"
 draft: false
 ---
 A new series of speed painting videos called, "Pixel Interpretations" show me rendering out game pixel-ized images producing an outcome of how I imagine the subject to be.

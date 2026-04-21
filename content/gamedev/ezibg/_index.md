@@ -7,7 +7,8 @@ engine: "N/A"
 role: "Creator & Designer"
 timeline: "2019"
 image: "/images/gamedev/ezibg.png"
-featured: true
+featured: false
+archived: true
 draft: false
 ---
 EZi BackGrounds is a collection of desktop wallpapers designed around one principle: be gentle on the eyes.

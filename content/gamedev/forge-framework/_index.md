@@ -6,6 +6,9 @@ status: "In Development"
 role: "Creator & Author"
 timeline: "2024–Present"
 featured: true
+image: "/images/gamedev/forge-framework.png"
+icon: "/images/gamedev/icons/forge-framework.svg"
+banner_tint: "#E89F60"
 draft: false
 ---
 

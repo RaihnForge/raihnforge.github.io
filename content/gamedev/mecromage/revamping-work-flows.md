@@ -5,6 +5,7 @@ description: I’ve be pretty crippled by the abundance of work that I must do i
 tags: ["Indie Game Blog", "Muse", "Unchosen Paths", "eMUSE"]
 aliases:
   - "/gamedev/revamping-work-flows/"
+  - "/gamedev/indie-dev-dues/revamping-work-flows/"
 archived: true
 draft: false
 recovered: true

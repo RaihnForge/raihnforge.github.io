@@ -5,6 +5,7 @@ description: This Spring, 2014 a few family member of mine dedicated themselves 
 tags: ["Concept Keyes", "Design", "Digital Painting", "Family", "Illustration", "Indie Game Blog", "Joshua Keyes", "Product Design", "T-Shirt", "Unchosen Paths"]
 aliases:
   - "/gamedev/keyes-possibilities/"
+  - "/gamedev/indie-dev-dues/keyes-possibilities/"
 draft: false
 
 ---

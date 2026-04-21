@@ -1,0 +1,26 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="mellonOS">
+  <defs>
+    <linearGradient id="bg-mellon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173B4F"/>
+      <stop offset="1" stop-color="#4FA4C7"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg-mellon)"/>
+  <g fill="none" stroke="#F4FAFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="124" y="156" width="244" height="172" rx="18" opacity="0.5"/>
+    <line x1="124" y1="192" x2="368" y2="192" opacity="0.5"/>
+    <rect x="162" y="196" width="244" height="172" rx="18" fill="#173B4F"/>
+    <rect x="162" y="196" width="244" height="172" rx="18"/>
+    <line x1="162" y1="232" x2="406" y2="232"/>
+  </g>
+  <g fill="#F4FAFF">
+    <circle cx="186" cy="214" r="6"/>
+    <circle cx="208" cy="214" r="6"/>
+    <circle cx="230" cy="214" r="6"/>
+  </g>
+  <g fill="none" stroke="#F4FAFF" stroke-width="12" stroke-linecap="round">
+    <line x1="186" y1="268" x2="300" y2="268"/>
+    <line x1="186" y1="298" x2="378" y2="298"/>
+    <line x1="186" y1="328" x2="260" y2="328"/>
+  </g>
+</svg>

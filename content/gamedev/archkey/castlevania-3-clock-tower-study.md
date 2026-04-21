@@ -6,6 +6,7 @@ tags: ["2d game", "Castlevania 3", "Classic", "Fan Art", "Game Graphics", "HDrem
 image: "/images/wp-imports/gamedev/clocktowerstudy01.png"
 aliases:
   - "/gamedev/castlevania-3-clock-tower-study/"
+  - "/gamedev/verg-castleroid/castlevania-3-clock-tower-study/"
 draft: false
 ---
 Nostalgia is not only a powerful source of motivation, but it incentives us to explore contemporary concepts from the past and carry forward that which stands the test of time.  In this vein I enjoy taking a break from my usual set of tasks in order to pay respects to the masters of the past, and to hopefully glean some bit of knowledge myself.

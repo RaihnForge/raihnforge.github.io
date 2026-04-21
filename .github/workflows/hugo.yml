@@ -25,11 +25,16 @@ jobs:
           extended: true
 
       - name: Build
-        # Set --baseURL to your GitHub Pages URL or custom domain
-        # e.g. "https://<username>.github.io/" or "https://raihnforge.com/"
+        # baseURL resolves to https://raihnforge.github.io/ for both project-pages
+        # (raihnforge-www) and org-pages (raihnforge.github.io) layouts.
+        # For a custom domain, swap in e.g. "https://raihnforge.com/" and add a CNAME.
         run: hugo --minify --baseURL "https://${{ github.repository_owner }}.github.io/"
 
       - name: Deploy
+        # Pushes built site to the gh-pages branch.
+        # After repo rename to <owner>.github.io: in repo Settings → Pages,
+        # set "Build and deployment" source to branch `gh-pages` / root (not `main`).
+        # This keeps the main branch as source code and gh-pages as the published artifact.
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

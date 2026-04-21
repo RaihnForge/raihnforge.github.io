@@ -6,6 +6,7 @@ tags: ["2d", "Castlevania", "Indie Game Art", "Inspiration", "Mecromage", "Study
 image: "/images/wp-imports/blog/forest.png"
 aliases:
   - "/gamedev/side-scrolling-study/"
+  - "/gamedev/verg-castleroid/side-scrolling-study/"
 draft: false
 
 ---
