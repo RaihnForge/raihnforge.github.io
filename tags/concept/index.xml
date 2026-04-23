@@ -1,2 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concept on RaihnForge</title><link>https://RaihnForge.github.io/tags/concept/</link><description>Recent content in Concept on RaihnForge</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 29 Dec 2010 00:00:00 +0000</lastBuildDate><atom:link href="https://RaihnForge.github.io/tags/concept/index.xml" rel="self" type="application/rss+xml"/><item><title>The Heart of a Man</title><link>https://RaihnForge.github.io/art/study/un-homme-de-coeur-speed-painting/</link><pubDate>Wed, 29 Dec 2010 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/art/study/un-homme-de-coeur-speed-painting/</guid><description>&lt;p>&lt;a href="http://www.joshuakeyes.us/wordpress/raihn/images/Un-Homme-de-Coeur-Speed-Painting_28DE/the-Heart-of-a-Man.jpg">&lt;img src="https://RaihnForge.github.io/images/recovered/the-Heart-of-a-Man_thumb.jpg" alt="the Heart of a Man" title="the Heart of a Man">&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Concept on RaihnForge</title><link>https://RaihnForge.github.io/tags/concept/</link><description>Recent content in Concept on RaihnForge</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 09 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://RaihnForge.github.io/tags/concept/index.xml" rel="self" type="application/rss+xml"/><item><title>Interactive SQL Visualizer — a Concept</title><link>https://RaihnForge.github.io/blog/interactive-sql-visualizer-concept/</link><pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/blog/interactive-sql-visualizer-concept/</guid><description>&lt;p>This concept transforms SQL queries into visual events in a top-down RPG-style town visualizer. Every SQL command becomes a building, villager, or infrastructure change, creating a living, evolving data town.&lt;/p>
+&lt;h2 id="event-mapping">Event Mapping&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>SQL Concept&lt;/th>
+ &lt;th>Visualizer Action&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>SELECT ... FROM&lt;/code>&lt;/td>
+ &lt;td>Spawn a house for each table touched&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>WHERE&lt;/code>&lt;/td>
+ &lt;td>Draw roads to filtered houses&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>JOIN&lt;/code>&lt;/td>
+ &lt;td>Build walls or bridges between table houses&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>GROUP BY&lt;/code>&lt;/td>
+ &lt;td>Place a market square with stalls&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>ORDER BY&lt;/code>&lt;/td>
+ &lt;td>Align road lights in sequence&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>INSERT&lt;/code>&lt;/td>
+ &lt;td>Add villagers entering town&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>UPDATE&lt;/code>&lt;/td>
+ &lt;td>Upgrade a building level&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>DELETE&lt;/code>&lt;/td>
+ &lt;td>Demolish a structure&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CREATE TABLE&lt;/code>&lt;/td>
+ &lt;td>Lay foundations&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>DROP TABLE&lt;/code>&lt;/td>
+ &lt;td>Collapse ruins with a dust puff&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="sample-visualizer-output">Sample Visualizer Output&lt;/h2>
+&lt;p>&lt;img src="https://RaihnForge.github.io/images/wp-imports/visualizer_proto.png" alt="Early prototype sketch">&lt;/p></description></item><item><title>The Heart of a Man</title><link>https://RaihnForge.github.io/art/study/un-homme-de-coeur-speed-painting/</link><pubDate>Wed, 29 Dec 2010 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/art/study/un-homme-de-coeur-speed-painting/</guid><description>&lt;p>&lt;a href="http://www.joshuakeyes.us/wordpress/raihn/images/Un-Homme-de-Coeur-Speed-Painting_28DE/the-Heart-of-a-Man.jpg">&lt;img src="https://RaihnForge.github.io/images/recovered/the-Heart-of-a-Man_thumb.jpg" alt="the Heart of a Man" title="the Heart of a Man">&lt;/a>&lt;/p>
 &lt;p>This was another practice of listening to a specific song on repeat the entire time that I work on a piece.  The track is then used for the background music in the speedpainting.  The hope is that the piece really reflects something in the music, and it forces a lot of creativity from me even when I might not feel the most creative.&lt;/p></description></item></channel></rss>

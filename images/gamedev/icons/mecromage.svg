@@ -1,0 +1,30 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mecromage">
+  <defs>
+    <linearGradient id="bg-mecromage" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F2230"/>
+      <stop offset="1" stop-color="#5B3F8A"/>
+    </linearGradient>
+    <g id="mec-tooth">
+      <path d="M -14 -126 L 14 -126 L 10 -106 L -10 -106 Z"/>
+    </g>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg-mecromage)"/>
+  <g transform="translate(256 280)" fill="none" stroke="#F0E6FF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#mec-tooth"/>
+    <use href="#mec-tooth" transform="rotate(45)"/>
+    <use href="#mec-tooth" transform="rotate(90)"/>
+    <use href="#mec-tooth" transform="rotate(135)"/>
+    <use href="#mec-tooth" transform="rotate(180)"/>
+    <use href="#mec-tooth" transform="rotate(225)"/>
+    <use href="#mec-tooth" transform="rotate(270)"/>
+    <use href="#mec-tooth" transform="rotate(315)"/>
+    <circle r="94"/>
+    <path d="M 0 -28 L 26 0 L 0 28 L -26 0 Z"/>
+  </g>
+  <g transform="translate(256 160)" fill="none" stroke="#E9B84A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="0" y1="-30" x2="0" y2="30"/>
+    <line x1="-30" y1="0" x2="30" y2="0"/>
+    <line x1="-20" y1="-20" x2="20" y2="20"/>
+    <line x1="-20" y1="20" x2="20" y2="-20"/>
+  </g>
+</svg>

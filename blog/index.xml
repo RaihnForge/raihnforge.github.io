@@ -3,7 +3,60 @@
 &lt;p>Created exclusively for the &lt;strong>Back2Warcraft (B2W)&lt;/strong> Twitch community, these avatars can be purchased through &lt;a href="https://matcherino.com/t/w3cfinals22">Matcherino&lt;/a> to support the tournament prize pool. Every purchase fuels community competition and keeps the spirit of Warcraft III alive.&lt;/p>
 &lt;hr>
 &lt;h3 id="the-process-from-sketch-to-flame">The Process: From Sketch to Flame&lt;/h3>
-&lt;p>This series honors the legendary heroes of Warcraft III while reimagining them through the mythos of the &lt;strong>Ash Keepers&lt;/strong> — a spectral order inspired by the &lt;em>Ashbringer&lt;/em> legend.&lt;/p></description></item><item><title>MUSE: Perspectives</title><link>https://RaihnForge.github.io/blog/muse-perspectives/</link><pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/blog/muse-perspectives/</guid><description>&lt;p>&lt;em>Place for me to put my philosophies etc.&lt;/em>&lt;/p>
+&lt;p>This series honors the legendary heroes of Warcraft III while reimagining them through the mythos of the &lt;strong>Ash Keepers&lt;/strong> — a spectral order inspired by the &lt;em>Ashbringer&lt;/em> legend.&lt;/p></description></item><item><title>Interactive SQL Visualizer — a Concept</title><link>https://RaihnForge.github.io/blog/interactive-sql-visualizer-concept/</link><pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/blog/interactive-sql-visualizer-concept/</guid><description>&lt;p>This concept transforms SQL queries into visual events in a top-down RPG-style town visualizer. Every SQL command becomes a building, villager, or infrastructure change, creating a living, evolving data town.&lt;/p>
+&lt;h2 id="event-mapping">Event Mapping&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>SQL Concept&lt;/th>
+ &lt;th>Visualizer Action&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>SELECT ... FROM&lt;/code>&lt;/td>
+ &lt;td>Spawn a house for each table touched&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>WHERE&lt;/code>&lt;/td>
+ &lt;td>Draw roads to filtered houses&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>JOIN&lt;/code>&lt;/td>
+ &lt;td>Build walls or bridges between table houses&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>GROUP BY&lt;/code>&lt;/td>
+ &lt;td>Place a market square with stalls&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>ORDER BY&lt;/code>&lt;/td>
+ &lt;td>Align road lights in sequence&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>INSERT&lt;/code>&lt;/td>
+ &lt;td>Add villagers entering town&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>UPDATE&lt;/code>&lt;/td>
+ &lt;td>Upgrade a building level&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>DELETE&lt;/code>&lt;/td>
+ &lt;td>Demolish a structure&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>CREATE TABLE&lt;/code>&lt;/td>
+ &lt;td>Lay foundations&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>DROP TABLE&lt;/code>&lt;/td>
+ &lt;td>Collapse ruins with a dust puff&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="sample-visualizer-output">Sample Visualizer Output&lt;/h2>
+&lt;p>&lt;img src="https://RaihnForge.github.io/images/wp-imports/visualizer_proto.png" alt="Early prototype sketch">&lt;/p></description></item><item><title>MUSE: Perspectives</title><link>https://RaihnForge.github.io/blog/muse-perspectives/</link><pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/blog/muse-perspectives/</guid><description>&lt;p>&lt;em>Place for me to put my philosophies etc.&lt;/em>&lt;/p>
 &lt;h2 id="gaming-good-or-bad">Gaming, Good or Bad?&lt;/h2>
 &lt;p>It is. Too much can be terrible for you, too little and one may miss out it&amp;rsquo;s bevy of benefits. My measure of difference is if I&amp;rsquo;m taking what I&amp;rsquo;m doing in the game out of the game, in some productive or positive way.&lt;/p>
 &lt;p>Often this is art or graphics inspired. Nearly as much is fuel for the social circle to keep on turning. Other times it&amp;rsquo;s philological therapy, where I can escape to the woods to build a camp in fallout, or engage in such demanding competition that all other mental harassment must abide.&lt;/p></description></item><item><title>WORKSHOP</title><link>https://RaihnForge.github.io/blog/workshop/</link><pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/blog/workshop/</guid><description>&lt;p>&lt;em>Welcome to my personal Index of just a few things currently on my mind.&lt;/em>&lt;/p>
