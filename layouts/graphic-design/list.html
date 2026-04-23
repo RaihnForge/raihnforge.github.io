@@ -1,0 +1,78 @@
+{{ define "main" }}
+<article class="gd-showcase">
+  <header class="gd-hero">
+    <p class="hero-eyebrow">Selected graphic design work</p>
+    <h1 class="gd-hero-title">{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="gd-hero-lede">{{ . }}</p>{{ end }}
+    {{ with .Content }}<div class="gd-hero-intro">{{ . }}</div>{{ end }}
+
+    {{ with .Params.capabilities }}
+    <ul class="gd-capabilities" aria-label="Disciplines">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+  </header>
+
+  <nav class="gd-toc" aria-label="Case studies">
+    {{ range .Params.case_studies }}
+    <a href="#{{ .slug }}">{{ .title }}<span class="gd-toc-years"> · {{ .years }}</span></a>
+    {{ end }}
+  </nav>
+
+  {{ range $i, $cs := .Params.case_studies }}
+  <section class="gd-case" id="{{ .slug }}" aria-labelledby="{{ .slug }}-title">
+    <header class="gd-case-header">
+      <p class="gd-case-index">0{{ add $i 1 }} / 0{{ len $.Params.case_studies }}</p>
+      <h2 id="{{ .slug }}-title">{{ .title }}</h2>
+      <p class="gd-case-subtitle">{{ .subtitle }}</p>
+      <dl class="gd-case-meta">
+        <div><dt>Years</dt><dd>{{ .years }}</dd></div>
+        <div><dt>Role</dt><dd>{{ .role }}</dd></div>
+        <div><dt>Pieces</dt><dd>{{ len .pieces }}</dd></div>
+      </dl>
+      <p class="gd-case-overview">{{ .overview | safeHTML }}</p>
+      {{ with .link }}
+      <p class="gd-case-link">
+        <a href="{{ .href }}" class="btn-secondary" target="_blank" rel="noopener">{{ .label }} &rarr;</a>
+      </p>
+      {{ end }}
+    </header>
+
+    <div class="gd-pieces">
+      {{ range .pieces }}
+      {{ $href := .external | default .src }}
+      {{ $isVideo := or (strings.Contains ($href) "youtube.com") (strings.Contains ($href) "youtu.be") }}
+      {{ $type := .type | default "" }}
+      {{ $cat := "default" }}
+      {{ if or (eq $type "Logotype") (eq $type "Icon Mark") }}{{ $cat = "brand" }}{{ end }}
+      {{ if eq $type "Video" }}{{ $cat = "video" }}{{ end }}
+      {{ if eq $type "Infographic" }}{{ $cat = "infographic" }}{{ end }}
+      {{ if hasPrefix $type "Print" }}{{ $cat = "print" }}{{ end }}
+      {{ if eq $type "Social Template" }}{{ $cat = "social" }}{{ end }}
+      {{ if or (eq $type "Broadcast Overlay") (eq $type "Event Splash") }}{{ $cat = "broadcast" }}{{ end }}
+      <figure class="gd-piece{{ if $isVideo }} is-video{{ end }}{{ if .external }} is-external{{ end }}" data-category="{{ $cat }}">
+        <a href="{{ $href }}" target="_blank" rel="noopener" aria-label="{{ with .type }}{{ . }}: {{ end }}{{ .caption }}">
+          <span class="gd-piece-frame gd-frame--{{ $cat }}">
+            <img src="{{ .src }}" alt="{{ .caption }}" loading="lazy" />
+            {{ if $isVideo }}<span class="gd-play" aria-hidden="true"></span>{{ end }}
+          </span>
+        </a>
+        <figcaption>
+          {{ with .type }}<span class="gd-piece-type">{{ . }}</span>{{ end }}
+          <span class="gd-piece-caption">{{ .caption }}</span>
+        </figcaption>
+      </figure>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <footer class="gd-outro">
+    <h2>Interested in working together?</h2>
+    <p>Open to Graphic Designer, Art Director, and Product Owner roles.</p>
+    {{ with .Site.Params.email }}
+    <a href="mailto:{{ . }}" class="btn-primary">Let's Talk</a>
+    {{ end }}
+  </footer>
+</article>
+{{ end }}
