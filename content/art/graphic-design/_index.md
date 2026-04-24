@@ -3,7 +3,11 @@ title: "Graphic Design Portfolio"
 description: "Two decades of visual design — brand identity for small businesses, community-service design for veterans, production design for education and mental-health products, and professional esports broadcast graphics."
 date: 2026-04-21
 draft: false
+weight: 1
+aliases:
+  - /graphic-design/
 featured_image: "/images/graphic-design/kwfitness/logo-banner.png"
+image: "/images/graphic-design/kwfitness/logo-banner.png"
 capabilities:
   - "Brand Identity"
   - "Print & Collateral"
@@ -109,4 +113,4 @@ case_studies:
         caption: "Victorious Gaming — overlay branding for a competitive esports organization."
 ---
 
-Selected work across four eras and disciplines: brand identity for **KW Fitness**, community-service design for the **CWU Veterans Center**, lead production design at **Kelvin Education**, and broadcast graphics for professional **esports** organizations. A deeper archive of branding, illustration, and study work is available in the [Archive](/art/).
+Selected work across four eras and disciplines: brand identity for **KW Fitness**, community-service design for the **CWU Veterans Center**, lead production design at **Kelvin Education**, and broadcast graphics for professional **esports** organizations. A deeper archive of branding, illustration, and study work lives in the [full Design archive](/art/).
