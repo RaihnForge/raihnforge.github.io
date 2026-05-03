@@ -1794,6 +1794,251 @@ a:hover {
 }
 
 /* ============================================================
+   Case Study (single-page layout when frontmatter has `pieces:`)
+   ============================================================ */
+.case-study {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.case-study-header {
+  max-width: 760px;
+  margin-bottom: 3rem;
+}
+
+.case-study-header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 0.5rem 0 0.5rem;
+}
+
+.case-study-subtitle {
+  font-size: var(--text-base);
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.case-study-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 540px;
+  gap: 0.25rem 2rem;
+  margin: 0 0 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.case-study-meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.case-study-meta dt {
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.case-study-meta dd {
+  font-size: var(--text-sm);
+  color: var(--text);
+  margin: 0;
+}
+
+.case-study-overview {
+  font-size: var(--text-lg);
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  font-family: var(--font-display);
+}
+
+.case-study-content {
+  font-size: var(--text-lg);
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  font-family: var(--font-display);
+}
+
+.case-study-content p {
+  margin: 0 0 1rem;
+}
+
+.case-study-link {
+  margin: 1.75rem 0 0;
+}
+
+@media (max-width: 640px) {
+  .case-study-meta { grid-template-columns: 1fr; gap: 0.75rem; }
+}
+
+/* ============================================================
+   Bucket Pages — Portfolio + More Work pattern
+   ============================================================ */
+.bucket-section-header {
+  margin-bottom: 1.5rem;
+}
+
+.bucket-section-header h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+
+.bucket-section-subhead {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.portfolio-section {
+  margin-bottom: 3.5rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.75rem;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--border-strong);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.portfolio-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.portfolio-card-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--bg-hover);
+}
+
+.portfolio-card-body {
+  padding: 1.25rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.portfolio-card-body h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  line-height: 1.25;
+}
+
+.portfolio-card:hover h3 {
+  color: var(--accent);
+}
+
+.portfolio-card-meta {
+  display: flex;
+  gap: 0.75rem;
+  font-size: var(--text-xs);
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+.portfolio-card-body p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.more-work-section {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.more-work-section--standalone {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.more-work-section .gallery-section,
+.more-work-section .gallery-archive {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   Design Landing — Sampler + Categories sections
+   ============================================================ */
+.sampler-section,
+.case-studies-section {
+  margin-bottom: 4rem;
+}
+
+.sampler-section .section-header,
+.case-studies-section .section-header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin-bottom: 1.75rem;
+}
+
+.sampler-subhead {
+  font-size: var(--text-base);
+  color: var(--text-muted);
+  line-height: 1.55;
+  max-width: var(--reading-width);
+}
+
+.categories-section {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.categories-section .section-header {
+  margin-bottom: 1.75rem;
+}
+
+/* ============================================================
    Category Cards — Design Section Landing
    ============================================================ */
 .category-grid {

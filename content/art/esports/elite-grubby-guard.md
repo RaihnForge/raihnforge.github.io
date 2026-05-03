@@ -13,7 +13,6 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2012
-
 ---
 [![Grubby Elite Stalker](/images/recovered/Grubby-Elite-Stalker.jpg "Grubby Elite Stalker")](/images/recovered/Grubby-Elite-Stalker.jpg)
 CHEER FOR GRUBBY AT MLG!

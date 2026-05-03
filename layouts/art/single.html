@@ -1,4 +1,81 @@
 {{ define "main" }}
+{{ if .Params.pieces }}
+{{/* ═══════════════════════════════════════════════════════════
+     CASE STUDY layout — pieces array present in frontmatter
+     ═══════════════════════════════════════════════════════════ */}}
+<article class="case-study">
+  <header class="case-study-header">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/art/">Design</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+      <span aria-hidden="true">/</span>
+      {{ .Title }}
+    </nav>
+
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="case-study-subtitle">{{ . }}</p>{{ end }}
+
+    <dl class="case-study-meta">
+      {{ with .Params.timeline }}
+      <div><dt>Timeline</dt><dd>{{ . }}</dd></div>
+      {{ end }}
+      {{ with .Params.role }}
+      <div><dt>Role</dt><dd>{{ . }}</dd></div>
+      {{ end }}
+      <div><dt>Pieces</dt><dd>{{ len .Params.pieces }}</dd></div>
+    </dl>
+
+    {{ with .Description }}<p class="case-study-overview">{{ . }}</p>{{ end }}
+
+    {{ with .Content }}<div class="case-study-content">{{ . }}</div>{{ end }}
+
+    {{ with .Params.link }}
+    <p class="case-study-link">
+      <a href="{{ .href }}" class="btn-secondary" target="_blank" rel="noopener">{{ .label }} &rarr;</a>
+    </p>
+    {{ end }}
+  </header>
+
+  <div class="gd-pieces">
+    {{ range .Params.pieces }}
+    {{ $href := .external | default .src }}
+    {{ $isVideo := or (strings.Contains ($href) "youtube.com") (strings.Contains ($href) "youtu.be") }}
+    {{ $type := .type | default "" }}
+    {{ $cat := "default" }}
+    {{ if or (eq $type "Logotype") (eq $type "Icon Mark") }}{{ $cat = "brand" }}{{ end }}
+    {{ if eq $type "Video" }}{{ $cat = "video" }}{{ end }}
+    {{ if eq $type "Infographic" }}{{ $cat = "infographic" }}{{ end }}
+    {{ if hasPrefix $type "Print" }}{{ $cat = "print" }}{{ end }}
+    {{ if eq $type "Social Template" }}{{ $cat = "social" }}{{ end }}
+    {{ if or (eq $type "Broadcast Overlay") (eq $type "Event Splash") }}{{ $cat = "broadcast" }}{{ end }}
+    <figure class="gd-piece{{ if $isVideo }} is-video{{ end }}{{ if .external }} is-external{{ end }}" data-category="{{ $cat }}">
+      <a href="{{ $href }}" target="_blank" rel="noopener" aria-label="{{ with .type }}{{ . }}: {{ end }}{{ .caption }}">
+        <span class="gd-piece-frame gd-frame--{{ $cat }}">
+          <img src="{{ .src }}" alt="{{ .caption }}" loading="lazy" />
+          {{ if $isVideo }}<span class="gd-play" aria-hidden="true"></span>{{ end }}
+        </span>
+      </a>
+      <figcaption>
+        {{ with .type }}<span class="gd-piece-type">{{ . }}</span>{{ end }}
+        <span class="gd-piece-caption">{{ .caption }}</span>
+      </figcaption>
+    </figure>
+    {{ end }}
+  </div>
+
+  <nav class="post-nav" aria-label="Post navigation">
+    {{ with .PrevInSection }}<a href="{{ .RelPermalink }}" class="post-nav-prev">&larr; {{ .Title }}</a>{{ end }}
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}" class="post-nav-next">{{ .Title }} &rarr;</a>{{ end }}
+  </nav>
+</article>
+
+{{ else }}
+{{/* ═══════════════════════════════════════════════════════════
+     STANDARD ART PIECE layout
+     ═══════════════════════════════════════════════════════════ */}}
 <article class="artwork-detail">
   <div class="artwork-image">
     {{ with .Params.image }}
@@ -52,7 +129,6 @@
     <div class="artwork-content">{{ . }}</div>
     {{ end }}
 
-    {{/* Next/Prev navigation scoped to sub-section siblings */}}
     <nav class="post-nav" aria-label="Post navigation">
       {{ with .PrevInSection }}
       <a href="{{ .RelPermalink }}" class="post-nav-prev">&larr; {{ .Title }}</a>
@@ -63,6 +139,7 @@
     </nav>
   </div>
 </article>
+{{ end }}
 
 {{/* Related works from same sub-section (exclude archived) */}}
 {{ $siblings := where .Parent.RegularPages "Params.archived" "ne" true }}

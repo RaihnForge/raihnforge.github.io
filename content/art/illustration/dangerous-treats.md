@@ -9,6 +9,8 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2015
+sampler: true
+portfolio: true
 ---
 ![dangeroustreats_jbkeyes_by_raihnazure-d9ezsx1](/images/wp-imports/art/dangeroustreats_jbkeyes_by_raihnazure-d9ezsx1.png)
 

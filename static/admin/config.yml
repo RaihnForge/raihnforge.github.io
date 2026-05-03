@@ -22,10 +22,46 @@ collections:
       - { label: "Image", name: image, widget: image, required: false }
       - { label: "Medium", name: medium, widget: string, required: false, hint: "e.g. Digital, Pencil, Acrylic, Mixed Media" }
       - { label: "Year", name: year, widget: number, required: false }
-      - { label: "Featured", name: featured, widget: boolean, default: false, required: false }
+      - { label: "Featured", name: featured, widget: boolean, default: false, required: false, hint: "Show on homepage 'Selected Work' grid" }
+      - { label: "In Sampler", name: sampler, widget: boolean, default: false, required: false, hint: "Show in the cross-discipline sampler on /art/ landing" }
+      - { label: "Portfolio Piece", name: portfolio, widget: boolean, default: false, required: false, hint: "Promote to the 'Portfolio pieces' tier on this discipline's bucket page" }
       - { label: "Draft", name: draft, widget: boolean, default: false }
       - { label: "Archived", name: archived, widget: boolean, default: false, required: false }
       - { label: "Recovered", name: recovered, widget: hidden, required: false }
+      # ── Case Study fields (optional) — fill these to render this entry as a case study ──
+      - { label: "Subtitle", name: subtitle, widget: string, required: false, hint: "Case study subtitle shown below the title (e.g. 'Full brand identity & execution • Women's strength community')" }
+      - { label: "Role", name: role, widget: string, required: false, hint: "Your role on this case study (e.g. 'Brand Designer', 'Lead Production Designer')" }
+      - { label: "Timeline", name: timeline, widget: string, required: false, hint: "e.g. 2024 – 2025" }
+      - label: "Pieces"
+        name: pieces
+        widget: list
+        required: false
+        hint: "Add at least one piece to render this entry as a case study with the rich gallery treatment"
+        fields:
+          - { label: "Image", name: src, widget: image }
+          - label: "Type"
+            name: type
+            widget: select
+            options:
+              - "Logotype"
+              - "Icon Mark"
+              - "Video"
+              - "Infographic"
+              - "Print • Pocket"
+              - "Print"
+              - "Social Template"
+              - "Broadcast Overlay"
+              - "Event Splash"
+          - { label: "Caption", name: caption, widget: text }
+          - { label: "External URL", name: external, widget: string, required: false, hint: "YouTube/external link — if set, clicking opens this URL instead of the image" }
+      - label: "External Link"
+        name: link
+        widget: object
+        required: false
+        hint: "Optional CTA button on the case study page (e.g. live website link)"
+        fields:
+          - { label: "Label", name: label, widget: string }
+          - { label: "URL", name: href, widget: string }
       - { label: "Body", name: body, widget: markdown }
 
   - name: art-esports
@@ -55,6 +91,14 @@ collections:
   - name: art-fine-art
     label: "Design > Fine Art"
     folder: content/art/fine-art
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *art_fields
+
+  - name: art-animation
+    label: "Design > Animation & Motion"
+    folder: content/art/animation
     create: true
     slug: "{{slug}}"
     extension: md
@@ -102,41 +146,49 @@ collections:
       - { label: "Recovered", name: recovered, widget: hidden, required: false }
       - { label: "Body", name: body, widget: markdown }
 
-  - name: gamedev-verg
-    label: "Products > UF: VERG"
-    folder: content/gamedev/verg-castleroid
+  - name: gamedev-archkey
+    label: "Products > Archkey Studio"
+    folder: content/gamedev/archkey
     create: true
     slug: "{{slug}}"
     extension: md
     fields: *gamedev_fields
 
-  - name: gamedev-indie-dev
-    label: "Products > Indie Dev Dues"
-    folder: content/gamedev/indie-dev-dues
+  - name: gamedev-forge-framework
+    label: "Products > Forge Framework"
+    folder: content/gamedev/forge-framework
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *gamedev_fields
+
+  - name: gamedev-mellon-os
+    label: "Products > mellonOS"
+    folder: content/gamedev/mellon-os
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *gamedev_fields
+
+  - name: gamedev-my-drink
+    label: "Products > My Drink"
+    folder: content/gamedev/my-drink
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *gamedev_fields
+
+  - name: gamedev-ttrpg
+    label: "Products > TTRPG Character Generator"
+    folder: content/gamedev/ttrpg
     create: true
     slug: "{{slug}}"
     extension: md
     fields: *gamedev_fields
 
   - name: gamedev-ezibg
-    label: "Products > EZi BackGrounds"
+    label: "Products > EZi BackGrounds (Archived)"
     folder: content/gamedev/ezibg
-    create: true
-    slug: "{{slug}}"
-    extension: md
-    fields: *gamedev_fields
-
-  - name: gamedev-ndlz
-    label: "Products > NDLZ"
-    folder: content/gamedev/ndlz
-    create: true
-    slug: "{{slug}}"
-    extension: md
-    fields: *gamedev_fields
-
-  - name: gamedev-unchosen
-    label: "Products > Unchosen Paths"
-    folder: content/gamedev/unchosen-paths
     create: true
     slug: "{{slug}}"
     extension: md

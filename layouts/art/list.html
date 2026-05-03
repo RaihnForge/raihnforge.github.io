@@ -8,23 +8,92 @@
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
-<div class="category-grid">
-  {{ range .Sections }}
-  <a href="{{ .RelPermalink }}" class="category-card">
-    {{ with .Params.image }}
-    <img src="{{ . }}" alt="{{ $.Title }}" class="category-card-image" loading="lazy" />
-    {{ else }}
-    <div class="category-card-placeholder" aria-hidden="true"></div>
+{{/* ── Cross-discipline sampler — pieces flagged `sampler: true`.
+     sampler is an explicit curator signal, so it intentionally overrides `archived`. ── */}}
+{{ $sampler := where (where .Site.RegularPages "Section" "art") "Params.sampler" true }}
+{{ $sampler = $sampler.ByDate.Reverse }}
+{{ if $sampler }}
+<section class="sampler-section" aria-label="Selected samples across disciplines">
+  <div class="section-header">
+    <h2>Selected Samples</h2>
+    <p class="sampler-subhead">A cross-section of disciplines — illustration, brand, broadcast, and commissioned work.</p>
+  </div>
+  <div class="gallery-grid">
+    {{ range $sampler }}
+    <a href="{{ .RelPermalink }}" class="gallery-item">
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+      {{ else }}
+      <div class="gallery-placeholder" aria-hidden="true"></div>
+      {{ end }}
+      <div class="gallery-caption">
+        <span class="gallery-title">{{ .Title }}</span>
+        <span class="gallery-medium">{{ .Parent.Title }}{{ with .Params.year }} · {{ . }}{{ end }}</span>
+      </div>
+    </a>
     {{ end }}
-    <div class="category-card-body">
-      <h2>{{ .Title }}</h2>
-      {{ $activeCount := len (where .RegularPagesRecursive "Params.archived" "ne" true) }}
-      <span class="category-card-count">{{ $activeCount }} {{ if eq $activeCount 1 }}piece{{ else }}pieces{{ end }}</span>
-      {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    </div>
-  </a>
-  {{ end }}
-</div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Case Studies — pages with a `pieces:` array (commercial/portfolio work) ── */}}
+{{ $caseStudies := where (where .Site.RegularPages "Section" "art") "Params.pieces" "ne" nil }}
+{{ $caseStudies = where $caseStudies "Params.archived" "ne" true }}
+{{ $caseStudies = $caseStudies.ByDate.Reverse }}
+{{ if $caseStudies }}
+<section class="case-studies-section" aria-label="Selected case studies">
+  <div class="section-header">
+    <h2>Case Studies</h2>
+    <p class="sampler-subhead">Commercial work — brand systems, broadcast graphics, and production design across professional engagements.</p>
+  </div>
+  <div class="portfolio-grid">
+    {{ range $caseStudies }}
+    <a href="{{ .RelPermalink }}" class="portfolio-card">
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="portfolio-card-image" loading="lazy" />
+      {{ else }}
+      <div class="portfolio-card-placeholder" aria-hidden="true"></div>
+      {{ end }}
+      <div class="portfolio-card-body">
+        <h3>{{ .Title }}</h3>
+        <div class="portfolio-card-meta">
+          <span>{{ .Parent.Title }}</span>
+          {{ with .Params.timeline }}<span>{{ . }}</span>{{ else }}{{ with .Params.year }}<span>{{ . }}</span>{{ end }}{{ end }}
+          <span>{{ len .Params.pieces }} pieces</span>
+        </div>
+        {{ with .Description }}<p>{{ . | truncate 160 }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section class="categories-section" aria-label="Browse by discipline">
+  <div class="section-header">
+    <h2>Browse by discipline</h2>
+  </div>
+  <div class="category-grid">
+    {{ range .Sections }}
+    {{ $activeCount := len (where .RegularPagesRecursive "Params.archived" "ne" true) }}
+    {{ if gt $activeCount 0 }}
+    <a href="{{ .RelPermalink }}" class="category-card">
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="category-card-image" loading="lazy" />
+      {{ else }}
+      <div class="category-card-placeholder" aria-hidden="true"></div>
+      {{ end }}
+      <div class="category-card-body">
+        <h2>{{ .Title }}</h2>
+        {{ $activeCount := len (where .RegularPagesRecursive "Params.archived" "ne" true) }}
+        <span class="category-card-count">{{ $activeCount }} {{ if eq $activeCount 1 }}piece{{ else }}pieces{{ end }}</span>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
 
 {{ else }}
 {{/* ═══════════════════════════════════════════════════════════
@@ -50,16 +119,68 @@
   {{ end }}
 </nav>
 
-{{/* Filter out archived content, then split into showcase (has image) and archive (no image) */}}
+{{/* ── Portfolio pieces — items flagged `portfolio: true`.
+     portfolio is an explicit curator signal, so it intentionally overrides `archived`. ── */}}
+{{ $portfolio := where .RegularPages "Params.portfolio" true }}
+{{ $portfolio = $portfolio.ByDate.Reverse }}
+
+{{/* ── More work — everything else with an image, then archive (no image) ── */}}
 {{ $active := where .RegularPages "Params.archived" "ne" true }}
 {{ $showcase := where $active "Params.image" "ne" "" }}
+{{/* Subtract portfolio pieces from showcase so they don't appear twice */}}
+{{ $portfolioPaths := slice }}
+{{ range $portfolio }}{{ $portfolioPaths = $portfolioPaths | append .RelPermalink }}{{ end }}
+{{ $more := slice }}
+{{ range $showcase }}
+  {{ if not (in $portfolioPaths .RelPermalink) }}{{ $more = $more | append . }}{{ end }}
+{{ end }}
 {{ $archive := where $active "Params.image" "" }}
 
+{{/* Portfolio tier — featured cards */}}
+{{ if $portfolio }}
+<section class="portfolio-section" aria-label="Portfolio pieces">
+  <div class="bucket-section-header">
+    <h2>Portfolio pieces</h2>
+    <p class="bucket-section-subhead">Selected work in this discipline.</p>
+  </div>
+  <div class="portfolio-grid">
+    {{ range $portfolio }}
+    <a href="{{ .RelPermalink }}" class="portfolio-card">
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="portfolio-card-image" loading="lazy" />
+      {{ else }}
+      <div class="portfolio-card-placeholder" aria-hidden="true"></div>
+      {{ end }}
+      <div class="portfolio-card-body">
+        <h3>{{ .Title }}</h3>
+        <div class="portfolio-card-meta">
+          {{ with .Params.medium }}<span>{{ . }}</span>{{ end }}
+          {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
+        </div>
+        {{ with .Description }}<p>{{ . | truncate 140 }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* More work tier — remaining gallery items + text archive */}}
+{{ if or $more $archive }}
+<section class="more-work-section{{ if not $portfolio }} more-work-section--standalone{{ end }}" aria-label="More work">
+  {{ if $portfolio }}
+  <div class="bucket-section-header">
+    <h2>More work</h2>
+    <p class="bucket-section-subhead">The full archive of pieces in this discipline.</p>
+  </div>
+  {{ end }}
+{{ end }}
+
 {{/* Showcase tier — visual gallery grid */}}
-{{ if $showcase }}
+{{ if $more }}
 <section class="gallery-section" aria-label="Visual gallery">
   <div class="gallery-grid">
-    {{ range $showcase }}
+    {{ range $more }}
     <a href="{{ .RelPermalink }}" class="gallery-item">
       <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" />
       <div class="gallery-caption">
@@ -104,6 +225,10 @@
     {{ end }}
   </div>
   {{ end }}
+</section>
+{{ end }}
+
+{{ if or $more $archive }}
 </section>
 {{ end }}
 

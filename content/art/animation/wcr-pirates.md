@@ -6,6 +6,7 @@ description: "These are the images I created for 7Smurfs article from WCreplays.
 tags: ["7Smurfs", "Cartooning", "Digital Painting", "Illustration", "Joshua Keyes", "Raihn", "WCReplays.com", "feature article", "pirates", "warcraft"]
 aliases:
   - "/art/wcr-pirates/"
+  - "/art/illustration/wcr-pirates/"
 draft: false
 medium: "Digital"
 year: 2005

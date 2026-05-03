@@ -10,6 +10,8 @@ featured: true
 aliases:
   - "/art/commission-gentle-avatar/"
 draft: false
+sampler: true
+portfolio: true
 ---
 [![](/images/wp-imports/blog/aware_export_512.png)](/images/wp-imports/blog/aware_export_512.png)
 

@@ -6,6 +6,7 @@ description: This is an animated asset I created for a WCreplays.com article wri
 tags: ["Digital Painting", "Illustration", "Joshua Keyes", "Raihn", "Rakkaus", "WCReplays.com", "feature article", "tauren", "warcraft"]
 aliases:
   - "/art/wcr-frost-tauren/"
+  - "/art/illustration/wcr-frost-tauren/"
 draft: false
 medium: "Digital"
 year: 2007

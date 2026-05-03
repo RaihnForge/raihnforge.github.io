@@ -6,6 +6,7 @@ description: "Custom avatar collection created for WCReplays.com community."
 tags: ["Avatars", "Joshua Keyes", "Raihn", "WCR", "WCReplays.com", "WarCraft 3", "Web Assets Design"]
 aliases:
   - "/art/wcr-avatars/"
+  - "/art/esports/wcr-avatars/"
 archived: true
 draft: false
 medium: "Digital"

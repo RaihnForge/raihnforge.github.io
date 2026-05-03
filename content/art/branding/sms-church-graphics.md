@@ -9,6 +9,8 @@ aliases:
   - "/art/sms-church-graphics/"
 tags: []
 draft: false
+sampler: true
+portfolio: true
 ---
 This project was an opportunity to grow into a graphic style I wasn't already comfortable with. Mercer Creek Church had a clear visual identity and a consistent content cycle — which meant I was learning to adapt to someone else's established system, not just executing my own ideas.
 

@@ -9,6 +9,8 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2016
+sampler: true
+portfolio: true
 ---
 ![](/images/wp-imports/art/demo_krippruv2.png)
 ![](/images/wp-imports/art/kripprip.png)

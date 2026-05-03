@@ -6,9 +6,12 @@ tags: ["BaseTradeTV", "Design", "Raihn", "RaihnForge", "Twitch Cheermotes", "Twi
 image: "/images/wp-imports/art/bttvcm_sword_112px1.gif"
 aliases:
   - "/art/cheermotes-for-basetrade-tv/"
+  - "/art/esports/cheermotes-for-basetrade-tv/"
 draft: false
 medium: "Digital"
 year: 2017
+sampler: true
+portfolio: true
 ---
 ![](/images/wp-imports/art/bttvcm_gg_112px1.gif)
 ![](/images/wp-imports/art/bttvcm_dagger_112px1.gif)
