@@ -280,6 +280,56 @@
       min-height: 3.75em;
     }
 
+    .video-thumb {
+      position: relative;
+      display: block;
+      margin: 4px 0 18px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #000;
+      aspect-ratio: 16 / 9;
+    }
+
+    .video-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .video-thumb::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 64px;
+      height: 64px;
+      transform: translate(-50%, -50%);
+      background: rgba(20, 30, 50, 0.78);
+      border-radius: 50%;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .video-thumb::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 11px 0 11px 17px;
+      border-color: transparent transparent transparent #ffffff;
+      transform: translate(-38%, -50%);
+      pointer-events: none;
+    }
+
+    .video-thumb:hover img { opacity: 0.92; transform: scale(1.02); }
+    .video-thumb:hover::before { background: var(--blue); transform: translate(-50%, -50%) scale(1.08); }
+    .video-thumb:hover { text-decoration: none; }
+
     .links {
       display: flex;
       flex-wrap: wrap;
@@ -410,6 +460,9 @@
             <p>
               Supported the development of educational video content by shaping visual design, production structure, and branded learning presentation. This work reflects experience translating instructional goals into clear, engaging, and consistent visual communication.
             </p>
+            <a class="video-thumb" href="https://youtu.be/eJ-2_Gzh4XE" target="_blank" rel="noopener" aria-label="Watch Kelvin Video Content POC on YouTube">
+              <img src="https://img.youtube.com/vi/eJ-2_Gzh4XE/hqdefault.jpg" alt="Kelvin Video Content POC thumbnail" loading="lazy" />
+            </a>
             <div class="links">
               <a class="link-pill" href="https://youtu.be/eJ-2_Gzh4XE" target="_blank" rel="noopener">Watch video</a>
             </div>
@@ -422,6 +475,9 @@
             <p>
               Contributed to public facing branded communication supporting an educational and wellness partnership. The project demonstrates the ability to keep message, audience, and visual tone aligned in a mission centered context.
             </p>
+            <a class="video-thumb" href="https://www.youtube.com/watch?v=gsv99Rmn-R4" target="_blank" rel="noopener" aria-label="Watch Kelvin CalHOPE Partnership on YouTube">
+              <img src="https://img.youtube.com/vi/gsv99Rmn-R4/hqdefault.jpg" alt="Kelvin CalHOPE Partnership thumbnail" loading="lazy" />
+            </a>
             <div class="links">
               <a class="link-pill" href="https://www.youtube.com/watch?v=gsv99Rmn-R4" target="_blank" rel="noopener">Watch video</a>
             </div>
@@ -434,6 +490,9 @@
             <p>
               Created and supported communication materials for student veterans in a higher education setting. This work connects visual communication with student support, resource access, campus awareness, and clear public messaging.
             </p>
+            <a class="video-thumb" href="https://www.youtube.com/watch?v=KpzngGO-78g" target="_blank" rel="noopener" aria-label="Watch Veterans Center Overview on YouTube">
+              <img src="https://img.youtube.com/vi/KpzngGO-78g/hqdefault.jpg" alt="Veterans Center Overview thumbnail" loading="lazy" />
+            </a>
             <div class="links">
               <a class="link-pill" href="https://www.youtube.com/watch?v=KpzngGO-78g" target="_blank" rel="noopener">Watch video</a>
             </div>
