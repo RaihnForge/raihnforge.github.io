@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Joshua Keyes — Selected Visual Communication Work</title>
+<style>
+  @page {
+    size: 11in 8.5in;
+    margin: 0;
+  }
+
+  :root {
+    --bg: #ffffff;
+    --surface-tint: #f7f9fc;
+    --text: #1a2240;
+    --muted: #5a6480;
+    --blue: #6a7596;
+    --blue-dark: #4d587a;
+    --gold: #9a8a4a;
+    --gold-dark: #7a6c38;
+    --line: #dde2ec;
+    --line-strong: #c0c7d6;
+    --gold-soft: rgba(154, 138, 74, 0.12);
+    --blue-soft: rgba(106, 117, 150, 0.08);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 11in;
+    height: 8.5in;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+    background: #ffffff;
+  }
+
+  .page:last-child { page-break-after: auto; break-after: auto; }
+
+  .page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: var(--blue);
+  }
+
+  .page-frame {
+    position: absolute;
+    top: 0.55in;
+    bottom: 0.55in;
+    left: 0.65in;
+    right: 0.65in;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 14px;
+    margin-bottom: 26px;
+    border-bottom: 1.5px solid var(--line);
+  }
+
+  .eyebrow {
+    color: var(--gold-dark);
+    font-size: 9.5pt;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .page-title {
+    font-size: 28pt;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  .role {
+    font-size: 11pt;
+    color: var(--muted);
+    margin: 6px 0 0;
+    font-weight: 500;
+  }
+
+  .page-num {
+    font-size: 9pt;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .body {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    gap: 32px;
+  }
+
+  .caption {
+    font-size: 9.5pt;
+    color: var(--muted);
+    line-height: 1.45;
+    margin: 8px 0 0;
+  }
+
+  .lede {
+    font-size: 12pt;
+    line-height: 1.55;
+    color: var(--text);
+    margin: 0 0 14px;
+  }
+
+  ul.compact {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: var(--text);
+  }
+
+  ul.compact li { margin-bottom: 6px; }
+
+  .link {
+    font-size: 10pt;
+    color: var(--blue-dark);
+    word-break: break-all;
+  }
+
+  /* ====== Page 1 — Title ====== */
+  .cover {
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .cover-top { padding-top: 0.35in; }
+
+  .cover-eyebrow {
+    color: var(--gold-dark);
+    font-size: 11pt;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  .cover-title {
+    font-size: 64pt;
+    font-weight: 800;
+    line-height: 1.0;
+    margin: 0 0 18px;
+    letter-spacing: -0.02em;
+    max-width: 8.6in;
+  }
+
+  .cover-sub {
+    font-size: 17pt;
+    color: var(--muted);
+    margin: 0 0 28px;
+    font-weight: 500;
+    max-width: 7.5in;
+    line-height: 1.3;
+  }
+
+  .cover-rule {
+    width: 96px;
+    height: 4px;
+    background: var(--gold);
+    margin: 18px 0 24px;
+    border-radius: 2px;
+  }
+
+  .cover-intro {
+    font-size: 12pt;
+    line-height: 1.55;
+    color: var(--text);
+    max-width: 7.2in;
+    margin: 0;
+  }
+
+  .cover-meta {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 18px;
+    border-top: 1.5px solid var(--line);
+  }
+
+  .meta-block { font-size: 10.5pt; line-height: 1.5; }
+  .meta-block strong { display: block; font-size: 9pt; color: var(--gold-dark); text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700; margin-bottom: 4px; }
+
+  /* ====== Image layouts ====== */
+  .img-row {
+    display: grid;
+    gap: 18px;
+    flex: 1;
+  }
+  .img-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .img-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+  .img-tile {
+    background: var(--surface-tint);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .img-tile .img-wrap {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    background: var(--surface-tint);
+  }
+
+  .img-tile img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .img-tile .label {
+    padding: 8px 12px 10px;
+    border-top: 1px solid var(--line);
+    background: #ffffff;
+  }
+
+  .img-tile .label .tag {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    color: var(--gold-dark);
+    margin: 0 0 2px;
+  }
+
+  .img-tile .label .name {
+    font-size: 10pt;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text);
+  }
+
+  /* Hero/split layouts (KW Fitness) */
+  .split {
+    display: grid;
+    grid-template-columns: 1.35fr 0.85fr;
+    gap: 28px;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .split .hero-img {
+    background: var(--surface-tint);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+  }
+
+  .split .hero-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .split .copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* Page footer for inner pages */
+  .page-footer {
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 9pt;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+
+  /* Contact page */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    flex: 1;
+    align-content: start;
+  }
+
+  .contact-col h3 {
+    font-size: 10pt;
+    color: var(--gold-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    margin: 0 0 14px;
+    font-weight: 700;
+  }
+
+  .contact-col p {
+    margin: 0 0 8px;
+    font-size: 12pt;
+    line-height: 1.55;
+  }
+
+  .contact-col a { color: var(--blue-dark); text-decoration: none; }
+
+  .closer {
+    margin-top: auto;
+    border-top: 1.5px solid var(--line);
+    padding-top: 14px;
+    font-size: 10pt;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* Three video-still grid for Kelvin page mixing 3 social + 1 video */
+  .kelvin-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    min-height: 0;
+  }
+
+  .kelvin-grid .img-tile { min-height: 0; }
+</style>
+</head>
+<body>
+
+<!-- ===================== PAGE 1 — TITLE ===================== -->
+<section class="page">
+  <div class="page-frame">
+    <div class="cover-top">
+      <p class="cover-eyebrow">Visual Communication Portfolio · 2026</p>
+      <h1 class="cover-title">Selected Visual<br/>Communication Work</h1>
+      <p class="cover-sub">Joshua Keyes — Brand systems, educational content, and marketing design across print, web, and social platforms.</p>
+      <div class="cover-rule"></div>
+      <p class="cover-intro">
+        A curated selection of public-facing work spanning brand identity, educational video, student
+        outreach communication, and social media template systems. The pieces here are chosen to
+        demonstrate the ability to build clear, branded, audience-focused visual communication that
+        holds together across formats and touchpoints.
+      </p>
+    </div>
+
+    <div class="cover-meta">
+      <div class="meta-block">
+        <strong>Prepared For</strong>
+        Central Washington University<br/>
+        Visual Communication Review
+      </div>
+      <div class="meta-block">
+        <strong>Contact</strong>
+        joshua.keyes@gmail.com<br/>
+        (626) 993-5370
+      </div>
+      <div class="meta-block">
+        <strong>Online</strong>
+        raihnforge.github.io/cwu-portfolio/<br/>
+        raihnforge.github.io
+      </div>
+      <div class="meta-block">
+        <strong>Date</strong>
+        May 12, 2026
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PAGE 2 — KELVIN EDUCATION ===================== -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Educational EdTech · Brand & Content</p>
+        <h2 class="page-title">Kelvin Education</h2>
+        <p class="role">Lead Production Designer · 2022–2026 · Remote</p>
+      </div>
+      <span class="page-num">02 / 06</span>
+    </div>
+
+    <p class="lede" style="max-width:9.6in;">
+      Led brand-aligned visual design across marketing graphics, educational video, social campaigns,
+      and product UI. Built reusable template systems so staff could produce consistent posts at
+      scale, and shaped the visual structure of educational video content from POC through launch.
+    </p>
+
+    <div class="kelvin-grid">
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-01.jpg" alt="Kelvin social post 01" /></div>
+        <div class="label"><p class="tag">Social Template 01</p><p class="name">Branded social asset</p></div>
+      </div>
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-02.jpg" alt="Kelvin social post 02" /></div>
+        <div class="label"><p class="tag">Social Template 02</p><p class="name">Branded social asset</p></div>
+      </div>
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-03.jpg" alt="Kelvin social post 03" /></div>
+        <div class="label"><p class="tag">Social Template 03</p><p class="name">Branded social asset</p></div>
+      </div>
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/eJ-2_Gzh4XE.jpg" alt="Kelvin Video Content POC still" /></div>
+        <div class="label"><p class="tag">Video — Production Design</p><p class="name">Kelvin Video Content POC</p></div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Reusable template system · Branded video production · Educational asset design</span>
+      <span>Joshua Keyes · Visual Communication Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PAGE 3 — KW FITNESS ===================== -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Brand Identity · Web · Marketing</p>
+        <h2 class="page-title">KW Fitness</h2>
+        <p class="role">RaihnForge Independent Project · End-to-end brand system</p>
+      </div>
+      <span class="page-num">03 / 06</span>
+    </div>
+
+    <div class="split">
+      <div class="hero-img">
+        <img src="file:///tmp/pdf-imgs/logo-banner.jpg" alt="KW Fitness logo banner" />
+      </div>
+      <div class="copy">
+        <p class="lede" style="margin:0 0 6px;">A complete visual identity and public website experience for a fitness brand — logo direction, color, typography, brand tone, layout, and promotional assets across web, print, and apparel.</p>
+        <ul class="compact">
+          <li>Established a cohesive visual voice across digital and physical materials.</li>
+          <li>Aligned messaging, imagery, and layout around motivation and audience connection.</li>
+          <li>Built a practical brand system supporting ongoing content and promotional needs.</li>
+          <li>Managed end-to-end visual development from concept through launch.</li>
+        </ul>
+        <p class="link"><strong style="color:var(--gold-dark);">Live:</strong> kwfitness.org</p>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Logo system · Web identity · Apparel concepts · Promotional collateral</span>
+      <span>Joshua Keyes · Visual Communication Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PAGE 4 — CWU VET CENTER ===================== -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Higher Education · Student Support</p>
+        <h2 class="page-title">CWU Vet Center</h2>
+        <p class="role">AmeriCorps VetCorps Navigator · 2021–2022 · Ellensburg, WA</p>
+      </div>
+      <span class="page-num">04 / 06</span>
+    </div>
+
+    <p class="lede" style="max-width:9.6in;">
+      Designed print and digital communication materials supporting student veterans at CWU.
+      Visual work centered on clarity, approachability, and quick access to resources, benefits,
+      and regional support pathways.
+    </p>
+
+    <div class="img-row cols-3">
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/resource-card-kcvc.jpg" alt="KCVC Resource Card" /></div>
+        <div class="label"><p class="tag">Print · Student Resources</p><p class="name">KCVC Resource Card</p></div>
+      </div>
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/resource-card-yakima.jpg" alt="Yakima Resource Card" /></div>
+        <div class="label"><p class="tag">Print · Regional Support</p><p class="name">Yakima Veterans Center Card</p></div>
+      </div>
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/benefits-infographic.jpg" alt="Benefits Guide" /></div>
+        <div class="label"><p class="tag">Print · Benefits Communication</p><p class="name">Benefits Guide</p></div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Student resource cards · Benefits communication · Outreach video</span>
+      <span>Joshua Keyes · Visual Communication Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PAGE 5 — ADDITIONAL SELECTED WORK ===================== -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Independent · Esports · Community Design</p>
+        <h2 class="page-title">Additional Selected Work</h2>
+        <p class="role">RaihnForge — Long-form freelance and creative community design</p>
+      </div>
+      <span class="page-num">05 / 06</span>
+    </div>
+
+    <p class="lede" style="max-width:9.6in;">
+      Selected pieces from independent and contract work — brand collaborations with competitive
+      gaming organizations, event splash design, and community-facing identity systems. Each piece
+      lives inside a broader visual brand: overlays, event collateral, and on-stream identity all
+      hold to the same voice.
+    </p>
+
+    <div class="img-row cols-4">
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/teamliquid-sc-hyperx.jpg" alt="Team Liquid SC x HyperX overlay" /></div>
+        <div class="label"><p class="tag">Esports · Brand Collab</p><p class="name">Team Liquid × HyperX</p></div>
+      </div>
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/teamliquid-dota.jpg" alt="Team Liquid Dota" /></div>
+        <div class="label"><p class="tag">Esports · Team Identity</p><p class="name">Team Liquid Dota</p></div>
+      </div>
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/grubby-event-splash.jpg" alt="Grubby Event Splash" /></div>
+        <div class="label"><p class="tag">Event · Splash Design</p><p class="name">Grubby Event</p></div>
+      </div>
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/victorious-gaming.jpg" alt="Victorious Gaming" /></div>
+        <div class="label"><p class="tag">Community · Org Identity</p><p class="name">Victorious Gaming</p></div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Overlay design · Event collateral · Community brand systems</span>
+      <span>Joshua Keyes · Visual Communication Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PAGE 6 — CONTACT / LINKS ===================== -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Contact &amp; Online Portfolio</p>
+        <h2 class="page-title">Get in touch.</h2>
+        <p class="role">Available for visual communication, brand systems, and educational content roles.</p>
+      </div>
+      <span class="page-num">06 / 06</span>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-col">
+        <h3>Direct</h3>
+        <p><strong>Joshua Keyes</strong></p>
+        <p>Ellensburg, Washington</p>
+        <p><a href="mailto:joshua.keyes@gmail.com">joshua.keyes@gmail.com</a></p>
+        <p>(626) 993-5370</p>
+      </div>
+
+      <div class="contact-col">
+        <h3>Online Portfolio</h3>
+        <p><strong>Selected Work for CWU</strong><br/><a href="https://raihnforge.github.io/cwu-portfolio/">raihnforge.github.io/cwu-portfolio/</a></p>
+        <p><strong>Main Portfolio</strong><br/><a href="https://raihnforge.github.io/">raihnforge.github.io</a></p>
+        <p><strong>LinkedIn</strong><br/>@joshua-blaine-keyes</p>
+      </div>
+    </div>
+
+    <div class="closer">
+      Thank you for reviewing this work. The online version of this portfolio includes additional
+      context, video samples, and live links to projects referenced here.
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
