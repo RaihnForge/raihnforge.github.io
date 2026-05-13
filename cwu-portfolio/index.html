@@ -335,6 +335,82 @@
 
     .desc { min-height: 8em; }
 
+    /* KW Fitness card: text block + 4-tile applied-brand gallery */
+    .kw-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      text-align: left;
+    }
+
+    .kw-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .kw-tile {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+    }
+
+    .kw-tile:hover {
+      transform: translateY(-2px);
+      border-color: var(--blue);
+      box-shadow: 0 4px 14px rgba(26, 34, 64, 0.08);
+      text-decoration: none;
+    }
+
+    .kw-tile .kw-img-wrap {
+      aspect-ratio: 5 / 4;
+      background: var(--surface-tint);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+    }
+
+    .kw-tile .kw-img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .kw-tile .kw-label {
+      border-top: 1px solid var(--line);
+      padding: 10px 12px 12px;
+      text-align: center;
+    }
+
+    .kw-tile .kw-label .tag {
+      display: block;
+      font-size: 0.68rem;
+      color: var(--gold-dark);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 3px;
+    }
+
+    .kw-tile .kw-label .name {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0;
+    }
+
+    @media (max-width: 820px) {
+      .kw-gallery { grid-template-columns: repeat(2, 1fr); }
+    }
+
     .links {
       display: flex;
       flex-wrap: wrap;
@@ -441,24 +517,43 @@
 
         <div class="grid">
           <article class="card full">
-            <div class="feature">
+            <div class="kw-layout">
               <div>
-                <p class="tagline">Brand Identity | Web | Marketing</p>
+                <p class="tagline">Brand Identity | Web | Print | Documentation</p>
                 <h3>KW Fitness</h3>
                 <p class="meta">RaihnForge Independent Project</p>
                 <p>
-                  Developed a complete visual identity and public website experience for a fitness brand, including logo direction, color palette, typography, brand tone, layout, promotional assets, print media, and apparel concepts. The project demonstrates how brand identity can become a consistent story across web, social, print, and physical touchpoints.
+                  Developed a complete visual identity and applied brand system for a fitness brand — logo direction, color palette, typography, brand tone, web presence, print collateral, photography direction, and a full written brand guide. The project demonstrates how a single voice can carry consistently across digital, print, and documentation touchpoints.
                 </p>
                 <ul>
-                  <li>Created a cohesive visual voice and brand presence across digital and physical materials.</li>
-                  <li>Aligned messaging, imagery, and layout around motivation, clarity, and audience connection.</li>
-                  <li>Built a practical brand system that can support ongoing content and promotional needs.</li>
+                  <li>Created a cohesive visual voice across web, print, and physical materials.</li>
+                  <li>Codified logo usage, color, typography, and voice in a formal brand guide.</li>
+                  <li>Anchored brand aesthetic and audience through a vision board + photography direction.</li>
+                  <li>Produced applied collateral including business cards and promotional materials.</li>
                 </ul>
                 <div class="links">
-                  <a class="link-pill" href="https://www.kwfitness.org/" target="_blank" rel="noopener">View KW Fitness</a>
+                  <a class="link-pill" href="https://www.kwfitness.org/" target="_blank" rel="noopener">View KW Fitness (Live Site)</a>
+                  <a class="link-pill" href="/cwu-portfolio/KW-Fitness-Brand-Guide.pdf" target="_blank" rel="noopener">Brand Guide (PDF)</a>
                 </div>
               </div>
-              <img class="asset contain" src="/images/graphic-design/kwfitness/logo-banner.png" alt="KW Fitness logo banner" loading="lazy" />
+              <div class="kw-gallery">
+                <a class="kw-tile" href="https://www.kwfitness.org/" target="_blank" rel="noopener">
+                  <div class="kw-img-wrap"><img src="/images/graphic-design/kwfitness/logo-banner.png" alt="KW Fitness primary logo" loading="lazy" /></div>
+                  <div class="kw-label"><span class="tag">Identity</span><span class="name">Primary Logo</span></div>
+                </a>
+                <a class="kw-tile" href="https://www.kwfitness.org/" target="_blank" rel="noopener">
+                  <div class="kw-img-wrap"><img src="/images/graphic-design/kwfitness/business-card.png" alt="KW Fitness business card" loading="lazy" /></div>
+                  <div class="kw-label"><span class="tag">Print · Collateral</span><span class="name">Business Card</span></div>
+                </a>
+                <a class="kw-tile" href="https://www.kwfitness.org/" target="_blank" rel="noopener">
+                  <div class="kw-img-wrap"><img src="/images/graphic-design/kwfitness/vision-board.png" alt="KW Fitness vision board" loading="lazy" /></div>
+                  <div class="kw-label"><span class="tag">Brand · Direction</span><span class="name">Vision Board</span></div>
+                </a>
+                <a class="kw-tile" href="/cwu-portfolio/KW-Fitness-Brand-Guide.pdf" target="_blank" rel="noopener">
+                  <div class="kw-img-wrap"><img src="/images/graphic-design/kwfitness/brand-guide-cover.png" alt="KW Fitness brand guide cover" loading="lazy" /></div>
+                  <div class="kw-label"><span class="tag">Documentation</span><span class="name">Brand Guide (PDF)</span></div>
+                </a>
+              </div>
             </div>
           </article>
 
