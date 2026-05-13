@@ -350,16 +350,24 @@
     line-height: 1.5;
   }
 
-  /* Three video-still grid for Kelvin page mixing 3 social + 1 video */
-  .kelvin-grid {
+  /* Kelvin page: 3 social posts (row 1) + 2 video stills (row 2) */
+  .kelvin-stack {
     flex: 1;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     min-height: 0;
   }
 
-  .kelvin-grid .img-tile { min-height: 0; }
+  .kelvin-stack .grid-row {
+    display: grid;
+    gap: 14px;
+    min-height: 0;
+  }
+
+  .kelvin-stack .social-row { grid-template-columns: repeat(3, 1fr); flex: 1.5; }
+  .kelvin-stack .video-row { grid-template-columns: repeat(2, 1fr); flex: 1; }
+  .kelvin-stack .grid-row .img-tile { min-height: 0; }
 </style>
 </head>
 <body>
@@ -422,22 +430,30 @@
       scale, and shaped the visual structure of educational video content from POC through launch.
     </p>
 
-    <div class="kelvin-grid">
-      <div class="img-tile">
-        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-01.jpg" alt="Kelvin social post 01" /></div>
-        <div class="label"><p class="tag">Social Template 01</p><p class="name">Branded social asset</p></div>
+    <div class="kelvin-stack">
+      <div class="grid-row social-row">
+        <div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-01.jpg" alt="Kelvin social post 01" /></div>
+          <div class="label"><p class="tag">Social Template 01</p><p class="name">Branded social asset</p></div>
+        </div>
+        <div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-02.jpg" alt="Kelvin social post 02" /></div>
+          <div class="label"><p class="tag">Social Template 02</p><p class="name">Branded social asset</p></div>
+        </div>
+        <div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-03.jpg" alt="Kelvin social post 03" /></div>
+          <div class="label"><p class="tag">Social Template 03</p><p class="name">Branded social asset</p></div>
+        </div>
       </div>
-      <div class="img-tile">
-        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-02.jpg" alt="Kelvin social post 02" /></div>
-        <div class="label"><p class="tag">Social Template 02</p><p class="name">Branded social asset</p></div>
-      </div>
-      <div class="img-tile">
-        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-03.jpg" alt="Kelvin social post 03" /></div>
-        <div class="label"><p class="tag">Social Template 03</p><p class="name">Branded social asset</p></div>
-      </div>
-      <div class="img-tile">
-        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/eJ-2_Gzh4XE.jpg" alt="Kelvin Video Content POC still" /></div>
-        <div class="label"><p class="tag">Video — Production Design</p><p class="name">Kelvin Video Content POC</p></div>
+      <div class="grid-row video-row">
+        <div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/pdf-imgs/eJ-2_Gzh4XE.jpg" alt="Kelvin Video Content POC still" /></div>
+          <div class="label"><p class="tag">Video — Production Design</p><p class="name">Kelvin Video Content POC</p></div>
+        </div>
+        <div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/pdf-imgs/gsv99Rmn-R4.jpg" alt="Kelvin CalHOPE Partnership still" /></div>
+          <div class="label"><p class="tag">Video — Partnership Communication</p><p class="name">Kelvin × CalHOPE Partnership</p></div>
+        </div>
       </div>
     </div>
 
@@ -501,7 +517,7 @@
       and regional support pathways.
     </p>
 
-    <div class="img-row cols-3">
+    <div class="img-row cols-4">
       <div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/resource-card-kcvc.jpg" alt="KCVC Resource Card" /></div>
         <div class="label"><p class="tag">Print · Student Resources</p><p class="name">KCVC Resource Card</p></div>
@@ -513,6 +529,10 @@
       <div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/benefits-infographic.jpg" alt="Benefits Guide" /></div>
         <div class="label"><p class="tag">Print · Benefits Communication</p><p class="name">Benefits Guide</p></div>
+      </div>
+      <div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/KpzngGO-78g.jpg" alt="Veterans Center Overview still" /></div>
+        <div class="label"><p class="tag">Video · Student Outreach</p><p class="name">Veterans Center Overview</p></div>
       </div>
     </div>
 
