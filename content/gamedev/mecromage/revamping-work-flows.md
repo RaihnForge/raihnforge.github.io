@@ -6,7 +6,7 @@ tags: ["Indie Game Blog", "Muse", "Unchosen Paths", "eMUSE"]
 aliases:
   - "/gamedev/revamping-work-flows/"
   - "/gamedev/indie-dev-dues/revamping-work-flows/"
-archived: true
+archived: false
 draft: false
 recovered: true
 ---

@@ -7,7 +7,7 @@ tags: ["Fan Art", "Joshua Keyes", "Sketchbook", "Sketchbook Mixed Medium", "Star
 aliases:
   - "/art/envelope-artstep-up/"
   - "/art/fine-art/envelope-artstep-up/"
-archived: true
+archived: false
 draft: false
 medium: "Mixed Media"
 year: 2013

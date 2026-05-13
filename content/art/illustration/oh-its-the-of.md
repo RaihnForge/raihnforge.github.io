@@ -6,7 +6,7 @@ description: "Oh it’s the Of – Cover album artwork © 2011 Joshua Keyes"
 tags: ["Cartooning", "Design", "Digital Painting", "Illustration", "Joshua Keyes", "Product Design", "Raihn", "Speed Painting", "crab", "crab attack", "oh its the of", "wierd art"]
 aliases:
   - "/art/oh-its-the-of/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2011

@@ -4,7 +4,7 @@ date: 2012-12-09
 description: I’ve been working on the DotA 2 overlays and I now have the pleasure of sharing them with you.  This project was quite the challenge, but it was that
 related_sections:
   - "esports"
-archived: true
+archived: false
 tags: []
 draft: false
 recovered: true

@@ -6,7 +6,7 @@ description: For all those who’ve played the classic X-COM UFO DEFENCE game, y
 tags: ["Cartooning", "Fan Art", "Illustration", "Sequential Art", "Street Level"]
 aliases:
   - "/art/x-com-beat-the-night/"
-archived: true
+archived: false
 draft: false
 medium: "Sequential"
 year: 2014

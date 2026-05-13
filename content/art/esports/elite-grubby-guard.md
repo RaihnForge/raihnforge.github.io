@@ -9,7 +9,7 @@ The Elite Grubby Guard took a lot of perseverance, but after loosing the..."
 tags: ["2", "Blink", "Design", "Digital Painting", "Elite", "Gaurd", "Golden", "Illustration", "Joshua Keyes", "Live Stream", "Overlay", "Production assets", "Raihn", "Stalker", "artist", "backup", "design", "dropbox", "fanart", "grubby", "logo", "protoss", "starcraft", "twitch tv"]
 aliases:
   - "/art/elite-grubby-guard/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2012

@@ -6,7 +6,7 @@ tags: ["Design", "E2D", "Game Design", "Indie Game Art", "Indie Game Blog", "Ind
 aliases:
   - "/gamedev/daily-diary/"
   - "/gamedev/indie-dev-dues/daily-diary/"
-archived: true
+archived: false
 draft: false
 recovered: true
 ---

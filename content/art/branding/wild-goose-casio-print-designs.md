@@ -5,7 +5,7 @@ description: These assets were used for a Casino as a way to update some of the 
 tags: ["Advertisements", "Casio", "Design", "Flyers", "Joshua Keyes", "Raihn", "Stationary", "Texas Hold'em", "Web Assets Design", "Web Page Designs", "black jack", "design", "graphics", "information", "lucky 7"]
 aliases:
   - "/art/wild-goose-casio-print-designs/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2011

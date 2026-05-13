@@ -3,7 +3,7 @@ title: "Mini Portfolio added to contact information"
 date: 2010-07-29
 description: "Added a printable mini portfolio to my contact information :)
  - mini digipen portfolio - right click and 'save link as'"
-archived: true
+archived: false
 tags: []
 draft: false
 recovered: true

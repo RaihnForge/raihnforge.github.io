@@ -7,7 +7,7 @@ tags: ["Art", "Cartooning", "Comic", "Contest", "Design", "Fan Art", "Illustrati
 aliases:
   - "/art/prince-charmings-riot-comic-contest-entry/"
   - "/art/fine-art/prince-charmings-riot-comic-contest-entry/"
-archived: true
+archived: false
 draft: false
 medium: "Sequential"
 year: 2012

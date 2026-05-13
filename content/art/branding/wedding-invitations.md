@@ -6,7 +6,7 @@ description: I created these invites for my best friend’s wedding.  Working w
 tags: ["Design", "Joshua Keyes", "Sketchbook", "Stationary", "design", "filigree", "invitation", "rsvp", "stationary", "wedding"]
 aliases:
   - "/art/wedding-invitations/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2011

@@ -4,7 +4,7 @@ date: 2013-10-17
 description: Yesterday we hit a pretty big milestone for the game development. I’d been putting in average of 12 hours days for about a month and only took a
 related_sections:
   - "mecromage"
-archived: true
+archived: false
 tags: []
 draft: false
 recovered: true

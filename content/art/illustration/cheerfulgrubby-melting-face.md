@@ -6,7 +6,7 @@ description: Though I still am quite the nomad currently, I’m very happy to be
 tags: ["Digital Painting", "Fan Art", "Grubby", "Illustration", "Joshua Keyes", "Sketchbook", "Sketchbook Digital", "Starcraft", "Team Liquid", "eMUSE", "eSports"]
 aliases:
   - "/art/cheerfulgrubby-melting-face/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2013

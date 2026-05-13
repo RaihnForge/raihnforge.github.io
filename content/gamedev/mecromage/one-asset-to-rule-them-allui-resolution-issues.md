@@ -6,7 +6,7 @@ tags: ["Design", "Game Design", "Indie Game Blog", "Indie Game Design", "Indie g
 aliases:
   - "/gamedev/one-asset-to-rule-them-allui-resolution-issues/"
   - "/gamedev/indie-dev-dues/one-asset-to-rule-them-allui-resolution-issues/"
-archived: true
+archived: false
 draft: false
 recovered: true
 ---

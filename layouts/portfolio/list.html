@@ -1,0 +1,41 @@
+{{ define "main" }}
+<div class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+  {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
+</div>
+
+{{ $entries := where .Site.RegularPages "Section" "portfolio" }}
+{{ $entries = where $entries "Draft" false }}
+{{ $entries = $entries.ByDate.Reverse }}
+
+{{ if $entries }}
+<section class="portfolio-section" aria-label="Selected portfolios">
+  <div class="portfolio-grid">
+    {{ range $entries }}
+    {{ $href := .RelPermalink }}
+    {{ with .Params.external_url }}{{ $href = . }}{{ end }}
+    <a href="{{ $href }}" class="portfolio-card"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="portfolio-card-image" loading="lazy" />
+      {{ else }}
+      <div class="portfolio-card-placeholder" aria-hidden="true"></div>
+      {{ end }}
+      <div class="portfolio-card-body">
+        <h3>{{ .Title }}</h3>
+        <div class="portfolio-card-meta">
+          {{ with .Params.audience }}<span>{{ . }}</span>{{ end }}
+          {{ with .Params.role }}<span>{{ . }}</span>{{ end }}
+          {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
+          {{ with .Params.status }}<span class="portfolio-status">{{ . }}</span>{{ end }}
+        </div>
+        {{ with .Description }}<p>{{ . | truncate 220 }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
+<p class="page-description">No portfolio entries yet.</p>
+{{ end }}
+{{ end }}

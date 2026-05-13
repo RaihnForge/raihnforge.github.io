@@ -8,7 +8,7 @@ Release Date: No official - Shooting for..."
 tags: ["Design", "Digital Painting", "Game Design", "Illustration", "Indie Game Blog", "Indie Game Design", "Joshua Keyes", "Mecromage", "Unchosen Paths"]
 aliases:
   - "/gamedev/mecromage-about-the-game/"
-archived: true
+archived: false
 draft: false
 recovered: true
 ---

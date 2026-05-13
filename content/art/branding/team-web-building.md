@@ -5,7 +5,7 @@ description: Most of the websites I’ve ever worked on have been with Teams acr
 tags: ["Commentary", "Design", "Grubby", "Grubby website", "Joshua Keyes", "Raihn", "Web Assets Design", "Web Design", "Web Page Designs"]
 aliases:
   - "/art/team-web-building/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2011

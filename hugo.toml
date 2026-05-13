@@ -22,18 +22,22 @@ title = "RaihnForge"
 
 [menu]
   [[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 1
+  [[menu.main]]
     name = "Design"
     url = "/art/"
-    weight = 1
+    weight = 2
   [[menu.main]]
     name = "Products"
     url = "/gamedev/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     name = "Journal"
     url = "/blog/"
-    weight = 3
+    weight = 4
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 4
+    weight = 5

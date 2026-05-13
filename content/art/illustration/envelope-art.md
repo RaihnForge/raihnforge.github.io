@@ -7,7 +7,7 @@ tags: ["Airforce", "Android", "Art", "BMT", "Boom Boom Pow", "Captain America", 
 aliases:
   - "/art/envelope-art/"
   - "/art/fine-art/envelope-art/"
-archived: true
+archived: false
 draft: false
 medium: "Mixed Media"
 year: 2011

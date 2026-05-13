@@ -5,7 +5,7 @@ description: Drowning.  That’s what it feels like most of the time I’ve bee
 tags: ["Design", "Digital Painting", "Game Design", "Illustration", "Indie Game Blog", "Indie Game Design", "Joshua Keyes", "Mecromage", "Unchosen Paths"]
 aliases:
   - "/gamedev/yeah-yeah-but-did-you-see-the-elevator/"
-archived: true
+archived: false
 draft: false
 recovered: true
 ---

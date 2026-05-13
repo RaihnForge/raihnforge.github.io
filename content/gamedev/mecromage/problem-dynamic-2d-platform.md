@@ -6,7 +6,7 @@ tags: ["Design", "Game Design", "Indie Game Blog", "Indie Game Design", "Muse"]
 aliases:
   - "/gamedev/problem-dynamic-2d-platform/"
   - "/gamedev/indie-dev-dues/problem-dynamic-2d-platform/"
-archived: true
+archived: false
 draft: false
 recovered: true
 ---

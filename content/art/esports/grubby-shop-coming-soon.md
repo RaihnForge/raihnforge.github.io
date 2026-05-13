@@ -6,7 +6,7 @@ description: While in the process of designing Grubby’s first run website, we 
 tags: ["Cartooning", "Design", "Digital Painting", "Fan Art", "Fun", "Grubby", "Illustration", "Joshua Keyes", "Raihn", "Starcraft", "Web Assets Design", "Web Design", "Web Page Designs", "grubby"]
 aliases:
   - "/art/grubby-shop-coming-soon/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2011

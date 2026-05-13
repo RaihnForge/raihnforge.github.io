@@ -6,7 +6,7 @@ description: "Art celebrating the Grubby vs Flash showdown at MLG Dallas."
 tags: ["Cartooning", "Comic", "Flash", "Illustration", "Joshua Keyes", "MLG", "Raihn", "Sketchbook", "Sketchbook Digital", "Speed Painting", "eMUSE", "grubby"]
 aliases:
   - "/art/grubby-vs-flash-mlg-dallas-fall-results/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2012

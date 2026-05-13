@@ -6,7 +6,7 @@ description: "Some Starcraft II beta avatars utilizing in game assets to match u
 tags: ["Avatars", "Design", "Web Assets Design"]
 aliases:
   - "/art/wcreplays-com-avatars/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2010

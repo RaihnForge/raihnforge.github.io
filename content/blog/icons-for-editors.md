@@ -4,7 +4,7 @@ date: 2012-07-12
 description: I’ve been working on my side scroller game for awhile now.  I took a break from environments to make some fun icons for our editors.  (Left to
 related_sections:
   - "mecromage"
-archived: true
+archived: false
 tags: []
 draft: false
 recovered: true

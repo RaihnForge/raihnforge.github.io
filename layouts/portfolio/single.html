@@ -1,0 +1,31 @@
+{{ define "main" }}
+<article class="post post-single portfolio-single">
+  <header class="post-header">
+    <h1>{{ .Title }}</h1>
+    <div class="post-meta">
+      {{ with .Params.audience }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.role }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.status }}<span class="portfolio-status">{{ . }}</span>{{ end }}
+    </div>
+  </header>
+
+  {{ with .Params.image }}
+  <figure class="post-image">
+    <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+  </figure>
+  {{ end }}
+
+  {{ with .Description }}<p class="post-lede">{{ . }}</p>{{ end }}
+
+  <div class="post-body">{{ .Content }}</div>
+
+  {{ with .Params.external_url }}
+  <div class="post-cta">
+    <a class="btn-primary" href="{{ . }}"{{ if hasPrefix . "http" }} target="_blank" rel="noopener"{{ end }}>View Portfolio &rarr;</a>
+  </div>
+  {{ end }}
+
+  <p class="post-back"><a href="/portfolio/">&larr; All Portfolios</a></p>
+</article>
+{{ end }}

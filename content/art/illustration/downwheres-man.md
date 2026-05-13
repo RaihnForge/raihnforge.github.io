@@ -5,7 +5,7 @@ description: A friend of mine from the WCR community has been hard at work on cr
 tags: ["Cartooning", "Design", "Digital Painting", "Downwhere", "Dragon age", "Fallout", "Illustration", "Joshua Keyes", "Manshizzle", "Mass Effect", "Raihn", "Speed Painting", "Timelapse", "Web Assets Design", "badass", "cartoon", "photoshop", "speed paint"]
 aliases:
   - "/art/downwheres-man/"
-archived: true
+archived: false
 draft: false
 medium: "Digital"
 year: 2011
