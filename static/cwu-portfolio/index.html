@@ -192,9 +192,12 @@
       box-shadow: var(--shadow);
       display: flex;
       flex-direction: column;
+      text-align: center;
     }
 
-    .card.full { grid-column: span 12; }
+    .card .links { justify-content: center; }
+
+    .card.full { grid-column: span 12; text-align: left; }
     .card.third { grid-column: span 4; }
 
     .tagline {
