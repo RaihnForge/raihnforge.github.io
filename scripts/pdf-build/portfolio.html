@@ -269,7 +269,7 @@
     color: var(--text);
   }
 
-  /* Hero/split layouts (KW Fitness) */
+  /* Hero/split layouts (legacy) */
   .split {
     display: grid;
     grid-template-columns: 1.35fr 0.85fr;
@@ -300,6 +300,34 @@
     flex-direction: column;
     justify-content: center;
     gap: 12px;
+  }
+
+  /* KW Fitness stack: text block above, 4-tile gallery below */
+  .kw-stack {
+    margin: 0 0 16px;
+  }
+  .kw-stack .lede { margin: 0 0 10px; }
+  .kw-stack ul.compact { margin: 0 0 10px; }
+
+  .kw-row {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    min-height: 0;
+  }
+  .kw-row .img-tile { min-height: 0; }
+
+  /* Link styling — invisible to keep visual feel, hyperlinks preserved */
+  a.tile-link, a.tile-link:visited {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+  }
+  a.url-link, a.url-link:visited {
+    color: var(--blue-dark);
+    text-decoration: none;
   }
 
   /* Page footer for inner pages */
@@ -396,13 +424,13 @@
       </div>
       <div class="meta-block">
         <strong>Contact</strong>
-        joshua.keyes@gmail.com<br/>
-        (626) 993-5370
+        <a class="url-link" href="mailto:joshua.keyes@gmail.com">joshua.keyes@gmail.com</a><br/>
+        <a class="url-link" href="tel:+16269935370">(626) 993-5370</a>
       </div>
       <div class="meta-block">
         <strong>Online</strong>
-        raihnforge.github.io/cwu-portfolio/<br/>
-        raihnforge.github.io
+        <a class="url-link" href="https://raihnforge.github.io/cwu-portfolio/">raihnforge.github.io/cwu-portfolio/</a><br/>
+        <a class="url-link" href="https://raihnforge.github.io/">raihnforge.github.io</a>
       </div>
       <div class="meta-block">
         <strong>Date</strong>
@@ -432,28 +460,28 @@
 
     <div class="kelvin-stack">
       <div class="grid-row social-row">
-        <div class="img-tile">
+        <a class="tile-link" href="https://raihnforge.github.io/cwu-portfolio/#social-templates"><div class="img-tile">
           <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-01.jpg" alt="Kelvin social post 01" /></div>
           <div class="label"><p class="tag">Social Template 01</p><p class="name">Branded social asset</p></div>
-        </div>
-        <div class="img-tile">
+        </div></a>
+        <a class="tile-link" href="https://raihnforge.github.io/cwu-portfolio/#social-templates"><div class="img-tile">
           <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-02.jpg" alt="Kelvin social post 02" /></div>
           <div class="label"><p class="tag">Social Template 02</p><p class="name">Branded social asset</p></div>
-        </div>
-        <div class="img-tile">
+        </div></a>
+        <a class="tile-link" href="https://raihnforge.github.io/cwu-portfolio/#social-templates"><div class="img-tile">
           <div class="img-wrap"><img src="file:///tmp/pdf-imgs/sms-post-03.jpg" alt="Kelvin social post 03" /></div>
           <div class="label"><p class="tag">Social Template 03</p><p class="name">Branded social asset</p></div>
-        </div>
+        </div></a>
       </div>
       <div class="grid-row video-row">
-        <div class="img-tile">
+        <a class="tile-link" href="https://youtu.be/eJ-2_Gzh4XE"><div class="img-tile">
           <div class="img-wrap"><img src="file:///tmp/pdf-imgs/eJ-2_Gzh4XE.jpg" alt="Kelvin Video Content POC still" /></div>
           <div class="label"><p class="tag">Video — Production Design</p><p class="name">Kelvin Video Content POC</p></div>
-        </div>
-        <div class="img-tile">
+        </div></a>
+        <a class="tile-link" href="https://www.youtube.com/watch?v=gsv99Rmn-R4"><div class="img-tile">
           <div class="img-wrap"><img src="file:///tmp/pdf-imgs/gsv99Rmn-R4.jpg" alt="Kelvin CalHOPE Partnership still" /></div>
           <div class="label"><p class="tag">Video — Partnership Communication</p><p class="name">Kelvin × CalHOPE Partnership</p></div>
-        </div>
+        </div></a>
       </div>
     </div>
 
@@ -476,24 +504,37 @@
       <span class="page-num">03 / 06</span>
     </div>
 
-    <div class="split">
-      <div class="hero-img">
-        <img src="file:///tmp/pdf-imgs/logo-banner.jpg" alt="KW Fitness logo banner" />
-      </div>
-      <div class="copy">
-        <p class="lede" style="margin:0 0 6px;">A complete visual identity and public website experience for a fitness brand — logo direction, color, typography, brand tone, layout, and promotional assets across web, print, and apparel.</p>
-        <ul class="compact">
-          <li>Established a cohesive visual voice across digital and physical materials.</li>
-          <li>Aligned messaging, imagery, and layout around motivation and audience connection.</li>
-          <li>Built a practical brand system supporting ongoing content and promotional needs.</li>
-          <li>Managed end-to-end visual development from concept through launch.</li>
-        </ul>
-        <p class="link"><strong style="color:var(--gold-dark);">Live:</strong> kwfitness.org</p>
-      </div>
+    <div class="kw-stack">
+      <p class="lede">A complete visual identity, web presence, and applied brand system for a fitness brand — logo direction, color, typography, business collateral, photography style, and a full brand guide. Each piece reinforces the same voice across digital and physical touchpoints.</p>
+      <ul class="compact">
+        <li>Cohesive visual voice across print, digital, apparel, and documentation.</li>
+        <li>Brand guide codifies logo usage, color, typography, voice, and applied materials.</li>
+        <li>Vision board and photography direction anchor the brand's mood and audience.</li>
+      </ul>
+      <p class="link"><strong style="color:var(--gold-dark);">Live:</strong> <a class="url-link" href="https://www.kwfitness.org/">kwfitness.org</a> &nbsp; · &nbsp; <strong style="color:var(--gold-dark);">Full Brand Guide:</strong> <a class="url-link" href="https://raihnforge.github.io/cwu-portfolio/KW-Fitness-Brand-Guide.pdf">PDF download</a></p>
+    </div>
+
+    <div class="kw-row">
+      <a class="tile-link" href="https://www.kwfitness.org/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/logo-banner.jpg" alt="KW Fitness logo banner" /></div>
+        <div class="label"><p class="tag">Identity</p><p class="name">Primary Logo</p></div>
+      </div></a>
+      <a class="tile-link" href="https://www.kwfitness.org/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/business-card.jpg" alt="KW Fitness business card" /></div>
+        <div class="label"><p class="tag">Print · Collateral</p><p class="name">Business Card</p></div>
+      </div></a>
+      <a class="tile-link" href="https://www.kwfitness.org/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/vision-board.jpg" alt="KW Fitness vision board" /></div>
+        <div class="label"><p class="tag">Brand · Direction</p><p class="name">Vision Board</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/cwu-portfolio/KW-Fitness-Brand-Guide.pdf"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/pdf-imgs/brand-guide-cover.jpg" alt="KW Fitness brand guide cover" /></div>
+        <div class="label"><p class="tag">Documentation</p><p class="name">Brand Guide (PDF)</p></div>
+      </div></a>
     </div>
 
     <div class="page-footer">
-      <span>Logo system · Web identity · Apparel concepts · Promotional collateral</span>
+      <span>Logo system · Print collateral · Vision board · Brand guide · Live site</span>
       <span>Joshua Keyes · Visual Communication Portfolio</span>
     </div>
   </div>
@@ -518,22 +559,22 @@
     </p>
 
     <div class="img-row cols-4">
-      <div class="img-tile">
+      <a class="tile-link" href="https://raihnforge.github.io/cwu-portfolio/#cwu-work"><div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/resource-card-kcvc.jpg" alt="KCVC Resource Card" /></div>
         <div class="label"><p class="tag">Print · Student Resources</p><p class="name">KCVC Resource Card</p></div>
-      </div>
-      <div class="img-tile">
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/cwu-portfolio/#cwu-work"><div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/resource-card-yakima.jpg" alt="Yakima Resource Card" /></div>
         <div class="label"><p class="tag">Print · Regional Support</p><p class="name">Yakima Veterans Center Card</p></div>
-      </div>
-      <div class="img-tile">
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/cwu-portfolio/#cwu-work"><div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/benefits-infographic.jpg" alt="Benefits Guide" /></div>
         <div class="label"><p class="tag">Print · Benefits Communication</p><p class="name">Benefits Guide</p></div>
-      </div>
-      <div class="img-tile">
+      </div></a>
+      <a class="tile-link" href="https://www.youtube.com/watch?v=KpzngGO-78g"><div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/KpzngGO-78g.jpg" alt="Veterans Center Overview still" /></div>
         <div class="label"><p class="tag">Video · Student Outreach</p><p class="name">Veterans Center Overview</p></div>
-      </div>
+      </div></a>
     </div>
 
     <div class="page-footer">
@@ -563,22 +604,22 @@
     </p>
 
     <div class="img-row cols-4">
-      <div class="img-tile">
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/teamliquid-sc-hyperx.jpg" alt="Team Liquid SC x HyperX overlay" /></div>
         <div class="label"><p class="tag">Esports · Brand Collab</p><p class="name">Team Liquid × HyperX</p></div>
-      </div>
-      <div class="img-tile">
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/teamliquid-dota.jpg" alt="Team Liquid Dota" /></div>
         <div class="label"><p class="tag">Esports · Team Identity</p><p class="name">Team Liquid Dota</p></div>
-      </div>
-      <div class="img-tile">
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/grubby-event-splash.jpg" alt="Grubby Event Splash" /></div>
         <div class="label"><p class="tag">Event · Splash Design</p><p class="name">Grubby Event</p></div>
-      </div>
-      <div class="img-tile">
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
         <div class="img-wrap"><img src="file:///tmp/pdf-imgs/victorious-gaming.jpg" alt="Victorious Gaming" /></div>
         <div class="label"><p class="tag">Community · Org Identity</p><p class="name">Victorious Gaming</p></div>
-      </div>
+      </div></a>
     </div>
 
     <div class="page-footer">
@@ -605,15 +646,16 @@
         <h3>Direct</h3>
         <p><strong>Joshua Keyes</strong></p>
         <p>Ellensburg, Washington</p>
-        <p><a href="mailto:joshua.keyes@gmail.com">joshua.keyes@gmail.com</a></p>
-        <p>(626) 993-5370</p>
+        <p><a class="url-link" href="mailto:joshua.keyes@gmail.com">joshua.keyes@gmail.com</a></p>
+        <p><a class="url-link" href="tel:+16269935370">(626) 993-5370</a></p>
       </div>
 
       <div class="contact-col">
         <h3>Online Portfolio</h3>
-        <p><strong>Selected Work for CWU</strong><br/><a href="https://raihnforge.github.io/cwu-portfolio/">raihnforge.github.io/cwu-portfolio/</a></p>
-        <p><strong>Main Portfolio</strong><br/><a href="https://raihnforge.github.io/">raihnforge.github.io</a></p>
-        <p><strong>LinkedIn</strong><br/>@joshua-blaine-keyes</p>
+        <p><strong>Selected Work for CWU</strong><br/><a class="url-link" href="https://raihnforge.github.io/cwu-portfolio/">raihnforge.github.io/cwu-portfolio/</a></p>
+        <p><strong>Main Portfolio</strong><br/><a class="url-link" href="https://raihnforge.github.io/">raihnforge.github.io</a></p>
+        <p><strong>RaihnForge Archive</strong><br/><a class="url-link" href="https://raihnforge.com/portfolio-2/">raihnforge.com/portfolio-2/</a></p>
+        <p><strong>LinkedIn</strong><br/><a class="url-link" href="https://www.linkedin.com/in/joshua-blaine-keyes">@joshua-blaine-keyes</a></p>
       </div>
     </div>
 
