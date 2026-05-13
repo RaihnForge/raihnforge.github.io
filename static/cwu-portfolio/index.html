@@ -330,6 +330,11 @@
     .video-thumb:hover::before { background: var(--blue); transform: translate(-50%, -50%) scale(1.08); }
     .video-thumb:hover { text-decoration: none; }
 
+    .video-thumb.no-play::before,
+    .video-thumb.no-play::after { display: none; }
+
+    .desc { min-height: 8em; }
+
     .links {
       display: flex;
       flex-wrap: wrap;
@@ -457,7 +462,7 @@
             <p class="tagline">Educational Video | Production Design</p>
             <h3>Kelvin Video Content POC</h3>
             <p class="meta">Lead Production Designer</p>
-            <p>
+            <p class="desc">
               Supported the development of educational video content by shaping visual design, production structure, and branded learning presentation. This work reflects experience translating instructional goals into clear, engaging, and consistent visual communication.
             </p>
             <a class="video-thumb" href="https://youtu.be/eJ-2_Gzh4XE" target="_blank" rel="noopener" aria-label="Watch Kelvin Video Content POC on YouTube">
@@ -472,7 +477,7 @@
             <p class="tagline">Partnership Communication | Branded Video</p>
             <h3>Kelvin CalHOPE Partnership</h3>
             <p class="meta">Lead Production Designer</p>
-            <p>
+            <p class="desc">
               Contributed to public facing branded communication supporting an educational and wellness partnership. The project demonstrates the ability to keep message, audience, and visual tone aligned in a mission centered context.
             </p>
             <a class="video-thumb" href="https://www.youtube.com/watch?v=gsv99Rmn-R4" target="_blank" rel="noopener" aria-label="Watch Kelvin CalHOPE Partnership on YouTube">
@@ -487,7 +492,7 @@
             <p class="tagline">Higher Education | Student Support</p>
             <h3>Veterans Center Overview</h3>
             <p class="meta">VetCorps | CWU Vet Center</p>
-            <p>
+            <p class="desc">
               Created and supported communication materials for student veterans in a higher education setting. This work connects visual communication with student support, resource access, campus awareness, and clear public messaging.
             </p>
             <a class="video-thumb" href="https://www.youtube.com/watch?v=KpzngGO-78g" target="_blank" rel="noopener" aria-label="Watch Veterans Center Overview on YouTube">
@@ -502,9 +507,12 @@
             <p class="tagline">Portfolio Archive | Illustration | Community Design</p>
             <h3>RaihnForge Archive</h3>
             <p class="meta">Older portfolio site</p>
-            <p>
+            <p class="desc">
               Additional work includes long term freelance design, illustration, streaming assets, esports community visuals, UI concepts, and brand support for independent clients and creative communities.
             </p>
+            <a class="video-thumb no-play" href="https://raihnforge.com/portfolio-2/" target="_blank" rel="noopener" aria-label="View RaihnForge Archive">
+              <img src="/images/graphic-design/esports/teamliquid-sc-hyperx.png" alt="Team Liquid StarCraft x HyperX stream overlay" loading="lazy" />
+            </a>
             <div class="links">
               <a class="link-pill" href="https://raihnforge.com/portfolio-2/" target="_blank" rel="noopener">View archive</a>
             </div>
