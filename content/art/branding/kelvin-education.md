@@ -12,6 +12,10 @@ tags: ["production-design", "video", "social-media", "edtech", "mental-health"]
 portfolio: true
 draft: false
 pieces:
+  - src: "/images/graphic-design/kelvin/brand-illustration.png"
+    type: "Brand Illustration"
+    caption: "Kelvin brand illustration — mascot character, branded composition, and the visual context around the 'Healthier, happier places to learn' promise. Carries across web, presentations, video, social, and product onboarding."
+    external: "https://kelvin.education/"
   - src: "/images/graphic-design/video-thumbs/gsv99Rmn-R4.jpg"
     type: "Video"
     caption: "Kelvin × CalHOPE Partnership announcement. Led production design — title treatments, motion system, color grade, lower-thirds."
