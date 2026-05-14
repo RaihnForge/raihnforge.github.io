@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Joshua Keyes — Selected Game Graphics Work</title>
+<style>
+  @page { size: 11in 8.5in; margin: 0; }
+  :root {
+    --text: #1a2240;
+    --muted: #5a6480;
+    --blue: #6a7596;
+    --blue-dark: #4d587a;
+    --gold: #9a8a4a;
+    --gold-dark: #7a6c38;
+    --line: #dde2ec;
+    --surface-tint: #f7f9fc;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--text); background: #fff;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page {
+    width: 11in; height: 8.5in;
+    position: relative; overflow: hidden;
+    page-break-after: always; break-after: page;
+    background: #fff;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .page::before {
+    content: ""; position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 8px; background: var(--blue);
+  }
+  .page-frame {
+    position: absolute;
+    top: 0.55in; bottom: 0.55in; left: 0.65in; right: 0.65in;
+    display: flex; flex-direction: column;
+  }
+
+  .page-header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 24px; padding-bottom: 14px; margin-bottom: 26px;
+    border-bottom: 1.5px solid var(--line);
+  }
+  .eyebrow {
+    color: var(--gold-dark);
+    font-size: 9.5pt; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+  }
+  .page-title { font-size: 28pt; font-weight: 700; margin: 0; line-height: 1.1; letter-spacing: -0.01em; }
+  .role { font-size: 11pt; color: var(--muted); margin: 6px 0 0; font-weight: 500; }
+  .page-num { font-size: 9pt; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+
+  .lede { font-size: 12pt; line-height: 1.55; color: var(--text); margin: 0 0 14px; }
+  ul.compact { margin: 0; padding-left: 18px; font-size: 10.5pt; line-height: 1.55; color: var(--text); }
+  ul.compact li { margin-bottom: 6px; }
+  a.url-link, a.url-link:visited { color: var(--blue-dark); text-decoration: none; }
+
+  /* Cover */
+  .cover-top { padding-top: 0.35in; }
+  .cover-eyebrow {
+    color: var(--gold-dark);
+    font-size: 11pt; font-weight: 700;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  .cover-title {
+    font-size: 60pt; font-weight: 800;
+    line-height: 1.0; margin: 0 0 18px;
+    letter-spacing: -0.02em; max-width: 9in;
+  }
+  .cover-sub {
+    font-size: 17pt; color: var(--muted);
+    margin: 0 0 28px; font-weight: 500;
+    max-width: 8in; line-height: 1.3;
+  }
+  .cover-rule { width: 96px; height: 4px; background: var(--gold); margin: 18px 0 24px; border-radius: 2px; }
+  .cover-intro { font-size: 12pt; line-height: 1.55; color: var(--text); max-width: 8in; margin: 0; }
+  .cover-meta {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    gap: 24px; padding-top: 18px; border-top: 1.5px solid var(--line);
+  }
+  .meta-block { font-size: 10.5pt; line-height: 1.5; }
+  .meta-block strong {
+    display: block; font-size: 9pt; color: var(--gold-dark);
+    text-transform: uppercase; letter-spacing: 0.15em;
+    font-weight: 700; margin-bottom: 4px;
+  }
+
+  /* Tile grid */
+  .img-row { display: grid; gap: 18px; flex: 1; min-height: 0; }
+  .img-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .img-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .img-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+  a.tile-link, a.tile-link:visited {
+    color: inherit; text-decoration: none;
+    display: flex; flex-direction: column;
+    height: 100%; min-height: 0;
+  }
+  a.tile-link > .img-tile { flex: 1; min-height: 0; width: 100%; }
+
+  .img-tile {
+    background: var(--surface-tint);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    min-height: 0;
+  }
+  .img-tile .img-wrap {
+    flex: 1; min-height: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 14px;
+    background: var(--surface-tint);
+  }
+  .img-tile img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+  .img-tile .label {
+    padding: 8px 12px 10px;
+    border-top: 1px solid var(--line);
+    background: #fff;
+  }
+  .img-tile .label .tag {
+    font-size: 8pt; text-transform: uppercase; letter-spacing: 0.12em;
+    font-weight: 700; color: var(--gold-dark); margin: 0 0 2px;
+  }
+  .img-tile .label .name { font-size: 10pt; font-weight: 600; margin: 0; color: var(--text); }
+
+  /* Two-row stack for a page with mixed grid */
+  .stack {
+    flex: 1; display: flex; flex-direction: column; gap: 14px; min-height: 0;
+  }
+  .stack .img-row { flex: 1; }
+  .stack .row-2 { flex: 1.2; }
+  .stack .row-1 { flex: 1; }
+
+  /* Hero split (page 2 feature) */
+  .split {
+    display: grid; grid-template-columns: 1.35fr 0.85fr;
+    gap: 28px; flex: 1; min-height: 0;
+  }
+  .split .hero-img {
+    background: var(--surface-tint);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 28px;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 0;
+  }
+  .split .hero-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .split .copy { display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+
+  .page-footer {
+    margin-top: 18px; padding-top: 12px;
+    border-top: 1px solid var(--line);
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 9pt; color: var(--muted); letter-spacing: 0.06em;
+  }
+
+  /* Contact page */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; flex: 1; align-content: start; }
+  .contact-col h3 {
+    font-size: 10pt; color: var(--gold-dark);
+    text-transform: uppercase; letter-spacing: 0.18em;
+    margin: 0 0 14px; font-weight: 700;
+  }
+  .contact-col p { margin: 0 0 8px; font-size: 12pt; line-height: 1.55; }
+  .closer {
+    margin-top: auto; border-top: 1.5px solid var(--line);
+    padding-top: 14px; font-size: 10pt; color: var(--muted); line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 — TITLE -->
+<section class="page">
+  <div class="page-frame">
+    <div class="cover-top">
+      <p class="cover-eyebrow">Game Graphics Portfolio · 2026</p>
+      <h1 class="cover-title">Selected Game<br/>Graphics Work</h1>
+      <p class="cover-sub">Joshua Keyes — Broadcast overlay systems, tournament identity, esports branding, and original game art across a fifteen-year through-line.</p>
+      <div class="cover-rule"></div>
+      <p class="cover-intro">
+        Two decades of game graphics work, curated for game-studio review. Covers live broadcast overlays for international esports productions (Back2Warcraft, Team Liquid), tournament and event identity, esports player and team branding, and original art from indie studios co-founded over the same period. The selection favors pieces with a public lineage — overlays seen live on Twitch and YouTube, print pieces shipped, and game art carried into released or playable builds.
+      </p>
+    </div>
+    <div class="cover-meta">
+      <div class="meta-block">
+        <strong>Prepared For</strong>
+        Game Studio Recruiters<br/>&amp; Art Directors
+      </div>
+      <div class="meta-block">
+        <strong>Contact</strong>
+        <a class="url-link" href="mailto:joshua.keyes@gmail.com">joshua.keyes@gmail.com</a><br/>
+        <a class="url-link" href="tel:+16269935370">(626) 993-5370</a>
+      </div>
+      <div class="meta-block">
+        <strong>Online</strong>
+        <a class="url-link" href="https://raihnforge.github.io/game-graphics-portfolio/">raihnforge.github.io/game-graphics-portfolio/</a><br/>
+        <a class="url-link" href="https://raihnforge.com/portfolio-2/">raihnforge.com archive</a>
+      </div>
+      <div class="meta-block">
+        <strong>Date</strong>
+        May 14, 2026
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 2 — BROADCAST OVERLAYS -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Esports Broadcast · Overlay Systems</p>
+        <h2 class="page-title">Broadcast Overlays</h2>
+        <p class="role">Live broadcast graphics across Warcraft III, StarCraft II, Dota 2, and League of Legends</p>
+      </div>
+      <span class="page-num">02 / 06</span>
+    </div>
+
+    <div class="split">
+      <div class="hero-img">
+        <img src="file:///tmp/game-pdf-imgs/back2warcraft-overlay.jpg" alt="Back2Warcraft live broadcast overlay over Warcraft III in-game shot" />
+      </div>
+      <div class="copy">
+        <p class="lede" style="margin:0 0 6px;">Back2Warcraft Coverlay — broadcast overlay system for the long-running Warcraft III shoutcasting channel. Production-safe over live game footage, with chyron, sponsor, and channel-branding regions composited cleanly.</p>
+        <ul class="compact">
+          <li>Designed against live in-game UI overlap and chat-readable transparency.</li>
+          <li>Identity refresh of the Back2Warcraft mark for the modern broadcast era.</li>
+          <li>Production assets ship as PSD layer groups for per-event re-keying.</li>
+        </ul>
+        <p style="font-size:10pt;color:var(--gold-dark);font-weight:700;margin:6px 0 0;">Live: <a class="url-link" href="https://www.youtube.com/@Back2Warcraft" style="font-weight:500;">youtube.com/@Back2Warcraft</a></p>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Back2Warcraft · Team Liquid · Victorious Gaming · Live production graphics</span>
+      <span>Joshua Keyes · Game Graphics Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 3 — TEAM IDENTITY OVERLAYS -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Team Identity · Streaming Overlay Systems</p>
+        <h2 class="page-title">Team Streaming Overlays</h2>
+        <p class="role">Broadcast overlay skins built around team brand systems</p>
+      </div>
+      <span class="page-num">03 / 06</span>
+    </div>
+
+    <p class="lede" style="max-width:9.6in;">
+      Streaming overlays designed around the team's brand system. Each balances the team's identity against the realities of the live game source — HUD-heavy frames, sponsor lockup, and player-name plate readability.
+    </p>
+
+    <div class="img-row cols-3">
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/teamliquid-sc-hyperx.jpg" alt="Team Liquid SC HyperX overlay" /></div>
+        <div class="label"><p class="tag">StarCraft II · Team Brand</p><p class="name">Team Liquid × HyperX</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/teamliquid-dota.jpg" alt="Team Liquid Dota 2 overlay" /></div>
+        <div class="label"><p class="tag">Dota 2 · Team Brand</p><p class="name">Team Liquid Dota 2</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/victorious-gaming.jpg" alt="Victorious Gaming LoL pick phase overlay" /></div>
+        <div class="label"><p class="tag">League of Legends · Pick Phase</p><p class="name">Victorious Gaming</p></div>
+      </div></a>
+    </div>
+
+    <div class="page-footer">
+      <span>Team brand systems · Sponsor lockup · Player nameplates · Game-source frames</span>
+      <span>Joshua Keyes · Game Graphics Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 4 — TOURNAMENT & EVENT DESIGN -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Event Identity · Tournament Design</p>
+        <h2 class="page-title">Tournament &amp; Event Design</h2>
+        <p class="role">Splash design, results graphics, and competitive character work</p>
+      </div>
+      <span class="page-num">04 / 06</span>
+    </div>
+
+    <p class="lede" style="max-width:9.6in;">
+      Tournament-cycle design — splash screens, results graphics, and the character illustration that travels around competitive moments.
+    </p>
+
+    <div class="img-row cols-3">
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/grubby-event-splash.jpg" alt="Grubby PokerStrategy streaming event splash" /></div>
+        <div class="label"><p class="tag">Event · Splash Design</p><p class="name">Grubby × PokerStrategy</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/grubby_vs_flash_results_raihn_big.jpg" alt="Grubby vs Flash MLG Dallas results graphic" /></div>
+        <div class="label"><p class="tag">Tournament · Results Graphic</p><p class="name">Grubby vs Flash · MLG Dallas</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/elite-grubby-guard-2025.jpg" alt="Elite Grubby Guard 2025 Remaster" /></div>
+        <div class="label"><p class="tag">Character · Player Tribute</p><p class="name">Elite Grubby Guard (2025)</p></div>
+      </div></a>
+    </div>
+
+    <div class="page-footer">
+      <span>Event splash · Tournament results · Character illustration · Player tribute</span>
+      <span>Joshua Keyes · Game Graphics Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 5 — IDENTITY + INDIE GAME ART -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Marks · Indie Game Art</p>
+        <h2 class="page-title">Identity &amp; Indie Game Art</h2>
+        <p class="role">Player and channel marks + original art from co-founded indie studios</p>
+      </div>
+      <span class="page-num">05 / 06</span>
+    </div>
+
+    <div class="stack">
+      <div class="img-row cols-3 row-2">
+        <a class="tile-link" href="https://www.youtube.com/@Back2Warcraft"><div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/back2warcraft-logo.jpg" alt="Back2Warcraft logo refresh" /></div>
+          <div class="label"><p class="tag">Channel Identity · Refresh</p><p class="name">Back2Warcraft Logo</p></div>
+        </div></a>
+        <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/IdrAlogoMascot.jpg" alt="IdrA logo system mascot" /></div>
+          <div class="label"><p class="tag">Player Identity · Mark System</p><p class="name">IdrA Logo System</p></div>
+        </div></a>
+        <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/grubby_businesscard-front.jpg" alt="Grubby business card design" /></div>
+          <div class="label"><p class="tag">Player Identity · Print Collateral</p><p class="name">Grubby Business Card</p></div>
+        </div></a>
+      </div>
+      <div class="img-row cols-3 row-1">
+        <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/MecroBossBattle.jpg" alt="Mecromage boss battle in-game art" /></div>
+          <div class="label"><p class="tag">Indie Game · In-Game Art</p><p class="name">Mecromage — Boss Battle</p></div>
+        </div></a>
+        <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/MecroDelf.jpg" alt="Mecromage MecroDelf character asset" /></div>
+          <div class="label"><p class="tag">Indie Game · Character Asset</p><p class="name">Mecromage — MecroDelf</p></div>
+        </div></a>
+        <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/game-pdf-imgs/ndlz.jpg" alt="NDLZ indie game title art" /></div>
+          <div class="label"><p class="tag">Indie Game · Title Identity</p><p class="name">NDLZ</p></div>
+        </div></a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>Channel + player marks · Mecromage · NDLZ · Indie studio art</span>
+      <span>Joshua Keyes · Game Graphics Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 6 — CONTACT -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Contact &amp; Online Portfolio</p>
+        <h2 class="page-title">Get in touch.</h2>
+        <p class="role">Available for game-studio, esports production, and brand-system roles.</p>
+      </div>
+      <span class="page-num">06 / 06</span>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-col">
+        <h3>Direct</h3>
+        <p><strong>Joshua Keyes</strong></p>
+        <p>Ellensburg, Washington</p>
+        <p><a class="url-link" href="mailto:joshua.keyes@gmail.com">joshua.keyes@gmail.com</a></p>
+        <p><a class="url-link" href="tel:+16269935370">(626) 993-5370</a></p>
+      </div>
+
+      <div class="contact-col">
+        <h3>Online Portfolio</h3>
+        <p><strong>Game Graphics Portfolio</strong><br/><a class="url-link" href="https://raihnforge.github.io/game-graphics-portfolio/">raihnforge.github.io/game-graphics-portfolio/</a></p>
+        <p><strong>Main Portfolio</strong><br/><a class="url-link" href="https://raihnforge.github.io/">raihnforge.github.io</a></p>
+        <p><strong>RaihnForge Archive</strong><br/><a class="url-link" href="https://raihnforge.com/portfolio-2/">raihnforge.com/portfolio-2/</a></p>
+        <p><strong>LinkedIn</strong><br/><a class="url-link" href="https://www.linkedin.com/in/joshua-blaine-keyes">@joshua-blaine-keyes</a></p>
+      </div>
+    </div>
+
+    <div class="closer">
+      Thank you for reviewing this work. The online version includes additional context, full-resolution images, and live broadcast links to projects referenced here.
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
