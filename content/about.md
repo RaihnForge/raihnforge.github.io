@@ -2,6 +2,7 @@
 title: "About"
 layout: "single"
 description: "Joshua Keyes — product-minded creator, USMC veteran, and indie studio co-founder."
+image: "/images/og-default.jpg"
 role: "Product Owner & Creative Producer"
 summary: "I'm a product-minded creator with two decades of experience shipping design, games, and digital products. I've led cross-functional teams, defined product vision, managed development roadmaps, and delivered shipped work — from esports graphics seen by thousands to a nine-year indie game studio. I bring the same rigor to product ownership that the Marine Corps taught me about leadership: clarity of mission, bias toward action, and care for the people doing the work."
 competencies:
