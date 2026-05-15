@@ -1,19 +1,19 @@
 ---
-title: "Game Graphics Portfolio"
+title: "Production Design & Visual Systems"
 date: 2026-05-14
-audience: "Game Studio Recruiters & Art Directors"
-role: "Game Graphics · Esports Broadcast · Identity"
+audience: "Lead Production Designer · Visual Systems & UX"
+role: "Production Design · Broadcast · UX"
 year: "2026"
 status: "Active"
-description: "Curated game graphics work — broadcast overlay systems for international esports productions, tournament and event identity, esports player and team branding, and original art from co-founded indie studios."
+description: "Curated production design and visual systems work — broadcast overlay systems, streaming visual languages, tournament identity, and in-game UX from co-produced indie titles. Prepared for Lead Production Designer and Visual Systems & UX roles."
 external_url: "/game-graphics-portfolio/"
 image: "/images/graphic-design/esports/back2warcraft-overlay.png"
-tags: ["esports", "broadcast graphics", "game art", "tournament identity", "selected work"]
+tags: ["production design", "visual systems", "ux", "broadcast graphics", "selected work"]
 draft: false
 ---
 
-Two decades of game graphics work, curated for game-studio handoff.
+Selected production design and visual systems work prepared for Lead Production Designer and Visual Systems & UX roles.
 
-Covers broadcast overlay systems for international esports productions (Back2Warcraft, Team Liquid), tournament and event identity (Grubby × PokerStrategy, MLG Dallas results graphics), esports player and team branding (IdrA, Grubby, Back2Warcraft mark refresh), and original art from co-founded indie studios (Mecromage, NDLZ).
+Covers live broadcast overlay systems (Back2Warcraft Coverlay, Team Liquid × HyperX, Team Liquid Dota 2, Victorious Gaming pick-phase redesign), tournament identity and event production (Grubby × PokerStrategy, Grubby vs Flash MLG Dallas, IdrA logo system, Back2Warcraft mark refresh), and in-game UX from co-produced indie titles (Mecromage map screen, foundational tile system, BaseTrade TV cheermote brand system).
 
 Online portfolio + downloadable PDF.
