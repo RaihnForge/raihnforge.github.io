@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Joshua Keyes — Selected Work · Riot Games</title>
+<style>
+  @page { size: 11in 8.5in; margin: 0; }
+  :root {
+    --text: #1a2240;
+    --muted: #5a6480;
+    --blue: #6a7596;
+    --blue-dark: #4d587a;
+    --gold: #9a8a4a;
+    --gold-dark: #7a6c38;
+    --line: #dde2ec;
+    --surface-tint: #f7f9fc;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--text); background: #fff;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page {
+    width: 11in; height: 8.5in;
+    position: relative; overflow: hidden;
+    page-break-after: always; break-after: page;
+    background: #fff;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .page::before {
+    content: ""; position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 8px; background: var(--blue);
+  }
+  .page-frame {
+    position: absolute;
+    top: 0.55in; bottom: 0.55in; left: 0.65in; right: 0.65in;
+    display: flex; flex-direction: column;
+  }
+  .page-header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 24px; padding-bottom: 14px; margin-bottom: 22px;
+    border-bottom: 1.5px solid var(--line);
+  }
+  .eyebrow {
+    color: var(--gold-dark);
+    font-size: 9.5pt; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+  }
+  .page-title { font-size: 26pt; font-weight: 700; margin: 0; line-height: 1.1; letter-spacing: -0.01em; }
+  .role { font-size: 11pt; color: var(--muted); margin: 6px 0 0; font-weight: 500; }
+  .page-num { font-size: 9pt; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+  .lede { font-size: 11pt; line-height: 1.55; color: var(--text); margin: 0 0 14px; }
+  ul.compact { margin: 0; padding-left: 18px; font-size: 10pt; line-height: 1.5; color: var(--text); }
+  ul.compact li { margin-bottom: 5px; }
+  a.url-link, a.url-link:visited { color: var(--blue-dark); text-decoration: none; }
+
+  /* Cover */
+  .cover-top { padding-top: 0.25in; }
+  .cover-eyebrow {
+    color: var(--gold-dark);
+    font-size: 11pt; font-weight: 700;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  .cover-title {
+    font-size: 48pt; font-weight: 800;
+    line-height: 1.0; margin: 0 0 18px;
+    letter-spacing: -0.02em; max-width: 9.4in;
+  }
+  .cover-sub {
+    font-size: 16pt; color: var(--muted);
+    margin: 0 0 22px; font-weight: 500;
+    max-width: 8.2in; line-height: 1.3;
+  }
+  .cover-rule { width: 96px; height: 4px; background: var(--gold); margin: 18px 0 22px; border-radius: 2px; }
+  .cover-intro { font-size: 11.5pt; line-height: 1.55; color: var(--text); max-width: 8.4in; margin: 0; }
+  .cover-meta {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    gap: 24px; padding-top: 18px; border-top: 1.5px solid var(--line);
+  }
+  .meta-block { font-size: 10.5pt; line-height: 1.5; }
+  .meta-block strong {
+    display: block; font-size: 9pt; color: var(--gold-dark);
+    text-transform: uppercase; letter-spacing: 0.15em;
+    font-weight: 700; margin-bottom: 4px;
+  }
+
+  /* Tile grid */
+  .img-row { display: grid; gap: 16px; flex: 1; min-height: 0; }
+  .img-row.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .img-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .img-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .img-row.cols-5 { grid-template-columns: repeat(5, 1fr); }
+
+  a.tile-link, a.tile-link:visited {
+    color: inherit; text-decoration: none;
+    display: flex; flex-direction: column;
+    height: 100%; min-height: 0;
+  }
+  a.tile-link > .img-tile { flex: 1; min-height: 0; width: 100%; }
+
+  .img-tile {
+    background: var(--surface-tint);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    min-height: 0;
+  }
+  .img-tile .img-wrap {
+    flex: 1; min-height: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 12px;
+    background: var(--surface-tint);
+  }
+  .img-tile.cheer .img-wrap {
+    background: linear-gradient(180deg, #5fb6e6 0%, #aedaf2 100%);
+    padding: 8px;
+  }
+  .img-tile img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+  .img-tile .label {
+    padding: 8px 12px 10px;
+    border-top: 1px solid var(--line);
+    background: #fff;
+  }
+  .img-tile .label .tag {
+    font-size: 8pt; text-transform: uppercase; letter-spacing: 0.12em;
+    font-weight: 700; color: var(--gold-dark); margin: 0 0 2px;
+  }
+  .img-tile .label .name { font-size: 9.5pt; font-weight: 600; margin: 0; color: var(--text); }
+
+  /* Hero split */
+  .split {
+    display: grid; grid-template-columns: 1.35fr 0.85fr;
+    gap: 26px; flex: 1; min-height: 0;
+  }
+  .split.media-left { grid-template-columns: 0.95fr 1.05fr; }
+  .split .hero-img {
+    background: var(--surface-tint);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 0;
+  }
+  .split .hero-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .split .copy { display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+
+  /* Kelvin layout — feature row + 3 small below */
+  .kelvin-stack { display: flex; flex-direction: column; flex: 1; gap: 14px; min-height: 0; }
+  .kelvin-feature { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 22px; flex: 1.4; min-height: 0; }
+  .kelvin-templates { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; min-height: 0; }
+
+  .page-footer {
+    margin-top: 18px; padding-top: 12px;
+    border-top: 1px solid var(--line);
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 9pt; color: var(--muted); letter-spacing: 0.06em;
+  }
+
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; flex: 1; align-content: start; }
+  .contact-col h3 {
+    font-size: 10pt; color: var(--gold-dark);
+    text-transform: uppercase; letter-spacing: 0.18em;
+    margin: 0 0 14px; font-weight: 700;
+  }
+  .contact-col p { margin: 0 0 8px; font-size: 12pt; line-height: 1.55; }
+  .closer {
+    margin-top: auto; border-top: 1.5px solid var(--line);
+    padding-top: 14px; font-size: 10pt; color: var(--muted); line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 — COVER -->
+<section class="page">
+  <div class="page-frame">
+    <div class="cover-top">
+      <p class="cover-eyebrow">Selected Work · Riot Games · 2026</p>
+      <h1 class="cover-title">Visual Systems for<br/>Live Gaming Ecosystems.</h1>
+      <p class="cover-sub">Joshua Keyes — Curated for Riot. Brand identity, esports & streaming ecosystems, game UX, motion, and worldbuilding.</p>
+      <div class="cover-rule"></div>
+      <p class="cover-intro">
+        This portfolio is a curated selection — not a complete archive. The pieces are chosen to show one through-line: how visual systems create emotional and experiential cohesion across every player-facing surface. Live broadcast overlay systems engineered against in-game UI, self-serve template kits that hold brand voice without a designer in the loop, motion-graphic families designed once and scaled across an ecosystem, and worldbuilding craft that gives those systems something to be cohesive around.
+      </p>
+    </div>
+    <div class="cover-meta">
+      <div class="meta-block">
+        <strong>Prepared For</strong>
+        Riot Games<br/>Visual Systems & UX
+      </div>
+      <div class="meta-block">
+        <strong>Contact</strong>
+        <a class="url-link" href="mailto:joshua.keyes@gmail.com">joshua.keyes@gmail.com</a><br/>
+        <a class="url-link" href="tel:+16269935370">(626) 993-5370</a>
+      </div>
+      <div class="meta-block">
+        <strong>Online</strong>
+        <a class="url-link" href="https://raihnforge.github.io/riot-portfolio/">raihnforge.github.io/riot-portfolio/</a><br/>
+        <a class="url-link" href="https://raihnforge.com/portfolio-2/">raihnforge.com archive</a>
+      </div>
+      <div class="meta-block">
+        <strong>Date</strong>
+        May 14, 2026
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 2 — FEATURED SYSTEMS · KELVIN EDUCATION -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Featured Systems · Brand & Production System</p>
+        <h2 class="page-title">Kelvin Education</h2>
+        <p class="role">Lead Production Designer · Brand illustration + broadcast video + self-serve social template system</p>
+      </div>
+      <span class="page-num">02 / 09</span>
+    </div>
+    <div class="kelvin-stack">
+      <div class="kelvin-feature">
+        <div class="img-tile" style="border-radius:10px;">
+          <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/kelvin-brand-illustration.jpg" alt="Kelvin Education brand illustration — mascot character and 'Healthier, happier places to learn' brand context" /></div>
+        </div>
+        <div style="display:flex;flex-direction:column;justify-content:center;gap:10px;">
+          <p class="lede">Lead production design for a mental-wellness ed-tech studio, in partnership with programs like CalHOPE. The brand had to hold across broadcast video, partnership announcements, presentation decks, and a self-serve social-media template kit the staff use every week without a designer in the loop.</p>
+          <ul class="compact">
+            <li>Brand illustration system carrying the "Healthier, happier places to learn" promise across web, video, social, and product onboarding.</li>
+            <li>Title treatments, motion system, color grade, and lower-thirds for partnership-tier broadcast video.</li>
+            <li>Self-serve social template kit — staff publish on-brand posts without designer bottleneck.</li>
+          </ul>
+          <p style="font-size:10pt;color:var(--gold-dark);font-weight:700;margin:4px 0 0;">Live: <a class="url-link" href="https://kelvin.education/" style="font-weight:500;">kelvin.education</a> · <a class="url-link" href="https://www.youtube.com/watch?v=gsv99Rmn-R4" style="font-weight:500;">CalHOPE partnership video</a></p>
+        </div>
+      </div>
+      <div class="kelvin-templates">
+        <a class="tile-link" href="https://raihnforge.github.io/art/branding/kelvin-education/"><div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/kelvin-sms-01.jpg" alt="Kelvin social template variant 1" /></div>
+          <div class="label"><p class="tag">Self-Serve Template</p><p class="name">Social System · Variant 1</p></div>
+        </div></a>
+        <a class="tile-link" href="https://raihnforge.github.io/art/branding/kelvin-education/"><div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/kelvin-sms-02.jpg" alt="Kelvin social template variant 2" /></div>
+          <div class="label"><p class="tag">Self-Serve Template</p><p class="name">Social System · Variant 2</p></div>
+        </div></a>
+        <a class="tile-link" href="https://raihnforge.github.io/art/branding/kelvin-education/"><div class="img-tile">
+          <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/kelvin-sms-03.jpg" alt="Kelvin social template variant 3" /></div>
+          <div class="label"><p class="tag">Self-Serve Template</p><p class="name">Social System · Variant 3</p></div>
+        </div></a>
+      </div>
+    </div>
+    <div class="page-footer">
+      <span>Brand illustration · Broadcast video · Partnership announcements · Self-serve template kit</span>
+      <span>Joshua Keyes · Riot Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 3 — BROADCAST PRODUCTION -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Esports & Streaming · Live Overlay System</p>
+        <h2 class="page-title">Broadcast Production</h2>
+        <p class="role">Live broadcast overlay designed against in-game UI, sponsor lockup, and chat-readable transparency</p>
+      </div>
+      <span class="page-num">03 / 09</span>
+    </div>
+    <div class="split">
+      <div class="hero-img">
+        <img src="file:///tmp/riot-pdf-imgs/back2warcraft-overlay.jpg" alt="Back2Warcraft live broadcast overlay over Warcraft III in-game shot" />
+      </div>
+      <div class="copy">
+        <p class="lede" style="margin:0 0 6px;">Back2Warcraft Coverlay — broadcast overlay system for the long-running Warcraft III shoutcasting channel. Production-safe over live game footage, with chyron, sponsor, and channel-branding regions composited cleanly around the game's HUD.</p>
+        <ul class="compact">
+          <li>Safe areas tuned against the in-game UI for chat-readable transparency.</li>
+          <li>PSD layer groups structured so production can re-key per event without designer involvement.</li>
+          <li>Identity refresh of the Back2Warcraft mark carried through the broadcast system.</li>
+        </ul>
+        <p style="font-size:10pt;color:var(--gold-dark);font-weight:700;margin:6px 0 0;">Live: <a class="url-link" href="https://www.youtube.com/@Back2Warcraft" style="font-weight:500;">youtube.com/@Back2Warcraft</a></p>
+      </div>
+    </div>
+    <div class="page-footer">
+      <span>Back2Warcraft · Live production · Sponsor lockup · Multi-event re-keying</span>
+      <span>Joshua Keyes · Riot Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 4 — TEAM STREAMING VISUAL SYSTEMS -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Esports & Streaming · Team Identity Systems</p>
+        <h2 class="page-title">Team Streaming Visual Systems</h2>
+        <p class="role">Overlay systems built around team brand identity — including a documented pick-phase UX redesign</p>
+      </div>
+      <span class="page-num">04 / 09</span>
+    </div>
+    <p class="lede" style="max-width:9.6in;">
+      Streaming overlay systems designed around the team's brand language. Each balances the team's identity against HUD-heavy live game sources, sponsor lockup, and player-name plate readability. Victorious Gaming includes a documented before/after pick-phase UX redesign.
+    </p>
+    <div class="img-row cols-4">
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/teamliquid-sc-hyperx.jpg" alt="Team Liquid SC HyperX overlay" /></div>
+        <div class="label"><p class="tag">StarCraft II · Visual System</p><p class="name">Team Liquid × HyperX</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/teamliquid-dota.jpg" alt="Team Liquid Dota 2 overlay" /></div>
+        <div class="label"><p class="tag">Dota 2 · Visual System</p><p class="name">Team Liquid Dota 2</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/victorious-gaming.jpg" alt="Victorious Gaming LoL pick phase overlay redesign — before / after" /></div>
+        <div class="label"><p class="tag">League of Legends · UX Redesign</p><p class="name">Victorious Gaming — Pick Phase</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/grubby-event-splash.jpg" alt="Grubby PokerStrategy streaming event splash" /></div>
+        <div class="label"><p class="tag">WC3 · Streaming Event</p><p class="name">Grubby × PokerStrategy</p></div>
+      </div></a>
+    </div>
+    <div class="page-footer">
+      <span>Team brand systems · Sponsor lockup · UX redesign · Pick-phase information hierarchy</span>
+      <span>Joshua Keyes · Riot Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 5 — TOURNAMENT IDENTITY & MARKS -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Esports & Streaming · Mark Systems</p>
+        <h2 class="page-title">Tournament Identity &amp; Marks</h2>
+        <p class="role">Event production graphics + the mark systems that travel around competitive cycles</p>
+      </div>
+      <span class="page-num">05 / 09</span>
+    </div>
+    <p class="lede" style="max-width:9.6in;">
+      Results graphics, channel mark refresh, and the player identity marks that carry across stream, social, and print.
+    </p>
+    <div class="img-row cols-4">
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/grubby_vs_flash_results_raihn_big.jpg" alt="Grubby vs Flash MLG Dallas results graphic" /></div>
+        <div class="label"><p class="tag">Tournament · Results Graphic</p><p class="name">Grubby vs Flash · MLG Dallas</p></div>
+      </div></a>
+      <a class="tile-link" href="https://www.youtube.com/@Back2Warcraft"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/back2warcraft-logo.jpg" alt="Back2Warcraft logo refresh" /></div>
+        <div class="label"><p class="tag">Channel Identity · Mark Refresh</p><p class="name">Back2Warcraft Logo</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.com/portfolio-2/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/IdrAlogoMascot.jpg" alt="IdrA logo mascot variant" /></div>
+        <div class="label"><p class="tag">Player Identity · Mark System</p><p class="name">IdrA Logo System</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/art/illustration/cheerful-reynor/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/cheerful-reynor.jpg" alt="Cheerful Reynor StarCraft II player portrait" /></div>
+        <div class="label"><p class="tag">Player Identity · Branded Portrait</p><p class="name">Cheerful — Reynor</p></div>
+      </div></a>
+    </div>
+    <div class="page-footer">
+      <span>Tournament results · Channel mark refresh · Player mark system · Branded portrait</span>
+      <span>Joshua Keyes · Riot Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 6 — MOTION & BRAND SYSTEMS · STREAMING -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Motion · Streaming Brand System</p>
+        <h2 class="page-title">BaseTrade TV — Cheermote Family</h2>
+        <p class="role">Twitch-integrated animated cheermote family — pixel-art motion built as one cohesive brand</p>
+      </div>
+      <span class="page-num">06 / 09</span>
+    </div>
+    <p class="lede" style="max-width:9.6in;">
+      Animated cheermote family for the BaseTrade TV streaming ecosystem. Pose, palette, idle loop, and impact frame were designed once and applied across the family — each cheermote reads as the same brand at 112px chat scale. Native delivery as Twitch-compatible animated GIFs.
+    </p>
+    <div class="img-row cols-5">
+      <a class="tile-link" href="https://raihnforge.github.io/art/animation/cheermotes-for-basetrade-tv/"><div class="img-tile cheer">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/bttvcm-sword.jpg" alt="BaseTrade TV cheermote — pixel-art sword" /></div>
+        <div class="label"><p class="tag">Cheermote · Pixel Motion</p><p class="name">Sword</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/art/animation/cheermotes-for-basetrade-tv/"><div class="img-tile cheer">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/bttvcm-dagger.jpg" alt="BaseTrade TV cheermote — pixel-art dagger" /></div>
+        <div class="label"><p class="tag">Cheermote · Pixel Motion</p><p class="name">Dagger</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/art/animation/cheermotes-for-basetrade-tv/"><div class="img-tile cheer">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/bttvcm-bomb.jpg" alt="BaseTrade TV cheermote — pixel-art bomb" /></div>
+        <div class="label"><p class="tag">Cheermote · Pixel Motion</p><p class="name">Bomb</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/art/animation/cheermotes-for-basetrade-tv/"><div class="img-tile cheer">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/bttvcm-star.jpg" alt="BaseTrade TV cheermote — pixel-art star" /></div>
+        <div class="label"><p class="tag">Cheermote · Pixel Motion</p><p class="name">Star</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/art/animation/cheermotes-for-basetrade-tv/"><div class="img-tile cheer">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/bttvcm-gg.jpg" alt="BaseTrade TV cheermote — pixel-art GG" /></div>
+        <div class="label"><p class="tag">Cheermote · Pixel Motion</p><p class="name">GG</p></div>
+      </div></a>
+    </div>
+    <p class="lede" style="max-width:9.6in;margin-top:18px;font-size:10.5pt;">
+      <strong style="color:var(--text);">Why this matters:</strong> a streaming brand lives at chat scale, where pose and silhouette do the work color and detail can't. The cheermote family proves the system — same impact frame, same palette logic, distinct identities — at the unforgiving scale where players actually see it.
+    </p>
+    <div class="page-footer">
+      <span>Animated cheermote family · 112px chat scale · Shared pose/palette grammar</span>
+      <span>Joshua Keyes · Riot Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 7 — GAME UX/UI + PRODUCTION DESIGN -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Game UX/UI · Production Design</p>
+        <h2 class="page-title">In-Game UX &amp; Visual Systems</h2>
+        <p class="role">Game UI, environment tile systems, and encounter design from co-produced indie titles</p>
+      </div>
+      <span class="page-num">07 / 09</span>
+    </div>
+    <p class="lede" style="max-width:9.6in;">
+      In-game UX and the production design that supports it — level-select UI tuned for clear player guidance, foundational environment tile systems readable at gameplay scale, and encounter visual design built around silhouette legibility.
+    </p>
+    <div class="img-row cols-3">
+      <a class="tile-link" href="https://raihnforge.github.io/gamedev/mecromage/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/plate.jpg" alt="Mecromage map screen — Grizlow's Roost level select" /></div>
+        <div class="label"><p class="tag">Indie Game · UI / UX</p><p class="name">Mecromage Map Screen</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/gamedev/mecromage/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/tilesscene04b.jpg" alt="Mecromage layered environment tile composition" /></div>
+        <div class="label"><p class="tag">Indie Game · Production Design</p><p class="name">Mecromage Tile System</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/gamedev/mecromage/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/mecro-room.jpg" alt="Mecromage environment room demo — finished interior scene" /></div>
+        <div class="label"><p class="tag">Indie Game · Environment Design</p><p class="name">Mecromage — Room Composition</p></div>
+      </div></a>
+    </div>
+    <div class="page-footer">
+      <span>Level select UX · Tile system production design · Encounter silhouette design</span>
+      <span>Joshua Keyes · Riot Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 8 — WORLDBUILDING & ILLUSTRATION -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Worldbuilding · Illustration</p>
+        <h2 class="page-title">Worldbuilding &amp; Illustration</h2>
+        <p class="role">Atmospheric work — mood, taste, thematic consistency. The instincts that give visual systems something to be cohesive around.</p>
+      </div>
+      <span class="page-num">08 / 09</span>
+    </div>
+    <p class="lede" style="max-width:9.6in;">
+      Selected illustration and worldbuilding pieces. These exist to demonstrate visual storytelling instinct and entertainment taste — the foundation under every system above.
+    </p>
+    <div class="img-row cols-4">
+      <a class="tile-link" href="https://raihnforge.github.io/art/illustration/ash-keepers-season-22/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/ash-keepers.jpg" alt="Ash Keepers W3Champions avatar system" /></div>
+        <div class="label"><p class="tag">W3Champions · Avatar System</p><p class="name">The Ash Keepers — Season 22</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/art/illustration/commission-spellbringers-key-art/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/spellbringers-keyart.jpg" alt="Spellbringers Warcraft 3 mod key art" /></div>
+        <div class="label"><p class="tag">Published Key Art</p><p class="name">Spellbringers</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/art/illustration/commission-gentle-avatar/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/gentle-avatar.jpg" alt="Gentle W3Champions Mountain King avatar commission" /></div>
+        <div class="label"><p class="tag">Warcraft III · Commissioned Avatar</p><p class="name">Gentle — Mountain King</p></div>
+      </div></a>
+      <a class="tile-link" href="https://raihnforge.github.io/art/esports/elite-grubby-guard-2025/"><div class="img-tile">
+        <div class="img-wrap"><img src="file:///tmp/riot-pdf-imgs/elite-grubby.jpg" alt="Elite Grubby Guard 2025 — esports character illustration remaster" /></div>
+        <div class="label"><p class="tag">Esports · Character Remaster</p><p class="name">Elite Grubby Guard · 2025</p></div>
+      </div></a>
+    </div>
+    <p class="lede" style="max-width:9.6in;margin-top:14px;font-size:10.5pt;">
+      <strong style="color:var(--text);">Selected commissions and community drops.</strong> The W3Champions Ash Keepers avatar set was created exclusively for Back2Warcraft's Season 22 Finals — a community-facing brand drop tied to a live tournament cycle. Spellbringers is published key art for an active Warcraft 3 strategy mod. Gentle's Mountain King avatar is a paid commission for the W3Champions community.
+    </p>
+    <div class="page-footer">
+      <span>Avatar systems · Published key art · Character portraiture · Esports illustration</span>
+      <span>Joshua Keyes · Riot Portfolio</span>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 9 — CONTACT -->
+<section class="page">
+  <div class="page-frame">
+    <div class="page-header">
+      <div>
+        <p class="eyebrow">Contact &amp; Online Portfolio</p>
+        <h2 class="page-title">Get in touch.</h2>
+        <p class="role">Open to Riot conversations.</p>
+      </div>
+      <span class="page-num">09 / 09</span>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-col">
+        <h3>Direct</h3>
+        <p><strong>Joshua Keyes</strong></p>
+        <p>Ellensburg, Washington</p>
+        <p><a class="url-link" href="mailto:joshua.keyes@gmail.com">joshua.keyes@gmail.com</a></p>
+        <p><a class="url-link" href="tel:+16269935370">(626) 993-5370</a></p>
+      </div>
+      <div class="contact-col">
+        <h3>Online Portfolio</h3>
+        <p><strong>Riot Portfolio (this deck)</strong><br/><a class="url-link" href="https://raihnforge.github.io/riot-portfolio/">raihnforge.github.io/riot-portfolio/</a></p>
+        <p><strong>Main Portfolio</strong><br/><a class="url-link" href="https://raihnforge.github.io/">raihnforge.github.io</a></p>
+        <p><strong>RaihnForge Archive</strong><br/><a class="url-link" href="https://raihnforge.com/portfolio-2/">raihnforge.com/portfolio-2/</a></p>
+        <p><strong>LinkedIn</strong><br/><a class="url-link" href="https://www.linkedin.com/in/joshua-blaine-keyes/">@joshua-blaine-keyes</a></p>
+      </div>
+    </div>
+    <div class="closer">
+      Thank you for reviewing this work. The online version includes additional context, full-resolution images, and live broadcast links to the projects referenced here.
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
