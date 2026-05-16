@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  const REPO = 'RaihnForge/raihnforge-www';
+  const REPO = 'RaihnForge/raihnforge.github.io';
   const BRANCH = 'main';
   const API = 'https://api.github.com';
 
