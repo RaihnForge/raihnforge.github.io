@@ -92,10 +92,11 @@ The narrative spine: Mecromage is the through-line creative project. Archkey Stu
 - `CLAUDE.md` — updated Products table to 6-bucket structure, documented absorption mappings.
 - `MEMORY.md` — breadcrumbed the relaunch milestone.
 
-**Deploy cutover (user action pending):**
-- Rename `RaihnForge/raihnforge-www` → `RaihnForge/raihnforge.github.io` (after deleting existing placeholder repo) so this Hugo site takes the org-root URL.
-- Local git remote needs `git remote set-url origin https://github.com/RaihnForge/raihnforge.github.io.git` after rename.
-- Workflow may need `publish_branch` adjustment — GitHub Pages org/user pages can still serve from `gh-pages` branch under current settings, but verify after rename.
+**Deploy cutover (completed 2026-05-16):**
+- ✓ `RaihnForge/raihnforge-www` renamed to `RaihnForge/raihnforge.github.io` so this Hugo site takes the org-root URL.
+- ✓ Local git remote updated to the new URL.
+- ✓ Sveltia CMS (`static/admin/config.yml`) and dashboard (`static/admin/dashboard/github.js`) repointed to the renamed repo.
+- Workflow may still need `publish_branch` adjustment — verify gh-pages serves correctly under the new repo name.
 
 ## Session Notes — 2026-03-30 (Demo Polish Pass)
 

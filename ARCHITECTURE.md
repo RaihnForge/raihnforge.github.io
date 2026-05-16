@@ -105,7 +105,7 @@ No build step for assets. Hugo handles Markdown-to-HTML. Static files are served
 ## CMS
 
 Sveltia CMS at `/admin/` (migrated from Decap 2026-03-01):
-- GitHub backend: `RaihnForge/raihnforge-www` / `main`
+- GitHub backend: `RaihnForge/raihnforge.github.io` / `main`
 - Collections: art, blog, gamedev, pages (about)
 - Config: `static/admin/config.yml`
 - Separate admin dashboard at `static/admin/dashboard/`

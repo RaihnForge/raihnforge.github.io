@@ -173,7 +173,7 @@ hugo --gc               # Build + garbage collect
 ## CMS
 
 Sveltia CMS at `/admin/` (migrated from Decap on 2026-03-01, commit `2ec087c`):
-- GitHub backend: `RaihnForge/raihnforge-www` / `main`
+- GitHub backend: `RaihnForge/raihnforge.github.io` / `main`
 - Collections: art, blog, gamedev, pages (about)
 - Custom dashboard extension at `/admin/dashboard/` for content management (reorder, validate, merge, duplicate)
 

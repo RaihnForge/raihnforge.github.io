@@ -13,5 +13,5 @@
 
 ## Session Breadcrumbs
 
-- **In flight:** Products relaunch complete locally. Public deploy pending: user needs to delete/rename `RaihnForge/raihnforge.github.io` placeholder repo so this site can take the org-root URL.
-- **Timestamp:** 2026-04-20
+- **2026-05-16:** Deploy cutover completed — `RaihnForge/raihnforge-www` renamed to `RaihnForge/raihnforge.github.io` on GitHub. Local git remote, Sveltia CMS config, and dashboard REPO constant all repointed. Site now serves at the org-root URL.
+- **2026-04-20:** Products relaunch complete locally.

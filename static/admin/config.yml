@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: RaihnForge/raihnforge-www
+  repo: RaihnForge/raihnforge.github.io
   branch: main
   base_url: https://sveltia-cms-auth.YOURSUBDOMAIN.workers.dev
 media_folder: static/images
