@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2009
+archived: true
 
 ---
 [![Dahnjin](/images/recovered/dahnjin_pic7.jpg "Dahnjin")](/images/recovered/dahnjin_pic7.jpg)

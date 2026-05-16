@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2008
+archived: true
 
 ---
 [![](/images/recovered/chirstmas_gift_draft_07.jpg)](/images/recovered/chirstmas_gift_draft_07.jpg)

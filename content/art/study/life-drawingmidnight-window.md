@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2007
+archived: true
 
 ---
 [![lifedraw_midnight-window](/images/recovered/lifedraw_midnight-window.jpg "lifedraw_midnight-window")](/images/recovered/lifedraw_midnight-window.jpg)

@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2007
+archived: true
 
 ---
 [![lifedrawdigi_missing-you](/images/recovered/lifedrawdigi_missing-you.jpg "lifedrawdigi_missing-you")](/images/recovered/lifedrawdigi_missing-you.jpg)

@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2008
+archived: true
 
 ---
 Recently I created a web asset for a college health department web layout.

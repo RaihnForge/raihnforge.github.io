@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2007
+archived: true
 
 ---
 I created this image for Rakkaus' Theorycrafting Corner article, "Roboserpent Rampage." [Click here to view the original article hosted by WCreplays.com](http://www.wcreplays.com/page?section=articles&id=552).

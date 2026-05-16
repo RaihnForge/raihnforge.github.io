@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2007
+archived: true
 
 ---
 [![gore](/images/recovered/gore.jpg "gore")](/images/recovered/gore.jpg)

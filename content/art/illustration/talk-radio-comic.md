@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2007
+archived: true
 
 ---
 [![](/images/recovered/raihn_wordpress_rich_marotta.jpg)](/images/recovered/raihn_wordpress_rich_marotta.jpg)

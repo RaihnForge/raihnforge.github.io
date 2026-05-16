@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2007
+archived: true
 
 ---
 ![](/images/recovered/life_drawing_05.jpg)

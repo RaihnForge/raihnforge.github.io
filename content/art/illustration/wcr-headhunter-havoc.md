@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2007
+archived: true
 
 ---
 These are a couple of images created for Rakkaus' Theorycrafting Corner article entitled "Headhunter Havoc." [Click here to check out the original article at WCreplays.com](http://www.wcreplays.com/page?section=articles&id=560).

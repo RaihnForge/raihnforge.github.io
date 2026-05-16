@@ -9,6 +9,7 @@ tags: []
 draft: false
 medium: "Digital"
 year: 2008
+archived: true
 ---
 These are my artistically questionable masterpieces for avatars I whipped up for community websites dedicated largely to Blizzard games and the esports scene in the mid to late 2000s, a glorious time when competitive gaming was just starting to take itself seriously (kind of). Each avatar is a delightful mix of pixelated chaos, showcasing iconic characters and themes that had fans hyperventilating with nostalgia. They served not just as personal expressions but as digital badges of honor for users, connecting gamers who were all just trying to avoid social interaction in real life! This artistic endeavor was more than merely slapping some images together; it was about capturing the spirited camaraderie, fierce competition, and the joyous shared victories of folks who probably spent too many hours glued to their screens, all while yelling at each other through headsets. Ah, good times!
 

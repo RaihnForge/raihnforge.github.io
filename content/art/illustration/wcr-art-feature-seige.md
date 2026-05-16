@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2006
+archived: true
 
 ---
 ![](/images/recovered/wcr_art_feature_09.jpg)

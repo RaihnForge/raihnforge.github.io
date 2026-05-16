@@ -7,7 +7,7 @@ description: "Full brand identity and execution for a coach-led women's strength
 subtitle: "Full brand identity & execution • Women's strength and HIIT community in Redmond, WA"
 role: "Brand Designer"
 timeline: "2024 – 2025"
-image: "/images/graphic-design/kwfitness/logo-banner.png"
+image: "/images/graphic-design/kwfitness/logo-icon.png"
 tags: ["brand-identity", "logo", "fitness", "commercial"]
 portfolio: true
 draft: false

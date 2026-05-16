@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2007
+archived: true
 
 ---
 As graphics staff, I created this image for one of Tainted Sun's Theorycrafting article from WCreplays.com [Click here to check out the original article](http://www.wcreplays.com/articles.php?get=522).

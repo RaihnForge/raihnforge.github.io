@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2007
+archived: true
 
 ---
 [![lifedraw_summerday](/images/recovered/lifedraw_summerday.jpg "lifedraw_summerday")](/images/recovered/lifedraw_summerday.jpg)

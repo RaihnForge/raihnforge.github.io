@@ -8,6 +8,7 @@ aliases:
 image: "/images/recovered/2007_revenge-of-red-riding-hood.jpg"
 medium: "Pencil"
 year: 2007
+archived: true
 draft: false
 ---
 [![2007_revenge of red riding hood](/images/recovered/2007_revenge-of-red-riding-hood.jpg "2007_revenge of red riding hood")](/images/recovered/2007_revenge-of-red-riding-hood.jpg)

@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2008
+archived: true
 
 ---
 This is The Warrior's Burden. As part of a project for my Art History class I decided to draw what I visualized a warrior of the day wearing this esteemed piece of gear. The following sketch is of the helmet itself.

@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2008
+archived: true
 
 ---
 [![](/images/recovered/joe_pic2.jpg "What Makes the Grass Grow?")](/images/recovered/joe_pic2_m.jpg "What makes the grass grow?")

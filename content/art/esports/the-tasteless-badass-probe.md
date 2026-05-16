@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2008
+archived: true
 
 ---
 #####

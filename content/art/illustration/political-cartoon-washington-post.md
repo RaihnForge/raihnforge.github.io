@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2007
+archived: true
 
 ---
 [![pctg_ad_washington_post_master](/images/recovered/pctg_ad_washington_post_master.jpg "pctg_ad_washington_post_master")](/images/recovered/pctg_ad_washington_post_master.jpg)

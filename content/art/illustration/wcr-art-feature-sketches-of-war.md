@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Ink"
 year: 2005
+archived: true
 
 ---
 ![](/images/recovered/wcr_art_feature_07_sow01.jpg)

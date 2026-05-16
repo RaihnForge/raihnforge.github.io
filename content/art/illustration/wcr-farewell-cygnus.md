@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2007
+archived: true
 
 ---
 This image is part of a WCreplays.com dedication to Mr. Cygnus, a prior commentator. [Click here to view the original WCreplays.com article and download the audio](http://www.wcreplays.com/audios.php?get=450), that features clips from his audio commentaries.

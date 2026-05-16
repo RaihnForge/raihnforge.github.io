@@ -8,6 +8,7 @@ aliases:
   - "/art/getty-ville-exploration-of-the-helmet-of-chalcidian-shape/"
 draft: false
 year: 2008
+archived: true
 
 ---
 Getty Ville exploration of the

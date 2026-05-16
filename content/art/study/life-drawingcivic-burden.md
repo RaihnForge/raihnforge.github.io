@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2007
+archived: true
 
 ---
 [![lifedrawdigi_civic_burden](/images/recovered/lifedrawdigi_civic_burden.jpg "lifedrawdigi_civic_burden")](/images/recovered/lifedrawdigi_civic_burden.jpg)

@@ -9,6 +9,7 @@ aliases:
 draft: false
 medium: "Mixed Media"
 year: 2008
+archived: true
 
 ---
 I am working with a 3d model maker/animator who is a good friend of mine. I am contributing concept artwork, designs, and illustrations that will be used to create the 3d characters to be animated into his demo reel.
