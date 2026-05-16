@@ -7,7 +7,7 @@ year: "2026"
 status: "Submitted"
 description: "A curated selection of public-facing work spanning brand identity, educational video, student outreach communication, and social media template systems — prepared for CWU's visual communication review."
 external_url: "/cwu-portfolio/"
-image: "/images/graphic-design/kelvin/brand-illustration.png"
+image: "/images/graphic-design/veterans/benefits-infographic.png"
 tags: ["higher education", "brand systems", "educational content", "selected work"]
 draft: false
 ---
