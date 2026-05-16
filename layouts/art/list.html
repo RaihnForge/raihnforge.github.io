@@ -69,31 +69,38 @@
 </section>
 {{ end }}
 
-<section class="categories-section" aria-label="Browse by discipline">
-  <div class="section-header">
-    <h2>Browse by discipline</h2>
+{{/* ── Per-discipline buckets, long-scroll layout.
+     Each section: heading, description, bare image grid of recent pieces, "see all" link. ── */}}
+{{ range .Sections.ByWeight }}
+{{ $active := where .RegularPagesRecursive "Params.archived" "ne" true }}
+{{ $withImage := where $active "Params.image" "ne" "" }}
+{{ $activeCount := len $active }}
+{{ if gt $activeCount 0 }}
+{{ $recent := first 6 ($withImage.ByDate.Reverse) }}
+<section class="discipline-bucket" aria-label="{{ .Title }}">
+  <div class="discipline-bucket-header">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ with .Description }}<p class="discipline-bucket-desc">{{ . }}</p>{{ end }}
   </div>
-  <div class="category-grid">
-    {{ range .Sections }}
-    {{ $activeCount := len (where .RegularPagesRecursive "Params.archived" "ne" true) }}
-    {{ if gt $activeCount 0 }}
-    <a href="{{ .RelPermalink }}" class="category-card">
-      {{ with .Params.image }}
-      <img src="{{ . }}" alt="{{ $.Title }}" class="category-card-image" loading="lazy" />
-      {{ else }}
-      <div class="category-card-placeholder" aria-hidden="true"></div>
-      {{ end }}
-      <div class="category-card-body">
-        <h2>{{ .Title }}</h2>
-        {{ $activeCount := len (where .RegularPagesRecursive "Params.archived" "ne" true) }}
-        <span class="category-card-count">{{ $activeCount }} {{ if eq $activeCount 1 }}piece{{ else }}pieces{{ end }}</span>
-        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  {{ if $recent }}
+  <div class="gallery-grid">
+    {{ range $recent }}
+    <a href="{{ .RelPermalink }}" class="gallery-item">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" />
+      <div class="gallery-caption">
+        <span class="gallery-title">{{ .Title }}</span>
+        {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}
       </div>
     </a>
     {{ end }}
-    {{ end }}
   </div>
+  {{ end }}
+  <p class="discipline-bucket-link">
+    <a href="{{ .RelPermalink }}">See all {{ $activeCount }} {{ if eq $activeCount 1 }}piece{{ else }}pieces{{ end }} in {{ .Title }} &rarr;</a>
+  </p>
 </section>
+{{ end }}
+{{ end }}
 
 {{ else }}
 {{/* ═══════════════════════════════════════════════════════════
