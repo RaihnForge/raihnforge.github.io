@@ -7,7 +7,7 @@ year: "2026"
 status: "Active"
 description: "Curated selection for Riot — brand identity systems, esports & streaming ecosystem support, in-game UX, motion, and worldbuilding — chosen to demonstrate one through-line: how visual systems create emotional and experiential cohesion across every player-facing surface."
 external_url: "/riot-portfolio/"
-image: "/images/graphic-design/kelvin/brand-illustration.png"
+image: "/images/wp-imports/gamedev/plate.png"
 tags: ["visual systems", "brand identity", "esports", "streaming", "ux", "selected work"]
 draft: false
 ---
