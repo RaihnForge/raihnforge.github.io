@@ -2010,10 +2010,12 @@ a:hover {
    Gallery Landing — Highlights section (curator picks)
    ============================================================ */
 .highlights-section {
+  --highlights-accent: #2A9DBE;
   margin-bottom: 4rem;
   padding: 2rem 2rem 2.25rem;
-  background: color-mix(in srgb, var(--accent) 6%, var(--bg-surface));
-  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--highlights-accent) 7%, var(--bg-surface));
+  border-left: 3px solid var(--highlights-accent);
+  border-right: 3px solid var(--highlights-accent);
   border-radius: var(--radius);
 }
 
@@ -2033,7 +2035,7 @@ a:hover {
 
 .highlights-section h2::before {
   content: "★ ";
-  color: var(--accent);
+  color: var(--highlights-accent);
   font-size: 0.85em;
   margin-right: 0.2em;
   vertical-align: 0.05em;
@@ -2095,6 +2097,24 @@ a:hover {
 
 .discipline-bucket-link a {
   color: var(--accent);
+}
+
+/* Discipline-bucket grid: pack 4 across at typical desktop widths,
+   collapse responsively. Highlights stays at the default ~3 across. */
+.discipline-bucket .gallery-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+@media (max-width: 900px) {
+  .discipline-bucket .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .discipline-bucket .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ============================================================
