@@ -1,53 +1,65 @@
 {{ define "main" }}
-<article class="scholar-paper">
-  <header class="scholar-paper-header">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a>
-      <span aria-hidden="true">/</span>
-      <a href="/scholar/">Scholar</a>
-      <span aria-hidden="true">/</span>
-      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
-      <span aria-hidden="true">/</span>
-      {{ .Title }}
-    </nav>
+<div class="scholar-paper-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/scholar/">Scholar</a>
+    <span aria-hidden="true">/</span>
+    <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+    <span aria-hidden="true">/</span>
+    {{ .Title }}
+  </nav>
 
-    <div class="scholar-paper-tagline">
-      {{ with .Params.course }}<span class="scholar-paper-course">{{ . }}</span>{{ end }}
-      {{ with .Params.course_title }}<span>{{ . }}</span>{{ end }}
-      {{ with .Params.module }}<span>{{ . }}</span>{{ end }}
-      {{ if .Date }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
-    </div>
-
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.professor }}<p class="scholar-paper-prof">Professor: {{ . }}</p>{{ end }}
-  </header>
-
-  {{/* Context cards — what / why-to-Josh / how-it-connects */}}
+  {{/* Editorial context: stacked above the paper itself */}}
   {{ if or .Params.context .Params.relevance .Params.connections }}
-  <aside class="scholar-context" aria-label="Context">
+  <aside class="scholar-context" aria-label="Editorial context">
     {{ with .Params.context }}
-    <div class="scholar-context-card">
+    <section class="scholar-context-block">
       <h2>About this paper</h2>
       <p>{{ . }}</p>
-    </div>
+    </section>
     {{ end }}
     {{ with .Params.relevance }}
-    <div class="scholar-context-card">
+    <section class="scholar-context-block">
       <h2>Why it matters to the practice</h2>
       <p>{{ . }}</p>
-    </div>
+    </section>
     {{ end }}
     {{ with .Params.connections }}
-    <div class="scholar-context-card">
+    <section class="scholar-context-block">
       <h2>Connections</h2>
       <p>{{ . }}</p>
-    </div>
+    </section>
     {{ end }}
   </aside>
   {{ end }}
 
-  <div class="scholar-paper-body">
-    {{ .Content }}
-  </div>
-</article>
+  {{/* The paper itself — visually treated as a printed document */}}
+  <article class="scholar-paper-document">
+    <header class="scholar-paper-document-header">
+      {{ with .Params.course }}<p class="scholar-paper-eyebrow">{{ . }}{{ with $.Params.course_title }} · {{ . }}{{ end }}</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+
+      <dl class="scholar-paper-meta-grid">
+        <div><dt>Author</dt><dd>{{ with .Params.author }}{{ . }}{{ else }}{{ $.Site.Params.author }}{{ end }}</dd></div>
+        {{ with .Params.professor }}
+        <div><dt>Professor</dt><dd>{{ . }}</dd></div>
+        {{ end }}
+        {{ if .Date }}
+        <div><dt>Date</dt><dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></dd></div>
+        {{ end }}
+        {{ with .Params.module }}
+        <div><dt>Module</dt><dd>{{ . }}</dd></div>
+        {{ end }}
+        {{ with .Params.editor }}
+        <div><dt>Editor</dt><dd>{{ . }}</dd></div>
+        {{ end }}
+      </dl>
+    </header>
+
+    <div class="scholar-paper-body">
+      {{ .Content }}
+    </div>
+  </article>
+</div>
 {{ end }}

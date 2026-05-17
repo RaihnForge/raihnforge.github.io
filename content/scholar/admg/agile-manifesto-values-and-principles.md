@@ -4,6 +4,8 @@ date: 2025-04-17
 course: "ADMG 479"
 course_title: "Agile Project Management"
 professor: "Dr. Laura Williamson"
+author: "Joshua Keyes"
+editor: "Claude (Opus 4.7)"
 module: "M02"
 category: "ADMG"
 category_label: "Administration & Management"

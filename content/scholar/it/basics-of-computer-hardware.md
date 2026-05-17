@@ -4,6 +4,8 @@ date: 2024-11-17
 course: "IT 229"
 course_title: "Foundations of Information Technology"
 professor: "Robert Lupten"
+author: "Joshua Keyes"
+editor: "Claude (Opus 4.7)"
 module: "D06"
 category: "IT"
 category_label: "Information Technology"
