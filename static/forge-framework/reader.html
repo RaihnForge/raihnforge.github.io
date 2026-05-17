@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Forge Framework — Guide Draft</title>
+<meta name="description" content="A theory of deliberate organization for individuals and organizations. By Joshua Keyes.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<style>
+/* ============================================================
+   Design tokens — matched to RaihnForge portfolio
+   ============================================================ */
+:root {
+  --bg: #FAFBFE;
+  --bg-surface: #FFFFFF;
+  --bg-hover: #F0F2F8;
+  --bg-warm: #FEF7F0;
+  --border: #E4E7EE;
+  --border-strong: #C8CDD8;
+  --text: #1B2333;
+  --text-muted: #5A6578;
+  --text-light: #8891A2;
+  --accent: #D4722A;
+  --accent-hover: #BF6020;
+  --accent-subtle: rgba(212, 114, 42, 0.07);
+  --accent-2: #3B7DD8;
+  --tag-bg: #EEF1F8;
+  --tag-text: #5A6578;
+  --success: #2BA360;
+  --danger: #B54B4B;
+
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Source Serif 4', 'Georgia', serif;
+
+  --reading-width: 680px;
+  --sidebar-w: 300px;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 3px rgba(27, 35, 51, 0.05), 0 1px 2px rgba(27, 35, 51, 0.03);
+  --shadow-md: 0 4px 16px rgba(27, 35, 51, 0.07), 0 2px 4px rgba(27, 35, 51, 0.04);
+  --shadow-hover: 0 12px 32px rgba(27, 35, 51, 0.1), 0 4px 8px rgba(27, 35, 51, 0.05);
+  --transition: 0.2s ease;
+}
+
+[data-theme="dark"] {
+  --bg: #0F1118;
+  --bg-surface: #181B24;
+  --bg-hover: #1F2330;
+  --bg-warm: #1E1814;
+  --border: #282D3A;
+  --border-strong: #3A4052;
+  --text: #E8EAF0;
+  --text-muted: #9BA2B2;
+  --text-light: #6B7388;
+  --accent: #E8863E;
+  --accent-hover: #F29650;
+  --accent-subtle: rgba(232, 134, 62, 0.1);
+  --accent-2: #5A9AEA;
+  --tag-bg: #1F2330;
+  --tag-text: #9BA2B2;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a { color: var(--accent); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--accent-hover); }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ============================================================
+   Shell
+   ============================================================ */
+.shell {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  min-height: 100vh;
+}
+
+/* ============================================================
+   Sidebar
+   ============================================================ */
+.sidebar {
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  padding: 1.75rem 0;
+}
+
+.sidebar::-webkit-scrollbar { width: 8px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
+
+.brand {
+  padding: 0 1.75rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.brand-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+  line-height: 1.45;
+}
+
+.brand-author {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 0.6rem;
+  font-weight: 500;
+}
+
+.nav-group { padding: 0 0.75rem; margin-bottom: 0.25rem; }
+
+.nav-group-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.85rem 1rem 0.5rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.48rem 1rem;
+  margin: 0.08rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-link.active {
+  background: var(--accent-subtle);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.nav-link.nav-chapter {
+  padding-left: 1.75rem;
+  font-size: 0.86rem;
+  color: var(--text-light);
+}
+
+.nav-link.nav-chapter:hover { color: var(--text-muted); }
+
+.nav-link.nav-chapter.active { color: var(--accent); }
+
+.nav-part {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.nav-part .nav-part-num {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-light);
+  letter-spacing: 0.06em;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+}
+
+/* ============================================================
+   Main
+   ============================================================ */
+.main { padding: 0 3rem 5rem; }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(12px);
+  margin: 0 -3rem 2rem;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb {
+  flex: 1;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  min-width: 0;
+  font-weight: 500;
+}
+
+.breadcrumb .sep { color: var(--text-light); margin: 0 0.45rem; }
+.breadcrumb .current { color: var(--text); font-weight: 600; }
+
+.topbar-actions { display: flex; gap: 0.55rem; align-items: center; }
+
+.btn {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.5rem 0.95rem;
+  background: var(--bg-surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-strong);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(212, 114, 42, 0.25);
+}
+
+.btn-icon {
+  padding: 0.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  justify-content: center;
+}
+
+.btn-icon svg { width: 1rem; height: 1rem; }
+
+.theme-toggle .icon-moon { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
+
+/* ============================================================
+   Prose
+   ============================================================ */
+.prose {
+  max-width: var(--reading-width);
+  margin: 0 auto;
+  padding: 1.25rem 0 2rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  font-family: var(--font-display);
+  color: var(--text);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  scroll-margin-top: 5rem;
+}
+
+.prose h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.prose > h1:first-child {
+  margin-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.prose h2 {
+  font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+  font-weight: 600;
+  margin: 2.5rem 0 0.85rem;
+  color: var(--accent);
+}
+
+.prose h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.6rem;
+}
+
+.prose h4 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.4rem;
+  color: var(--text-muted);
+}
+
+.prose p { margin: 0.95rem 0; }
+
+.prose strong { color: var(--text); font-weight: 600; }
+.prose em { color: var(--text); font-style: italic; }
+
+.prose ul, .prose ol { margin: 1rem 0 1rem 1.5rem; }
+.prose li { margin: 0.4rem 0; }
+.prose li > ul, .prose li > ol { margin-top: 0.3rem; margin-bottom: 0.3rem; }
+
+.prose blockquote {
+  margin: 1.3rem 0;
+  padding: 0.35rem 1.25rem;
+  border-left: 3px solid var(--accent);
+  color: var(--text-muted);
+  font-style: italic;
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+}
+
+.prose blockquote p { margin: 0.5rem 0; }
+
+.prose code {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--bg-warm);
+  color: var(--accent-hover);
+  padding: 0.12rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.prose pre {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  box-shadow: var(--shadow-sm);
+}
+
+.prose pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: var(--text);
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  background: var(--bg-surface);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.prose th {
+  background: var(--bg-hover);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.7rem 0.95rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.prose td {
+  padding: 0.65rem 0.95rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.prose tr:last-child td { border-bottom: none; }
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+.prose img { max-width: 100%; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); }
+
+/* ============================================================
+   Chapter banner (placeholder art, rotating motifs)
+   ============================================================ */
+.chapter-banner {
+  max-width: var(--reading-width);
+  margin: 2.25rem auto 0.25rem;
+  height: 140px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--bg-warm) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--accent);
+  transition: border-color var(--transition);
+}
+
+[data-theme="dark"] .chapter-banner {
+  background: linear-gradient(135deg, var(--bg-warm) 0%, var(--bg-hover) 100%);
+}
+
+.chapter-banner svg { width: 100%; height: 100%; display: block; }
+.chapter-banner svg .muted { color: var(--border-strong); }
+
+@media (max-width: 960px) {
+  .chapter-banner { height: 110px; margin-top: 1.75rem; }
+}
+
+/* ============================================================
+   Feedback block (injected after each chapter)
+   ============================================================ */
+.feedback {
+  max-width: var(--reading-width);
+  margin: 3rem auto 0;
+  padding: 1.75rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.feedback-prompt {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.feedback-chapter {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 1.1rem;
+  font-weight: 600;
+}
+
+.feedback-buttons {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vote-btn {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.55rem 1.15rem;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.vote-btn:hover {
+  background: var(--bg-surface);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.vote-btn.up:hover { border-color: var(--success); color: var(--success); }
+.vote-btn.down:hover { border-color: var(--danger); color: var(--danger); }
+
+.vote-btn.voted { cursor: default; }
+.vote-btn.voted.up   { background: rgba(43, 163, 96, 0.08);  border-color: var(--success); color: var(--success); }
+.vote-btn.voted.down { background: rgba(181, 75, 75, 0.08);  border-color: var(--danger);  color: var(--danger);  }
+
+.feedback-detail { margin-top: 0.9rem; font-size: 0.82rem; color: var(--text-muted); }
+.feedback-detail a { color: var(--text-muted); border-bottom: 1px dotted var(--text-light); }
+.feedback-detail a:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ============================================================
+   States
+   ============================================================ */
+.loading, .error {
+  max-width: var(--reading-width);
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+}
+
+.error { color: var(--danger); }
+
+/* Hide the opening title block (rendered inside sidebar instead) */
+.prose .suppressed { display: none; }
+
+/* ============================================================
+   Mobile
+   ============================================================ */
+.menu-toggle {
+  display: none;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 0.9rem;
+  background: var(--bg-surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sidebar-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 17, 24, 0.5);
+  z-index: 20;
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 960px) {
+  .shell { grid-template-columns: 1fr; }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    width: 88%;
+    max-width: 340px;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    box-shadow: var(--shadow-hover);
+  }
+
+  .sidebar.open { transform: translateX(0); }
+  .sidebar-backdrop.open { display: block; }
+
+  .menu-toggle { display: inline-flex; }
+
+  .main { padding: 0 1.25rem 3rem; }
+  .topbar { margin: 0 -1.25rem 1.5rem; padding: 0.85rem 1.25rem; }
+  .prose { font-size: 1rem; padding-top: 0.5rem; }
+  .feedback { padding: 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar-backdrop" id="backdrop"></div>
+
+<div class="shell">
+
+  <!-- ═══ SIDEBAR ═══ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-title">The Forge Framework</div>
+      <div class="brand-subtitle">A Guide to Deliberate Organization for Individuals and Organizations</div>
+      <div class="brand-author">by Joshua Keyes</div>
+    </div>
+    <nav id="nav"></nav>
+  </aside>
+
+  <!-- ═══ MAIN ═══ -->
+  <main class="main">
+    <div class="topbar">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        Contents
+      </button>
+      <div class="breadcrumb" id="breadcrumb">The Forge Framework</div>
+      <div class="topbar-actions">
+        <a class="btn btn-primary" id="feedbackBtn" href="#">Send feedback</a>
+        <button class="btn btn-icon theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="content"></div>
+  </main>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  // ═══════════════════════════════════════════════════════════════
+  // CONFIG
+  // ═══════════════════════════════════════════════════════════════
+  var FEEDBACK_EMAIL = 'joshua.keyes@gmail.com';
+  var FEEDBACK_SUBJECT = 'Forge Framework';
+  var GUIDE_PATH = 'guide/forge-framework-guide-draft-v1.md';
+
+  // ═══════════════════════════════════════════════════════════════
+  // DOM
+  // ═══════════════════════════════════════════════════════════════
+  var nav = document.getElementById('nav');
+  var content = document.getElementById('content');
+  var breadcrumb = document.getElementById('breadcrumb');
+  var sidebar = document.getElementById('sidebar');
+  var backdrop = document.getElementById('backdrop');
+  var menuToggle = document.getElementById('menuToggle');
+  var feedbackBtn = document.getElementById('feedbackBtn');
+  var themeToggle = document.getElementById('themeToggle');
+
+  // ═══════════════════════════════════════════════════════════════
+  // THEME
+  // ═══════════════════════════════════════════════════════════════
+  function initTheme() {
+    var stored = null;
+    try { stored = localStorage.getItem('forge-reader-theme'); } catch (e) {}
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = stored || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  }
+  initTheme();
+
+  themeToggle.addEventListener('click', function () {
+    var current = document.documentElement.getAttribute('data-theme') || 'light';
+    var next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('forge-reader-theme', next); } catch (e) {}
+  });
+
+  // ═══════════════════════════════════════════════════════════════
+  // LOAD + RENDER GUIDE
+  // ═══════════════════════════════════════════════════════════════
+  var chapters = []; // { id, number, title, partTitle, partNum }
+  var currentChapterId = null;
+
+  function loadGuide() {
+    content.innerHTML = '<div class="loading">Loading the Guide&hellip;</div>';
+
+    fetch(GUIDE_PATH)
+      .then(function (res) {
+        if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
+        return res.text();
+      })
+      .then(function (md) {
+        var html = marked.parse(md);
+        var wrapper = document.createElement('article');
+        wrapper.className = 'prose';
+        wrapper.innerHTML = html;
+
+        // Strip redundant opening title block — sidebar already has it
+        var firstH1 = wrapper.querySelector('h1');
+        if (firstH1) {
+          var next = firstH1.nextElementSibling;
+          firstH1.classList.add('suppressed');
+          // the subtitle line is an h3 right after — also suppress
+          if (next && next.tagName === 'H3' && next.textContent.indexOf('Guide to Deliberate') >= 0) {
+            next.classList.add('suppressed');
+          }
+        }
+
+        buildTOC(wrapper);
+        injectFeedback(wrapper);
+        injectBanners(wrapper);
+
+        content.innerHTML = '';
+        content.appendChild(wrapper);
+
+        observeChapters();
+        handleHashScroll();
+      })
+      .catch(function (err) {
+        content.innerHTML =
+          '<div class="error">' +
+          '<p><strong>Could not load the Guide.</strong></p>' +
+          '<p style="margin-top:0.5rem;font-size:0.85rem;">' + escHtml(String(err.message || err)) + '</p>' +
+          '<p style="margin-top:0.75rem;font-size:0.85rem;">If you opened this file via <code>file://</code>, try serving it locally: <code>python3 -m http.server</code>.</p>' +
+          '</div>';
+      });
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // TOC — parse H1 (Parts) and H2 (Chapters) to build sidebar
+  // ═══════════════════════════════════════════════════════════════
+  function buildTOC(root) {
+    chapters = [];
+    var parts = []; // { num, title, id, chapters: [] }
+    var currentPart = null;
+
+    var headings = root.querySelectorAll('h1, h2');
+    headings.forEach(function (h) {
+      if (!h.id) h.id = slug(h.textContent);
+      if (h.classList.contains('suppressed')) return;
+
+      if (h.tagName === 'H1') {
+        var partMatch = h.textContent.match(/^Part\s+([IVX]+):\s*(.+?)(?:\s+—.*)?$/);
+        if (partMatch) {
+          currentPart = { num: 'Part ' + partMatch[1], title: partMatch[2].trim(), id: h.id, chapters: [] };
+          parts.push(currentPart);
+        } else {
+          // e.g. "Closing"
+          currentPart = { num: '', title: h.textContent.trim(), id: h.id, chapters: [] };
+          parts.push(currentPart);
+        }
+      } else if (h.tagName === 'H2') {
+        var chMatch = h.textContent.match(/^Chapter\s+(\d+):\s*(.+)$/);
+        var ch = {
+          id: h.id,
+          number: chMatch ? chMatch[1] : '',
+          title: chMatch ? chMatch[2].trim() : h.textContent.trim(),
+          partTitle: currentPart ? currentPart.title : '',
+          partNum: currentPart ? currentPart.num : '',
+          el: h
+        };
+        chapters.push(ch);
+        if (currentPart) currentPart.chapters.push(ch);
+      }
+    });
+
+    renderNav(parts);
+  }
+
+  function renderNav(parts) {
+    var html = '';
+    html += '<div class="nav-group">';
+    html += '<div class="nav-group-label">Guide Contents</div>';
+
+    parts.forEach(function (p) {
+      html += '<a class="nav-link nav-part" href="#' + escAttr(p.id) + '" data-id="' + escAttr(p.id) + '">';
+      if (p.num) html += '<span class="nav-part-num">' + escHtml(p.num) + '</span>';
+      html += escHtml(p.title);
+      html += '</a>';
+      p.chapters.forEach(function (c) {
+        var label = c.number ? ('Ch. ' + c.number + ' — ' + c.title) : c.title;
+        html += '<a class="nav-link nav-chapter" href="#' + escAttr(c.id) + '" data-id="' + escAttr(c.id) + '">' + escHtml(label) + '</a>';
+      });
+    });
+
+    html += '</div>';
+    nav.innerHTML = html;
+
+    nav.querySelectorAll('.nav-link').forEach(function (a) {
+      a.addEventListener('click', function () {
+        if (window.innerWidth <= 960) closeSidebar();
+      });
+    });
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // CHAPTER BANNERS — rotating placeholder SVG motifs
+  // ═══════════════════════════════════════════════════════════════
+  var BANNER_MOTIFS = [
+    // 0 — Strike & Sparks (forge anvil)
+    '<svg viewBox="0 0 400 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">' +
+      '<line class="muted" x1="130" y1="112" x2="270" y2="112" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>' +
+      '<g stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none">' +
+        '<line x1="200" y1="102" x2="200" y2="28"/>' +
+        '<line x1="200" y1="102" x2="246" y2="40"/>' +
+        '<line x1="200" y1="102" x2="154" y2="40"/>' +
+        '<line x1="200" y1="102" x2="278" y2="66"/>' +
+        '<line x1="200" y1="102" x2="122" y2="66"/>' +
+        '<line x1="200" y1="102" x2="292" y2="94"/>' +
+        '<line x1="200" y1="102" x2="108" y2="94"/>' +
+      '</g>' +
+      '<circle cx="200" cy="102" r="5" fill="currentColor"/>' +
+    '</svg>',
+
+    // 1 — Concentric arcs (cycle)
+    '<svg viewBox="0 0 400 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">' +
+      '<g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">' +
+        '<path d="M 110 118 A 90 90 0 0 1 290 118" opacity="0.35"/>' +
+        '<path d="M 140 118 A 60 60 0 0 1 260 118" opacity="0.65"/>' +
+        '<path d="M 170 118 A 30 30 0 0 1 230 118"/>' +
+      '</g>' +
+      '<circle cx="110" cy="118" r="4" fill="currentColor" opacity="0.35"/>' +
+      '<circle cx="140" cy="118" r="4" fill="currentColor" opacity="0.65"/>' +
+      '<circle cx="170" cy="118" r="4" fill="currentColor"/>' +
+    '</svg>',
+
+    // 2 — Five folders (domains / structure)
+    '<svg viewBox="0 0 400 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">' +
+      '<g>' +
+        '<rect x="116" y="55" width="30" height="30" rx="5" fill="currentColor"/>' +
+        '<rect x="156" y="55" width="30" height="30" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>' +
+        '<rect x="196" y="55" width="30" height="30" rx="5" fill="currentColor"/>' +
+        '<rect x="236" y="55" width="30" height="30" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>' +
+        '<rect x="276" y="55" width="30" height="30" rx="5" fill="currentColor"/>' +
+      '</g>' +
+    '</svg>',
+
+    // 3 — Graduated stack (progression / hierarchy)
+    '<svg viewBox="0 0 400 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">' +
+      '<g fill="currentColor">' +
+        '<rect x="160" y="38" width="80" height="16" rx="3" opacity="0.35"/>' +
+        '<rect x="140" y="62" width="120" height="16" rx="3" opacity="0.65"/>' +
+        '<rect x="120" y="86" width="160" height="16" rx="3"/>' +
+      '</g>' +
+    '</svg>',
+
+    // 4 — Node network (system / connections)
+    '<svg viewBox="0 0 400 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">' +
+      '<g stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.55">' +
+        '<line x1="130" y1="45" x2="200" y2="70"/>' +
+        '<line x1="270" y1="45" x2="200" y2="70"/>' +
+        '<line x1="130" y1="95" x2="200" y2="70"/>' +
+        '<line x1="270" y1="95" x2="200" y2="70"/>' +
+        '<line x1="130" y1="45" x2="130" y2="95"/>' +
+        '<line x1="270" y1="45" x2="270" y2="95"/>' +
+      '</g>' +
+      '<g fill="currentColor">' +
+        '<circle cx="130" cy="45" r="6"/>' +
+        '<circle cx="270" cy="45" r="6"/>' +
+        '<circle cx="130" cy="95" r="6"/>' +
+        '<circle cx="270" cy="95" r="6"/>' +
+        '<circle cx="200" cy="70" r="8"/>' +
+      '</g>' +
+    '</svg>',
+
+    // 5 — Nested frames (containment / forges within forges)
+    '<svg viewBox="0 0 400 140" preserveAspectRatio="xMidYMid meet" aria-hidden="true">' +
+      '<g fill="none" stroke="currentColor" stroke-width="2">' +
+        '<rect x="130" y="30" width="140" height="80" rx="6" opacity="0.35"/>' +
+        '<rect x="150" y="45" width="100" height="50" rx="5" opacity="0.65"/>' +
+        '<rect x="170" y="58" width="60" height="24" rx="4"/>' +
+      '</g>' +
+    '</svg>'
+  ];
+
+  function injectBanners(root) {
+    chapters.forEach(function (ch, idx) {
+      var banner = document.createElement('figure');
+      banner.className = 'chapter-banner';
+      banner.setAttribute('data-motif', String(idx % BANNER_MOTIFS.length));
+      banner.setAttribute('role', 'presentation');
+      banner.innerHTML = BANNER_MOTIFS[idx % BANNER_MOTIFS.length];
+      ch.el.parentNode.insertBefore(banner, ch.el);
+    });
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // FEEDBACK — inject a block after each chapter
+  // ═══════════════════════════════════════════════════════════════
+  function injectFeedback(root) {
+    chapters.forEach(function (ch, idx) {
+      var end = findChapterEnd(root, ch.el);
+      var block = document.createElement('section');
+      block.className = 'feedback';
+      block.setAttribute('data-chapter-id', ch.id);
+      block.innerHTML = feedbackHTML(ch);
+      if (end) end.parentNode.insertBefore(block, end);
+      else root.appendChild(block);
+    });
+
+    // Wire up vote buttons & detail links once rendered
+    setTimeout(function () {
+      document.querySelectorAll('.feedback').forEach(function (fb) {
+        var chId = fb.getAttribute('data-chapter-id');
+        var ch = chapterById(chId);
+        if (!ch) return;
+        fb.querySelectorAll('.vote-btn').forEach(function (btn) {
+          btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (btn.classList.contains('voted')) return;
+            var dir = btn.getAttribute('data-dir');
+            recordVote(chId, dir);
+            btn.classList.add('voted');
+            var lbl = btn.querySelector('.vote-btn-label');
+            if (lbl) lbl.textContent = dir === 'up' ? 'Thanks!' : 'Noted';
+            window.location.href = voteMailto(ch, dir);
+          });
+        });
+        var detail = fb.querySelector('.detail-link');
+        if (detail) {
+          detail.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.location.href = detailMailto(ch);
+          });
+        }
+      });
+    }, 0);
+  }
+
+  function findChapterEnd(root, startEl) {
+    var node = startEl.nextElementSibling;
+    while (node) {
+      if (node.tagName === 'H2' || node.tagName === 'H1') return node;
+      node = node.nextElementSibling;
+    }
+    return null;
+  }
+
+  function feedbackHTML(ch) {
+    var upVoted = hasVoted(ch.id, 'up');
+    var downVoted = hasVoted(ch.id, 'down');
+    var label = ch.number ? ('Chapter ' + ch.number + ' — ' + ch.title) : ch.title;
+    return '' +
+      '<div class="feedback-prompt">How did this land?</div>' +
+      '<div class="feedback-chapter">' + escHtml(label) + '</div>' +
+      '<div class="feedback-buttons">' +
+        '<a class="vote-btn up ' + (upVoted ? 'voted' : '') + '" data-dir="up" href="#">' +
+          '<span>👍</span><span class="vote-btn-label">' + (upVoted ? 'Thanks!' : 'Resonated') + '</span>' +
+        '</a>' +
+        '<a class="vote-btn down ' + (downVoted ? 'voted' : '') + '" data-dir="down" href="#">' +
+          '<span>👎</span><span class="vote-btn-label">' + (downVoted ? 'Noted' : 'Needs work') + '</span>' +
+        '</a>' +
+      '</div>' +
+      '<div class="feedback-detail">' +
+        'Something specific on your mind? ' +
+        '<a class="detail-link" href="#">Send a detailed note</a>' +
+      '</div>';
+  }
+
+  function voteKey(id, dir) { return 'forge-reader-vote:' + dir + ':' + id; }
+  function hasVoted(id, dir) { try { return !!localStorage.getItem(voteKey(id, dir)); } catch (e) { return false; } }
+  function recordVote(id, dir) { try { localStorage.setItem(voteKey(id, dir), String(Date.now())); } catch (e) {} }
+
+  function mailto(subject, body) {
+    return 'mailto:' + FEEDBACK_EMAIL +
+      '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(body);
+  }
+
+  function voteMailto(ch, dir) {
+    var emoji = dir === 'up' ? '👍' : '👎';
+    var label = ch.number ? ('Chapter ' + ch.number + ': ' + ch.title) : ch.title;
+    var subject = FEEDBACK_SUBJECT + ' — ' + emoji + ' on "' + label + '"';
+    var body =
+      'Part: ' + (ch.partNum ? ch.partNum + ' — ' + ch.partTitle : ch.partTitle) + '\n' +
+      'Chapter: ' + label + '\n' +
+      'Vote: ' + emoji + ' ' + (dir === 'up' ? 'resonated' : 'needs work') + '\n\n' +
+      '(Optional — a quick note on why:)\n';
+    return mailto(subject, body);
+  }
+
+  function detailMailto(ch) {
+    var label = ch.number ? ('Chapter ' + ch.number + ': ' + ch.title) : ch.title;
+    var subject = FEEDBACK_SUBJECT + ' — Feedback on "' + label + '"';
+    var body =
+      'Part: ' + (ch.partNum ? ch.partNum + ' — ' + ch.partTitle : ch.partTitle) + '\n' +
+      'Chapter: ' + label + '\n\n' +
+      '(Your thoughts below:)\n';
+    return mailto(subject, body);
+  }
+
+  function chapterById(id) {
+    for (var i = 0; i < chapters.length; i++) if (chapters[i].id === id) return chapters[i];
+    return null;
+  }
+
+  feedbackBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    var ctx = '';
+    if (currentChapterId) {
+      var ch = chapterById(currentChapterId);
+      if (ch) {
+        var label = ch.number ? ('Chapter ' + ch.number + ': ' + ch.title) : ch.title;
+        ctx = 'While reading: ' + label + '\n\n';
+      }
+    }
+    var body = ctx + '(Your thoughts on the Forge Framework:)\n';
+    window.location.href = mailto(FEEDBACK_SUBJECT + ' — General Feedback', body);
+  });
+
+  // ═══════════════════════════════════════════════════════════════
+  // SCROLL SPY — track current chapter, update breadcrumb + active nav
+  // ═══════════════════════════════════════════════════════════════
+  function observeChapters() {
+    if (!('IntersectionObserver' in window)) return;
+
+    var visible = new Set();
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) visible.add(entry.target.id);
+        else visible.delete(entry.target.id);
+      });
+
+      // Pick the topmost visible chapter
+      var topId = null;
+      for (var i = 0; i < chapters.length; i++) {
+        if (visible.has(chapters[i].id)) { topId = chapters[i].id; break; }
+      }
+      if (topId && topId !== currentChapterId) {
+        currentChapterId = topId;
+        updateActiveNav(topId);
+        updateBreadcrumb(topId);
+      }
+    }, { rootMargin: '-80px 0px -60% 0px', threshold: 0 });
+
+    chapters.forEach(function (ch) { observer.observe(ch.el); });
+  }
+
+  function updateActiveNav(id) {
+    nav.querySelectorAll('.nav-link').forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('data-id') === id);
+    });
+  }
+
+  function updateBreadcrumb(id) {
+    var ch = chapterById(id);
+    if (!ch) return;
+    var label = ch.number ? ('Chapter ' + ch.number + ' — ' + ch.title) : ch.title;
+    var parts = [];
+    if (ch.partNum) parts.push(escHtml(ch.partNum));
+    if (ch.partTitle) parts.push(escHtml(ch.partTitle));
+    var prefix = parts.length ? parts.join(' <span class="sep">·</span> ') + ' <span class="sep">/</span> ' : '';
+    breadcrumb.innerHTML = prefix + '<span class="current">' + escHtml(label) + '</span>';
+  }
+
+  function handleHashScroll() {
+    var id = window.location.hash.replace(/^#/, '');
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (el) setTimeout(function () { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);
+  }
+
+  window.addEventListener('hashchange', handleHashScroll);
+
+  // ═══════════════════════════════════════════════════════════════
+  // MOBILE SIDEBAR
+  // ═══════════════════════════════════════════════════════════════
+  function openSidebar() { sidebar.classList.add('open'); backdrop.classList.add('open'); }
+  function closeSidebar() { sidebar.classList.remove('open'); backdrop.classList.remove('open'); }
+  menuToggle.addEventListener('click', openSidebar);
+  backdrop.addEventListener('click', closeSidebar);
+
+  // ═══════════════════════════════════════════════════════════════
+  // HELPERS
+  // ═══════════════════════════════════════════════════════════════
+  function escHtml(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c];
+    });
+  }
+  function escAttr(s) { return escHtml(s).replace(/'/g, '&#39;'); }
+
+  function slug(s) {
+    return String(s).toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-');
+  }
+
+  // ═══════════════════════════════════════════════════════════════
+  // BOOT
+  // ═══════════════════════════════════════════════════════════════
+  if (window.marked && marked.setOptions) {
+    marked.setOptions({ gfm: true, breaks: false, mangle: false });
+  }
+
+  loadGuide();
+})();
+</script>
+
+</body>
+</html>

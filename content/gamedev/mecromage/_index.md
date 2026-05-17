@@ -7,7 +7,7 @@ engine: "Custom"
 role: "Producer, Artist & Game Director"
 timeline: "2009–Present"
 featured: true
-image: "/images/gamedev/mecromage.gif"
+image: "/images/wp-imports/gamedev/tilesscene04b.png"
 icon: "/images/gamedev/icons/mecromage.svg"
 banner_tint: "#B9A7E0"
 aliases:

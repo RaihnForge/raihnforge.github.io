@@ -8,15 +8,16 @@
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
-{{/* ── Cross-discipline sampler — pieces flagged `sampler: true`.
-     sampler is an explicit curator signal, so it intentionally overrides `archived`. ── */}}
+{{/* ── Highlights: cross-discipline curator picks flagged `sampler: true`.
+     sampler is an explicit curator signal, so it intentionally overrides `archived`.
+     Only cross-discipline section on this page — disciplines hold everything else. ── */}}
 {{ $sampler := where (where .Site.RegularPages "Section" "art") "Params.sampler" true }}
 {{ $sampler = $sampler.ByDate.Reverse }}
 {{ if $sampler }}
-<section class="sampler-section" aria-label="Selected samples across disciplines">
+<section class="highlights-section" aria-label="Highlights across disciplines">
   <div class="section-header">
-    <h2>Selected Samples</h2>
-    <p class="sampler-subhead">A cross-section of disciplines — illustration, brand, broadcast, and commissioned work.</p>
+    <h2>Highlights</h2>
+    <p class="sampler-subhead">A cross-section of disciplines: illustration, brand, broadcast, and commissioned work.</p>
   </div>
   <div class="gallery-grid">
     {{ range $sampler }}
@@ -29,39 +30,6 @@
       <div class="gallery-caption">
         <span class="gallery-title">{{ .Title }}</span>
         <span class="gallery-medium">{{ .Parent.Title }}{{ with .Params.year }} · {{ . }}{{ end }}</span>
-      </div>
-    </a>
-    {{ end }}
-  </div>
-</section>
-{{ end }}
-
-{{/* ── Case Studies — pages with a `pieces:` array (commercial/portfolio work) ── */}}
-{{ $caseStudies := where (where .Site.RegularPages "Section" "art") "Params.pieces" "ne" nil }}
-{{ $caseStudies = where $caseStudies "Params.archived" "ne" true }}
-{{ $caseStudies = $caseStudies.ByDate.Reverse }}
-{{ if $caseStudies }}
-<section class="case-studies-section" aria-label="Selected case studies">
-  <div class="section-header">
-    <h2>Case Studies</h2>
-    <p class="sampler-subhead">Commercial work — brand systems, broadcast graphics, and production design across professional engagements.</p>
-  </div>
-  <div class="portfolio-grid">
-    {{ range $caseStudies }}
-    <a href="{{ .RelPermalink }}" class="portfolio-card">
-      {{ with .Params.image }}
-      <img src="{{ . }}" alt="{{ $.Title }}" class="portfolio-card-image" loading="lazy" />
-      {{ else }}
-      <div class="portfolio-card-placeholder" aria-hidden="true"></div>
-      {{ end }}
-      <div class="portfolio-card-body">
-        <h3>{{ .Title }}</h3>
-        <div class="portfolio-card-meta">
-          <span>{{ .Parent.Title }}</span>
-          {{ with .Params.timeline }}<span>{{ . }}</span>{{ else }}{{ with .Params.year }}<span>{{ . }}</span>{{ end }}{{ end }}
-          <span>{{ len .Params.pieces }} pieces</span>
-        </div>
-        {{ with .Description }}<p>{{ . | truncate 160 }}</p>{{ end }}
       </div>
     </a>
     {{ end }}
