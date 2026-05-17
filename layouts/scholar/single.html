@@ -36,6 +36,9 @@
 
   {{/* The paper itself — visually treated as a printed document */}}
   <article class="scholar-paper-document">
+    {{ with .Params.image }}
+    <div class="scholar-paper-document-image" style="background-image: url('{{ . }}')" role="img" aria-label="{{ $.Title }}"></div>
+    {{ end }}
     <header class="scholar-paper-document-header">
       {{ with .Params.course }}<p class="scholar-paper-eyebrow">{{ . }}{{ with $.Params.course_title }} · {{ . }}{{ end }}</p>{{ end }}
       <h1>{{ .Title }}</h1>

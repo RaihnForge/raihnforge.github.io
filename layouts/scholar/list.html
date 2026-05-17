@@ -18,11 +18,16 @@
   <div class="scholar-dept-grid">
     {{ range $departments }}
     {{ $paperCount := len (where .RegularPages "Draft" false) }}
-    <a href="{{ .RelPermalink }}" class="scholar-dept-card">
-      <div class="scholar-dept-code">{{ with .Params.code }}{{ . }}{{ else }}{{ .Title }}{{ end }}</div>
-      <h3>{{ .Title }}</h3>
-      {{ with .Description }}<p>{{ . }}</p>{{ end }}
-      <p class="scholar-dept-count">{{ $paperCount }} {{ if eq $paperCount 1 }}paper{{ else }}papers{{ end }}</p>
+    <a href="{{ .RelPermalink }}" class="scholar-dept-card{{ if .Params.image }} scholar-dept-card--has-image{{ end }}">
+      {{ with .Params.image }}
+      <div class="scholar-dept-card-image" style="background-image: url('{{ . }}')" aria-hidden="true"></div>
+      {{ end }}
+      <div class="scholar-dept-card-body">
+        <div class="scholar-dept-code">{{ with .Params.code }}{{ . }}{{ else }}{{ .Title }}{{ end }}</div>
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        <p class="scholar-dept-count">{{ $paperCount }} {{ if eq $paperCount 1 }}paper{{ else }}papers{{ end }}</p>
+      </div>
     </a>
     {{ end }}
   </div>
@@ -55,6 +60,9 @@
 {{/* ═══════════════════════════════════════════════════════════
      DEPARTMENT: /scholar/admg/ — Paper list
      ═══════════════════════════════════════════════════════════ */}}
+{{ with .Params.image }}
+<div class="scholar-dept-hero" style="background-image: url('{{ . }}')" role="img" aria-label="{{ $.Title }} department"></div>
+{{ end }}
 <div class="page-header">
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
@@ -75,14 +83,19 @@
   <ol class="scholar-paper-list">
     {{ range $papers }}
     <li>
-      <a href="{{ .RelPermalink }}" class="scholar-paper-card">
-        <div class="scholar-paper-meta">
-          {{ with .Params.course }}<span class="scholar-paper-course">{{ . }}</span>{{ end }}
-          {{ with .Params.module }}<span>{{ . }}</span>{{ end }}
-          {{ if .Date }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
+      <a href="{{ .RelPermalink }}" class="scholar-paper-card{{ if .Params.image }} scholar-paper-card--has-image{{ end }}">
+        {{ with .Params.image }}
+        <div class="scholar-paper-card-image" style="background-image: url('{{ . }}')" aria-hidden="true"></div>
+        {{ end }}
+        <div class="scholar-paper-card-body">
+          <div class="scholar-paper-meta">
+            {{ with .Params.course }}<span class="scholar-paper-course">{{ . }}</span>{{ end }}
+            {{ with .Params.module }}<span>{{ . }}</span>{{ end }}
+            {{ if .Date }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
+          </div>
+          <h3>{{ .Title }}</h3>
+          {{ with .Params.context }}<p>{{ . }}</p>{{ end }}
         </div>
-        <h3>{{ .Title }}</h3>
-        {{ with .Params.context }}<p>{{ . }}</p>{{ end }}
       </a>
     </li>
     {{ end }}

@@ -2,6 +2,8 @@
 title: "Information Technology"
 code: "IT"
 description: "Coursework in computing fundamentals, hardware and software systems, information management, and the technical infrastructure that production work depends on."
+image: "https://images.unsplash.com/photo-1762163516269-3c143e04175c?w=1600&q=80&auto=format&fit=crop"
+image_credit: "Photo via Unsplash"
 weight: 10
 ---
 

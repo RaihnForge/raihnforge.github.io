@@ -2779,11 +2779,12 @@ a:hover {
 }
 
 .scholar-dept-card {
-  display: block;
-  padding: 1.5rem 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  overflow: hidden;
   text-decoration: none;
   color: var(--text);
   transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
@@ -2795,6 +2796,22 @@ a:hover {
   transform: translateY(-2px);
   text-decoration: none;
   color: var(--text);
+}
+
+.scholar-dept-card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-hover);
+}
+
+.scholar-dept-card-body {
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.scholar-dept-card:not(.scholar-dept-card--has-image) .scholar-dept-card-body {
+  padding-top: 1.5rem;
 }
 
 .scholar-dept-code {
@@ -2898,11 +2915,11 @@ a:hover {
 }
 
 .scholar-paper-card {
-  display: block;
-  padding: 1.25rem 1.5rem;
+  display: flex;
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  overflow: hidden;
   text-decoration: none;
   color: var(--text);
   transition: border-color var(--transition), box-shadow var(--transition);
@@ -2913,6 +2930,34 @@ a:hover {
   box-shadow: var(--shadow-hover);
   text-decoration: none;
   color: var(--text);
+}
+
+.scholar-paper-card-image {
+  flex-shrink: 0;
+  width: 180px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-hover);
+}
+
+.scholar-paper-card-body {
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.scholar-paper-card:not(.scholar-paper-card--has-image) .scholar-paper-card-body {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .scholar-paper-card {
+    flex-direction: column;
+  }
+  .scholar-paper-card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
 }
 
 .scholar-paper-meta {
@@ -2998,6 +3043,27 @@ a:hover {
               0 8px 24px -8px rgba(15, 23, 42, 0.12);
   padding: 3.5rem clamp(1.5rem, 5vw, 4rem) 3.5rem;
   margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.scholar-paper-document-image {
+  width: calc(100% + 2 * clamp(1.5rem, 5vw, 4rem));
+  margin: -3.5rem calc(-1 * clamp(1.5rem, 5vw, 4rem)) 2.5rem;
+  aspect-ratio: 21 / 9;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-hover);
+}
+
+/* Department hero (above the page header on a department page) */
+.scholar-dept-hero {
+  width: 100%;
+  aspect-ratio: 21 / 7;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-hover);
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
 }
 
 .scholar-paper-document-header {
