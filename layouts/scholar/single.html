@@ -1,0 +1,53 @@
+{{ define "main" }}
+<article class="scholar-paper">
+  <header class="scholar-paper-header">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/scholar/">Scholar</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+      <span aria-hidden="true">/</span>
+      {{ .Title }}
+    </nav>
+
+    <div class="scholar-paper-tagline">
+      {{ with .Params.course }}<span class="scholar-paper-course">{{ . }}</span>{{ end }}
+      {{ with .Params.course_title }}<span>{{ . }}</span>{{ end }}
+      {{ with .Params.module }}<span>{{ . }}</span>{{ end }}
+      {{ if .Date }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
+    </div>
+
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.professor }}<p class="scholar-paper-prof">Professor: {{ . }}</p>{{ end }}
+  </header>
+
+  {{/* Context cards — what / why-to-Josh / how-it-connects */}}
+  {{ if or .Params.context .Params.relevance .Params.connections }}
+  <aside class="scholar-context" aria-label="Context">
+    {{ with .Params.context }}
+    <div class="scholar-context-card">
+      <h2>About this paper</h2>
+      <p>{{ . }}</p>
+    </div>
+    {{ end }}
+    {{ with .Params.relevance }}
+    <div class="scholar-context-card">
+      <h2>Why it matters to the practice</h2>
+      <p>{{ . }}</p>
+    </div>
+    {{ end }}
+    {{ with .Params.connections }}
+    <div class="scholar-context-card">
+      <h2>Connections</h2>
+      <p>{{ . }}</p>
+    </div>
+    {{ end }}
+  </aside>
+  {{ end }}
+
+  <div class="scholar-paper-body">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

@@ -38,6 +38,10 @@ title = "RaihnForge"
     url = "/blog/"
     weight = 4
   [[menu.main]]
+    name = "Scholar"
+    url = "/scholar/"
+    weight = 5
+  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 5
+    weight = 6

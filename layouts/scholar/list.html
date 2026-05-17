@@ -1,0 +1,95 @@
+{{ define "main" }}
+{{ if .Parent.IsHome }}
+{{/* ═══════════════════════════════════════════════════════════
+     TOP-LEVEL: /scholar/ — Department cards + Works
+     ═══════════════════════════════════════════════════════════ */}}
+<div class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
+</div>
+
+{{/* ── Departments: each section under /scholar/ is a department (IT, ADMG, …) ── */}}
+{{ $departments := .Sections.ByWeight }}
+{{ if $departments }}
+<section class="scholar-departments" aria-label="Departments">
+  <div class="section-header">
+    <h2>Departments</h2>
+  </div>
+  <div class="scholar-dept-grid">
+    {{ range $departments }}
+    {{ $paperCount := len (where .RegularPages "Draft" false) }}
+    <a href="{{ .RelPermalink }}" class="scholar-dept-card">
+      <div class="scholar-dept-code">{{ with .Params.code }}{{ . }}{{ else }}{{ .Title }}{{ end }}</div>
+      <h3>{{ .Title }}</h3>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      <p class="scholar-dept-count">{{ $paperCount }} {{ if eq $paperCount 1 }}paper{{ else }}papers{{ end }}</p>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Works: longer-form published pieces (Forge Framework, etc.) ── */}}
+{{ with .Params.works }}
+<section class="scholar-works" aria-label="Published works">
+  <div class="section-header">
+    <h2>Works</h2>
+    <p class="sampler-subhead">Longer-form pieces published alongside the studio.</p>
+  </div>
+  <div class="scholar-works-list">
+    {{ range . }}
+    <a href="{{ .url }}" class="scholar-work-card"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>
+      <h3>{{ .title }}</h3>
+      <div class="scholar-work-meta">
+        {{ with .role }}<span>{{ . }}</span>{{ end }}
+        {{ with .year }}<span>{{ . }}</span>{{ end }}
+      </div>
+      {{ with .description }}<p>{{ . }}</p>{{ end }}
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ else }}
+{{/* ═══════════════════════════════════════════════════════════
+     DEPARTMENT: /scholar/admg/ — Paper list
+     ═══════════════════════════════════════════════════════════ */}}
+<div class="page-header">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <a href="/scholar/">Scholar</a>
+    <span aria-hidden="true">/</span>
+    {{ .Title }}
+  </nav>
+  <p class="scholar-dept-code-large">{{ with .Params.code }}{{ . }}{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
+</div>
+
+{{ $papers := where .RegularPages "Draft" false }}
+{{ $papers = $papers.ByDate.Reverse }}
+{{ if $papers }}
+<section class="scholar-papers" aria-label="Papers">
+  <ol class="scholar-paper-list">
+    {{ range $papers }}
+    <li>
+      <a href="{{ .RelPermalink }}" class="scholar-paper-card">
+        <div class="scholar-paper-meta">
+          {{ with .Params.course }}<span class="scholar-paper-course">{{ . }}</span>{{ end }}
+          {{ with .Params.module }}<span>{{ . }}</span>{{ end }}
+          {{ if .Date }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
+        </div>
+        <h3>{{ .Title }}</h3>
+        {{ with .Params.context }}<p>{{ . }}</p>{{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ol>
+</section>
+{{ else }}
+<p class="page-description">No papers in this department yet.</p>
+{{ end }}
+{{ end }}
+{{ end }}
