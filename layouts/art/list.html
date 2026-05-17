@@ -4,7 +4,7 @@
      TOP-LEVEL: /art/ — Show 5 category cards
      ═══════════════════════════════════════════════════════════ */}}
 <div class="page-header">
-  <h1>Design</h1>
+  <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
@@ -110,7 +110,7 @@
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span aria-hidden="true">/</span>
-    <a href="/art/">Design</a>
+    <a href="/art/">{{ .Parent.Title }}</a>
     <span aria-hidden="true">/</span>
     {{ .Title }}
   </nav>

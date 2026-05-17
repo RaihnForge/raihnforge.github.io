@@ -26,7 +26,7 @@ title = "RaihnForge"
     url = "/portfolio/"
     weight = 1
   [[menu.main]]
-    name = "Design"
+    name = "Gallery"
     url = "/art/"
     weight = 2
   [[menu.main]]
