@@ -3219,3 +3219,18 @@ a:hover {
 .scholar-paper-document--course-summary .scholar-paper-document-header {
   border-bottom: 1px dashed color-mix(in srgb, var(--ref-accent) 40%, var(--border));
 }
+
+.scholar-paper-footnote {
+  margin-top: 2.5rem !important;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--border);
+  font-family: var(--font-base);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.scholar-paper-footnote strong {
+  color: var(--text);
+  font-style: normal;
+}
