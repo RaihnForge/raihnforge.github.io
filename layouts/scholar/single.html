@@ -1,5 +1,6 @@
 {{ define "main" }}
-<div class="scholar-paper-page">
+{{ $isCourseSummary := eq .Params.type "course-summary" }}
+<div class="scholar-paper-page{{ if $isCourseSummary }} scholar-paper-page--course-summary{{ end }}">
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span aria-hidden="true">/</span>
@@ -10,8 +11,17 @@
     {{ .Title }}
   </nav>
 
-  {{/* Editorial context: stacked above the paper itself */}}
-  {{ if or .Params.context .Params.relevance .Params.connections }}
+  {{/* AI-derived disclosure for course-summary pages */}}
+  {{ if $isCourseSummary }}
+  <aside class="scholar-ai-disclosure" aria-label="AI-derived content notice">
+    <div class="scholar-ai-disclosure-label">Course Reference · AI-compiled scaffolding</div>
+    <p>This is a curated reference summary of the course content, not an essay by the author. The page was compiled by an AI from publicly available CWU course materials and standard discipline references, then reviewed and signed off by the curator. It exists to help the curator recall the course and to give visitors a structured overview of what the course covered.</p>
+  </aside>
+  {{ end }}
+
+  {{/* Editorial context: stacked above the paper itself.
+       Only for original papers — course summaries use their own structure. */}}
+  {{ if and (not $isCourseSummary) (or .Params.context .Params.relevance .Params.connections) }}
   <aside class="scholar-context" aria-label="Editorial context">
     {{ with .Params.context }}
     <section class="scholar-context-block">
@@ -34,28 +44,27 @@
   </aside>
   {{ end }}
 
-  {{/* The paper itself — visually treated as a printed document */}}
-  <article class="scholar-paper-document">
+  {{/* The document itself — paper or course summary, same shell, different chrome */}}
+  <article class="scholar-paper-document{{ if $isCourseSummary }} scholar-paper-document--course-summary{{ end }}">
     {{ with .Params.image }}
     <div class="scholar-paper-document-image" style="background-image: url('{{ . }}')" role="img" aria-label="{{ $.Title }}"></div>
     {{ end }}
     <header class="scholar-paper-document-header">
-      {{ with .Params.course }}<p class="scholar-paper-eyebrow">{{ . }}{{ with $.Params.course_title }} · {{ . }}{{ end }}</p>{{ end }}
+      {{ with .Params.course }}<p class="scholar-paper-eyebrow">{{ if $isCourseSummary }}Course Reference · {{ end }}{{ . }}{{ with $.Params.course_title }} · {{ . }}{{ end }}</p>{{ end }}
       <h1>{{ .Title }}</h1>
 
       <dl class="scholar-paper-meta-grid">
-        <div><dt>Author</dt><dd>{{ with .Params.author }}{{ . }}{{ else }}{{ $.Site.Params.author }}{{ end }}</dd></div>
-        {{ with .Params.professor }}
-        <div><dt>Professor</dt><dd>{{ . }}</dd></div>
-        {{ end }}
-        {{ if .Date }}
-        <div><dt>Date</dt><dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></dd></div>
-        {{ end }}
-        {{ with .Params.module }}
-        <div><dt>Module</dt><dd>{{ . }}</dd></div>
-        {{ end }}
-        {{ with .Params.editor }}
-        <div><dt>Editor</dt><dd>{{ . }}</dd></div>
+        {{ if $isCourseSummary }}
+          {{ with .Params.curator }}<div><dt>Curator</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{ with .Params.compiler }}<div><dt>Compiled by</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{ with .Params.source }}<div><dt>Sources</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{ if .Date }}<div><dt>Compiled</dt><dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></dd></div>{{ end }}
+        {{ else }}
+          <div><dt>Author</dt><dd>{{ with .Params.author }}{{ . }}{{ else }}{{ $.Site.Params.author }}{{ end }}</dd></div>
+          {{ with .Params.professor }}<div><dt>Professor</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{ if .Date }}<div><dt>Date</dt><dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></dd></div>{{ end }}
+          {{ with .Params.module }}<div><dt>Module</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{ with .Params.editor }}<div><dt>Editor</dt><dd>{{ . }}</dd></div>{{ end }}
         {{ end }}
       </dl>
     </header>

@@ -3172,3 +3172,50 @@ a:hover {
     padding: 2rem 1.25rem 2rem;
   }
 }
+
+/* ============================================================
+   Scholar — Course Reference (AI-compiled course summary)
+   Distinct visual treatment so a visitor never mistakes a course
+   summary for an original essay by the author.
+   ============================================================ */
+.scholar-paper-page--course-summary {
+  --ref-accent: #2A9DBE;
+}
+
+.scholar-ai-disclosure {
+  background: color-mix(in srgb, var(--ref-accent) 8%, var(--bg-surface));
+  border: 1px solid color-mix(in srgb, var(--ref-accent) 30%, var(--border));
+  border-left: 4px solid var(--ref-accent);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.scholar-ai-disclosure-label {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ref-accent);
+  margin-bottom: 0.4rem;
+}
+
+.scholar-ai-disclosure p {
+  font-size: var(--text-sm);
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.scholar-paper-document--course-summary {
+  border-top: 4px solid var(--ref-accent);
+}
+
+.scholar-paper-document--course-summary .scholar-paper-eyebrow {
+  color: var(--ref-accent);
+}
+
+.scholar-paper-document--course-summary .scholar-paper-document-header {
+  border-bottom: 1px dashed color-mix(in srgb, var(--ref-accent) 40%, var(--border));
+}
