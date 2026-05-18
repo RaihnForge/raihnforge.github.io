@@ -22,6 +22,8 @@ Echoes of the greatest empires to span across history still chime resoundingly i
 
 ## Frontier Origins
 
+{{< figure src="/images/scholar/hist/aryan-equestrian-sketch-2022.png" alt="Pencil sketch of an Aryan equestrian on horseback, signed JBK 2022" caption="Sketched in a RELS 101 lecture on January 20, 2022, while the class was working through the Indo-Aryan migration. Pencil. The phrase stuck enough that it ended up anchoring this paper a year and a half later." class="empires-doodle" >}}
+
 The adaptive, rugged, and resourceful frontier energy of the Aryans, Romans, and Mongols marked the first fateful steps of building each of their respective empires. The Persians began as Aryan equestrians, brandishing swords and arrows, who rode brazenly atop their horses, quickly conquering their homeland: Iran (Davis 89). The hardened Roman "Plebes" rose up to protect and defend their lands, first by winning veto powers from their "patricians," then onward to the surrounding tribes until they finally secured the majority of Italy. However, they were unsated and lusted for greater lands and triumphs (Davis 94). The tribal Mongols harnessed their brutality and unique hearty steeds to set off toward their destiny of world domination.
 
 ## Leadership That Set the Trajectory
