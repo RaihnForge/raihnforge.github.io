@@ -71,6 +71,14 @@
 
     <div class="scholar-paper-body">
       {{ .Content }}
+
+      {{ if $isCourseSummary }}
+      <p class="scholar-paper-footnote">
+        Course learning objectives summarized with AI assistance
+        {{ with .Params.grade }} · Grade achieved: <strong>{{ . }}</strong>{{ end }}
+        · Concepts listed for posterity.
+      </p>
+      {{ end }}
     </div>
   </article>
 </div>

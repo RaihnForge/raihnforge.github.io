@@ -7,6 +7,7 @@ type: "course-summary"
 curator: "Joshua Keyes"
 compiler: "Claude (Opus 4.7)"
 source: "CWU course catalog, CWU Comparative Religion Minor program page, standard intro-to-world-religions discipline references"
+grade: "A"
 category: "RELS"
 category_label: "World Religions"
 image: "https://images.unsplash.com/photo-1554554497-0095c34db3ec?w=1600&q=80&auto=format&fit=crop"
@@ -144,7 +145,3 @@ A few patterns worth holding onto:
 ## Curator's Takeaway
 
 *This section is the place for Joshua's own short reflection on the course — what stuck, what surprised, what shows up in the studio practice or worldbuilding work. To be filled in once he has reviewed the rest of the page.*
-
-## A Note on This Page
-
-This is a course reference summary, not an essay. It was compiled by an AI from the public CWU course catalog, the CWU Comparative Religion Minor program page, and standard intro-to-world-religions discipline references. Joshua's role here is curator and signoff, not author. Where personal perspective is intended (the "Curator's Takeaway"), it is explicitly his own and clearly labeled.
