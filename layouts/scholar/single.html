@@ -21,7 +21,7 @@
 
   {{/* Editorial context: stacked above the paper itself.
        Only for original papers — course summaries use their own structure. */}}
-  {{ if and (not $isCourseSummary) (or .Params.context .Params.relevance .Params.connections) }}
+  {{ if and (not $isCourseSummary) (or .Params.context .Params.relevance .Params.connections .Params.role_note) }}
   <aside class="scholar-context" aria-label="Editorial context">
     {{ with .Params.context }}
     <section class="scholar-context-block">
@@ -39,6 +39,12 @@
     <section class="scholar-context-block">
       <h2>Connections</h2>
       <p>{{ . }}</p>
+    </section>
+    {{ end }}
+    {{ with .Params.role_note }}
+    <section class="scholar-context-block scholar-context-block--role">
+      <h2>A note on role and title</h2>
+      <p>{{ . | safeHTML }}</p>
     </section>
     {{ end }}
   </aside>
@@ -81,5 +87,16 @@
       {{ end }}
     </div>
   </article>
+
+  {{/* Privacy disclaimer — appears under every scholar paper.
+       Names of employers, colleagues, addresses, and other identifiers have been
+       intentionally generalized. Internal product codenames are kept where they
+       carry the meaning of the work. */}}
+  {{ if not $isCourseSummary }}
+  <aside class="scholar-privacy-note" aria-label="Privacy and generalization notice">
+    <div class="scholar-privacy-note-label">Names and identifiers</div>
+    <p>Company names, colleague names, addresses, contact details, and certain product codenames in this paper have been intentionally generalized for privacy. Where the original assignment named specific people or employers, this archive uses role-only labels (for example, "our CTO," "the EdTech employer," "an internal content system"). The substance of the work, the frameworks applied, and the decisions described are unchanged.</p>
+  </aside>
+  {{ end }}
 </div>
 {{ end }}

@@ -12,7 +12,7 @@ image_credit: "Photo via Unsplash"
 category: "IT"
 category_label: "Information Technology"
 context: "An evaluation of Spokeo, Inc. v. Robins through Lessig's four modalities of regulation (Market, Law, Architecture, Norms). The case turns on whether misrepresented personal data published by a data broker constitutes 'concrete harm' under Article III standing, and what it means when the Supreme Court initially says no."
-relevance: "Data brokers, standing doctrine, and the legal definition of harm are the upstream questions for every modern privacy program. Years after writing this, I worked the same questions from the operational side while building Kelvin's SOC 2 control set, where the Privacy and Confidentiality criteria force an organization to define, in advance, what it considers harm and how it prevents it. The Spokeo argument is the one that the framework is trying to answer."
+relevance: "Data brokers, standing doctrine, and the legal definition of harm are the upstream questions for every modern privacy program. Years after writing this, I worked the same questions from the operational side while building my EdTech employer's SOC 2 control set, where the Privacy and Confidentiality criteria force an organization to define, in advance, what it considers harm and how it prevents it. The Spokeo argument is the one that the framework is trying to answer."
 connections: "Pairs with the Final Essay on Windows 11 telemetry from the same course, which applies the same Lessig lens to operating system design choices. Sits upstream of professional SOC 2 work on data classification, vendor risk, and breach impact assessment."
 tags: ["Cybersecurity", "Privacy", "Data Brokers", "Lessig Framework", "Supreme Court", "IT 301"]
 draft: false

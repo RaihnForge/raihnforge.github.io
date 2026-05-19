@@ -11,10 +11,10 @@ image: "https://images.unsplash.com/photo-1586936893354-362ad6ae47ba?w=1600&q=80
 image_credit: "Photo via Unsplash"
 category: "ADMG"
 category_label: "Administration & Management"
-context: "An applied breakdown of the four Agile values and twelve principles, each grounded in real project experience at Kelvin Education rather than treated as a checklist."
+context: "An applied breakdown of the four Agile values and twelve principles, each grounded in real project experience at an EdTech employer rather than treated as a checklist."
 relevance: "Agile is the operating system underneath how I actually ship work, whether the deliverable is software, brand systems, broadcast graphics, or a curriculum. Naming the principles gives me a vocabulary to defend the parts of my process that already work and to fix the parts that quietly do not."
 connections: "Bridges directly to the Forge Framework chapters on iterative refinement and to the studio's product-thinking thread: same instincts, different language. Anchors the broader ADMG track, where each subsequent paper assumes a working grasp of agile operating principles."
-tags: ["Agile", "Project Management", "Scrum", "Kelvin Education", "ADMG 479"]
+tags: ["Agile", "Project Management", "Scrum", "EdTech", "ADMG 479"]
 draft: false
 ---
 
@@ -26,15 +26,15 @@ The Agile Manifesto provides a foundational framework for agile project manageme
 
 **Working Software Over Comprehensive Documentation.** Agile emphasizes creating tangible results over extensive documentation. In a video content project, rapidly prototyping microlessons enabled stakeholders to provide immediate feedback. Scrum.org (2017) illustrates this by converting user stories directly into testable, demonstrable outcomes rather than extensive pre-written specifications.
 
-**Customer Collaboration Over Contract Negotiation.** Agile prioritizes continuous customer involvement. At Kelvin Education, regular collaboration sessions with school administrators ensured that the content we developed aligned closely with end-user needs. Yordanova and Toshkov (2019) similarly advocate for integrating clients throughout the process to effectively meet business objectives.
+**Customer Collaboration Over Contract Negotiation.** Agile prioritizes continuous customer involvement. At my EdTech employer, regular collaboration sessions with school administrators ensured that the content we developed aligned closely with end-user needs. Yordanova and Toshkov (2019) similarly advocate for integrating clients throughout the process to effectively meet business objectives.
 
-**Responding to Change Over Following a Plan.** Agile methodologies advocate adaptability. When unforeseen technical issues arose during development of the Kelvin Education KC3 system, our agile approach allowed us to pivot rapidly without major project disruption. Baham et al. (2017) highlight agile's suitability for disaster recovery scenarios precisely because of this responsiveness to sudden changes.
+**Responding to Change Over Following a Plan.** Agile methodologies advocate adaptability. When unforeseen technical issues arose during development of the employer's internal content system, our agile approach allowed us to pivot rapidly without major project disruption. Baham et al. (2017) highlight agile's suitability for disaster recovery scenarios precisely because of this responsiveness to sudden changes.
 
 ## Twelve Principles
 
 Customer satisfaction through early and continuous delivery, welcoming changing requirements, frequent working software, daily collaboration between business and developers, motivated individuals, face-to-face communication, working software as the primary measure of progress, sustainable pace, technical excellence, simplicity, self-organizing teams, and regular reflection on how to become more effective.
 
-Each principle is reinforced at Kelvin Education through weekly prototype releases, daily developer standups, embedded Partnerships coordination, an explicit ethics rooted in Sheridan's *Joy, Inc.*, and a deliberate reliance on synchronous communication via Slack huddles and Google Meet over email.
+Each principle is reinforced at my EdTech employer through weekly prototype releases, daily developer standups, embedded Partnerships coordination, an explicit ethics rooted in Sheridan's *Joy, Inc.*, and a deliberate reliance on synchronous communication via Slack huddles and Google Meet over email.
 
 ## References
 

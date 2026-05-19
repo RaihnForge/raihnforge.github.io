@@ -12,7 +12,7 @@ image_credit: "Photo via Unsplash"
 category: "IT"
 category_label: "Information Technology"
 context: "A manager-facing memo that takes a raw sales spreadsheet, groups the columns into four operational categories (order identification, geographic location, shipping, and sales figures), and proposes the analyses each category unlocks. Includes a pivot table on average profit by region and year, a skeptical read of the data's integrity, and a documented list of actions taken on the worksheet."
-relevance: "Segmenting and stress-testing data is a daily move in my professional work, from Kelvin survey rollups to audience analytics for broadcast and creative campaigns. The instinct this paper exercises, asking whether the numbers in front of you actually represent reality before you build conclusions on them, is the difference between a useful dashboard and an expensive opinion."
+relevance: "Segmenting and stress-testing data is a daily move in my professional work, from EdTech survey rollups to audience analytics for broadcast and creative campaigns. The instinct this paper exercises, asking whether the numbers in front of you actually represent reality before you build conclusions on them, is the difference between a useful dashboard and an expensive opinion."
 connections: "Sets up later IT 165 work on visualization and dashboards by forcing the structural decisions to happen first: what is an entity, what is an attribute, and which columns belong together. The same logic carries into the portfolio's HeadCannon and Project Tracker data models, where entity-first thinking governs how records are grouped before any view is rendered."
 tags: ["Data Segmentation", "Pivot Tables", "Excel", "IT 165", "Data Quality"]
 draft: false

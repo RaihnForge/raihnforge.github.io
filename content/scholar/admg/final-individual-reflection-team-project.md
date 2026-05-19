@@ -12,8 +12,8 @@ image_credit: "Photo via Unsplash"
 category: "ADMG"
 category_label: "Administration & Management"
 context: "End-of-quarter reflection on a four-person remote team that delivered a multi-lab nonprofit website project through the back half of COVID. Each teammate is graded with specific evidence, my own performance is graded against the Schwalbe 7 Habits, and the ten PMBOK knowledge areas are walked through against what the team actually did."
-relevance: "ADMG 374 is the foundation course the rest of the ADMG track (474, 475, 476, 477, 479) builds on. This is the paper where I first put real names to instincts I had been operating on for a decade, including WBS, Gantt charts, critical path, scope creep, stakeholder registers, and the Tuckman stages. Most of what I now use to run Kelvin work and the studio backlog traces back to this reflection."
-connections: "Sets the vocabulary that the agile papers in ADMG 479 later refine, particularly around team communication, win/win thinking, and end-goal focus. The risk register, stakeholder register, and project charter habits established here are the same artifacts that show up in the Kelvin KC3 work and in the Forge Framework's project pillar suite."
+relevance: "ADMG 374 is the foundation course the rest of the ADMG track (474, 475, 476, 477, 479) builds on. This is the paper where I first put real names to instincts I had been operating on for a decade, including WBS, Gantt charts, critical path, scope creep, stakeholder registers, and the Tuckman stages. Most of what I now use to run EdTech work and the studio backlog traces back to this reflection."
+connections: "Sets the vocabulary that the agile papers in ADMG 479 later refine, particularly around team communication, win/win thinking, and end-goal focus. The risk register, stakeholder register, and project charter habits established here are the same artifacts that show up in the internal-content-system work at the EdTech employer and in the Forge Framework's project pillar suite."
 tags: ["Project Management", "Team Performance", "Reflection", "PMBOK", "Schwalbe", "ADMG 374"]
 draft: false
 ---
@@ -22,15 +22,15 @@ This is the end-of-quarter reflection for ADMG 374. The team delivered a nonprof
 
 ## Team Performance
 
-Lexi Cozart was excellent at the work itself, and she was open about a schedule that pulled her in many directions, including a drive to Wenatchee on the day of the final. Her risk management section in Lab 3 carried the depth of someone who had taken a dedicated risk class the prior quarter, and it raised the ceiling of the deliverable.
+Teammate 1 was excellent at the work itself, and was open about a schedule pulling them in many directions. Their risk management section in Lab 3 carried the depth of someone who had taken a dedicated risk class the prior quarter, and it raised the ceiling of the deliverable.
 
-Ziyan Ma started quiet and camera-off. Over the quarter she turned the camera on, joined more actively, and produced consistently strong written work, especially as project manager during Lab 3. English is her second language, and the culture she comes from is less prone to interjecting. Her output was always thorough and on time, even when her presence in conversation was light.
+Teammate 2 started quiet and camera-off. Over the quarter they turned the camera on, joined more actively, and produced consistently strong written work, especially as project manager during Lab 3. English was their second language, and the culture they came from was less prone to interjecting. Their output was always thorough and on time, even when their presence in conversation was light.
 
-Amberley Snyder was the team's organizing engine. She set up Zooms, tracked deadlines, and reached out to teammates when she sensed something was stuck. When Ziyan could not locate a template document, Amberley followed up by text the next day until it was found. Her strength is also her edge case: she would step in fast enough that, when I was project manager, I sometimes had to ask for a beat to think, because she read my pauses as confusion rather than consideration.
+Teammate 3 was the team's organizing engine. They set up Zooms, tracked deadlines, and reached out to teammates when something was stuck. When Teammate 2 could not locate a template document, Teammate 3 followed up by text the next day until it was found. That strength was also an edge case: they would step in fast enough that, when I was project manager, I sometimes had to ask for a beat to think, because pauses got read as confusion rather than consideration.
 
 I gave myself a 99. I produced most of the graphics and web development, was lead on creative problem solving, owned stakeholder prediction, and was the team's default voice for ambiguous roles. I should have been more vocal earlier in the quarter about how much of the web work was uncounted in the Lab task split. Letting that go is a leftover Marine Corps instinct: do, and survive. In a school team, that instinct caused avoidable friction late in the project.
 
-For the 100-point allocation across the team, I split it 28 Amberley, 28 myself, 22 Lexi, 22 Ziyan. The two even-weight slots reflect the two of us carrying the most cross-functional and organizational load. The 22s reflect strong, consistent contribution inside well-defined sections.
+For the 100-point allocation across the team, I split it 28 Teammate 3, 28 myself, 22 Teammate 1, 22 Teammate 2. The two even-weight slots reflect the two of us carrying the most cross-functional and organizational load. The 22s reflect strong, consistent contribution inside well-defined sections.
 
 ## My Performance Against the 7 Habits
 
@@ -85,7 +85,7 @@ Schwalbe's eighth edition uses ten knowledge areas, with stakeholder management 
 5. **Quality management.** Quality plans, process improvement plans, quality metrics, and checklists. User feedback and focus groups were our main signal. Periodic feedback cycles tied to metrics let us push UI and information quality past satisfactory.
 6. **Human resources management.** Distribution of work matched skills to people. We checked in on workload and well-being, inside and outside the project, to minimize burnout.
 7. **Communications management.** Communications plan posted in MS Teams, with Teams as the primary hub and backup channels documented. Scheduled meetings, with the ability to spin up an ad-hoc Zoom when text and email could not carry the situation.
-8. **Risk management.** Risk plan and risk register, with qualitative and quantitative analysis and responses. Lexi's prior risk class gave that section more depth than we would have had on our own.
+8. **Risk management.** Risk plan and risk register, with qualitative and quantitative analysis and responses. Teammate 1's prior risk class gave that section more depth than we would have had on our own.
 9. **Procurement management.** Procurement plan informed budget and sponsor outreach. Change requests pushed the budget up considerably between first estimate and final.
 10. **Stakeholder management.** Stakeholder management plan and register kept us oriented to who we were serving with each change. Every scope decision passed back through stakeholder motivations.
 

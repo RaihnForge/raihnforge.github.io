@@ -12,9 +12,9 @@ image_credit: "Photo via Unsplash"
 category: "ADMG"
 category_label: "Administration & Management"
 context: "A mid-quarter status report written as a project-manager email to the professor, covering three personal SMART goals: a personal tasking and note system, a project management presentation process, and a modular maintainable resume. Includes a short critique of the assignment structure itself before the report begins."
-relevance: "Status reporting is the unglamorous communication skill that decides whether leadership keeps backing your work. Practicing it on my own goals, in my own real Kelvin Education work environment, let me feel the difference between a stand-up update that lands and one that vanishes. The same template now drives how I report on Keyes Dev Studio backlog work and on the Forge Framework rollout."
+relevance: "Status reporting is the unglamorous communication skill that decides whether leadership keeps backing your work. Practicing it on my own goals, in my own real EdTech work environment, let me feel the difference between a stand-up update that lands and one that vanishes. The same template now drives how I report on Keyes Dev Studio backlog work and on the Forge Framework rollout."
 connections: "Bridges into the agile work in ADMG 479 (status as a cadence ritual, not a one-shot artifact) and into the career-mngr project under the studio (the modular resume goal in this report is the same instinct that later became a tracked product). The Trello-versus-Jira evaluation here also shows the early version of the tool-fit reasoning that runs through every Sanctum tool-selection decision."
-tags: ["SMART Goals", "Status Reporting", "Project Management", "Professional Communication", "Kelvin Education", "ADMG 385"]
+tags: ["SMART Goals", "Status Reporting", "Project Management", "Professional Communication", "EdTech", "ADMG 385"]
 draft: false
 ---
 
@@ -26,8 +26,8 @@ A real project manager rarely updates on three unrelated goals in one email. The
 
 ## Email
 
-**From:** Joshua Keyes (joshua@kelvin.education)
-**To:** Professor Fountain (elizabeth.fountain@cwu.edu)
+**From:** Joshua Keyes (work email redacted)
+**To:** Professor Fountain (university email redacted)
 **Subject:** SMART Goals Progress Report
 **Attachment:** SMART Goals Progress Infographic
 

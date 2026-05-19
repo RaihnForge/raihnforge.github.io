@@ -13,7 +13,7 @@ category: "ADMG"
 category_label: "Administration & Management"
 context: "Two-chapter response paper covering project communication (tone, body language, virtual punctuation, distribution channels) and project risk (early identification, planned responses, and what a real risk management plan buys you). Each section pulls from Schwalbe and at least one outside reference."
 relevance: "Communication and risk are the two areas where most of the projects I have been part of actually died, including the ones before I had the vocabulary for what was happening. Naming why a video call lands differently than email, or why writing a risk register before the risk shows up is cheaper than reacting to it, gave me tools I still use to triage how a team should talk and what it should plan for."
-connections: "This is the ADMG 374 piece that the rest of the ADMG track keeps reaching back to. The communication channel breakdown is what the agile communication patterns in ADMG 479 assume as foundation, and the risk register habit is what shows up in the Forge Framework project pillar docs and in Kelvin Education's quarterly planning."
+connections: "This is the ADMG 374 piece that the rest of the ADMG track keeps reaching back to. The communication channel breakdown is what the agile communication patterns in ADMG 479 assume as foundation, and the risk register habit is what shows up in the Forge Framework project pillar docs and in the EdTech employer's quarterly planning."
 tags: ["Project Management", "Risk Management", "Communication", "Schwalbe", "ADMG 374"]
 draft: false
 ---

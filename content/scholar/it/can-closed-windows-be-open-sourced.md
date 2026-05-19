@@ -12,7 +12,7 @@ image_credit: "Photo via Unsplash"
 category: "IT"
 category_label: "Information Technology"
 context: "A research essay on Windows 11 telemetry, in-OS advertising, and the erosion of user choice, set against Valve's investment in open-source Linux gaming as a viable alternative. Written for IT 301 using Lessig's modalities of regulation."
-relevance: "Operating systems are now the environment most of us live and work inside, which makes their privacy posture a liberty issue, not a preference. This argument lined up directly with the SOC 2 control work I later led at Kelvin, where the questions are the same in miniature: what data does the system collect by default, who can see it, what can the user opt out of, and where is that documented."
+relevance: "Operating systems are now the environment most of us live and work inside, which makes their privacy posture a liberty issue, not a preference. This argument lined up directly with the SOC 2 control work I later led at my EdTech employer, where the questions are the same in miniature: what data does the system collect by default, who can see it, what can the user opt out of, and where is that documented."
 connections: "Applies Lessig's four modalities (Norms, Law, Market, Architecture) to a contemporary platform decision. Pairs with the Spokeo v. Robins case analysis from the same course on the legal side, and with the SOC 2 trust services criteria (Security, Availability, Confidentiality, Privacy) on the operational side."
 tags: ["Cybersecurity", "Privacy", "Operating Systems", "Open Source", "Lessig Framework", "IT 301"]
 draft: false

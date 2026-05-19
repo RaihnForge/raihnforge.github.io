@@ -188,6 +188,33 @@ Imported from WordPress.com WXR export (Feb 2026):
 - 27 pre-existing hand-crafted posts preserved (skipped during import)
 - Import script: `scripts/import-wordpress.py`
 
+## Scholar privacy conventions
+
+Scholar papers reference real workplaces, colleagues, and procurement engagements. To keep this archive public-safe without flattening the work, current and future scholar content follows these conventions:
+
+**Generalize identifying details.**
+- Employer name → "an EdTech employer" / "the employer" / "my EdTech employer" (whichever reads naturally)
+- Specific product names (e.g., flagship platform names) → "the survey platform," "the internal content system"
+- Internal codenames (e.g., KC3) → "the internal content control system" / "the content system"
+- Named colleagues → role labels only ("our CTO," "our COO," "our CRO"). Do not preserve first-initial / last-initial form — it still narrows identity in a small org.
+- Named classmates → "Teammate 1 / Teammate 2 / Teammate 3" (numbered consistently within a single paper). Do not preserve real first names.
+- Addresses, office locations, phone numbers, work email handles → redact entirely or replace with "[redacted]"
+- City + state pairs that uniquely identify the employer → state only
+
+**Preserve.**
+- Frameworks, decisions, outcomes, dates, courses, professors, references, citations, and Joshua's own role and actions
+- The author's full name (Joshua Keyes) and educational institution (CWU)
+- Generic tool names that are industry-standard (Jira, Slack, Canva, RISE 360, GitHub, etc.)
+
+**Two layout hooks make this self-explanatory to readers.**
+- Every non-course-summary scholar page renders a quiet "Names and identifiers" footer disclaimer (`layouts/scholar/single.html`) — do not duplicate this disclaimer inline in the markdown body.
+- Frontmatter may include `role_note: "…"` to record where Joshua's official title differed from his operational role. The note renders as a distinct accent block in the editorial context. Use it on any paper that discusses his EdTech employment, since the Lead Production Designer title under-described his Product Manager scope (a mutually understood compensation-banding compromise).
+
+**Process when importing new scholar content from Drive or older notebooks.**
+1. Read the source for any of the categories above and apply the substitutions before publishing.
+2. Set `role_note` if the paper names the employer role.
+3. Spot-check the rendered page locally — the footer disclaimer should be visible; the role-note block should appear above the article when set.
+
 ## Workflow Rules
 
 - Complete ALL tiers/phases of a plan before moving on. Do not skip ahead or start new phases prematurely.
