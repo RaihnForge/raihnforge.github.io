@@ -1,1 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Risk on RaihnForge</title><link>https://RaihnForge.github.io/tags/risk/</link><description>Recent content in Risk on RaihnForge</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://RaihnForge.github.io/tags/risk/index.xml" rel="self" type="application/rss+xml"/><item><title>Managing Crisis Projects</title><link>https://RaihnForge.github.io/scholar/admg/admg-476-managing-crisis-projects/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/scholar/admg/admg-476-managing-crisis-projects/</guid><description>&lt;p>An organization must be accountable, responsive, and integrate understanding in a crisis situation for appropriate management. It is important to understand the difference between risks and unknowns and how to approach their management differently (Paladin Risk, 2014). Project risk denotes factors that may benefit or negate the viability of maintaining the project&amp;rsquo;s baseline and successfully completing deliverables within constraints, most often scope, cost, and schedule (Meyer et al, 2002). Unknowns are defined as unforeseeable occurrences (Darnall et al, 2018). Unforeseen circumstances may still be addressed through proper understanding of crisis management (Paladin Risk, 2014). Crisis management is defined as &amp;ldquo;a significant threat to operations that can have negative consequences if not handled properly&amp;rdquo; (Coombs, 2007). Failing to consider these factors and how they correlate to the life-cycle phases of a crisis may determine that the organization are villains in the eyes of the public instead of the victims of a crisis (Kerzner, 2017). This discernment may determine the fate of an organization.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Risk on RaihnForge</title><link>https://RaihnForge.github.io/tags/risk/</link><description>Recent content in Risk on RaihnForge</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://RaihnForge.github.io/tags/risk/index.xml" rel="self" type="application/rss+xml"/><item><title>Managing Crisis Projects</title><link>https://RaihnForge.github.io/scholar/admg/admg-476-managing-crisis-projects/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/scholar/admg/admg-476-managing-crisis-projects/</guid><description>&lt;p>An organization must be accountable, responsive, and integrate understanding in a crisis situation for appropriate management. It is important to understand the difference between risks and unknowns and how to approach their management differently (Paladin Risk, 2014). Project risk denotes factors that may benefit or negate the viability of maintaining the project&amp;rsquo;s baseline and successfully completing deliverables within constraints, most often scope, cost, and schedule (Meyer et al, 2002). Unknowns are defined as unforeseeable occurrences (Darnall et al, 2018). Unforeseen circumstances may still be addressed through proper understanding of crisis management (Paladin Risk, 2014). Crisis management is defined as &amp;ldquo;a significant threat to operations that can have negative consequences if not handled properly&amp;rdquo; (Coombs, 2007). Failing to consider these factors and how they correlate to the life-cycle phases of a crisis may determine that the organization are villains in the eyes of the public instead of the victims of a crisis (Kerzner, 2017). This discernment may determine the fate of an organization.&lt;/p></description></item><item><title>Understanding Contracts: CPIF vs FPIF and Procurement Strategy</title><link>https://RaihnForge.github.io/scholar/admg/understanding-contracts-cpif-vs-fpif/</link><pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate><guid>https://RaihnForge.github.io/scholar/admg/understanding-contracts-cpif-vs-fpif/</guid><description>&lt;p>&lt;em>Editor&amp;rsquo;s note: This is student-era work from May 2022. The contract math in Part 1 has some confused arithmetic (sharing ratios applied as straight divisions, totals that don&amp;rsquo;t reconcile against the stated targets). It&amp;rsquo;s preserved as written so the paper reads as the original calculation walkthrough; treat Part 1 as the artifact, not the answer key.&lt;/em>&lt;/p>
+&lt;h2 id="part-1-working-the-contract-scenarios">Part 1. Working the Contract Scenarios&lt;/h2>
+&lt;h3 id="1-cost-plus-incentive-fee-contract">1. Cost Plus Incentive Fee Contract&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Parameter&lt;/th>
+ &lt;th style="text-align: left">Value&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Target Cost&lt;/td>
+ &lt;td style="text-align: left">$150,000&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Target Fee&lt;/td>
+ &lt;td style="text-align: left">$25,000&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Target Price&lt;/td>
+ &lt;td style="text-align: left">$175,000&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Sharing Ratio&lt;/td>
+ &lt;td style="text-align: left">80/20 (80% buyer, 20% seller)&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Actual Cost&lt;/td>
+ &lt;td style="text-align: left">$140,000&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>Additional Fee = $0. Total Fee Paid = $25,000. Actual cost is under target cost so the incentive fee is awarded.&lt;/p></description></item></channel></rss>
