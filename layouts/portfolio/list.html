@@ -6,81 +6,35 @@
 </div>
 
 {{/* ──────────────────────────────────────────────────────────────
-     Visual showcases — dense galleries that lead the page so a
-     visitor sees the range of work before reading anything.
-     Each showcase pulls from one /art/ subsection. Items flagged
-     `portfolio: true` are prioritized; if a section has fewer than
-     6 flagged items, recent pieces with images fill the remainder.
+     Visual gallery — data-driven from data/portfolio_gallery.yml.
+     Sections, ordering, and per-item images / titles / optional
+     links all live in the data file so editing the showcase does
+     not require touching this template.
+
+     Layout target: dense 7-column grid, square tiles, no caption
+     under the image; hover reveals the title via overlay.
      ────────────────────────────────────────────────────────────── */}}
 
-{{ $maxPerShowcase := 12 }}
-{{ $minBeforeFallback := 6 }}
-
-{{ $showcases := slice
-  (dict
-    "title"   "Illustration"
-    "path"    "/art/illustration"
-    "href"    "/art/illustration/"
-    "subhead" "Character art, commissions, fan features, and standalone digital paintings — from Warcraft pieces through Destiny submissions and the Cheerful caricature series.")
-  (dict
-    "title"   "Logo & Branding"
-    "path"    "/art/branding"
-    "href"    "/art/branding/"
-    "subhead" "Identity marks, brand systems, and applied design across edtech, fitness, gaming personalities, and community organizations.")
-  (dict
-    "title"   "Esports & Streaming"
-    "path"    "/art/esports"
-    "href"    "/art/esports/"
-    "subhead" "Broadcast overlay systems, tournament identity, streaming visual languages, and emote / cheermote work for esports teams and personalities.")
-}}
-
-{{ range $showcases }}
-  {{ $section := site.GetPage .path }}
-  {{ if $section }}
-    {{ $active := where $section.RegularPagesRecursive "Params.archived" "ne" true }}
-    {{ $withImage := where $active "Params.image" "ne" "" }}
-    {{ $featured := where $withImage "Params.portfolio" true }}
-    {{ $featured = $featured.ByDate.Reverse }}
-
-    {{/* Fallback: if fewer than $minBeforeFallback featured items, pad with recent pieces */}}
-    {{ $items := $featured }}
-    {{ if lt (len $items) $minBeforeFallback }}
-      {{ $featuredPaths := slice }}
-      {{ range $featured }}{{ $featuredPaths = $featuredPaths | append .RelPermalink }}{{ end }}
-      {{ $recent := $withImage.ByDate.Reverse }}
-      {{ range $recent }}
-        {{ if not (in $featuredPaths .RelPermalink) }}
-          {{ $items = $items | append . }}
+{{ with .Site.Data.portfolio_gallery }}
+  {{ range .sections }}
+  <section class="portfolio-gallery-section" id="{{ .id }}" aria-label="{{ .title }}">
+    <h2 class="portfolio-gallery-heading">{{ .title }}</h2>
+    <div class="portfolio-gallery-grid">
+      {{ range .items }}
+        {{ if .link }}
+        <a href="{{ .link }}" class="portfolio-gallery-tile" title="{{ .title }}">
+          <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" />
+          <span class="portfolio-gallery-tile-overlay">{{ .title }}</span>
+        </a>
+        {{ else }}
+        <div class="portfolio-gallery-tile portfolio-gallery-tile--static" title="{{ .title }}">
+          <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" />
+          <span class="portfolio-gallery-tile-overlay">{{ .title }}</span>
+        </div>
         {{ end }}
       {{ end }}
-    {{ end }}
-
-    {{/* Cap and render */}}
-    {{ $items = first $maxPerShowcase $items }}
-    {{ $total := len $active }}
-
-    {{ if $items }}
-    <section class="portfolio-showcase" aria-label="{{ .title }}">
-      <div class="portfolio-showcase-header">
-        <h2><a href="{{ .href }}">{{ .title }}</a></h2>
-        <p class="portfolio-showcase-subhead">{{ .subhead }}</p>
-      </div>
-      <div class="gallery-grid portfolio-showcase-grid">
-        {{ range $items }}
-        <a href="{{ .RelPermalink }}" class="gallery-item portfolio-showcase-item">
-          <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" />
-          <div class="gallery-caption">
-            <span class="gallery-title">{{ .Title }}</span>
-            {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}
-          </div>
-        </a>
-        {{ end }}
-      </div>
-      <p class="portfolio-showcase-link">
-        <a href="{{ .href }}">See all {{ $total }} {{ if eq $total 1 }}piece{{ else }}pieces{{ end }} in {{ .title }} &rarr;</a>
-      </p>
-    </section>
-    {{ end }}
+    </div>
+  </section>
   {{ end }}
 {{ end }}
 
@@ -125,8 +79,7 @@
 {{ end }}
 
 {{/* ──────────────────────────────────────────────────────────────
-     Continue exploring — a thin discovery strip so a visitor who
-     came in here but wants depth knows where to go next.
+     Continue exploring — discovery strip into the rest of the site.
      ────────────────────────────────────────────────────────────── */}}
 <section class="portfolio-explore" aria-label="Continue exploring">
   <h2>Continue exploring</h2>
