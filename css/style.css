@@ -1925,6 +1925,163 @@ a:hover {
   margin-bottom: 3.5rem;
 }
 
+/* ============================================================
+   Portfolio — Visual-first scroll
+   Dense, image-led showcases that lead the /portfolio/ page
+   so a visitor sees the range of work before reading anything.
+   ============================================================ */
+
+.portfolio-hero {
+  margin-bottom: 2rem;
+}
+
+.portfolio-hero h1 {
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-hero .page-description {
+  font-size: var(--text-base);
+  color: var(--text-muted);
+  max-width: 640px;
+  margin: 0;
+}
+
+.portfolio-showcase {
+  margin-bottom: 4rem;
+}
+
+.portfolio-showcase-header {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-showcase-header h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.portfolio-showcase-header h2 a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.portfolio-showcase-header h2 a:hover {
+  color: var(--accent);
+}
+
+.portfolio-showcase-subhead {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
+  max-width: 720px;
+}
+
+.portfolio-showcase-grid {
+  margin-bottom: 1rem;
+}
+
+.portfolio-showcase-link {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.portfolio-showcase-link a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.portfolio-showcase-link a:hover {
+  text-decoration: underline;
+}
+
+/* Selected Works — audience-tailored cards. Shares portfolio-grid +
+   portfolio-card visual styles but gets its own header treatment. */
+.portfolio-selected {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border);
+  margin-bottom: 4rem;
+}
+
+.portfolio-selected-header {
+  margin-bottom: 2rem;
+}
+
+.portfolio-selected-header h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+/* Continue exploring strip — quiet discovery links into the rest
+   of the site for visitors who want depth past the showcase. */
+.portfolio-explore {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.portfolio-explore h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-explore-card {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.portfolio-explore-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.portfolio-explore-card h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--text);
+  transition: color var(--transition);
+}
+
+.portfolio-explore-card:hover h3 {
+  color: var(--accent);
+}
+
+.portfolio-explore-card p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
