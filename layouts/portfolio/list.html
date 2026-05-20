@@ -1,16 +1,103 @@
 {{ define "main" }}
-<div class="page-header">
+<div class="page-header portfolio-hero">
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
+{{/* ──────────────────────────────────────────────────────────────
+     Visual showcases — dense galleries that lead the page so a
+     visitor sees the range of work before reading anything.
+     Each showcase pulls from one /art/ subsection. Items flagged
+     `portfolio: true` are prioritized; if a section has fewer than
+     6 flagged items, recent pieces with images fill the remainder.
+     ────────────────────────────────────────────────────────────── */}}
+
+{{ $maxPerShowcase := 12 }}
+{{ $minBeforeFallback := 6 }}
+
+{{ $showcases := slice
+  (dict
+    "title"   "Illustration"
+    "path"    "/art/illustration"
+    "href"    "/art/illustration/"
+    "subhead" "Character art, commissions, fan features, and standalone digital paintings — from Warcraft pieces through Destiny submissions and the Cheerful caricature series.")
+  (dict
+    "title"   "Logo & Branding"
+    "path"    "/art/branding"
+    "href"    "/art/branding/"
+    "subhead" "Identity marks, brand systems, and applied design across edtech, fitness, gaming personalities, and community organizations.")
+  (dict
+    "title"   "Esports & Streaming"
+    "path"    "/art/esports"
+    "href"    "/art/esports/"
+    "subhead" "Broadcast overlay systems, tournament identity, streaming visual languages, and emote / cheermote work for esports teams and personalities.")
+}}
+
+{{ range $showcases }}
+  {{ $section := site.GetPage .path }}
+  {{ if $section }}
+    {{ $active := where $section.RegularPagesRecursive "Params.archived" "ne" true }}
+    {{ $withImage := where $active "Params.image" "ne" "" }}
+    {{ $featured := where $withImage "Params.portfolio" true }}
+    {{ $featured = $featured.ByDate.Reverse }}
+
+    {{/* Fallback: if fewer than $minBeforeFallback featured items, pad with recent pieces */}}
+    {{ $items := $featured }}
+    {{ if lt (len $items) $minBeforeFallback }}
+      {{ $featuredPaths := slice }}
+      {{ range $featured }}{{ $featuredPaths = $featuredPaths | append .RelPermalink }}{{ end }}
+      {{ $recent := $withImage.ByDate.Reverse }}
+      {{ range $recent }}
+        {{ if not (in $featuredPaths .RelPermalink) }}
+          {{ $items = $items | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Cap and render */}}
+    {{ $items = first $maxPerShowcase $items }}
+    {{ $total := len $active }}
+
+    {{ if $items }}
+    <section class="portfolio-showcase" aria-label="{{ .title }}">
+      <div class="portfolio-showcase-header">
+        <h2><a href="{{ .href }}">{{ .title }}</a></h2>
+        <p class="portfolio-showcase-subhead">{{ .subhead }}</p>
+      </div>
+      <div class="gallery-grid portfolio-showcase-grid">
+        {{ range $items }}
+        <a href="{{ .RelPermalink }}" class="gallery-item portfolio-showcase-item">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" />
+          <div class="gallery-caption">
+            <span class="gallery-title">{{ .Title }}</span>
+            {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}
+          </div>
+        </a>
+        {{ end }}
+      </div>
+      <p class="portfolio-showcase-link">
+        <a href="{{ .href }}">See all {{ $total }} {{ if eq $total 1 }}piece{{ else }}pieces{{ end }} in {{ .title }} &rarr;</a>
+      </p>
+    </section>
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* ──────────────────────────────────────────────────────────────
+     Selected Works — audience-tailored portfolios. Each card is a
+     standalone curated view of the work for a specific recipient.
+     ────────────────────────────────────────────────────────────── */}}
 {{ $entries := where .Site.RegularPages "Section" "portfolio" }}
 {{ $entries = where $entries "Draft" false }}
 {{ $entries = $entries.ByDate.Reverse }}
 
 {{ if $entries }}
-<section class="portfolio-section" aria-label="Selected portfolios">
+<section class="portfolio-selected" aria-label="Selected works for specific audiences">
+  <div class="portfolio-selected-header">
+    <h2>Selected Works</h2>
+    <p class="portfolio-showcase-subhead">Curated portfolios tailored to specific audiences and roles. Each card is a self-contained view of the work most relevant to that recipient.</p>
+  </div>
   <div class="portfolio-grid">
     {{ range $entries }}
     {{ $href := .RelPermalink }}
@@ -35,7 +122,32 @@
     {{ end }}
   </div>
 </section>
-{{ else }}
-<p class="page-description">No portfolio entries yet.</p>
 {{ end }}
+
+{{/* ──────────────────────────────────────────────────────────────
+     Continue exploring — a thin discovery strip so a visitor who
+     came in here but wants depth knows where to go next.
+     ────────────────────────────────────────────────────────────── */}}
+<section class="portfolio-explore" aria-label="Continue exploring">
+  <h2>Continue exploring</h2>
+  <div class="portfolio-explore-grid">
+    <a href="/art/" class="portfolio-explore-card">
+      <h3>Full Gallery</h3>
+      <p>Every piece across illustration, branding, esports, study, and fine art.</p>
+    </a>
+    <a href="/gamedev/" class="portfolio-explore-card">
+      <h3>Products</h3>
+      <p>Active product work — games, frameworks, and shipped tools.</p>
+    </a>
+    <a href="/scholar/" class="portfolio-explore-card">
+      <h3>Scholar</h3>
+      <p>Academic work, project plans, internship reflections, and applied capstones.</p>
+    </a>
+    <a href="/blog/" class="portfolio-explore-card">
+      <h3>Journal</h3>
+      <p>Notes, process, and the thinking behind the work.</p>
+    </a>
+  </div>
+</section>
+
 {{ end }}
