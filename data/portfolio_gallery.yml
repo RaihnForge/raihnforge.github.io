@@ -78,6 +78,14 @@ sections:
         link: /art/esports/idra-logo-reflection-2/
       - image: /images/recovered/IdrAlogoMascot.png
         title: IdrA Mascot
+      - image: /images/portfolio-recovered/logo_grubby.png
+        title: Grubby
+      - image: /images/portfolio-recovered/logo_up1.png
+        title: Unchosen Paths
+      - image: /images/portfolio-recovered/logos_retromama.png
+        title: Retro Mama
+      - image: /images/portfolio-recovered/logo_wcr.png
+        title: WCR
       - image: /images/graphic-design/kwfitness/logo-icon.png
         title: KW Fitness Icon
         link: /art/branding/kw-fitness/
@@ -110,12 +118,28 @@ sections:
     items:
       - image: /images/wp-imports/gamedev/tilesscene04b.png
         title: Tiled Scene
+      - image: /images/portfolio-recovered/bm_rakknor-scrap-station.png
+        title: Rakknor Scrap Station
+      - image: /images/portfolio-recovered/ef_fallentitan.png
+        title: Fallen Titan
+      - image: /images/portfolio-recovered/ef_orionwood.png
+        title: Orion Wood
+      - image: /images/portfolio-recovered/fk_grassyplains.png
+        title: Grassy Plains
+      - image: /images/portfolio-recovered/bm_exhaused-mine.png
+        title: Exhausted Mine
       - image: /images/wp-imports/gamedev/ed2_screen_shot_thumb.jpg
         title: Game Screen
       - image: /images/wp-imports/gamedev/starttheparty.png
         title: Start the Party
       - image: /images/wp-imports/gamedev/plate.png
         title: Plate Environment
+      - image: /images/portfolio-recovered/gavesite.png
+        title: Cave Site
+      - image: /images/portfolio-recovered/ef_awoken-cave.png
+        title: Awoken Cave
+      - image: /images/portfolio-recovered/bm_obsidian-fields.png
+        title: Obsidian Fields
       - image: /images/wp-imports/gamedev/wip06.png
         title: Environment WIP
       - image: /images/wp-imports/gamedev/clocktowerstudy01.png
@@ -146,6 +170,8 @@ sections:
         title: Hero Portrait
       - image: /images/wp-imports/gamedev/ihazallthethingz.png
         title: All the Things
+      - image: /images/portfolio-recovered/unitslizard.png
+        title: Lizard Units
       - image: /images/wp-imports/gamedev/shamen_initiate.png
         title: Shaman Initiate
       - image: /images/wp-imports/gamedev/halflingassassin.png
@@ -172,16 +198,28 @@ sections:
         title: Hero Walk Red
       - image: /images/wp-imports/gamedev/walk4_pro.gif
         title: Hero Walk Pro
+      - image: /images/portfolio-recovered/sprite-0001.gif
+        title: Sprite Cycle
+      - image: /images/portfolio-recovered/crusader02promancr.gif
+        title: Crusader Animation
       - image: /images/wp-imports/gamedev/kochaywalkb.gif
         title: Kochay Walk
       - image: /images/wp-imports/gamedev/kochayidletransition.gif
         title: Kochay Idle Transition
       - image: /images/wp-imports/gamedev/kochayidleprime.gif
         title: Kochay Idle Prime
+      - image: /images/portfolio-recovered/animated.gif
+        title: Animated Loop
+      - image: /images/portfolio-recovered/firebeetle_walk.gif
+        title: Firebeetle Walk
+      - image: /images/portfolio-recovered/minibat_int_fly.gif
+        title: Minibat Fly
       - image: /images/wp-imports/gamedev/ezgif-com-optimize.gif
         title: Optimized Loop
       - image: /images/wp-imports/gamedev/woodbeetle_look1.gif
         title: Woodbeetle Look
+      - image: /images/portfolio-recovered/skeleton_run.gif
+        title: Skeleton Run
       - image: /images/wp-imports/gamedev/sprite-0002-1.gif
         title: Sprite Loop
       - image: /images/wp-imports/gamedev/fusion_run4export.gif
