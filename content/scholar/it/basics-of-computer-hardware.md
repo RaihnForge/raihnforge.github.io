@@ -1,9 +1,9 @@
 ---
 title: "Basics of Computer Hardware Components"
 date: 2024-11-17
-course: "IT 229"
-course_title: "Foundations of Information Technology"
-professor: "Robert Lupten"
+course: "IT 228"
+course_title: "Introduction to IT"
+professor: "Robert Lupton"
 author: "Joshua Keyes"
 editor: "Claude (Opus 4.7)"
 module: "D06"
@@ -14,7 +14,7 @@ category_label: "Information Technology"
 context: "A taxonomy of system software versus application software and an applied look at GPU and SMPS roles in a modern workstation, written from years of hands-on PC building and modification."
 relevance: "As an artist, designer, and product manager who lives in Adobe Creative Suite, SolidWorks, AI tooling, and broadcast production, hardware decisions translate directly into hours of my life. Speccing a workstation correctly is the difference between a fluid creative session and a queue of render bars."
 connections: "Anchors the broader IT track at CWU by formalizing terminology I had previously used loosely, and feeds into ADMG-side decisions about workstation budgets and team tool standards. Practical companion to the studio's own conversations about AI-assisted pipelines, where GPU capacity is the gating constraint."
-tags: ["Computer Hardware", "GPU", "Workstation", "IT 229", "System Software"]
+tags: ["Computer Hardware", "GPU", "Workstation", "IT 228", "System Software"]
 draft: false
 ---
 
