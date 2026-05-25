@@ -3,13 +3,13 @@
      titles. Tiles trigger the lightbox; linked items surface the linked
      page's description and a "Read full post" link inside the lightbox.
 
-     Source-of-truth resolution for each tile:
-       - title: YAML (curated label)
-       - image: linked page's image: if present, else YAML's image
-       - description: linked page's Description (if any)
+     Per-tile fields come from:
+       - image: YAML (each tile shows the exact crop the showcase calls for,
+                so multiple tiles can link to the same post without all
+                rendering the same image)
+       - title: YAML
        - link: YAML
-     This way, the content post owns the canonical graphic — changing the
-     graphic in one place (the post) updates it everywhere it's surfaced.
+       - description: linked page's Description (if any), surfaced in lightbox
 
      Include `gallery-lightbox-modal.html` once on the same page. */}}
 
@@ -21,23 +21,19 @@
       {{ range $itemIdx, $item := $section.items }}
         {{ $linkedPage := false }}
         {{ if $item.link }}{{ $linkedPage = site.GetPage $item.link }}{{ end }}
-        {{ $img := $item.image }}
         {{ $desc := "" }}
-        {{ with $linkedPage }}
-          {{ with .Params.image }}{{ $img = . }}{{ end }}
-          {{ $desc = .Description }}
-        {{ end }}
+        {{ with $linkedPage }}{{ $desc = .Description }}{{ end }}
         {{ if $item.link }}
         <a href="{{ $item.link }}"
            class="portfolio-gallery-tile js-lightbox-trigger"
            data-section="{{ $section.id }}"
            data-index="{{ $itemIdx }}"
-           data-image="{{ $img }}"
+           data-image="{{ $item.image }}"
            data-title="{{ $item.title }}"
            data-link="{{ $item.link }}"
            {{ with $desc }}data-description="{{ . }}"{{ end }}
            title="{{ $item.title }}">
-          <img src="{{ $img }}" alt="{{ $item.title }}" loading="lazy" />
+          <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy" />
           <span class="portfolio-gallery-tile-overlay">{{ $item.title }}</span>
         </a>
         {{ else }}
@@ -45,10 +41,10 @@
                 class="portfolio-gallery-tile js-lightbox-trigger"
                 data-section="{{ $section.id }}"
                 data-index="{{ $itemIdx }}"
-                data-image="{{ $img }}"
+                data-image="{{ $item.image }}"
                 data-title="{{ $item.title }}"
                 title="{{ $item.title }}">
-          <img src="{{ $img }}" alt="{{ $item.title }}" loading="lazy" />
+          <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy" />
           <span class="portfolio-gallery-tile-overlay">{{ $item.title }}</span>
         </button>
         {{ end }}
