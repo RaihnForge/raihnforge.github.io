@@ -5,32 +5,45 @@
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
-{{/* ──────────────────────────────────────────────────────────────
-     Visual gallery — data-driven from data/portfolio_gallery.yml.
-     Sections, ordering, and per-item images / titles / optional
-     links all live in the data file so editing the showcase does
-     not require touching this template.
-
-     Layout target: dense 7-column grid, square tiles, no caption
-     under the image; hover reveals the title via overlay.
-     ────────────────────────────────────────────────────────────── */}}
+{{/* Visual gallery — data-driven from data/portfolio_gallery.yml.
+     Clicking any tile opens the lightbox; prev/next navigate within the
+     same section. Linked items surface the linked page's description and
+     a "Read full post" link inside the lightbox. */}}
 
 {{ with .Site.Data.portfolio_gallery }}
-  {{ range .sections }}
-  <section class="portfolio-gallery-section" id="{{ .id }}" aria-label="{{ .title }}">
-    <h2 class="portfolio-gallery-heading">{{ .title }}</h2>
+  {{ range $section := .sections }}
+  <section class="portfolio-gallery-section" id="{{ $section.id }}" aria-label="{{ $section.title }}" data-gallery-section="{{ $section.id }}">
+    <h2 class="portfolio-gallery-heading">{{ $section.title }}</h2>
     <div class="portfolio-gallery-grid">
-      {{ range .items }}
-        {{ if .link }}
-        <a href="{{ .link }}" class="portfolio-gallery-tile" title="{{ .title }}">
-          <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" />
-          <span class="portfolio-gallery-tile-overlay">{{ .title }}</span>
+      {{ range $itemIdx, $item := $section.items }}
+        {{ $linkedPage := false }}
+        {{ if $item.link }}{{ $linkedPage = site.GetPage $item.link }}{{ end }}
+        {{ $desc := "" }}
+        {{ with $linkedPage }}{{ $desc = .Description }}{{ end }}
+        {{ if $item.link }}
+        <a href="{{ $item.link }}"
+           class="portfolio-gallery-tile js-lightbox-trigger"
+           data-section="{{ $section.id }}"
+           data-index="{{ $itemIdx }}"
+           data-image="{{ $item.image }}"
+           data-title="{{ $item.title }}"
+           data-link="{{ $item.link }}"
+           {{ with $desc }}data-description="{{ . }}"{{ end }}
+           title="{{ $item.title }}">
+          <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy" />
+          <span class="portfolio-gallery-tile-overlay">{{ $item.title }}</span>
         </a>
         {{ else }}
-        <div class="portfolio-gallery-tile portfolio-gallery-tile--static" title="{{ .title }}">
-          <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" />
-          <span class="portfolio-gallery-tile-overlay">{{ .title }}</span>
-        </div>
+        <button type="button"
+                class="portfolio-gallery-tile js-lightbox-trigger"
+                data-section="{{ $section.id }}"
+                data-index="{{ $itemIdx }}"
+                data-image="{{ $item.image }}"
+                data-title="{{ $item.title }}"
+                title="{{ $item.title }}">
+          <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy" />
+          <span class="portfolio-gallery-tile-overlay">{{ $item.title }}</span>
+        </button>
         {{ end }}
       {{ end }}
     </div>
@@ -38,10 +51,25 @@
   {{ end }}
 {{ end }}
 
-{{/* ──────────────────────────────────────────────────────────────
-     Selected Works — audience-tailored portfolios. Each card is a
-     standalone curated view of the work for a specific recipient.
-     ────────────────────────────────────────────────────────────── */}}
+{{/* Lightbox modal — single instance, populated dynamically by JS. */}}
+<div class="lightbox" id="gallery-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" type="button" aria-label="Close viewer">&times;</button>
+  <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">&#8249;</button>
+  <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">&#8250;</button>
+  <div class="lightbox-stage" role="document">
+    <img class="lightbox-image" src="" alt="" />
+    <div class="lightbox-meta">
+      <h3 class="lightbox-title"></h3>
+      <p class="lightbox-description" hidden></p>
+      <a class="lightbox-link" href="#" hidden>Read full post &rarr;</a>
+      <p class="lightbox-counter"></p>
+    </div>
+  </div>
+</div>
+<script src="/js/gallery-lightbox.js" defer></script>
+
+{{/* Selected Works — audience-tailored portfolios. Each card is a
+     standalone curated view of the work for a specific recipient. */}}
 {{ $entries := where .Site.RegularPages "Section" "portfolio" }}
 {{ $entries = where $entries "Draft" false }}
 {{ $entries = $entries.ByDate.Reverse }}
@@ -78,9 +106,7 @@
 </section>
 {{ end }}
 
-{{/* ──────────────────────────────────────────────────────────────
-     Continue exploring — discovery strip into the rest of the site.
-     ────────────────────────────────────────────────────────────── */}}
+{{/* Continue exploring — discovery strip into the rest of the site. */}}
 <section class="portfolio-explore" aria-label="Continue exploring">
   <h2>Continue exploring</h2>
   <div class="portfolio-explore-grid">

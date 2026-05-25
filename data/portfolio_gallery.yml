@@ -76,8 +76,6 @@ sections:
       - image: /images/recovered/IdrAlogo.png
         title: IdrA Logo
         link: /art/esports/idra-logo-reflection-2/
-      - image: /images/recovered/IdrAlogoMascot.png
-        title: IdrA Mascot
       - image: /images/portfolio-recovered/logo_grubby.png
         title: Grubby
       - image: /images/portfolio-recovered/logo_up1.png
@@ -92,26 +90,16 @@ sections:
       - image: /images/graphic-design/kwfitness/logo-banner.png
         title: KW Fitness Banner
         link: /art/branding/kw-fitness/
-      - image: /images/graphic-design/esports/back2warcraft-logo.png
-        title: Back2Warcraft
 
   - id: pixel-art
     title: Pixel Art
     items:
       - image: /images/wp-imports/gamedev/tiletestv04._lroomtmx.png
-        title: Tileset Room
+        title: Top-Down Tileset Project
       - image: /images/wp-imports/gamedev/colortheory01.png
         title: Color Theory Study
-      - image: /images/wp-imports/gamedev/tiletestv04.png
-        title: Tileset Variation
       - image: /images/wp-imports/gamedev/scenesample02.gif
         title: Scene Sample
-      - image: /images/wp-imports/gamedev/roomdemo05.png
-        title: Room Demo
-      - image: /images/wp-imports/gamedev/tiledemo001.png
-        title: Tile Demo 1
-      - image: /images/wp-imports/gamedev/tiledemo002.png
-        title: Tile Demo 2
 
   - id: environment-concepts
     title: Environment Concepts
@@ -268,8 +256,6 @@ sections:
         title: Grubby Event Splash
       - image: /images/graphic-design/esports/grubby-event-ingame.png
         title: Grubby Event In-Game
-      - image: /images/graphic-design/esports/back2warcraft-overlay.png
-        title: Back2Warcraft Coverlay
       - image: /images/graphic-design/esports/teamliquid-sc-og.png
         title: Team Liquid SC
 

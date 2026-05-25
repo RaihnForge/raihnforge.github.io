@@ -16,6 +16,6 @@ Selected work prepared for Riot Games — Visual Systems & UX.
 
 A curated selection rather than a complete archive. The pieces are chosen to show one through-line: how visual systems create emotional and experiential cohesion across every player-facing surface. Live broadcast overlay systems engineered against in-game UI, self-serve template kits that hold brand voice without a designer in the loop, motion-graphic families designed once and scaled across an ecosystem, and worldbuilding craft that gives those systems something to be cohesive around.
 
-Sections: Featured Systems (Kelvin Education) · Esports & Streaming Ecosystem (Back2Warcraft Coverlay, Team Liquid, Victorious Gaming, Grubby × PokerStrategy, Tournament marks, BaseTrade TV Cheermote family) · In-Game UX & Visual Systems (Mecromage) · Worldbuilding & Illustration.
+Sections: Featured Systems (Kelvin Education) · Esports & Streaming Ecosystem (Team Liquid, Victorious Gaming, Grubby × PokerStrategy, Tournament marks, BaseTrade TV Cheermote family) · In-Game UX & Visual Systems (Mecromage) · Worldbuilding & Illustration.
 
 Online portfolio + 9-page downloadable PDF.
