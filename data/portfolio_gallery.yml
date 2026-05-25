@@ -19,6 +19,7 @@ sections:
     items:
       - image: /images/wp-imports/blog/aware_export_512.png
         title: Aware
+        link: /art/illustration/commission-gentle-avatar/
       - image: /images/portfolio-recovered/sketchbook.png
         title: Sketchbook
       - image: /images/portfolio-recovered/avatar_e4keyez_03.png
@@ -86,20 +87,26 @@ sections:
     items:
       - image: /images/wp-imports/gamedev/tiletestv04._lroomtmx.png
         title: Tileset Room
+        link: /gamedev/archkey/uf-verg-castleroid-02/
       - image: /images/wp-imports/gamedev/colortheory01.png
         title: Color Theory Study
+        link: /gamedev/archkey/wip/
       - image: /images/wp-imports/gamedev/tiletestv04.png
         title: Tileset Variation
+        link: /gamedev/archkey/uf-verg-castleroid-02/
       - image: /images/wp-imports/blog/cv11_scenescreen_demo_02.gif
         title: Scene Screen Demo
+        link: /gamedev/archkey/uf-verg-castleroid-02/
       - image: /images/wp-imports/gamedev/scenesample02.gif
         title: Scene Sample
+        link: /gamedev/archkey/uf-verg-castleroid-02/
 
   - id: environment-concepts
     title: Environment Concepts
     items:
       - image: /images/wp-imports/gamedev/tilesscene04b.png
         title: Tiled Scene
+        link: /gamedev/mecromage/mecromage-foundational-assets/
       - image: /images/portfolio-recovered/bm_rakknor-scrap-station.png
         title: Rakknor Scrap Station
       - image: /images/portfolio-recovered/ef_fallentitan.png
@@ -112,10 +119,12 @@ sections:
         title: Exhausted Mine
       - image: /images/wp-imports/gamedev/ed2_screen_shot_thumb.jpg
         title: Game Screen
+        link: /gamedev/mecromage/daily-up-2011-10-26/
       - image: /images/wp-imports/gamedev/starttheparty.png
         title: Start the Party
       - image: /images/wp-imports/gamedev/plate.png
         title: Plate Environment
+        link: /gamedev/mecromage/draft-concept-map-screen/
       - image: /images/portfolio-recovered/gavesite.png
         title: Cave Site
       - image: /images/portfolio-recovered/ef_awoken-cave.png
@@ -130,6 +139,7 @@ sections:
     items:
       - image: /images/wp-imports/gamedev/guard_leader.png
         title: Guard Leader
+        link: /gamedev/mecromage/mecromage-elgon-concepts/
       - image: /images/wp-imports/gamedev/shamen_adept.png
         title: Shaman Adept
       - image: /images/wp-imports/gamedev/guard_warrior.png
@@ -144,6 +154,7 @@ sections:
         title: Sketch Notes
       - image: /images/wp-imports/gamedev/sketchpad_turnaround.png
         title: Turnaround Sheet
+        link: /gamedev/mecromage/sprite-in-progres/
       - image: /images/wp-imports/gamedev/hero_thumb2.png
         title: Hero Portrait
       - image: /images/wp-imports/gamedev/ihazallthethingz.png
@@ -186,34 +197,47 @@ sections:
     items:
       - image: /images/wp-imports/art/demo_krippruv2.png
         title: Kripp RU v2
+        link: /art/esports/hearthstone-twitch-emoticons/
       - image: /images/wp-imports/art/kripprip.png
         title: Kripp Rip
+        link: /art/esports/hearthstone-twitch-emoticons/
       - image: /images/wp-imports/art/demo_krippsaltb.png
         title: Kripp Salt
+        link: /art/esports/hearthstone-twitch-emoticons/
       - image: /images/wp-imports/art/demo_drumzb.png
         title: Drumz
+        link: /art/esports/hearthstone-twitch-emoticons/
       - image: /images/wp-imports/art/demo_topdeck.png
         title: Top Deck
+        link: /art/esports/hearthstone-twitch-emoticons/
       - image: /images/wp-imports/art/demo_magnid.png
         title: Magni D
+        link: /art/esports/hearthstone-twitch-emoticons/
       - image: /images/wp-imports/art/demo_bombz.png
         title: Bombz
+        link: /art/esports/hearthstone-twitch-emoticons/
       - image: /images/wp-imports/art/demo_sleepz.png
         title: Sleepz
+        link: /art/esports/hearthstone-twitch-emoticons/
 
   - id: overlays
     title: Overlays
     items:
       - image: /images/graphic-design/esports/victorious-gaming.png
         title: Victorious Gaming
+        link: /art/esports/esports-broadcast-graphics/
       - image: /images/graphic-design/esports/teamliquid-sc-hyperx.png
         title: Team Liquid SC + HyperX
+        link: /art/esports/esports-broadcast-graphics/
       - image: /images/graphic-design/esports/teamliquid-dota.png
         title: Team Liquid Dota
+        link: /art/esports/esports-broadcast-graphics/
       - image: /images/graphic-design/esports/grubby-event-splash.png
         title: Grubby Event Splash
+        link: /art/esports/esports-broadcast-graphics/
       - image: /images/graphic-design/esports/grubby-event-ingame.png
         title: Grubby Event In-Game
+        link: /art/esports/esports-broadcast-graphics/
 
   - id: cheermotes
     title: Cheermotes

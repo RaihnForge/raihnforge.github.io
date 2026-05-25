@@ -1,9 +1,16 @@
 {{/* Visual-first showcase scroll — data-driven from data/portfolio_gallery.yml.
-     Renders the 9-section gallery (Illustration, Logo Design, Pixel Art,
-     Environment Concepts, Character Concepts, Game Animation, Emotes,
-     Overlays, Cheermotes) as a dense 7-column grid with hover-only titles.
-     Tiles trigger the lightbox; linked items surface the linked page's
-     description and a "Read full post" link inside the lightbox.
+     Renders the 9-section gallery as a dense 7-column grid with hover-only
+     titles. Tiles trigger the lightbox; linked items surface the linked
+     page's description and a "Read full post" link inside the lightbox.
+
+     Source-of-truth resolution for each tile:
+       - title: YAML (curated label)
+       - image: linked page's image: if present, else YAML's image
+       - description: linked page's Description (if any)
+       - link: YAML
+     This way, the content post owns the canonical graphic — changing the
+     graphic in one place (the post) updates it everywhere it's surfaced.
+
      Include `gallery-lightbox-modal.html` once on the same page. */}}
 
 {{ with .Site.Data.portfolio_gallery }}
@@ -14,19 +21,23 @@
       {{ range $itemIdx, $item := $section.items }}
         {{ $linkedPage := false }}
         {{ if $item.link }}{{ $linkedPage = site.GetPage $item.link }}{{ end }}
+        {{ $img := $item.image }}
         {{ $desc := "" }}
-        {{ with $linkedPage }}{{ $desc = .Description }}{{ end }}
+        {{ with $linkedPage }}
+          {{ with .Params.image }}{{ $img = . }}{{ end }}
+          {{ $desc = .Description }}
+        {{ end }}
         {{ if $item.link }}
         <a href="{{ $item.link }}"
            class="portfolio-gallery-tile js-lightbox-trigger"
            data-section="{{ $section.id }}"
            data-index="{{ $itemIdx }}"
-           data-image="{{ $item.image }}"
+           data-image="{{ $img }}"
            data-title="{{ $item.title }}"
            data-link="{{ $item.link }}"
            {{ with $desc }}data-description="{{ . }}"{{ end }}
            title="{{ $item.title }}">
-          <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy" />
+          <img src="{{ $img }}" alt="{{ $item.title }}" loading="lazy" />
           <span class="portfolio-gallery-tile-overlay">{{ $item.title }}</span>
         </a>
         {{ else }}
@@ -34,10 +45,10 @@
                 class="portfolio-gallery-tile js-lightbox-trigger"
                 data-section="{{ $section.id }}"
                 data-index="{{ $itemIdx }}"
-                data-image="{{ $item.image }}"
+                data-image="{{ $img }}"
                 data-title="{{ $item.title }}"
                 title="{{ $item.title }}">
-          <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy" />
+          <img src="{{ $img }}" alt="{{ $item.title }}" loading="lazy" />
           <span class="portfolio-gallery-tile-overlay">{{ $item.title }}</span>
         </button>
         {{ end }}
