@@ -1,12 +1,14 @@
 # Portfolio gallery — visual-first showcase data file
-# Mirrors the section order and asset selection of www.raihnforge.com/portfolio-2
-# so the /portfolio/ page leads with the same image-dense scroll Joshua has been
-# sending visitors to. Items below reference locally-hosted images under /static/images/.
+# Strict 1:1 parity with the section order and asset selection of
+# www.raihnforge.com/portfolio-2. Local assets only; legacy WordPress
+# uploads recovered into /static/images/portfolio-recovered/.
 #
 # Schema per item:
 #   image: absolute site path to the image (required)
 #   title: short caption shown on hover (required)
 #   link:  optional internal link to a content/ page for the piece
+#          (when present, the lightbox surfaces the linked page's
+#          description and a "Read full post" link)
 #
 # When adding a new section, add it to `sections` in render order and
 # matching CSS in style.css under "Portfolio — Visual-first scroll".
@@ -15,89 +17,81 @@ sections:
   - id: illustration
     title: Illustration
     items:
-      - image: /images/wp-imports/art/bringthelight_joshuakeyes.jpg
-        title: Bring the Light
-        link: /art/illustration/bring-the-light/
+      - image: /images/wp-imports/blog/aware_export_512.png
+        title: Aware
+      - image: /images/portfolio-recovered/sketchbook.png
+        title: Sketchbook
+      - image: /images/portfolio-recovered/avatar_e4keyez_03.png
+        title: Destiny Avatar — e4keyez
+        link: /art/illustration/destiny-avatar-e4-keyez/
+      - image: /images/portfolio-recovered/cherryspotforfishing.png
+        title: Cherry Spot for Fishing
+      - image: /images/portfolio-recovered/funny-flood_3.jpg
+        title: Funny Flood
       - image: /images/wp-imports/art/parkerbirthday6.png
         title: Birthday Flight
         link: /art/illustration/birthday-flight/
-      - image: /images/wp-imports/art/bearbearjade2.png
+      - image: /images/portfolio-recovered/bearbearjade.png
         title: Azurebear and Jadewolf
         link: /art/illustration/azurebear-and-jadewolf/
+      - image: /images/portfolio-recovered/sketch201909b.png
+        title: Sketch 2019.09
       - image: /images/wp-imports/art/fan-sc-thewhirlwind_joshuakeyes.png
         title: The Whirlwind
         link: /art/illustration/rf-fisb-the-whirl-wind/
-      - image: /images/wp-imports/art/dangeroustreats_jbkeyes_by_raihnazure-d9ezsx1.png
-        title: Dangerous Treats
-        link: /art/illustration/dangerous-treats/
+      - image: /images/wp-imports/art/bringthelight_joshuakeyes.jpg
+        title: Bring the Light
+        link: /art/illustration/bring-the-light/
       - image: /images/wp-imports/art/img_0542.jpg
         title: Field Sketch
       - image: /images/wp-imports/art/img_0537.jpg
         title: Field Sketch
-      - image: /images/wp-imports/art/20181029_solsentinal.jpg
-        title: Sol Sentinel
-        link: /art/illustration/destiny-2-creation-submissions/
-      - image: /images/wp-imports/art/20181031_ikora.jpg
-        title: Ikora Rey of Light
-        link: /art/illustration/ikora-rey-of-light/
-      - image: /images/wp-imports/art/vexsim-76777.jpg
-        title: Vex Sim 76777
-        link: /art/illustration/destiny-2-creation-submissions/
-      - image: /images/wp-imports/art/honeybadgerdt_joshuakeyes.png
-        title: Honey Badger Decal
-        link: /art/branding/honey-badger-decal-wallpaper/
-      - image: /images/wp-imports/art/marcus_melechwarlock_master.png
-        title: Melech Warlock
-        link: /art/illustration/melech-warlock-character-concept/
-      - image: /images/wp-imports/art/joebattle04.png
-        title: Joe Battle
-      - image: /images/wp-imports/art/happyminion.png
-        title: Happy Minion
-        link: /art/illustration/happy-minion/
-      - image: /images/wp-imports/art/titan2.png
-        title: Jadewolf Titan
-        link: /art/illustration/jadewolf-titan/
-      - image: /images/wp-imports/art/blubear-and-jadewolf-by-joshua-keyes.png
-        title: Blubear and Jadewolf
-      - image: /images/wp-imports/art/sketchbook-therapy-16-02-w4.png
-        title: Sketchbook Therapy
-      - image: /images/wp-imports/art/joshuakeyes_st_20150423_armorup.png
-        title: Armor Up
+      - image: /images/portfolio-recovered/eziz_neverquit_1440-2.png
+        title: Eziz — Never Quit
+        link: /art/illustration/eziz-never-quit/
+      - image: /images/portfolio-recovered/sb10_1080.png
+        title: SB10
+      - image: /images/portfolio-recovered/cropped-dangeroustreats_jbkeyes_by_raihnazure-d9ezsx1.png
+        title: Dangerous Treats
+        link: /art/illustration/dangerous-treats/
+      - image: /images/portfolio-recovered/illusionwoodsjoshuakeyes.png
+        title: Imagination in the Illusion Woods
+        link: /art/illustration/imagination-in-the-illusion-woods/
+      - image: /images/portfolio-recovered/stephs-dragon.jpg
+        title: Stephanie's Dragon
+        link: /art/illustration/stephanies-dragon-wallpaper/
+      - image: /images/portfolio-recovered/elite_grubby_guard_by_raihnazure_d5fd87c.png
+        title: Elite Grubby Guard
 
   - id: logo-design
     title: Logo Design
     items:
-      - image: /images/recovered/honeybadger_02.png
-        title: Honey Badger
-        link: /art/branding/honey-badger-logo/
-      - image: /images/recovered/eve_logo_large.png
-        title: Team EVE Gaming
-        link: /art/branding/team-eve-gaming-logo/
-      - image: /images/recovered/IdrAlogo.png
-        title: IdrA Logo
-        link: /art/esports/idra-logo-reflection-2/
       - image: /images/portfolio-recovered/logo_grubby.png
         title: Grubby
+      - image: /images/portfolio-recovered/honeybadgerlogo_v03md.png
+        title: Honey Badger
+        link: /art/branding/honey-badger-logo/
+      - image: /images/portfolio-recovered/logo_eve_thumb-edited.png
+        title: Team EVE Gaming
+        link: /art/branding/team-eve-gaming-logo/
       - image: /images/portfolio-recovered/logo_up1.png
         title: Unchosen Paths
       - image: /images/portfolio-recovered/logos_retromama.png
         title: Retro Mama
       - image: /images/portfolio-recovered/logo_wcr.png
         title: WCR
-      - image: /images/graphic-design/kwfitness/logo-icon.png
-        title: KW Fitness Icon
-        link: /art/branding/kw-fitness/
-      - image: /images/graphic-design/kwfitness/logo-banner.png
-        title: KW Fitness Banner
-        link: /art/branding/kw-fitness/
 
   - id: pixel-art
     title: Pixel Art
     items:
       - image: /images/wp-imports/gamedev/tiletestv04._lroomtmx.png
-        title: Top-Down Tileset Project
+        title: Tileset Room
       - image: /images/wp-imports/gamedev/colortheory01.png
         title: Color Theory Study
+      - image: /images/wp-imports/gamedev/tiletestv04.png
+        title: Tileset Variation
+      - image: /images/wp-imports/blog/cv11_scenescreen_demo_02.gif
+        title: Scene Screen Demo
       - image: /images/wp-imports/gamedev/scenesample02.gif
         title: Scene Sample
 
@@ -130,10 +124,6 @@ sections:
         title: Obsidian Fields
       - image: /images/wp-imports/gamedev/wip06.png
         title: Environment WIP
-      - image: /images/wp-imports/gamedev/clocktowerstudy01.png
-        title: Clocktower Study
-      - image: /images/wp-imports/gamedev/scene02.png
-        title: Scene Study
 
   - id: character-concepts
     title: Character Concepts
@@ -160,22 +150,6 @@ sections:
         title: All the Things
       - image: /images/portfolio-recovered/unitslizard.png
         title: Lizard Units
-      - image: /images/wp-imports/gamedev/shamen_initiate.png
-        title: Shaman Initiate
-      - image: /images/wp-imports/gamedev/halflingassassin.png
-        title: Halfling Assassin
-      - image: /images/wp-imports/gamedev/boss-aegis.png
-        title: Boss Aegis
-      - image: /images/wp-imports/gamedev/drake.png
-        title: Drake
-      - image: /images/wp-imports/gamedev/firebeetle.png
-        title: Firebeetle
-      - image: /images/wp-imports/gamedev/gaurd_runner.png
-        title: Guard Runner
-      - image: /images/wp-imports/gamedev/minibat.png
-        title: Minibat
-      - image: /images/wp-imports/gamedev/rockbiter.png
-        title: Rockbiter
 
   - id: game-animation
     title: Game Animation
@@ -184,8 +158,6 @@ sections:
         title: Hero Walk Blue
       - image: /images/wp-imports/gamedev/walk4_herored.gif
         title: Hero Walk Red
-      - image: /images/wp-imports/gamedev/walk4_pro.gif
-        title: Hero Walk Pro
       - image: /images/portfolio-recovered/sprite-0001.gif
         title: Sprite Cycle
       - image: /images/portfolio-recovered/crusader02promancr.gif
@@ -208,12 +180,6 @@ sections:
         title: Woodbeetle Look
       - image: /images/portfolio-recovered/skeleton_run.gif
         title: Skeleton Run
-      - image: /images/wp-imports/gamedev/sprite-0002-1.gif
-        title: Sprite Loop
-      - image: /images/wp-imports/gamedev/fusion_run4export.gif
-        title: Fusion Run
-      - image: /images/wp-imports/gamedev/fusion_run4export23.gif
-        title: Fusion Run V23
 
   - id: emotes
     title: Emotes
@@ -234,14 +200,6 @@ sections:
         title: Bombz
       - image: /images/wp-imports/art/demo_sleepz.png
         title: Sleepz
-      - image: /images/wp-imports/art/demo_barb.png
-        title: Barb
-      - image: /images/wp-imports/art/demo_khadgarc.png
-        title: Khadgar
-      - image: /images/wp-imports/art/demo_krippkraken.png
-        title: Kripp Kraken
-      - image: /images/wp-imports/art/demo_krippkrakenv2.png
-        title: Kripp Kraken v2
 
   - id: overlays
     title: Overlays
@@ -256,8 +214,6 @@ sections:
         title: Grubby Event Splash
       - image: /images/graphic-design/esports/grubby-event-ingame.png
         title: Grubby Event In-Game
-      - image: /images/graphic-design/esports/teamliquid-sc-og.png
-        title: Team Liquid SC
 
   - id: cheermotes
     title: Cheermotes
