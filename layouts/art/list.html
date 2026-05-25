@@ -2,56 +2,47 @@
 {{ if .Parent.IsHome }}
 {{/* ═══════════════════════════════════════════════════════════
      TOP-LEVEL: /art/ — Gallery hub
-     1. Visual-first showcase scroll (curated, lightbox-enabled)
-     2. Highlights — cross-discipline sampler picks
-     3. Discipline buckets — branding / esports / illustration etc.
+     1. Visual-first showcase scroll (curated, lightbox-enabled,
+        source of truth = data/portfolio_gallery.yml + linked posts)
+     2. Discipline buckets — branding / esports / illustration etc.
+        (each bucket excludes pieces already shown in the showcase
+        so nothing renders twice)
+     3. Selected Works — audience-tailored portfolios
      ═══════════════════════════════════════════════════════════ */}}
 <div class="page-header">
   <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
-{{/* ── Curated showcase scroll: 9 visual-category sections, dense grids,
-     lightbox-enabled tiles. Driven by data/portfolio_gallery.yml so the
-     showcase set is auditable in one file. ── */}}
+{{/* Curated showcase scroll. */}}
 {{ partial "portfolio-gallery-scroll.html" . }}
 
-{{/* ── Highlights: cross-discipline curator picks flagged `sampler: true`.
-     sampler is an explicit curator signal, so it intentionally overrides `archived`. ── */}}
-{{ $sampler := where (where .Site.RegularPages "Section" "art") "Params.sampler" true }}
-{{ $sampler = $sampler.ByDate.Reverse }}
-{{ if $sampler }}
-<section class="highlights-section" aria-label="Highlights across disciplines">
-  <div class="section-header">
-    <h2>Highlights</h2>
-    <p class="sampler-subhead">A cross-section of disciplines: illustration, brand, broadcast, and commissioned work.</p>
-  </div>
-  <div class="gallery-grid">
-    {{ range $sampler }}
-    <a href="{{ .RelPermalink }}" class="gallery-item">
-      {{ with .Params.image }}
-      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
-      {{ else }}
-      <div class="gallery-placeholder" aria-hidden="true"></div>
-      {{ end }}
-      <div class="gallery-caption">
-        <span class="gallery-title">{{ .Title }}</span>
-        <span class="gallery-medium">{{ .Parent.Title }}{{ with .Params.year }} · {{ . }}{{ end }}</span>
-      </div>
-    </a>
+{{/* Collect every URL linked from the showcase so the discipline buckets
+     below can skip pieces that have already been rendered above.
+     This is how the page guarantees no piece appears twice. */}}
+{{ $showcasedLinks := slice }}
+{{ with .Site.Data.portfolio_gallery }}
+  {{ range .sections }}
+    {{ range .items }}
+      {{ with .link }}{{ $showcasedLinks = $showcasedLinks | append . }}{{ end }}
     {{ end }}
-  </div>
-</section>
+  {{ end }}
 {{ end }}
 
 {{/* ── Per-discipline buckets, long-scroll layout.
-     Each section: heading, description, bare image grid of recent pieces, "see all" link. ── */}}
+     Each shows up to 6 recent pieces that AREN'T already in the showcase. ── */}}
 {{ range .Sections.ByWeight }}
 {{ $active := where .RegularPagesRecursive "Params.archived" "ne" true }}
 {{ $withImage := where $active "Params.image" "ne" "" }}
 {{ $activeCount := len $active }}
 {{ if gt $activeCount 0 }}
-{{ $recent := first 6 ($withImage.ByDate.Reverse) }}
+{{/* Dedupe against the showcase: take more than 6 sorted, then filter. */}}
+{{ $candidates := first 24 ($withImage.ByDate.Reverse) }}
+{{ $deduped := slice }}
+{{ range $candidates }}
+  {{ if not (in $showcasedLinks .RelPermalink) }}{{ $deduped = $deduped | append . }}{{ end }}
+{{ end }}
+{{ $recent := first 6 $deduped }}
 <section class="discipline-bucket" aria-label="{{ .Title }}">
   <div class="discipline-bucket-header">
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
@@ -77,9 +68,7 @@
 {{ end }}
 {{ end }}
 
-{{/* Selected Works — audience-tailored portfolios surfaced from
-     /portfolio/. Discoverable from the Gallery so visitors can pivot
-     from browsing the work to seeing it composed for a specific role. */}}
+{{/* Selected Works — audience-tailored portfolios. */}}
 {{ partial "selected-works.html" . }}
 
 {{/* Lightbox modal (shared partial, single instance per page). */}}
