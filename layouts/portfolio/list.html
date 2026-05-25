@@ -5,52 +5,15 @@
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
-{{/* Selected Works — audience-tailored portfolios. Each card is a
-     standalone curated view of the work for a specific recipient.
-     The visual-first showcase scroll now lives on the Gallery (/art/). */}}
-{{ $entries := where .Site.RegularPages "Section" "portfolio" }}
-{{ $entries = where $entries "Draft" false }}
-{{ $entries = $entries.ByDate.Reverse }}
-
-{{ if $entries }}
-<section class="portfolio-selected" aria-label="Selected works for specific audiences">
-  <div class="portfolio-selected-header">
-    <h2>Selected Works</h2>
-    <p class="portfolio-showcase-subhead">Curated portfolios tailored to specific audiences and roles. Each card is a self-contained view of the work most relevant to that recipient.</p>
-  </div>
-  <div class="portfolio-grid">
-    {{ range $entries }}
-    {{ $href := .RelPermalink }}
-    {{ with .Params.external_url }}{{ $href = . }}{{ end }}
-    <a href="{{ $href }}" class="portfolio-card"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>
-      {{ with .Params.image }}
-      <img src="{{ . }}" alt="{{ $.Title }}" class="portfolio-card-image" loading="lazy" />
-      {{ else }}
-      <div class="portfolio-card-placeholder" aria-hidden="true"></div>
-      {{ end }}
-      <div class="portfolio-card-body">
-        <h3>{{ .Title }}</h3>
-        <div class="portfolio-card-meta">
-          {{ with .Params.audience }}<span>{{ . }}</span>{{ end }}
-          {{ with .Params.role }}<span>{{ . }}</span>{{ end }}
-          {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
-          {{ with .Params.status }}<span class="portfolio-status">{{ . }}</span>{{ end }}
-        </div>
-        {{ with .Description }}<p>{{ . | truncate 220 }}</p>{{ end }}
-      </div>
-    </a>
-    {{ end }}
-  </div>
-</section>
-{{ end }}
+{{ partial "selected-works.html" . }}
 
 {{/* Continue exploring — discovery strip into the rest of the site. */}}
 <section class="portfolio-explore" aria-label="Continue exploring">
   <h2>Continue exploring</h2>
   <div class="portfolio-explore-grid">
     <a href="/art/" class="portfolio-explore-card">
-      <h3>Full Gallery</h3>
-      <p>The visual showcase scroll plus the full archive across illustration, branding, esports, study, and fine art.</p>
+      <h3>Gallery</h3>
+      <p>The full visual showcase scroll plus the deeper archive across illustration, branding, esports, study, and fine art.</p>
     </a>
     <a href="/gamedev/" class="portfolio-explore-card">
       <h3>Products</h3>

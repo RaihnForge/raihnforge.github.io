@@ -1,0 +1,40 @@
+{{/* Selected Works — audience-tailored portfolios of selected work.
+     Each card is a curated composition built for a specific role,
+     recipient, or conversation. Rendered identically on the Gallery
+     (/art/) and on the dedicated Selected Works page (/portfolio/). */}}
+
+{{ $entries := where site.RegularPages "Section" "portfolio" }}
+{{ $entries = where $entries "Draft" false }}
+{{ $entries = $entries.ByDate.Reverse }}
+
+{{ if $entries }}
+<section class="portfolio-selected" id="selected-works" aria-label="Selected works for specific audiences">
+  <div class="portfolio-selected-header">
+    <h2>Selected Works</h2>
+    <p class="portfolio-showcase-subhead">Portfolios of selected work assembled for specific purposes. Each card is a self-contained, audience-tailored composition built for a particular role or recipient.</p>
+  </div>
+  <div class="portfolio-grid">
+    {{ range $entries }}
+    {{ $href := .RelPermalink }}
+    {{ with .Params.external_url }}{{ $href = . }}{{ end }}
+    <a href="{{ $href }}" class="portfolio-card"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>
+      {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="portfolio-card-image" loading="lazy" />
+      {{ else }}
+      <div class="portfolio-card-placeholder" aria-hidden="true"></div>
+      {{ end }}
+      <div class="portfolio-card-body">
+        <h3>{{ .Title }}</h3>
+        <div class="portfolio-card-meta">
+          {{ with .Params.audience }}<span>{{ . }}</span>{{ end }}
+          {{ with .Params.role }}<span>{{ . }}</span>{{ end }}
+          {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
+          {{ with .Params.status }}<span class="portfolio-status">{{ . }}</span>{{ end }}
+        </div>
+        {{ with .Description }}<p>{{ . | truncate 220 }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -77,6 +77,11 @@
 {{ end }}
 {{ end }}
 
+{{/* Selected Works — audience-tailored portfolios surfaced from
+     /portfolio/. Discoverable from the Gallery so visitors can pivot
+     from browsing the work to seeing it composed for a specific role. */}}
+{{ partial "selected-works.html" . }}
+
 {{/* Lightbox modal (shared partial, single instance per page). */}}
 {{ partial "gallery-lightbox-modal.html" . }}
 
