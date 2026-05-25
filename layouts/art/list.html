@@ -2,12 +2,11 @@
 {{ if .Parent.IsHome }}
 {{/* ═══════════════════════════════════════════════════════════
      TOP-LEVEL: /art/ — Gallery hub
-     1. Visual-first showcase scroll (curated, lightbox-enabled,
-        source of truth = data/portfolio_gallery.yml + linked posts)
-     2. Discipline buckets — branding / esports / illustration etc.
-        (each bucket excludes pieces already shown in the showcase
-        so nothing renders twice)
-     3. Selected Works — audience-tailored portfolios
+     Every section on this page is rendered as a portfolio-gallery-
+     section: dense square-tile grid, hover-only title, click opens
+     the lightbox with description + Read-full-post link.
+     The showcase scroll comes first; the 5 disciplines come next,
+     each excluding any piece already linked from the showcase.
      ═══════════════════════════════════════════════════════════ */}}
 <div class="page-header">
   <h1>{{ .Title }}</h1>
@@ -29,42 +28,45 @@
   {{ end }}
 {{ end }}
 
-{{/* ── Per-discipline buckets, long-scroll layout.
-     Each shows up to 6 recent pieces that AREN'T already in the showcase. ── */}}
+{{/* ── Per-discipline sections, same Tile → Lightbox → Description flow
+     as the showcase above. Each discipline becomes its own lightbox
+     group (prev/next cycles within the discipline only). ── */}}
 {{ range .Sections.ByWeight }}
 {{ $active := where .RegularPagesRecursive "Params.archived" "ne" true }}
 {{ $withImage := where $active "Params.image" "ne" "" }}
 {{ $activeCount := len $active }}
 {{ if gt $activeCount 0 }}
-{{/* Dedupe against the showcase: take more than 6 sorted, then filter. */}}
-{{ $candidates := first 24 ($withImage.ByDate.Reverse) }}
+{{ $sectionId := printf "discipline-%s" (.Title | urlize) }}
+{{ $sortedWithImage := $withImage.ByDate.Reverse }}
 {{ $deduped := slice }}
-{{ range $candidates }}
+{{ range $sortedWithImage }}
   {{ if not (in $showcasedLinks .RelPermalink) }}{{ $deduped = $deduped | append . }}{{ end }}
 {{ end }}
-{{ $recent := first 6 $deduped }}
-<section class="discipline-bucket" aria-label="{{ .Title }}">
-  <div class="discipline-bucket-header">
-    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    {{ with .Description }}<p class="discipline-bucket-desc">{{ . }}</p>{{ end }}
-  </div>
-  {{ if $recent }}
-  <div class="gallery-grid">
-    {{ range $recent }}
-    <a href="{{ .RelPermalink }}" class="gallery-item">
-      <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" />
-      <div class="gallery-caption">
-        <span class="gallery-title">{{ .Title }}</span>
-        {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}
-      </div>
+{{ if $deduped }}
+<section class="portfolio-gallery-section" id="{{ $sectionId }}" aria-label="{{ .Title }}" data-gallery-section="{{ $sectionId }}">
+  <h2 class="portfolio-gallery-heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  {{ with .Description }}<p class="discipline-bucket-desc">{{ . }}</p>{{ end }}
+  <div class="portfolio-gallery-grid">
+    {{ range $itemIdx, $page := $deduped }}
+    <a href="{{ $page.RelPermalink }}"
+       class="portfolio-gallery-tile js-lightbox-trigger"
+       data-section="{{ $sectionId }}"
+       data-index="{{ $itemIdx }}"
+       data-image="{{ $page.Params.image }}"
+       data-title="{{ $page.Title }}"
+       data-link="{{ $page.RelPermalink }}"
+       {{ with $page.Description }}data-description="{{ . }}"{{ end }}
+       title="{{ $page.Title }}">
+      <img src="{{ $page.Params.image }}" alt="{{ $page.Title }}" loading="lazy" />
+      <span class="portfolio-gallery-tile-overlay">{{ $page.Title }}</span>
     </a>
     {{ end }}
   </div>
-  {{ end }}
   <p class="discipline-bucket-link">
     <a href="{{ .RelPermalink }}">See all {{ $activeCount }} {{ if eq $activeCount 1 }}piece{{ else }}pieces{{ end }} in {{ .Title }} &rarr;</a>
   </p>
 </section>
+{{ end }}
 {{ end }}
 {{ end }}
 
