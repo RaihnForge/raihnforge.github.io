@@ -1,0 +1,48 @@
+{{/* Visual-first showcase scroll — data-driven from data/portfolio_gallery.yml.
+     Renders the 9-section gallery (Illustration, Logo Design, Pixel Art,
+     Environment Concepts, Character Concepts, Game Animation, Emotes,
+     Overlays, Cheermotes) as a dense 7-column grid with hover-only titles.
+     Tiles trigger the lightbox; linked items surface the linked page's
+     description and a "Read full post" link inside the lightbox.
+     Include `gallery-lightbox-modal.html` once on the same page. */}}
+
+{{ with .Site.Data.portfolio_gallery }}
+  {{ range $section := .sections }}
+  <section class="portfolio-gallery-section" id="{{ $section.id }}" aria-label="{{ $section.title }}" data-gallery-section="{{ $section.id }}">
+    <h2 class="portfolio-gallery-heading">{{ $section.title }}</h2>
+    <div class="portfolio-gallery-grid">
+      {{ range $itemIdx, $item := $section.items }}
+        {{ $linkedPage := false }}
+        {{ if $item.link }}{{ $linkedPage = site.GetPage $item.link }}{{ end }}
+        {{ $desc := "" }}
+        {{ with $linkedPage }}{{ $desc = .Description }}{{ end }}
+        {{ if $item.link }}
+        <a href="{{ $item.link }}"
+           class="portfolio-gallery-tile js-lightbox-trigger"
+           data-section="{{ $section.id }}"
+           data-index="{{ $itemIdx }}"
+           data-image="{{ $item.image }}"
+           data-title="{{ $item.title }}"
+           data-link="{{ $item.link }}"
+           {{ with $desc }}data-description="{{ . }}"{{ end }}
+           title="{{ $item.title }}">
+          <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy" />
+          <span class="portfolio-gallery-tile-overlay">{{ $item.title }}</span>
+        </a>
+        {{ else }}
+        <button type="button"
+                class="portfolio-gallery-tile js-lightbox-trigger"
+                data-section="{{ $section.id }}"
+                data-index="{{ $itemIdx }}"
+                data-image="{{ $item.image }}"
+                data-title="{{ $item.title }}"
+                title="{{ $item.title }}">
+          <img src="{{ $item.image }}" alt="{{ $item.title }}" loading="lazy" />
+          <span class="portfolio-gallery-tile-overlay">{{ $item.title }}</span>
+        </button>
+        {{ end }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}

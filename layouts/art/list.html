@@ -1,16 +1,23 @@
 {{ define "main" }}
 {{ if .Parent.IsHome }}
 {{/* ═══════════════════════════════════════════════════════════
-     TOP-LEVEL: /art/ — Show 5 category cards
+     TOP-LEVEL: /art/ — Gallery hub
+     1. Visual-first showcase scroll (curated, lightbox-enabled)
+     2. Highlights — cross-discipline sampler picks
+     3. Discipline buckets — branding / esports / illustration etc.
      ═══════════════════════════════════════════════════════════ */}}
 <div class="page-header">
   <h1>{{ .Title }}</h1>
   {{ with .Content }}<div class="page-description">{{ . }}</div>{{ end }}
 </div>
 
+{{/* ── Curated showcase scroll: 9 visual-category sections, dense grids,
+     lightbox-enabled tiles. Driven by data/portfolio_gallery.yml so the
+     showcase set is auditable in one file. ── */}}
+{{ partial "portfolio-gallery-scroll.html" . }}
+
 {{/* ── Highlights: cross-discipline curator picks flagged `sampler: true`.
-     sampler is an explicit curator signal, so it intentionally overrides `archived`.
-     Only cross-discipline section on this page — disciplines hold everything else. ── */}}
+     sampler is an explicit curator signal, so it intentionally overrides `archived`. ── */}}
 {{ $sampler := where (where .Site.RegularPages "Section" "art") "Params.sampler" true }}
 {{ $sampler = $sampler.ByDate.Reverse }}
 {{ if $sampler }}
@@ -69,6 +76,9 @@
 </section>
 {{ end }}
 {{ end }}
+
+{{/* Lightbox modal (shared partial, single instance per page). */}}
+{{ partial "gallery-lightbox-modal.html" . }}
 
 {{ else }}
 {{/* ═══════════════════════════════════════════════════════════
