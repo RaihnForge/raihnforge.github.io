@@ -1065,7 +1065,17 @@ a:hover {
 .project-card img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background:
+    radial-gradient(ellipse at 50% 115%, var(--banner-tint, var(--bg-hover)) 0%, transparent 72%),
+    linear-gradient(180deg, var(--bg-hover) 0%, var(--bg-surface) 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem;
+}
+
+.project-card.has-card-image {
+  /* tint hook so each card can paint its own backdrop without clipping */
 }
 
 .project-icon-banner {
@@ -1191,16 +1201,66 @@ a:hover {
    Project Detail / Case Study
    ============================================================ */
 .project-hero-image {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  background:
+    radial-gradient(ellipse at 50% 115%, var(--banner-tint, var(--bg-hover)) 0%, transparent 72%),
+    linear-gradient(180deg, var(--bg-hover) 0%, var(--bg-surface) 100%);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
 }
 
 .project-hero-image img {
+  display: block;
   width: 100%;
-  max-height: 480px;
+  max-height: 420px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Panning hero — wide source image. Frame is fixed height; image is scaled to fit height
+   and translated left/right with a slow back-and-forth animation. */
+.project-hero-image.pan {
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-hero-image.pan img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  max-height: none;
+  max-width: none;
   object-fit: cover;
-  object-position: center top;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
+  object-position: left center;
+  /* CSS var --pan-distance is set inline by the template based on natural image width */
+  animation: hero-pan 36s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes hero-pan {
+  from { transform: translateX(0); }
+  to   { transform: translateX(calc(-1 * var(--pan-distance, 40%))); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-hero-image.pan img {
+    animation: none;
+    transform: translateX(calc(-0.5 * var(--pan-distance, 40%)));
+  }
+}
+
+@media (max-width: 700px) {
+  .project-hero-image.pan { height: 280px; }
+}
+
+[data-theme="dark"] .project-hero-image {
+  background:
+    radial-gradient(ellipse at 50% 115%, color-mix(in srgb, var(--banner-tint, var(--bg-hover)) 40%, #0E1118) 0%, transparent 72%),
+    linear-gradient(180deg, #12151C 0%, var(--bg-surface) 100%);
 }
 
 .project-detail-info {
@@ -1241,40 +1301,55 @@ a:hover {
 }
 
 .project-content {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   font-family: var(--font-display);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.project-content > p:first-of-type {
   font-size: var(--text-lg);
-  line-height: 1.8;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
 }
 
 .project-content h2 {
   font-family: var(--font-display);
   font-size: var(--text-2xl);
   font-weight: 700;
-  margin-top: 2.5rem;
-  margin-bottom: 0.75rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.005em;
 }
 
 .project-content h3 {
   font-family: var(--font-display);
   font-size: var(--text-xl);
   font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+  margin-top: 2.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .project-content p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.4rem;
 }
 
 .project-content ul,
 .project-content ol {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   padding-left: 1.5rem;
 }
 
 .project-content li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+}
+
+.project-content li strong {
+  font-weight: 700;
+  color: var(--text);
 }
 
 .project-content strong {
@@ -1285,6 +1360,50 @@ a:hover {
 .project-content a {
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.project-content hr {
+  margin: 3.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+.project-content figure {
+  margin: 2.5rem auto;
+  max-width: 100%;
+  background:
+    radial-gradient(ellipse at 50% 115%, var(--banner-tint, var(--bg-hover)) 0%, transparent 72%),
+    linear-gradient(180deg, var(--bg-hover) 0%, var(--bg-surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.project-content figure img {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  object-position: center;
+  margin: 0;
+}
+
+.project-content figure figcaption {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-align: center;
+  padding: 0.5rem 1rem 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: var(--font-body);
+  border-top: 1px solid var(--border);
+  background: var(--bg-surface);
+}
+
+[data-theme="dark"] .project-content figure {
+  background:
+    radial-gradient(ellipse at 50% 115%, color-mix(in srgb, var(--banner-tint, var(--bg-hover)) 40%, #0E1118) 0%, transparent 72%),
+    linear-gradient(180deg, #12151C 0%, var(--bg-surface) 100%);
 }
 
 /* ============================================================
