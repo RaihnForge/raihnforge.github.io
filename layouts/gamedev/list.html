@@ -11,10 +11,10 @@
 <div class="project-grid">
   {{ $activeThreshold := now.AddDate 0 0 -90 }}
   {{ range where .Sections "Params.archived" "ne" true }}
-  <a href="{{ .RelPermalink }}" class="project-card{{ if .Params.icon }} has-icon{{ end }}">
+  <a href="{{ .RelPermalink }}" class="project-card{{ if .Params.icon }} has-icon{{ end }}"{{ with .Params.banner_tint }} style="--banner-tint: {{ . }};"{{ end }}>
     {{ $src := .Params.icon | default .Params.image }}
     {{ if .Params.icon }}
-    <div class="project-icon-banner" aria-hidden="true"{{ with .Params.banner_tint }} style="--banner-tint: {{ . }};"{{ end }}>
+    <div class="project-icon-banner" aria-hidden="true">
       <img src="{{ $src }}" alt="{{ .Title }}" loading="lazy" class="project-icon" />
     </div>
     {{ else if $src }}
@@ -52,9 +52,9 @@
 {{/* ═══════════════════════════════════════════════════════════
      SUB-SECTION: /gamedev/mecromage/ — Product detail + devlog
      ═══════════════════════════════════════════════════════════ */}}
-<div class="project-detail">
+<div class="project-detail"{{ with .Params.banner_tint }} style="--banner-tint: {{ . }};"{{ end }}>
   {{ with .Params.image }}
-  <div class="project-hero-image">
+  <div class="project-hero-image{{ if $.Params.hero_pan }} pan{{ end }}">
     <img src="{{ . }}" alt="{{ $.Title }}" />
   </div>
   {{ end }}

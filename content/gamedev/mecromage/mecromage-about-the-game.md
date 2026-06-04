@@ -1,5 +1,6 @@
 ---
 title: "Mecromage: About the Game"
+image: "/images/gamedev/mecromage/placeholder.svg"
 date: 2013-03-02
 description: "Title: Mecromage  
 Genre: Action, Adventure, Role-Playing, Platformer   

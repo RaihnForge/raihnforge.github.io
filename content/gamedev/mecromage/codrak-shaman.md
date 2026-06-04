@@ -1,5 +1,6 @@
 ---
 title: "Codrak Shaman"
+image: "/images/recovered/shaman.png"
 date: 2014-06-19
 description: The Codrak Shaman is a spry caster intelligently weaving the less wise of his clan into a unified force.  He’s cunning wit ensure enemies are
 tags: ["Digital Painting", "Illustration", "Indie Game Blog", "Mecromage", "Unchosen Paths"]

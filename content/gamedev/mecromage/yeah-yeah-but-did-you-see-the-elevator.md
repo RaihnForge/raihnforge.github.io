@@ -1,5 +1,6 @@
 ---
 title: "Yeah Yeah, But Did You See That Elevator?"
+image: "/images/gamedev/mecromage/placeholder.svg"
 date: 2013-03-03
 description: Drowning.  That’s what it feels like most of the time I’ve been developing my Indie project, Mecromage.  I’ve averaged about 12 hours a day on this
 tags: ["Design", "Digital Painting", "Game Design", "Illustration", "Indie Game Blog", "Indie Game Design", "Joshua Keyes", "Mecromage", "Unchosen Paths"]

@@ -1,5 +1,6 @@
 ---
 title: "Pixel Interpretations: Castlevania 3"
+image: "/images/gamedev/archkey/placeholder.svg"
 date: 2010-11-02
 description: A new series of speed painting videos called, \"Pixel Interpretations\" show me rendering out game pixel-ized images producing an outcome of how I
 tags: ["Art", "Belmont", "Castle", "Castlevania 3", "Digital Painting", "Dracula", "Gaming Art", "Illustration", "Indie Game Blog", "Interpretations", "Introduction", "Joshua Keyes", "NES", "Nintendo", "Old School Gaming", "Painting", "Pixel", "Redux", "Remix", "Speed Painting", "Timelapse", "Trevor", "photoshop"]

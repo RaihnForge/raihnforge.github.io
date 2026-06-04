@@ -1,5 +1,7 @@
 ---
 title: "Tiled - Shooter game reskin"
+archived: true
+image: "/images/recovered/GameAssetDemo01.png"
 date: 2013-04-11
 description: My first mini project using the Tiled application was an enjoyable experience.  A friend of mine made a multiplayer PvP top down shooter game with a
 tags: ["C5", "Game Graphics", "Indie Game Art", "Tiled", "Topdown Shooter", "Videogame Art", "Videogame Graphics", "graphics"]

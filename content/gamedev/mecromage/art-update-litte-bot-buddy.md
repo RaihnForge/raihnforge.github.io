@@ -1,5 +1,6 @@
 ---
 title: "Art Update: Litte Bot Buddy"
+image: "/images/recovered/botdemos.png"
 date: 2014-06-17
 description: "Today I did some concept work for a little robot guy.  Was fun, we’ll see if he ends up as one of our little critters :D  I could see him being a"
 tags: ["Cartooning", "Design", "Game Design", "Illustration", "Indie Game Blog", "Unchosen Paths"]

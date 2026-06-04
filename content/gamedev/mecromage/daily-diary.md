@@ -1,5 +1,6 @@
 ---
 title: "Daily UP 2011.10.25"
+image: "/images/gamedev/mecromage/placeholder.svg"
 date: 2011-10-26
 description: "2011.10.25 - Goal: Generate a screen shot of a game more rooted in the NES era."
 tags: ["Design", "E2D", "Game Design", "Indie Game Art", "Indie Game Blog", "Indie Game Design", "Indie Game development", "Indie game Concept Art", "Joshua Keyes", "Raihn", "Speed Painting", "Unchosen Paths", "daily grind", "photoshop"]

@@ -1,5 +1,6 @@
 ---
 title: "WIP — Mecromage Animation Demo"
+image: "/images/gamedev/mecromage/placeholder.svg"
 date: 2017-04-01
 description: "A look at the animation assets from Mecromage, an unreleased side-scrolling Metroidvania."
 tags: ["Game Dev", "Animation", "Pixel Art", "Mecromage"]

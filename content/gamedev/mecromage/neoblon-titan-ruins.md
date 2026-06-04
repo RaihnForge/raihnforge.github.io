@@ -1,5 +1,6 @@
 ---
 title: "Neoblon :: Titan Ruins"
+image: "/images/recovered/MapWorld.png"
 date: 2013-11-29
 description: The Titan Ruins are a small group of shattered land masses that ever-float as do many similar geological occurrences in Neoblon.  This collection of
 tags: ["Design", "Game Design", "Illustration", "Indie Game Blog", "Sketchbook", "Sketchbook Digital", "Unchosen Paths"]

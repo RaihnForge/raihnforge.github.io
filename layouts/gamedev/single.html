@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="project-detail">
+<article class="project-detail"{{ with .Parent.Params.banner_tint }} style="--banner-tint: {{ . }};"{{ end }}>
   {{ with .Params.image }}
   <div class="project-hero-image">
     <img src="{{ . }}" alt="{{ $.Title }}" />

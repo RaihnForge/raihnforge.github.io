@@ -1,5 +1,6 @@
 ---
 title: "mellonOS"
+image: "/images/gamedev/mellon-os/placeholder.svg"
 date: 2026-04-20
 description: "A windowed desktop environment for a personal development ecosystem. Portal shell that hosts every service as a sovereign app, with its own SDK, themes, and built-in tools."
 status: "In Development"

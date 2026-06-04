@@ -1,5 +1,7 @@
 ---
 title: "Keyes Possibilities"
+archived: true
+image: "/images/recovered/keyesLogoSM.png"
 date: 2014-06-24
 description: This Spring, 2014 a few family member of mine dedicated themselves to be apart of a triathlon.  They decided to make motivational family Keyes
 tags: ["Concept Keyes", "Design", "Digital Painting", "Family", "Illustration", "Indie Game Blog", "Joshua Keyes", "Product Design", "T-Shirt", "Unchosen Paths"]

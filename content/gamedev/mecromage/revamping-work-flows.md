@@ -1,12 +1,13 @@
 ---
 title: "Revamping Work Flows"
+image: "/images/gamedev/mecromage/placeholder.svg"
 date: 2014-01-05
 description: I’ve be pretty crippled by the abundance of work that I must do in my game and daily life, so I’m looking for ways to revamp my current situations. I
 tags: ["Indie Game Blog", "Muse", "Unchosen Paths", "eMUSE"]
 aliases:
   - "/gamedev/revamping-work-flows/"
   - "/gamedev/indie-dev-dues/revamping-work-flows/"
-archived: false
+archived: true
 draft: false
 recovered: true
 ---

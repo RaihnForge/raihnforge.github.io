@@ -1,5 +1,6 @@
 ---
 title: "Problem: Dynamic 2d platform.."
+image: "/images/gamedev/mecromage/placeholder.svg"
 date: 2012-08-17
 description: ".. what am I really illustrating?"
 tags: ["Design", "Game Design", "Indie Game Blog", "Indie Game Design", "Muse"]
