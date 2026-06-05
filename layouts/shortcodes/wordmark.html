@@ -1,0 +1,6 @@
+{{/* Stylized wordmark image as a sectional break. Usage: {{< wordmark src="..." alt="..." >}} */}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+<div class="wordmark">
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" />
+</div>

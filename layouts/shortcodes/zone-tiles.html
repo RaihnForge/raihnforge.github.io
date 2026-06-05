@@ -1,0 +1,10 @@
+{{/* Region triptych — pass tiles as positional pairs: src|caption */}}
+<div class="zone-tiles">
+{{ range .Params }}
+  {{ $parts := split . "|" }}
+  <figure class="zone-tile">
+    <img src="{{ index $parts 0 }}" alt="{{ index $parts 1 }}" loading="lazy" />
+    <figcaption>{{ index $parts 1 }}</figcaption>
+  </figure>
+{{ end }}
+</div>

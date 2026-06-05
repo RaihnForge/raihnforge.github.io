@@ -1,0 +1,15 @@
+{{/* Explore More: curated YouTube cards. Pass tiles as positional pairs: id|title */}}
+<div class="yt-cards">
+{{ range .Params }}
+  {{ $parts := split . "|" }}
+  {{ $id := index $parts 0 }}
+  {{ $title := index $parts 1 }}
+  <a class="yt-card" href="https://www.youtube.com/watch?v={{ $id }}" target="_blank" rel="noopener" aria-label="{{ $title }}">
+    <span class="yt-thumb-wrap">
+      <img src="https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg" alt="{{ $title }}" loading="lazy" />
+      <span class="yt-play" aria-hidden="true">▶</span>
+    </span>
+    <span class="yt-title">{{ $title }}</span>
+  </a>
+{{ end }}
+</div>

@@ -37,7 +37,7 @@ A Frostwolf cleric and half arcane construct. Trained in frost magic and acrobat
 
 She fights with a set of cleric relics: a shield, a chain mace, a grappling hook, and her frost magic. Acrobatic movement lets her read each room and decide how to reshape it.
 
-{{< figure src="/images/wp-imports/gamedev/notes-12-15-screenshot-sketches.png" alt="Kochay action sketches: chain mace, grapple, frost shot, shield poses." caption="Kochay character study · shield, chain mace, grapple, frost shot." loading="lazy" >}}
+{{< figure src="/images/gamedev/mecromage/sketch-recent.jpg" alt="Pencil sketch of Kochay swinging her chain mace toward a wolf-creature in a graveyard." caption="Kochay in motion · 2026 combat study." loading="lazy" >}}
 
 ## Core Mechanic: Free Traversal, Reactive Environments
 
@@ -87,7 +87,13 @@ Modified objects can be broken by a Shield Bash, a Pip 3 attack, or a high speed
 
 One floating island, crowned by the Mecromage's castle, the Mecropolis. The structural design draws from four games.
 
-{{< figure src="/images/recovered/MapWorld.png" alt="Painted concept of the Mecromage realm, a floating island world." caption="The floating island realm · concept of the world map." loading="lazy" >}}
+{{< figure src="/images/gamedev/mecromage/world-map.png" alt="Three-quarter perspective map of the Mecromage realm, showing Emerald Forest, Blood Mountain, and the Forgotten Kingdom." caption="The realm of Mecromage · Emerald Forest, Blood Mountain, and the Forgotten Kingdom." loading="lazy" >}}
+
+{{< zone-tiles
+  "/images/gamedev/mecromage/zone-emerald-forest.png|Emerald Forest"
+  "/images/gamedev/mecromage/zone-forgotten-kingdom.png|Forgotten Kingdom"
+  "/images/gamedev/mecromage/zone-blood-mountain.png|Blood Mountain"
+>}}
 
 - **Final Fantasy I.** A single mysterious world to traverse, with a sense of mythic scale and reverence for what the player does not yet understand.
 - **Castlevania II.** Explore outward from a central town, and return to upgrade. Wilderness hides dungeons.
@@ -168,6 +174,23 @@ Active development is underway under the Archkey pipeline. Foundational assets a
 The work begun in 2009 will be finished.
 
 *Raise your hammer to the storm.*
+
+---
+
+{{< wordmark src="/images/gamedev/mecromage/title.png" alt="Mecromage" >}}
+
+## Explore More
+
+A handful of devlogs and demos showing the world in motion. Speedpaints, animation studies, and gameplay clips spanning the long arc of the project.
+
+{{< youtube-cards
+  "KlvPs8ble8Y|Devlog 01"
+  "ZXUX9TNHaRY|Devlog 02"
+  "bjgVuIQCDVQ|Devlog 03"
+  "JXKLIoJjPgY|Devlog 04"
+  "XrV6_LVH1gM|Devlog 05"
+  "TlDkAGqsVcs|Devlog 06"
+>}}
 
 ---
 

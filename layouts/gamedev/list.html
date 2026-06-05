@@ -148,4 +148,9 @@
 {{ end }}
 
 {{ end }}
+
+{{/* TTS reader — bucket detail only */}}
+{{ if not .Parent.IsHome }}
+<script src="/js/tts-reader.js" defer></script>
+{{ end }}
 {{ end }}
