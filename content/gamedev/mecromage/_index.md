@@ -3,7 +3,7 @@ title: "Mecromage"
 image: "/images/gamedev/mecromage/hero-cavern.png"
 hero_pan: true
 date: 2013-03-02
-description: "A 2D metalvania set in a world of dark mechanical fantasy, drawing on the design philosophies of Final Fantasy I, Castlevania, Zelda, and Doom. Equipped with frost magic, a grappling hook, dynamic environmental interactions, and a metal soundtrack. The longest creative thread in my portfolio: begun in 2009 at the indie studio I co-founded, carried through that studio's closure, and now being rebuilt on an AI-assisted Phaser 4 pipeline through Archkey Studio."
+description: "A 2D metalvania set in a world of dark mechanical fantasy. The longest creative thread in my portfolio: begun in 2009 at the indie studio I co-founded, and being rebuilt now through Archkey Studio."
 status: "In Progress"
 engine: "Phaser 4 / AI-Assisted Pipeline"
 role: "Producer, Artist & Game Director"
@@ -17,11 +17,11 @@ aliases:
 draft: false
 ---
 
-Mecromage is a 2D metalvania set in a world of dark mechanical fantasy. Its design philosophy draws on four classics: Final Fantasy I, Castlevania, Zelda, and Doom. To that lineage it adds frost magic, a grappling hook, dynamic environmental interactions, and a metal soundtrack.
+The design philosophy draws on four classics: Final Fantasy I, Castlevania, Zelda, and Doom. To that lineage it adds frost magic, a grappling hook, dynamic environmental interactions, and a metal soundtrack.
 
 You play Kochay, a Frostwolf cleric and half arcane construct. She wakes alone in a ruined cave with no memory of how she arrived. From that first moment the story turns outward: what became of her, what became of her order, what became of her realm, and at the center of it all, what became of her father, the Mecromage Tyrant, whose apparent corruption she sets out to understand.
 
-Mecromage is also the longest creative thread in my portfolio. It began in 2009 at the indie studio I co-founded to build it, survived that studio's closure, and is now being rebuilt on an AI-assisted Phaser 4 pipeline through [Archkey Studio](/gamedev/archkey/).
+The rebuild is happening now under [Archkey Studio](/gamedev/archkey/), on an AI-assisted Phaser 4 pipeline.
 
 ## The Concept
 
