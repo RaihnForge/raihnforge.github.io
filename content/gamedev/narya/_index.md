@@ -36,4 +36,4 @@ One PowerShell file, no build step, no install, no background service - just Win
 
 Narya is open source under the MIT license.
 
-**[→ Source & downloads on GitHub](https://github.com/E4Keyes/narya)**
+**[→ Source & downloads on GitHub](https://github.com/RaihnForge/narya)**
