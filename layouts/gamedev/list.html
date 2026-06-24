@@ -11,7 +11,8 @@
 <div class="project-grid">
   {{ $activeThreshold := now.AddDate 0 0 -90 }}
   {{ range where .Sections "Params.archived" "ne" true }}
-  <a href="{{ .RelPermalink }}" class="project-card{{ if .Params.icon }} has-icon{{ end }}"{{ with .Params.banner_tint }} style="--banner-tint: {{ . }};"{{ end }}>
+  {{ $href := .RelPermalink }}{{ with .Params.external_url }}{{ $href = . }}{{ end }}
+  <a href="{{ $href }}" class="project-card{{ if .Params.icon }} has-icon{{ end }}"{{ with .Params.banner_tint }} style="--banner-tint: {{ . }};"{{ end }}>
     {{ $src := .Params.icon | default .Params.image }}
     {{ if .Params.icon }}
     <div class="project-icon-banner" aria-hidden="true">

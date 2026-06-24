@@ -44,7 +44,8 @@
   </div>
   <div class="featured-grid">
     {{ range $featured }}
-    <a href="{{ .RelPermalink }}" class="featured-card">
+    {{ $href := .RelPermalink }}{{ with .Params.external_url }}{{ $href = . }}{{ end }}
+    <a href="{{ $href }}" class="featured-card">
       {{ with .Params.image }}
       <img src="{{ . }}" alt="{{ $.Title }}" class="featured-card-image" loading="lazy" />
       {{ else }}
