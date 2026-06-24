@@ -1,0 +1,15 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Narya">
+  <defs>
+    <linearGradient id="bg-narya" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A0C06"/>
+      <stop offset="1" stop-color="#C03A10"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg-narya)"/>
+  <g fill="none" stroke="#FFD4A0" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="256" cy="302" r="96"/>
+    <path d="M 222 212 Q 206 176 216 148 Q 230 178 220 210"/>
+    <path d="M 256 206 Q 242 162 256 130 Q 270 162 246 204"/>
+    <path d="M 290 212 Q 306 176 296 148 Q 282 178 292 210"/>
+  </g>
+</svg>
