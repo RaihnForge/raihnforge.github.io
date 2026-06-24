@@ -49,8 +49,10 @@
 }
 
 /* --- Dark Mode (toggle-driven) --- */
-/* Dark mode — storm-cloud gradient: cerulean blue light peaking through deep navy */
-[data-theme="dark"] body {
+/* Dark mode — storm-cloud gradient: cerulean blue light peaking through deep navy.
+   Painted on <html> so the fixed rain canvas (z-index:-1) layers above it
+   and below the transparent <body> content. */
+[data-theme="dark"] html {
   background:
     radial-gradient(ellipse at 50% 30%, rgba(24, 72, 136, 0.36) 0%, rgba(18, 52, 110, 0.10) 45%, transparent 65%),
     linear-gradient(180deg, #07101C 0%, #0C1322 45%, #080D18 100%);
@@ -128,6 +130,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  background: var(--bg);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -145,13 +148,12 @@ html {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 body {
   position: relative;
-  z-index: 1;
-  background: var(--bg);
+  background: transparent;
   color: var(--text);
   font-family: var(--font-body);
   font-size: var(--text-base);
