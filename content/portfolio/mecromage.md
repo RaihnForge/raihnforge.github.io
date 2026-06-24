@@ -7,6 +7,7 @@ year: "2009–Present"
 status: "In Development"
 description: "A 2D metalvania drawing on the design philosophies of Final Fantasy I, Castlevania, Zelda, and Doom — frost magic, a grappling hook, dynamic environmental interactions, and a metal soundtrack. The longest creative thread in my portfolio."
 image: "/images/gamedev/mecromage/hero-cavern.png"
+external_url: "/mecromage-metalvania/"
 tags: ["game design", "concept art", "pixel art", "producer", "selected work"]
 draft: false
 ---

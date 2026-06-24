@@ -23,6 +23,8 @@ You play Kochay, a Frostwolf cleric and half arcane construct. She wakes alone i
 
 The rebuild is happening now under [Archkey Studio](/gamedev/archkey/), on an AI-assisted Phaser 4 pipeline.
 
+> **Visit the world.** Mecromage has its own site — a frost-and-iron tour of the realm, the mechanics, and the long arc. **[→ Enter mecromage-metalvania](/mecromage-metalvania/)**
+
 ## The Concept
 
 The name combines "Necromancer" and "Mech." The game lives at the seam between the mechanical and the arcane. Heavy armor and industrial ruins on one side. Ice, mana, and ritual on the other. Creatures that blur the line between built and born. Dark fantasy with a machine edge.

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MECROMAGE — A Metalvania of Frost & Iron</title>
+<meta name="description" content="Mecromage is a 2D metalvania set in a world of dark mechanical fantasy. Play Kochay, a Frostwolf cleric and half arcane construct, on a trail of corruption leading to the Mecromage Tyrant. Freeze, grapple, shatter. Raise your hammer to the storm." />
+<meta name="author" content="Joshua Keyes · RaihnForge" />
+<meta name="theme-color" content="#0A0E14" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="MECROMAGE — A Metalvania of Frost & Iron" />
+<meta property="og:description" content="A 2D metalvania of frost magic, grappling chains, and reactive ruins. Freeze, grapple, shatter. Raise your hammer to the storm." />
+<meta property="og:image" content="/images/gamedev/mecromage/hero-cavern.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   MECROMAGE — standalone game site
+   Dark mechanical fantasy: frost cyan + ember rust on deep slate.
+   The seam between the arcane and the built.
+   ============================================================ */
+
+:root {
+  --bg:        #0A0E14;
+  --bg-2:      #0D1320;
+  --surface:   #121A28;
+  --surface-2: #18223358;
+  --border:    #243246;
+  --border-lit:#33486B;
+
+  --text:      #E7ECF4;
+  --text-mut:  #9AA8BE;
+  --text-dim:  #61708A;
+
+  --frost:     #7BD2F0;   /* ice / mana */
+  --frost-soft:#A9E4F6;
+  --ember:     #E0744A;   /* fire / iron-heat */
+  --ember-soft:#F0976E;
+  --arcane:    #B9A7E0;   /* soul / sigil */
+  --steel:     #8FA0BC;
+
+  --maxw: 1180px;
+  --read: 760px;
+  --radius: 4px;
+  --shadow: 0 18px 48px rgba(0,0,0,.55), 0 4px 12px rgba(0,0,0,.4);
+
+  --serif: 'Spectral', Georgia, 'Times New Roman', serif;
+  --display: 'Cinzel', 'Spectral', Georgia, serif;
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+* , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--frost); text-decoration: none; transition: color .2s ease; }
+a:hover { color: var(--frost-soft); }
+
+::selection { background: rgba(123,210,240,.25); color: #fff; }
+
+/* --- Shared layout --- */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 1.5rem; }
+.read { max-width: var(--read); }
+
+section { position: relative; }
+.section-pad { padding: clamp(4rem, 9vw, 8rem) 0; }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .34em;
+  text-transform: uppercase;
+  color: var(--frost);
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1.25rem;
+}
+.eyebrow::before {
+  content: "";
+  width: 28px; height: 1px;
+  background: linear-gradient(90deg, var(--ember), transparent);
+}
+
+h1, h2, h3, h4 { font-family: var(--display); font-weight: 600; line-height: 1.15; letter-spacing: .01em; }
+h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); margin-bottom: 1.5rem; }
+h3 { font-size: clamp(1.25rem, 2.4vw, 1.6rem); margin-bottom: .75rem; color: var(--frost-soft); }
+h4 { font-size: 1.05rem; letter-spacing: .04em; }
+
+p { margin-bottom: 1.15rem; color: var(--text-mut); }
+p strong, li strong { color: var(--text); font-weight: 600; }
+.lead { font-size: clamp(1.15rem, 2vw, 1.4rem); color: var(--text); line-height: 1.65; font-weight: 300; }
+
+/* --- Divider with triquetra sigil --- */
+.rule {
+  display: flex; align-items: center; justify-content: center;
+  gap: 1.5rem; margin: 0 auto;
+  color: var(--border-lit);
+}
+.rule::before, .rule::after {
+  content: ""; height: 1px; flex: 1; max-width: 220px;
+  background: linear-gradient(90deg, transparent, var(--border-lit), transparent);
+}
+.rule svg { width: 26px; height: 26px; opacity: .8; }
+
+/* ============================================================
+   TOP BAR
+   ============================================================ */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .85rem 1.5rem;
+  background: linear-gradient(180deg, rgba(10,14,20,.92), rgba(10,14,20,.0));
+  backdrop-filter: blur(2px);
+  transition: background .3s ease, border-color .3s ease;
+  border-bottom: 1px solid transparent;
+}
+.topbar.solid {
+  background: rgba(9,12,18,.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.topbar .brand {
+  font-family: var(--display); font-weight: 700; font-size: .95rem;
+  letter-spacing: .28em; color: var(--text); text-transform: uppercase;
+}
+.topbar nav { display: flex; gap: 1.5rem; align-items: center; }
+.topbar nav a {
+  font-family: var(--mono); font-size: .72rem; letter-spacing: .15em;
+  text-transform: uppercase; color: var(--text-mut);
+}
+.topbar nav a:hover { color: var(--frost); }
+.topbar nav a.home-link {
+  border: 1px solid var(--border-lit); padding: .4rem .8rem; border-radius: 100px;
+  color: var(--text);
+}
+.topbar nav a.home-link:hover { border-color: var(--frost); color: var(--frost); }
+@media (max-width: 720px) { .topbar nav a.menu-link { display: none; } }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; overflow: hidden;
+  padding: 7rem 1.5rem 4rem;
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background: url('/images/gamedev/mecromage/hero-cavern.png') center/cover no-repeat;
+  transform: scale(1.06);
+  filter: saturate(1.05) contrast(1.05);
+}
+.hero-bg::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 42%, rgba(10,14,20,.15) 0%, rgba(10,14,20,.78) 62%, rgba(10,14,20,.97) 100%),
+    linear-gradient(180deg, rgba(10,14,20,.7) 0%, transparent 22%, transparent 60%, var(--bg) 100%);
+}
+.hero-inner { position: relative; z-index: 2; max-width: 880px; }
+.hero-wordmark { width: min(620px, 86vw); margin: 0 auto 1.75rem; filter: drop-shadow(0 8px 30px rgba(0,0,0,.7)); }
+.hero-tag {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(1.1rem, 2.6vw, 1.7rem);
+  letter-spacing: .06em; color: var(--frost-soft);
+  text-shadow: 0 2px 20px rgba(0,0,0,.8);
+  margin-bottom: 1.5rem;
+}
+.hero-sub {
+  max-width: 600px; margin: 0 auto 2.5rem;
+  color: var(--text); font-size: 1.1rem; line-height: 1.7;
+  text-shadow: 0 1px 14px rgba(0,0,0,.85);
+}
+.hero-meta {
+  display: flex; gap: .6rem; flex-wrap: wrap; justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.chip {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--text-mut);
+  border: 1px solid var(--border-lit); border-radius: 100px;
+  padding: .38rem .9rem; background: rgba(13,19,32,.5);
+}
+.chip.lit { color: var(--frost); border-color: rgba(123,210,240,.4); }
+
+.cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.btn {
+  font-family: var(--mono); font-size: .76rem; letter-spacing: .16em; text-transform: uppercase;
+  padding: .9rem 1.7rem; border-radius: var(--radius);
+  display: inline-flex; align-items: center; gap: .6rem;
+  border: 1px solid var(--border-lit); color: var(--text);
+  transition: all .2s ease; cursor: pointer;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--ember), #b9512f);
+  border-color: var(--ember); color: #1a0d08; font-weight: 500;
+}
+.btn-primary:hover { color: #1a0d08; box-shadow: 0 8px 26px rgba(224,116,74,.35); transform: translateY(-2px); }
+.btn-ghost:hover { border-color: var(--frost); color: var(--frost); transform: translateY(-2px); }
+
+.scroll-hint {
+  position: absolute; bottom: 1.75rem; left: 50%; transform: translateX(-50%);
+  z-index: 2; font-family: var(--mono); font-size: .62rem; letter-spacing: .3em;
+  text-transform: uppercase; color: var(--text-dim);
+  display: flex; flex-direction: column; align-items: center; gap: .5rem;
+}
+.scroll-hint span { animation: bob 2.2s ease-in-out infinite; }
+@keyframes bob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(5px)} }
+
+/* ============================================================
+   CONCEPT
+   ============================================================ */
+.concept { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%); }
+.seam {
+  display: grid; grid-template-columns: 1fr auto 1fr; gap: 1.5rem; align-items: center;
+  max-width: 720px; margin: 2.5rem auto 0; text-align: center;
+}
+.seam .side { padding: 1.5rem 1rem; }
+.seam .glyph { font-family: var(--display); font-size: 1.4rem; letter-spacing: .12em; margin-bottom: .4rem; }
+.seam .arcane-side .glyph { color: var(--frost); }
+.seam .iron-side .glyph { color: var(--ember); }
+.seam .side p { font-size: .92rem; margin: 0; }
+.seam .join {
+  font-family: var(--display); font-size: 2.2rem; color: var(--arcane);
+  text-shadow: 0 0 24px rgba(185,167,224,.4);
+}
+@media (max-width: 600px) {
+  .seam { grid-template-columns: 1fr; }
+  .seam .join { transform: rotate(90deg); }
+}
+
+/* ============================================================
+   FEATURE / SPLIT BLOCKS
+   ============================================================ */
+.split {
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.split.reverse .split-media { order: 2; }
+@media (max-width: 860px) {
+  .split { grid-template-columns: 1fr; gap: 2rem; }
+  .split.reverse .split-media { order: 0; }
+}
+.split-media figure { margin: 0; }
+.framed {
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--surface); padding: .5rem; box-shadow: var(--shadow);
+  position: relative;
+}
+.framed::before {
+  content: ""; position: absolute; inset: -1px; border-radius: var(--radius);
+  padding: 1px; pointer-events: none;
+  background: linear-gradient(135deg, rgba(123,210,240,.35), transparent 40%, transparent 60%, rgba(224,116,74,.3));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+}
+figcaption {
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .08em;
+  color: var(--text-dim); text-align: center; padding: .75rem .5rem .25rem;
+}
+
+/* ============================================================
+   MECHANIC LOOP — freeze / grapple / shatter
+   ============================================================ */
+.mechanic { background: var(--bg-2); }
+.loop {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
+  margin-top: 2.75rem;
+}
+@media (max-width: 760px) { .loop { grid-template-columns: 1fr; } }
+.loop-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.75rem 1.5rem; position: relative; overflow: hidden;
+}
+.loop-card .num {
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .2em; color: var(--text-dim);
+}
+.loop-card h4 { margin: .6rem 0 .75rem; font-family: var(--display); font-size: 1.35rem; letter-spacing: .05em; }
+.loop-card p { font-size: .92rem; margin: 0; }
+.loop-card.freeze h4 { color: var(--frost); }
+.loop-card.grapple h4 { color: var(--arcane); }
+.loop-card.shatter h4 { color: var(--ember); }
+.loop-card::after {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+}
+.loop-card.freeze::after { background: var(--frost); }
+.loop-card.grapple::after { background: var(--arcane); }
+.loop-card.shatter::after { background: var(--ember); }
+
+.states { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 2rem; }
+@media (max-width: 680px){ .states { grid-template-columns: 1fr; } }
+.state {
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.1rem 1.25rem; background: var(--surface-2);
+}
+.state .label { font-family: var(--mono); font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; margin-bottom: .4rem; }
+.state.thawed .label { color: var(--steel); }
+.state.frosted .label { color: var(--frost-soft); }
+.state.frozen .label { color: var(--frost); }
+.state p { font-size: .86rem; margin: 0; }
+
+/* Focal object list */
+.focals { margin-top: 2rem; display: grid; gap: .5rem; }
+.focal {
+  display: grid; grid-template-columns: 130px 1fr; gap: 1rem;
+  padding: .85rem 1rem; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--surface-2); align-items: baseline;
+}
+.focal .name { font-family: var(--display); font-size: .98rem; color: var(--frost-soft); letter-spacing: .03em; }
+.focal .desc { font-size: .88rem; color: var(--text-mut); }
+@media (max-width: 600px){ .focal { grid-template-columns: 1fr; gap: .25rem; } }
+
+/* ============================================================
+   MOVESET — feature grid
+   ============================================================ */
+.grid-feats { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.1rem; margin-top: 2.5rem; }
+.feat {
+  border: 1px solid var(--border); border-radius: var(--radius); padding: 1.4rem 1.4rem;
+  background: var(--surface); transition: border-color .2s ease, transform .2s ease;
+}
+.feat:hover { border-color: var(--border-lit); transform: translateY(-3px); }
+.feat h4 { color: var(--frost-soft); font-family: var(--display); font-size: 1.1rem; margin-bottom: .5rem; letter-spacing: .04em; }
+.feat p { font-size: .88rem; margin: 0; }
+
+/* ============================================================
+   WORLD — map + zones + pillars
+   ============================================================ */
+.world { background: linear-gradient(180deg, var(--bg-2), var(--bg)); }
+.map-figure { margin: 2.5rem 0; }
+.zones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0 0; }
+@media (max-width: 760px){ .zones { grid-template-columns: 1fr; } }
+.zone {
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+  background: var(--surface); position: relative;
+}
+.zone img { aspect-ratio: 4/3; object-fit: cover; width: 100%; transition: transform .4s ease; }
+.zone:hover img { transform: scale(1.05); }
+.zone .zlabel {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 1.5rem .9rem .7rem; font-family: var(--display); font-weight: 600;
+  letter-spacing: .06em; font-size: 1rem; color: #fff;
+  background: linear-gradient(0deg, rgba(8,11,17,.92), transparent);
+}
+
+.pillars { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-top: 2.5rem; }
+@media (max-width: 820px){ .pillars { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 460px){ .pillars { grid-template-columns: 1fr; } }
+.pillar {
+  text-align: center; padding: 1.5rem 1rem; border: 1px solid var(--border);
+  border-radius: var(--radius); background: var(--surface-2);
+}
+.pillar .icn { width: 34px; height: 34px; margin: 0 auto .8rem; color: var(--ember); }
+.pillar h4 { font-family: var(--display); font-size: 1.05rem; color: var(--text); margin-bottom: .4rem; letter-spacing: .05em; }
+.pillar p { font-size: .82rem; margin: 0; }
+
+/* ============================================================
+   ARC — timeline
+   ============================================================ */
+.arc { background: var(--bg-2); }
+.timeline { margin-top: 2.75rem; display: grid; gap: 1.25rem; }
+.chapter {
+  display: grid; grid-template-columns: 200px 1fr; gap: 1.75rem;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.75rem; background: var(--surface);
+}
+@media (max-width: 720px){ .chapter { grid-template-columns: 1fr; gap: .75rem; } }
+.chapter .era { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; color: var(--frost); text-transform: uppercase; }
+.chapter .yr { font-family: var(--display); font-size: 1.6rem; color: var(--text); margin-top: .3rem; line-height: 1.1; }
+.chapter h3 { font-size: 1.25rem; margin-bottom: .5rem; }
+.chapter p { font-size: .92rem; margin: 0; }
+
+/* ============================================================
+   MEDIA
+   ============================================================ */
+.media { background: var(--bg); }
+.videos { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 2.5rem; }
+@media (max-width: 820px){ .videos { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 540px){ .videos { grid-template-columns: 1fr; } }
+.video {
+  position: relative; aspect-ratio: 16/9; border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--border); background: #000; cursor: pointer; display: block;
+}
+.video img { width: 100%; height: 100%; object-fit: cover; opacity: .82; transition: opacity .3s ease, transform .4s ease; }
+.video:hover img { opacity: 1; transform: scale(1.04); }
+.video .play {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+}
+.video .play svg { width: 56px; height: 56px; filter: drop-shadow(0 4px 14px rgba(0,0,0,.6)); transition: transform .2s ease; }
+.video:hover .play svg { transform: scale(1.1); }
+.video .vlabel {
+  position: absolute; bottom: 0; left: 0; right: 0; padding: 1.25rem .8rem .6rem;
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase;
+  color: #fff; background: linear-gradient(0deg, rgba(8,11,17,.9), transparent);
+}
+
+/* ============================================================
+   CLOSING / CTA
+   ============================================================ */
+.closing {
+  text-align: center; position: relative; overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(123,210,240,.10), transparent 55%),
+    linear-gradient(180deg, var(--bg), #07090e);
+}
+.closing .wordmark-sm { width: min(360px, 70vw); margin: 0 auto 2rem; opacity: .95; }
+.closing .battlecry {
+  font-family: var(--display); font-style: italic; font-weight: 500;
+  font-size: clamp(1.3rem, 3.5vw, 2.1rem); color: var(--frost-soft);
+  margin-bottom: 2.5rem; text-shadow: 0 0 30px rgba(123,210,240,.25);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.foot {
+  border-top: 1px solid var(--border); padding: 3rem 1.5rem;
+  background: #07090e;
+}
+.foot-inner { max-width: var(--maxw); margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; align-items: center; }
+.foot .credit { font-family: var(--mono); font-size: .74rem; letter-spacing: .08em; color: var(--text-dim); line-height: 1.9; }
+.foot .credit strong { color: var(--text-mut); font-weight: 500; }
+.foot-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.foot-links a { font-family: var(--mono); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--text-mut); }
+.foot-links a:hover { color: var(--frost); }
+
+/* reveal on scroll */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar" id="topbar">
+  <a href="#top" class="brand">Mecromage</a>
+  <nav>
+    <a href="#world" class="menu-link">World</a>
+    <a href="#mechanic" class="menu-link">Mechanics</a>
+    <a href="#arc" class="menu-link">The Arc</a>
+    <a href="https://raihnforge.github.io/gamedev/mecromage/" class="home-link">Dev Page ↗</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <img class="hero-wordmark" src="/images/gamedev/mecromage/title.png" alt="MECROMAGE" />
+    <p class="hero-tag">A Metalvania of Frost &amp; Iron</p>
+    <p class="hero-sub">Wake alone in a ruined cave with no memory of how you arrived. Step out into a realm you once knew — and follow a trail of corruption to its source: your father, the Mecromage Tyrant.</p>
+    <div class="hero-meta">
+      <span class="chip lit">2D Metalvania</span>
+      <span class="chip">Frost Magic</span>
+      <span class="chip">Grappling Chain</span>
+      <span class="chip">Reactive Ruins</span>
+      <span class="chip">Metal Soundtrack</span>
+    </div>
+    <div class="cta-row">
+      <a href="#concept" class="btn btn-primary">Enter the Realm</a>
+      <a href="https://raihnforge.github.io/gamedev/mecromage/" class="btn btn-ghost">Development Page ↗</a>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span>Descend</span></div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section class="concept section-pad" id="concept">
+  <div class="wrap read reveal">
+    <div class="eyebrow">The Concept</div>
+    <h2>Necromancer, meet Mech.</h2>
+    <p class="lead">Mecromage lives at the seam between the mechanical and the arcane. Heavy armor and industrial ruins on one side. Ice, mana, and ritual on the other. Creatures that blur the line between built and born — dark fantasy with a machine edge.</p>
+    <p>The design philosophy draws on four classics: <strong>Final Fantasy&nbsp;I</strong>, <strong>Castlevania</strong>, <strong>Zelda</strong>, and <strong>Doom</strong>. To that lineage it adds frost magic, a grappling hook, dynamic environmental interactions, and a metal soundtrack. The art direction and the mood have been intact for over a decade. What's new is a production pipeline finally capable of carrying it across the finish line.</p>
+  </div>
+  <div class="wrap">
+    <div class="seam reveal">
+      <div class="side arcane-side">
+        <div class="glyph">❄ Arcane</div>
+        <p>Frost, mana, soul energy, ritual sigils, the cleric's relics.</p>
+      </div>
+      <div class="join">⚙</div>
+      <div class="side iron-side">
+        <div class="glyph">Iron ⚒</div>
+        <p>Rusted machinery, alloy anchors, industrial ruins, the Tyrant's war.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true">
+  <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3">
+    <path d="M50 14 L82 70 L18 70 Z" stroke="#7BD2F0" opacity=".7"/>
+    <path d="M50 86 L18 30 L82 30 Z" stroke="#E0744A" opacity=".7"/>
+    <circle cx="50" cy="50" r="10" stroke="#B9A7E0"/>
+  </svg>
+</div>
+
+<!-- ============ HEROINE ============ -->
+<section class="section-pad" id="heroine">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <div class="eyebrow">The Heroine</div>
+        <h2>Kochay,<br>the Frostwolf Cleric</h2>
+        <p>A Frostwolf cleric and half arcane construct, trained in frost magic and acrobatic combat. She wakes in a ruined cave with no memory of how she arrived, then steps into a realm she once knew but no longer recognizes.</p>
+        <p>The story unfolds from that first breath — what became of her, of her order, of her realm, and gradually, of her father, the <strong>Mecromage Tyrant</strong>, whose corruption is the central mystery she follows.</p>
+        <p>She fights with a set of cleric relics: a <strong>shield</strong>, a <strong>chain mace</strong>, a <strong>grappling hook</strong>, and her <strong>frost magic</strong>. Acrobatic movement lets her read each room and decide how to reshape it.</p>
+      </div>
+      <div class="split-media reveal">
+        <figure class="framed">
+          <img src="/images/gamedev/mecromage/sketch-recent.jpg" alt="Pencil sketch of Kochay swinging her chain mace toward a wolf-creature in a graveyard." loading="lazy" />
+          <figcaption>Kochay in motion · 2026 combat study</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MECHANIC ============ -->
+<section class="mechanic section-pad" id="mechanic">
+  <div class="wrap">
+    <div class="read reveal">
+      <div class="eyebrow">Core Mechanic</div>
+      <h2>Freeze. Grapple. Shatter.</h2>
+      <p class="lead">Traversal should feel free, and the world should feel reactive. Every room is a sandbox of state changes — traversal becomes a conversation with the environment rather than a sequence of jumps.</p>
+    </div>
+
+    <div class="loop">
+      <div class="loop-card freeze reveal">
+        <div class="num">01 — CHANGE STATE</div>
+        <h4>❄ Freeze</h4>
+        <p>Frost magic deals no damage. It changes state. Freeze an enemy or surface and it converts into a grappleable object — feeding the loop.</p>
+      </div>
+      <div class="loop-card grapple reveal">
+        <div class="num">02 — THE VERB</div>
+        <h4>⛓ Grapple</h4>
+        <p>Thrown in any direction, the chain engages whatever it touches — a Focal Object. Pull, swing, climb, or sling. The whole game is conjugated around this verb.</p>
+      </div>
+      <div class="loop-card shatter reveal">
+        <div class="num">03 — PAYOFF</div>
+        <h4>⚒ Shatter</h4>
+        <p>A frozen host becomes a Modified Object: temporary and shatterable. Break it with a Shield Bash, a Pip&nbsp;3 strike, or a high-speed impact — some deal area damage.</p>
+      </div>
+    </div>
+
+    <div class="read reveal" style="margin-top:3.5rem">
+      <h3>The Freezing System · Three States</h3>
+      <p>Frost is temporary, and everything thaws. Kochay can also reverse a Modified Object back to its host on demand with a fire utility — keeping every tactical choice grounded in real time.</p>
+    </div>
+    <div class="states">
+      <div class="state thawed reveal"><div class="label">Thawed</div><p>The default. Every enemy, every pool of water, every host object starts here.</p></div>
+      <div class="state frosted reveal"><div class="label">Frosted</div><p>First hit of frost. The target slows and gradually thaws back. A second hit pushes it further.</p></div>
+      <div class="state frozen reveal"><div class="label">Frozen</div><p>Fully stopped. The host becomes a Modified Object: grappleable and shatterable until it thaws.</p></div>
+    </div>
+
+    <div class="read reveal" style="margin-top:3.5rem">
+      <h3>Focal Objects · Every Frozen Thing Becomes a Tool</h3>
+      <p>A Focal Object exists in two forms — a permanent <strong>Primary</strong> (indestructible alloy, often embedded in walls) and a temporary <strong>Modified</strong> version that emerges when Kochay freezes a living host. Each form has its own silhouette, and its own verb.</p>
+    </div>
+    <div class="focals">
+      <div class="focal reveal"><span class="name">Anchor Point</span><span class="desc">Coffin or crystal shape. Pull to it, then drop. Host: medium enemies — falls and shatters on impact for area damage.</span></div>
+      <div class="focal reveal"><span class="name">Through Point</span><span class="desc">Stabby cross. Pull toward and through it, flying out the far side. Host: the Mana Vortex.</span></div>
+      <div class="focal reveal"><span class="name">Grapple Strip</span><span class="desc">A row of teeth. Pull to it and climb. Host: water — freeze deep water and its surface becomes a climbable ice wall.</span></div>
+      <div class="focal reveal"><span class="name">Boulder</span><span class="desc">Small sphere. Sling it into enemies or surfaces to shatter. Host: small enemies such as Flyers and Crawlers.</span></div>
+      <div class="focal reveal"><span class="name">Swing Point</span><span class="desc">Horseshoe. Swing across hazards, then release with jump. Host: ceiling hangers — Spawners and Hanging Bats.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MOVESET ============ -->
+<section class="section-pad" id="moveset">
+  <div class="wrap">
+    <div class="split reverse">
+      <div class="split-media reveal">
+        <figure class="framed">
+          <img src="/images/wp-imports/gamedev/herowolf_breakdown_thumb2.png" alt="Hero Wolf breakdown sheet — Kochay's steel-wolf transformation design study." loading="lazy" />
+          <figcaption>Hero Wolf breakdown · the steel-wolf form at maximum armor</figcaption>
+        </figure>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">The Moveset</div>
+        <h2>A Focused Arsenal</h2>
+        <p>A purposeful weapon set, instead of a bloated arsenal. Every tool conjugates with the grapple verb and the freezing system.</p>
+      </div>
+    </div>
+
+    <div class="grid-feats">
+      <div class="feat reveal"><h4>Chain Mace</h4><p>Repeated slices build Pips on a 0–3 scale, extending range then power. Charge attacks branch by direction: Uppercut, Chop, Lariat, 360 Twirl.</p></div>
+      <div class="feat reveal"><h4>Shield</h4><p>Block in any direction, even airborne. Shield + Attack fires the Freeze Shot. Run + Shield triggers the Shield Bash.</p></div>
+      <div class="feat reveal"><h4>Grapple</h4><p>Thrown omnidirectionally — the hub verb of the moveset. Upgrades add damage while grappling and area damage at the endpoint.</p></div>
+      <div class="feat reveal"><h4>Pip System</h4><p>A momentum economy. Consecutive strikes earn pips; pausing loses them. Pip&nbsp;3 unlocks shatter-grade power.</p></div>
+      <div class="feat reveal"><h4>Health &amp; Alloy</h4><p>Three hearts. Collect Alloy — 30 forms a metallic shield icon that absorbs one hit, capped at heart capacity.</p></div>
+      <div class="feat reveal"><h4>Wolf Mode</h4><p>Max your armor patches and become a steel wolf for 20–30 seconds: melee that petrifies, and a grapple that becomes a grab-and-throw.</p></div>
+      <div class="feat reveal"><h4>Mobility</h4><p>Run for higher jumps, Slide, Backflip, Kip (omnidirectional air dash), Shield Surf on water, and Ground Slam.</p></div>
+      <div class="feat reveal"><h4>Frost Magic</h4><p>The change agent. No damage — state. The engine that turns every host in the world into a temporary tool.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true">
+  <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3">
+    <path d="M50 14 L82 70 L18 70 Z" stroke="#7BD2F0" opacity=".7"/>
+    <path d="M50 86 L18 30 L82 30 Z" stroke="#E0744A" opacity=".7"/>
+    <circle cx="50" cy="50" r="10" stroke="#B9A7E0"/>
+  </svg>
+</div>
+
+<!-- ============ WORLD ============ -->
+<section class="world section-pad" id="world">
+  <div class="wrap">
+    <div class="read reveal">
+      <div class="eyebrow">The World</div>
+      <h2>One Island. Four Pillars.</h2>
+      <p class="lead">A single floating island, crowned by the Mecromage's castle — the Mecropolis. A Central Hub with altars to save and teleport, two wilderness paths leading outward, dungeons holding colored keys, and the final reckoning past the Reaper.</p>
+    </div>
+
+    <figure class="framed map-figure reveal">
+      <img src="/images/gamedev/mecromage/world-map.png" alt="Three-quarter perspective map of the Mecromage realm — Emerald Forest, Blood Mountain, Forgotten Kingdom, and the Mecropolis." loading="lazy" />
+      <figcaption>The realm · Emerald Forest, Blood Mountain, and the Forgotten Kingdom ring the Mecropolis</figcaption>
+    </figure>
+
+    <div class="zones">
+      <div class="zone reveal"><img src="/images/gamedev/mecromage/zone-emerald-forest.png" alt="Emerald Forest zone" loading="lazy" /><div class="zlabel">Emerald Forest</div></div>
+      <div class="zone reveal"><img src="/images/gamedev/mecromage/zone-forgotten-kingdom.png" alt="Forgotten Kingdom zone" loading="lazy" /><div class="zlabel">Forgotten Kingdom</div></div>
+      <div class="zone reveal"><img src="/images/gamedev/mecromage/zone-blood-mountain.png" alt="Blood Mountain zone" loading="lazy" /><div class="zlabel">Blood Mountain</div></div>
+    </div>
+
+    <div class="read reveal" style="margin-top:3.5rem">
+      <h3>Four Pillars of Fun</h3>
+      <p>Every component of Mecromage serves one or more pillars. Each level type answers to a single primary pillar — drawn structurally from Final Fantasy&nbsp;I's mythic scale, Castlevania&nbsp;II's hub-and-return, Zelda's keyed dungeons, and Doom's color-coded legibility.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <svg class="icn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 4v5c0 4-3 7-7 9-4-2-7-5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h4>Combat</h4><p>Read the enemy type and choose the optimal technique. Many encounters have a right answer.</p>
+      </div>
+      <div class="pillar reveal">
+        <svg class="icn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <h4>Exploration</h4><p>Out from the hub into unmapped wilderness, where the Sage and the secrets reward the curious.</p>
+      </div>
+      <div class="pillar reveal">
+        <svg class="icn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6l8 4 8-4"/><path d="M4 6v12l8 4 8-4V6"/><path d="M12 10v12"/></svg>
+        <h4>Traversal</h4><p>Grapple, swing, climb, slide. Movement itself is a source of joy and challenge.</p>
+      </div>
+      <div class="pillar reveal">
+        <svg class="icn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6v4h4v6h-4v4H9v-4H5V7h4z"/></svg>
+        <h4>Puzzle</h4><p>Dungeons as locks. Frost and grapple interactions become spatial puzzles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENVIRONMENT STRIP ============ -->
+<section class="section-pad" id="environment">
+  <div class="wrap">
+    <div class="split reverse">
+      <div class="split-media reveal">
+        <figure class="framed">
+          <img src="/images/wp-imports/gamedev/plate.png" alt="Grizlow's Roost level plate — an isometric study of a Mecromage level." loading="lazy" />
+          <figcaption>Grizlow's Roost level plate · how focal objects shape a room</figcaption>
+        </figure>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">Environment Design</div>
+        <h2>Ruins That Read at a Glance</h2>
+        <p>The environment system is built around tile-silhouette language — every surface type reads differently at a glance, communicating traversal options before the player consciously registers them.</p>
+        <p>Rusted machinery embedded in stone ruins. Frost-glazed corridors. The seam between mechanical and arcane runs through every plate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rule" aria-hidden="true">
+  <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3">
+    <path d="M50 14 L82 70 L18 70 Z" stroke="#7BD2F0" opacity=".7"/>
+    <path d="M50 86 L18 30 L82 30 Z" stroke="#E0744A" opacity=".7"/>
+    <circle cx="50" cy="50" r="10" stroke="#B9A7E0"/>
+  </svg>
+</div>
+
+<!-- ============ THE ARC ============ -->
+<section class="arc section-pad" id="arc">
+  <div class="wrap">
+    <div class="read reveal">
+      <div class="eyebrow">The Arc · 2009 → Present</div>
+      <h2>Sixteen Years in the Forge</h2>
+      <p class="lead">The longest creative thread in the portfolio. A studio that built beautifully but couldn't ship. A stretch of dormant years. A rebuild on new terms.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="chapter reveal">
+        <div>
+          <div class="era">Chapter One</div>
+          <div class="yr">2009–2018</div>
+        </div>
+        <div>
+          <h3>Unchosen Paths</h3>
+          <p>A two-person studio co-founded with a guitarist known for Castlevania remixes. The name captured the philosophy — take roads not yet mapped. Producer, artist, game director, software designer, all at once. Mecromage became the flagship, but the studio wound down in 2018 without shipping.</p>
+        </div>
+      </div>
+      <div class="chapter reveal">
+        <div>
+          <div class="era">Chapter Two</div>
+          <div class="yr">2018–2023</div>
+        </div>
+        <div>
+          <h3>The Dormant Years</h3>
+          <p>Work continued, but only sporadically and only solo. The tooling of the era hadn't closed the velocity gap, and the project remained too large for one person at the old pace. The vision was too strong to abandon — so the work waited while the lessons, and the tools, compounded.</p>
+        </div>
+      </div>
+      <div class="chapter reveal">
+        <div>
+          <div class="era">Chapter Three</div>
+          <div class="yr">2024–Present</div>
+        </div>
+        <div>
+          <h3>Archkey Studio &amp; the AI-Assisted Pipeline</h3>
+          <p>The path forward isn't a new engine or art style — it's a new production model. <a href="https://raihnforge.github.io/gamedev/archkey/">Archkey Studio</a> is a learning-first studio built around AI-assisted development, with Mecromage as its reason to exist. Foundational assets are being ported forward; a playable vertical slice is the next milestone. For the first time, the math on getting there closes.</p>
+        </div>
+      </div>
+    </div>
+
+    <figure class="framed reveal" style="margin-top:2.5rem">
+      <img src="/images/recovered/stagedemo.png" alt="In-game stage demo from the Unchosen Paths era." loading="lazy" />
+      <figcaption>Stage demo from the Unchosen Paths era · the foundation the rebuild is built on</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ MEDIA ============ -->
+<section class="media section-pad" id="media">
+  <div class="wrap">
+    <div class="read reveal">
+      <div class="eyebrow">In Motion</div>
+      <h2>Devlogs &amp; Demos</h2>
+      <p class="lead">Speedpaints, animation studies, and gameplay clips spanning the long arc of the project.</p>
+    </div>
+    <div class="videos">
+      <a class="video reveal" href="https://www.youtube.com/watch?v=KlvPs8ble8Y" target="_blank" rel="noopener" data-yt="KlvPs8ble8Y">
+        <img src="https://i.ytimg.com/vi/KlvPs8ble8Y/hqdefault.jpg" alt="Mecromage Devlog 01" loading="lazy" />
+        <span class="play"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8 8 0 0 0-5.6-5.7C56 .6 34 .6 34 .6s-22 0-26.9 1.4A8 8 0 0 0 1.5 7.7C.1 12.6.1 24 .1 24s0 11.4 1.4 16.3a8 8 0 0 0 5.6 5.7C12 47.4 34 47.4 34 47.4s22 0 26.9-1.4a8 8 0 0 0 5.6-5.7C67.9 35.4 67.9 24 67.9 24s0-11.4-1.4-16.3z" fill="#E0744A"/><path d="M27 34l18-10-18-10z" fill="#fff"/></svg></span>
+        <span class="vlabel">Devlog 01</span>
+      </a>
+      <a class="video reveal" href="https://www.youtube.com/watch?v=ZXUX9TNHaRY" target="_blank" rel="noopener" data-yt="ZXUX9TNHaRY">
+        <img src="https://i.ytimg.com/vi/ZXUX9TNHaRY/hqdefault.jpg" alt="Mecromage Devlog 02" loading="lazy" />
+        <span class="play"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8 8 0 0 0-5.6-5.7C56 .6 34 .6 34 .6s-22 0-26.9 1.4A8 8 0 0 0 1.5 7.7C.1 12.6.1 24 .1 24s0 11.4 1.4 16.3a8 8 0 0 0 5.6 5.7C12 47.4 34 47.4 34 47.4s22 0 26.9-1.4a8 8 0 0 0 5.6-5.7C67.9 35.4 67.9 24 67.9 24s0-11.4-1.4-16.3z" fill="#E0744A"/><path d="M27 34l18-10-18-10z" fill="#fff"/></svg></span>
+        <span class="vlabel">Devlog 02</span>
+      </a>
+      <a class="video reveal" href="https://www.youtube.com/watch?v=bjgVuIQCDVQ" target="_blank" rel="noopener" data-yt="bjgVuIQCDVQ">
+        <img src="https://i.ytimg.com/vi/bjgVuIQCDVQ/hqdefault.jpg" alt="Mecromage Devlog 03" loading="lazy" />
+        <span class="play"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8 8 0 0 0-5.6-5.7C56 .6 34 .6 34 .6s-22 0-26.9 1.4A8 8 0 0 0 1.5 7.7C.1 12.6.1 24 .1 24s0 11.4 1.4 16.3a8 8 0 0 0 5.6 5.7C12 47.4 34 47.4 34 47.4s22 0 26.9-1.4a8 8 0 0 0 5.6-5.7C67.9 35.4 67.9 24 67.9 24s0-11.4-1.4-16.3z" fill="#E0744A"/><path d="M27 34l18-10-18-10z" fill="#fff"/></svg></span>
+        <span class="vlabel">Devlog 03</span>
+      </a>
+      <a class="video reveal" href="https://www.youtube.com/watch?v=JXKLIoJjPgY" target="_blank" rel="noopener" data-yt="JXKLIoJjPgY">
+        <img src="https://i.ytimg.com/vi/JXKLIoJjPgY/hqdefault.jpg" alt="Mecromage Devlog 04" loading="lazy" />
+        <span class="play"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8 8 0 0 0-5.6-5.7C56 .6 34 .6 34 .6s-22 0-26.9 1.4A8 8 0 0 0 1.5 7.7C.1 12.6.1 24 .1 24s0 11.4 1.4 16.3a8 8 0 0 0 5.6 5.7C12 47.4 34 47.4 34 47.4s22 0 26.9-1.4a8 8 0 0 0 5.6-5.7C67.9 35.4 67.9 24 67.9 24s0-11.4-1.4-16.3z" fill="#E0744A"/><path d="M27 34l18-10-18-10z" fill="#fff"/></svg></span>
+        <span class="vlabel">Devlog 04</span>
+      </a>
+      <a class="video reveal" href="https://www.youtube.com/watch?v=XrV6_LVH1gM" target="_blank" rel="noopener" data-yt="XrV6_LVH1gM">
+        <img src="https://i.ytimg.com/vi/XrV6_LVH1gM/hqdefault.jpg" alt="Mecromage Devlog 05" loading="lazy" />
+        <span class="play"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8 8 0 0 0-5.6-5.7C56 .6 34 .6 34 .6s-22 0-26.9 1.4A8 8 0 0 0 1.5 7.7C.1 12.6.1 24 .1 24s0 11.4 1.4 16.3a8 8 0 0 0 5.6 5.7C12 47.4 34 47.4 34 47.4s22 0 26.9-1.4a8 8 0 0 0 5.6-5.7C67.9 35.4 67.9 24 67.9 24s0-11.4-1.4-16.3z" fill="#E0744A"/><path d="M27 34l18-10-18-10z" fill="#fff"/></svg></span>
+        <span class="vlabel">Devlog 05</span>
+      </a>
+      <a class="video reveal" href="https://www.youtube.com/watch?v=TlDkAGqsVcs" target="_blank" rel="noopener" data-yt="TlDkAGqsVcs">
+        <img src="https://i.ytimg.com/vi/TlDkAGqsVcs/hqdefault.jpg" alt="Mecromage Devlog 06" loading="lazy" />
+        <span class="play"><svg viewBox="0 0 68 48"><path d="M66.5 7.7a8 8 0 0 0-5.6-5.7C56 .6 34 .6 34 .6s-22 0-26.9 1.4A8 8 0 0 0 1.5 7.7C.1 12.6.1 24 .1 24s0 11.4 1.4 16.3a8 8 0 0 0 5.6 5.7C12 47.4 34 47.4 34 47.4s22 0 26.9-1.4a8 8 0 0 0 5.6-5.7C67.9 35.4 67.9 24 67.9 24s0-11.4-1.4-16.3z" fill="#E0744A"/><path d="M27 34l18-10-18-10z" fill="#fff"/></svg></span>
+        <span class="vlabel">Devlog 06</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing section-pad">
+  <div class="wrap reveal">
+    <img class="wordmark-sm" src="/images/gamedev/mecromage/title.png" alt="MECROMAGE" />
+    <p class="battlecry">"Raise your hammer to the storm."</p>
+    <div class="cta-row">
+      <a href="https://raihnforge.github.io/gamedev/mecromage/" class="btn btn-primary">Full Development Page ↗</a>
+      <a href="https://raihnforge.github.io/" class="btn btn-ghost">RaihnForge ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="foot-inner">
+    <div class="credit">
+      <strong>MECROMAGE</strong> — a metalvania of frost &amp; iron<br>
+      Design, art &amp; direction by <strong>Joshua Keyes</strong> · RaihnForge / Archkey Studio<br>
+      The work begun in 2009 will be finished.
+    </div>
+    <nav class="foot-links">
+      <a href="https://raihnforge.github.io/gamedev/mecromage/">Dev Page</a>
+      <a href="https://raihnforge.github.io/gamedev/archkey/">Archkey Studio</a>
+      <a href="https://raihnforge.github.io/">RaihnForge</a>
+      <a href="#top">Back to Top</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// --- top bar solidify on scroll ---
+var topbar = document.getElementById('topbar');
+function onScroll(){ topbar.classList.toggle('solid', window.scrollY > 40); }
+window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+// --- reveal on scroll ---
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+}
+
+// --- click-to-play video facade (swap thumbnail for iframe) ---
+document.querySelectorAll('.video[data-yt]').forEach(function(v){
+  v.addEventListener('click', function(ev){
+    ev.preventDefault();
+    var id = v.getAttribute('data-yt');
+    var f = document.createElement('iframe');
+    f.width = '100%'; f.height = '100%';
+    f.style.position = 'absolute'; f.style.inset = '0'; f.style.border = '0';
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    f.allowFullscreen = true;
+    f.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+    v.innerHTML = ''; v.appendChild(f); v.style.cursor = 'default';
+  });
+});
+</script>
+</body>
+</html>
