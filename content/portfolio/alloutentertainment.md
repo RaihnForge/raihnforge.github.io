@@ -8,7 +8,7 @@ status: "In Progress"
 description: "An in-progress refresh of the All Out Entertainment site — a Pacific Northwest wedding & event entertainment company (DJ/MC, day-of coordination, photo booth). Tightening the WordPress site into a clearer, conversion-focused experience for couples and event planners."
 external_url: "https://alloutentertainmentpnw.com/"
 tags: ["web design", "web development", "refresh", "events", "client work", "selected work"]
-draft: false
+draft: true
 ---
 
 A refresh of the website for **All Out Entertainment**, a full-service wedding and event entertainment company in the Pacific Northwest — DJ/MC services, day-of wedding coordination, and photo booth experiences for weddings, reunions, and celebrations.
