@@ -8,6 +8,7 @@ role: "Creator & Developer"
 timeline: "2026"
 featured: false
 image: "/images/gamedev/narya.png"
+icon: "/images/gamedev/icons/narya.svg"
 banner_tint: "#E2603E"
 tags: ["Developer Tool", "Windows", "PowerShell", "GPU", "Open Source"]
 draft: false

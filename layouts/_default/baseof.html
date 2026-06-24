@@ -39,6 +39,7 @@
   <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}" />
 </head>
 <body>
+  <canvas id="rain-bg" aria-hidden="true"></canvas>
   <a href="#main-content" class="skip-link">Skip to content</a>
 
   <header class="site-header" role="banner">
@@ -86,6 +87,7 @@
     </div>
   </footer>
 
+  <script src="{{ "js/rain.js" | relURL }}" defer></script>
   <script>
     document.getElementById('theme-toggle').addEventListener('click', function() {
       var isDark = document.documentElement.getAttribute('data-theme') === 'dark';

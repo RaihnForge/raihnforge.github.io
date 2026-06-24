@@ -8,7 +8,7 @@ medium: "Digital"
 year: 2026
 featured: true
 sampler: true
-portfolio: true
+portfolio: false
 archived: false
 draft: false
 related_sections:

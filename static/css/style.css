@@ -49,8 +49,16 @@
 }
 
 /* --- Dark Mode (toggle-driven) --- */
+/* Dark mode — storm-cloud gradient: cerulean blue light peaking through deep navy */
+[data-theme="dark"] body {
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(24, 72, 136, 0.36) 0%, rgba(18, 52, 110, 0.10) 45%, transparent 65%),
+    linear-gradient(180deg, #07101C 0%, #0C1322 45%, #080D18 100%);
+  background-attachment: fixed;
+}
+
 [data-theme="dark"] {
-  --bg: #0F1118;
+  --bg: #0C1220;
   --bg-surface: #181B24;
   --bg-hover: #1F2330;
   --bg-warm: #1E1814;
@@ -130,7 +138,19 @@ html {
   }
 }
 
+/* Rain canvas — fixed behind all content */
+#rain-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
 body {
+  position: relative;
+  z-index: 1;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
