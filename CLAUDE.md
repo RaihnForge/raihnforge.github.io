@@ -8,7 +8,7 @@ Originally imported from WordPress.com (232 posts, 7 pages, 683 media files) in 
 | Section | Nav Label | Structure |
 |---------|-----------|-----------|
 | `content/art/` | "Design" | 5 subcategories: `branding` (36), `esports` (36), `fine-art` (3), `illustration` (79), `study` (41) — counts incl. `_index.md` |
-| `content/gamedev/` | "Products" | 6 active product buckets + 1 archived (`ezibg`). Active: `archkey`, `forge-framework`, `mecromage`, `mellon-os`, `my-drink`, `ttrpg` |
+| `content/gamedev/` | "Products" | 8 active product buckets + 1 archived (`ezibg`). Active: `archkey`, `forge-framework`, `grimas-bane`, `mecromage`, `mellon-os`, `my-drink`, `narya`, `ttrpg` |
 | `content/blog/` | "Journal" | 19 flat posts |
 | `content/about.md` | "About" | Single page |
 
@@ -26,6 +26,8 @@ The Products section was consolidated on 2026-04-20 around what Joshua is active
 | `mellon-os/` | In Development | Architect & Developer | Windowed desktop environment shell |
 | `my-drink/` | In Development | Creator & Developer | PWA drink-order builder |
 | `ttrpg/` | Released | Creator & Developer | FASERIP character generator |
+| `narya/` | Released | Creator & Developer | Vendor-agnostic Windows system-tray GPU watcher (PowerShell). Public repo under RaihnForge. |
+| `grimas-bane/` | Released | Creator & Developer | Chrome MV3 extension that blocks Shorts/Reels on YouTube/Facebook/Instagram/TikTok by default. Public repo + Pages landing under RaihnForge. |
 | `ezibg/` | Archived | — | 2019 wallpaper product. `archived: true`, hidden from listings but URL live |
 
 Deprecated sections (`verg-castleroid`, `indie-dev-dues`, `ndlz`, `unchosen-paths`) redirect to their new homes via Hugo `aliases` frontmatter.
