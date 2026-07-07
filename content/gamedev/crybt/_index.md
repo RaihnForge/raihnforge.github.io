@@ -20,6 +20,16 @@ draft: false
 
 CRYBT is a solo dungeon-crawler roguelike where every fight is a cribbage hand. You descend through crawls of four encounters, keeping a four-card hand and raising a Hero from your graveyard; hand + Hero score as one cribbage hand against the monster's Attack Power. Fall short and you bleed life — 20 is all you get. Overpower it and the monster joins your graveyard army, ammunition for the crawls below. Survive a crawl and the offering shop turns your sacrifices into healing and permanent boons.
 
+## See it played
+
+A pre-alpha run, warts and all:
+
+{{< youtube "0MbAQhHh1Uk" >}}
+
+And because it's one HTML file with full controller support, here it is running **handheld**:
+
+{{< youtube "KXw5e-UG-kM" >}}
+
 ## You don't need to know cribbage
 
 That's the design north star: the game teaches by playing, never by rulebook. Live score previews on every choice, named combos, and a breakdown that shows exactly which cards made each 15, pair, run, and flush. A necromancer Storyteller narrates your run — and every deviation from the printed tabletop rules is a labeled switch in Options, with an **OG Ruleset** toggle that snaps the whole game back to pure original CRYBT.
