@@ -38,13 +38,24 @@ That's the design north star: the game teaches by playing, never by rulebook. Li
 
 This is a **work in progress**, published early on purpose. Balance is still moving, art is still landing, and nothing persists but your settings. The title screen wears its build stamp; if something feels rough, it probably is — [issues and feedback welcome](https://github.com/RaihnForge/crybt/issues).
 
-## A fan adaptation, with permission
+## The origin: TechDweeb's tabletop CRYBT
 
-CRYBT the tabletop game — its rules and its name — is the work of **TechDweeb**, and this digital adaptation exists with the original creator's blessing (2026-07-06) as a free fan build. It is not for sale, and it is not the tabletop game: if you like what's here, the original deck is where it all comes from.
+CRYBT did not start on a screen. It's a **tabletop card game by [TechDweeb](https://www.youtube.com/@TechDweeb)** — the retro-gaming creator whose whole channel runs on fantasy-reframing, hardware as magical relics, reviews as quests. He built a solo roguelike you play with **nothing but a standard deck of cards**: *you are a necromancer — defeat monsters, raise an army, prepare dark offerings, survive as long as you can.* It's cribbage-adjacent, it's free, and it's genuinely clever. This browser game is a fan adaptation of *that* — the rules and the name are his, transcribed, not invented.
 
-Built as one self-contained HTML file — no dependencies, no build step, no server. Music by [HydroGene](https://hydrogene.itch.io/monstervania-8bit-pack-1) and [juanjo_sound](https://juanjosound.itch.io/); sound effects by [YourPalRob](https://yourpalrob.itch.io/must-have-horror-sound-effects); full credits in-game.
+If you want the real thing, go to the source:
+
+- **[Watch TechDweeb's CRYBT walkthrough](https://youtu.be/5Xe3cPqB_Nk)** — the creator himself explaining how it plays.
+- **[Rules & print-ready cards on his Patreon](https://www.patreon.com/posts/how-to-play-156706636)** — the how-to-play post, including the print-and-fold mini-zine version. More Dweeby techy things at [patreon.com/TechDweeb](https://www.patreon.com/TechDweeb).
+- **[CRYBT on itch.io](https://techdweeb.itch.io/crybt)** — the canonical free download: the ebook, the poker-sized print-ready PDF, and the full rules.
+
+This digital version exists **with TechDweeb's blessing** (2026-07-06) as a free pre-alpha fan build. It is not for sale and it is not a replacement for the tabletop game — it's a love letter to it. If you enjoy this, the original deck is where it all comes from; give the creator a look.
+
+## Credits
+
+Built as one self-contained HTML file — no dependencies, no build step, no server. Music by [HydroGene](https://hydrogene.itch.io/monstervania-8bit-pack-1) and [juanjo_sound](https://juanjosound.itch.io/); sound effects by [YourPalRob](https://yourpalrob.itch.io/must-have-horror-sound-effects); full credits in-game. Original tabletop game, rules, and the CRYBT name © [TechDweeb](https://techdweeb.itch.io/crybt).
 
 ## Get it
 
 - **[Play now](https://raihnforge.github.io/crybt/)** — runs in any modern browser
 - **[Source & download on GitHub](https://github.com/RaihnForge/crybt)** — grab the ZIP and open `index.html` offline
+- **[The original tabletop CRYBT](https://techdweeb.itch.io/crybt)** — by TechDweeb, where it all began
