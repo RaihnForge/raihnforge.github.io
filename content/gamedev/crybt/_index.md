@@ -14,7 +14,7 @@ tags: ["Game", "Roguelike", "Card Game", "Cribbage", "Browser", "Work in Progres
 draft: false
 ---
 
-**Dead men. Sharp cards.**
+**Draw & Descend to Darkness.**
 
 **[→ Play it in your browser — no install, no account](https://raihnforge.github.io/crybt/)**
 
