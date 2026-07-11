@@ -3318,6 +3318,11 @@ button.portfolio-gallery-tile {
 .gd-piece-frame {
   display: grid;
   place-items: center;
+  /* Definite tracks so a tall/square piece can't inflate the row past the
+     frame's own height (an auto track grows to the image's intrinsic size,
+     which made square logos overflow and clip under overflow:hidden). */
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
   position: relative;
   aspect-ratio: 4 / 3;
   max-height: 320px;
@@ -3345,10 +3350,12 @@ button.portfolio-gallery-tile {
 
 .gd-piece-frame img {
   display: block;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
-  width: auto;
-  height: auto;
+  min-width: 0;
+  min-height: 0;
   object-fit: contain;
   background: transparent;
 }
