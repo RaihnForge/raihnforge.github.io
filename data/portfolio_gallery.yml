@@ -67,6 +67,9 @@ sections:
   - id: logo-design
     title: Logo Design
     items:
+      - image: /images/graphic-design/kwfitness/logo-icon.png
+        title: KW Fitness
+        link: /art/branding/kw-fitness/
       - image: /images/portfolio-recovered/logo_grubby.png
         title: Grubby
       - image: /images/portfolio-recovered/honeybadgerlogo_v03md.png
