@@ -7,7 +7,7 @@ description: "Iterative redesign of Kelvin Education's RISE microlearning card s
 subtitle: "Kelvin Microlearning content card structure • Prototype to combined-ideas rough draft"
 role: "Production Designer"
 timeline: "2025"
-image: "/images/graphic-design/kelvin/brand-illustration.png"
+image: "/images/graphic-design/kelvin/rise-redesign.png"
 tags: ["UX", "Content Design", "Microlearning", "EdTech", "Kelvin"]
 portfolio: true
 sampler: true
