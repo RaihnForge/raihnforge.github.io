@@ -1,6 +1,13 @@
 {{ define "main" }}
-<article class="post post-single portfolio-single">
+<article class="single-post portfolio-single">
   <header class="post-header">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/art/#selected-works">Gallery</a>
+      <span aria-hidden="true">/</span>
+      {{ .Title }}
+    </nav>
     <h1>{{ .Title }}</h1>
     <div class="post-meta">
       {{ with .Params.audience }}<span>{{ . }}</span>{{ end }}
@@ -8,24 +15,37 @@
       {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
       {{ with .Params.status }}<span class="portfolio-status">{{ . }}</span>{{ end }}
     </div>
+    {{ with .Description }}<p class="post-description">{{ . }}</p>{{ end }}
   </header>
+
+  {{ with .Params.external_url }}
+  <aside class="work-cta" aria-label="View the selected work">
+    <div class="work-cta-text">
+      <strong>See the work itself</strong>
+      <span>Opens the standalone {{ with $.Params.status }}{{ lower . }}{{ else }}sample{{ end }} in a new tab — it has its own look and navigation, separate from this gallery.</span>
+    </div>
+    <a class="btn-primary" href="{{ . }}" target="_blank" rel="noopener">View the Selected Work &nearr;</a>
+  </aside>
+  {{ end }}
 
   {{ with .Params.image }}
   <figure class="post-image">
-    <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
+    {{ with $.Params.external_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+    <img src="{{ . }}" alt="Full-page capture of {{ $.Title }}" loading="lazy" />
+    {{ if $.Params.external_url }}</a>{{ end }}
   </figure>
   {{ end }}
 
-  {{ with .Description }}<p class="post-lede">{{ . }}</p>{{ end }}
-
-  <div class="post-body">{{ .Content }}</div>
+  <div class="post-content">
+    {{ .Content }}
+  </div>
 
   {{ with .Params.external_url }}
   <div class="post-cta">
-    <a class="btn-primary" href="{{ . }}"{{ if hasPrefix . "http" }} target="_blank" rel="noopener"{{ end }}>View Portfolio &rarr;</a>
+    <a class="btn-primary" href="{{ . }}" target="_blank" rel="noopener">View the Selected Work &nearr;</a>
   </div>
   {{ end }}
 
-  <p class="post-back"><a href="/portfolio/">&larr; All Portfolios</a></p>
+  <p class="post-back"><a href="/art/#selected-works">&larr; Back to the Gallery</a></p>
 </article>
 {{ end }}

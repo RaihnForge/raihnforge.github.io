@@ -2830,6 +2830,7 @@ button.portfolio-gallery-tile {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: top;
 }
 
 .portfolio-card-placeholder {
@@ -4180,4 +4181,89 @@ button.portfolio-gallery-tile {
 .scholar-paper-footnote strong {
   color: var(--text);
   font-style: normal;
+}
+
+/* ============================================================
+   Selected Works — project detail page (portfolio single).
+   Cards on /art/ and /portfolio/ stay in-site and land here;
+   the .work-cta block is the deliberate exit to the standalone
+   sample, which may have an entirely different look/navigation. */
+
+.portfolio-single .post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: var(--text-xs);
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+.portfolio-single .portfolio-status {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.work-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.work-cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1 1 18rem;
+}
+
+.work-cta-text strong {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+}
+
+.work-cta-text span {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.work-cta .btn-primary {
+  flex-shrink: 0;
+}
+
+.portfolio-single .post-image {
+  margin: 2rem 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.portfolio-single .post-image img {
+  display: block;
+  width: 100%;
+}
+
+.portfolio-single .post-cta {
+  margin: 2.5rem 0 1.5rem;
+  text-align: center;
+}
+
+.portfolio-single .post-back {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: var(--text-sm);
 }

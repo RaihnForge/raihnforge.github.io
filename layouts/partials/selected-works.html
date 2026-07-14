@@ -15,23 +15,19 @@
   </div>
   <div class="portfolio-grid">
     {{ range $entries }}
-    {{ $href := .RelPermalink }}
-    {{ with .Params.external_url }}{{ $href = . }}{{ end }}
-    <a href="{{ $href }}" class="portfolio-card"{{ if hasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>
+    {{ $work := . }}
+    <a href="{{ .RelPermalink }}" class="portfolio-card">
       {{ with .Params.image }}
-      <img src="{{ . }}" alt="{{ $.Title }}" class="portfolio-card-image" loading="lazy" />
+      <img src="{{ . }}" alt="{{ $work.Title }}" class="portfolio-card-image" loading="lazy" />
       {{ else }}
       <div class="portfolio-card-placeholder" aria-hidden="true"></div>
       {{ end }}
       <div class="portfolio-card-body">
         <h3>{{ .Title }}</h3>
         <div class="portfolio-card-meta">
-          {{ with .Params.audience }}<span>{{ . }}</span>{{ end }}
           {{ with .Params.role }}<span>{{ . }}</span>{{ end }}
           {{ with .Params.year }}<span>{{ . }}</span>{{ end }}
-          {{ with .Params.status }}<span class="portfolio-status">{{ . }}</span>{{ end }}
         </div>
-        {{ with .Description }}<p>{{ . | truncate 220 }}</p>{{ end }}
       </div>
     </a>
     {{ end }}
