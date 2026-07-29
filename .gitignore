@@ -7,3 +7,6 @@ reports/
 content/.obsidian/workspace*.json
 content/.obsidian/graph.json
 content/.obsidian/hotkeys.json
+
+# Claude Code worktrees (per-machine, never synced)
+.claude/worktrees/
