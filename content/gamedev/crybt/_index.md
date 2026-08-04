@@ -1,7 +1,7 @@
 ---
 title: "CRYBT"
 date: 2026-07-06
-description: "A solo dungeon-crawler cribbage roguelike, playable in the browser — descend the crypt, score your hand and your Hero as one cribbage hand against each monster, and spend the fallen. A free pre-alpha fan adaptation of TechDweeb's tabletop CRYBT, published with permission."
+description: "A solo dungeon-crawler cribbage roguelike, playable in the browser — descend the crypt, score your hand and your Hero as one cribbage hand against each monster, and spend the fallen. A free pre-alpha fan adaptation of TechDweeb's tabletop CRYBT — a sanctioned summoning, raised with the creator's blessing."
 status: "Pre-Alpha"
 engine: "Vanilla JS — single-file HTML"
 role: "Adaptation Developer & Art Director"
@@ -48,7 +48,7 @@ If you want the real thing, go to the source:
 - **[Rules & print-ready cards on his Patreon](https://www.patreon.com/posts/how-to-play-156706636)** — the how-to-play post, including the print-and-fold mini-zine version. More Dweeby techy things at [patreon.com/TechDweeb](https://www.patreon.com/TechDweeb).
 - **[CRYBT on itch.io](https://techdweeb.itch.io/crybt)** — the canonical free download: the ebook, the poker-sized print-ready PDF, and the full rules.
 
-This digital version exists **with TechDweeb's blessing** (2026-07-06) as a free pre-alpha fan build. It is not for sale and it is not a replacement for the tabletop game — it's a love letter to it. If you enjoy this, the original deck is where it all comes from; give the creator a look.
+This digital version is a **sanctioned summoning, raised with TechDweeb's own blessing** (permission granted 2026-07-06 — the necromancer asked first, and the diplomacy roll came up a natural 20). A free pre-alpha fan build: the summon walks free, but its soul — the rules and the name — stays bound to its creator. It is not for sale and it is not a replacement for the tabletop game — it's a love letter to it. If you enjoy this, the original deck is where it all comes from; give the creator a look.
 
 ## Credits
 
