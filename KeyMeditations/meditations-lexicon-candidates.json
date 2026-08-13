@@ -1,0 +1,139 @@
+{
+  "$schema": "../dev-ops/sage/lexicon/README.md#schema",
+  "meta": {
+    "proposedBy": "meditations (scholar/phil) — 2026-08-13",
+    "note": "Candidate entries per the Lexicon consumer contract: propose, don't write. Author approves before merge into concepts.json."
+  },
+  "concepts": [
+    {
+      "id": "keyes-axioms",
+      "term": "The Keyes Axioms",
+      "aliases": [
+        "KeyesJB Axioms",
+        "the College nuggets"
+      ],
+      "domain": "meditations",
+      "definition": "Joshua Keyes' collected first-person maxims, begun at the College when a fellow student worker asked for weekly nuggets of wisdom. The anchor set of the Meditations deck; each axiom's expanded backing is authored only by JBK.",
+      "source": "portfolio-website/content/scholar/phil/",
+      "related": [
+        "meditations-deck"
+      ],
+      "status": "candidate",
+      "conflicts": []
+    },
+    {
+      "id": "meditations-deck",
+      "term": "The Meditations Deck",
+      "aliases": [
+        "Joshua Keyes Meditations",
+        "wisdom cards"
+      ],
+      "domain": "meditations",
+      "definition": "A card catalog of collected wisdom, lens-from-self-first: quote + honest attribution on the front; related cards + longer pontification on the back. Thematic taxonomy (Self-Command, Action & Momentum, Discipline & Readiness, Wisdom & Perception, Relationships & Investment, Legacy & the Eternal, Battle Cries). Published as a scholar/phil subspace on RaihnForge.",
+      "source": "portfolio-website/content/scholar/phil/",
+      "related": [
+        "keyes-axioms"
+      ],
+      "status": "candidate",
+      "conflicts": []
+    },
+    {
+      "id": "internal-state-band",
+      "term": "The 20–80 Band",
+      "aliases": [
+        "internal state thresholds",
+        "20/80 rule (Keyes)"
+      ],
+      "domain": "meditations",
+      "definition": "Keyes Axiom No. 1: if your internal state is affected 20–80%, regroup, reflect, consider, consolidate; past 80%, immediately engage or disengage. A triage rule for emotional load. Distinct from the Pareto 80/20 principle.",
+      "source": "portfolio-website/content/scholar/phil/jbk-internal-state.md",
+      "related": [
+        "keyes-axioms",
+        "eighty-percent-reserve",
+        "anger-as-smelting"
+      ],
+      "status": "candidate",
+      "conflicts": []
+    },
+    {
+      "id": "eighty-percent-reserve",
+      "term": "The 80% Reserve",
+      "aliases": [
+        "80% consistent effort"
+      ],
+      "domain": "meditations",
+      "definition": "Keyes Axiom No. 7: aim for 80% consistent effort, holding reserve for the moments 120% is required. Sustainable pace as a readiness doctrine, not a comfort doctrine.",
+      "source": "portfolio-website/content/scholar/phil/jbk-eighty-percent.md",
+      "related": [
+        "keyes-axioms",
+        "internal-state-band"
+      ],
+      "status": "candidate",
+      "conflicts": []
+    },
+    {
+      "id": "yes-cost",
+      "term": "The Cost of Yes",
+      "aliases": [
+        "saying yes is saying no"
+      ],
+      "domain": "meditations",
+      "definition": "Keyes Axioms No. 8–9 taken together: every yes silently spends uncountable no's, so the critical skill is the no — with a standing exception for those who genuinely love you.",
+      "source": "portfolio-website/content/scholar/phil/jbk-yes-cost.md",
+      "related": [
+        "keyes-axioms",
+        "investment-parity"
+      ],
+      "status": "candidate",
+      "conflicts": []
+    },
+    {
+      "id": "investment-parity",
+      "term": "Investment Parity",
+      "aliases": [
+        "never invest more than they do"
+      ],
+      "domain": "meditations",
+      "definition": "Keyes Axiom No. 5: never invest in someone more than they are willing to invest in themselves. A boundary rule for mentorship, management, and love alike.",
+      "source": "portfolio-website/content/scholar/phil/jbk-invest.md",
+      "related": [
+        "keyes-axioms",
+        "yes-cost"
+      ],
+      "status": "candidate",
+      "conflicts": []
+    },
+    {
+      "id": "wisdom-ignorance-expansion",
+      "term": "Wisdom–Ignorance Expansion",
+      "aliases": [
+        "exponential ignorance"
+      ],
+      "domain": "meditations",
+      "definition": "Keyes Axiom No. 4: every step toward wisdom is met with the exponential realization of ignorance. The growing shoreline of the unknown as a feature of learning, not a failure of it.",
+      "source": "portfolio-website/content/scholar/phil/jbk-wisdom-ignorance.md",
+      "related": [
+        "keyes-axioms"
+      ],
+      "status": "candidate",
+      "conflicts": []
+    },
+    {
+      "id": "anger-as-smelting",
+      "term": "Anger as Smelting",
+      "aliases": [
+        "the forging of the self",
+        "warming of anger"
+      ],
+      "domain": "meditations",
+      "definition": "Keyes Axiom No. 15 (2026-08-13): a warming of anger in self-consciousness is akin to the smelting of metal — a requirement of change, the forging of the self. Anger read as process heat to be worked with, not a failure state to be suppressed.",
+      "source": "portfolio-website/content/scholar/phil/jbk-anger-forge.md",
+      "related": [
+        "keyes-axioms",
+        "internal-state-band"
+      ],
+      "status": "candidate",
+      "conflicts": []
+    }
+  ]
+}
