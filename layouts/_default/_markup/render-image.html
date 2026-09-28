@@ -1,0 +1,6 @@
+{{- $src := partial "img-src.html" .Destination -}}
+{{- if eq $src "/images/placeholder-missing.svg" -}}
+<img src="{{ $src }}" alt="{{ .Text }}" class="img-missing" data-missing-src="{{ .Destination }}" loading="lazy">
+{{- else -}}
+<img src="{{ $src | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy">
+{{- end -}}

@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2011
+art_type: "sketches"
+art_subtype: "pencil"
+rating: 4
+curated: false
 
 ---
 > This is a pencil sketch I did while I was at work.  I just started by sketching some fun curves, and let it lead me to something interesting.

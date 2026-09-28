@@ -9,10 +9,14 @@ archived: true
 draft: false
 year: 2008
 recovered: true
+art_type: "sketches"
+art_subtype: "study"
+rating: 2
+curated: false
 ---
 Head of an Akkadian Ruler
 
-![](http://www.joshuakeyes.us/raihn/images/addadian_head.jpg)
+![](/images/legacy/raihn/images/addadian_head.jpg)
 
 The goal of this essay is to give the reader information to further their knowledge of the “Head of an Akkadian ruler” and evaluate the resource gathering process of utilizing only internet resources and the textbook Gardner’s Art Through the Ages. The Head of an Akkadian ruler is interesting to me for several reasons. I admire its astounding craftsmanship, its historic meaning, and the relation to prevalent and ironic events of today.
 

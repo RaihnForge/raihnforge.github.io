@@ -12,6 +12,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2015
+art_type: "sketches"
+art_subtype: "other"
+rating: 5
+curated: false
 ---
 [![Happiness is sharing that which you cherish with those whom you love. - Joshua B. Keyes](/images/wp-imports/art/happyminion.png)](/images/wp-imports/art/happyminion.png) Happiness is sharing that which you cherish with those whom you love. - Joshua B. Keyes
 Today's Sketchbook Therapy.

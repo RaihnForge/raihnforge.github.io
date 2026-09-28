@@ -9,6 +9,10 @@ tags: []
 draft: false
 medium: "Digital"
 year: 2010
+art_type: "sketches"
+art_subtype: "other"
+rating: 4
+curated: false
 ---
 [![image](/images/wp-imports/blog/image1.png "image")](http://apps.facebook.com/graffitiwall/show_replay.php?rn=ddf93c514bdba0ff58fe4d3c143ffdfa_580x400)
 

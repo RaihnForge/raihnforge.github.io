@@ -10,5 +10,9 @@ draft: false
 medium: "Digital"
 year: 2007
 recovered: true
+art_type: "logo-brand"
+art_subtype: "logo"
+rating: 2
+curated: false
 ---
-![Logo for Politically Correct the Game, by Joshua Keyes](http://www.joshuakeyes.us/raihn/images/dip_logo_final_dressed_sm.png "Logo for Politically Correct the Game, by Joshua Keyes")
+![Logo for Politically Correct the Game, by Joshua Keyes](/images/legacy/raihn/images/dip_logo_final_dressed_sm.png "Logo for Politically Correct the Game, by Joshua Keyes")

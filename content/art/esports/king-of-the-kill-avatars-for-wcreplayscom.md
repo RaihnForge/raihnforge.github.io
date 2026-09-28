@@ -10,6 +10,10 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2008
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 3
+curated: false
 
 ---
 ## What is this?
@@ -18,7 +22,7 @@ Recently I was asked to create custom Avatars for weekly king of the hill (KotH)
 
 ## Updated Gallery of King avatars:
 
-![](http://www.joshuakeyes.us/wcreplays/art_of_war_demo/features/raihn/13/wcr_avatar_king_rd.jpg) ![](http://www.joshuakeyes.us/wcreplays/art_of_war_demo/features/raihn/13/wcr_avatar_king_ne.jpg) ![](http://www.joshuakeyes.us/wcreplays/art_of_war_demo/features/raihn/13/wcr_avatar_king_hu.jpg) ![](http://www.joshuakeyes.us/wcreplays/images/wcr_avatar_or.jpg) ![](http://www.joshuakeyes.us/wcreplays/images/wcr_avatar_ud_king.jpg) ![](http://www.joshuakeyes.us/wcreplays/images/wcr_avatar_fallen_king2.jpg)
+![](/images/legacy/wcreplays/art_of_war_demo/features/raihn/13/wcr_avatar_king_rd.jpg) ![](/images/legacy/wcreplays/art_of_war_demo/features/raihn/13/wcr_avatar_king_ne.jpg) ![](/images/legacy/wcreplays/art_of_war_demo/features/raihn/13/wcr_avatar_king_hu.jpg) ![](/images/legacy/wcreplays/images/wcr_avatar_or.jpg) ![](/images/legacy/wcreplays/images/wcr_avatar_ud_king.jpg) ![](/images/legacy/wcreplays/images/wcr_avatar_fallen_king2.jpg)
 
 ##### Orc King - Human King - Undead King - Nightelf King - Fallen King
 

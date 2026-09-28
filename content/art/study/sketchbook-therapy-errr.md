@@ -8,6 +8,10 @@ aliases:
   - "/art/sketchbook-therapy-errr/"
 draft: false
 year: 2015
+art_type: "sketches"
+art_subtype: "other"
+rating: 5
+curated: false
 ---
 ###### [ST_20150423](/images/wp-imports/art/st_20150423.png)You might be a combat vet if you know two letters can communicate more than two books.
 

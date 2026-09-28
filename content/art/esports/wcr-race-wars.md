@@ -10,26 +10,30 @@ draft: false
 medium: "Digital"
 year: 2005
 recovered: true
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 2
+curated: false
 ---
 These are the web assets created for WCreplays.com Race Wars. [Click here to check out the original article](http://www.wcreplays.com/articles.php?get=365).
-![](http://www.joshuakeyes.us/raihn/images/raihn_racewarspost.jpg)
+![](/images/legacy/raihn/images/raihn_racewarspost.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_racewarsbanner.jpg)
+![](/images/legacy/raihn/images/raihn_racewarsbanner.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_rwindex.jpg)
-![](http://www.joshuakeyes.us/raihn/images/raihn_rwgeneralinfo.jpg)
-![](http://www.joshuakeyes.us/raihn/images/raihn_rwschedule.jpg)
-![](http://www.joshuakeyes.us/raihn/images/raihn_rwteams.jpg)
-![](http://www.joshuakeyes.us/raihn/images/raihn_racewarsicon.jpg)
-![](http://www.joshuakeyes.us/raihn/images/raihn_rwhu.jpg)
-![](http://www.joshuakeyes.us/raihn/images/raihn_rwne.jpg)
-![](http://www.joshuakeyes.us/raihn/images/raihn_rwor.jpg)
-![](http://www.joshuakeyes.us/raihn/images/raihn_rwud.jpg)
+![](/images/legacy/raihn/images/raihn_rwindex.jpg)
+![](/images/legacy/raihn/images/raihn_rwgeneralinfo.jpg)
+![](/images/legacy/raihn/images/raihn_rwschedule.jpg)
+![](/images/legacy/raihn/images/raihn_rwteams.jpg)
+![](/images/legacy/raihn/images/raihn_racewarsicon.jpg)
+![](/images/legacy/raihn/images/raihn_rwhu.jpg)
+![](/images/legacy/raihn/images/raihn_rwne.jpg)
+![](/images/legacy/raihn/images/raihn_rwor.jpg)
+![](/images/legacy/raihn/images/raihn_rwud.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_rw_teambanner_hu_tr.jpg)
+![](/images/legacy/raihn/images/raihn_rw_teambanner_hu_tr.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_rw_teambanner_ne_tr.jpg)
+![](/images/legacy/raihn/images/raihn_rw_teambanner_ne_tr.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_rw_teambanne_or_tr.jpg)
+![](/images/legacy/raihn/images/raihn_rw_teambanne_or_tr.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_rw_teambanner_ud_tr.jpg)
+![](/images/legacy/raihn/images/raihn_rw_teambanner_ud_tr.jpg)

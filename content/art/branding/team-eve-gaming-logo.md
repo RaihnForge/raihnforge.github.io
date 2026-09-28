@@ -7,6 +7,10 @@ image: "/images/wp-imports/gamedev/1.png"
 aliases:
   - "/gamedev/team-eve-gaming-logo/"
 draft: false
+art_type: "logo-brand"
+art_subtype: "logo"
+rating: 7
+curated: false
 
 ---
 [![eve_logo_large](/images/recovered/eve_logo_large.png "eve_logo_large")](/images/recovered/eve_logo_large.png)

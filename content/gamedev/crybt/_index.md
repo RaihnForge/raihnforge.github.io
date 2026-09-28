@@ -12,6 +12,7 @@ icon: "/images/gamedev/icons/crybt.svg"
 banner_tint: "#7EE056"
 tags: ["Game", "Roguelike", "Card Game", "Cribbage", "Browser", "Work in Progress"]
 draft: false
+rating: 9
 ---
 
 **Draw & Descend to Darkness.**

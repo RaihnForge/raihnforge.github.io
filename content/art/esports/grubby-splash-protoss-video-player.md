@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2012
+art_type: "stream-web"
+art_subtype: "overlays"
+rating: 5
+curated: false
 
 ---
 [![splash_page_demo_04](/images/recovered/splash_page_demo_04.jpg "splash_page_demo_04")](/images/recovered/splash_page_demo_04.jpg)

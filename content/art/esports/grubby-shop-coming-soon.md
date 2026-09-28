@@ -10,11 +10,15 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2011
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 4
+curated: false
 
 ---
-While in the process of designing Grubby’s first run website, we decided the Shop would need a place holder as we were to release before it was ready.  I took the opportunity to have a little fun ![Open-mouthed smile](http://www.joshuakeyes.us/wordpress/raihn/images/Grubby-Shop-Coming-Soon_9031/wlEmoticon-openmouthedsmile.png)
+While in the process of designing Grubby’s first run website, we decided the Shop would need a place holder as we were to release before it was ready.  I took the opportunity to have a little fun ![Open-mouthed smile](/images/legacy/wordpress/raihn/images/Grubby-Shop-Coming-Soon_9031/wlEmoticon-openmouthedsmile.png)
 
-[![shop_coming_soon2 copy](http://www.joshuakeyes.us/wordpress/raihn/images/Grubby-Shop-Coming-Soon_9031/shop_coming_soon2-copy_thumb.png "shop_coming_soon2 copy")](http://www.joshuakeyes.us/wordpress/raihn/images/Grubby-Shop-Coming-Soon_9031/shop_coming_soon2-copy.png)
+[![shop_coming_soon2 copy](/images/legacy/wordpress/raihn/images/Grubby-Shop-Coming-Soon_9031/shop_coming_soon2-copy_thumb.png "shop_coming_soon2 copy")](/images/legacy/wordpress/raihn/images/Grubby-Shop-Coming-Soon_9031/shop_coming_soon2-copy.png)
 
 The Stacraft 2 SCV has his work cut out for him.  This looks to be a long build time.
 

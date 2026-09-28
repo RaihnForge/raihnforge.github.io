@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2010
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 4
+curated: false
 
 ---
 Here are some avatars that I was commissioned to create for [TopReplays.com](http://www.topreplays.com) The site is awesome!

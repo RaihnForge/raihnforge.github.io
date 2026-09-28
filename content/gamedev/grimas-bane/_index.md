@@ -6,12 +6,13 @@ status: "Released"
 engine: "Chrome Extension (MV3)"
 role: "Creator & Developer"
 timeline: "2026"
-featured: false
+featured: true
 image: "/images/gamedev/grimas-bane.png"
 icon: "/images/gamedev/icons/grimas-bane.svg"
 banner_tint: "#C41212"
 tags: ["Developer Tool", "Chrome Extension", "Productivity", "Open Source"]
 draft: false
+rating: 8
 ---
 
 **Grima's Bane** is a small Chrome extension that closes the short-form video feed before it can open you.

@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2007
 archived: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
 As graphics staff, I created this image for one of Tainted Sun's Theorycrafting article from WCreplays.com [Click here to check out the original article](http://www.wcreplays.com/articles.php?get=522).

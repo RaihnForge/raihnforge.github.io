@@ -10,9 +10,13 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2013
+art_type: "sketches"
+art_subtype: "digital"
+rating: 5
+curated: false
 
 ---
-[![facemelt](/images/recovered/facemelt_thumb.png "facemelt")](http://www.joshuakeyes.us/wordpress/raihn/images/Cheerful---Melting-Face_FAA6/facemelt.png)
+[![facemelt](/images/recovered/facemelt_thumb.png "facemelt")](/images/legacy/wordpress/raihn/images/Cheerful---Melting-Face_FAA6/facemelt.png)
 
 Though I still am quite the nomad currently, I’m very happy to be able to take a moment of respite from time to time.  Today I’m thankful for my laptop, Wacom tablet, and being blessed with the opportunity to watch Grubby 2-0 incumbent Polt at Dreamhack 2013. Way to go Grubby, you’ve brightened yet another fan’s day!
 

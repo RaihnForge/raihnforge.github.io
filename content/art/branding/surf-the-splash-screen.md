@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2008
 archived: true
+art_type: "stream-web"
+art_subtype: "overlays"
+rating: 3
+curated: false
 
 ---
 Recently I created a web asset for a college health department web layout.

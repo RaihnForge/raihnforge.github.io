@@ -10,15 +10,19 @@ draft: false
 medium: "Digital"
 year: 2009
 recovered: true
+art_type: "stream-web"
+art_subtype: "overlays"
+rating: 2
+curated: false
 ---
 These are backgrounds for the WCReplays.com replay generator.
 
-![](http://www.joshuakeyes.us/raihn/images/raihnwordpress_thumb_blank.gif)
+![](/images/legacy/raihn/images/raihnwordpress_thumb_blank.gif)
 
-[![](http://www.joshuakeyes.us/raihn/images/wcr_replay_gen_close.jpg)](http://www.joshuakeyes.us/raihn/images/wcr_replay_gen_close.jpg)
-[![](http://www.joshuakeyes.us/raihn/images/wcr_replay_gen_open.jpg)](http://www.joshuakeyes.us/raihn/images/wcr_replay_gen_open.jpg)
+[![](/images/legacy/raihn/images/wcr_replay_gen_close.jpg)](/images/legacy/raihn/images/wcr_replay_gen_close.jpg)
+[![](/images/legacy/raihn/images/wcr_replay_gen_open.jpg)](/images/legacy/raihn/images/wcr_replay_gen_open.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/hu-replay-background.jpg)
-![Nightelf background](http://www.joshuakeyes.us/raihn/images/ne-replay-background.jpg)
-![](http://www.joshuakeyes.us/raihn/images/or-replay-background.jpg)
-![Undead background](http://www.joshuakeyes.us/raihn/images/ud-replay-background.jpg)
+![](/images/legacy/raihn/images/hu-replay-background.jpg)
+![Nightelf background](/images/legacy/raihn/images/ne-replay-background.jpg)
+![](/images/legacy/raihn/images/or-replay-background.jpg)
+![Undead background](/images/legacy/raihn/images/ud-replay-background.jpg)

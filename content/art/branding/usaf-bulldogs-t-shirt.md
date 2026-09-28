@@ -10,11 +10,15 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2011
+art_type: "logo-brand"
+art_subtype: "apparel"
+rating: 4
+curated: false
 
 ---
 [![bulldogs_tshirt](/images/recovered/bulldogs_tshirt.jpg "bulldogs_tshirt")](/images/recovered/bulldogs_tshirt.jpg)
 
-T-shirt design is for an Air Force BMT Flight, and dedicated to my wife ![Open-mouthed smile](http://www.joshuakeyes.us/wordpress/raihn/images/Bulldogs-t-shirt_C494/wlEmoticon-openmouthedsmile.png).  Training Instructor and bulldog transformer characters prepare to ROLL OUT (or perhaps flight out?)!  Having very little communication with the client meant that I would have to rely on well thought out assumptions more than anything.  The original request was a transformers version of a Training Instructor with a Pit-bull on a chain leash.
+T-shirt design is for an Air Force BMT Flight, and dedicated to my wife ![Open-mouthed smile](/images/legacy/wordpress/raihn/images/Bulldogs-t-shirt_C494/wlEmoticon-openmouthedsmile.png).  Training Instructor and bulldog transformer characters prepare to ROLL OUT (or perhaps flight out?)!  Having very little communication with the client meant that I would have to rely on well thought out assumptions more than anything.  The original request was a transformers version of a Training Instructor with a Pit-bull on a chain leash.
 
 [![2011-08-19_12-40-29_204](/images/recovered/2011-08-19_12-40-29_204.jpg "2011-08-19_12-40-29_204")](/images/recovered/2011-08-19_12-40-29_204.jpg)
 This is a photo of the final T-shirt image.  I had no part in the coloring
@@ -43,7 +47,7 @@ I owe a lot of this process to the notes given by amazing and renowned artist Fr
 
 I hadn’t attempted many Transformers images in my time, so the book, “You Can Draw Transformers” (illustrated by Guido Guidi and scribed by Simon Furman) was a huge help.  I actually picked up the book years ago because it was an impressive at-a-glace of all the important skills of an illustrator.  It takes an especially solid structural approach on these fundamentals for obvious reasons.
 
-[![transformers](http://www.joshuakeyes.us/wordpress/raihn/images/Bulldogs-t-shirt_C494/transformers.jpg "transformers")](http://www.amazon.com/You-Draw-Transformers-Simon-Furman/dp/1405318406/ref=sr_1_1?ie=UTF8&qid=1313789435&sr=8-1)  [![ref=sr_1_1](http://www.joshuakeyes.us/wordpress/raihn/images/Bulldogs-t-shirt_C494/refsr_1_1.jpg "ref=sr_1_1")](http://www.amazon.com/DC-Comics-Guide-Digitally-Drawing/dp/0823099237/ref=sr_1_1?s=books&ie=UTF8&qid=1313789707&sr=1-1)
+[![transformers](/images/legacy/wordpress/raihn/images/Bulldogs-t-shirt_C494/transformers.jpg "transformers")](http://www.amazon.com/You-Draw-Transformers-Simon-Furman/dp/1405318406/ref=sr_1_1?ie=UTF8&qid=1313789435&sr=8-1)  [![ref=sr_1_1](/images/legacy/wordpress/raihn/images/Bulldogs-t-shirt_C494/refsr_1_1.jpg "ref=sr_1_1")](http://www.amazon.com/DC-Comics-Guide-Digitally-Drawing/dp/0823099237/ref=sr_1_1?s=books&ie=UTF8&qid=1313789707&sr=1-1)
 
 Overall this project was rewarding as I was able to deliver a motivational project to the service members that sacrifice their time and freedoms everyday to ensure that we are safe and continue to pursue artistic ventures just as these.  I remember my time in the Marine Corps and how much imagery can motivate and help create a greater sense of esprit décor.
 

@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2016
 portfolio: true
+art_type: "animation"
+art_subtype: "emotes"
+rating: 7
+curated: false
 ---
 ![](/images/wp-imports/art/demo_krippruv2.png)
 ![](/images/wp-imports/art/kripprip.png)

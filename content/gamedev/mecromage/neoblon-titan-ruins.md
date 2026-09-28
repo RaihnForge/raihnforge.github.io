@@ -32,7 +32,7 @@ The Titan Ruins are a small group of shattered land masses that ever-float as do
 
 ****Titan Ruins** :: Act 3 - of Dwarves and Dragons**
 
-[![Stage-I](https://dl.dropboxusercontent.com/u/2967552/Team%20Unchosen/Mecromage/WebDev/Atlas/Stage00.png "Stage-I")](http://www.joshuakeyes.us/wordpress/raihn/images/AtlasDemo_1176D/StageI.png)    [![Stage-I](https://dl.dropboxusercontent.com/u/2967552/Team%20Unchosen/Mecromage/WebDev/Atlas/Stage00.png "Stage-I")](http://www.joshuakeyes.us/wordpress/raihn/images/AtlasDemo_1176D/StageI.png)   [![Stage1-2](https://dl.dropboxusercontent.com/u/2967552/Team%20Unchosen/Mecromage/WebDev/Atlas/Stage00.png "Stage1-2")](https://www.dropbox.com/s/1eho8vqit30qqvr/Stage00.png)
+[![Stage-I](https://dl.dropboxusercontent.com/u/2967552/Team%20Unchosen/Mecromage/WebDev/Atlas/Stage00.png "Stage-I")](/images/legacy/wordpress/raihn/images/AtlasDemo_1176D/StageI.png)    [![Stage-I](https://dl.dropboxusercontent.com/u/2967552/Team%20Unchosen/Mecromage/WebDev/Atlas/Stage00.png "Stage-I")](/images/legacy/wordpress/raihn/images/AtlasDemo_1176D/StageI.png)   [![Stage1-2](https://dl.dropboxusercontent.com/u/2967552/Team%20Unchosen/Mecromage/WebDev/Atlas/Stage00.png "Stage1-2")](https://www.dropbox.com/s/1eho8vqit30qqvr/Stage00.png)
 
 **VII - Start** (the dungeon) - our hero finds a shattered chunk of temple that and has been ancored to the *Base of the Mountain* here lies the *Sword of the Lion - Storm Cleric's Sword*.
 **VIII - Middle** (the road) - The *Obsidian Fields* are a vast and dangerous plateau of the *Blood Mountain,*none that live tell of it. Even if they survive they wish not to ever speak of the experience.  The place is home to only those *Golmaud* that are hearty and unfortunate enough to have been banished to the harsh land.
@@ -40,6 +40,6 @@ The Titan Ruins are a small group of shattered land masses that ever-float as do
 
 ****Titan Ruins** :: Epilogue - Master of Puppets - The Mecromage**
 
-[![Stage-I](https://dl.dropboxusercontent.com/u/2967552/Team%20Unchosen/Mecromage/WebDev/Atlas/Stage00.png "Stage-I")](http://www.joshuakeyes.us/wordpress/raihn/images/AtlasDemo_1176D/StageI.png)
+[![Stage-I](https://dl.dropboxusercontent.com/u/2967552/Team%20Unchosen/Mecromage/WebDev/Atlas/Stage00.png "Stage-I")](/images/legacy/wordpress/raihn/images/AtlasDemo_1176D/StageI.png)
 
 **X - Epilogue** (the hidden finale)- If the Hero ventures to the great Vault entrance they will notice the spell has been lifted from the great door, but yet it is too heavy to move.  The Hero may move the door if they have found all 3 artifacts that unlock the Mech Suit ability.  The Hero then reveals that a 'Mecromage' has been controlling the Drake throughout our story, had been the source of the *Tainted*creatures that drull about the *Titan Ruins.*He was merely controlling the Drake, enslaving the natives, and allowing the blame of evil magic to fall upon the poor wretches.

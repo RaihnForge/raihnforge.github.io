@@ -11,9 +11,13 @@ draft: false
 medium: "Digital"
 year: 2007
 recovered: true
+art_type: "logo-brand"
+art_subtype: "identity"
+rating: 2
+curated: false
 ---
 **Disclaimer**
 Any views or opinion represented in the assets of Politically Correct the Game belong solely to DIP's Politically Correct the Game and do not represent my personal views, opinions, position or attitude.
-![Final version of the board](http://www.joshuakeyes.us/raihn/images/dip_game_board.jpg)
+![Final version of the board](/images/legacy/raihn/images/dip_game_board.jpg)
 
-![A version of the board](http://www.joshuakeyes.us/raihn/images/dip_game_board_versoinl_02.jpg)
+![A version of the board](/images/legacy/raihn/images/dip_game_board_versoinl_02.jpg)

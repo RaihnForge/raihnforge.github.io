@@ -10,6 +10,10 @@ draft: false
 medium: "Mixed Media"
 year: 2007
 archived: true
+art_type: "sketches"
+art_subtype: "other"
+rating: 3
+curated: false
 
 ---
 This image was created to supplement Tainted Sun's Theorycrafting article from WCreplays.com. [Click here to view the original article](http://www.wcreplays.com/articles.php?get=528).

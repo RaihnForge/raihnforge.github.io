@@ -38,7 +38,7 @@ const sheets = [
           title: 'Gallery (/art/) — top nav',
           children: [
             {
-              title: 'Showcase scroll (data/portfolio_gallery.yml, lightbox)',
+              title: 'Gallery by type (data/art_taxonomy.json, rating-ordered, lightbox)',
               children: [
                 { title: 'Illustration (18 tiles)' },
                 { title: 'Logo Design (6)' },
@@ -335,7 +335,7 @@ const sheets = [
         {
           title: 'Data',
           children: [
-            { title: '/data/portfolio_gallery.yml — showcase scroll source of truth' },
+            { title: '/data/art_taxonomy.json — gallery types/subtypes source of truth' },
           ],
         },
         {
@@ -354,7 +354,7 @@ const sheets = [
         {
           title: 'Partials',
           children: [
-            { title: 'portfolio-gallery-scroll.html (YAML driven, 9 sections)' },
+            { title: 'art-tile.html + art-ranked.html (rating order)' },
             { title: 'gallery-lightbox-modal.html (markup + script tag)' },
             { title: 'selected-works.html (shared on Gallery and /portfolio/)' },
           ],

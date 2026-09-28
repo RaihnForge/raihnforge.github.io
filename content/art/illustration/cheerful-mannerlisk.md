@@ -9,6 +9,10 @@ draft: false
 medium: "Digital"
 year: 2013
 image: "/images/recovered/MannerLiskJoshuaKeyes_thumb.png"
+art_type: "illustration"
+art_subtype: "digital"
+rating: 5
+curated: false
 ---
 [![MannerLisk-JoshuaKeyes](/images/recovered/MannerLiskJoshuaKeyes_thumb.png "MannerLisk-JoshuaKeyes")](/images/recovered/MannerLiskJoshuaKeyes.png)
 

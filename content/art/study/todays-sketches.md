@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2010
+art_type: "sketches"
+art_subtype: "digital"
+rating: 4
+curated: false
 ---
 Drawing is fun!  today I decided to make a couple of cartoon like characters inspired by RTS gaming.  The first is a nerdy kid trying to be a blademaster.  He is very eager to begin leveling up, he has a long way to go though...
 The second image is of the ‘PandaBearGuy” in a power suit of sorts.  Feel free to let me know what you think, and if you can think of some improvements!

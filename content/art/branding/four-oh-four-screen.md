@@ -10,6 +10,10 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2011
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 4
+curated: false
 
 ---
 [![Untitled-1](/images/recovered/Untitled-1.jpg "Untitled-1")](/images/recovered/Untitled-1.jpg)
@@ -23,6 +27,6 @@ Further, errors usually come out of no where and surprise us. We have all felt t
 
 The ‘King of Blades’ is a nick name I thought of for Grubby, and thus developd the mascot to represent his name. It is, of course a Blade Master that has reached so high a level of training he was able to wind walk the planes of existence. He found a strand of common warrior philosophy in the great teachings of the Dark Templar, and found himself welcomed as a spiritual brother and even deliverer in times of need to the Protoss warriors. The art bending of time and space, after all is quite familiar to the psionic race.
 
-I hope to finish this wallpaper soon for others to support the King of Blades on his new journey restore harmony and balance to the most tainted of worlds.[![clip_image002](http://www.joshuakeyes.us/wordpress/raihn/images/23a9e97a0282_E9B2/clip_image002_thumb.gif "clip_image002")](http://www.joshuakeyes.us/wordpress/raihn/images/23a9e97a0282_E9B2/clip_image002.gif)
+I hope to finish this wallpaper soon for others to support the King of Blades on his new journey restore harmony and balance to the most tainted of worlds.[![clip_image002](/images/legacy/wordpress/raihn/images/23a9e97a0282_E9B2/clip_image002_thumb.gif "clip_image002")](/images/legacy/wordpress/raihn/images/23a9e97a0282_E9B2/clip_image002.gif)
 
-Thanks for reading! ![Open-mouthed smile](http://www.joshuakeyes.us/wordpress/raihn/images/23a9e97a0282_E9B2/wlEmoticon-openmouthedsmile.png)
+Thanks for reading! ![Open-mouthed smile](/images/legacy/wordpress/raihn/images/23a9e97a0282_E9B2/wlEmoticon-openmouthedsmile.png)

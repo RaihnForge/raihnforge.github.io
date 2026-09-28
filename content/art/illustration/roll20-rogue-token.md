@@ -7,6 +7,10 @@ image: "/images/wp-imports/gamedev/halflingassassin.png"
 aliases:
   - "/gamedev/roll20-rogue-token/"
 draft: false
+art_type: "illustration"
+art_subtype: "ink"
+rating: 5
+curated: false
 ---
 ![Test5_03](/images/wp-imports/gamedev/test5_03.png)
 

@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2009
 archived: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
 [![Dahnjin](/images/recovered/dahnjin_pic7.jpg "Dahnjin")](/images/recovered/dahnjin_pic7.jpg)

@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2007
 archived: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
 [![pctg_ad_washington_post_master](/images/recovered/pctg_ad_washington_post_master.jpg "pctg_ad_washington_post_master")](/images/recovered/pctg_ad_washington_post_master.jpg)

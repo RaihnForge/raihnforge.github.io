@@ -29,6 +29,21 @@ Unscoped ideas and future work. Not prioritized, not committed.
 
 ---
 
+## Gallery by type + ratings (2026-09-27, branch `gallery-by-type`)
+
+- [ ] **JBK: curate in the Art Curator** (`node tools/art-catalog/curator.js` → :3145). All 255 entries
+  carry machine-guessed type/subtype/rating (`curated: false`). Confirm or correct at least the
+  visible 149, then merge `gallery-by-type` → main to reconfigure the live site.
+- [ ] **JBK: backfill missing images** via the curator's Missing tab (441 slots). Wayback links provided.
+- [ ] Adjust `data/art_taxonomy.json` as curation reveals better categories (schema is data, not code).
+- [ ] Fill in titles/descriptions/years for the 54 `content/art/collection/` stubs imported from the old curated gallery.
+- [ ] Art Curator: adopt the e4keyes-ui shell (studio-app baseline) — v1 shipped as a plain single page. Keeper exception logged 2026-09-27.
+- [x] Remove every own-WordPress link from content; download what was still hosted (67 files) — 2026-09-27
+- [x] Placeholder SVG + render hooks so missing media never 404s — 2026-09-27
+- [x] Gallery hub by type, type pages grouped by subtype, everything rating-ordered — 2026-09-27
+- [x] Homepage: top 3 products (CRYBT, Grima's Bane, Narya) + top 6 art; CTA uses the "Raise your hammer to the storm!" subtitle — 2026-09-27
+- [x] Hugo deprecations fixed; CI Hugo aligned to 0.164.0 — 2026-09-27
+
 ## Recovered Content
 
 - [ ] Investigate recovering lost media from lapsed joshuakeyes.us domain (180 posts affected)
@@ -51,7 +66,7 @@ Unscoped ideas and future work. Not prioritized, not committed.
 
 ## CMS & Workflow
 
-- [ ] Align Hugo version between local (v0.157.0) and CI (v0.147.0)
+- [x] Align Hugo version between local and CI — both 0.164.0 (2026-09-27)
 - [ ] Add image optimization step to GitHub Actions pipeline
 - [ ] Evaluate Decap CMS editorial workflow for multi-draft management
 

@@ -10,6 +10,10 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2011
+art_type: "logo-brand"
+art_subtype: "print"
+rating: 4
+curated: false
 
 ---
 [![kt_vb_16x10](/images/recovered/kt_vb_16x10.jpg "kt_vb_16x10")](/images/recovered/kt_vb_16x10.jpg)
@@ -17,6 +21,6 @@ Cheerful I made to Cheer Katelyn! I wanted to print it and mail it with a letter
 
 {{< youtube "I-dGh-PTxtE" >}}
 
-Here are wallpaper sizes so you can cheer on your computer! ![Smile with tongue out](http://www.joshuakeyes.us/wordpress/raihn/images/Katelyns-Cheerful_FEDB/wlEmoticon-smilewithtongueout.png)
+Here are wallpaper sizes so you can cheer on your computer! ![Smile with tongue out](/images/legacy/wordpress/raihn/images/Katelyns-Cheerful_FEDB/wlEmoticon-smilewithtongueout.png)
 
 || [16x9](/images/recovered/kt_vb_16x9.jpg) :: [16x10](/images/recovered/kt_vb_16x10.jpg) :: [4x3](/images/recovered/kt_vb_4x3.jpg) ||

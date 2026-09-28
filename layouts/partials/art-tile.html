@@ -1,0 +1,16 @@
+{{- /* One gallery tile wired to the shared lightbox.
+       Args: dict "page" <page> "section" <lightbox group id> "idx" <int> */ -}}
+{{- $p := .page -}}
+{{- $src := partial "img-src.html" $p.Params.image -}}
+<a href="{{ $p.RelPermalink }}"
+   class="portfolio-gallery-tile js-lightbox-trigger{{ if eq $src "/images/placeholder-missing.svg" }} is-missing{{ end }}"
+   data-section="{{ .section }}"
+   data-index="{{ .idx }}"
+   data-image="{{ $src }}"
+   data-title="{{ $p.Title }}"
+   data-link="{{ $p.RelPermalink }}"
+   {{ with $p.Description }}data-description="{{ . }}"{{ end }}
+   title="{{ $p.Title }}">
+  <img src="{{ $src }}" alt="{{ $p.Title }}" loading="lazy" />
+  <span class="portfolio-gallery-tile-overlay">{{ $p.Title }}</span>
+</a>

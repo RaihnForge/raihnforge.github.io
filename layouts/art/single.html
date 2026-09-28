@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $artType := false }}{{ range first 1 (where hugo.Data.art_taxonomy.types "id" .Params.art_type) }}{{ $artType = . }}{{ end }}
+{{ $artSub := false }}{{ with $artType }}{{ range first 1 (where .subtypes "id" $.Params.art_subtype) }}{{ $artSub = . }}{{ end }}{{ end }}
 {{ if .Params.pieces }}
 {{/* ═══════════════════════════════════════════════════════════
      CASE STUDY layout — pieces array present in frontmatter
@@ -10,7 +12,7 @@
       <span aria-hidden="true">/</span>
       <a href="/art/">Gallery</a>
       <span aria-hidden="true">/</span>
-      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+      {{ with $artType }}<a href="/art/type/{{ .id }}/">{{ .title }}</a>{{ else }}<a href="{{ $.Parent.RelPermalink }}">{{ $.Parent.Title }}</a>{{ end }}
       <span aria-hidden="true">/</span>
       {{ .Title }}
     </nav>
@@ -78,11 +80,7 @@
      ═══════════════════════════════════════════════════════════ */}}
 <article class="artwork-detail">
   <div class="artwork-image">
-    {{ with .Params.image }}
-    <img src="{{ . }}" alt="{{ $.Title }}" />
-    {{ else }}
-    <div class="artwork-placeholder" aria-label="Image not available"></div>
-    {{ end }}
+    <img src="{{ partial "img-src.html" .Params.image }}" alt="{{ .Title }}" />
   </div>
 
   <div class="artwork-info">
@@ -91,7 +89,7 @@
       <span aria-hidden="true">/</span>
       <a href="/art/">Gallery</a>
       <span aria-hidden="true">/</span>
-      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+      {{ with $artType }}<a href="/art/type/{{ .id }}/">{{ .title }}</a>{{ else }}<a href="{{ $.Parent.RelPermalink }}">{{ $.Parent.Title }}</a>{{ end }}
       <span aria-hidden="true">/</span>
       {{ .Title }}
     </nav>
@@ -99,6 +97,14 @@
     <h1>{{ .Title }}</h1>
 
     <dl class="artwork-meta">
+      {{ with $artType }}
+      <dt>Type</dt>
+      <dd><a href="/art/type/{{ .id }}/">{{ .title }}</a>{{ with $artSub }} · <a href="/art/type/{{ $artType.id }}/#sub-{{ .id }}">{{ .title }}</a>{{ end }}</dd>
+      {{ end }}
+      {{ with .Params.related }}
+      <dt>Related</dt>
+      <dd><a href="{{ . }}">{{ with site.GetPage . }}{{ .Title }}{{ else }}Devlog{{ end }}</a></dd>
+      {{ end }}
       {{ with .Params.medium }}
       <dt>Medium</dt>
       <dd><a href="{{ "/medium/" | relURL }}{{ . | urlize }}/">{{ . }}</a></dd>
@@ -141,21 +147,16 @@
 </article>
 {{ end }}
 
-{{/* Related works from same sub-section (exclude archived) */}}
-{{ $siblings := where .Parent.RegularPages "Params.archived" "ne" true }}
-{{ $related := $siblings | complement (slice .) }}
-{{ $related = first 3 $related }}
+{{/* Related works: best-rated others of the same type */}}
+{{ $pool := where (where .Site.RegularPages "Section" "art") "Params.art_type" .Params.art_type }}
+{{ $related := first 3 ((partial "art-ranked.html" $pool) | complement (slice .)) }}
 {{ if $related }}
 <section class="related-works" aria-label="Related works">
-  <h2>More {{ .Parent.Title }}</h2>
+  <h2>More {{ with $artType }}{{ .title }}{{ else }}{{ $.Parent.Title }}{{ end }}</h2>
   <div class="related-grid">
     {{ range $related }}
     <a href="{{ .RelPermalink }}" class="gallery-item">
-      {{ with .Params.image }}
-      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy" />
-      {{ else }}
-      <div class="gallery-placeholder" aria-hidden="true"></div>
-      {{ end }}
+      <img src="{{ partial "img-src.html" .Params.image }}" alt="{{ .Title }}" loading="lazy" />
       <div class="gallery-caption">
         <span class="gallery-title">{{ .Title }}</span>
         {{ with .Params.year }}<span class="gallery-year">{{ . }}</span>{{ end }}

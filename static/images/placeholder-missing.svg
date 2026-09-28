@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Image awaiting restoration">
+  <rect width="800" height="600" fill="#EEF0F5"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#C9CDD8" stroke-width="3" stroke-dasharray="14 10" rx="10"/>
+  <g transform="translate(400 262)" fill="none" stroke="#D4722A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-90" y="-62" width="180" height="124" rx="10"/>
+    <circle cx="-40" cy="-18" r="16"/>
+    <path d="M-90 50 L-24 -8 L22 34 L52 8 L90 44"/>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#5B6275">Image awaiting restoration</text>
+  <text x="400" y="460" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="20" fill="#8A90A0">Original lost in the WordPress migration</text>
+</svg>

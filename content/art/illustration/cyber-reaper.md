@@ -10,8 +10,12 @@ draft: false
 medium: "Digital"
 year: 2008
 recovered: true
+art_type: "stream-web"
+art_subtype: "banners"
+rating: 2
+curated: false
 ---
-[![Nerd Reaper](http://www.joshuakeyes.us/wordpress/raihn/images/12349312---1a2a3a_3B08/Nerd-Reaper_thumb.jpg "Nerd Reaper")](http://www.joshuakeyes.us/wordpress/raihn/images/12349312---1a2a3a_3B08/Nerd-Reaper.jpg)
+[![Nerd Reaper](/images/legacy/wordpress/raihn/images/12349312---1a2a3a_3B08/Nerd-Reaper_thumb.jpg "Nerd Reaper")](/images/legacy/wordpress/raihn/images/12349312---1a2a3a_3B08/Nerd-Reaper.jpg)
 
      A fun digital sketch exercise ran away from me as my mind raced as I envisioned the nerd reaper.  The gathering of digital souls is a large job, since Mario gamers have been plunging to there Deaths an uncountable number of times.
 

@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2012
+art_type: "logo-brand"
+art_subtype: "logo"
+rating: 8
+curated: false
 
 ---
 [![honeybadger_02](/images/recovered/honeybadger_02.png "honeybadger_02")](/images/recovered/honeybadger_02.png)

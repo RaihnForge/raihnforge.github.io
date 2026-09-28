@@ -31,9 +31,13 @@
   </div>
 </section>
 
-{{/* === Featured Work === */}}
-{{ $featured := where (where (where .Site.RegularPages "Params.featured" true) "Draft" false) "Params.archived" "ne" true }}
-{{ if $featured }}
+{{/* === Selected Work ===
+     Products first (gamedev product pages flagged featured), then the best art.
+     Both ordered best to worst by `rating`, same as every other listing. */}}
+{{ $products := where (where (where .Site.Pages "Kind" "section") "Section" "gamedev") "Params.featured" true }}
+{{ $products = first 3 (sort $products "Params.rating" "desc") }}
+{{ $art := first 6 (partial "art-ranked.html" (where .Site.RegularPages "Section" "art")) }}
+{{ if or $products $art }}
 <section class="featured-section" aria-label="Selected work">
   <div class="section-header">
     <h2>Selected Work</h2>
@@ -43,16 +47,22 @@
     </div>
   </div>
   <div class="featured-grid">
-    {{ range $featured }}
+    {{ range $products }}
     {{ $href := .RelPermalink }}{{ with .Params.external_url }}{{ $href = . }}{{ end }}
     <a href="{{ $href }}" class="featured-card">
-      {{ with .Params.image }}
-      <img src="{{ . }}" alt="{{ $.Title }}" class="featured-card-image" loading="lazy" />
-      {{ else }}
-      <div class="featured-card-placeholder" aria-hidden="true"></div>
-      {{ end }}
+      <img src="{{ partial "img-src.html" .Params.image }}" alt="{{ .Title }}" class="featured-card-image" loading="lazy" />
       <div class="featured-card-body">
-        <p class="featured-card-type">{{ .Section | humanize }}</p>
+        <p class="featured-card-type">Product{{ with .Params.status }} · {{ . }}{{ end }}</p>
+        <h3>{{ .Title }}</h3>
+        {{ with .Description }}<p>{{ . | truncate 100 }}</p>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+    {{ range $art }}
+    <a href="{{ .RelPermalink }}" class="featured-card">
+      <img src="{{ partial "img-src.html" .Params.image }}" alt="{{ .Title }}" class="featured-card-image" loading="lazy" />
+      <div class="featured-card-body">
+        <p class="featured-card-type">{{ $t := .Params.art_type }}{{ range first 1 (where hugo.Data.art_taxonomy.types "id" $t) }}{{ .title }}{{ else }}Art{{ end }}</p>
         <h3>{{ .Title }}</h3>
         {{ with .Description }}<p>{{ . | truncate 100 }}</p>{{ end }}
       </div>
@@ -87,7 +97,7 @@
 {{/* === CTA Band === */}}
 <section class="cta-band" aria-label="Contact">
   <h2>Interested in working together?</h2>
-  <p>I'm looking for Product Owner and product leadership opportunities.</p>
+  <p>{{ .Site.Params.subtitle }}</p>
   {{ with .Site.Params.email }}
   <a href="mailto:{{ . }}" class="btn-primary">Let's Talk</a>
   {{ end }}

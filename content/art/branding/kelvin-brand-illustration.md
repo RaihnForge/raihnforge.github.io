@@ -10,6 +10,10 @@ featured: true
 sampler: true
 archived: false
 draft: false
+art_type: "logo-brand"
+art_subtype: "identity"
+rating: 7
+curated: false
 ---
 
 Brand illustration system for Kelvin Education — mascot character, branded composition, and the visual context around the "Healthier, happier places to learn" promise.

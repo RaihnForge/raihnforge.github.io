@@ -4267,3 +4267,12 @@ button.portfolio-gallery-tile {
   border-top: 1px solid var(--border);
   font-size: var(--text-sm);
 }
+
+/* ── Gallery by type (2026-09-27) ───────────────────────────── */
+.gallery-filters--sub { margin-top: -0.5rem; }
+.gallery-filters .filter-count { opacity: 0.6; font-size: 0.85em; margin-left: 0.2em; }
+.portfolio-gallery-tile.is-missing img,
+.artwork-image img[src$="placeholder-missing.svg"],
+.featured-card-image[src$="placeholder-missing.svg"],
+img.img-missing { object-fit: contain; background: var(--bg); }
+img.img-missing { max-width: 420px; opacity: 0.85; }

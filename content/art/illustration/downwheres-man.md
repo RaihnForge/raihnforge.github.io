@@ -10,8 +10,12 @@ draft: false
 medium: "Digital"
 year: 2011
 recovered: true
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 2
+curated: false
 ---
-[![manshizzle_wallpaper_16-10](http://www.joshuakeyes.us/wordpress/raihn/images/1a4b0886043f_11DA0/manshizzle_wallpaper_16-10_thumb.jpg "manshizzle_wallpaper_16-10")](http://www.joshuakeyes.us/wordpress/raihn/images/1a4b0886043f_11DA0/manshizzle_wallpaper_16-10.jpg)
+[![manshizzle_wallpaper_16-10](/images/legacy/wordpress/raihn/images/1a4b0886043f_11DA0/manshizzle_wallpaper_16-10_thumb.jpg "manshizzle_wallpaper_16-10")](/images/legacy/wordpress/raihn/images/1a4b0886043f_11DA0/manshizzle_wallpaper_16-10.jpg)
 
 A friend of mine from the WCR community has been hard at work on creating a series of hilarious videos where he takes games that allow you to make morality decisions and plays out the meanest of the options. He commentates over the gaming for added entertainment.
 
@@ -24,9 +28,9 @@ Manshizzle Time Lapse Youtube background design by Joshua Keyes
 I couldn’t help spending some time today drawing up my version of Manshizzle. To make the endeavor worthwhile, and to send thanks to Downwhere for his hours of entertainment, I presented Manshizzle as a youtube background for his channel.
 
 Wallpapers:
-[16:9](http://joshuakeyes.us/raihn/images/manshizzle_wallpaper_16-9.jpg)
-[16:10](http://joshuakeyes.us/raihn/images/manshizzle_wallpaper_16-10.jpg)
-[4:3](http://joshuakeyes.us/raihn/images/manshizzle_wallpaper_4-3.jpg)
+[16:9](/images/legacy/raihn/images/manshizzle_wallpaper_16-9.jpg)
+[16:10](/images/legacy/raihn/images/manshizzle_wallpaper_16-10.jpg)
+[4:3](/images/legacy/raihn/images/manshizzle_wallpaper_4-3.jpg)
 
 Beware:  ‘Manshizzle will break you!’’
 

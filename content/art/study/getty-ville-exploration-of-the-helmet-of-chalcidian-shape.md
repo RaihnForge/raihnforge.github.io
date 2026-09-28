@@ -9,6 +9,10 @@ aliases:
 draft: false
 year: 2008
 archived: true
+art_type: "sketches"
+art_subtype: "study"
+rating: 3
+curated: false
 
 ---
 Getty Ville exploration of the

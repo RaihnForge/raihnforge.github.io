@@ -12,6 +12,10 @@ aliases:
 draft: false
 sampler: true
 portfolio: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 10
+curated: false
 ---
 [![](/images/wp-imports/blog/aware_export_512.png)](/images/wp-imports/blog/aware_export_512.png)
 
@@ -36,7 +40,7 @@ Getting to channel that same energy into a close-up portrait for someone who mai
 
 Once the digital piece was complete, I animated a looping .GIF to capture the MK’s fury mid-burst—eyes glowing, power crackling. But that wasn’t the final form.
 
-[![](https://raihn.wordpress.com/wp-content/uploads/2024/08/mkavatar.gif?w=326)](https://raihn.wordpress.com/wp-content/uploads/2024/08/mkavatar.gif)
+[![](/images/wp-imports/uploads/2024/08/mkavatar.gif)](/images/wp-imports/uploads/2024/08/mkavatar.gif)
 
 I also forged a **lenticular print**—a physical version that shifts between two images depending on the viewing angle. The result? A real-world illusion of the Mountain King’s eyes glowing with storm-charged intensity.
 It’s got that tactile magic I love—like holding a sliver of the storm in your hands.

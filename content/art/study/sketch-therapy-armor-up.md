@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2015
+art_type: "sketches"
+art_subtype: "other"
+rating: 5
+curated: false
 ---
 ###### [JoshuaKeyes_ST_20150423_ARMORUP](/images/wp-imports/art/joshuakeyes_st_20150423_armorup.png)Intimate insight cannot be pried from a person, it can only be shared. - Joshua B. Keyes
 

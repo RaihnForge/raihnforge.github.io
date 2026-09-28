@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2016
+art_type: "illustration"
+art_subtype: "ink"
+rating: 7
+curated: false
 ---
 ![parkerbirthday6](/images/wp-imports/art/parkerbirthday6.png)
 

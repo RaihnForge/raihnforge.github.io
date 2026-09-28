@@ -10,6 +10,10 @@ medium: "Pencil"
 year: 2007
 archived: true
 draft: false
+art_type: "concept-art"
+art_subtype: "character"
+rating: 3
+curated: false
 ---
 [![2007_revenge of red riding hood](/images/recovered/2007_revenge-of-red-riding-hood.jpg "2007_revenge of red riding hood")](/images/recovered/2007_revenge-of-red-riding-hood.jpg)
 

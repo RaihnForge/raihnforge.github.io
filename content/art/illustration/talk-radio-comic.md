@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2007
 archived: true
+art_type: "illustration"
+art_subtype: "ink"
+rating: 3
+curated: false
 
 ---
 [![](/images/recovered/raihn_wordpress_rich_marotta.jpg)](/images/recovered/raihn_wordpress_rich_marotta.jpg)

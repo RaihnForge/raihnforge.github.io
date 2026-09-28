@@ -10,14 +10,18 @@ draft: false
 medium: "Digital"
 year: 2012
 recovered: true
+art_type: "stream-web"
+art_subtype: "overlays"
+rating: 3
+curated: false
 ---
 I was commissioned to do a budget web splash page.  The purpose -to have a stream front that fans can navigate to and see multiple streams simultaneously in action, from a given team or group.  The challenge - to create a design in three hours.  While I accomplished the initial three hours concept goal, I did spend another three refining some of the ideas.
 
-[![sc2prostreamsC03](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC03_thumb.jpg "sc2prostreamsC03")](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC03.jpg)
+[![sc2prostreamsC03](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC03_thumb.jpg "sc2prostreamsC03")](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC03.jpg)
 
 **FOUR STREAMS ACTIVE – OFFLINE TAB DOWN**
 
-[![sc2prostreamsC04](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC04_thumb.jpg "sc2prostreamsC04")](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC04.jpg)
+[![sc2prostreamsC04](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC04_thumb.jpg "sc2prostreamsC04")](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC04.jpg)
 **FOUR STREAMS ACTIVE – OFFLINE TAB UP**
 
 The project was a success, but I really would like to explore the design and concept much further.  I truly believe its only about 20 percent of what it could be.  Some things that I’d like to explore:
@@ -38,7 +42,7 @@ The project was a success, but I really would like to explore the design and con
 
 But alas, time is the most valuable of resources!
 
-[![front](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/front_thumb.png "front")](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/front.png) 
+[![front](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/front_thumb.png "front")](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/front.png) 
 *Initial guide from client*
 
- [![sc2prostreams03](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreams03_thumb.jpg "sc2prostreams03")](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreams03.jpg)[![sc2prostreams06](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreams06_thumb.jpg "sc2prostreams06")](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreams06.jpg)    [![sc2prostreamsB01](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsB01_thumb.jpg "sc2prostreamsB01")](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsB01.jpg)[![sc2prostreamsB04](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsB04_thumb.jpg "sc2prostreamsB04")](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsB04.jpg)    [![sc2prostreamsC02](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC02_thumb.jpg "sc2prostreamsC02")](http://www.joshuakeyes.us/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC02.jpg)
+ [![sc2prostreams03](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreams03_thumb.jpg "sc2prostreams03")](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreams03.jpg)[![sc2prostreams06](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreams06_thumb.jpg "sc2prostreams06")](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreams06.jpg)    [![sc2prostreamsB01](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsB01_thumb.jpg "sc2prostreamsB01")](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsB01.jpg)[![sc2prostreamsB04](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsB04_thumb.jpg "sc2prostreamsB04")](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsB04.jpg)    [![sc2prostreamsC02](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC02_thumb.jpg "sc2prostreamsC02")](/images/legacy/wordpress/raihn/images/64a19c4a99e7_8817/sc2prostreamsC02.jpg)

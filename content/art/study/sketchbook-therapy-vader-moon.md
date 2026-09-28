@@ -10,6 +10,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2015
+art_type: "sketches"
+art_subtype: "digital"
+rating: 5
+curated: false
 ---
 [![Realize what you have become, and the power you wield to choose what you will be.](/images/wp-imports/art/sketchbook-therapybg.png)](/images/wp-imports/art/sketchbook-therapybg.png) Realize what you have become, and the power you wield to choose what you will be. -Joshua B. Keyes
 I believe we must first look inward before he can truly see outward. 

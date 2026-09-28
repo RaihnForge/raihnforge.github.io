@@ -22,6 +22,11 @@ collections:
       - { label: "Image", name: image, widget: image, required: false }
       - { label: "Medium", name: medium, widget: string, required: false, hint: "e.g. Digital, Pencil, Acrylic, Mixed Media" }
       - { label: "Year", name: year, widget: number, required: false }
+      - { label: "Art type", name: art_type, widget: select, required: false, options: [{ label: "Illustration", value: "illustration" }, { label: "Sketches & Studies", value: "sketches" }, { label: "Pixel Art", value: "pixel-art" }, { label: "Animation & Emotes", value: "animation" }, { label: "Concept Art", value: "concept-art" }, { label: "Logo & Brand", value: "logo-brand" }, { label: "Stream & Web Graphics", value: "stream-web" }], hint: "Primary Gallery category (data/art_taxonomy.json)" }
+      - { label: "Art subtype", name: art_subtype, widget: select, required: false, options: ["animated-avatars", "apparel", "avatars", "banners", "character", "cheermotes", "compositions", "digital", "emotes", "environment", "game-animation", "identity", "ink", "logo", "mixed", "other", "overlays", "pen", "pencil", "print", "props", "study", "tiles", "traditional-paint", "web-design"], hint: "Must belong to the chosen type; the Art Curator validates this" }
+      - { label: "Rating", name: rating, widget: number, value_type: int, min: 1, max: 10, required: false, hint: "1-10, higher is better. Drives every listing order, best first" }
+      - { label: "Curated", name: curated, widget: boolean, default: false, required: false, hint: "True once you have confirmed type/subtype/rating" }
+      - { label: "Related post", name: related, widget: string, required: false, hint: "Site path of a related devlog/post" }
       - { label: "Featured", name: featured, widget: boolean, default: false, required: false, hint: "Show on homepage 'Selected Work' grid" }
       - { label: "In Sampler", name: sampler, widget: boolean, default: false, required: false, hint: "Show in the cross-discipline sampler on /art/ landing" }
       - { label: "Portfolio Piece", name: portfolio, widget: boolean, default: false, required: false, hint: "Promote to the 'Portfolio pieces' tier on this discipline's bucket page" }
@@ -99,6 +104,14 @@ collections:
   - name: art-animation
     label: "Design > Animation & Motion"
     folder: content/art/animation
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields: *art_fields
+
+  - name: art-collection
+    label: "Design > Collection (curated imports)"
+    folder: content/art/collection
     create: true
     slug: "{{slug}}"
     extension: md

@@ -9,5 +9,9 @@ aliases:
   - "/art/starcraft2-fan-art/"
 tags: []
 draft: false
+art_type: "illustration"
+art_subtype: "pencil"
+rating: 6
+curated: false
 ---
 Fan art born out of late-night sessions playing StarCraft 2 with friends. The pieces range from quick pencil sketches to more finished digital illustrations inspired by the game's races and lore.

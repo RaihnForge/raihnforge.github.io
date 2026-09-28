@@ -10,9 +10,13 @@ draft: false
 medium: "Digital"
 year: 2007
 recovered: true
+art_type: "logo-brand"
+art_subtype: "apparel"
+rating: 2
+curated: false
 ---
 This is the packaging I created for DIP Enterprise's BJ Clinton bobble head.
-![](http://www.joshuakeyes.us/raihn/images/bj_clinton_box_template.jpg)
-![Front Panel](http://www.joshuakeyes.us/raihn/images/dip_bjclinton_box_front.jpg)
-![Side Panel](http://www.joshuakeyes.us/raihn/images/left_side_02.jpg)
-![Side Panel](http://www.joshuakeyes.us/raihn/images/dip_bjclinton_box_side.jpg)
+![](/images/legacy/raihn/images/bj_clinton_box_template.jpg)
+![Front Panel](/images/legacy/raihn/images/dip_bjclinton_box_front.jpg)
+![Side Panel](/images/legacy/raihn/images/left_side_02.jpg)
+![Side Panel](/images/legacy/raihn/images/dip_bjclinton_box_side.jpg)

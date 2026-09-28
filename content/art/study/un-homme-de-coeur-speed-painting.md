@@ -10,9 +10,13 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2010
+art_type: "concept-art"
+art_subtype: "character"
+rating: 4
+curated: false
 
 ---
-[![the Heart of a Man](/images/recovered/the-Heart-of-a-Man_thumb.jpg "the Heart of a Man")](http://www.joshuakeyes.us/wordpress/raihn/images/Un-Homme-de-Coeur-Speed-Painting_28DE/the-Heart-of-a-Man.jpg)
+[![the Heart of a Man](/images/recovered/the-Heart-of-a-Man_thumb.jpg "the Heart of a Man")](/images/legacy/wordpress/raihn/images/Un-Homme-de-Coeur-Speed-Painting_28DE/the-Heart-of-a-Man.jpg)
 
 This was another practice of listening to a specific song on repeat the entire time that I work on a piece.  The track is then used for the background music in the speedpainting.  The hope is that the piece really reflects something in the music, and it forces a lot of creativity from me even when I might not feel the most creative.
 

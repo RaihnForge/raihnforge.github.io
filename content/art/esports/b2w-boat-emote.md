@@ -13,6 +13,10 @@ archived: false
 draft: false
 related_sections:
   - "esports"
+art_type: "animation"
+art_subtype: "emotes"
+rating: 7
+curated: false
 ---
 
 B2WBoat is a Twitch emote built for the [Back2Warcraft](https://back2warcraft.com) channel. Like the rest of the B2W emote family, it has to do its job at 28, 56, and 112 pixel sizes, so the silhouette and color blocking carry most of the work. The artwork sits in the channel's running visual language alongside the other shoutcaster-specific emotes used during Warcraft III broadcasts.

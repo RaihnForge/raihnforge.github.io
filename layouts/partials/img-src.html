@@ -1,0 +1,12 @@
+{{- /* Returns a usable image path: the given local path if the file exists,
+       else the missing-image placeholder. External URLs pass through.
+       Usage: {{ $src := partial "img-src.html" .Params.image }} */ -}}
+{{- $src := . | default "" -}}
+{{- $out := "/images/placeholder-missing.svg" -}}
+{{- if and $src (hasPrefix $src "/") -}}
+  {{- $p := replace (index (split $src "?") 0) "%20" " " -}}
+  {{- if fileExists (printf "static%s" $p) -}}{{- $out = $src -}}{{- end -}}
+{{- else if $src -}}
+  {{- $out = $src -}}
+{{- end -}}
+{{- return $out -}}

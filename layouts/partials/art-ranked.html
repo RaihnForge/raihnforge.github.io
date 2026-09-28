@@ -1,0 +1,7 @@
+{{- /* Visible art pages sorted best-first: rating desc, then newest.
+       Arg: a page collection. Returns a slice. Every art listing goes through here
+       so "best to worst" means the same thing everywhere. */ -}}
+{{- $visible := where (where . "Params.archived" "ne" true) "Draft" false -}}
+{{- $byDate := $visible.ByDate.Reverse -}}
+{{- $out := sort $byDate "Params.rating" "desc" -}}
+{{- return $out -}}

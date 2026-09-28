@@ -10,12 +10,16 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2012
+art_type: "animation"
+art_subtype: "game-animation"
+rating: 5
+curated: false
 
 ---
-[![holiday-greeting-card](http://www.joshuakeyes.us/wordpress/raihn/images/Christmas-Card_7A9C/holiday-greeting-card_thumb.png "holiday-greeting-card")](http://www.joshuakeyes.us/wordpress/raihn/images/Christmas-Card_7A9C/holiday-greeting-card.png)
+[![holiday-greeting-card](/images/legacy/wordpress/raihn/images/Christmas-Card_7A9C/holiday-greeting-card_thumb.png "holiday-greeting-card")](/images/legacy/wordpress/raihn/images/Christmas-Card_7A9C/holiday-greeting-card.png)
 
-I found this Christmas Card I designed. My wife and I sent these out a couple of years ago. I love Christmas time and it was really great to pass out personalized cards to my friends and family. Maybe I can find the time to make another this year. If you like it, feel free to download the file, print at home, and fold your way to fun! ![Open-mouthed smile](http://www.joshuakeyes.us/wordpress/raihn/images/Christmas-Card_7A9C/wlEmoticon-openmouthedsmile.png)
+I found this Christmas Card I designed. My wife and I sent these out a couple of years ago. I love Christmas time and it was really great to pass out personalized cards to my friends and family. Maybe I can find the time to make another this year. If you like it, feel free to download the file, print at home, and fold your way to fun! ![Open-mouthed smile](/images/legacy/wordpress/raihn/images/Christmas-Card_7A9C/wlEmoticon-openmouthedsmile.png)
 
-[Download Print version to make your own card!](http://www.joshuakeyes.us/wordpress/raihn/images/Print-Ready-Christmas-Card.png)
-[![replays_button_download](/images/recovered/replays_button_download.png "replays_button_download")](/images/recovered/replays_button_download.png) [Right-Click ‘Save As’](http://www.joshuakeyes.us/wordpress/raihn/images/Print-Ready-Christmas-Card.png)
-[Fold instructions](http://www.joshuakeyes.us/wordpress/raihn/images/folding-instruction.png)
+[Download Print version to make your own card!](/images/legacy/wordpress/raihn/images/Print-Ready-Christmas-Card.png)
+[![replays_button_download](/images/recovered/replays_button_download.png "replays_button_download")](/images/recovered/replays_button_download.png) [Right-Click ‘Save As’](/images/legacy/wordpress/raihn/images/Print-Ready-Christmas-Card.png)
+[Fold instructions](/images/legacy/wordpress/raihn/images/folding-instruction.png)

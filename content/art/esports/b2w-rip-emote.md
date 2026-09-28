@@ -13,6 +13,10 @@ archived: false
 draft: false
 related_sections:
   - "esports"
+art_type: "animation"
+art_subtype: "emotes"
+rating: 7
+curated: false
 ---
 
 B2WRip is a Twitch emote made for the [Back2Warcraft](https://back2warcraft.com) channel, the long-running shoutcasting home for Warcraft III esports. The mark is built to be readable at Twitch's tiny emote sizes (28px, 56px, 112px) while still carrying the channel's visual personality, so it lands in chat the moment a play goes south.

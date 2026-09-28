@@ -9,5 +9,9 @@ aliases:
   - "/art/bring-the-light/"
 tags: []
 draft: false
+art_type: "illustration"
+art_subtype: "digital"
+rating: 8
+curated: false
 ---
 A fan illustration rooted in the Destiny universe. The piece focuses on the contrast between light and void — a theme central to Guardian mythology.

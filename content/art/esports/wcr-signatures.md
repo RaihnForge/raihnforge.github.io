@@ -10,18 +10,22 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2008
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 3
+curated: false
 
 ---
-![](http://www.joshuakeyes.us/raihn/images/wcr_sig_priestforever.jpg)
+![](/images/legacy/raihn/images/wcr_sig_priestforever.jpg)
 
 ![](/images/recovered/raihn_sigs_wcr_dark_death_knight.jpg)
 
 ![](/images/recovered/raihn_sigs_wcr_sig_raihn.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_sigs_teaser_signature_01.jpg)
+![](/images/legacy/raihn/images/raihn_sigs_teaser_signature_01.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_sigs_wcr_banner_replay_staff_c.jpg)
+![](/images/legacy/raihn/images/raihn_sigs_wcr_banner_replay_staff_c.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_sigs_sigf.gif)
+![](/images/legacy/raihn/images/raihn_sigs_sigf.gif)
 
 ![](/images/recovered/raihn_sigs_wcr_sig_sysshark.jpg)

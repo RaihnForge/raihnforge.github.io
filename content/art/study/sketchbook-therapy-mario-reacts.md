@@ -10,6 +10,10 @@ tags: []
 draft: false
 medium: "Digital"
 year: 2015
+art_type: "sketches"
+art_subtype: "other"
+rating: 5
+curated: false
 ---
 [![Sketchbook-Therapy-MarioReaction](/images/wp-imports/blog/sketchbook-therapy-marioreaction.png)](/images/wp-imports/blog/sketchbook-therapy-marioreaction.png) A hero is determined by one's reaction, not by ones station.  - Joshua B. Keyes
 There is a lot of misuse of the word 'hero' these days.  Sometimes people just assume if you are in the police department of the military you are a 'hero'.  While there are many heroic individual's that reside in these stations, it is not always the case.  Public servants should be treated with every bit of respect their station deserves, but bear in mind there are great minority of truly awful people in these stations as well, as I know from personal experience as an infantry Marine.  Be sure though, to recognize if you are a person saying *teachers are not trustworthy* because a child molester decided to wear their station as a disguise.

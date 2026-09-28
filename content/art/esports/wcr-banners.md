@@ -10,29 +10,33 @@ draft: false
 medium: "Digital"
 year: 2008
 recovered: true
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 2
+curated: false
 ---
 The following banners have been resized to fit this page. To view the actual size of the banner, simply click it. Thanks for viewing.
 
-[![](http://www.joshuakeyes.us/wcreplays/images/wcr_banner_radarman.jpg)](http://www.joshuakeyes.us/wcreplays/images/wcr_banner_radarman.jpg)
+[![](/images/legacy/wcreplays/images/wcr_banner_radarman.jpg)](/images/legacy/wcreplays/images/wcr_banner_radarman.jpg)
 
-[![](http://www.joshuakeyes.us/wcreplays/images/wcr_banner_dew33.jpg)](http://www.joshuakeyes.us/wcreplays/images/wcr_banner_dew33.jpg)
+[![](/images/legacy/wcreplays/images/wcr_banner_dew33.jpg)](/images/legacy/wcreplays/images/wcr_banner_dew33.jpg)
 
-[![](http://www.joshuakeyes.us/raihn/images/raihn_banner_amnesty_fireside_chat.jpg)](http://www.joshuakeyes.us/raihn/images/raihn_banner_amnesty_fireside_chat.jpg)
+[![](/images/legacy/raihn/images/raihn_banner_amnesty_fireside_chat.jpg)](/images/legacy/raihn/images/raihn_banner_amnesty_fireside_chat.jpg)
 
-[![](http://www.joshuakeyes.us/raihn/images/raihn_banner_raihnbanner.jpg)](http://www.joshuakeyes.us/raihn/images/raihn_banner_raihnbanner.jpg)
+[![](/images/legacy/raihn/images/raihn_banner_raihnbanner.jpg)](/images/legacy/raihn/images/raihn_banner_raihnbanner.jpg)
 
-[![](http://www.joshuakeyes.us/raihn/images/raihn_banner_give_me_five.jpg)](http://www.joshuakeyes.us/raihn/images/raihn_banner_give_me_five.jpg)
+[![](/images/legacy/raihn/images/raihn_banner_give_me_five.jpg)](/images/legacy/raihn/images/raihn_banner_give_me_five.jpg)
 
-[![](http://www.joshuakeyes.us/raihn/images/raihn_banner_news_650w.jpg)](http://www.joshuakeyes.us/raihn/images/raihn_banner_news_650w.jpg)
+[![](/images/legacy/raihn/images/raihn_banner_news_650w.jpg)](/images/legacy/raihn/images/raihn_banner_news_650w.jpg)
 
-[![](http://www.joshuakeyes.us/raihn/images/raihn_banner_panda_theorycraft_corner.jpg)](http://www.joshuakeyes.us/raihn/images/raihn_banner_panda_theorycraft_corner.jpg)
+[![](/images/legacy/raihn/images/raihn_banner_panda_theorycraft_corner.jpg)](/images/legacy/raihn/images/raihn_banner_panda_theorycraft_corner.jpg)
 
-[![](http://www.joshuakeyes.us/raihn/images/raihn_racewarsbanner.jpg)](http://www.joshuakeyes.us/raihn/images/raihn_racewarsbanner.jpg)
+[![](/images/legacy/raihn/images/raihn_racewarsbanner.jpg)](/images/legacy/raihn/images/raihn_racewarsbanner.jpg)
 
-[![](http://www.joshuakeyes.us/raihn/images/raihn_banner_raxbannerfin3.jpg)](http://www.joshuakeyes.us/raihn/images/raihn_banner_raxbannerfin3.jpg)
+[![](/images/legacy/raihn/images/raihn_banner_raxbannerfin3.jpg)](/images/legacy/raihn/images/raihn_banner_raxbannerfin3.jpg)
 
-[![](http://www.joshuakeyes.us/raihn/images/raihn_banner_acolyte_02.jpg)](http://www.joshuakeyes.us/raihn/images/raihn_banner_acolyte_02.jpg)
+[![](/images/legacy/raihn/images/raihn_banner_acolyte_02.jpg)](/images/legacy/raihn/images/raihn_banner_acolyte_02.jpg)
 
-[![](http://www.joshuakeyes.us/raihn/images/raihn_banner_wc3l_xiv.jpg)](http://www.joshuakeyes.us/raihn/images/raihn_banner_wc3l_xiv.jpg)
+[![](/images/legacy/raihn/images/raihn_banner_wc3l_xiv.jpg)](/images/legacy/raihn/images/raihn_banner_wc3l_xiv.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_icon_raihnicon.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_icon_give_me_five_02.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_icon_raxicon.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_icon_wc3l_xiv.jpg)
+![](/images/legacy/raihn/images/raihn_icon_raihnicon.jpg) ![](/images/legacy/raihn/images/raihn_icon_give_me_five_02.jpg) ![](/images/legacy/raihn/images/raihn_icon_raxicon.jpg) ![](/images/legacy/raihn/images/raihn_icon_wc3l_xiv.jpg)

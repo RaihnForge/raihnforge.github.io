@@ -19,4 +19,4 @@ Kicking back with feet on the coffee table and some good ol’ Starcraft competi
 
 [![Twarf](/images/recovered/Twarf.png "Twarf")](/images/recovered/Twarf.png)
 
-[![CCD_Walk01](/images/recovered/CCD_Walk01_thumb.png "CCD_Walk01")](http://www.joshuakeyes.us/wordpress/raihn/images/CreativeCogCoolDown_221B/CCD_Walk01.png)
+[![CCD_Walk01](/images/recovered/CCD_Walk01_thumb.png "CCD_Walk01")](/images/legacy/wordpress/raihn/images/CreativeCogCoolDown_221B/CCD_Walk01.png)

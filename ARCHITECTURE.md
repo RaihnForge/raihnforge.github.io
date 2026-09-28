@@ -83,7 +83,48 @@ Hugo `aliases` frontmatter is used to preserve old URLs when content moves betwe
 ## Taxonomies
 
 - `tags` — Standard tag taxonomy across all sections
-- `medium` — Art-specific: Digital, Pencil, Acrylic, Mixed Media, etc.
+- `medium` — Art-specific: Digital, Pencil, Acrylic, Mixed Media, etc. (legacy; mostly "Digital", superseded by `art_type` for browsing)
+- `art_type` — **Gallery type pages** at `/art/type/<id>/` (layout `layouts/art_type/term.html`)
+
+## Art Curation System (2026-09-27)
+
+Every art entry carries four curation fields, and **every art listing on the site is ordered by
+`rating`, best first** (ties go to the newer piece). That ordering lives in one partial,
+`layouts/partials/art-ranked.html`, so "best to worst" means the same thing everywhere.
+
+| Field | Meaning |
+|-------|---------|
+| `art_type` | Primary category. Ids are defined in `data/art_taxonomy.json` (never `type:`, which Hugo reserves) |
+| `art_subtype` | Secondary category; must belong to its type |
+| `rating` | 1–10, higher is better |
+| `curated` | `true` once Joshua has confirmed the three fields above; `false` means machine-guessed (seeded 2026-09-27) |
+| `related` | Optional site path of a devlog/post that the piece belongs to |
+
+**`data/art_taxonomy.json` is the single source of truth** for types, subtypes, their order and
+`show` (how many top works per type the Gallery hub shows). Change it there, then run
+`node tools/art-catalog/catalog.js` to flag entries that no longer fit.
+
+**Where the ordering is used:**
+- `/art/` shows the top `show` works per type, with "View all" linking to the type page.
+- `/art/type/<id>/` shows the full type, grouped by subtype.
+- Legacy folder pages (`/art/illustration/` etc.) stay live for old links.
+- Art pages list "More <Type>" by rating.
+- The homepage Selected Work shows the top 3 featured products, then the top 6 art pieces.
+
+**Tools (`tools/art-catalog/`, Node stdlib, not deployed):**
+
+| Script | Purpose |
+|--------|---------|
+| `curator.js` | Local **Art Curator**, http://localhost:3145. It has two tabs. **Works**: every entry with inline type, subtype and rating editing, plus a Confirm button; it writes the frontmatter directly. **Missing images**: every placeholder slot with its post, the original URL and a Wayback link; you can drop in a file and it lands at the exact path the post references. |
+| `catalog.js` | Inventory + taxonomy validation (exits 1 on invalid entries); `--json` for the full dump |
+| `localize-wp.js` | One-time/re-runnable: removes every own-WordPress URL from content, downloading what is still hosted. Map of every rewrite in `wp-url-map.json` |
+| `lib.js` | Shared frontmatter read/write (writes top-level scalars only, rest of file untouched) |
+
+**Missing media never 404s.** `partials/img-src.html` returns the given path if the file exists
+in `static/`, otherwise `/images/placeholder-missing.svg`. The markdown render hooks
+(`_default/_markup/render-image.html` / `render-link.html`) apply the same rule to body images
+and unwrap links to lost full-size originals. When the real file is dropped at the slot path,
+the placeholder disappears on the next build, and nothing in the content has to be edited.
 
 ## Design System
 
@@ -100,6 +141,9 @@ No build step for assets. Hugo handles Markdown-to-HTML. Static files are served
 - Images live in `static/images/` and are referenced via `/images/...` in front matter
 - `wp-imports/` contains media from WordPress migration (146 files)
 - `recovered/` contains manually recovered artwork
+- `wp-imports/uploads/` — media downloaded from raihn.wordpress.com on 2026-09-27 (67 files) so the WordPress site can be deleted
+- `legacy/` — **slots** for media from the lapsed joshuakeyes.us domain. Content points here; files are backfilled via the Art Curator
+- **Rule: no content may link to raihn.wordpress.com or joshuakeyes.us.** This repo is the long-term home for every asset. `localize-wp.js` enforces it and can be re-run.
 - Single CSS file — no preprocessor, no bundler
 
 ## CMS

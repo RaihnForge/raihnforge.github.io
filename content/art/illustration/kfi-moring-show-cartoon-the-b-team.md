@@ -10,7 +10,11 @@ draft: false
 medium: "Digital"
 year: 2013
 recovered: true
+art_type: "illustration"
+art_subtype: "ink"
+rating: 3
+curated: false
 ---
-[![bteam](http://www.joshuakeyes.us/wordpress/raihn/images/6d9aafa18d23_A662/bteam_thumb.png "bteam")](http://www.joshuakeyes.us/wordpress/raihn/images/6d9aafa18d23_A662/bteam.png)
+[![bteam](/images/legacy/wordpress/raihn/images/6d9aafa18d23_A662/bteam_thumb.png "bteam")](/images/legacy/wordpress/raihn/images/6d9aafa18d23_A662/bteam.png)
 
 Bill Carroll often fills in at the Bill Handel Show.  Bill noted that they didn’t have a cartoon, so I felt I should oblige.

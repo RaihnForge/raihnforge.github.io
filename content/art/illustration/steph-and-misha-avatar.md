@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2015
+art_type: "stream-web"
+art_subtype: "avatars"
+rating: 5
+curated: false
 
 ---
 [![](/images/recovered/Steph_and_Misha_SCREEN.png)](/images/recovered/Steph_and_Misha_SCREEN.png)

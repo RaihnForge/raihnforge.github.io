@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2015
 portfolio: true
+art_type: "illustration"
+art_subtype: "ink"
+rating: 7
+curated: false
 ---
 ![dangeroustreats_jbkeyes_by_raihnazure-d9ezsx1](/images/wp-imports/art/dangeroustreats_jbkeyes_by_raihnazure-d9ezsx1.png)
 

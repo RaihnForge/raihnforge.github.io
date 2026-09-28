@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{/* /art/type/<id>/ — the full gallery for one type, grouped by subtype,
+     every group ordered best to worst by rating. */}}
+{{ $tax := hugo.Data.art_taxonomy }}
+{{ $id := .Data.Term }}
+{{ $type := false }}{{ range first 1 (where $tax.types "id" $id) }}{{ $type = . }}{{ end }}
+{{ $ranked := partial "art-ranked.html" .Pages }}
+<div class="page-header">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span aria-hidden="true">/</span>
+    <a href="/art/">Gallery</a> <span aria-hidden="true">/</span>
+    {{ with $type }}{{ .title }}{{ else }}{{ $id }}{{ end }}
+  </nav>
+  <h1>{{ with $type }}{{ .title }}{{ else }}{{ $id }}{{ end }}</h1>
+  <p class="page-description">{{ len $ranked }} works, best first.</p>
+</div>
+
+<nav class="gallery-filters" aria-label="Types">
+  <a href="/art/">All</a>
+  {{ range $tax.types }}<a href="/art/type/{{ .id }}/"{{ if eq .id $id }} class="filter-active"{{ end }}>{{ .title }}</a>{{ end }}
+</nav>
+
+{{ with $type }}
+<nav class="gallery-filters gallery-filters--sub" aria-label="Subtypes">
+  {{ range .subtypes }}
+  {{ $n := len (where $ranked "Params.art_subtype" .id) }}
+  {{ if $n }}<a href="#sub-{{ .id }}">{{ .title }} <span class="filter-count">{{ $n }}</span></a>{{ end }}
+  {{ end }}
+</nav>
+{{ range .subtypes }}
+{{ $group := where $ranked "Params.art_subtype" .id }}
+{{ if $group }}
+{{ $sid := printf "sub-%s" .id }}
+<section class="portfolio-gallery-section" id="{{ $sid }}" aria-label="{{ .title }}" data-gallery-section="{{ $sid }}">
+  <h2 class="portfolio-gallery-heading">{{ .title }}</h2>
+  <div class="portfolio-gallery-grid">
+    {{ range $i, $p := $group }}{{ partial "art-tile.html" (dict "page" $p "section" $sid "idx" $i) }}{{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ partial "gallery-lightbox-modal.html" . }}
+{{ end }}

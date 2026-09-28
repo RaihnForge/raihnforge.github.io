@@ -11,6 +11,10 @@ draft: false
 medium: "Digital"
 year: 2005
 archived: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
 These are the images I created for 7Smurfs article from WCreplays.com. [Click here to view the original article](http://www.wcreplays.com/articles.php?get=295).

@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2007
 archived: true
+art_type: "illustration"
+art_subtype: "ink"
+rating: 3
+curated: false
 
 ---
 [![gore](/images/recovered/gore.jpg "gore")](/images/recovered/gore.jpg)

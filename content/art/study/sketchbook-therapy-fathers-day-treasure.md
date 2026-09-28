@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2015
+art_type: "sketches"
+art_subtype: "other"
+rating: 5
+curated: false
 
 ---
 [![](/images/recovered/ST_FathersDayAdventure05.png)](/images/recovered/ST_FathersDayAdventure05.png)

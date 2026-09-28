@@ -11,6 +11,10 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2007
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 3
+curated: false
 
 ---
 **Disclaimer**
@@ -18,20 +22,20 @@ Any views or opinion represented in the assets of Politically Correct the Game b
 
 ## Flash Advertisements
 
-- [Click here to view large KFI flash ad](http://www.joshuakeyes.us/raihn/flash/kfi_banner1_pcthegame_final2.html).
+- Click here to view large KFI flash ad.
 
-- [Click here to view small KFI flash ad](http://www.joshuakeyes.us/raihn/flash/kfi_banner2_pcthegame_final2.html).
+- Click here to view small KFI flash ad.
 
 ## Print Advertisements
 
-[![Newsmax Magazine Advertisement](http://www.joshuakeyes.us/raihn/images/newsmax_ad_pcthegame2.jpg)](http://www.joshuakeyes.us/raihn/images/newsmax_ad_pcthegame2.jpg)
+[![Newsmax Magazine Advertisement](/images/legacy/raihn/images/newsmax_ad_pcthegame2.jpg)](/images/legacy/raihn/images/newsmax_ad_pcthegame2.jpg)
 ![The Washington Post ad](/images/recovered/pctg_ad_washington_post_v1.jpg)
 
-[![Leatherneck Magazine Advertisement](http://www.joshuakeyes.us/raihn/images/dip_leatherneck_cmyk_ad.jpg)](http://www.joshuakeyes.us/raihn/images/dip_leatherneck_cmyk_ad.jpg)
-[![Flier for PC the Game](http://www.joshuakeyes.us/raihn/images/flyer_pcthegame.jpg)](http://www.joshuakeyes.us/raihn/images/flyer_pcthegame.jpg)
+[![Leatherneck Magazine Advertisement](/images/legacy/raihn/images/dip_leatherneck_cmyk_ad.jpg)](/images/legacy/raihn/images/dip_leatherneck_cmyk_ad.jpg)
+[![Flier for PC the Game](/images/legacy/raihn/images/flyer_pcthegame.jpg)](/images/legacy/raihn/images/flyer_pcthegame.jpg)
 
-![Flier for BJ Clinton Bobble Head](http://www.joshuakeyes.us/raihn/images/dip_bobblehead_flyer.jpg)
+![Flier for BJ Clinton Bobble Head](/images/legacy/raihn/images/dip_bobblehead_flyer.jpg)
 
 ## Web Advertisements
 
-[![PCtheGame.com Game Materials Advertisement](http://www.joshuakeyes.us/raihn/images/game_mats.jpg)](http://www.joshuakeyes.us/raihn/images/game_mats.jpg)![PCtheGame.com T-Shirt advertisement](http://www.joshuakeyes.us/raihn/images/i_vote_black.jpg)
+[![PCtheGame.com Game Materials Advertisement](/images/legacy/raihn/images/game_mats.jpg)](/images/legacy/raihn/images/game_mats.jpg)![PCtheGame.com T-Shirt advertisement](/images/legacy/raihn/images/i_vote_black.jpg)

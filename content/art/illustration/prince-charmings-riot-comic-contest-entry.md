@@ -11,6 +11,10 @@ archived: false
 draft: false
 medium: "Sequential"
 year: 2012
+art_type: "illustration"
+art_subtype: "ink"
+rating: 5
+curated: false
 ---
 [![comic_with_text](/images/recovered/comic_with_text.jpg "comic_with_text")](/images/recovered/comic_with_text.jpg)
 
@@ -25,4 +29,4 @@ I entered a League of Legends comic contest held by riot games.  It was very en
 
 I would love to return to this piece and fix a lot of the coloring.  Though, one of the greatest things I learned through this experience is that a commercial artist is expected to hit deadlines, even at the cost of perceived deadlines.  Even though I am pained by the rushed colors, most of the feed back I’ve received is that the style adds to the feel of the overall work.
 
-[![jayce_02](http://www.joshuakeyes.us/wordpress/raihn/images/0468185aea5b_10C28/jayce_02_thumb.png "jayce_02")](http://www.joshuakeyes.us/wordpress/raihn/images/0468185aea5b_10C28/jayce_02.png)       [![jayce_01b](http://www.joshuakeyes.us/wordpress/raihn/images/0468185aea5b_10C28/jayce_01b_thumb_3.png "jayce_01b")](http://www.joshuakeyes.us/wordpress/raihn/images/0468185aea5b_10C28/jayce_01b_3.png)
+[![jayce_02](/images/legacy/wordpress/raihn/images/0468185aea5b_10C28/jayce_02_thumb.png "jayce_02")](/images/legacy/wordpress/raihn/images/0468185aea5b_10C28/jayce_02.png)       [![jayce_01b](/images/legacy/wordpress/raihn/images/0468185aea5b_10C28/jayce_01b_thumb_3.png "jayce_01b")](/images/legacy/wordpress/raihn/images/0468185aea5b_10C28/jayce_01b_3.png)

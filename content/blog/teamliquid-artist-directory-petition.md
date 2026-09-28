@@ -35,7 +35,7 @@ Hello TeamLiquid!  I’m Joshua ‘Raihn’ Keyes, I’ve been around eSports f
 
 **Feature 4:** Grubby’s Elite Guard – Wallpaper and Stream Background
 
-[![Grubby-Elite-Stalker](/images/recovered/GrubbyEliteStalker_thumb.jpg "Grubby-Elite-Stalker")](http://www.joshuakeyes.us/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/GrubbyEliteStalker.jpg)
+[![Grubby-Elite-Stalker](/images/recovered/GrubbyEliteStalker_thumb.jpg "Grubby-Elite-Stalker")](/images/legacy/wordpress/raihn/images/PetitiontoaddmyselftotheTLArtistAchieve_14E59/GrubbyEliteStalker.jpg)
 
 **Feature 3:** TeamLiquid Twitter Back-ground Images
 
@@ -43,4 +43,4 @@ Hello TeamLiquid!  I’m Joshua ‘Raihn’ Keyes, I’ve been around eSports f
 
 **Feature 6:** Indie Game – Animation, Illustration, Game Design, Interface, Creative Dev[![circleSelect_01](/images/recovered/circleSelect_01.png "circleSelect_01")](/images/recovered/circleSelect_01.png)
 
-[www.Raihn.wordpress.com](http://www.Raihn.wordpress.com)
+[raihnforge.github.io](/)

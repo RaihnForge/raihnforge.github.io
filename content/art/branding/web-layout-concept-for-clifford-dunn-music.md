@@ -10,6 +10,10 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2008
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 3
+curated: false
 
 ---
 Click to see larger versions of each graphic.
@@ -20,4 +24,4 @@ Concept #1
 
 Concept #2
 
-[![](http://www.joshuakeyes.us/raihn/images/weblayout_cliffconcept_02.jpg)](http://www.joshuakeyes.us/raihn/images/weblayout_cliffconcept_02.jpg)
+[![](/images/legacy/raihn/images/weblayout_cliffconcept_02.jpg)](/images/legacy/raihn/images/weblayout_cliffconcept_02.jpg)

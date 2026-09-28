@@ -8,5 +8,9 @@ aliases:
   - "/art/sketchbook-therapy-easter-detective/"
 draft: false
 year: 2015
+art_type: "sketches"
+art_subtype: "other"
+rating: 5
+curated: false
 ---
 [![SketchbookTherapy_EasterDetective](/images/wp-imports/art/sketchbooktherapy_easterdetective.png)](/images/wp-imports/art/sketchbooktherapy_easterdetective.png) What a wonderful weekend to be a great detective. Happy Easter! - Joshua B. Keyes

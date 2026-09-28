@@ -10,9 +10,13 @@ draft: false
 medium: "Digital"
 year: 2009
 recovered: true
+art_type: "sketches"
+art_subtype: "digital"
+rating: 2
+curated: false
 ---
 Here's the speedpainting to a web asset created for WCReplays.com. Enjoy!
 
 {{< youtube "yWFOpdHO7ZQ" >}}
 
-[![](http://www.joshuakeyes.us/raihn/images/4race_gen_%20hu_blog_post.jpg)](http://www.joshuakeyes.us/raihn/images/4race_gen_%20hu_blog_post.jpg)
+[![](/images/legacy/raihn/images/4race_gen_ hu_blog_post.jpg)](/images/legacy/raihn/images/4race_gen_ hu_blog_post.jpg)

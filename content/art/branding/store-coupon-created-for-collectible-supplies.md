@@ -10,5 +10,9 @@ archived: true
 draft: false
 year: 2008
 recovered: true
+art_type: "logo-brand"
+art_subtype: "print"
+rating: 3
+curated: false
 ---
 ![Store Coupon for Collectible Supplies](/images/recovered/collectible_supplies_discount_04.jpg)

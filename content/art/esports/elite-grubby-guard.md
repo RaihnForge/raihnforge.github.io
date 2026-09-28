@@ -13,6 +13,10 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2012
+art_type: "stream-web"
+art_subtype: "overlays"
+rating: 5
+curated: false
 ---
 [![Grubby Elite Stalker](/images/recovered/Grubby-Elite-Stalker.jpg "Grubby Elite Stalker")](/images/recovered/Grubby-Elite-Stalker.jpg)
 CHEER FOR GRUBBY AT MLG!
@@ -26,7 +30,7 @@ Though hurried, I enjoyed the work on the ‘blinking’ effect as well.  It wa
 
 As I stated I lost the master file twice, and had to recover from .jpg screen shots.  This means I lost half of my originals resolution, added compression distortion, and a loss of all workable layers.  Some of the aspects of the blink effect were designed to cover up some of the loss in layer illustration, and to integrate the resolution/compression noise into something that might feel almost purposeful.
 
-[![demo_overlay_again01](/images/recovered/demo_overlay_again01_thumb.jpg "demo_overlay_again01")](http://www.joshuakeyes.us/wordpress/raihn/images/88b44ab7645e_FF2/demo_overlay_again01.jpg)    [![demo_overlay_again02](/images/recovered/demo_overlay_again02_thumb_3.jpg "demo_overlay_again02")](http://www.joshuakeyes.us/wordpress/raihn/images/88b44ab7645e_FF2/demo_overlay_again02_3.jpg)
+[![demo_overlay_again01](/images/recovered/demo_overlay_again01_thumb.jpg "demo_overlay_again01")](/images/legacy/wordpress/raihn/images/88b44ab7645e_FF2/demo_overlay_again01.jpg)    [![demo_overlay_again02](/images/recovered/demo_overlay_again02_thumb_3.jpg "demo_overlay_again02")](/images/legacy/wordpress/raihn/images/88b44ab7645e_FF2/demo_overlay_again02_3.jpg)
 
 The work definitely is a testimony to keeping a cloud project folder.  Despite having multiples backups, including cloud, I was blissfully working out of the sync folder.  Be advised, its not a good idea!  I prefer Dropbox while I work on all my work.  It includes version control, which is a LIFE saver.  Have you ever resized or flattened your file for export of a demo draft, to later find out you forgot to undo and now you are looking a flattened image of your hours of work?  Dropbox has you covered, just recover a previously saved version, and you are ready to roll.  No this is not an ad for dropbox, but it is a suggestion to any one working on digital files to consider a cloud storage service with version control.
 

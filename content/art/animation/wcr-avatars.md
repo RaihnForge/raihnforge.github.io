@@ -11,8 +11,12 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2008
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 3
+curated: false
 
 ---
-![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_kage.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_foh.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_fury2.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_lockon.jpg)
+![](/images/legacy/raihn/images/raihn_avatar_wcr_kage.jpg) ![](/images/legacy/raihn/images/raihn_avatar_wcr_foh.jpg) ![](/images/legacy/raihn/images/raihn_avatar_wcr_fury2.jpg) ![](/images/legacy/raihn/images/raihn_avatar_wcr_lockon.jpg)
 
-![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_raihn.jpg) ![](/images/recovered/raihn_avatar_wcr_raihnavatar.gif) ![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_wcr_breaker.jpg) ![](http://www.joshuakeyes.us/raihn/images/raihn_avatar_sys_shark_avatar_02.jpg)
+![](/images/legacy/raihn/images/raihn_avatar_wcr_raihn.jpg) ![](/images/recovered/raihn_avatar_wcr_raihnavatar.gif) ![](/images/legacy/raihn/images/raihn_avatar_wcr_breaker.jpg) ![](/images/legacy/raihn/images/raihn_avatar_sys_shark_avatar_02.jpg)

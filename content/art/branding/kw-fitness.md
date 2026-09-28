@@ -21,6 +21,10 @@ pieces:
 link:
   label: "Visit kwfitness.org"
   href: "https://www.kwfitness.org/"
+art_type: "logo-brand"
+art_subtype: "logo"
+rating: 9
+curated: false
 ---
 
 KW Fitness is a coach-led group-fitness community for women, running strength and HIIT classes out of the FIT4MOM Eastside Studio in Redmond, Washington. The brief was a full ground-up brand system — mark, logotype, supporting identity, and production execution across the web experience — built around the message *"come for the strength, stay for the community."* The mark needed to feel capable and grounded without leaning on the generic visual clichés of women's fitness branding.

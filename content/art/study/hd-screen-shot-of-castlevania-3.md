@@ -10,10 +10,14 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2009
+art_type: "sketches"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
 One of my favorite games of all time.  This is inspired by Goat at www.Powergoat.com  Check out his Unchosen Paths Project.
-[![Castlevania 3 - Stage 1 - Original Screenshot](http://www.joshuakeyes.us/raihn/images/Beginning.gif "Castlevania 3 - Stage 1 - Original Screenshot")](http://www.joshuakeyes.us/raihn/images/Beginning.gif)
+[![Castlevania 3 - Stage 1 - Original Screenshot](/images/legacy/raihn/images/Beginning.gif "Castlevania 3 - Stage 1 - Original Screenshot")](/images/legacy/raihn/images/Beginning.gif)
 [![Castlevania 3 - Stage 1 - HD screenshot - by Joshua Keyes](/images/recovered/wallpaper_castlevania_800.jpg "Castlevania 3 - Stage 1 - HD screenshot - by Joshua Keyes")](/images/recovered/wallpaper_castlevania_800.jpg)
 
 {{< youtube "U2ZM9Z_m-kI" >}}

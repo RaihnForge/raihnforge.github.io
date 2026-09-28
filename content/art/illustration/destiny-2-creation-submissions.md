@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2019
+art_type: "sketches"
+art_subtype: "pencil"
+rating: 6
+curated: false
 ---
 [![](/images/wp-imports/art/vexsim-76777.jpg)](/images/wp-imports/art/vexsim-76777.jpg)
 [![](/images/wp-imports/art/bringthelight_joshuakeyes.jpg)](/images/wp-imports/art/bringthelight_joshuakeyes.jpg)

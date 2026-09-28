@@ -6,4 +6,4 @@ aliases:
   - /art/graphic-design/
 ---
 
-Each discipline below is its own portfolio — selected pieces up front, the deeper archive behind them.
+Sorted by type, strongest work first. Open any type to see the full collection.

@@ -10,7 +10,11 @@ draft: false
 medium: "Digital"
 year: 2007
 recovered: true
+art_type: "logo-brand"
+art_subtype: "print"
+rating: 2
+curated: false
 ---
 This is the instructions booklet I created for DIP Enterprise's boardgame, Politically Correct the Game.
-![](http://www.joshuakeyes.us/raihn/images/pctg_instructions_page_1-4.jpg)
-![](http://www.joshuakeyes.us/raihn/images/pctg_instructions_page_2-3.jpg)
+![](/images/legacy/raihn/images/pctg_instructions_page_1-4.jpg)
+![](/images/legacy/raihn/images/pctg_instructions_page_2-3.jpg)

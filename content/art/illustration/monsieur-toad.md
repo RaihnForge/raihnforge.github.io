@@ -10,9 +10,13 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2012
+art_type: "sketches"
+art_subtype: "digital"
+rating: 5
+curated: false
 
 ---
-[![monsieur_toad.jpg](http://www.joshuakeyes.us/wordpress/raihn/images/14ea74d76792_146E4/monsieur_toad.jpg_thumb.jpg "monsieur_toad.jpg")](http://www.joshuakeyes.us/wordpress/raihn/images/14ea74d76792_146E4/monsieur_toad.jpg.jpg)
+[![monsieur_toad.jpg](/images/legacy/wordpress/raihn/images/14ea74d76792_146E4/monsieur_toad.jpg_thumb.jpg "monsieur_toad.jpg")](/images/wp-imports/art/monsieur_toad.jpg)
  All for one, and one for all!  A fun little sketch I did today for a friend who’s online nick is Monsieur Toad.  Despite his colorful appearance and confident smirk, this little guy is not to be taken lightly!  He is bound by honor!
 This sketch was a focus on exercising and stretching my abilities through utilization of Photoshops brush tools.  Specifically, I used a pencil setting for nearly all of this image.  It took a little to work out the setting, but before I knew it, I was back in my element, sketch, sketching away like I was in high school biology class again.
 My favorite part of the image is its fun filled humor mixed with the mirth of mischievousness.  I feel like this frog has it all figured out, before even I do.  I take heart in knowing he is an honorable sort, for the most part..

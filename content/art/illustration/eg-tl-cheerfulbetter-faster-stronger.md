@@ -10,6 +10,10 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2013
+art_type: "sketches"
+art_subtype: "other"
+rating: 5
+curated: false
 
 ---
 [![EGTL4](/images/recovered/EGTL4_thumb.png "EGTL4")](/images/recovered/EGTL_BG.jpg)
@@ -18,4 +22,4 @@ Update:  EGTL Cheerful Turned into a wallpaper.  Click for 1920x1280 version.
 
 I’m pretty sad about the results today, but my faith has not faltered!!  WE CAN DO IT!  <3 Raihn
 
-[![EGTL](/images/recovered/EGTL_thumb_4.png "EGTL")](http://www.joshuakeyes.us/wordpress/raihn/images/EG-TL-CheerfulBetter-Faster-Stronger_143FF/EGTL_4.png)
+[![EGTL](/images/recovered/EGTL_thumb_4.png "EGTL")](/images/legacy/wordpress/raihn/images/EG-TL-CheerfulBetter-Faster-Stronger_143FF/EGTL_4.png)

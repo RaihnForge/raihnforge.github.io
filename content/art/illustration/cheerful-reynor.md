@@ -12,5 +12,9 @@ tags: []
 draft: false
 sampler: true
 portfolio: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 7
+curated: false
 ---
 A tribute piece for Reynor (Riccardo Romiti), the Italian StarCraft 2 professional player and world champion. Created to celebrate his rise in the competitive scene.

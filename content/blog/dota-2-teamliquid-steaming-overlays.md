@@ -16,7 +16,7 @@ I’ve been working on the DotA 2 overlays and I now have the pleasure of sharin
 [![DotaDraft_18](/images/recovered/DotaDraft_18_thumb.png "DotaDraft_18")](/images/recovered/DotaDraft_17b.png)
 Final Draft 16:9 aspect ratio
 
-[![DotaDraft_19_1610](/images/recovered/DotaDraft_19_1610_thumb.png "DotaDraft_19_1610")](http://www.joshuakeyes.us/wordpress/raihn/images/Sven-Sketch_D095/DotaDraft_19_1610.png)
+[![DotaDraft_19_1610](/images/recovered/DotaDraft_19_1610_thumb.png "DotaDraft_19_1610")](/images/legacy/wordpress/raihn/images/Sven-Sketch_D095/DotaDraft_19_1610.png)
 Final Draft 16:10 aspect ratio
 
 I had this intense sense of nostalgia as I was designing and illustrating aspects of this overlay.  I spent about 7 years at WCReplays.com as graphics staff.  It was where I learned of eSports and found something of a home for my passion of competitive gameplay as well as my artistic aspirations.  I spent a lot of time trying to marry the idea of fantasy art with eSports.  As you probably know, that concept is pretty much behind us as we have had the pleasure of consuming content from HoN, LoL, dare I say WoW, and of course DotA.

@@ -9,5 +9,9 @@ aliases:
   - "/art/ghost-reign/"
 tags: []
 draft: false
+art_type: "illustration"
+art_subtype: "digital"
+rating: 5
+curated: false
 ---
 An entry submitted to the official StarCraft Remastered portrait contest. The piece depicts the Ghost unit in a painterly style intended to complement the remastered visual direction.

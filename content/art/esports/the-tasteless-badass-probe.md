@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2008
 archived: true
+art_type: "stream-web"
+art_subtype: "banners"
+rating: 3
+curated: false
 
 ---
 #####

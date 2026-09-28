@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2012
+art_type: "stream-web"
+art_subtype: "overlays"
+rating: 5
+curated: false
 
 ---
 [![TL_Overlay5_hydracooled_sample54](/images/recovered/TL_Overlay5_hydracooled_sample54.jpg "TL_Overlay5_hydracooled_sample54")](/images/recovered/TL_Overlay5_hydracooled_sample54.jpg)

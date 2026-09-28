@@ -9,6 +9,10 @@ aliases:
   - "/art/destiny-avatar-e4-keyez/"
 tags: []
 draft: false
+art_type: "illustration"
+art_subtype: "digital"
+rating: 8
+curated: false
 ---
 E4 KEYEZ is my Destiny character — the Guardian I've sunk hundreds of hours into. This piece was a personal project: building a proper avatar for the PlayStation Network profile using the character as a foundation but pushing beyond what the game renders.
 

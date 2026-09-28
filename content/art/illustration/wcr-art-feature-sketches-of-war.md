@@ -10,6 +10,10 @@ draft: false
 medium: "Ink"
 year: 2005
 archived: true
+art_type: "sketches"
+art_subtype: "pen"
+rating: 3
+curated: false
 
 ---
 ![](/images/recovered/wcr_art_feature_07_sow01.jpg)

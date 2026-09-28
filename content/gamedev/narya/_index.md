@@ -6,12 +6,13 @@ status: "Released"
 engine: "PowerShell / Windows"
 role: "Creator & Developer"
 timeline: "2026"
-featured: false
+featured: true
 image: "/images/gamedev/narya.png"
 icon: "/images/gamedev/icons/narya.svg"
 banner_tint: "#E2603E"
 tags: ["Developer Tool", "Windows", "PowerShell", "GPU", "Open Source"]
 draft: false
+rating: 8
 ---
 
 **Narya - the Ring of Fire** is a tiny Windows system-tray tool that answers a question laptops keep hidden: *which apps are actually using my real GPU, and how hard?*

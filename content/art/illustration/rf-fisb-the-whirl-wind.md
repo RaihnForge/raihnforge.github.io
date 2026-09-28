@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2019
+art_type: "illustration"
+art_subtype: "digital"
+rating: 8
+curated: false
 ---
 ![](/images/wp-imports/art/fan-sc-thewhirlwind_joshuakeyes.png)
 

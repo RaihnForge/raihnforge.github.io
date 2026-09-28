@@ -30,6 +30,10 @@ pieces:
   - src: "/images/graphic-design/esports/victorious-gaming.png"
     type: "Broadcast Overlay"
     caption: "Victorious Gaming — overlay branding for a competitive esports organization."
+art_type: "stream-web"
+art_subtype: "overlays"
+rating: 7
+curated: false
 ---
 
 Half a decade of professional esports broadcast work. Stream overlays, event splashes, and in-game graphic systems for Team Liquid (StarCraft 2, Dota 2), Team Grubby, Back2Warcraft, Victorious Gaming, and the Warcraft 3 community. Broadcast graphics demand a specific discipline: **dense information presented in a readable hierarchy that never upstages the game itself.**

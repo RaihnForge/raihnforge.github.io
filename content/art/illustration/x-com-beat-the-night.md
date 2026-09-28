@@ -10,9 +10,13 @@ archived: false
 draft: false
 medium: "Sequential"
 year: 2014
+art_type: "illustration"
+art_subtype: "ink"
+rating: 5
+curated: false
 
 ---
-[![step-03 finalize](/images/recovered/step03finalize_thumb.jpg "step-03 finalize")](http://www.joshuakeyes.us/wordpress/raihn/images/XComBeattheNight_F221/step03finalize.jpg) 
+[![step-03 finalize](/images/recovered/step03finalize_thumb.jpg "step-03 finalize")](/images/legacy/wordpress/raihn/images/XComBeattheNight_F221/step03finalize.jpg) 
 For all those who’ve played the classic X-COM UFO DEFENCE game, you’ll know that one of the most important skills to learn is how to stall for Day missions.  Luckily, OpenXCom allows you to hover over a given crash site or terror mission until the glorious sun rises over the mission objective.  Sometimes, however, you’ll have no time to wait.
 
 This art was a joint effort between myself and a good friend, Kayfix.  Still one of my favorite web comics ever!

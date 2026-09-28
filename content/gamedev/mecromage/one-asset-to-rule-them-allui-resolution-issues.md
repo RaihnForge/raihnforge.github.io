@@ -25,10 +25,10 @@ You haven’t seen the last of me, Inventory Screen, we will be meeting again ve
 
 ..Probably tomorrow :/
 
-[![menu_demo_08_chrHD](http://www.joshuakeyes.us/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_chrHD_thumb.png "menu_demo_08_chrHD")](http://www.joshuakeyes.us/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_chrHD.png)
+[![menu_demo_08_chrHD](/images/legacy/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_chrHD_thumb.png "menu_demo_08_chrHD")](/images/legacy/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_chrHD.png)
 
-[![menu_demo_08_chrSD](http://www.joshuakeyes.us/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_chrSD_thumb.png "menu_demo_08_chrSD")](http://www.joshuakeyes.us/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_chrSD.png)
+[![menu_demo_08_chrSD](/images/legacy/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_chrSD_thumb.png "menu_demo_08_chrSD")](/images/legacy/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_chrSD.png)
 
-[![menu_demo_08_invHD](http://www.joshuakeyes.us/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_invHD_thumb.png "menu_demo_08_invHD")](http://www.joshuakeyes.us/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_invHD.png)
+[![menu_demo_08_invHD](/images/legacy/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_invHD_thumb.png "menu_demo_08_invHD")](/images/legacy/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_invHD.png)
 
-[![menu_demo_08_invSD](/images/recovered/menu_demo_08_invSD.png "menu_demo_08_invSD")](http://www.joshuakeyes.us/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_invSD_3.png)
+[![menu_demo_08_invSD](/images/recovered/menu_demo_08_invSD.png "menu_demo_08_invSD")](/images/legacy/wordpress/raihn/images/2f4edefaaa09_15165/menu_demo_08_invSD_3.png)

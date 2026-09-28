@@ -10,6 +10,10 @@ draft: false
 medium: "Pencil"
 year: 2007
 archived: true
+art_type: "sketches"
+art_subtype: "study"
+rating: 3
+curated: false
 
 ---
 [![lifedraw_concern](/images/recovered/lifedraw_concern.jpg "lifedraw_concern")](/images/recovered/lifedraw_concern.jpg)

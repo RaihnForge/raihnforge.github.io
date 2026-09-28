@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2005
 archived: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
 ![](/images/recovered/wcr_art_feature_03)

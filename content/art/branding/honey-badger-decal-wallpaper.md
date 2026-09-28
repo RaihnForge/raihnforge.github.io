@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2018
+art_type: "stream-web"
+art_subtype: "banners"
+rating: 6
+curated: false
 ---
 ![honeybadgerDT_JoshuaKeyes](/images/wp-imports/art/honeybadgerdt_joshuakeyes.png)
 

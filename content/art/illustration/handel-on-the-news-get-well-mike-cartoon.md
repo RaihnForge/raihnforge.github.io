@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2012
+art_type: "illustration"
+art_subtype: "ink"
+rating: 5
+curated: false
 
 ---
 [![get_well_mike_color_02](/images/recovered/get_well_mike_color_02.png "get_well_mike_color_02")](/images/recovered/get_well_mike_color_02.png)

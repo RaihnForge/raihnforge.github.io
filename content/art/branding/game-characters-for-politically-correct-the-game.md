@@ -11,12 +11,16 @@ draft: false
 medium: "Digital"
 year: 2007
 recovered: true
+art_type: "logo-brand"
+art_subtype: "identity"
+rating: 2
+curated: false
 ---
 **Disclaimer**
 Any views or opinion represented in the assets of Politically Correct the Game belong solely to DIP's Politically Correct the Game and do not represent my personal views, opinions, position or attitude.
-![The CEO](http://www.joshuakeyes.us/raihn/images/dip_game_char_ceo.jpg)
+![The CEO](/images/legacy/raihn/images/dip_game_char_ceo.jpg)
 
-![The Farmer](http://www.joshuakeyes.us/raihn/images/dip_game_char_farmer.jpg)
-![The Gardener](http://www.joshuakeyes.us/raihn/images/dip_game_char_gardener.jpg)
-![](http://www.joshuakeyes.us/raihn/images/dip_game_char_lady.jpg)![The Priest](http://www.joshuakeyes.us/raihn/images/dip_game_char_priest.jpg)
-![The Terrorist](http://www.joshuakeyes.us/raihn/images/dip_game_char_terrorist.jpg)
+![The Farmer](/images/legacy/raihn/images/dip_game_char_farmer.jpg)
+![The Gardener](/images/legacy/raihn/images/dip_game_char_gardener.jpg)
+![](/images/legacy/raihn/images/dip_game_char_lady.jpg)![The Priest](/images/legacy/raihn/images/dip_game_char_priest.jpg)
+![The Terrorist](/images/legacy/raihn/images/dip_game_char_terrorist.jpg)

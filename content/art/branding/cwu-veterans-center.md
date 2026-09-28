@@ -28,6 +28,10 @@ pieces:
 link:
   label: "Veteran Resource Pamphlet 2018 (PDF)"
   href: "/images/graphic-design/veterans/resource-pamphlet-2018.pdf"
+art_type: "logo-brand"
+art_subtype: "print"
+rating: 6
+curated: false
 ---
 
 While serving as an AmeriCorps VetCorps Representative supporting the Central Washington University Veterans Center and partner regional centers (Yakima Valley, King County), I designed the visual tools our office used to help transitioning veterans navigate benefits. Most of this work was produced on top of full-time case work for fellow veterans — *designed by a veteran, for veterans*, in the same waiting rooms where it was handed out.

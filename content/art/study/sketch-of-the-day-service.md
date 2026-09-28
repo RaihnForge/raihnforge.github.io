@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2009
 archived: true
+art_type: "sketches"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
 ![](/images/recovered/sketch_20090121_service_small.jpg)

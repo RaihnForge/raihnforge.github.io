@@ -45,7 +45,7 @@ Deprecated sections (`verg-castleroid`, `indie-dev-dues`, `ndlz`, `unchosen-path
 
 ## Architecture
 
-- **Hugo** static site generator (v0.157.0 local, v0.147.0 in CI)
+- **Hugo** static site generator (v0.164.0 local and CI, aligned 2026-09-27)
 - **No external theme** — custom layouts in `layouts/`
 - **No JavaScript** — pure CSS, except Sveltia CMS admin panel
 - **Sveltia CMS** at `/admin/` for content management (GitHub backend; migrated from Decap on 2026-03-01)
@@ -83,6 +83,11 @@ tags: []
 image: "/images/..."
 medium: ""        # Digital, Pencil, Acrylic, Mixed Media, etc.
 year: 2007
+art_type: ""      # id from data/art_taxonomy.json — NEVER `type:` (Hugo-reserved)
+art_subtype: ""   # id of a subtype of art_type
+rating: 5         # 1-10, higher is better — drives every listing order, best first
+curated: false    # true once Joshua confirmed type/subtype/rating
+related: ""       # optional path of a related devlog/post
 featured: false   # Show on homepage
 recovered: false  # Lost external media
 archived: false   # Hide from listings; URL stays live
@@ -216,6 +221,23 @@ Scholar papers reference real workplaces, colleagues, and procurement engagement
 1. Read the source for any of the categories above and apply the substitutions before publishing.
 2. Set `role_note` if the paper names the employer role.
 3. Spot-check the rendered page locally — the footer disclaimer should be visible; the role-note block should appear above the article when set.
+
+## Art Curation (2026-09-27)
+
+The Gallery is organized by **type** (`data/art_taxonomy.json`) and every listing is ordered by
+**`rating`, best first**. Use the local **Art Curator** to review and correct entries and to
+backfill lost images:
+
+```bash
+node tools/art-catalog/curator.js     # → http://localhost:3145
+node tools/art-catalog/catalog.js     # summary + taxonomy validation
+```
+
+- Never link to raihn.wordpress.com or joshuakeyes.us. This repo is the long-term asset store.
+  Re-run `node tools/art-catalog/localize-wp.js` if any creep back in.
+- Missing images render as `/images/placeholder-missing.svg` automatically; fill them in,
+  don't delete the entry.
+- Details: ARCHITECTURE.md § Art Curation System.
 
 ## Workflow Rules
 

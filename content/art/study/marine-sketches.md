@@ -10,5 +10,9 @@ draft: false
 medium: "Pencil"
 year: 2004
 archived: true
+art_type: "sketches"
+art_subtype: "pencil"
+rating: 3
+curated: false
 ---
 This is a collection of sketches found in various squad books and note material from my Marine Corps days 2000-2004, infantry 0352.  Last Updated May, 2016.

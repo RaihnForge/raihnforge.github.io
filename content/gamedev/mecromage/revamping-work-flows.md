@@ -12,7 +12,7 @@ draft: false
 recovered: true
 ---
 I’ve be pretty crippled by the abundance of work that I must do in my game and daily life, so I’m looking for ways to revamp my current situations. I plan to attack the situation by giving myself proper tools and workflows to circumvent the speed bumps and focus on the hurtles.  A new desktop arrangement, savvy task management tools, taking time to properly annotate and build personal references, and proper outlets for expression and logging are my initial thoughts on mitigating the madness.
-[![2014-01-04 21.57.13](/images/recovered/2014010421.57.13_thumb.jpg "2014-01-04 21.57.13")](http://www.joshuakeyes.us/wordpress/raihn/images/RevampingWorkflows_79D3/2014010421.57.13.jpg)
+[![2014-01-04 21.57.13](/images/recovered/2014010421.57.13_thumb.jpg "2014-01-04 21.57.13")](/images/legacy/wordpress/raihn/images/RevampingWorkflows_79D3/2014010421.57.13.jpg)
 
 ## New Desktop Arrangement
 

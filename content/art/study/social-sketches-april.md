@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Pencil"
 year: 2016
+art_type: "sketches"
+art_subtype: "pencil"
+rating: 5
+curated: false
 ---
 Social media can be fickle.  Often times it is wrought with shallow political slander, blasted opinions, cat videos, 'clever memes', and lifestyle selfies.  This April I delved in a different way to communicate through the post proliferator.  
 Essentially I wanted to socialize digitally with those on my friends list, but didn't want to bore others with my meal choices or the repost of some movie trailer in hopes of sparking a conversation through shared interest.  I realized that I communicate depth primarily visually, so why not try to attempt some of that depth in the social media scene?

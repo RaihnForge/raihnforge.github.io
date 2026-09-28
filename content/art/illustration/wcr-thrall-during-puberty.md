@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2007
 archived: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
 Another web asset created to visually enhance the feature article, "Going Through Warcraft Puberty: The Beginning," written by H0bgawblin. [Click here to view the original WCreplays.com article](http://www.wcreplays.com/articles.php?get=535).

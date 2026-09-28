@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2012
 recovered: true
+art_type: "stream-web"
+art_subtype: "overlays"
+rating: 3
+curated: false
 ---
 
 A couple of weeks ago a friend of mine, Kayfix, and I decided to play a run through of X-Com with "Field Expedient Multiplayer." The idea is that we run with two teams of four, and that all deaths are permanent (as stated in our code of conduct) and that we cast the xenomorphic extravaganza.

@@ -8,6 +8,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2010
+art_type: "sketches"
+art_subtype: "digital"
+rating: 2
+curated: false
 ---
 I put this song my brother made on repeat until I had a decent digital sketch. Then I uploaded the speed painting along with the song.  This was about four hours of work.
 

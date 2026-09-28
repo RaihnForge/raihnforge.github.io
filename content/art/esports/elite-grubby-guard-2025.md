@@ -9,6 +9,10 @@ tags: ["grubby", "warcraft", "starcraft", "protoss", "character", "esports", "fa
 draft: false
 sampler: true
 portfolio: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 6
+curated: false
 ---
 
 A 2025 remaster of the original [Elite Grubby Guard](/art/elite-grubby-guard/) piece first released in 2012 to celebrate Grubby's MLG run. Same core identity — Grubby as an Elite Protoss Stalker — with refreshed linework, updated palette, and a composition optimized for current broadcast and social formats.

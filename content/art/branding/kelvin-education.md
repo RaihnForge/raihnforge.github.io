@@ -33,6 +33,10 @@ pieces:
   - src: "/images/graphic-design/kelvin/sms-post-03.png"
     type: "Social Template"
     caption: "Social media template, variant 3. Completes the template set covering the common post types the team publishes."
+art_type: "logo-brand"
+art_subtype: "identity"
+rating: 6
+curated: false
 ---
 
 At Kelvin Education I serve as Lead Production Designer on a small team building mental-wellness tools for students, in partnership with programs like CalHOPE. Most of the work is proprietary and not shown here. The pieces below are the publicly-released subset — broadcast-style video production, partnership announcements, and the social-media templates the staff use every week to keep the brand voice consistent without a designer in the loop for each post.

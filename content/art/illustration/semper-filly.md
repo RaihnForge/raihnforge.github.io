@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2013
+art_type: "logo-brand"
+art_subtype: "print"
+rating: 5
+curated: false
 
 ---
 [![ponySizedDown](/images/recovered/ponySizedDown.png "ponySizedDown")](/images/recovered/ponySizedDown.png)

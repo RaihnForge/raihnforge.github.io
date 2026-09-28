@@ -10,8 +10,12 @@ archived: true
 draft: false
 medium: "Digital"
 year: 2009
+art_type: "illustration"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
-[![](http://www.joshuakeyes.us/raihn/art/design/felgaurd_hero_md.jpg)](/images/recovered/felgaurd_hero.jpg)
+[![](/images/legacy/raihn/art/design/felgaurd_hero_md.jpg)](/images/recovered/felgaurd_hero.jpg)
 
 Created for WCreplays.com header image.

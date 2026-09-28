@@ -10,5 +10,9 @@ draft: false
 medium: "Digital"
 year: 2008
 recovered: true
+art_type: "logo-brand"
+art_subtype: "logo"
+rating: 2
+curated: false
 ---
-![](http://www.joshuakeyes.us/raihn/images/weblayout_cliffconcept_logo.jpg)
+![](/images/legacy/raihn/images/weblayout_cliffconcept_logo.jpg)

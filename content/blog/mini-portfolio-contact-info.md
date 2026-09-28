@@ -9,4 +9,4 @@ draft: false
 recovered: true
 ---
 Added a printable mini portfolio to my contact information :)
-****[![](/images/recovered/pdf_icon_small.gif)](http://dl.dropbox.com/u/2967552/DigiPen%20application/DigiPen%20Portfolio.pdf)** **[-](http://www.joshuakeyes.us/raihn/bin/Resume_Joshua_Keyes.pdf)** **[mini digipen portfolio](http://www.joshuakeyes.us/raihn/bin/Resume_Joshua_Keyes.pdf)** [-](http://www.joshuakeyes.us/raihn/bin/Resume_Joshua_Keyes.pdf) right click and 'save link as'**
+****[![](/images/recovered/pdf_icon_small.gif)](http://dl.dropbox.com/u/2967552/DigiPen%20application/DigiPen%20Portfolio.pdf)** **-** **mini digipen portfolio** - right click and 'save link as'**

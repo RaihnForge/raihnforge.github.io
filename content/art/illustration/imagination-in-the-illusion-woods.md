@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2014
+art_type: "illustration"
+art_subtype: "ink"
+rating: 7
+curated: false
 
 ---
 ![Imagination in the Illusion Woods](/images/recovered/Parker01_thumb.png "Imagination in the Illusion Woods")

@@ -10,6 +10,10 @@ draft: false
 medium: "Digital"
 year: 2008
 archived: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 3
+curated: false
 
 ---
 [![](/images/recovered/chirstmas_gift_draft_07.jpg)](/images/recovered/chirstmas_gift_draft_07.jpg)

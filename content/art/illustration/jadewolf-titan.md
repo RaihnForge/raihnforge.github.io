@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2016
+art_type: "illustration"
+art_subtype: "ink"
+rating: 5
+curated: false
 ---
 ![titan2](/images/wp-imports/art/titan2.png)
 

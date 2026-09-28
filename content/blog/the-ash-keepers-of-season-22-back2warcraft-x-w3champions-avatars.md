@@ -22,14 +22,14 @@ Created exclusively for the **Back2Warcraft (B2W)** Twitch community, these avat
 
 This series honors the legendary heroes of Warcraft III while reimagining them through the mythos of the **Ash Keepers** — a spectral order inspired by the *Ashbringer* legend.
 
-[![](https://raihn.wordpress.com/wp-content/uploads/2025/10/b2w_avatars_export_01.png?w=608)](https://raihn.wordpress.com/wp-content/uploads/2025/10/b2w_avatars_export_01.png)
-[![](https://raihn.wordpress.com/wp-content/uploads/2025/10/b2w_avatars_export_02.png?w=608)](https://raihn.wordpress.com/wp-content/uploads/2025/10/b2w_avatars_export_02.png)
-[![](https://raihn.wordpress.com/wp-content/uploads/2025/10/b2w_avatars_export_03.png?w=608)](https://raihn.wordpress.com/wp-content/uploads/2025/10/b2w_avatars_export_03.png)
-[![The Process: From Sketch to Flame](https://raihn.wordpress.com/wp-content/uploads/2025/10/b2w_avatars_export_04.png?w=608)](https://raihn.wordpress.com/wp-content/uploads/2025/10/b2w_avatars_export_04.png)
+[![](/images/wp-imports/uploads/2025/10/b2w_avatars_export_01.png)](/images/wp-imports/uploads/2025/10/b2w_avatars_export_01.png)
+[![](/images/wp-imports/uploads/2025/10/b2w_avatars_export_02.png)](/images/wp-imports/uploads/2025/10/b2w_avatars_export_02.png)
+[![](/images/wp-imports/uploads/2025/10/b2w_avatars_export_03.png)](/images/wp-imports/uploads/2025/10/b2w_avatars_export_03.png)
+[![The Process: From Sketch to Flame](/images/wp-imports/uploads/2025/10/b2w_avatars_export_04.png)](/images/wp-imports/uploads/2025/10/b2w_avatars_export_04.png)
 
 ---
 
-- ![Close-up of a character from the Ash Keepers series, featuring a bearded figure with glowing eyes and a fiery background, symbolizing power and resolve.](https://raihn.wordpress.com/wp-content/uploads/2025/10/scary3.gif)
+- ![Close-up of a character from the Ash Keepers series, featuring a bearded figure with glowing eyes and a fiery background, symbolizing power and resolve.](/images/wp-imports/uploads/2025/10/scary3.gif)
 
 ---
 
@@ -42,25 +42,25 @@ Now they walk the ashen places between life and death, silent sentinels of the t
 
 They do not seek glory, only restoration. For every creature carries the light of the sun within, and when that light is taken before its hour, the Keepers rise to see it home.
 
-![](https://raihn.wordpress.com/wp-content/uploads/2025/10/pit_512.png?w=512)
+![](/images/wp-imports/uploads/2025/10/pit_512.png)
 
 **Pit Lord — Ember Forge**
 
 Once a demon of the Burning Legion, now transfigured by divine flame. His wings blaze as feathers of molten gold. When the veil thins, he slams his double-headed glaive into the earth, sending ripples that awaken his brethren.
 
-![](https://raihn.wordpress.com/wp-content/uploads/2025/10/warden_512.png?w=512)
+![](/images/wp-imports/uploads/2025/10/warden_512.png)
 
 **Warden — Veiled Flame**
 
 The silent executioner. Cloaked in ashlight, she strikes with purpose born of regret. Her visor glows with the memory of souls she once condemned—each kill a whisper of penance.
 
-![](https://raihn.wordpress.com/wp-content/uploads/2025/10/pala_512.png?w=512)
+![](/images/wp-imports/uploads/2025/10/pala_512.png)
 
 **Paladin — Keeper of the Lost Light**
 
 No longer mortal, no longer bound to light nor shadow. His hammer hums with cindered prayer, a devotion that transcends life itself. Faith, reforged in fire.
 
-![](https://raihn.wordpress.com/wp-content/uploads/2025/10/beast_512.png?w=512)
+![](/images/wp-imports/uploads/2025/10/beast_512.png)
 
 **Beastmaster — Ashbound Hunter**
 

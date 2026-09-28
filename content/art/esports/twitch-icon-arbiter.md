@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2014
+art_type: "animation"
+art_subtype: "emotes"
+rating: 5
+curated: false
 
 ---
 [![Resize](/images/recovered/Resize.png "Resize")](/images/recovered/Resize.png)     [![Redrawn](/images/recovered/Redrawn.png "Redrawn")](/images/recovered/Redrawn.png)    [![Chibi](/images/recovered/Chibi.png "Chibi")](/images/recovered/Chibi.png)

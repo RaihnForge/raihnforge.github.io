@@ -17,23 +17,23 @@ recovered: true
 
 UP E2D – vLog 2011.10.25–all in a days work
 
-[![ed2_screen_shot_reference](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_reference_thumb.jpg "ed2_screen_shot_reference")](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_reference.jpg)
+[![ed2_screen_shot_reference](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_reference_thumb.jpg "ed2_screen_shot_reference")](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_reference.jpg)
 
 referencing set pieces & reusing textures
 
-[![ed2_screen_shot_no_lights](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_no_lights_thumb.jpg "ed2_screen_shot_no_lights")](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_no_lights.jpg)
+[![ed2_screen_shot_no_lights](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_no_lights_thumb.jpg "ed2_screen_shot_no_lights")](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_no_lights.jpg)
 
 Screen shot with no shadows included
 
-[![ed2_screen_shot_baked_in_lights](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_baked_in_lights_thumb.jpg "ed2_screen_shot_baked_in_lights")](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_baked_in_lights.jpg)
+[![ed2_screen_shot_baked_in_lights](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_baked_in_lights_thumb.jpg "ed2_screen_shot_baked_in_lights")](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_baked_in_lights.jpg)
 
 Screen shot with baked in shadows
 
-[![ed2_screen_shot_baked_spotlights_lights](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_baked_spotlights_lights_thumb.jpg "ed2_screen_shot_baked_spotlights_lights")](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_baked_spotlights_lights.jpg)
+[![ed2_screen_shot_baked_spotlights_lights](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_baked_spotlights_lights_thumb.jpg "ed2_screen_shot_baked_spotlights_lights")](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/ed2_screen_shot_baked_spotlights_lights.jpg)
 
 Screen shot with demo ‘engine’ light and shadow spots
 
-[![smart_objects_hero](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/smart_objects_hero_thumb.jpg "smart_objects_hero")](http://www.joshuakeyes.us/wordpress/raihn/images/e17c3994a1b5_B4AE/smart_objects_hero.jpg)
+[![smart_objects_hero](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/smart_objects_hero_thumb.jpg "smart_objects_hero")](/images/legacy/wordpress/raihn/images/e17c3994a1b5_B4AE/smart_objects_hero.jpg)
 
 Breaking down item pieces via Smart Objects
 

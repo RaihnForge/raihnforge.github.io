@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2016
+art_type: "sketches"
+art_subtype: "digital"
+rating: 7
+curated: false
 ---
 ![bearbearjade2](/images/wp-imports/art/bearbearjade2.png)
 The wife and I were away from eachother for about six months because of her work.  This work was done to cheer her up while we were away.

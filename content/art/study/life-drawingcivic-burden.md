@@ -10,6 +10,10 @@ draft: false
 medium: "Pencil"
 year: 2007
 archived: true
+art_type: "sketches"
+art_subtype: "study"
+rating: 3
+curated: false
 
 ---
 [![lifedrawdigi_civic_burden](/images/recovered/lifedrawdigi_civic_burden.jpg "lifedrawdigi_civic_burden")](/images/recovered/lifedrawdigi_civic_burden.jpg)

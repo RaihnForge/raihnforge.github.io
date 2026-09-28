@@ -13,6 +13,10 @@ archived: false
 draft: false
 related_sections:
   - "branding"
+art_type: "logo-brand"
+art_subtype: "identity"
+rating: 7
+curated: false
 ---
 
 A sticker designed for the team at [Alma](https://getalma.com), the cloud-based Student Information System built by educators for educators.

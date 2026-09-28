@@ -10,8 +10,12 @@ draft: false
 medium: "Digital"
 year: 2007
 recovered: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 2
+curated: false
 ---
-[![Manner Plz](http://www.joshuakeyes.us/wordpress/raihn/images/Manner-Please_13163/Manner-Plz_thumb.jpg "Manner Plz")](http://www.joshuakeyes.us/wordpress/raihn/images/Manner-Please_13163/Manner-Plz.jpg)
+[![Manner Plz](/images/legacy/wordpress/raihn/images/Manner-Please_13163/Manner-Plz_thumb.jpg "Manner Plz")](/images/legacy/wordpress/raihn/images/Manner-Please_13163/Manner-Plz.jpg)
 
 This is a cartoon I created for Amnesty's article, "Manner Wars," on WCreplays.com. [Click here to check out the original article](http://www.wcreplays.com/page?section=articles&id=555).
 
@@ -19,6 +23,6 @@ This is a cartoon I created for Amnesty's article, "Manner Wars," on WCreplays.c
 
 This is probably one of my favorite comic images I’ve made.  It just makes me laugh every time.  both subjects exude character and emotion, and I like that a lot!
 
-[![Manner Please](http://www.joshuakeyes.us/wordpress/raihn/images/Manner-Please_13163/Manner-Please_thumb.jpg "Manner Please")](http://www.joshuakeyes.us/wordpress/raihn/images/Manner-Please_13163/Manner-Please.jpg)
+[![Manner Please](/images/legacy/wordpress/raihn/images/Manner-Please_13163/Manner-Please_thumb.jpg "Manner Please")](/images/legacy/wordpress/raihn/images/Manner-Please_13163/Manner-Please.jpg)
 
-[![manner_please_work2](http://www.joshuakeyes.us/wordpress/raihn/images/Manner-Please_13163/manner_please_work2_thumb.jpg "manner_please_work2")](http://www.joshuakeyes.us/wordpress/raihn/images/Manner-Please_13163/manner_please_work2.jpg)
+[![manner_please_work2](/images/legacy/wordpress/raihn/images/Manner-Please_13163/manner_please_work2_thumb.jpg "manner_please_work2")](/images/legacy/wordpress/raihn/images/Manner-Please_13163/manner_please_work2.jpg)

@@ -9,6 +9,10 @@ tags: ["eziz", "illustration", "brand", "personal"]
 draft: false
 sampler: true
 portfolio: true
+art_type: "illustration"
+art_subtype: "digital"
+rating: 8
+curated: false
 ---
 
 A 2025 illustration carrying the EZiZ banner — *never quit* — forward from the original [EZi BackGrounds](/gamedev/ezibg/) wallpaper product into a standalone visual. Full-width hero image built for both print and screen.

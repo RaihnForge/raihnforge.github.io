@@ -9,6 +9,10 @@ aliases:
 draft: false
 medium: "Digital"
 year: 2013
+art_type: "sketches"
+art_subtype: "digital"
+rating: 5
+curated: false
 
 ---
 [![spiderdude](/images/recovered/spiderdude_thumb.png "spiderdude")](/images/recovered/spiderdude.png)This Spider-Man image was inspired by a good friend’s son who’s favorite comic hero is Spider-Man. As an active duty Marine my friend often finds himself on deployments around the world for months at a time. I thought it might be nice to illustrate a poster to boost his little one’s morale a bit.

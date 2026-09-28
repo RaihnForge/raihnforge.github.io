@@ -1,0 +1,170 @@
+{
+  "_comment": [
+    "Art taxonomy: the single source of truth for how the Gallery is sorted.",
+    "Each art entry carries art_type, art_subtype (ids below), rating (1-10, higher is better; drives ALL listing order, best first) and curated (true once Joshua confirmed the fields; false while machine-guessed, seeded 2026-09-27).",
+    "The field is art_type, never type: Hugo reserves `type` for layout selection.",
+    "Change the scheme here, then run `node tools/art-catalog/catalog.js` to flag entries whose type/subtype no longer exists.",
+    "show = how many top-rated entries per type appear on the Gallery page."
+  ],
+  "show": 5,
+  "types": [
+    {
+      "id": "illustration",
+      "title": "Illustration",
+      "subtypes": [
+        {
+          "id": "digital",
+          "title": "Digital"
+        },
+        {
+          "id": "traditional-paint",
+          "title": "Traditional Paint"
+        },
+        {
+          "id": "pencil",
+          "title": "Pencil"
+        },
+        {
+          "id": "ink",
+          "title": "Ink & Cartoon"
+        },
+        {
+          "id": "mixed",
+          "title": "Mixed Media"
+        }
+      ]
+    },
+    {
+      "id": "sketches",
+      "title": "Sketches & Studies",
+      "subtypes": [
+        {
+          "id": "pen",
+          "title": "Pen"
+        },
+        {
+          "id": "pencil",
+          "title": "Pencil"
+        },
+        {
+          "id": "digital",
+          "title": "Digital"
+        },
+        {
+          "id": "study",
+          "title": "Life Drawing & Study"
+        },
+        {
+          "id": "other",
+          "title": "Other"
+        }
+      ]
+    },
+    {
+      "id": "pixel-art",
+      "title": "Pixel Art",
+      "subtypes": [
+        {
+          "id": "compositions",
+          "title": "Compositions"
+        },
+        {
+          "id": "tiles",
+          "title": "Tiles"
+        },
+        {
+          "id": "character",
+          "title": "Character"
+        },
+        {
+          "id": "environment",
+          "title": "Environment"
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "title": "Animation & Emotes",
+      "subtypes": [
+        {
+          "id": "emotes",
+          "title": "Emotes"
+        },
+        {
+          "id": "cheermotes",
+          "title": "Cheermotes"
+        },
+        {
+          "id": "game-animation",
+          "title": "Game Animation"
+        },
+        {
+          "id": "animated-avatars",
+          "title": "Animated Avatars"
+        }
+      ]
+    },
+    {
+      "id": "concept-art",
+      "title": "Concept Art",
+      "subtypes": [
+        {
+          "id": "character",
+          "title": "Character"
+        },
+        {
+          "id": "environment",
+          "title": "Environment"
+        },
+        {
+          "id": "props",
+          "title": "Props & Items"
+        }
+      ]
+    },
+    {
+      "id": "logo-brand",
+      "title": "Logo & Brand",
+      "subtypes": [
+        {
+          "id": "logo",
+          "title": "Logo"
+        },
+        {
+          "id": "identity",
+          "title": "Brand Identity"
+        },
+        {
+          "id": "print",
+          "title": "Print & Packaging"
+        },
+        {
+          "id": "apparel",
+          "title": "Apparel & Merch"
+        }
+      ]
+    },
+    {
+      "id": "stream-web",
+      "title": "Stream & Web Graphics",
+      "subtypes": [
+        {
+          "id": "overlays",
+          "title": "Stream Overlays"
+        },
+        {
+          "id": "avatars",
+          "title": "Avatars & Icons"
+        },
+        {
+          "id": "banners",
+          "title": "Banners & Headers"
+        },
+        {
+          "id": "web-design",
+          "title": "Web Design"
+        }
+      ]
+    }
+  ]
+}

@@ -12,6 +12,10 @@ tags: ["warcraft", "w3champions", "back2warcraft", "esports", "avatar", "charact
 draft: false
 sampler: true
 portfolio: true
+art_type: "stream-web"
+art_subtype: "avatars"
+rating: 7
+curated: false
 ---
 
 A set of four original avatars designed for the **Back2Warcraft** Twitch community to support the **W3Champions Season 22 Finals**. Each avatar reframes a classic Warcraft 3 hero — Pit Lord, Warden, Paladin, Beastmaster — as an *Ash Keeper*: a spectral guardian tasked with restoring the living flame. Available through Matcherino; purchases pooled directly into the tournament prize.

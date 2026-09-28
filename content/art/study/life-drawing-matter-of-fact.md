@@ -10,6 +10,10 @@ draft: false
 medium: "Pencil"
 year: 2007
 archived: true
+art_type: "sketches"
+art_subtype: "study"
+rating: 3
+curated: false
 
 ---
 [![lifedraw_matter_of_fact](/images/recovered/lifedraw_matter_of_fact.jpg "lifedraw_matter_of_fact")](/images/recovered/lifedraw_matter_of_fact.jpg)

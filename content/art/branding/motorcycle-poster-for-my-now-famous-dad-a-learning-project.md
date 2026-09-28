@@ -10,8 +10,12 @@ draft: false
 medium: "Digital"
 year: 2008
 recovered: true
+art_type: "logo-brand"
+art_subtype: "print"
+rating: 2
+curated: false
 ---
-[![Motorcylce poster for my now famous Dad](http://www.joshuakeyes.us/raihn/images/ducati_poster_dad_sm.jpg)](http://www.joshuakeyes.us/raihn/images/ducati_poster_dad.jpg)
+[![Motorcylce poster for my now famous Dad](/images/legacy/raihn/images/ducati_poster_dad_sm.jpg)](/images/legacy/raihn/images/ducati_poster_dad.jpg)
 
 #####
 

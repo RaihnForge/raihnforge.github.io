@@ -10,27 +10,31 @@ draft: false
 medium: "Digital"
 year: 2007
 recovered: true
+art_type: "stream-web"
+art_subtype: "web-design"
+rating: 2
+curated: false
 ---
 Please click to view larger versions of the following images.
 
 Header for MemberChat.net
 
-[![](http://www.joshuakeyes.us/raihn/art/design/memberchat_banner.jpg)](http://www.joshuakeyes.us/raihn/art/design/memberchat_banner.jpg)
+[![](/images/legacy/raihn/art/design/memberchat_banner.jpg)](/images/legacy/raihn/art/design/memberchat_banner.jpg)
 
 Basic Front Page
 
-[![](http://www.joshuakeyes.us/raihn/art/design/memberchat_version_b.jpg)](http://www.joshuakeyes.us/raihn/art/design/memberchat_version_b.jpg)
+[![](/images/legacy/raihn/art/design/memberchat_version_b.jpg)](/images/legacy/raihn/art/design/memberchat_version_b.jpg)
 
 Earlier version for front page design
 
-[![http://www.joshuakeyes.us/raihn/art/design/memberchat_ver_a.jpg (original image unavailable)](http://www.joshuakeyes.us/raihn/art/design/memberchat_ver_a.jpg)](http://www.joshuakeyes.us/raihn/art/design/memberchat_ver_a.jpg)
+[![/images/legacy/raihn/art/design/memberchat_ver_a.jpg (original image unavailable)](/images/legacy/raihn/art/design/memberchat_ver_a.jpg)](/images/legacy/raihn/art/design/memberchat_ver_a.jpg)
 
 #### Other Web Assets
 
 MemberChat Forum Userbar
 
-![](http://www.joshuakeyes.us/raihn/art/design/memberchat_userbar.jpg)
+![](/images/legacy/raihn/art/design/memberchat_userbar.jpg)
 
 MemberChat Article Banner
 
-![](http://www.joshuakeyes.us/raihn/art/design/writing_banner_university_josh_01.jpg)
+![](/images/legacy/raihn/art/design/writing_banner_university_josh_01.jpg)

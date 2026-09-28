@@ -10,7 +10,7 @@ archived: false
 draft: false
 recovered: true
 ---
-[![Top](/images/recovered/Top_thumb.png "Top")](http://www.joshuakeyes.us/wordpress/raihn/images/Week-in-review_8C3A/Top.png)
+[![Top](/images/recovered/Top_thumb.png "Top")](/images/legacy/wordpress/raihn/images/Week-in-review_8C3A/Top.png)
 
 Drowning.  That’s what it feels like most of the time I’ve been developing my Indie project, Mecromage.  I’ve averaged about 12 hours a day on this week alone.  Crafting story concepts, game mechanics, graphics assets, animated sprites, and 2d techniques I’ve done my part to push the first level of the game to about 70% complete.  But really, at the end of the week, all I can think about is how fun the elevator challenge was, and how that success is what helps me to rise to the overwhelming challenges I will dive into yet again tomorrow.
 
@@ -18,7 +18,7 @@ Before I unveil a most likely underwhelming (to you) elevator Flash demo, I’ll
 
 OR is it?  I actually think its not too bad considering our tiny team (two guys and their incredibly supportive wives).  Level one is the most difficult hurtle I’ve found in my very limited game development experience.  This is because that game area requires that you have a ton of the game actually figured out.  There are many questions that have to be answered to a presentable degree in order to arrive at the point that we are in the first level development.  (Check out the below link if your interested)
 
-[Mecromage: About the Game](http://raihn.wordpress.com/2013/03/02/mecromage-about-the-game/)
+[Mecromage: About the Game](/gamedev/mecromage/mecromage-about-the-game/)
 
 So you see there are some big concepts to work out.  The ‘little’ things can be challenging as well, like how to emulate water, weather, wind; all things present in the first section of the game. Easy stuffs, trust me..
 
@@ -38,7 +38,7 @@ As is my norm these days I started off with paper and pencil (I highly recommend
 
 What you’ve all been waiting for:
 
-**[Flash Elevator Demo!](http://joshuakeyes.us/wordpress/raihn/storage/elevator.html)**
+**Flash Elevator Demo!**
 
 I plan to do continuous updates on the process of making the game.  Let me know what you’d be interested in learning more about?  Here are some topics I’m considering:
 

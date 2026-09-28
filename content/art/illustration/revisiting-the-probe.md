@@ -10,6 +10,10 @@ archived: false
 draft: false
 medium: "Digital"
 year: 2012
+art_type: "stream-web"
+art_subtype: "banners"
+rating: 5
+curated: false
 
 ---
 [![tasteless_probe_master4](/images/recovered/tasteless_probe_master4.jpg "tasteless_probe_master4")](/images/recovered/tasteless_probe_master4.jpg)
@@ -18,7 +22,7 @@ I first created this image back in 2008 after watching a GomTV match featuring N
 
 The following day the quote continued to make me giggle, and I couldn’t get the image out of my head.  I decided I had to share my mirth with the world and created this image:
 
-[![badass_tasteless_probe_1440x900_blue](/images/recovered/badass_tasteless_probe_1440x900_blue_thumb.jpg "badass_tasteless_probe_1440x900_blue")](http://www.joshuakeyes.us/wordpress/raihn/images/Revisiting-the-Probe_1510D/badass_tasteless_probe_1440x900_blue.jpg)
+[![badass_tasteless_probe_1440x900_blue](/images/recovered/badass_tasteless_probe_1440x900_blue_thumb.jpg "badass_tasteless_probe_1440x900_blue")](/images/legacy/wordpress/raihn/images/Revisiting-the-Probe_1510D/badass_tasteless_probe_1440x900_blue.jpg)
 
 I’ve been refurbishing my website, and ran into the image and couldn’t resist touching it up a bit.  I hope the project is enjoyable, I didn’t want to spend too much time on it, but I think its still a fun image for sure!
 

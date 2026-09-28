@@ -9,6 +9,10 @@ draft: false
 medium: "Digital"
 year: 2013
 image: "/images/recovered/TapOutToss.jpg"
+art_type: "sketches"
+art_subtype: "other"
+rating: 5
+curated: false
 ---
 [![TapOutToss](/images/recovered/TapOutToss.jpg "TapOutToss")](/images/recovered/TapOutToss.jpg)
 

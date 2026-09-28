@@ -10,8 +10,12 @@ draft: false
 medium: "Digital"
 year: 2008
 recovered: true
+art_type: "stream-web"
+art_subtype: "banners"
+rating: 2
+curated: false
 ---
-[![Last Gen Terran](http://www.joshuakeyes.us/wordpress/raihn/images/New-Wallpaper-for-TastelessGaming.com_37B1/Last-Gen-Terran_thumb.jpg "Last Gen Terran")](http://www.joshuakeyes.us/wordpress/raihn/images/New-Wallpaper-for-TastelessGaming.com_37B1/Last-Gen-Terran.jpg)
+[![Last Gen Terran](/images/legacy/wordpress/raihn/images/New-Wallpaper-for-TastelessGaming.com_37B1/Last-Gen-Terran_thumb.jpg "Last Gen Terran")](/images/legacy/wordpress/raihn/images/New-Wallpaper-for-TastelessGaming.com_37B1/Last-Gen-Terran.jpg)
 
       Flash is one of the most dominating Starcraft pro-gamers ever to grasp the mouse.  The inspiration of this image came from his amazing control over the Terran army.  In my imagination the man simply did away with the adjacent and plugged himself directly into the Terran command framework at it’s core level.  There will be no getting past the Last Generation Terran.
 

@@ -12,6 +12,10 @@ medium: "Digital"
 year: 2017
 sampler: true
 portfolio: true
+art_type: "animation"
+art_subtype: "cheermotes"
+rating: 7
+curated: false
 ---
 ![](/images/wp-imports/art/bttvcm_gg_112px1.gif)
 ![](/images/wp-imports/art/bttvcm_dagger_112px1.gif)

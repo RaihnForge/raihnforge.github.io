@@ -19,6 +19,13 @@ title = "RaihnForge"
 [taxonomies]
   tag = "tags"
   medium = "medium"
+  art_type = "art_type"   # Gallery type pages; ids + titles live in data/art_taxonomy.json
+
+[permalinks]
+  [permalinks.taxonomy]
+    art_type = "/art/type/"
+  [permalinks.term]
+    art_type = "/art/type/:slug/"
 
 [menu]
   [[menu.main]]

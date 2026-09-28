@@ -1,0 +1,8 @@
+{{- /* Links to a local /images/ file that does not exist (a lost full-size
+       original) render as their inner content only, so nothing 404s. */ -}}
+{{- $dest := .Destination -}}
+{{- if and (hasPrefix $dest "/images/") (eq (partial "img-src.html" $dest) "/images/placeholder-missing.svg") -}}
+{{ .Text | safeHTML }}
+{{- else -}}
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- end -}}

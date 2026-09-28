@@ -12,6 +12,10 @@ tags: ["UX", "Content Design", "Microlearning", "EdTech", "Kelvin"]
 portfolio: true
 sampler: true
 draft: false
+art_type: "logo-brand"
+art_subtype: "identity"
+rating: 6
+curated: false
 ---
 
 Iterative content-structure redesign for Kelvin Education's RISE microlearning sequence. The brief: a single lesson was running eleven content cards in the prototype version, which was more friction than the audience (kids) could carry, and the pacing felt diffuse. The work walks four density variations side by side — Prototype (11 cards), Efficient (7 cards), Adjust Initial (5 cards), and Adjust Merge (6 cards) — and lands on a final "Combined Ideas" rough draft that keeps the moments that earn their place and drops the ones that don't.

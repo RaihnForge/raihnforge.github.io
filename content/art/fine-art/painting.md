@@ -10,8 +10,12 @@ draft: false
 medium: "Acrylic"
 year: 2008
 recovered: true
+art_type: "illustration"
+art_subtype: "traditional-paint"
+rating: 2
+curated: false
 ---
-[![Funny Flood](http://www.joshuakeyes.us/wordpress/raihn/images/Flood_4092/Funny-Flood_thumb_3.jpg "Funny Flood")](http://www.joshuakeyes.us/wordpress/raihn/images/Flood_4092/Funny-Flood_3.jpg)
+[![Funny Flood](/images/legacy/wordpress/raihn/images/Flood_4092/Funny-Flood_thumb_3.jpg "Funny Flood")](/images/portfolio-recovered/funny-flood_3.jpg)
 My second serious acrylic painting attempt from my beginning painting class.  We had a still life reference that included a stuffed bunny, some vases, fake grapes, and a rubber ducky all laid about on a large piece of blue paper.
 This image strikes me as warm and friendly injected with some dramatic flare.  What I enjoy most is that every time I look at this image I am so certain there is a story there, but still I am just not sure what it is.
 Originally this painting was a gift to my wife, her playful imagination inspired the original mindset in which I approached the work. It is dedicated to her and how much color and life she brings to my life.  She will always allow me to see the world a little differently, a little more beautiful.
