@@ -13,7 +13,7 @@
 
      Include `gallery-lightbox-modal.html` once on the same page. */}}
 
-{{ with .Site.Data.portfolio_gallery }}
+{{ with hugo.Data.portfolio_gallery }}
   {{ range $section := .sections }}
   <section class="portfolio-gallery-section" id="{{ $section.id }}" aria-label="{{ $section.title }}" data-gallery-section="{{ $section.id }}">
     <h2 class="portfolio-gallery-heading">{{ $section.title }}</h2>

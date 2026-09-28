@@ -1,6 +1,6 @@
 # For deployment, override via: hugo --baseURL "https://yourdomain.com/"
 baseURL = "/"
-languageCode = "en-us"
+locale = "en-us"
 title = "RaihnForge"
 
 [params]

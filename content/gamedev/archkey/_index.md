@@ -3,7 +3,7 @@ title: "Archkey Studio"
 date: 2026-04-20
 description: "An AI-assisted game development studio — the new production model for Mecromage and the research home for retro-graphics studies, rapid prototypes, and pipeline tooling."
 status: "In Development"
-engine: "Phaser 3 / AI-Assisted Pipeline"
+engine: "Phaser 4 / AI-Assisted Pipeline"
 role: "Developer, Artist & Director"
 timeline: "2024–Present"
 featured: true

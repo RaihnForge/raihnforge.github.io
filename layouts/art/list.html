@@ -20,7 +20,7 @@
      below can skip pieces that have already been rendered above.
      This is how the page guarantees no piece appears twice. */}}
 {{ $showcasedLinks := slice }}
-{{ with .Site.Data.portfolio_gallery }}
+{{ with hugo.Data.portfolio_gallery }}
   {{ range .sections }}
     {{ range .items }}
       {{ with .link }}{{ $showcasedLinks = $showcasedLinks | append . }}{{ end }}
