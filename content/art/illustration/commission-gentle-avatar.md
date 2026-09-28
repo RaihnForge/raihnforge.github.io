@@ -15,7 +15,7 @@ portfolio: true
 art_type: "illustration"
 art_subtype: "digital"
 rating: 10
-curated: false
+curated: true
 ---
 [![](/images/wp-imports/blog/aware_export_512.png)](/images/wp-imports/blog/aware_export_512.png)
 
